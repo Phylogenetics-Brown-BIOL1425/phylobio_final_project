@@ -18,25 +18,21 @@ Some guidelines and tips:
 
 - Commit and push often as you work.
 
-# Cophylogenetic analysis of hyperiid amphipods and their gelatinous planktonic hosts.
+OK, here we go.
+
+# Title of my project
 
 ## Introduction and Goals
 
-The goal of my project is to compare the evolutionary histories of hyperiid amphipod and their hosts, to test for phylogenetic signal in the associations, to identify congruence, host switching patterns, or incomplete sorting events during the coevolution of parasitoids and hosts.
+The goal of my project is to answer the question, What is...?
 
-The specificity of the interactions varies across families of hyperiid amphipods. Their relationship with their gelatinous hosts can integrate both trophic interactions (food source for individuals and/or descendants) and spatial niche (floating habitat, a solid surface to attach to).
+The methods I will use to do this are...
 
-I will use the hyperiid amphipod phylogeny published in Hunt & Haddock 2013.
-I will use the parasitoid/phoront-host interaction data from Laval 1985, Harbison..., Gasca..., Haddock... to build an association matrix.
-I will download the 18S gene sequences from GeneBank for the diversity of host species and build a gene tree to serve as a proxy for the species phylogeny.
-
+The data I will use are (my own data/ data publicly available at YYY/ simulations)
 
 ## Methods
 
 The tools I used were... See analysis files at (links to analysis files).
-
-I will use RAxML and MrBayes to build 18S gene trees, identifying later a consensus tree between them. I will use non parametric bootstrap values and bayesian posteriors as measures of clade support.
-I will use the R packages ape, phytools, and phangorn.
 
 ## Results
 
