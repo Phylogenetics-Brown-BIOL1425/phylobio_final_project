@@ -26,9 +26,9 @@ OK, here we go.
 
 The 4th trochanter is a prominent bony process found on the femur of archosaurs, onto which the *M. caudofemoralis longus* and *M. caudofemoralis brevis* muscles insert. The caudofemoralis longus (CFL, for short) is thought to be the most important of the hindlimb retractors, and the main muscle driving archosaur hindlimb locomotion. The morphology of the 4th trochanter reveals important information about the structure and dynamics of the CFL, and is therefore vital when trying to reconstruct the locomotor abilities of extinct archosaurs. Ornithischian dinosaurs display distinctive 4th trochanters; specifically, the trochanters tend to be larger and more distally-positioned than those of other dinosaurs and other archosaurs. The basic principles of muscle dynamics suggest that their CFL musculature would have functioned differently due to their unique morphology, and some researchers have begun to postulate how these differences in function would have affected their ecology. However, any anatomically-based discussion of Ornithischian ecology must take into account the phylogenetic distribution of their characteristic 4th trochanters. So far, no researchers have attempted to track this feature through Ornithischian phylogeny; we hope to do so in this project. 
 
-The methods I will use to do this are...
+We plan to use several methods to investigate this topic. First, we plan to construct a large-scale phylogeny of Ornithischian dinosaurs, using Maximum Likelihood estimation. We may also attempt to construct a tree using Bayesian methods. After that, we will track the evolution of the 4th trochanter's morphology and position throughout the tree. Finally, we will try to investigate two important questions: A) where does the characteristic 4th trochanter morphology first appear in Ornithischia? and B) does 4th trochanter morpology continue to become more exaggerated over Ornithischian evolution, or is its continued presence primarily a phylogenetic artifact?
 
-The data I will use are (my own data/ data publicly available at YYY/ simulations)
+We plan to obtain morpological character data from published accounts of Ornithischian phylogeny, and combine different data sets into one supermatrix for analysis.
 
 ## Methods
 
