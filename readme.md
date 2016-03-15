@@ -20,11 +20,11 @@ Some guidelines and tips:
 
 OK, here we go.
 
-# Title of my project
+# Tracking 4th Trochanter Position in Ornithischian Dinosaurs 
 
 ## Introduction and Goals
 
-The goal of my project is to answer the question, What is...?
+The 4th trochanter is a prominent bony process found on the femur of archosaurs, onto which the *M. caudofemoralis longus* and *M. caudofemoralis brevis* muscles insert. The caudofemoralis longus (CFL, for short) is thought to be the most important of the hindlimb retractors, and the main muscle driving archosaur hindlimb locomotion. The morphology of the 4th trochanter reveals important information about the structure and dynamics of the CFL, and is therefore vital when trying to reconstruct the locomotor abilities of extinct archosaurs. Ornithischian dinosaurs display distinctive 4th trochanters; specifically, the trochanters tend to be larger and more distally-positioned than those of other dinosaurs and other archosaurs. The basic principles of muscle dynamics suggest that their CFL musculature would have functioned differently due to their unique morphology, and some researchers have begun to postulate how these differences in function would have affected their ecology. However, any anatomically-based discussion of Ornithischian ecology must take into account the phylogenetic distribution of their characteristic 4th trochanters. So far, no researchers have attempted to track this feature through Ornithischian phylogeny; we hope to do so in this project. 
 
 The methods I will use to do this are...
 
