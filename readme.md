@@ -6,11 +6,11 @@
 
 The sister species *Viburnum acutifolium* and *Viburnum sulcatum* have produced previously identified hybrid swarms, (Donoghue, 1982) but we don't know the level of genetic contribution from the parents to individuals in the swarm. What is the extent of genetic introgression between these two species of *Viburnum*? In this study, I will:
 
-1.Test the level of introgression between pure parent populations of *V. acutifolium* and *V. sulcatum* (Are the parents truly genetically isolated to begin with?) 
+* Test the level of introgression between pure parent populations of *V. acutifolium* and *V. sulcatum* (Are the parents truly genetically isolated to begin with?) 
 
-2. Test for introgression between parents and hybrids (Do the hybrids show introgression between the parent species?) 
+* Test for introgression between parents and hybrids (Do the hybrids show introgression between the parent species?) 
 
-3. Test population structure of hybrids (How much of each hybrid's genome comes from one parent versus the other?) 
+* Test population structure of hybrids (How much of each hybrid's genome comes from one parent versus the other?) 
 
 The level of introgression and clustering of parental genetic contributions within the hybrids will give us a better idea about gene flow from the parental popluation to the hybrid swarm. Knowledge about the genetic contributions of the parents will inform future studies on heritable plant traits.
 
