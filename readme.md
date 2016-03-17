@@ -24,11 +24,11 @@ OK, here we go.
 
 ## Introduction and Goals
 
-The goal of my project is to answer the question, What is...?
+GPT2 encodes glutamic pyruvate transaminase 2, a protein that is expressed in the mitochondria of humans. GPT2 is a chromosomal gene. GPT2 also has a sister gene GPT which is expressed in the cytoplasm. For my project, my goal would be to construct a phylogeny of the genes from a number of species and track whether the genes that are cytoplasmic and mitochondrial form seperate clades.
 
-The methods I will use to do this are...
+I propose the following methods. First, I will reconstruct the tree using GPT2 and GPT data seperately. I will also reconstruct the tree using a combined sequence. This method of tree reconstruction will be similar to the process outlined in Cartwright et al 2008. I also think that it would be interesting to perform a similar analyis using protein sequence data as opposed to the genes. This kind of analysis is discussed in Rokas 2011. 
 
-The data I will use are (my own data/ data publicly available at YYY/ simulations)
+I plan to use sequence data from NCBI and Homologene. I will also use Homologene in order to identify the homologs of GPT and GPT2. The use of Homologene in constructing phylogenies is discussed in Altenhoff et al (2009). I also plan on using gene databases and literature searches to determine the expression location of the proteins. 
 
 ## Methods
 
@@ -48,4 +48,15 @@ If I did these analyses again, I would...
 
 ## References
 
+> Cartwright, P., Evans, N. M., Dunn, C. W., Marques, A. C., Miglietta, M. P., 
+Schuchert, P., & Collins, A. G. (2008). Phylogenetics of Hydroidolina 
+(Hydrozoa: Cnidaria). Journal of the Marine Biological Association of the UK, 
+88(08), 1663-1672. 
+[doi:10.1017/S0025315408002257](http://dx.doi.org/10.1017/S0025315408002257)
 
+> Rokas, A. (2011). Phylogenetic Analysis of Protein Sequence Data Using the Randomized Axelerated Maximum Likelihood(RAXML) Program. Current Protocols in Molecular Biology. Published online. 
+[doi:10.1002/0471142727.mb1911s96]
+
+> Altenhoff, A. and Dessimoz, C. Phylogenetic and Functional Assessment of Orthologs Inference Projects and Methods. (2009).
+-PLoS Computational Biology. 5(1): e1000262. 
+[doi: 10.1371/journal.pcbi.1000262]
