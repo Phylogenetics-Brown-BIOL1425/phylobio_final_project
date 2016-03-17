@@ -38,8 +38,11 @@ The data I will use are (my own data/ data publicly available at YYY/ simulation
 I expect I will draw on data from an existing published phylogeny or collection of published data. I will score degree of endangerment by classification on IUCN red list, though I will look into a continuous variable that describes endangerment. 
 
 Davies, T. Jonathan, Gideon F. Smith, Dirk U. Bellstedt, James S. Boatwright, Benny Bytebier, Richard M. Cowling, Félix Forest, Luke J. Harmon, A. Muthama Muasya, Brian D. Schrire, Yolande Steenkamp, Michelle Van Der Bank, and Vincent Savolainen. "Extinction Risk and Diversification Are Linked in a Plant Biodiversity Hotspot." PLoS Biology PLoS Biol 9.5 (2011): n. pag. Web. <http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1000620>.
+
 Purvis, A. "Nonrandom Extinction and the Loss of Evolutionary History." Science 288.5464 (2000): 328-30. Web. <http://science.sciencemag.org/content/288/5464/328>.
+
 Rolland, J., M. W. Cadotte, J. Davies, V. Devictor, S. Lavergne, N. Mouquet, S. Pavoine, A. Rodrigues, W. Thuiller, L. Turcati, M. Winter, L. Zupan, F. Jabot, and H. Morlon. "Using Phylogenies in Conservation: New Perspectives." Biology Letters 8.5 (2011): 692-94. Web. <http://rsbl.royalsocietypublishing.org/content/early/2011/11/21/rsbl.2011.1024>.
+
 Thuiller, Wilfried, Sébastien Lavergne, Cristina Roquet, Isabelle Boulangeat, Bruno Lafourcade, and Miguel. B. Araujo. "Consequences of Climate Change on the Tree of Life in Europe." Nature 470.7335 (2011): 531-34. Web. <http://www.nature.com/nature/journal/v470/n7335/full/nature09705.html>.
 
 ## Methods
