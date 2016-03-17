@@ -50,7 +50,7 @@ If I did these analyses again, I would...
 
 1. “Duckbills on the Run: The Cursorial Abilities of Hadrosaurs and Implications for Tyrannosaur-Avoidance Strategies”. W. Scott Persons IV and Philip J. Currie. *Hadrosaurs*. 2014.
 
-2.
+2. “The Phylogeny of the Ornithischian Dinosaurs”. Richard J. Butler, Paul Upchurch, and David B. Norman. *Journal of Systematic Paleontology* 6 (2008): 1-40. 
 
 3.
 
