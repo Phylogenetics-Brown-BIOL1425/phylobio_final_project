@@ -52,6 +52,6 @@ If I did these analyses again, I would...
 
 2. “The Phylogeny of the Ornithischian Dinosaurs”. Richard J. Butler, Paul Upchurch, and David B. Norman. *Journal of Systematic Paleontology* 6 (2008): 1-40. 
 
-3.
+3. “Locomotion in Ornithischian Dinosaurs: an assessment using three-dimensional computational modelling”. S. C. R. Maidment et al. *Biological Reviews* 89 (2014): 588-617.
 
 4.
