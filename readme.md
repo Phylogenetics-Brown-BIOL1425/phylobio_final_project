@@ -49,6 +49,9 @@ If I did these analyses again, I would...
 ## References
 
 1. “Duckbills on the Run: The Cursorial Abilities of Hadrosaurs and Implications for Tyrannosaur-Avoidance Strategies”. W. Scott Persons IV and Philip J. Currie. *Hadrosaurs*. 2014.
+
 2.
+
 3.
+
 4.
