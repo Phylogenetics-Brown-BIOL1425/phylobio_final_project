@@ -54,4 +54,4 @@ If I did these analyses again, I would...
 
 3. “Locomotion in Ornithischian Dinosaurs: an assessment using three-dimensional computational modelling”. S. C. R. Maidment et al. *Biological Reviews* 89 (2014): 588-617.
 
-4.
+4. “Caudofemoral Musculature and the Evolution of Theropod Locomotion”. Stephen M. Gatesy. *Paleobiology* 16 (1990): 170-186.
