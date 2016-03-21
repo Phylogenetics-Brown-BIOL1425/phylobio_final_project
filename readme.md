@@ -1,34 +1,16 @@
 # Phylogenetic Biology - Final Project
+___
+# **Phylogenetic Reconstruction of the Evolution of Protein B** 
 
-## Guidelines - you can delete this section before submission
-
-This repository is a stub for your final project. Fork it, develop your project, and submit it as a pull request. Edit/ delete the text in this readme as needed.
-
-Some guidelines and tips:
-
-- Use the stubs below to write up your final project. Alternatively, if you would like the writeup to be an executable document (with [knitr](http://yihui.name/knitr/), [jupytr](http://jupyter.org/), or other tools), you can create it as a separate file and put a link to it here in the readme.
-
-- For information on formatting text files with markdown, see https://guides.github.com/features/mastering-markdown/ . You can use markdown to include images in this document by linking to files in the repository, eg `![GitHub Logo](/images/logo.png)`.
-
-- The project must be entirely reproducible. In addition to the results, the repository must include all the data (or links to data) and code needed to reproduce the results.
-
-- If you are working with unpublished data that you would prefer not to publicly share at this time, please contact me to discuss options. In most cases, the data can be anonymized in a way that putting them in a public repo does not compromise your other goals.
-
-- Paste references (including urls) into the reference section, and cite them with the general format (Smith at al. 2003).
-
-- Commit and push often as you work.
-
-OK, here we go.
-
-# Title of my project
+###Project done in collaboration with Chitan Modi and Isaiah Bryant from the Weinreich lab. 
 
 ## Introduction and Goals
 
-The goal of my project is to answer the question, What is...?
+Our project seeks to study evolutionary relationships among different families Proteins B and their relationship to their sister of family A. Studies of Protein B suggests 4 major classes of protein B (B-a, B-b, B-c, B-d). Each one of these classes has distinctive and characteristic catalitic chemistry. However they are all descendants from Protein A. This projects seeks to resolve the origin of each class of protein B with the respect to proteins A. In other words, what and when particular classes of protein A gave rise to each class of protein B. Understading the evolution of protein B is important as this protein has applications in medicine and health.  
+   
+We will generate phylogenetic reconstructions using Both ML and Bayesian reconstructions using thousands of amino acid sequences from proteins A and B. We will also map Physicochemical traits of the proteins on the tree to gain a greater understading of functional evolution. 
 
-The methods I will use to do this are...
-
-The data I will use are (my own data/ data publicly available at YYY/ simulations)
+The amino acid data will be obtained from the MEROPS data base, an online data base for pepdidases maintained by the wellcome trust sanger institute. 
 
 ## Methods
 
