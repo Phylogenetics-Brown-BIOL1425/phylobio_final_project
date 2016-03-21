@@ -2,7 +2,7 @@
 ___
 # **Phylogenetic Reconstruction of the Evolution of Protein B** 
 
-###Project done in collaboration with Chitan Modi and Isaiah Bryant from the Weinreich lab. 
+**Project done in collaboration with** *Chitan Modi* and *Isaiah Bryant* from the *Weinreich lab*. 
 
 ## Introduction and Goals
 
