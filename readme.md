@@ -8,7 +8,7 @@ ___
 
 Our project seeks to study evolutionary relationships among different families Proteins B and their relationship to their sister of family A. Studies of Protein B suggests 4 major classes of protein B (B-a, B-b, B-c, B-d). Each one of these classes has distinctive and characteristic catalitic chemistry. However they are all descendants from Protein A. This projects seeks to resolve the origin of each class of protein B with the respect to proteins A. In other words, what and when particular classes of protein A gave rise to each class of protein B. Understading the evolution of protein B is important as this protein has applications in medicine and health.  
    
-We will generate phylogenetic reconstructions using Both ML and Bayesian reconstructions using thousands of amino acid sequences from proteins A and B. We will also map Physicochemical traits of the proteins on the tree to gain a greater understading of functional evolution. 
+We will generate phylogenetic reconstructions using Both ML and Bayesian approaches using thousands of amino acid sequences from proteins A and B. We will also map Physicochemical traits of the proteins on the tree to gain a greater understading of functional evolution. 
 
 The amino acid data will be obtained from the MEROPS data base, an online data base for pepdidases maintained by the wellcome trust sanger institute. 
 
