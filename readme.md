@@ -10,7 +10,7 @@ Our project seeks to study evolutionary relationships among different families P
    
 We will generate phylogenetic reconstructions using Both ML and Bayesian approaches using thousands of amino acid sequences from proteins A and B. We will also map Physicochemical traits of the proteins on the tree to gain a greater understading of functional evolution. 
 
-The amino acid data will be obtained from the MEROPS data base, an online data base for pepdidases maintained by the wellcome trust sanger institute. 
+The amino acid data will be obtained from the MEROPS data base (Rawlings et al. 2016), an online data base for pepdidases maintained by the wellcome trust sanger institute. 
 
 ## Methods
 
@@ -30,4 +30,4 @@ If I did these analyses again, I would...
 
 ## References
 
-
+Rawlings, N.D., Barrett, A.J. & Finn, R.D. (2016) Twenty years of the MEROPS database of proteolytic enzymes, their substrates and inhibitors. Nucleic Acids Res 44, D343-D350.
