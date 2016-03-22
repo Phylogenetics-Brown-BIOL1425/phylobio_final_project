@@ -20,15 +20,18 @@ Some guidelines and tips:
 
 OK, here we go.
 
-# Title of my project
+Constructing a Gene Tree for the Protein Responsible for Light Detection in Cephalopod Chromatophores
 
 ## Introduction and Goals
 
 The goal of my project is to answer the question, What is...?
+The gene trees for the rhodopsin and retinochrome used in cephalopod skin to better utilize their color changing abilities to handle their environments.
 
 The methods I will use to do this are...
+Sequence alignment, Tree optimization, 
 
 The data I will use are (my own data/ data publicly available at YYY/ simulations)
+Publically available at NCBI
 
 ## Methods
 
