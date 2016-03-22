@@ -53,7 +53,7 @@ From these data sources, I plan to:
 
 The tools I used were... See analysis files at (links to analysis files).
 
-I will use RAxML and RevBayes to build 18S gene trees, identifying later a consensus tree between them. I will use non parametric bootstrap values and bayesian posteriors as measures of clade support under each heuristic search method. 
+I will use RAxML and RevBayes to build 18S ML and Bayesian gene trees under a GTR+Gamma DNA evolution model. I will use non parametric bootstrap values and bayesian posteriors as measures of clade support under each heuristic search method. 
 I will use the R packages ape, phytools, and phangorn.
 
 ## Results
