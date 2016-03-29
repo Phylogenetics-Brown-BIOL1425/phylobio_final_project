@@ -6,7 +6,7 @@ Aequorea coerulescens	mito
 Agalma clausi	mito
 Agalma elegans	60545006
 Agalma okeni	60544980
-Apolemia uvaria	mito
+Apolemia uvaria		mito
 Athorybia lucida	NA
 Athorybia rosacea	60545018
 Aurelia aurita	14700050
