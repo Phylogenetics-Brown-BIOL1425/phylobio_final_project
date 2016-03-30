@@ -12,9 +12,6 @@
 ###### This just defines a single model for all sites #######
 
 ### Read in sequence data for both genes
-www = getwd()
-
-setwd(www)
 
 data <- readDiscreteCharacterData("host18SMSA1Export.nex")
 
@@ -33,31 +30,32 @@ mi = 0
 ######################
 
 #### specify the GTR+G substitution model applied uniformly to all sites ###
-er_prior <- v(1,1,1,1,1,1)
-er ~ dnDirichlet(er_prior)
-moves[++mi] = mvSimplexElementScale(er,weight=3)
-
-pi_prior <- v(1,1,1,1) 
-pi ~ dnDirichlet(pi_prior)
-moves[++mi] = mvSimplexElementScale(pi,weight=2)
+#er_prior <- v(1,1,1,1,1,1)
+#er ~ dnDirichlet(er_prior)
+#moves[++mi] = mvSimplexElementScale(er,weight=3)
+#
+#pi_prior <- v(1,1,1,1) 
+#pi ~ dnDirichlet(pi_prior)
+#moves[++mi] = mvSimplexElementScale(pi,weight=2)
 
 #### create a deterministic variable for the rate matrix ####
-Q := fnGTR(er,pi) 
+#Q <- fnGTR(er,pi) 
+Q <- fnJC(4)
 
 #### monitor difference between empirical and estimated base frequencies ####
-pi_empirical <- data.getEmpiricalBaseFrequencies()
+#pi_empirical <- data.getEmpiricalBaseFrequencies()
 # pi_diff := pi_empirical - pi
 
 #############################
 # Among Site Rate Variation #
 #############################
 
-alpha_prior <- 0.05
-alpha ~ dnExponential( alpha_prior )
-gamma_rates := fnDiscretizeGamma(alpha, alpha, 4, false)
+#alpha_prior <- 0.10
+#alpha ~ dnExponential( alpha_prior )
+#gamma_rates := fnDiscretizeGamma( alpha, alpha, 4, false )
 
 # add moves the shape parameter
-moves[++mi] = mvScale(alpha, weight=2)
+#moves[++mi] = mvScale(alpha,weight=2)
 
 
 ##############
@@ -101,35 +99,33 @@ seq.clamp(data)
 # THE Model #
 #############
 
+
+
 # We define our model.
 # We can use any node of our model as a handle, here we chose to use the rate matrix.
 mymodel = model(Q)
-
 
 monitors[1] = mnModel(filename="output/host18S_bayesian1.log",printgen=10, separator = TAB)
 monitors[2] = mnFile(filename="output/host18S_bayesian1.trees",printgen=10, separator = TAB, phylogeny)
 monitors[3] = mnScreen(printgen=1000, TL)
 
-mymcmc = mcmc(model=mymodel, monitors=monitors, moves=moves, nruns=2)
-###Notice that nruns = 2 is the reason why the output produces 2 trees.
-###Normally you want to do 4. This is expensive tho
+mymcmc = mcmc(mymodel, monitors, moves, nruns=2)
 
-mymcmc.burnin(generations=10000,tuningInterval=1000)
-mymcmc.run(generations=35000)
-
-
+# So that we can view the burnin, we will skip it here and apply it at mapTree.
+# mymcmc.burnin(generations=10000,tuningInterval=1000)
+mymcmc.run(generations=40000)
 
 # Now, we will analyze the tree output.
 # Let us start by reading in the tree trace
-treetrace1 = readTreeTrace("host18S_bayesian1_run1.trees", treetype="non-clock")
-treetrace2 = readTreeTrace("host18S_bayesian1_run2.trees", treetype="non-clock")
+treetrace1 = readTreeTrace("output/host18S_bayesian1_run_1.trees", treetype="non-clock")
+treetrace2 = readTreeTrace("output/host18S_bayesian1_run_2.trees", treetype="non-clock")
 # and get the summary of the tree trace
 #treetrace.summarize()
 
-map_tree = mapTree(treetrace1,"host18S_bayesian1.tree")
-map_tree = mapTree(treetrace2,"host18S_bayesian1.tree")
+map_tree = mapTree(treetrace1,"output/host18S_bayesian1_run_1.tree")
+map_tree = mapTree(treetrace2,"output/host18S_bayesian1_run_2.tree")
 
 # you may want to quit RevBayes now
-# q()
+q()
 
 	

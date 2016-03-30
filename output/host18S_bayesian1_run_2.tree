@@ -1,0 +1,61 @@
+#NEXUS
+
+	Begin taxa;
+	Dimensions ntax=50;
+	Taxlabels
+		Aegina_rosea
+		Agalma_elegans
+		Agalma_okeni
+		Athorybia_rosacea
+		Aurelia_aurita
+		Beroe_forskalii
+		Beroe_ovata
+		Bolinopsis_sp
+		Cavolinia_sp
+		Cestum_veneris
+		Chelophyes_appendiculata
+		Clytia_hemisphaerica
+		Collozoum_inerme
+		Cyclosalpa_affinis
+		Cyclosalpa_polae
+		Deiopea_kaloktenota
+		Diphyes_dispar
+		Eirene_pyramidalis
+		Forskalia_edwardsi
+		Forskalia_tholoides
+		Geryonia_proboscidalis
+		Hippopodius_hippopus
+		Hormiphora_sp
+		Iasis_cylindrica
+		Iasis_zonaria
+		Lampea_pancerina
+		Leuckartiara_octona
+		Leucothea_multicornis
+		Liriope_tetraphylla
+		Mnemiopsis_leidyi
+		Nanomia_bijuga
+		Nectadamas_diomedeae
+		Pandea_sp
+		Pegea_bicaudata
+		Pegea_confoederata
+		Pelagia_noctiluca
+		Physophora_hydrostatica
+		Pyrosoma_atlanticum
+		Resomia_ornicephala
+		Rhizophysa_filiformis
+		Ritteriella_retracta
+		Salpa_aspera
+		Salpa_fusiformis
+		Salpa_maxima
+		Solmissus_sp
+		Sphaeronectes_gracilis
+		Sphaerozoum_punctatum
+		Sulculeolaria_quadrivalvis
+		Thalia_democratica
+		Thetys_vagina
+		;
+End;
+
+Begin trees;
+tree TREE1 = [&R]((((((((((((((Salpa_fusiformis[&index=49,posterior=1.000000,ccp=1.000000]:0.000502,Salpa_maxima[&index=48,posterior=1.000000,ccp=1.000000]:0.000586)[&index=50,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.002174,0.004823}]:0.002933,Salpa_aspera[&index=47,posterior=1.000000,ccp=1.000000]:0.006458)[&index=51,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.01394,0.016299}]:0.012739,Ritteriella_retracta[&index=46,posterior=1.000000,ccp=1.000000]:0.012075)[&index=52,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.002555,0.008263}]:0.005530,(Cyclosalpa_affinis[&index=45,posterior=1.000000,ccp=1.000000]:0.004875,Cyclosalpa_polae[&index=44,posterior=1.000000,ccp=1.000000]:0.006311)[&index=53,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.014196,0.018008}]:0.014595)[&index=54,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.007301,0.01105}]:0.008208,Iasis_cylindrica[&index=43,posterior=1.000000,ccp=1.000000]:0.010825)[&index=55,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.007696,0.012796}]:0.009720,Thalia_democratica[&index=42,posterior=1.000000,ccp=1.000000]:0.037435)[&index=56,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.016924,0.026889}]:0.021307,((Pegea_bicaudata[&index=41,posterior=1.000000,ccp=1.000000]:0.001088,Pegea_confoederata[&index=40,posterior=1.000000,ccp=1.000000]:0.026177)[&index=57,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.038783,0.046129}]:0.037339,Thetys_vagina[&index=39,posterior=1.000000,ccp=1.000000]:0.031262)[&index=58,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.006784,0.019141}]:0.011874)[&index=59,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.020503,0.022782}]:0.017238,Iasis_zonaria[&index=38,posterior=1.000000,ccp=1.000000]:0.056344)[&index=60,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.014872,0.024725}]:0.019261,Pyrosoma_atlanticum[&index=37,posterior=1.000000,ccp=1.000000]:0.039873)[&index=61,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.045517,0.062919}]:0.052378,Cavolinia_sp[&index=36,posterior=1.000000,ccp=1.000000]:0.116139)[&index=62,posterior=1.000000,ccp=0.912898,height_95%_HPD={0.089369,0.109399}]:0.098033,((((((((Cestum_veneris[&index=35,posterior=1.000000,ccp=1.000000]:0.001631,Leucothea_multicornis[&index=34,posterior=1.000000,ccp=1.000000]:0.001099)[&index=63,posterior=0.997667,ccp=0.997645,height_95%_HPD={0.000351,0.002065}]:0.001369,Deiopea_kaloktenota[&index=33,posterior=1.000000,ccp=0.997645]:0.000549)[&index=64,posterior=0.990670,ccp=0.990648,height_95%_HPD={0.000776,0.002038}]:0.001038,Bolinopsis_sp[&index=32,posterior=1.000000,ccp=0.990648]:0.001826)[&index=65,posterior=0.997667,ccp=0.997667,height_95%_HPD={0.000369,0.003103}]:0.001843,Mnemiopsis_leidyi[&index=31,posterior=1.000000,ccp=0.997667]:0.001763)[&index=66,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.003078,0.005554}]:0.003729,(Beroe_forskalii[&index=30,posterior=1.000000,ccp=1.000000]:0.002122,Beroe_ovata[&index=29,posterior=1.000000,ccp=1.000000]:0.004437)[&index=67,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.009444,0.013127}]:0.009812)[&index=68,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.004763,0.00792}]:0.005139,Lampea_pancerina[&index=28,posterior=1.000000,ccp=1.000000]:0.017203)[&index=69,posterior=0.926358,ccp=0.926358,height_95%_HPD={0.010342,0.013162}]:0.009375,Hormiphora_sp[&index=27,posterior=1.000000,ccp=0.926358]:0.018331)[&index=70,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.068694,0.0776}]:0.061259,(Collozoum_inerme[&index=26,posterior=1.000000,ccp=1.000000]:0.030609,Sphaerozoum_punctatum[&index=25,posterior=1.000000,ccp=1.000000]:0.081027)[&index=71,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.260298,0.289738}]:0.268750)[&index=72,posterior=0.908031,ccp=0.912898,height_95%_HPD={0.025082,0.039279}]:0.030271)[&index=73,posterior=0.994668,ccp=1.000000,height_95%_HPD={0.014097,0.023865}]:0.016758,(Aurelia_aurita[&index=24,posterior=1.000000,ccp=1.000000]:0.015295,Pelagia_noctiluca[&index=23,posterior=1.000000,ccp=1.000000]:0.020197)[&index=74,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.029239,0.032848}]:0.027319)[&index=75,posterior=0.994668,ccp=0.994668,height_95%_HPD={0.015779,0.028834}]:0.022754,(((((((((Agalma_okeni[&index=22,posterior=1.000000,ccp=1.000000]:0.001064,Athorybia_rosacea[&index=21,posterior=1.000000,ccp=1.000000]:0.000825)[&index=76,posterior=0.345551,ccp=0.345551,height_95%_HPD={4.5e-05,0.001391}]:0.000623,Agalma_elegans[&index=20,posterior=1.000000,ccp=0.345551]:0.000975)[&index=77,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.001787,0.003864}]:0.002227,Nanomia_bijuga[&index=19,posterior=1.000000,ccp=1.000000]:0.003193)[&index=78,posterior=0.980340,ccp=0.514805,height_95%_HPD={0.001118,0.00286}]:0.001612,((Forskalia_edwardsi[&index=18,posterior=1.000000,ccp=1.000000]:0.002348,Forskalia_tholoides[&index=17,posterior=1.000000,ccp=1.000000]:0.008094)[&index=79,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.001282,0.005229}]:0.002869,Resomia_ornicephala[&index=16,posterior=1.000000,ccp=1.000000]:0.002262)[&index=80,posterior=0.520160,ccp=0.514805,height_95%_HPD={0.000179,0.002017}]:0.000842)[&index=81,posterior=0.990337,ccp=0.990288,height_95%_HPD={0.001162,0.003428}]:0.001864,Physophora_hydrostatica[&index=15,posterior=1.000000,ccp=0.990288]:0.003811)[&index=82,posterior=0.995002,ccp=0.995002,height_95%_HPD={0.001433,0.0036}]:0.001842,(((((Chelophyes_appendiculata[&index=14,posterior=1.000000,ccp=1.000000]:0.000576,Diphyes_dispar[&index=13,posterior=1.000000,ccp=1.000000]:0.000623)[&index=83,posterior=0.335555,ccp=0.335555,height_95%_HPD={0.000206,0.001191}]:0.000626,Sulculeolaria_quadrivalvis[&index=12,posterior=1.000000,ccp=0.335555]:0.003127)[&index=84,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.00249,0.003574}]:0.001874,Sphaeronectes_gracilis[&index=11,posterior=1.000000,ccp=1.000000]:0.002303)[&index=85,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.004083,0.005729}]:0.004102,Hippopodius_hippopus[&index=10,posterior=1.000000,ccp=1.000000]:0.002413)[&index=86,posterior=0.456514,ccp=0.456514,height_95%_HPD={0.000918,0.002501}]:0.001291,Nectadamas_diomedeae[&index=9,posterior=1.000000,ccp=0.456514]:0.002582)[&index=87,posterior=1.000000,ccp=0.995002,height_95%_HPD={0.002923,0.005689}]:0.003608)[&index=88,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.005916,0.010566}]:0.007919,Rhizophysa_filiformis[&index=8,posterior=1.000000,ccp=1.000000]:0.011564)[&index=89,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.005771,0.011628}]:0.006882,(Clytia_hemisphaerica[&index=7,posterior=1.000000,ccp=1.000000]:0.048449,Eirene_pyramidalis[&index=6,posterior=1.000000,ccp=1.000000]:0.032677)[&index=90,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.027429,0.057964}]:0.050906)[&index=91,posterior=0.444518,ccp=0.446901,height_95%_HPD={0.001735,0.006536}]:0.003510,(Leuckartiara_octona[&index=5,posterior=1.000000,ccp=1.000000]:0.004293,Pandea_sp[&index=4,posterior=1.000000,ccp=1.000000]:0.002977)[&index=92,posterior=1.000000,ccp=0.446901,height_95%_HPD={0.001783,0.009177}]:0.006960)[&index=93,posterior=0.994668,ccp=0.994668,height_95%_HPD={0.005493,0.011401}]:0.009567)[&index=94,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.010886,0.011472}]:0.007623,(Aegina_rosea[&index=3,posterior=1.000000,ccp=1.000000]:0.034733,Solmissus_sp[&index=2,posterior=1.000000,ccp=1.000000]:0.024730)[&index=95,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.010894,0.017816}]:0.013992,(Geryonia_proboscidalis[&index=1,posterior=1.000000,ccp=1.000000]:0.001810,Liriope_tetraphylla[&index=0,posterior=1.000000,ccp=1.000000]:0.001698)[&index=96,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.009841,0.015888}]:0.012556)[&index=97,posterior=1.000000,ccp=1.000000,height_95%_HPD={-1,nan}]:0.000000;
+End;
