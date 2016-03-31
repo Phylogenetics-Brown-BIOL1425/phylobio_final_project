@@ -1,4 +1,3 @@
-moves[++mi] = mvSimplexElementScale(pi,weight=2)
 #### create a deterministic variable for the rate matrix ####
 Q <- fnGTR(er,pi) 
 alpha_prior <- 0.05

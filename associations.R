@@ -15,22 +15,34 @@ prunedmatrix = assmatrix[which(assmatrix$amphipod %in% treespp2013),]
 prunedass = as.matrix(ass[which(ass$amphipod %in% treespp2013),])
 heatmap(as.matrix(prunedmatrix[,2:94]), col=c("white", "orange"), Rowv=NA, Colv=NA)
 
-#load the tree
+#load the host tree
 library(ape)
 library(phytools)
 library(ggtree)
-JC = read.nexus(file="output/host18S_bayesian1_run_1.tree")
+
+#JukesCantor Bayesian
+JC = read.nexus(file="output/JC/host18S_bayesian1_run_1.tree")
 plot(JC)
 nodelabels()
 JC = reroot(JC, 78)
 plot(JC)
-JC$tip.label = str_replace_all(JC$tip.label,'_',' ')
-sharedspp = as.vector(prunedass[,2][which(prunedass[,2] %in% JC$tip.label)])
+TREE = JC
+
+#GTR+Gamma Maximum Likelihood
+ML = read.tree("RAxML/RAxML_bipartitions.18ShostML_boot100")
+plot(ML)
+nodelabels()
+ML = reroot(ML, 78)
+plot(ML)
+TREE = ML
+
+TREE$tip.label = str_replace_all(TREE$tip.label,'_',' ')
+sharedspp = as.vector(prunedass[,2][which(prunedass[,2] %in% TREE$tip.label)])
 
 #prune the tree
-nodatatipnames = JC$tip.label[which(!(JC$tip.label %in% sharedspp))]
-nodatatips = c(1:length(JC$tip.label))[which(JC$tip.label %in% nodatatipnames)]
-prunedtree = drop.tip(JC, nodatatips)
+nodatatipnames = TREE$tip.label[which(!(TREE$tip.label %in% sharedspp))]
+nodatatips = c(1:length(TREE$tip.label))[which(TREE$tip.label %in% nodatatipnames)]
+prunedtree = drop.tip(TREE, nodatatips)
 prunedtree$tip.label
 plot(prunedtree)
 ultram = chronos(prunedtree)
@@ -42,7 +54,6 @@ prunedass[,2] = as.matrix(str_replace_all(prunedass[,2],'conica','sp.'))
 reprunedass = as.matrix(prunedass[which(prunedass[,2] %in% ultram$tip.label),])
 reprunedass = reprunedass[match(ultram$tip.label, reprunedass[,2]),]
 reprunedassmatrix = as.matrix(dcast(as.data.frame(reprunedass), amphipod~host, length))
-xy = reprunedassmatrix
 reprunedassmatrix = reprunedassmatrix[,2:16]
 class(reprunedassmatrix) <- "numeric"
 rownames(reprunedassmatrix) = dcast(as.data.frame(reprunedass), amphipod~host, length)[,1]
@@ -50,7 +61,7 @@ heatmap(reprunedassmatrix[,2:9], col=c("white", "orange"), Rowv=NA, Colv=NA)
 
 #define association network
 g <- graph_from_edgelist(as.matrix(ass))
-g <- graph_from_edgelist(prunedass)
+#g <- graph_from_edgelist(prunedass)
 g <- graph_from_edgelist(as.matrix(reprunedass))
 
 #group vertex color, label color, and vertex location by type
@@ -75,11 +86,13 @@ tkplot.center(a)
 #plot phylogentic displays
 ggtree(ultram, layout="circular") + geom_tiplab(aes(angle=angle), color='blue')
 labeled = ultram
-labeled$edge.length = labeled$edge.length * 10
+labeled$edge.length = labeled$edge.length * 100
 dd = data.frame(taxa  = labeled$tip.label, amphipod = reprunedass[,1])
 p = ggtree(labeled, layout="rectangular") + xlim(NA, 23)
 p = p %<+% dd + geom_tiplab(aes(color=amphipod), show_guide = FALSE, size = 3.5) + geom_tippoint(aes(color=amphipod), alpha=0.25)
 p+theme(legend.position="right") + guides(color=guide_legend(title="Amphipod", reverse=T)) 
 
-yx = ggtree(ultram) + geom_tiplab(color='blue')
-gheatmap(yx, reprunedassmatrix)
+map = t(reprunedassmatrix)
+#class(map) <- "string"
+yx = ggtree(labeled) + geom_tiplab(color='black', size = 3) + geom_treescale(x=2008, y=1)
+gheatmap(yx, map[,3:5], low="white", high="black", offset = 2, width=0.5)
