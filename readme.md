@@ -74,6 +74,9 @@ I will use the R packages ape, phytools, and phangorn.
 
 ![Figure 6. Complete association network for hyperiid amphipods and their described gelatinous hosts from the literature review.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/PS/ALLSPP.svg)
 
+![Figure 7. Pruned association network for hyperiid amphipods and their described gelatinous hosts species included in both the available phylogenies.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/PS/prunedspp.png)
+
+![Figure 8. Distribution of amphipod species among the gelatinous host phylogeny.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/ggtreeJC_byParasite.png)
 
 
 The tree in Figure 1...
