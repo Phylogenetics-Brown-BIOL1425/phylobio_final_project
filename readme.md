@@ -63,20 +63,28 @@ I will use the R packages ape, phytools, and phangorn.
 
 
 ![Figure 1. Host species 18S maximum parsimony best tree using SPR method in Mesquite. Rooted on ctenophora-non_ctenophora.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/MP_SPR.png) 
+Figure 1. Host species 18S maximum parsimony best tree using SPR method in Mesquite. Rooted on ctenophora-non_ctenophora.
 
 ![Figure 2. Host species 18S bayesian maximum likelihood best tree under a Jukes-Cantor DNA evolution model. Nodes labeled with bayesian posteriors.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/JC_posteriors.png)
+Figure 2. Host species 18S bayesian maximum likelihood best tree under a Jukes-Cantor DNA evolution model. Nodes labeled with bayesian posteriors.
 
 ![Figure 3. Host species 18S bayesian maximum likelihood best tree under a GTR+Gamma DNA evolution model. Nodes labeled with bayesian posteriors.]()
+Figure 3. Host species 18S bayesian maximum likelihood best tree under a GTR+Gamma DNA evolution model. Nodes labeled with bayesian posteriors.
 
 ![Figure 4. Host species 18S RAxML maximum likelihood tree under a GTR+Gamma DNA evolution model. 100 non-parametric bootstrap replicates generated. Nodel labeled with bootstrap support values.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/RAxML_Bootstraps.png)
+Figure 4. Host species 18S RAxML maximum likelihood tree under a GTR+Gamma DNA evolution model. 100 non-parametric bootstrap replicates generated. Nodel labeled with bootstrap support values.
 
 ![Figure 5. Hyperiid amphipod tree from Hurt & Haddock 2013. ML GTR+Gamma from concatenated gene matrix with 18S, 16S, 28S, and COI. Nodes labeled with bootstrap support values.]()
+Figure 5. Hyperiid amphipod tree from Hurt & Haddock 2013. ML GTR+Gamma from concatenated gene matrix with 18S, 16S, 28S, and COI. Nodes labeled with bootstrap support values.
 
-![Figure 6. Complete association network for hyperiid amphipods and their described gelatinous hosts from the literature review.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/PS/ALLSPP.svg)
+![Figure 6. Complete association network for hyperiid amphipods and their described gelatinous hosts from the literature review.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/PS/ALLSPP.png)
+Figure 6. Complete association network for hyperiid amphipods and their described gelatinous hosts from the literature review.
 
 ![Figure 7. Pruned association network for hyperiid amphipods and their described gelatinous hosts species included in both the available phylogenies.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/PS/prunedspp.png)
+Figure 7. Pruned association network for hyperiid amphipods and their described gelatinous hosts species included in both the available phylogenies.
 
 ![Figure 8. Distribution of amphipod species among the gelatinous host phylogeny.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/ggtreeJC_byParasite.png)
+Figure 8. Distribution of amphipod species among the gelatinous host phylogeny.
 
 
 The tree in Figure 1...
