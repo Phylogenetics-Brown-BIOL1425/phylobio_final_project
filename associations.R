@@ -86,11 +86,12 @@ tkplot.center(a)
 #plot phylogentic displays
 ggtree(ultram, layout="circular") + geom_tiplab(aes(angle=angle), color='blue')
 labeled = ultram
-labeled$edge.length = labeled$edge.length * 100
+labeled$edge.length = labeled$edge.length * 10
 dd = data.frame(taxa  = labeled$tip.label, amphipod = reprunedass[,1])
 p = ggtree(labeled, layout="rectangular") + xlim(NA, 23)
 p = p %<+% dd + geom_tiplab(aes(color=amphipod), show_guide = FALSE, size = 3.5) + geom_tippoint(aes(color=amphipod), alpha=0.25)
 p+theme(legend.position="right") + guides(color=guide_legend(title="Amphipod", reverse=T)) 
+#phylopic(p, "a838b707-229c-4ced-bf94-e6b10d242162.1024.png", color = "blue", alpha = 0.3)
 
 map = t(reprunedassmatrix)
 #class(map) <- "string"
