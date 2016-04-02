@@ -68,7 +68,7 @@ Figure 1. Host species 18S maximum parsimony best tree using SPR method in Mesqu
 ![Figure 2. Host species 18S bayesian maximum likelihood best tree under a Jukes-Cantor DNA evolution model. Nodes labeled with bayesian posteriors.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/JC_posteriors.png)
 Figure 2. Host species 18S bayesian maximum likelihood best tree under a Jukes-Cantor DNA evolution model. Nodes labeled with bayesian posteriors.
 
-![Figure 3. Host species 18S bayesian maximum likelihood best tree under a GTR+Gamma DNA evolution model. Nodes labeled with bayesian posteriors.]()
+![Figure 3. Host species 18S bayesian maximum likelihood best tree under a GTR+Gamma DNA evolution model. Nodes labeled with bayesian posteriors.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/Bayesian_GTRg_tree.png)
 Figure 3. Host species 18S bayesian maximum likelihood best tree under a GTR+Gamma DNA evolution model. Nodes labeled with bayesian posteriors.
 
 ![Figure 4. Host species 18S RAxML maximum likelihood tree under a GTR+Gamma DNA evolution model. 100 non-parametric bootstrap replicates generated. Nodel labeled with bootstrap support values.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/RAxML_Bootstraps.png)

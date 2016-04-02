@@ -1,7 +1,9 @@
 ################################################################################
 #
-# GTR + Gamma, ADS
-# March 30, 2016
+# 
+# GTR + Gamma, ADS (JCBN debug)
+# MArch 30, 2016
+#
 #
 ################################################################################
 
@@ -9,7 +11,9 @@
 # Reading in the Data #
 #######################
 
-### Read in sequence data
+###### This just defines a single model for all sites #######
+
+### Read in sequence data for both genes
 
 data <- readDiscreteCharacterData("host18SMSA1Export.nex")
 
@@ -21,6 +25,8 @@ n_branches <- 2 * n_species - 3
 # set my move index
 mi = 0
 
+
+
 ######################
 # Substitution Model #
 ######################
@@ -28,7 +34,6 @@ mi = 0
 #### specify the GTR+G substitution model applied uniformly to all sites ###
 er_prior <- v(1,1,1,1,1,1)
 er ~ dnDirichlet(er_prior)
-er := er
 moves[++mi] = mvSimplexElementScale(er,weight=3)
 
 pi_prior <- v(1,1,1,1) 
@@ -36,23 +41,25 @@ pi ~ dnDirichlet(pi_prior)
 moves[++mi] = mvSimplexElementScale(pi,weight=2)
 
 #### create a deterministic variable for the rate matrix ####
-Q <- fnGTR(er,pi) 
+Q := fnGTR(er,pi) 
 
 #### monitor difference between empirical and estimated base frequencies ####
 #pi_empirical <- data.getEmpiricalBaseFrequencies()
-#pi_diff := pi_empirical - pi
+# pi_diff := pi_empirical - pi
+
+
 
 #############################
 # Among Site Rate Variation #
 #############################
 
-alpha_prior <- 0.10
+alpha_prior <- 0.05
 alpha ~ dnExponential( alpha_prior )
-alpha := alpha
 gamma_rates := fnDiscretizeGamma( alpha, alpha, 4, false )
 
 # add moves the shape parameter
 moves[++mi] = mvScale(alpha,weight=2)
+
 
 
 ##############
@@ -60,7 +67,7 @@ moves[++mi] = mvScale(alpha,weight=2)
 ##############
 
 # construct a variable for the tree drawn from a birth death process
-topology ~ dnUniformTopology(taxa)
+topology ~ dnUniformTopology(taxa=taxa)
 
 # add topology Metropolis-Hastings moves
 moves[++mi] = mvNNI(topology, weight=1.0)
@@ -85,7 +92,7 @@ phylogeny := treeAssembly(topology, br_lens)
 ###################
 
 # the sequence evolution model
-seq ~ dnPhyloCTMC(tree=phylogeny, Q=Q, type="DNA")
+seq ~ dnPhyloCTMC(tree=phylogeny, Q=Q, siteRates=gamma_rates, type="DNA")
 
 # attach the data
 seq.clamp(data)
@@ -96,11 +103,10 @@ seq.clamp(data)
 # THE Model #
 #############
 
-
-
 # We define our model.
 # We can use any node of our model as a handle, here we chose to use the rate matrix.
 mymodel = model(Q)
+
 
 monitors[1] = mnModel(filename="output/host18S_bayesian2.log",printgen=10, separator = TAB)
 monitors[2] = mnFile(filename="output/host18S_bayesian2.trees",printgen=10, separator = TAB, phylogeny)
@@ -112,17 +118,17 @@ mymcmc = mcmc(mymodel, monitors, moves, nruns=2)
 # mymcmc.burnin(generations=10000,tuningInterval=1000)
 mymcmc.run(generations=40000)
 
+
 # Now, we will analyze the tree output.
 # Let us start by reading in the tree trace
 treetrace1 = readTreeTrace("output/host18S_bayesian2_run_1.trees", treetype="non-clock")
-treetrace2 = readTreeTrace("output/host18S_bayesian2_run_2.trees", treetype="non-clock")
+treetrace2 = readTreeTrace("output/host18S_bayesian2_run_1.trees", treetype="non-clock")
 # and get the summary of the tree trace
-#treetrace.summarize()
+#treetrace1.summarize()
 
-map_tree = mapTree(treetrace1,"output/host18S_bayesian2_run_1.tree")
-map_tree = mapTree(treetrace2,"output/host18S_bayesian2_run_2.tree")
+map_tree1 = mapTree(treetrace1,"output/host18S_bayesian2_run_1.tree", burnin=1000)
+map_tree2 = mapTree(treetrace2,"output/host18S_bayesian2_run_2.tree", burnin=1000)
 
 # you may want to quit RevBayes now
 q()
 
-	

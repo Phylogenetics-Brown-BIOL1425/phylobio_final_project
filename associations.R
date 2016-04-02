@@ -36,10 +36,19 @@ ML = reroot(ML, 78)
 plot(ML)
 TREE = ML
 
+#GTR+Gamma Bayesian
+BG = read.nexus("output/host18S_bayesian2_run_1.tree")
+plot(BG)
+nodelabels()
+BG = reroot(BG, 75)
+plot(BG)
+TREE = BG
+
+#prune the tree
+library(stringr)
 TREE$tip.label = str_replace_all(TREE$tip.label,'_',' ')
 sharedspp = as.vector(prunedass[,2][which(prunedass[,2] %in% TREE$tip.label)])
 
-#prune the tree
 nodatatipnames = TREE$tip.label[which(!(TREE$tip.label %in% sharedspp))]
 nodatatips = c(1:length(TREE$tip.label))[which(TREE$tip.label %in% nodatatipnames)]
 prunedtree = drop.tip(TREE, nodatatips)
@@ -49,7 +58,6 @@ ultram = chronos(prunedtree)
 plot(ultram)
 
 #reprune the matrix
-library(stringr)
 prunedass[,2] = as.matrix(str_replace_all(prunedass[,2],'conica','sp.'))
 reprunedass = as.matrix(prunedass[which(prunedass[,2] %in% ultram$tip.label),])
 reprunedass = reprunedass[match(ultram$tip.label, reprunedass[,2]),]
