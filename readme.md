@@ -91,7 +91,7 @@ Figure 7. Pruned association network for hyperiid amphipods and their described 
 Figure 8. Distribution of amphipod species among the gelatinous host phylogeny.
 
 
-![Figure 8](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/annotatted_tree.png)
+![Figure 8](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/annotated_tree.png)
 Figure 8. Host 18S Jukes-Cantor bayesian tree (best deep topology) from Figure 2 with main clades collapsed and aligned with a picture of a representative association. Photographs by Steven Haddock and Jeff Molder.
 
 
