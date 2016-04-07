@@ -57,9 +57,9 @@ To build the host 18S phylogeny, I used RAxML with a GTR+Gamma DNA evolution mod
 
 raxml -T 8 -m GTRGAMMA -n 18ShostML_boot100 -s host18SMSA1Export.phy -p 12345 -f a -x 12345
 
- and RevBayes (link to 18SGTRg.Rev). 
+ and [RevBayes](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/18S_GTRg.Rev) (see model specifications in the link). 
 
-I will use non parametric bootstrap values and bayesian posteriors as measures of clade support under each heuristic search method.
+I used non parametric bootstrap values for ML trees and bayesian posteriors for bayesian trees as measures of clade support.
 
 I will use the R packages ape, phytools, and phangorn.
 
@@ -90,15 +90,18 @@ Figure 7. Pruned association network for hyperiid amphipods and their described 
 ![Figure 8. Distribution of amphipod species among the gelatinous host phylogeny.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/ggtreeJC_byParasite.png)
 Figure 8. Distribution of amphipod species among the gelatinous host phylogeny.
 
-
-![Figure 8](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/annotated_tree.png)
-Figure 8. Host 18S Jukes-Cantor bayesian tree (best deep topology) from Figure 2 with main clades collapsed and aligned with a picture of a representative association. Photographs by Steven Haddock and Jeff Molder.
+![Figure 9](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/annotated_tree.png)
+Figure 9. Host 18S Jukes-Cantor bayesian tree (best deep topology) from Figure 2 with main clades collapsed and aligned with a picture of a representative association. Photographs by Steven Haddock and Jeff Molder.
 
 
 The tree in Figure 1...
 
 Host 18S gene tree:
 Radiolarians appear as sister group to bilaterians in MP analysis and all GTR+Gamma tree searches (ML and Bayesian). JC bayesian tree is the only one that retrieves radiolarians as an outgroup of metazoa.
+
+Bayesian GTR+Gamma tree shows good convergence in 2 independent MCMC runs (Posterior ESS: 790, Likelihood ESS: 689).
+
+
 
 ## Discussion
 
