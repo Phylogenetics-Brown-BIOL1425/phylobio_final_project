@@ -38,7 +38,8 @@ Trim Parameters are as Follows:
 | S12.A28 |  5 |  5 | 50 | 6 | All |     300     |     25     | 
 
 ###Unix Portion
-```
+
+```{sh}
 #Script 1 - Data wrangling in Unix
 
 #Deposit all Fasta files obtained from MEROPS in a single folder
