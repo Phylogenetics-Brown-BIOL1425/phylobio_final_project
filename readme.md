@@ -16,7 +16,7 @@ The amino acid data will be obtained from the MEROPS data base (Rawlings et al. 
 
 Sequences from Proteins A and B were downloaded from MEROPS (https://merops.sanger.ac.uk/cgi-bin/family_index?type=P#S). Multiple sequence alignments (MSA) were performed in PROMALIS3D (http://prodata.swmed.edu/promals3d/promals3d.php). Protein identities were anonymized using an R script (Scripts 1 and 2). Nexus files were generated using mesquite (https://github.com/MesquiteProject/MesquiteCore). Phylogenetic reconstructions were constructed using bayesian inference in RevBayes (version of March 2016; http://revbayes.github.io). MSAs were filtered using GBlocks (http://molevol.cmima.csic.es/castresana/Gblocks.html) using parameters as defined in Table 1.
 
-**Table 1: Parameters using for GBlock MSA filtering: 1. Minimum Number Of Sequences For A Conserved Position, 2. Minimum Number Of Sequences For A Flank Position, 3. Maximum Number Of Contiguous Nonconserved Positions, 4. Minimum Length Of A Block, 5. Allowed Gap Positions**
+**Table 1:** *Parameters using for GBlock MSA filtering: 1. Minimum Number Of Sequences For A Conserved Position, 2. Minimum Number Of Sequences For A Flank Position, 3. Maximum Number Of Contiguous Nonconserved Positions, 4. Minimum Length Of A Block, 5. Allowed Gap Positions.*
 
 |  Family |  1 |  2 |  3 | 4 |  5  | Blocks Kept | %Filtering |
 |:-------:|:--:|:--:|:--:|:-:|:---:|:-----------:|:----------:|
