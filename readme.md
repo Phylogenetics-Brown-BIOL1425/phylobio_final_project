@@ -23,6 +23,7 @@ Trim Parameters are as Follows:
 3. Maximum Number Of Contiguous Nonconserved Positions:  
 4. Minimum Length Of A Block:
 5. Allowed Gap Positions:
+
 |  Family |  1 |  2 |  3 | 4 |  5  | Blocks Kept | %Filtering |
 |:-------:|:--:|:--:|:--:|:-:|:---:|:-----------:|:----------:|
 | S11.001 | 36 | 36 | 10 | 6 | All |     388     |     19     |
