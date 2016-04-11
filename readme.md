@@ -51,13 +51,43 @@ From these data sources, I plan to:
 
 ## Methods
 
-See analysis files at (links to analysis files).
+Host 18S fasta sequences were retrieved from NCBI Entrez.
+
+The following taxa were included (and pruned out a posteriori) to increase the robustness of the analysis and reduce the effect of long branch attraction:
+
+###Outgroup:
+Euglena intermedia
+
+###Ingroups:
+Rhizarians:
+Globigerina bulloides
+Spumellarian radiolarian (unidentified)
+
+Choanoflagellates:
+Salpingoeca rosetta
+Sphaeroeca leprechaunica
+
+Sponges:
+Hippospongia lachne
+Suberites ficus
+
+Placozoan:
+Trichoplax sp.
+
+Other protostomes:
+Maja brachydactyla
+Helix aspersa
+
+Other deuterostome:
+Asterias forbesi
+
+The MSA alignment was carried out using MAFFT (Method: L-INS-i, no additonal parameters).
 
 To build the host 18S phylogeny, I used RAxML with a GTR+Gamma DNA evolution model and 100 non-parametric bootstrap replicates:
 
 raxml -T 8 -m GTRGAMMA -n 18ShostML_boot100 -s host18SMSA1Export.phy -p 12345 -f a -x 12345
 
- and [RevBayes](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/18S_GTRg.Rev) (see model specifications in the link). 
+ and [RevBayes](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/ExtendedHosts/18S_GTRg.Rev) (see model specifications in the link). 
 
 I used non parametric bootstrap values for ML trees and bayesian posteriors for bayesian trees as measures of clade support.
 

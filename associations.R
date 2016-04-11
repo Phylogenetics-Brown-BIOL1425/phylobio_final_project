@@ -1,27 +1,30 @@
 ##Hyperiid-Host Associations
+library(stringr)
+library(ape)
+library(phytools)
+library(ggtree)
+library(reshape2)
+library(igraph)
+library(picante)
+
 setwd("~/Documents/0BIOL_Phylogenetics/phylobio_final_project")
 ass = unique(read.table("Associations.csv", sep = '\t', header = T)[,c(1,2)])
 amphipods = sort(as.vector(unique(ass$amphipod)))
 hosts = sort(as.vector(unique(ass$host)))
-library(reshape2)
+
 assmatrix = dcast(ass, amphipod~host, length)
 rownames(assmatrix) = assmatrix[,1]
 heatmap(as.matrix(assmatrix[,2:94]), col=c("white", "orange"), Rowv=NA, Colv=NA)
-library(igraph)
+
 
 #prune the matrix according to amphipod spp available in 2013 phylogeny
-treespp2013 = as.vector(read.table("Hurt2013spp.txt", sep = ",")[,1])
+treespp2013 = as.vector(read.table("Amphipods/Hurt2013spp.txt", sep = ",")[,1])
 prunedmatrix = assmatrix[which(assmatrix$amphipod %in% treespp2013),]
 prunedass = as.matrix(ass[which(ass$amphipod %in% treespp2013),])
 heatmap(as.matrix(prunedmatrix[,2:94]), col=c("white", "orange"), Rowv=NA, Colv=NA)
 
-#load the host tree
-library(ape)
-library(phytools)
-library(ggtree)
-
 #JukesCantor Bayesian
-JC = read.nexus(file="output/JC/host18S_bayesian1_run_1.tree")
+JC = read.nexus(file="FirstHostRound/output/JC/host18S_bayesian1_run_1.tree")
 plot(JC)
 nodelabels()
 JC = reroot(JC, 78)
@@ -29,7 +32,7 @@ plot(JC)
 TREE = JC
 
 #GTR+Gamma Maximum Likelihood
-ML = read.tree("RAxML/RAxML_bipartitions.18ShostML_boot100")
+ML = read.tree("FirstHostRound/RAxML/RAxML_bipartitions.18ShostML_boot100")
 plot(ML)
 nodelabels()
 ML = reroot(ML, 78)
@@ -37,7 +40,7 @@ plot(ML)
 TREE = ML
 
 #GTR+Gamma Bayesian
-BG = read.nexus("output/host18S_bayesian2_run_1.tree")
+BG = read.nexus("FirstHostRound/output/host18S_bayesian2_run_1.tree")
 plot(BG)
 nodelabels()
 BG = reroot(BG, 75)
@@ -45,7 +48,6 @@ plot(BG)
 TREE = BG
 
 #prune the tree
-library(stringr)
 TREE$tip.label = str_replace_all(TREE$tip.label,'_',' ')
 sharedspp = as.vector(prunedass[,2][which(prunedass[,2] %in% TREE$tip.label)])
 
@@ -105,3 +107,9 @@ map = t(reprunedassmatrix)
 #class(map) <- "string"
 yx = ggtree(labeled) + geom_tiplab(color='black', size = 3) + geom_treescale(x=2008, y=1)
 gheatmap(yx, map[,3:5], low="white", high="black", offset = 2, width=0.5)
+
+#Try picante tools
+comm = t(reprunedassmatrix)
+
+
+
