@@ -16,12 +16,13 @@ assmatrix = dcast(ass, amphipod~host, length)
 rownames(assmatrix) = assmatrix[,1]
 heatmap(as.matrix(assmatrix[,2:94]), col=c("white", "orange"), Rowv=NA, Colv=NA)
 
-
-#prune the matrix according to amphipod spp available in 2013 phylogeny
-treespp2013 = as.vector(read.table("Amphipods/Hurt2013spp.txt", sep = ",")[,1])
-prunedmatrix = assmatrix[which(assmatrix$amphipod %in% treespp2013),]
-prunedass = as.matrix(ass[which(ass$amphipod %in% treespp2013),])
-heatmap(as.matrix(prunedmatrix[,2:94]), col=c("white", "orange"), Rowv=NA, Colv=NA)
+#Load amphipod tree Maximum Likelihood
+amphipodML = read.tree("Amphipods/RAxML/RAxML_bipartitions.amphipodsCOI_MSAML_boot100")
+amphipodML = drop.tip(amphipodML, which(amphipodML$tip.label == "Cyathura_sp." | amphipodML$tip.label == "Idotea_sp."))
+plot(amphipodML)
+nodelabels()
+amphipodML=reroot(amphipodML, 52)
+plot(amphipodML)
 
 hostree = read.nexus("FirstHostRound/output/host18S_bayesian2_run_1.tree")
 hostree$tip.label
@@ -48,8 +49,18 @@ TREE = hostML
 
 #prune the tree
 TREE$tip.label = str_replace_all(TREE$tip.label,'_',' ')
+amphipodML$tip.label = str_replace_all(amphipodML$tip.label,'_',' ')
+
+#prune the matrix according to amphipod spp available in 2013 phylogeny
+treespp2013 = amphipodML$tip.label
+prunedmatrix = assmatrix[which(assmatrix$amphipod %in% treespp2013),]
+prunedass = as.matrix(ass[which(ass$amphipod %in% treespp2013),])
+heatmap(as.matrix(prunedmatrix[,2:94]), col=c("white", "orange"), Rowv=NA, Colv=NA)
+
+#Get species shared with the hosts
 sharedspp = as.vector(prunedass[,2][which(prunedass[,2] %in% TREE$tip.label)])
 
+#prune the tree with the shared species in association data and host tree
 nodatatipnames = TREE$tip.label[which(!(TREE$tip.label %in% sharedspp))]
 nodatatips = c(1:length(TREE$tip.label))[which(TREE$tip.label %in% nodatatipnames)]
 prunedtree = drop.tip(TREE, nodatatips)
