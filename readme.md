@@ -85,7 +85,7 @@ The MSA alignment was carried out using MAFFT (Method: L-INS-i, no additonal par
 
 To build the host 18S phylogeny, I used RAxML with a GTR+Gamma DNA evolution model and 100 non-parametric bootstrap replicates:
 
-raxml -T 8 -m GTRGAMMA -n 18ShostML_boot100 -s host18SMSA1Export.phy -p 12345 -f a -x 12345
+raxml -T 8 -m GTRGAMMA -n EXThostML_boot100 -s host_ext_MSA.phy -p 12345 -f a -x 12345 -N 100
 
  and [RevBayes](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/ExtendedHosts/18S_GTRg.Rev) (see model specifications in the link). 
 

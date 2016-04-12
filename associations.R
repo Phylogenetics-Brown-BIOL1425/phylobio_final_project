@@ -23,29 +23,28 @@ prunedmatrix = assmatrix[which(assmatrix$amphipod %in% treespp2013),]
 prunedass = as.matrix(ass[which(ass$amphipod %in% treespp2013),])
 heatmap(as.matrix(prunedmatrix[,2:94]), col=c("white", "orange"), Rowv=NA, Colv=NA)
 
-#JukesCantor Bayesian
-JC = read.nexus(file="FirstHostRound/output/JC/host18S_bayesian1_run_1.tree")
-plot(JC)
+hostree = read.nexus("FirstHostRound/output/host18S_bayesian2_run_1.tree")
+hostree$tip.label
+
+#Bayesian GTR+Gamma tree
+extreeBAYES = read.nexus("ExtendedHosts/output/host_ext_MSA_bayesian_run_1.tree")
+badtips = which(!(extreeBAYES$tip.label %in% hostree$tip.label))
+hostBayes = drop.tip(extreeBAYES, badtips)
+plot(hostBayes)
 nodelabels()
-JC = reroot(JC, 78)
-plot(JC)
-TREE = JC
+hostBayes = reroot(hostBayes, 80)
+plot(hostBayes)
+TREE = hostBayes
 
 #GTR+Gamma Maximum Likelihood
-ML = read.tree("FirstHostRound/RAxML/RAxML_bipartitions.18ShostML_boot100")
-plot(ML)
+MLext = read.tree("ExtendedHosts/RAxML/RAxML_bipartitions.EXThostML_boot100")
+badtips = which(!(MLext$tip.label %in% hostree$tip.label))
+hostML = drop.tip(MLext, badtips)
+plot(hostML)
 nodelabels()
-ML = reroot(ML, 78)
-plot(ML)
-TREE = ML
-
-#GTR+Gamma Bayesian
-BG = read.nexus("FirstHostRound/output/host18S_bayesian2_run_1.tree")
-plot(BG)
-nodelabels()
-BG = reroot(BG, 75)
-plot(BG)
-TREE = BG
+hostML = reroot(hostML, 85)
+plot(hostML)
+TREE = hostML
 
 #prune the tree
 TREE$tip.label = str_replace_all(TREE$tip.label,'_',' ')
