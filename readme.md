@@ -57,4 +57,26 @@ If I did these analyses again, I would...
 
 4. “Caudofemoral Musculature and the Evolution of Theropod Locomotion”. Stephen M. Gatesy. *Paleobiology* 16 (1990): 170-186.
 
-5. Brusatte and Carr (2016).
+5. "The Phylogeny and Evolutionary History of Tyrannosauroid dinosaurs". Stephen L. Brusatte and Thomas D. Carr. *Scientific Reports* (2016)
+
+6. Nesbitt et al. (2009) - A Complete Skeleton of a Late Triassic Saurischian and the Early Evolution of Dinosaurs. 
+
+7. Carrano and Sampson (2008) - The Phylogeny of Ceratosauria (Dinosauria: Theropoda) 
+
+8. Benson, Carrano, and Brusatte (2010) - A new clade of archaic large-bodied predatory dinosaurs (Theropoda: Allosauroidea) that survived to the latest Mesozoic 
+
+9. Hendrickx and Mateus (2014) - Torvosaurus gurneyi n. sp., the Largest Terrestrial Predator from Europe, and a Proposed Terminology of the Maxilla Anatomy in Nonavian Theropods
+
+10. Martinez et al. (2011) - A Basal Dinosaur from the Dawn of the Dinosaur Era in Southwestern Pangaea
+
+11. Senter et al. (2012) -  New Dromaeosaurids (Dinosauria: Theropoda) from the Lower Cretaceous of Utah, and the Evolution of the Dromaeosaurid Tail
+
+12. McDonald et al. (2010) - New Basal Iguanodonts from the Cedar Mountain Formation of Utah and the Evolution of Thumb-Spiked Dinosaurs
+
+13. McDonald et al. (2012) - Phylogeny of Basal Iguanodonts (Dinosauria: Ornithischia): An Update
+
+14. Brown et al. (2013) - New data on the diversity and abundance of small-bodied ornithopods (Dinosauria, Ornithischia) from the Belly River Group (Campanian) of Alberta
+
+15. Marquez and Wagner (2013) - A new species of saurolophine hadrosaurid dinosaur from the Late Cretaceous of the Pacific coast of North America
+
+16. Carrano and Hutchinson (2002) - Pelvic and Hindlimb Musculature of Tyrannosaurus rex (Dinosauria:Theropoda)
