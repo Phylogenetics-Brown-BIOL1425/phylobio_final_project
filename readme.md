@@ -13,6 +13,11 @@ Part 2, tiled "Phylogenetic Reconstruction of the Evolution of Protein B" seeks 
 
 ## Introduction and Goals
 
+![Figure 1](https://rawgit.com/Jcbnunez/phylobio_final_project/master/model_system.png "Figure 3 2016 Gene Trees")
+
+
+![Figure 2](https://rawgit.com/Jcbnunez/phylobio_final_project/master/cline_network_phylo.png "Figure 3 2016 Gene Trees")
+
 ## Methods
 
 ## Results
