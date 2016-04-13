@@ -28,14 +28,14 @@ The 4th trochanter is a prominent bony process found on the femur of archosaurs,
 
 We plan to demonstrate that the distinctive 4th trochanter morphology in Ornithischian dinosaurs represents a difference in their locomotor strategy relative to other dinosaur clades; the position of their 4th trochanter should be little affected by body size. We will first construct a composite phylogeny of the 68 dinosaur taxa for which we have body mass and 4th trochanter position data. This tree will be derived from published analyses of dinosaur phylogeny. We plan to utilize phylogenetic regression to prove that body size is poorly correlated with 4th trochanter position in dinosaurs, and that phlyogenetic affinity is a far better predictor of its location.
 
-Finally, we will try to investigate two important questions: A) where does the characteristic 4th trochanter morphology first appear in Dinosauria? and B) does the morphology of the 4th trochanter show any sensitivity to body mass, as would be expected in a group of masses ranging 4 orders of magnitude?
+Finally, we will try to investigate two important questions: A) where does the characteristic 4th trochanter morphology first appear in Dinosauria? and B) does the morphology of the 4th trochanter show any sensitivity to body mass, as would be expected in a group of animals with masses ranging 4 orders of magnitude?
 
 
 ## Methods
 
-Data regarding 4th trochanter position and body mass were collected for 68 taxa; 23 Saurischian dinosaurs, 44 Ornithischian dinosaurs, and 1 non-dinosaur Dinosauromorph (included as an outgroup). Because a quadrupedal stance necessarily requires different muscle architecture, and because many quadrupedal dinosaurs evolved to gargantuan size, we worried that quadrupedal taxa would be difficult to rigorously compare to bipedal taxa. Since this study was prompted by anatomy of bipedal or facultatively bipedal Ornithopod dinosaurs, we elected to exclude all obligate quadrupeds from the dataset. 
+Data regarding 4th trochanter position and body mass were collected for 68 taxa; 23 Saurischian dinosaurs, 44 Ornithischian dinosaurs, and 1 non-dinosaur Dinosauromorph (included as the outgroup). Because a quadrupedal stance necessarily requires different muscle architecture, and because many quadrupedal dinosaurs evolved to gargantuan size, we worried that quadrupedal taxa would be difficult to rigorously compare to bipedal taxa. Since this study was prompted by the anatomy of bipedal or facultatively bipedal Ornithopod dinosaurs, we elected to exclude all obligate quadrupeds from the dataset. 
 
-After initial data collection, we compiled a phylogenetic tree of only the taxa for which we had collected data; we based our tree on published trees, which were mostly in agreement. When a taxon's placement differed between trees, we gave preference to the more recent tree. 
+After initial data collection, we compiled a phylogenetic tree of only the taxa for which we had collected data. We based our tree on published trees, which were mostly in agreement. When a taxon's placement differed between trees, we gave preference to the more recently obtained tree. 
 
 ## Results
 
