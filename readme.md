@@ -1,6 +1,26 @@
 # Phylogenetic Biology - Final Project
 ___
-# **Phylogenetic Reconstruction of the Evolution of Protein B** 
+
+# General introduction 
+
+The primary goal of these projects is to apply the knowledge and tools acquired in phylogenetic biology to problems in ecology and evolution. This project has 2 parts, both centered in the use of three topology for inferring evolutionary relationship among and between taxa, these parts differ in the scale of evolutionary relationship of interest and the type of information used for the inference. 
+
+Part 1, titled "phylogenetic reconstruction of demographic structure in admixed populations", uses phylogenetic methods to unravel demographic signals in a complete chromosome compared to individual genes within the chromosome. This part looks at short evolutionary scales and its primarily intersted in the topology leading to the population members as the tips of the phylogeny. DNA sequences were used for this part of the project, and at its core, it is comparison of "chromosomal/concatenated locus trees" vs. "gene trees".     
+
+Part 2, tiled "Phylogenetic Reconstruction of the Evolution of Protein B" seeks to reconstruct the evolutionary history of two putatively sister taxa of protein (A and B). This project looks at long evolutionary times and thus it is interested in investigating the topology and potential branch length leading to the different protein families (tips). Due to long divergence, nucleotide level signal is highly convoluted, thus, I will use protein level sequences. 
+
+#Part 1: **"Phylogenetic reconstruction of demographic structure in admixed populations"**
+
+## Introduction and Goals
+
+## Methods
+
+## Results
+
+## Discussion
+
+
+#Part 2: **"Phylogenetic Reconstruction of the Evolution of Protein B"** 
 
 **Project done in collaboration with** *Chitan Modi* and *Isaiah Bryant* from the *Weinreich lab*. 
 
@@ -14,7 +34,7 @@ The amino acid data will be obtained from the MEROPS data base (Rawlings et al. 
 
 ## Methods
 
-Sequences from Proteins A and B were downloaded from MEROPS (https://merops.sanger.ac.uk/cgi-bin/family_index?type=P#S). Multiple sequence alignments (MSA) were performed in PROMALIS3D (http://prodata.swmed.edu/promals3d/promals3d.php). Protein identities were anonymized using an R script (Scripts 1 and 2). Nexus files were generated using mesquite (https://github.com/MesquiteProject/MesquiteCore). Phylogenetic reconstructions were constructed using bayesian inference in RevBayes (version of March 2016; http://revbayes.github.io). MSAs were filtered using GBlocks (http://molevol.cmima.csic.es/castresana/Gblocks.html) using parameters as defined in Table 1.
+Sequences from Proteins A and B were downloaded from MEROPS (https://merops.sanger.ac.uk/cgi-bin/family_index?type=P#S). Multiple sequence alignments (MSA) were performed in PROMALIS3D (http://prodata.swmed.edu/promals3d/promals3d.php). Protein identities were anonymized using an R script (Scripts 1 and 2; provided in the supplement). Nexus files were generated using mesquite (https://github.com/MesquiteProject/MesquiteCore). Phylogenetic reconstructions were constructed using bayesian inference in RevBayes (version of March 2016; http://revbayes.github.io). MSAs were filtered using GBlocks (http://molevol.cmima.csic.es/castresana/Gblocks.html) using parameters as defined in Table 1.
 
 **Table 1:** *Parameters using for GBlock MSA filtering: 1. Minimum Number Of Sequences For A Conserved Position, 2. Minimum Number Of Sequences For A Flank Position, 3. Maximum Number Of Contiguous Nonconserved Positions, 4. Minimum Length Of A Block, 5. Allowed Gap Positions.*
 
@@ -29,7 +49,26 @@ Sequences from Proteins A and B were downloaded from MEROPS (https://merops.sang
 | S12.A23 | 27 | 27 | 40 | 6 | All |     235     |     37     |
 | S12.A28 |  5 |  5 | 50 | 6 | All |     300     |     25     | 
 
-###Unix Portion
+
+## Results
+
+The tree in Figure 1...
+
+## Discussion
+
+These results indicate...
+
+The biggest difficulty in implementing these analyses was...
+
+If I did these analyses again, I would...
+
+## References
+
+Rawlings, N.D., Barrett, A.J. & Finn, R.D. (2016) Twenty years of the MEROPS database of proteolytic enzymes, their substrates and inhibitors. Nucleic Acids Res 44, D343-D350.
+
+## Supplement 
+
+###Unix Code
 
 ```{sh}
 #Script 1 - Data wrangling in Unix
@@ -56,7 +95,8 @@ for i in "${files[@]}"
 do paste -d "\t" <(awk 'NR%2==1' $i) <(awk 'NR%2==0' $i) > ../2_Linearized_Fastas/$i.linerized.txt
 done
 ```
-###R Portion
+###R Code
+
 ```{r, eval=FALSE}
 #Script 2 - Annomizing Data in R
 
@@ -84,19 +124,3 @@ DF$V1 = paste(args[1],1:nrow(DF), sep = "_")
 write.table(DF, file = args[2], col.names = F, row.names = F, quote = F )
 
 ```
-
-## Results
-
-The tree in Figure 1...
-
-## Discussion
-
-These results indicate...
-
-The biggest difficulty in implementing these analyses was...
-
-If I did these analyses again, I would...
-
-## References
-
-Rawlings, N.D., Barrett, A.J. & Finn, R.D. (2016) Twenty years of the MEROPS database of proteolytic enzymes, their substrates and inhibitors. Nucleic Acids Res 44, D343-D350.
