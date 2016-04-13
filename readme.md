@@ -33,7 +33,7 @@ Finally, we will try to investigate two important questions: A) where does the c
 
 ## Methods
 
-The tools I used were... See analysis files at (links to analysis files).
+Data regarding 4th trochanter position and body mass were collected for 68 taxa; 23 Saurischian dinosaurs, 44 Ornithischian dinosaurs, and 1 extant crocodilian (included as an outgroup). Because a quadrupedal stance necessarily requires different muscle architecture, and because many quadrupedal dinosaurs evolved to gargantuan size, we worried that quadrupedal taxa would be difficult to rigorously compare to bipedal taxa. Since this study was prompted by anatomy of bipedal or facultatively bipedal Ornithopod dinosaurs, we elected to exclude all obligate quadrupeds from the dataset. 
 
 ## Results
 
@@ -79,4 +79,10 @@ If I did these analyses again, I would...
 
 15. “A new species of Saurolophine Hadrosaurid dinosaur from the Late Cretaceous of the Pacific coast of North America”. Marquez and Wagner (2013).
 
-16. “Pelvic and Hindlimb Musculature of Tyrannosaurus rex (Dinosauria:Theropoda)”. Carrano and Hutchinson (2002).
+16. "A new ornithopod (Dinosauria, Ornithischia) from the Upper Cretaceous of Antarctica an its palaeobiogeographical implications". Rozadilla et al. (2015).
+
+17. "A New Leptoceratopsid (Ornithischia, Ceratopsia) with a Unique Ischium from the Upper Cretaceous of Shandong Province, China". He et al. (2015)
+
+18. “Pelvic and Hindlimb Musculature of Tyrannosaurus rex (Dinosauria:Theropoda)”. Carrano and Hutchinson (2002).
+
+19. "Dinosaurian Precursors from the Middle Triassic of Argentina: Marasuchus lilloensis, gen. nov.". Sereno and Arcucci (1994). 
