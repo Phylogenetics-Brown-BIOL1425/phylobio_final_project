@@ -33,7 +33,9 @@ Finally, we will try to investigate two important questions: A) where does the c
 
 ## Methods
 
-Data regarding 4th trochanter position and body mass were collected for 68 taxa; 23 Saurischian dinosaurs, 44 Ornithischian dinosaurs, and 1 extant crocodilian (included as an outgroup). Because a quadrupedal stance necessarily requires different muscle architecture, and because many quadrupedal dinosaurs evolved to gargantuan size, we worried that quadrupedal taxa would be difficult to rigorously compare to bipedal taxa. Since this study was prompted by anatomy of bipedal or facultatively bipedal Ornithopod dinosaurs, we elected to exclude all obligate quadrupeds from the dataset. 
+Data regarding 4th trochanter position and body mass were collected for 68 taxa; 23 Saurischian dinosaurs, 44 Ornithischian dinosaurs, and 1 non-dinosaur Dinosauromorph (included as an outgroup). Because a quadrupedal stance necessarily requires different muscle architecture, and because many quadrupedal dinosaurs evolved to gargantuan size, we worried that quadrupedal taxa would be difficult to rigorously compare to bipedal taxa. Since this study was prompted by anatomy of bipedal or facultatively bipedal Ornithopod dinosaurs, we elected to exclude all obligate quadrupeds from the dataset. 
+
+After initial data collection, we compiled a phylogenetic tree of only the taxa for which we had collected data; we based our tree on published trees, which were mostly in agreement. When a taxon's placement differed between trees, we gave preference to the more recent tree. 
 
 ## Results
 
