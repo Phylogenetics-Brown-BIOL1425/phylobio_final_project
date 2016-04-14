@@ -418,7 +418,7 @@ map_tree2 = mapTree(treetrace2,"output/chrm2x_run_2.tree", burnin=1000)
 # terminate rb or rb-mpi
 q()
 ```
-##Amino Acid Run
+####Amino Acid Run
 
 ```{r, eval = F}
 ################################################################################
