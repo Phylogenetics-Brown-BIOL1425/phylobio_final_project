@@ -30,6 +30,7 @@ This project will utilize phylogenetic reconstruction methods to unravel the dem
 *Figure 2:* a maximun parsimony haplotype network with individuals from all populations and the outgroup.  
 
 ## Methods
+Data for this project corresponds to real anonymized sequencing data from various populations of *your favorite marine organism.* Sequencing data was assembles to high coverage and mapping quality standards to a reference sequence of chromosome K available in NCBI. Data was anonymized using scripts 1 and 2 (see supplement). Monomorphic and singleton (parsimony non-informative) locus were filtered using TASSEL 5 (http://www.maizegenetics.net/#!tassel/c17q9).   
 
 ## Results
 
@@ -111,6 +112,18 @@ for i in "${files[@]}"
 do paste -d "\t" <(awk 'NR%2==1' $i) <(awk 'NR%2==0' $i) > ../2_Linearized_Fastas/$i.linerized.txt
 done
 ```
+
+```{sh, eval - F}
+#Script 3 - Reconstructing Fasta files from Anonymized files
+
+files=(*.out.txt) #change to the output of files from Script 2 
+for i in "${files[@]}"
+# depending on input the ">" may not be needed
+awk '{print ">"$1"\n"$2 }' $i > $i.fasta
+done
+
+```
+
 ###R Code
 
 ```{r, eval=FALSE}
@@ -374,8 +387,8 @@ seq.clamp(data)
 mymodel = model(Q)
 
 #Create monitors:
-monitors[1] = mnModel(filename="output/chrm4x_GTR_Gamma.log",printgen=10, separator = TAB)
-monitors[2] = mnFile(filename="output/chrm4x_GTR_Gamma.trees",printgen=10, separator = TAB, phylogeny)
+monitors[1] = mnModel(filename="output/chrm2x_GTR_Gamma.log",printgen=10, separator = TAB)
+monitors[2] = mnFile(filename="output/chrm2x_GTR_Gamma.trees",printgen=10, separator = TAB, phylogeny)
 monitors[3] = mnScreen(printgen=1000, TL)
 
 # the mcmc algorithm will run with 4 chains for 100,000 generations
