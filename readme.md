@@ -92,7 +92,7 @@ Rawlings, N.D., Barrett, A.J. & Finn, R.D. (2016) Twenty years of the MEROPS dat
 ```{sh}
 #Script 1 - Data wrangling in Unix
 
-#Deposit all Fasta files obtained from MEROPS in a single folder
+#Deposit all Fasta files obtained from MEROPS/NCBI/Sequencing in a single folder
 # cd to folder containing Fasta sequences
 #make sequences one line
 mkdir ./1_continious_FASTAs
@@ -285,7 +285,7 @@ map_tree2 = mapTree(treetrace2,"output/chrm4x_run_2.tree", burnin=1000)
 map_tree3 = mapTree(treetrace3,”output/chrm4x_run_3.tree", burnin=1000)
 map_tree4 = mapTree(treetrace4,”output/chrm4x_run_4.tree", burnin=1000)
 
-# termina or or rb-mpi
+# terminate rb or rb-mpi
 q()
 ```
 
