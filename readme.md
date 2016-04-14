@@ -419,3 +419,110 @@ map_tree2 = mapTree(treetrace2,"output/chrm2x_run_2.tree", burnin=1000)
 q()
 ```
 
+```{r, eval = F}
+################################################################################
+#																			   #
+# 		RevBayes Script for CTMC phylogetic recpnstruction of AA data 		   #
+#																			   #
+################################################################################
+
+#######################
+# Reading in the Data #
+#######################
+
+###### This just defines a single model for all sites #######
+
+### Read in sequence data for both genes
+
+data <- readDiscreteCharacterData("AA_data.nex")
+
+# Get some useful variables from the data. We need these later on.
+n_species <- data.ntaxa()
+taxa <- data.names()
+n_branches <- 2 * n_species - 3
+
+# set my move index
+mi = 0
+
+
+
+######################
+# Substitution Model #
+######################
+
+#### specify the Jukes-Cantor substitution model applied uniformly to all sites ###
+Q <- fnWAG() 
+
+
+
+##############
+# Tree model #
+##############
+
+# construct a variable for the tree drawn from a birth death process
+topology ~ dnUniformTopology(taxa)
+
+# add topology Metropolis-Hastings moves
+moves[++mi] = mvNNI(topology, weight=1.0)
+moves[++mi] = mvSPR(topology, weight=1.0)
+
+# create branch length vector and add moves
+for (i in 1:n_branches) {
+   br_lens[i] ~ dnExponential(10.0)
+   moves[++mi] = mvScale(br_lens[i])
+}
+
+# add deterministic node to monitor tree length
+TL := sum(br_lens)
+
+# unite topology and branch length vector into phylogeny object
+phylogeny := treeAssembly(topology, br_lens)
+
+
+
+###################
+# PhyloCTMC Model #
+###################
+
+# the sequence evolution model
+seq ~ dnPhyloCTMC(tree=phylogeny, Q=Q, type="AA")
+
+# attach the data
+seq.clamp(data)
+
+
+
+#############
+# The Model #
+#############
+
+# We define our model.
+# We can use any node of our model as a handle, here we chose to use the rate matrix.
+mymodel = model(Q)
+
+
+monitors[1] = mnModel(filename="AA.log",printgen=10, separator = TAB)
+monitors[2] = mnFile(filename="AA.trees",printgen=10, separator = TAB, phylogeny)
+monitors[3] = mnScreen(printgen=1000, TL)
+
+mymcmc = mcmc(mymodel, monitors, moves, nruns=2)
+
+# So that we can view the burnin, we will skip it here and apply it at mapTree.
+# mymcmc.burnin(generations=10000,tuningInterval=1000)
+mymcmc.run(generations=40000)
+
+
+
+# Now, we will analyze the tree output.
+# Let us start by reading in the tree trace
+treetrace1 = readTreeTrace("AA_run_1.trees", treetype="non-clock")
+treetrace2 = readTreeTrace("AA_run_2.trees", treetype="non-clock")
+# and get the summary of the tree trace
+#treetrace.summarize()
+
+map_tree1 = mapTree(treetrace1,"AA_run_1.tree", burnin=1000)
+map_tree2 = mapTree(treetrace2,"AA_run_2.tree", burnin=1000)
+
+# quit RevBayes
+q()
+```
