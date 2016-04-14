@@ -32,7 +32,7 @@ This project will utilize phylogenetic reconstruction methods to unravel the dem
 ## Methods
 Data for this project corresponds to real anonymized sequencing data from various populations of *your favorite marine organism.* Sequencing data was assembles to high coverage and mapping quality standards to a reference sequence of chromosome K available in NCBI. Data was anonymized using scripts 1, 2, and 3 (see supplement). Monomorphic and singleton (parsimony non-informative) locus were filtered using TASSEL 5 (http://www.maizegenetics.net/#!tassel/c17q9). Nexus files were built in SEAVIEW (http://www.molecularevolution.org/software/alignment/seaview). As opposed to MESQUITE, SEAVIEW outputs revbayes ready NEXUS files.
 
-Phylogenetic reconstructions were conducted in revbayes (rb) version 1.00 (March 2016) using two types of runs: heavy and light. Heavy runs were computationally expensive with 4 independent searches and 100,000 generations. Light runs are more computationally moderate with only 2 searches and 30,000 generations. For both types of runs, searches were conducted in independent nodes of the OSCAR computer cluster using the MPI version of revbayes (rb-mpi; rb scripts are included in the supplement).    
+Phylogenetic reconstructions were conducted in revbayes (rb) version 1.00 (March 2016) using two types of runs: heavy and light. Heavy runs were computationally expensive with 4 independent searches and 100,000 generations. Light runs were computationally moderate with only 2 searches and 30,000 generations. For both types of runs, searches were conducted in independent nodes of the OSCAR computer cluster using the MPI version of revbayes (rb-mpi; rb scripts 4 and 5 are also included in the supplement).    
 
 ## Results
 
@@ -161,6 +161,7 @@ write.table(DF, file = args[2], col.names = F, row.names = F, quote = F )
 #### Heavy Run
 
 ```{r, eval = F}
+#script 4
 ####################################################################################
 #                                                                                  #
 # RevBayes Script for CTMC phylogetic recpnstruction of DNA data from Chromosome K #
@@ -292,6 +293,7 @@ q()
 #### Light Run
 
 ```{r, eval = F}
+#Script 5
 ####################################################################################
 #                                                                                  #
 # RevBayes Script for CTMC phylogetic recpnstruction of DNA data from Chromosome K #
@@ -416,3 +418,4 @@ map_tree2 = mapTree(treetrace2,"output/chrm2x_run_2.tree", burnin=1000)
 # terminate rb or rb-mpi
 q()
 ```
+
