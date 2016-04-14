@@ -140,3 +140,264 @@ DF$V1 = paste(args[1],1:nrow(DF), sep = "_")
 write.table(DF, file = args[2], col.names = F, row.names = F, quote = F )
 
 ```
+
+## RvBayes code
+
+#### Heavy Run
+
+```{r, eval = F}
+####################################################################################
+#                                                                                  #
+# RevBayes Script for CTMC phylogetic recpnstruction of DNA data from Chromosome K #
+#		This is a "heavy" run - with 4 independent runs and 100k generations	   #
+#                                                                                  #
+####################################################################################
+
+#######################
+#  Imput NEXUS file   #
+#######################
+
+data <- readDiscreteCharacterData("annon_master1line.nxs")
+
+# gather data from nexus format
+n_species <- data.ntaxa()
+taxa <- data.taxa()
+n_branches <- 2 * n_species - 3
+
+# move index
+mi = 0
+
+######################
+# Substitution Model #
+######################
+
+#### GTR+G substitution model applied uniformly to all sites ###
+er_prior <- v(1,1,1,1,1,1)
+er ~ dnDirichlet(er_prior)
+moves[++mi] = mvSimplexElementScale(er,weight=3)
+
+pi_prior <- v(1,1,1,1) 
+pi ~ dnDirichlet(pi_prior)
+moves[++mi] = mvSimplexElementScale(pi,weight=2)
+
+#### create a deterministic variable for the rate matrix ####
+# General time reversible# 
+Q := fnGTR(er,pi) 
+
+#### monitor difference between empirical and estimated base frequencies ####
+pi_empirical <- data.getEmpiricalBaseFrequencies()
+# pi_diff := pi_empirical - pi
+
+#############################
+# Among Site Rate Variation #
+#############################
+
+alpha_prior <- 0.05
+alpha ~ dnExponential( alpha_prior )
+gamma_rates := fnDiscretizeGamma( alpha, alpha, 4, false )
+
+# add moves the shape parameter
+moves[++mi] = mvScale(alpha,weight=2)
+
+
+##############
+# Tree model #
+##############
+
+# Uniform topology from a birth death process
+topology ~ dnUniformTopology(taxa=taxa)
+
+# add topology Metropolis-Hastings moves
+moves[++mi] = mvNNI(topology, weight=1.0)
+moves[++mi] = mvSPR(topology, weight=1.0)
+
+# create branch length vector and add moves
+for (i in 1:n_branches) {
+   br_lens[i] ~ dnExponential(10.0)
+   moves[++mi] = mvScale(br_lens[i])
+}
+
+# add deterministic node to monitor tree length
+TL := sum(br_lens)
+
+# unite topology and branch length vector into phylogeny object
+phylogeny := treeAssembly(topology, br_lens)
+
+
+###################
+# PhyloCTMC Model #
+###################
+
+# the sequence evolution model
+seq ~ dnPhyloCTMC(tree=phylogeny, Q=Q, siteRates=gamma_rates, type="DNA")
+
+# attach the data
+seq.clamp(data)
+
+
+##############
+# CTMC Model #
+##############
+
+#Define model as a handle:
+mymodel = model(Q)
+
+#Create monitors:
+monitors[1] = mnModel(filename="output/chrm4x_GTR_Gamma.log",printgen=10, separator = TAB)
+monitors[2] = mnFile(filename="output/chrm4x_GTR_Gamma.trees",printgen=10, separator = TAB, phylogeny)
+monitors[3] = mnScreen(printgen=1000, TL)
+
+# the mcmc algorithm will run with 4 chains for 100,000 generations
+mymcmc = mcmc(mymodel, monitors, moves, nruns=4)
+
+# For the purpose of the project I will include the burnin in the output.
+# mymcmc.burnin(generations=10000,tuningInterval=1000)
+mymcmc.run(generations=100000)
+
+
+# Analyze the tree output.
+treetrace1 = readTreeTrace("output/chrm4x_run_1.trees", treetype="non-clock")
+treetrace2 = readTreeTrace("output/chrm4x_run_2.trees", treetype="non-clock")
+treetrace3 = readTreeTrace("output/chrm4x_run_3.trees", treetype="non-clock")
+treetrace4 = readTreeTrace("output/chrm4x_run_4.trees", treetype="non-clock")
+# and get the summary of the tree trace
+#treetrace1.summarize()
+
+#Map to a consensus tree
+map_tree1 = mapTree(treetrace1,"output/chrm4x_run_1.tree", burnin=1000)
+map_tree2 = mapTree(treetrace2,"output/chrm4x_run_2.tree", burnin=1000)
+map_tree3 = mapTree(treetrace3,”output/chrm4x_run_3.tree", burnin=1000)
+map_tree4 = mapTree(treetrace4,”output/chrm4x_run_4.tree", burnin=1000)
+
+# termina or or rb-mpi
+q()
+```
+
+
+#### Light Run
+
+```{r, eval = F}
+####################################################################################
+#                                                                                  #
+# RevBayes Script for CTMC phylogetic recpnstruction of DNA data from Chromosome K #
+#		This is a "Light" run - with 4 independent runs and 100k generations	   #
+#                                                                                  #
+####################################################################################
+
+#######################
+#  Imput NEXUS file   #
+#######################
+
+data <- readDiscreteCharacterData("annon_master1line.nxs")
+
+# gather data from nexus format
+n_species <- data.ntaxa()
+taxa <- data.taxa()
+n_branches <- 2 * n_species - 3
+
+# move index
+mi = 0
+
+######################
+# Substitution Model #
+######################
+
+#### GTR+G substitution model applied uniformly to all sites ###
+er_prior <- v(1,1,1,1,1,1)
+er ~ dnDirichlet(er_prior)
+moves[++mi] = mvSimplexElementScale(er,weight=3)
+
+pi_prior <- v(1,1,1,1) 
+pi ~ dnDirichlet(pi_prior)
+moves[++mi] = mvSimplexElementScale(pi,weight=2)
+
+#### create a deterministic variable for the rate matrix ####
+# General time reversible# 
+Q := fnGTR(er,pi) 
+
+#### monitor difference between empirical and estimated base frequencies ####
+pi_empirical <- data.getEmpiricalBaseFrequencies()
+# pi_diff := pi_empirical - pi
+
+#############################
+# Among Site Rate Variation #
+#############################
+
+alpha_prior <- 0.05
+alpha ~ dnExponential( alpha_prior )
+gamma_rates := fnDiscretizeGamma( alpha, alpha, 4, false )
+
+# add moves the shape parameter
+moves[++mi] = mvScale(alpha,weight=2)
+
+
+##############
+# Tree model #
+##############
+
+# Uniform topology from a birth death process
+topology ~ dnUniformTopology(taxa=taxa)
+
+# add topology Metropolis-Hastings moves
+moves[++mi] = mvNNI(topology, weight=1.0)
+moves[++mi] = mvSPR(topology, weight=1.0)
+
+# create branch length vector and add moves
+for (i in 1:n_branches) {
+   br_lens[i] ~ dnExponential(10.0)
+   moves[++mi] = mvScale(br_lens[i])
+}
+
+# add deterministic node to monitor tree length
+TL := sum(br_lens)
+
+# unite topology and branch length vector into phylogeny object
+phylogeny := treeAssembly(topology, br_lens)
+
+
+###################
+# PhyloCTMC Model #
+###################
+
+# the sequence evolution model
+seq ~ dnPhyloCTMC(tree=phylogeny, Q=Q, siteRates=gamma_rates, type="DNA")
+
+# attach the data
+seq.clamp(data)
+
+
+##############
+# CTMC Model #
+##############
+
+#Define model as a handle:
+mymodel = model(Q)
+
+#Create monitors:
+monitors[1] = mnModel(filename="output/chrm4x_GTR_Gamma.log",printgen=10, separator = TAB)
+monitors[2] = mnFile(filename="output/chrm4x_GTR_Gamma.trees",printgen=10, separator = TAB, phylogeny)
+monitors[3] = mnScreen(printgen=1000, TL)
+
+# the mcmc algorithm will run with 4 chains for 100,000 generations
+mymcmc = mcmc(mymodel, monitors, moves, nruns=2)
+
+# For the purpose of the project I will include the burnin in the output.
+# mymcmc.burnin(generations=10000,tuningInterval=1000)
+
+mymcmc.run(generations=40000)
+
+
+# Analyze the tree output.
+treetrace1 = readTreeTrace("output/chrm2x_run_1.trees", treetype="non-clock")
+treetrace2 = readTreeTrace("output/chrm2x_run_2.trees", treetype="non-clock")
+
+# and get the summary of the tree trace
+#treetrace1.summarize()
+
+#Map to a consensus tree
+map_tree1 = mapTree(treetrace1,"output/chrm2x_run_1.tree", burnin=1000)
+map_tree2 = mapTree(treetrace2,"output/chrm2x_run_2.tree", burnin=1000)
+
+# terminate rb or rb-mpi
+q()
+```
