@@ -280,7 +280,7 @@ q()
 ####################################################################################
 #                                                                                  #
 # RevBayes Script for CTMC phylogetic recpnstruction of DNA data from Chromosome K #
-#		This is a "Light" run - with 4 independent runs and 100k generations	   #
+#		This is a "Light" run - with 2 independent runs and 40k generations	   	   #
 #                                                                                  #
 ####################################################################################
 
