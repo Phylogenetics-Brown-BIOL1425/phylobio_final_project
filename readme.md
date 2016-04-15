@@ -32,7 +32,7 @@ This project will utilize phylogenetic reconstruction methods to unravel the dem
 ## Methods
 Data for this project corresponds to real anonymized sequencing data from various populations of *your favorite marine organism.* Sequencing data was assembles to high coverage and mapping quality standards to a reference sequence of chromosome K available in NCBI. Data was anonymized using scripts 1, 2, and 3 (see supplement). Monomorphic and singleton (parsimony non-informative) locus were filtered using TASSEL 5 (http://www.maizegenetics.net/#!tassel/c17q9). Nexus files were built in SEAVIEW (http://www.molecularevolution.org/software/alignment/seaview). As opposed to MESQUITE, SEAVIEW outputs revbayes ready NEXUS files.
 
-Phylogenetic reconstructions were conducted in revbayes (rb) version 1.00 (March 2016) using two types of runs: heavy and light. Heavy runs were computationally expensive with 4 independent searches and 100,000 generations. Light runs were computationally moderate with only 2 searches and 30,000 generations. For both types of runs, searches were conducted in independent nodes of the OSCAR computer cluster using the MPI version of revbayes (rb-mpi; rb scripts 4 and 5 are also included in the supplement). A major advantage of RevBayes is its modular nature allowing phylogenetic reconstruction to be informed by different assumptions and models: rate matrix(figure 3), among site variation(figure 4), tree topology,  
+Phylogenetic reconstructions were conducted in revbayes (rb) version 1.00 (March 2016) using two types of runs: heavy and light. Heavy runs were computationally expensive with 4 independent searches and 100,000 generations. Light runs were computationally moderate with only 2 searches and 30,000 generations. For both types of runs, searches were conducted in independent nodes of the OSCAR computer cluster using the MPI version of revbayes (rb-mpi; rb scripts 4 and 5 are also included in the supplement). A major advantage of RevBayes is its modular nature allowing phylogenetic reconstruction to be informed by different assumptions and models: rate matrix(figure 3), among site variation(figure 4), tree topology (Figure 5), and the phylogenetic MCMC model (Figure 6). 
 
 #####Figure 3: Rate matrix
 ![Figure 3](https://rawgit.com/Jcbnunez/phylobio_final_project/master/rate_matrix.png "Figure 3 Rate Matrix")
@@ -40,7 +40,14 @@ ___
 
 #####Figure 4: Site Variation
 ![Figure 4](https://rawgit.com/Jcbnunez/phylobio_final_project/master/among_sites_rate.png "Figure 4 Site Variation")
+___
 
+#####Figure 5: Topology
+![Figure 5](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Phylogeny_topology.png "Figure 4 Site Variation")
+___
+
+#####Figure 6: phyloMCMC
+![Figure 5](https://rawgit.com/Jcbnunez/phylobio_final_project/master/phyloMCMC.png "Figure 4 Site Variation")
    
 
 ## Results
