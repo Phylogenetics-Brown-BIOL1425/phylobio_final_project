@@ -414,8 +414,8 @@ monitors[3] = mnScreen(printgen=1000, TL)
 # the mcmc algorithm will run with 4 chains for 100,000 generations
 mymcmc = mcmc(mymodel, monitors, moves, nruns=2)
 
-# For the purpose of the project I will include the burnin in the output.
-# mymcmc.burnin(generations=10000,tuningInterval=1000)
+# burning on!
+mymcmc.burnin(generations=10000,tuningInterval=1000)
 
 mymcmc.run(generations=40000)
 
@@ -524,8 +524,8 @@ monitors[3] = mnScreen(printgen=1000, TL)
 
 mymcmc = mcmc(mymodel, monitors, moves, nruns=2)
 
-# So that we can view the burnin, we will skip it here and apply it at mapTree.
-# mymcmc.burnin(generations=10000,tuningInterval=1000)
+# burning on!
+mymcmc.burnin(generations=10000,tuningInterval=1000)
 mymcmc.run(generations=40000)
 
 
