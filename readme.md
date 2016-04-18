@@ -20,7 +20,7 @@ Some guidelines and tips:
 
 OK, here we go.
 
-# Title of my project
+# A Paleobiogeographic Survey of the Temnospondyls
 
 ## Introduction and Goals
 
@@ -29,6 +29,11 @@ The goal of my project is to answer the question, What is...?
 The methods I will use to do this are...
 
 The data I will use are (my own data/ data publicly available at YYY/ simulations)
+
+The Temnospondyls were a highly diverse and successful order of amphibian-like tetrapods that arose during the Carboniferous. Managing to survive the devastating Permian extinction, they persisted through the Triassic but were almost entirely wiped out by the smaller Triassic-Jurassic extinction. The latest known temnospondyl species died off during the Cretaceous.
+There is controversy about the placement of Temnospondyli with regards to Amphibia. It is unclear whether temnospondyls were an ancestral group to amphibians, or whether they were an divergent group with no modern descendents. Their relationship to Lepospondyls, another extinct clade extant at the same time and suffering from the same ambiguity, is likewise confused.
+
+A seminal paper by Yates and Warren in 2000 created a phylogeny of the temnospondyls using parsimony. I plan to use the character data from this paper to create a tree using maximum likelihood methods. I further intend to apply biogeographical methods (currently, I am looking into the Ramachandran and Rosenberg paper) to analyze the geographical distribution of the represented taxa, taking into account the long geologic time scales over which the species are distributed.
 
 ## Methods
 
