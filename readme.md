@@ -105,34 +105,41 @@ ape, phytools, phangorn, adephylo, ggtree, dendextrend, picante, paco, and igrap
 
 ## Results
 
-![Figure 1. Host species 18S bayesian maximum likelihood best tree under a Jukes-Cantor DNA evolution model. Nodes labeled with bayesian posteriors.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/JC_posteriors.png)
-Figure 2. Host species 18S bayesian maximum likelihood best tree under a Jukes-Cantor DNA evolution model. Nodes labeled with bayesian posteriors.
+![Figure 1. Amphipod species 18S bayesian best tree under a GTR+Gamma DNA evolution model. Nodes labeled with bayesian posteriors.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/amphipodBayesianTre.png)
+Figure 1. Amphipod species 18S bayesian best tree under a GTR+Gamma DNA evolution model. Nodes labeled with bayesian posteriors.
 
-![Figure 3. Host species 18S bayesian maximum likelihood best tree under a GTR+Gamma DNA evolution model. Nodes labeled with bayesian posteriors.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/Bayesian_GTRg_tree.png)
-Figure 3. Host species 18S bayesian maximum likelihood best tree under a GTR+Gamma DNA evolution model. Nodes labeled with bayesian posteriors.
+![Figure 2. Host species 18S RAxML maximum likelihood tree under a GTR+Gamma DNA evolution model. 100 non-parametric bootstrap replicates generated. Nodel labeled with bootstrap support values.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/hostMLtree.png)
+Figure 2. Host species 18S RAxML maximum likelihood tree under a GTR+Gamma DNA evolution model. 100 non-parametric bootstrap replicates generated. Nodel labeled with bootstrap support values.
 
-![Figure 4. Host species 18S RAxML maximum likelihood tree under a GTR+Gamma DNA evolution model. 100 non-parametric bootstrap replicates generated. Nodel labeled with bootstrap support values.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/RAxML_Bootstraps.png)
-Figure 4. Host species 18S RAxML maximum likelihood tree under a GTR+Gamma DNA evolution model. 100 non-parametric bootstrap replicates generated. Nodel labeled with bootstrap support values.
+![Figure 3. Complete association network for hyperiid amphipods and their described gelatinous hosts from the literature review.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/PS/AllSPP.png)
+Figure 3. Complete association network for hyperiid amphipods and their described gelatinous hosts from the literature review.
 
-![Figure 5. Hyperiid amphipod tree from Hurt & Haddock 2013. ML GTR+Gamma from concatenated gene matrix with 18S, 16S, 28S, and COI. Nodes labeled with bootstrap support values.]()
-Figure 5. Hyperiid amphipod tree from Hurt & Haddock 2013. ML GTR+Gamma from concatenated gene matrix with 18S, 16S, 28S, and COI. Nodes labeled with bootstrap support values.
+![Figure 4. Pruned association network for hyperiid amphipods and their described gelatinous hosts species included in both phylogenies.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/PS/prunedspp.png)
+Figure 4. Pruned association network for hyperiid amphipods and their described gelatinous hosts species included in both phylogenies.
 
-![Figure 6. Complete association network for hyperiid amphipods and their described gelatinous hosts from the literature review.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/PS/AllSPP.png)
-Figure 6. Complete association network for hyperiid amphipods and their described gelatinous hosts from the literature review.
+![Figure 5. Distribution of host species among the amphipod phylogeny.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/amphipod_tipcol.png)
+Figure 5. Distribution of host species among the amphipod phylogeny.
 
-![Figure 7. Pruned association network for hyperiid amphipods and their described gelatinous hosts species included in both the available phylogenies.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/PS/prunedspp.png)
-Figure 7. Pruned association network for hyperiid amphipods and their described gelatinous hosts species included in both the available phylogenies.
+![Figure 6. Distribution of amphipod species among the gelatinous host phylogeny.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/host_tipcol.png)
+Figure 6. Distribution of amphipod species among the gelatinous host phylogeny.
 
-![Figure 8. Distribution of amphipod species among the gelatinous host phylogeny.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/ggtreeJC_byParasite.png)
-Figure 8. Distribution of amphipod species among the gelatinous host phylogeny.
+![Figure 7.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/annotated_tree.png)
+Figure 7. Host 18S tree with main clades collapsed and aligned with a picture of a representative association. Photographs by Steven Haddock and Jeff Molder.
 
-![Figure 9](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/annotated_tree.png)
-Figure 9. Host 18S Jukes-Cantor bayesian tree (best deep topology) from Figure 2 with main clades collapsed and aligned with a picture of a representative association. Photographs by Steven Haddock and Jeff Molder.
+![F9](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/amphipoddist)
+Figure 9. Heatmap of the pairwise distances between amphipod species computed from matrix of common habitats(hosts).
 
-![Figure 10](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/cophylogeny.png)
-Figure 10. Cophylogeny of amphipods and gelatinous hosts produced using ape::cophyloplot.
+![F10](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/hostdist)
+Figure 10. Heatmap of the pairwise distances between gelatinous host species computed from matrix of common inhabitant species (amphipods).
 
-The tree in Figure 1...
+![F11](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/amphipodMDS)
+Figure 11. Multidimensional scaling plot for amphipod distance matrix used in Figure 9.
+
+![F12](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/amphipodMDS)
+Figure 12. Multidimensional scaling plot for host distance matrix used in Figure 10.
+
+![Figure 13](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/cophylogeny.png)
+Figure 13. Cophylogeny of amphipods and gelatinous hosts produced using ape::cophyloplot.
 
 Host 18S gene tree:
 
