@@ -20,15 +20,15 @@ Some guidelines and tips:
 
 OK, here we go.
 
-# Title of my project
+# Lamiaceae Phylogeny, An Exploration
 
 ## Introduction and Goals
 
-The goal of my project is to answer the question, What is...?
+The goal of my project is to answer the question, what are the evolutionary relationships between taxa in the plant family Lamiaceae, and how are the discovered evolutionary relationships affected by the phylogenetic inferences made to analyze them.
 
 The methods I will use to do this are...
 
-The data I will use are (my own data/ data publicly available at YYY/ simulations)
+The data I will use are sequences available online from different papers on previous Lamiaceae phylogenies.
 
 ## Methods
 
