@@ -129,7 +129,7 @@ Figure 8. Distribution of amphipod species among the gelatinous host phylogeny.
 ![Figure 9](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/annotated_tree.png)
 Figure 9. Host 18S Jukes-Cantor bayesian tree (best deep topology) from Figure 2 with main clades collapsed and aligned with a picture of a representative association. Photographs by Steven Haddock and Jeff Molder.
 
-![Figure 10](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/cophylogeny.pdf)
+![Figure 10](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/cophylogeny.png)
 Figure 10. Cophylogeny of amphipods and gelatinous hosts produced using ape::cophyloplot.
 
 The tree in Figure 1...
