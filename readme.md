@@ -25,13 +25,18 @@ Constructing a Gene Tree for the Protein Responsible for Light Detection in Ceph
 ## Introduction and Goals
 
 The goal of my project is to answer the question, What is...?
-The gene trees for the rhodopsin and retinochrome used in cephalopod skin to better utilize their color changing abilities to handle their environments.
+Point at which cephalopods (or mollusks if outside of cephalopoda) make a significant move towards having functioning light detection capacitites in their skin cells.
 
 The methods I will use to do this are...
-Sequence alignment, Tree optimization, 
+Multiple sequence alignment on large numbers or mRNA sequences taken from skin and retina tissues of various cephalopods and related molluscs, as well as bayesian inference
+(revbayes) to produce consensus trees for the mRNA in question.
+I will then check the tree to see where the particular sequence suspected to correspond to a gene duplication event (from Visual phototransduction components in cephalopod chromatophores suggest dermal photoreception
+Alexandra C. N. Kingston, Alan M. Kuzirian, Roger T. Hanlon, Thomas W. Cronin) seems to occur in the tree, and see if organisms outside of the clade demarcated by this gene are capable of the sophisticated color-changing
+patterns known in many cephalopod species.
 
 The data I will use are (my own data/ data publicly available at YYY/ simulations)
-Publically available at NCBI
+Publically available at NCBI, searched via blast by comparison to a variant of the mRNA sequence in question.
+The mRNA sequences I intend to use in particular correspond to the transcript for the alpha subunit of a heterotrimeric G-protein involved in light sensing.
 
 ## Methods
 
