@@ -133,6 +133,16 @@ p = ggtree(labeled, layout="rectangular") + xlim(NA, 23)
 p = p %<+% dd + geom_tiplab(aes(color=amphipod), show_guide = FALSE, size = 3.5) + geom_tippoint(aes(color=amphipod), alpha=0.25)
 p+theme(legend.position="right") + guides(color=guide_legend(title="Amphipod", reverse=T)) 
 
+taxa = c("Scyphozoa","Hydromedusae","Hydromedusae","Hydromedusae","Siphonophorae", "Siphonophorae", "Siphonophorae", "Ctenophora", "Ctenophora", "Thaliacea", "Thaliacea", "Thaliacea", "Thaliacea", "Thaliacea", "Thaliacea", "Scyphozoa", "Radiolaria")
+taxahostass = cbind(as.vector(unique(reprunedass[,1])), taxa)
+taxahostass = taxahostass[match(ultramphipod$tip.label, taxahostass[,1]),]
+labeled = ultramphipod
+labeled$edge.length = labeled$edge.length * 10
+dd = data.frame(taxa  = labeled$tip.label, hosts = taxahostass[,2])
+p = ggtree(labeled, layout="rectangular") + xlim(NA, 23)
+p = p %<+% dd + geom_tiplab(aes(color=hosts), show_guide = FALSE, size = 3.5) + geom_tippoint(aes(color=hosts), alpha=0.25)
+p+theme(legend.position="right") + guides(color=guide_legend(title="Gelatinous host", reverse=T)) 
+
 map = t(reprunedassmatrix)
 #class(map) <- "string"
 yx = ggtree(labeled) + geom_tiplab(color='black', size = 3) + geom_treescale(x=2008, y=1)
@@ -142,12 +152,12 @@ gheatmap(yx, map[,3:5], low="white", high="black", offset = 2, width=0.5)
 prunedmatrix_nosppcol = prunedmatrix[,-1]
 comm = t(prunedmatrix_nosppcol)
 comm = comm[rowSums(comm)!=0,] 
+par(mar=rep(5,4))
 heatmap(as.matrix(comm), Rowv=NA, Colv=NA, col = c("white","grey"))
 amphi_dist=species.dist(comm)
 heatmap(as.matrix(amphi_dist), Rowv=NA, Colv=NA, col=rev(heat.colors(5)))
 plot(hclust(amphi_dist))
 AD_MDS = cmdscale(amphi_dist)
-par(mar=rep(4,4))
 plot(AD_MDS[,1], AD_MDS[,2])
 text(AD_MDS[,1], AD_MDS[,2], labels = row.names(AD_MDS), cex=.7)
 Comdist = comdist(comm,amphi_dist)
