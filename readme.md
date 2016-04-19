@@ -135,7 +135,7 @@ Figure 10. Heatmap of the pairwise distances between gelatinous host species com
 ![F11](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/amphipodMDS.png)
 Figure 11. Multidimensional scaling plot for amphipod distance matrix used in Figure 9.
 
-![F12](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/amphipodMDS.png)
+![F12](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/hostMDS.png)
 Figure 12. Multidimensional scaling plot for host distance matrix used in Figure 10.
 
 ![Figure 13](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/cophylogeny.png)
