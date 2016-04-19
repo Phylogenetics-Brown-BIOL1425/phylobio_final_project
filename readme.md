@@ -39,7 +39,7 @@ The follwoing articles comprise a broad compendium of these studies:
 
 [Gasca R, Hoover R, Haddock SH. New symbiotic associations of hyperiid amphipods (Peracarida) with gelatinous zooplankton in deep waters off California. Journal of the Marine Biological Association of the United Kingdom. 2015 May 1;95(03):503-11.](http://journals.cambridge.org/abstract_S0025315414001416)
 
-The goal of this project is to compare the evolutionary histories of hyperiid amphipods and their hosts in the ocean. To do so, I will build an association matrix from the literature above on interspecific interactions. In order to study the interactions from a phylogenetic perspective I will need a phylogeny for the hyperiid amphipods, and a phylogeny for gelatinous hosts. For the amphipods I will use the latest molecular phylogeny from [Hurt et al. 2013](http://www.sciencedirect.com/science/article/pii/S1055790313000031). For the host species, I will download the 18S gene sequences from NCBI Nucleotide GeneBank for the diversity of host species and build a gene tree to serve as a proxy for the species phylogeny.
+The goal of this project is to compare the evolutionary histories of hyperiid amphipods and their hosts in the ocean. To do so, I will build an association matrix from the literature above on interspecific interactions. In order to study the interactions from a phylogenetic perspective I will need a phylogeny for the hyperiid amphipods, and a phylogeny for gelatinous hosts. To do so, I will download the 18S gene sequences from NCBI Nucleotide GeneBank for the diversity of host and amphipod species and build two gene trees to serve as a proxy for each of the species phylogeny.
 
 From these data sources, I plan to:
 
@@ -49,16 +49,19 @@ From these data sources, I plan to:
 
 3) Plot the phylogenies together with the association network.
 
+4)Identify the phylogeentic distribution of living habitat use by hyperiid amphipod, in a phylogenetic community ecology approach. Test for phylogenetic structure (clustering/overdispersion).
+
 ## Methods
 
-Host 18S fasta sequences were retrieved from NCBI Entrez.
+Host and amphipod 18S fasta sequences were retrieved from NCBI Entrez.
 
 The following taxa were included (and pruned out a posteriori) to increase the robustness of the analysis and reduce the effect of long branch attraction:
 
-###Outgroup:
+###Host 18S phylogeny:
+Outgroup:
 Euglena intermedia
 
-###Ingroups:
+Ingroups:
 Rhizarians:
 Globigerina bulloides
 Spumellarian radiolarian (unidentified)
@@ -81,25 +84,28 @@ Helix aspersa
 Other deuterostome:
 Asterias forbesi
 
-The MSA alignment was carried out using MAFFT (Method: L-INS-i, no additonal parameters).
+###Amphipod 18S phylogeny:
+Outgroup:
+Cyathura sp.
+Idotea sp.
 
-To build the host 18S phylogeny, I used RAxML with a GTR+Gamma DNA evolution model and 100 non-parametric bootstrap replicates:
+For both amphipods and hosts:
+The MSA alignments were carried out using MAFFT (Method: L-INS-i, no additonal parameters).
+To build the 18S phylogenies, I used RAxML with a GTR+Gamma DNA evolution model and 100 non-parametric bootstrap replicates:
 
 raxml -T 8 -m GTRGAMMA -n EXThostML_boot100 -s host_ext_MSA.phy -p 12345 -f a -x 12345 -N 100
 
  and [RevBayes](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/ExtendedHosts/18S_GTRg.Rev) (see model specifications in the link). 
 
 I used non parametric bootstrap values for ML trees and bayesian posteriors for bayesian trees as measures of clade support.
+The ML tree was used for hosts, while the Bayesian tree was chosen for the amphipods.
 
-I will use the R packages ape, phytools, and phangorn.
+For the analysis and figure creation in R I used the packages: 
+ape, phytools, phangorn, adephylo, ggtree, dendextrend, picante, paco, and igraph.
 
 ## Results
 
-
-![Figure 1. Host species 18S maximum parsimony best tree using SPR method in Mesquite. Rooted on ctenophora-non_ctenophora.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/MP_SPR.png) 
-Figure 1. Host species 18S maximum parsimony best tree using SPR method in Mesquite. Rooted on ctenophora-non_ctenophora.
-
-![Figure 2. Host species 18S bayesian maximum likelihood best tree under a Jukes-Cantor DNA evolution model. Nodes labeled with bayesian posteriors.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/JC_posteriors.png)
+![Figure 1. Host species 18S bayesian maximum likelihood best tree under a Jukes-Cantor DNA evolution model. Nodes labeled with bayesian posteriors.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/JC_posteriors.png)
 Figure 2. Host species 18S bayesian maximum likelihood best tree under a Jukes-Cantor DNA evolution model. Nodes labeled with bayesian posteriors.
 
 ![Figure 3. Host species 18S bayesian maximum likelihood best tree under a GTR+Gamma DNA evolution model. Nodes labeled with bayesian posteriors.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/Bayesian_GTRg_tree.png)
@@ -123,13 +129,18 @@ Figure 8. Distribution of amphipod species among the gelatinous host phylogeny.
 ![Figure 9](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/annotated_tree.png)
 Figure 9. Host 18S Jukes-Cantor bayesian tree (best deep topology) from Figure 2 with main clades collapsed and aligned with a picture of a representative association. Photographs by Steven Haddock and Jeff Molder.
 
+![Figure 10](https://github.com/antropoteuthis/phylobio_final_project/raw/master/COPHYLOGENY.pdf)
+Figure 10. Cophylogeny of amphipods and gelatinous hosts produced using ape::cophyloplot.
 
 The tree in Figure 1...
 
 Host 18S gene tree:
-Radiolarians appear as sister group to bilaterians in MP analysis and all GTR+Gamma tree searches (ML and Bayesian). JC bayesian tree is the only one that retrieves radiolarians as an outgroup of metazoa.
 
-Bayesian GTR+Gamma tree shows good convergence in 2 independent MCMC runs (Posterior ESS: 790, Likelihood ESS: 689).
+Amphipod 18S gene tree:
+
+Bayesian GTR+Gamma tree shows good convergence in 2 independent MCMC runs (Posterior ESS: , Likelihood ESS: ).
+
+The PACo (ref) analysis of phylogenetic structure in habitat use detected a 'overdispersion' in these data.
 
 
 
