@@ -20,16 +20,25 @@ rownames(assmatrix) = assmatrix[,1]
 heatmap(as.matrix(assmatrix[,2:94]), col=c("white", "orange"), Rowv=NA, Colv=NA)
 
 #Load amphipod tree Maximum Likelihood
-amphipodML = read.tree("Amphipods/RAxML/RAxML_bipartitions.amphipodsCOI_MSAML_boot100")
-amphipodML = drop.tip(amphipodML, which(amphipodML$tip.label == "Cyathura_sp." | amphipodML$tip.label == "Idotea_sp."))
-plot(amphipodML)
+# amphipodML = read.tree("Amphipods/Interesting\ amphipods/RAxML/RAxML_bipartitions.datamphipod18S_ML_boot100")
+# plot(amphipodML)
+# amphipodML$tip.label[which(amphipodML$tip.label == "Phronima_species")] = "Phronima_sedentaria"
+# nodelabels()
+# amphipodML=root(amphipodML, 33)
+# plot(amphipodML)
+
+#Load amphipod tree Bayesian
+amphipodB = read.nexus("Amphipods/Interesting\ amphipods/output/datamphipod18S_MSA_bayesian_run_1.tree")
+plot(amphipodB)
+amphipodB$tip.label[which(amphipodB$tip.label == "Phronima_species")] = "Phronima_sedentaria"
+amphipodB$tip.label[which(amphipodB$tip.label == "Paraphronima_species")] = "Paraphronima_gracilis"
 nodelabels()
-amphipodML=reroot(amphipodML, 52)
-plot(amphipodML)
+amphipodB=reroot(amphipodB, 47)
+plot(amphipodB)
 
 #HOST TREE
-hostree = read.nexus("FirstHostRound/output/host18S_bayesian2_run_1.tree")
-hostree$tip.label
+refhostree = read.nexus("FirstHostRound/output/host18S_bayesian2_run_1.tree")
+refhostree$tip.label
 
 #Bayesian GTR+Gamma tree
 # extreeBAYES = read.nexus("ExtendedHosts/output/host_ext_MSA_bayesian_run_1.tree")
@@ -43,7 +52,7 @@ hostree$tip.label
 
 #GTR+Gamma Maximum Likelihood
 MLext = read.tree("ExtendedHosts/RAxML/RAxML_bipartitions.EXThostML_boot100")
-badtips = which(!(MLext$tip.label %in% hostree$tip.label))
+badtips = which(!(MLext$tip.label %in% refhostree$tip.label))
 hostML = drop.tip(MLext, badtips)
 plot(hostML)
 nodelabels()
@@ -53,12 +62,15 @@ TREE = hostML
 
 #replace _ with spaces in tipnames of both trees
 TREE$tip.label = str_replace_all(TREE$tip.label,'_',' ')
-amphipodML$tip.label = str_replace_all(amphipodML$tip.label,'_',' ')
+#amphipodML$tip.label = str_replace_all(amphipodML$tip.label,'_',' ')
+amphipodB$tip.label = str_replace_all(amphipodB$tip.label,'_',' ')
+TREE$tip.label
+amphipodB$tip.label
 
 #prune the matrix according to amphipod spp available in 2013 phylogeny
-treespp2013 = amphipodML$tip.label
-prunedmatrix = assmatrix[which(assmatrix$amphipod %in% treespp2013),]
-prunedass = as.matrix(ass[which(ass$amphipod %in% treespp2013),])
+amphispp = amphipodB$tip.label
+prunedmatrix = assmatrix[which(assmatrix$amphipod %in% amphispp),]
+prunedass = as.matrix(ass[which(ass$amphipod %in% amphispp),])
 prunedass[,2] = as.matrix(str_replace_all(prunedass[,2],'conica','sp.'))
 heatmap(as.matrix(prunedmatrix[,2:94]), col=c("white", "orange"), Rowv=NA, Colv=NA)
 
@@ -78,14 +90,14 @@ plot(ultram)
 reprunedass = as.matrix(prunedass[which(prunedass[,2] %in% ultram$tip.label),])
 reprunedass = reprunedass[match(ultram$tip.label, reprunedass[,2]),]
 reprunedassmatrix = as.matrix(dcast(as.data.frame(reprunedass), amphipod~host, length))
-reprunedassmatrix = reprunedassmatrix[,2:16]
+reprunedassmatrix = reprunedassmatrix[,2:ncol(reprunedassmatrix)]
 class(reprunedassmatrix) <- "numeric"
 rownames(reprunedassmatrix) = dcast(as.data.frame(reprunedass), amphipod~host, length)[,1]
-heatmap(reprunedassmatrix[,2:9], col=c("white", "orange"), Rowv=NA, Colv=NA)
+heatmap(reprunedassmatrix[,2:ncol(reprunedassmatrix)], col=c("white", "orange"), Rowv=NA, Colv=NA)
 
 #prune the amphipod tree to match the species in reprunedmatrix
-amphipodML = drop.tip(amphipodML, which(!(amphipodML$tip.label %in% rownames(reprunedassmatrix))))
-ultramphipod = chronos(amphipodML)
+prunedamphipodB = drop.tip(amphipodB, which(!(amphipodB$tip.label %in% rownames(reprunedassmatrix))))
+ultramphipod = chronos(prunedamphipodB)
 plot(ultramphipod)
 
 #define association network
@@ -127,8 +139,8 @@ yx = ggtree(labeled) + geom_tiplab(color='black', size = 3) + geom_treescale(x=2
 gheatmap(yx, map[,3:5], low="white", high="black", offset = 2, width=0.5)
 
 #Try picante tools
-prunedmatrix = prunedmatrix[,-1]
-comm = t(prunedmatrix)
+prunedmatrix_nosppcol = prunedmatrix[,-1]
+comm = t(prunedmatrix_nosppcol)
 comm = comm[rowSums(comm)!=0,] 
 heatmap(as.matrix(comm), Rowv=NA, Colv=NA, col = c("white","grey"))
 amphi_dist=species.dist(comm)
@@ -150,7 +162,7 @@ CPC = comm.phylo.cor(comm,ultramphipod)
 MPC = match.phylo.comm(ultramphipod, comm)
 ultram = drop.tip(ultram, which(!(ultram$tip.label %in% rownames(comm))))
 plot(ultram)
-phyloDiversity = pd(comm,ultramphipod)
+#phyloDiversity = pd(comm,ultramphipod)
 
 ##Phylogenetic clustering
 #prune the comm matrix
@@ -173,11 +185,12 @@ phylostruct(prunecomm, cophenetic(ultramphipod))
 reprunedass = as.data.frame(reprunedass)
 rownames(reprunedass) = 1:nrow(reprunedass)
 par(mfrow=c(1,1))
-cophyloplot(ultramphipod, ultram, assoc = reprunedass, type="cladogram", space=90, gap=0,show.tip.label=T, use.edge.length=F)
-cophy = cophylo(ultramphipod, ultram, assoc = reprunedass, rotate = F)
-plot(cophy)
+cophyloplot(ultramphipod, ultram, assoc = reprunedass, type="phylogram", space=110, gap=0,show.tip.label=T, use.edge.length=F, col="orange")
+#cophy = cophylo(ultramphipod, ultram, assoc = reprunedass, rotate = F)
+#plot(cophy)
 Parafit = parafit(as.matrix(cophenetic(ultram)),as.matrix(cophenetic(ultramphipod)), comm[which(rownames(comm) %in% ultram$tip.label),which(colnames(comm) %in% ultramphipod$tip.label)])
 D = prepare_paco_data(cophenetic(ultram), cophenetic(ultramphipod), comm[which(rownames(comm) %in% ultram$tip.label),which(colnames(comm) %in% ultramphipod$tip.label)])
 D = add_pcoord(D)
 D = PACo(D, nperm=10, seed=42, method="r0", correction='cailliez')
 print(D$gof)
+
