@@ -126,16 +126,16 @@ Figure 6. Distribution of amphipod species among the gelatinous host phylogeny.
 ![Figure 7.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/annotated_tree.png)
 Figure 7. Host 18S tree with main clades collapsed and aligned with a picture of a representative association. Photographs by Steven Haddock and Jeff Molder.
 
-![F9](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/amphipoddist)
+![F9](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/amphipoddist.png)
 Figure 9. Heatmap of the pairwise distances between amphipod species computed from matrix of common habitats(hosts).
 
-![F10](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/hostdist)
+![F10](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/hostdist.png)
 Figure 10. Heatmap of the pairwise distances between gelatinous host species computed from matrix of common inhabitant species (amphipods).
 
-![F11](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/amphipodMDS)
+![F11](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/amphipodMDS.png)
 Figure 11. Multidimensional scaling plot for amphipod distance matrix used in Figure 9.
 
-![F12](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/amphipodMDS)
+![F12](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/amphipodMDS.png)
 Figure 12. Multidimensional scaling plot for host distance matrix used in Figure 10.
 
 ![Figure 13](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/cophylogeny.png)
