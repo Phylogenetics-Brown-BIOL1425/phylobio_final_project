@@ -1,0 +1,20 @@
+"Agalma elegans"	"Agalma okeni"	"Athorybia rosacea"	"Aurelia aurita"	"Beroe forskalii"	"Cestum veneris"	"Collozoum inerme"	"Cyclosalpa affinis"	"Eirene pyramidalis"	"Forskalia edwardsi"	"Forskalia tholoides"	"Geryonia proboscidalis"	"Iasis cylindrica"	"Iasis zonaria"	"Lampea pancerina"	"Leucothea multicornis"	"Liriope tetraphylla"	"Mnemiopsis leidyi"	"Nanomia bijuga"	"Pegea bicaudata"	"Pegea confoederata"	"Pelagia noctiluca"	"Pyrosoma atlanticum"	"Salpa aspera"	"Salpa fusiformis"	"Salpa maxima"	"Sphaerozoum punctatum"	"Sulculeolaria quadrivalvis"	"Thalia democratica"
+"Amphithyrus bispinosus"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Brachyscelus crusculum"	0	0	0	0	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	1	0	0	1
+"Eupronoe minuta"	1	1	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0
+"Hyperietta stephenseni"	0	0	0	0	0	0	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0
+"Hyperoche medusarum"	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Lanceola sayana"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
+"Lestrigonus bengalensis"	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+"Lestrigonus schizogeneios"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Lycaea nasuta"	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Lycaea pulex"	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	1	1	0	1	0	0	1	0	0	0
+"Oxycephalus clausi"	0	0	0	0	0	1	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Parascelus typhoides"	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Phronima sedentaria"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	1
+"Simorhynchotus antennarius"	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	0
+"Streetsia porcella"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Tetrathyrus forcipatus"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
+"Vibilia armata"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	0	0	0	1
+"Vibilia propinqua"	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	0	0	1	1	1	0	0	1
+"Vibilia viatrix"	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0

@@ -91,6 +91,7 @@ reprunedass = as.matrix(prunedass[which(prunedass[,2] %in% ultram$tip.label),])
 #reprunedass = reprunedass[match(ultram$tip.label, reprunedass[,2]),]
 reprunedassmatrix = as.matrix(dcast(as.data.frame(reprunedass), amphipod~host, length))
 reprunedassmatrix = reprunedassmatrix[,2:ncol(reprunedassmatrix)]
+#write.table(reprunedassmatrix, "reprunedassmatrix.txt", sep='\t')
 class(reprunedassmatrix) <- "numeric"
 rownames(reprunedassmatrix) = dcast(as.data.frame(reprunedass), amphipod~host, length)[,1]
 heatmap(reprunedassmatrix[,2:ncol(reprunedassmatrix)], col=c("white", "orange"), Rowv=NA, Colv=NA)
@@ -128,6 +129,7 @@ tkplot.center(a)
 prunedmatrix_nosppcol = prunedmatrix[,-1]
 comm = t(prunedmatrix_nosppcol)
 comm = comm[rowSums(comm)!=0,] 
+#write.table(comm, "comm.txt", sep='\t')
 par(mar=rep(5,4))
 heatmap(as.matrix(comm), Rowv=NA, Colv=NA, col = c("white","grey"))
 amphi_dist=species.dist(comm)
@@ -168,6 +170,7 @@ phylostruct(prunecomm, cophenetic(ultramphipod))
 
 #Cophylogenies
 reprunedass = as.data.frame(reprunedass)
+#write.table(reprunedass, "reprunedass.txt", sep='\t')
 rownames(reprunedass) = 1:nrow(reprunedass)
 cophyloplot(ultramphipod, ultram, assoc = reprunedass, type="phylogram", space=110, gap=0,show.tip.label=T, use.edge.length=F, col="orange")
 cophyloplot(ultramphipod, ultram, assoc = reprunedass, type="phylogram", space=110, gap=0,show.tip.label=T, use.edge.length=F, col="orange", rotate = T)

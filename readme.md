@@ -48,7 +48,7 @@ Host and amphipod 18S fasta sequences were retrieved from NCBI Batch Entrez usin
 
 The following taxa were included (and pruned out a posteriori) to increase the robustness of the analysis and reduce the effect of long branch attraction:
 
-###Host 18S phylogeny:
+<b>Host 18S phylogeny:</b>
 
 Outgroup:
 Euglena intermedia
@@ -71,9 +71,9 @@ Helix aspersa.
 Other deuterostome:
 Asterias forbesi.
 
-###Amphipod 18S phylogeny:
+<b>Amphipod 18S phylogeny:</b>
 
-Outgroup:
+Outgroups:
 Cyathura sp.
 Idotea sp.
 
@@ -89,13 +89,13 @@ raxml -T 8 -m GTRGAMMA -n EXThostML_boot100 -s host_ext_MSA.phy -p 12345 -f a -x
 
 In both amphipods and hosts, there was a good agreement between RevBayes and RAxML trees. 
 
-[FM1]()
-Figure 1. Host 18S GTR+Gamma RAxML tree. 100 non-parametric bootstrap replicates generated. Nodes labeled with bootstrap support values.
+[FM1](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/rawhost_tree.png)
+Supplementary figure 1. Host 18S GTR+Gamma RAxML tree. 100 non-parametric bootstrap replicates generated. Nodes labeled with bootstrap support values.
 
-[FM1]()
-Figure 2. Hyperiid amphipod 18S GTR+Gamma bayesian (RevBayes) tree. Nodes labeled with bayesian posteriors.
+[FM1](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/rawamphipod_tree.png)
+Supplementary figure 2. Hyperiid amphipod 18S GTR+Gamma bayesian (RevBayes) tree. Nodes labeled with bayesian posteriors.
 
-Hyperiid amphipod bayesian GTR+Gamma tree (Figure 1) shows good convergence in 2 independent MCMC runs (Posterior ESS: 1067, Likelihood ESS: 1040). RAxML hyperiid amphipod tree presented unidentified rooting problems downstream and was not used. The RAxML tree was used for host species (Figure 2).
+Hyperiid amphipod bayesian GTR+Gamma tree (Supplementary figure 1) shows good convergence in 2 independent MCMC runs (Posterior ESS: 1067, Likelihood ESS: 1040). RAxML hyperiid amphipod tree presented unidentified rooting problems downstream and was not used. The RAxML tree was used for host species (Supplementary figure 2).
 
 ###Analysis and visualization:
 
@@ -118,7 +118,7 @@ Test for phylogenetic clustering picante::phylostruct(), and per habitat picante
 
 ###Phylogenetic analyses:
 
-![Figure 1. Amphipod species 18S bayesian best tree under a GTR+Gamma DNA evolution model. Nodes labeled with bayesian posteriors.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/amphipodBayesianTre.png)
+![Figure 1. Amphipod species 18S bayesian best tree under a GTR+Gamma DNA evolution model. Nodes labeled with bayesian posteriors.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/amphipod_phylogeny_unp.png)
 Figure 1. Amphipod species 18S bayesian best tree under a GTR+Gamma DNA evolution model. 
 
 Amphipod phylogeny:
@@ -139,10 +139,10 @@ Figure 3. Host 18S tree with main clades collapsed and aligned with a picture of
 ###Association ecology:
 
 ![Figure 4.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/PS/AllSPP.png)
-Figure 4. Complete association network for hyperiid amphipods and their described gelatinous hosts from the literature review.
+Figure 4. Complete association network for hyperiid amphipods and their described gelatinous hosts from the literature review. Red: Hyperiid amphipods, Blue: Gelatinous hosts.
 
 ![Figure 5.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/PS/phylospp_assoc.png)
-Figure 5. Pruned association network for hyperiid amphipods and their described gelatinous hosts species included in both phylogenies.
+Figure 5. Pruned association network for hyperiid amphipods and their described gelatinous hosts species included in both phylogenies. Red: Hyperiid amphipods, Blue: Gelatinous hosts.
 
 The association data shows a complex interaction network (Figure 4), with generalists and specialists, that conserves a similar structure even with a constrained taxon sampling (Figure 5). 
 
@@ -152,7 +152,7 @@ Figure 8. Heatmap of the pairwise distances between amphipod species computed fr
 ![F9](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/amphipodMDS.png)
 Figure 11. Multidimensional scaling plot for amphipod distance matrix used in Figure 9.
 
-Amphipods show interesting host sharing patterns (Figures 8,9) that reflect on the possible competitive interactions in environments where they may coexist, given limited host space.
+Amphipods show interesting host sharing patterns (Figure 8) that reflect on the possible competitive interactions in environments where they may coexist, given limited host space. The species Vibilia viatrix, Vibilia propinqua, Vibilia armata, and Phronima sedentaria (well-known salp dwellers) show the greatest disparity in host association compared to the rest (Figure 9).
 
 ![F10](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/hostdist.png)
 Figure 10. Heatmap of the pairwise distances between gelatinous host species computed from matrix of common inhabitant species (amphipods).
@@ -160,7 +160,7 @@ Figure 10. Heatmap of the pairwise distances between gelatinous host species com
 ![F11](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/hostMDS.png)
 Figure 11. Multidimensional scaling plot for host distance matrix used in Figure 10.
 
-Hosts show an even more complex association similarity matrix (Figures 10,11), proportional to the greater number of taxa included. In this case, an increased number of shared amphipod species has very different ecological implications. A gelatinous macroplankton community assemblage with many shared amphipod species would favor a greater amphipod diversity, greater chances of interspecies transfection of amphipods, and relief of predation (sensu lato) pressure on the host populations.
+Hosts show an even more complex association similarity matrix (Figure 10), proportional to the greater number of taxa included. In this case, an increased number of shared amphipod species has very different ecological implications. A gelatinous macroplankton community assemblage with many shared amphipod species would favor a greater amphipod diversity, greater chances of interspecies transfection of amphipods, and relief of predation (sensu lato) pressure on the host populations. The medusae Pelagia noctiluca, Pandea conica, and the salp Salpa aspera showed the most differentiated amphipod associations (Figure 11).
 
 But, how far did sharing a common evolutionary history generate this association network?
 
@@ -187,7 +187,7 @@ The PACo (Balbuena et al., 2013) analysis of phylogenetic structure detected a p
 
 The picante::phylostruct permutation test for phylogenetic signal in community composition (using the amphipod phylogeny and the hosts as communities) detected an overdispersed pattern (mean observed= -0.8222, expected null = -0.955), in agreement with the PACo analysis.
 
-The mean value of the phylogenetic clustering analysis of amphipod species for all hosts was 0.9083, indicating again a slightly overdispersed structure. However the standard deviation (0.3953) was large. Some hosts (<i>Thalia democratica<i/> and <i>Iasis zonaria</i>) had a greatly overdispersed amphipod community, whilst others (<i>Cyclosalpa affinis, Eurhamphaea vexilligera</i>, and <i>Pterotrachea hippocampus<i/>) had a distinct phylogenetic clustering in their amphipod assemblage (Figure 15).
+The mean value of the phylogenetic clustering analysis of amphipod species for all hosts was 0.9083, indicating again a slightly overdispersed structure. However the standard deviation (0.3953) was large. Some hosts (<i>Thalia democratica<i/> and <i>Iasis zonaria</i>) had a greatly overdispersed amphipod community, whilst others (<i>Cyclosalpa affinis, Eurhamphaea vexilligera</i>, and <i>Pterotrachea hippocampus</i>) had a distinct phylogenetic clustering in their amphipod assemblage (Figure 15).
 
 As we can see in Figure 14, thaliacean species harbor the richest assemblage of hyperiid amphipods. Brownian motion reconstruction suggests the appearance of a key trait in their MRCA that rendered these animals widely favorable hosts for hyperiid amphipods.
 
