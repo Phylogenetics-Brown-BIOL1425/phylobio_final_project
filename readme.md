@@ -12,7 +12,7 @@ Some guidelines and tips:
 
 - The project must be entirely reproducible. In addition to the results, the repository must include all the data (or links to data) and code needed to reproduce the results.
 
-- Paste references (including urls) into the reference section, and cite them with the general format (Smith at al. 2003).
+
 
 
 
