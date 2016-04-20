@@ -16,7 +16,7 @@ Some guidelines and tips:
 
 
 
-Sporangium anatomy and arrangement of Selaginella (Selaginellaceae) in a phylogenetic context: Distribution of spore discharge techniques
+#Sporangium anatomy and arrangement of Selaginella (Selaginellaceae) in a phylogenetic context: Distribution of spore discharge techniques
 
 ## Introduction and Goals
 
