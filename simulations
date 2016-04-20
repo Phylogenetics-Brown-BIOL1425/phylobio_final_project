@@ -1,4 +1,4 @@
-##simulations
+#simulations
 ##from the comparative r repo
 
 library(ape)
@@ -36,4 +36,6 @@ cov( cbind( ic1, ic2, ic3 ) )
 
 ##covariance of values at the tips (not independent contrasts)
 cov( cbind( D[,1,1], D[,2,1], D[,3,1] ) )
+
+
 
