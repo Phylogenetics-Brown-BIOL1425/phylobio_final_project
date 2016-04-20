@@ -162,7 +162,8 @@ mpd(prunecomm, cophenetic(ultramphipod))
 ses.mntd(prunecomm, cophenetic(ultramphipod))
 ses.mpd(prunecomm, cophenetic(ultramphipod))
 PSClustering = psc(prunecomm, cophenetic(ultramphipod))
-mean(PSClustering$PSCs[which(!is.na(PSClustering$PSCs))])
+mean(PSClustering$PSCs[which(!is.na(PSClustering$PSCs[1:60]))])
+barplot(PSClustering$PSCs[which(!is.na(PSClustering$PSCs[1:60]))], names.arg = rownames(PSClustering)[which(!is.na(PSClustering$PSCs[1:60]))], col='magenta', las=2)
 phylostruct(prunecomm, cophenetic(ultramphipod))
 
 #Cophylogenies
@@ -184,3 +185,8 @@ table(reprunedass[,2])
 specificity = as.vector(table(reprunedass[,1]))
 names(specificity) = names(table(reprunedass[,1]))
 contMap(ultramphipod, specificity)
+
+popularity = as.vector(table(reprunedass[,2]))
+names(popularity) = names(table(reprunedass[,2]))
+contMap(ultram, popularity)
+
