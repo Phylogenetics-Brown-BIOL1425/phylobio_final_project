@@ -1,3 +1,21 @@
+##simulations
+
+##if on a new computer 
+## install CRAN Task View for phylogenetics install.packages('ctv')
+## library('ctv') install.views('Phylogenetics')
+## update.views('Phylogenetics')
+
+## load ape
+library(ape)
+
+## simulate a phylogeny
+tree <- rtree(n = 20)
+plot(tree, edge.width = 2)
+
+
+
+
+##for with real tree and real character data 
 Load the ape library, which has the functions we will use for phylogenetic 
 independent contrasts:
 
