@@ -107,7 +107,7 @@ Trees were pruned to contain only the tips for which I have association data for
 
 The association matrix obtained from the literature review was pruned to contain only species represented in the phylogenies used. Associations were visualized using igraph::tkplot(). Inter-host ecological distance matrix was calculated using picante::comdist(). Inter-amphipod ecological distance matrix was calculated using picante::species.dist().
 
-Host-amphipod cophylogenetic congruence (level of cospeciation) was tested using a Procrustean Application to Cophylogenetic Analysis paco::PACo(), and ParaFit global fit methods ape::parafit.
+Host-amphipod cophylogenetic congruence (level of cospeciation) was tested using a Procrustean Application to Cophylogenetic Analysis paco::PACo() (r0 permutation method, cailliez correction method), and ParaFit global fit methods ape::parafit.
 
 Cophylogeny plot was produced using ape::cophyloplot().
 
@@ -181,13 +181,13 @@ Figure 14. Gelatinous host phylogeny showing a brownian motion reconstruction of
 
 From the other side of the story, Figure 14 shows the evolution of the suitability of gelatinous hosts to a broad spectrum of hyperiid amphipod species. Hosts that harbor more species, such as salps, are less likely to develop a coevolutionary armsrace against a particular amphipod species.
 
-The PACo (Balbuena et al., 2013) analysis of phylogenetic structure detected a phylogenetically overdispersed pattern (Procrustes sum of squares = 9.19, goodness-of-fit: p=0, ss=9.189, n=10) in the associations data, accounting for both the host and amphipod phylogenies.
+The PACo (Balbuena et al., 2013) analysis of phylogenetic structure detected a phylogenetically overdispersed pattern (Procrustes sum of squares = 9.19, goodness-of-fit: p-value=0, sum of squares=9.189, number of permutations =10) in the associations data, accounting for both the host and amphipod phylogenies.
 
 ###Phylogenetic community ecology
 
 The picante::phylostruct permutation test for phylogenetic signal in community composition (using the amphipod phylogeny and the hosts as communities) detected an overdispersed pattern (mean observed= -0.8222, expected null = -0.955), in agreement with the PACo analysis.
 
-The mean value of the phylogenetic clustering analysis of amphipod species for all hosts was 0.9083, indicating again a slightly overdispersed structure. However the standard deviation (0.3953) was large. Some hosts (<i>Thalia democratica<i/> and <i>Iasis zonaria</i>) had a greatly overdispersed amphipod community, whilst others (<i>Cyclosalpa affinis, Eurhamphaea vexilligera</i>, and <i>Pterotrachea hippocampus</i>) had a distinct phylogenetic clustering in their amphipod assemblage (Figure 15).
+The mean value of the phylogenetic clustering analysis of amphipod species for all hosts was 0.9083, indicating again a slightly overdispersed structure. However the standard deviation (0.3953) was large. Some hosts (<i>Thalia democratica</i> and <i>Iasis zonaria</i>) had a greatly overdispersed amphipod community, whilst others (<i>Cyclosalpa affinis, Eurhamphaea vexilligera</i>, and <i>Pterotrachea hippocampus</i>) had a distinct phylogenetic clustering in their amphipod assemblage (Figure 15).
 
 As we can see in Figure 14, thaliacean species harbor the richest assemblage of hyperiid amphipods. Brownian motion reconstruction suggests the appearance of a key trait in their MRCA that rendered these animals widely favorable hosts for hyperiid amphipods.
 
