@@ -46,6 +46,11 @@ The biggest difficulty in implementing these analyses was...
 
 If I did these analyses again, I would...
 
+##Acknowledgements
+Casey Dunn
+Abby Moore
+Andrew Leslie 
+
 ## References
 
 Cain, M.L., Milligan, B.G., & Strand, A.E. (2000). Long-distance seed dispersal in plant populations. American Journal of Botany, 87, 1217-1227
