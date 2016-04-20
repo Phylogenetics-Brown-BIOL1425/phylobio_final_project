@@ -4,9 +4,9 @@
 
 ## Introduction and Goals
 
-The sister species *Viburnum matii* and *Viburnum oonakatensis* have produced previously identified hybrid swarms, (Donoghue, 1982) but we don't know the level of genetic contribution from the parents to individuals in the swarm. What is the extent of genetic introgression between these two species of *Viburnum*? In this study, I will:
+The sister species *Viburnum mattii* and *Viburnum oonakatensis* have produced previously identified hybrid swarms, (Donoghue, 1982) but we don't know the level of genetic contribution from the parents to individuals in the swarm. What is the extent of genetic introgression between these two species of *Viburnum*? In this study, I will:
 
-* Test the level of introgression between pure parent populations of *V. matii* and *V. oonakatensis* (Are the parents truly genetically isolated to begin with?) 
+* Test the level of introgression between pure parent populations of *V. mattii* and *V. oonakatensis* (Are the parents truly genetically isolated to begin with?) 
 
 * Test for introgression between parents and hybrids (Do the hybrids show introgression between the parent species?) 
 
