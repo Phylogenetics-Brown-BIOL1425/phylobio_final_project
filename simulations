@@ -4,9 +4,15 @@
 library(ape)
 set.seed(4984356)
 
-##only requires number of taxa --ultrametric tree 
-t <- rcoal( 30 )
+#only requires number of taxa --ultrametric tree 
+##taxa with most characters filled in
+t <- rcoal( 42 )
 plot( t )
+
+##all taxa for tree I made
+t <- rcoal( 247 )
+plot( t )
+
 
 ##simulating character evolution
 sim.char()
