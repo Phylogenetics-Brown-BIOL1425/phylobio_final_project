@@ -65,22 +65,17 @@ Ingroups:
 Rhizarians:
 Globigerina bulloides
 Spumellarian radiolarian (unidentified)
-
 Choanoflagellates:
 Salpingoeca rosetta
 Sphaeroeca leprechaunica
-
 Sponges:
 Hippospongia lachne
 Suberites ficus
-
 Placozoan:
 Trichoplax sp.
-
 Other protostomes:
 Maja brachydactyla
 Helix aspersa
-
 Other deuterostome:
 Asterias forbesi
 
@@ -142,13 +137,31 @@ Figure 12. Multidimensional scaling plot for host distance matrix used in Figure
 ![Figure 13](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/cophylogeny.png)
 Figure 13. Cophylogeny of amphipods and gelatinous hosts produced using ape::cophyloplot.
 
+![Figure 14](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/specificity.png)
+Figure 14. Amphipod phylogeny showing a brownian motion reconstruction of host specifity (blue - generalist, red - specialist).
+
+![Figure 15](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/popularity.png)
+Figure 15. Gelatinous host phylogeny showing a brownian motion reconstruction of amphipod richness (blue - common target, red - rare target).
+
 Host 18S gene tree:
 
 Amphipod 18S gene tree:
 
 Bayesian GTR+Gamma tree shows good convergence in 2 independent MCMC runs (Posterior ESS: , Likelihood ESS: ).
 
-The PACo (ref) analysis of phylogenetic structure in habitat use detected a 'overdispersion' in these data.
+###Cophylogenetic analysis
+
+Global congruence (Parafit) between host and amphipod trees: 13.83, p-value=0.231. The trees are not significantly congruent. It is likely that the evolutionary histories of these groups were not coupled (not dominated by cospeciation events). However, there are a few possible causes that could obscure the cophylogenetic signal in the data:
+
+1) The different phylogenetic scales comprised. The gelatinous zooplankton tree contains taxa across kingdoms of life, from radiolarians to chordates, while the amphipod tree contains species from a single order, with a much more recent common ancestor. Unlike in the case of Hyperiid amphipods (Browne, 2007) the MRCA of the hosts has probably had a very different ecology than the tip species, and there is no reason to believe the MRCAs of the main host clades (Urochordates, Ctenophores, Cnidarians...) had been pelagic, lest been associated with hyperiid amphipods at all.
+
+2) The resolution of the the trees. 18S gene trees do not contain enough phylogenetic information to adequately resolve the true tree. Moreover, a single gene tree's evolutionary history may differ from the species tree due to incomplete lineage sorting among other causes (Maddison, 1997). There are clear topological diferences between my 18S amphipod tree and that of Hurt et al. 2013 that lead me to believe the 18S gene tree is not a sufficient estimator for this phylogeny.
+
+3) Host switching and limited specificity. Not all hyperiid amphipods are obligate parasites/parasitoids of a narrow range of host taxa. Many, like Eupronoe minuta, dwell among a diversity of species. Host specificity varies greatly throughout the phylogeny (Figure 14) so there are reasons to believe host switching could have played a major role in shaping the cophylogeny.
+
+###Phylogenetic community ecology
+
+The PACo (ref) analysis of phylogenetic structure in habitat use detected a 'overdispersion' in these data. 
 
 
 

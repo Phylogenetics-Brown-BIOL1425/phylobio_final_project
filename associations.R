@@ -181,5 +181,6 @@ paco_links(D)
 
 #Popularity of hosts, generalist/specialist amphipods
 table(reprunedass[,2])
-table(reprunedass[,1])
-
+specificity = as.vector(table(reprunedass[,1]))
+names(specificity) = names(table(reprunedass[,1]))
+contMap(ultramphipod, specificity)
