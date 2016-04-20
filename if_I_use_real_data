@@ -1,0 +1,66 @@
+##for with real tree and real character data 
+Load the ape library, which has the functions we will use for phylogenetic 
+independent contrasts:
+
+```{r}
+library(ape)
+```
+
+Load and prepare the data:
+
+```{r}
+seldata<-read.table("Selaginella.txt")
+seltree<-read.nexus("Selaginella.nex")
+```
+
+Plot the tree:
+
+```{r}
+plot(seltree)
+```
+
+
+And take a look at the character data:
+
+```{r}
+seldata
+```
+
+Data are available for two different characters for all the taxa in the tree.
+Extract these columns as their own variables to simplify later commands:
+
+```{r}
+micro_dispersal <- seldata$micro_dispersal
+sporang_arrangement <- seldata$sporang_arrangement
+names(micro_dispersal) <- row.names(seldata)
+names(sporang_arrangement) <- row.names(seldata)
+```
+
+We can now plot these data directly onto the tips of the tree:
+
+```{r}
+plot( seltree, label.offset = 0.04 )
+tiplabels( round(micro_dispersal, 2) )
+```
+
+```{r}
+plot( seltree, label.offset = 0.04 )
+tiplabels( round(sporang_arrangement, 2) )
+```
+
+## Calculating independent contrasts
+
+Calculate the independent contrasts for each of the variables:
+
+```{r}
+Contrastmicro_dispersal <- pic(micro_dispersal, seltree)
+Contrastsporang_arrangement <- pic(sporang_arrangement, seltree)
+```
+
+And plot them on the tree:
+
+```{r}
+plot (seltree)
+nodelabels( round(Contrastmicro_dispersal, 3), adj = c(0, -0.5), frame="n" )
+nodelabels( round(Contrastsporang_arrangement, 3), adj = c(0, 1), frame="n" )
+```
