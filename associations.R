@@ -67,7 +67,7 @@ amphipodB$tip.label = str_replace_all(amphipodB$tip.label,'_',' ')
 TREE$tip.label
 amphipodB$tip.label
 
-#prune the matrix according to amphipod spp available in 2013 phylogeny
+#prune the matrix according to amphipod spp available in phylogeny
 amphispp = amphipodB$tip.label
 prunedmatrix = assmatrix[which(assmatrix$amphipod %in% amphispp),]
 prunedass = as.matrix(ass[which(ass$amphipod %in% amphispp),])
@@ -88,7 +88,7 @@ plot(ultram)
 
 #reprune the matrix
 reprunedass = as.matrix(prunedass[which(prunedass[,2] %in% ultram$tip.label),])
-reprunedass = reprunedass[match(ultram$tip.label, reprunedass[,2]),]
+#reprunedass = reprunedass[match(ultram$tip.label, reprunedass[,2]),]
 reprunedassmatrix = as.matrix(dcast(as.data.frame(reprunedass), amphipod~host, length))
 reprunedassmatrix = reprunedassmatrix[,2:ncol(reprunedassmatrix)]
 class(reprunedassmatrix) <- "numeric"
@@ -124,30 +124,6 @@ tkplot.rotate(a, degree = 90)
 tkplot.fit.to.screen(a, height = 500, width = 500)
 tkplot.center(a)
 
-#plot phylogentic displays
-ggtree(ultram, layout="circular") + geom_tiplab(aes(angle=angle), color='blue')
-labeled = ultram
-labeled$edge.length = labeled$edge.length * 10
-dd = data.frame(taxa  = labeled$tip.label, amphipod = reprunedass[,1])
-p = ggtree(labeled, layout="rectangular") + xlim(NA, 23)
-p = p %<+% dd + geom_tiplab(aes(color=amphipod), show_guide = FALSE, size = 3.5) + geom_tippoint(aes(color=amphipod), alpha=0.25)
-p+theme(legend.position="right") + guides(color=guide_legend(title="Amphipod", reverse=T)) 
-
-taxa = c("Scyphozoa","Hydromedusae","Hydromedusae","Hydromedusae","Siphonophorae", "Siphonophorae", "Siphonophorae", "Ctenophora", "Ctenophora", "Thaliacea", "Thaliacea", "Thaliacea", "Thaliacea", "Thaliacea", "Thaliacea", "Scyphozoa", "Radiolaria")
-taxahostass = cbind(as.vector(unique(reprunedass[,1])), taxa)
-taxahostass = taxahostass[match(ultramphipod$tip.label, taxahostass[,1]),]
-labeled = ultramphipod
-labeled$edge.length = labeled$edge.length * 10
-dd = data.frame(taxa  = labeled$tip.label, hosts = taxahostass[,2])
-p = ggtree(labeled, layout="rectangular") + xlim(NA, 23)
-p = p %<+% dd + geom_tiplab(aes(color=hosts), show_guide = FALSE, size = 3.5) + geom_tippoint(aes(color=hosts), alpha=0.25)
-p+theme(legend.position="right") + guides(color=guide_legend(title="Gelatinous host", reverse=T)) 
-
-map = t(reprunedassmatrix)
-#class(map) <- "string"
-yx = ggtree(labeled) + geom_tiplab(color='black', size = 3) + geom_treescale(x=2008, y=1)
-gheatmap(yx, map[,3:5], low="white", high="black", offset = 2, width=0.5)
-
 #Try picante tools
 prunedmatrix_nosppcol = prunedmatrix[,-1]
 comm = t(prunedmatrix_nosppcol)
@@ -161,7 +137,7 @@ AD_MDS = cmdscale(amphi_dist)
 plot(AD_MDS[,1], AD_MDS[,2])
 text(AD_MDS[,1], AD_MDS[,2], labels = row.names(AD_MDS), cex=.7)
 Comdist = comdist(comm,amphi_dist)
-heatmap(as.matrix(Comdist), Rowv=NA, Colv=NA, col=rev(heat.colors(20)))
+heatmap(as.matrix(Comdist), Rowv=NA, Colv=NA, col=rev(heat.colors(8)))
 par(mar=rep(1,4))
 plot(hclust(Comdist))
 C_MDS = cmdscale(Comdist)
@@ -170,8 +146,6 @@ text(C_MDS[,1], C_MDS[,2], labels = row.names(C_MDS), cex=0.5, pos = 1)
 
 CPC = comm.phylo.cor(comm,ultramphipod)
 MPC = match.phylo.comm(ultramphipod, comm)
-ultram = drop.tip(ultram, which(!(ultram$tip.label %in% rownames(comm))))
-plot(ultram)
 #phyloDiversity = pd(comm,ultramphipod)
 
 ##Phylogenetic clustering
@@ -194,8 +168,8 @@ phylostruct(prunecomm, cophenetic(ultramphipod))
 #Cophylogenies
 reprunedass = as.data.frame(reprunedass)
 rownames(reprunedass) = 1:nrow(reprunedass)
-par(mfrow=c(1,1))
 cophyloplot(ultramphipod, ultram, assoc = reprunedass, type="phylogram", space=110, gap=0,show.tip.label=T, use.edge.length=F, col="orange")
+cophyloplot(ultramphipod, ultram, assoc = reprunedass, type="phylogram", space=110, gap=0,show.tip.label=T, use.edge.length=F, col="orange", rotate = T)
 #cophy = cophylo(ultramphipod, ultram, assoc = reprunedass, rotate = F)
 #plot(cophy)
 Parafit = parafit(as.matrix(cophenetic(ultram)),as.matrix(cophenetic(ultramphipod)), comm[which(rownames(comm) %in% ultram$tip.label),which(colnames(comm) %in% ultramphipod$tip.label)])
@@ -203,4 +177,9 @@ D = prepare_paco_data(cophenetic(ultram), cophenetic(ultramphipod), comm[which(r
 D = add_pcoord(D)
 D = PACo(D, nperm=10, seed=42, method="r0", correction='cailliez')
 print(D$gof)
+paco_links(D)
+
+#Popularity of hosts, generalist/specialist amphipods
+table(reprunedass[,2])
+table(reprunedass[,1])
 

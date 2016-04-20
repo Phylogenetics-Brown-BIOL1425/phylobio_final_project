@@ -98,6 +98,7 @@ raxml -T 8 -m GTRGAMMA -n EXThostML_boot100 -s host_ext_MSA.phy -p 12345 -f a -x
  and [RevBayes](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/ExtendedHosts/18S_GTRg.Rev) (see model specifications in the link). 
 
 I used non parametric bootstrap values for ML trees and bayesian posteriors for bayesian trees as measures of clade support.
+
 The ML tree was used for hosts, while the Bayesian tree was chosen for the amphipods.
 
 For the analysis and figure creation in R I used the packages: 
@@ -114,7 +115,7 @@ Figure 2. Host species 18S RAxML maximum likelihood tree under a GTR+Gamma DNA e
 ![Figure 3. Complete association network for hyperiid amphipods and their described gelatinous hosts from the literature review.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/PS/AllSPP.png)
 Figure 3. Complete association network for hyperiid amphipods and their described gelatinous hosts from the literature review.
 
-![Figure 4. Pruned association network for hyperiid amphipods and their described gelatinous hosts species included in both phylogenies.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/PS/prunedspp.png)
+![Figure 4. Pruned association network for hyperiid amphipods and their described gelatinous hosts species included in both phylogenies.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/PS/phylospp_assoc.png)
 Figure 4. Pruned association network for hyperiid amphipods and their described gelatinous hosts species included in both phylogenies.
 
 ![Figure 5. Distribution of host species among the amphipod phylogeny.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/amphipod_tipcol.png)
