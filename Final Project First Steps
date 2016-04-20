@@ -8,7 +8,7 @@
 ## load ape
 library(ape)
 
-## simulate a phylogeny (simple)
+## simulate a phylogeny (simple) -- gives tree whose tips are not contemporaneous 
 tree <- rtree(n = 20)
 plot(tree, edge.width = 2)
 
@@ -26,7 +26,14 @@ plotTree(tree, setEnv = TRUE)
 tt62 <- extract.clade(tree, 62)
 plotTree(tt62)
 
-
+##dropping tips (if I end up wanting to drop the tips that I don't have character data for)
+## now drop 10 tips from the tree (I'm going to pick them at random)
+dtips <- sample(tree$tip.label, 10)
+dt <- drop.tip(tree, dtips)
+plotTree(dt)
+## we could also, say, drop all tips that go extinct before the present
+## this is a fun way, but not the only way to do this:
+et <- fancyTree(tree, type = "droptip", tip = getExtinct(tree), cex = 0.7)
 
 
 

@@ -1,0 +1,12 @@
+##simulations
+##from the comparative r repo
+
+library(ape)
+set.seed(4984356)
+
+##only requires number of taxa --ultrametric tree 
+t <- rcoal( 30 )
+plot( t )
+
+##simulating character evolution
+sim.char()
