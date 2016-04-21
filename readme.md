@@ -66,7 +66,7 @@ Two runs of phylogenetic inferences where conducted with the entire chromosomal 
 
 **Gene Tree A6**
 
-![Figure 9](https://rawgit.com/Jcbnunez/phylobio_final_project/master/a_posterior_QC.png "Figure 9: Gene A6 Quality Control of Parameter Convergence")
+![Figure 9](https://rawgit.com/Jcbnunez/phylobio_final_project/master/a_posterior_QC1.png "Figure 9: Gene A6 Quality Control of Parameter Convergence")
 
 
 
