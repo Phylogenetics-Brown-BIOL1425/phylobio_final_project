@@ -52,8 +52,8 @@ ___
 
 ## Results
 
-#####Figure 7: Left: Phylogenetic reconstruction of of populations of your favorite organism. Branch leading to the split of the norther and souther clades is indicated in gold, posterior probability of the branch is also shown. Right: Mulutiple sequence aligment (MSA) of chromosome K used in the phylogenetic reconstruction
-![Figure 5](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_chrom_phylo.png "Figure 7: Chromosome K phylogeny")
+**Figure 7:** Left: Phylogenetic reconstruction of of populations of your favorite organism. Branch leading to the split of the norther and souther clades is indicated in gold, posterior probability of the branch is also shown. Right: Mulutiple sequence aligment (MSA) of chromosome K used in the phylogenetic reconstruction
+![Figure 5](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_wholechrom_phylo.png "Figure 7: Chromosome K phylogeny")
 
 
 
