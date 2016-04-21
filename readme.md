@@ -57,14 +57,14 @@ ___
 ###**Phylogenetic Inference Quality Control**
 
 **Chromosomal Tree**
-Two runs of phylogenetic inferences where conducted with the entire chromosomal sequence in RevBayes. Only one of the two runs showed parameter convergence (Mean of Posterior Distribution = -11907.167; ESS = 922). Other quality measures of the inference are also explored: tree space uncertainty of the best tree in the tree space is shown in figure 7 (Due to time and computational constrains, only 10% of the treespace is shown). Posterior probability search and probability distribution are shown in figure 8. 
+Two runs of phylogenetic inferences were conducted with the entire chromosomal sequence in RevBayes. Only one of the two runs showed parameter convergence (Mean of Posterior Distribution = -11907.167; ESS = 922). Other quality measures of the inference are also explored: tree space uncertainty of the best tree in the tree space is shown in figure 7 (Due to time and computational constrains, only 10% of the treespace is shown). Posterior probability search and probability distribution are shown in figure 8. 
 
 
 ![Figure 8](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_posterior_QC1.png "Figure 8: Chromosome K Quality Control of Parameter Convergence")
 **Figure 8:** Parameter searches conducted by revBayes during phylogenetic inference. Left: PDF of sampled posteriors. Right: Posterior sampling per state (i.e. *per* generations)
 
 
-**Gene Tree A6**
+**Gene Tree A6:** Two independent runs were conducted with the sequence of gene A. For both sequences, parameter searches converged to similar posterior distributions (Distribution Mean 1 = -1695.242, ESS = 992, Distribution Mean 2 = -1695.473, ESS = 739). Distribution and parameter search *per* state are shown in figure 9. 
 
 ![Figure 9](https://rawgit.com/Jcbnunez/phylobio_final_project/master/A_posterior_QC2.png "Figure 9: Gene A6 Quality Control of Parameter Convergence")
 
