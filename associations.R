@@ -19,22 +19,27 @@ assmatrix = dcast(ass, amphipod~host, length)
 rownames(assmatrix) = assmatrix[,1]
 heatmap(as.matrix(assmatrix[,2:94]), col=c("white", "orange"), Rowv=NA, Colv=NA)
 
-#Load amphipod tree Maximum Likelihood
-# amphipodML = read.tree("Amphipods/Interesting\ amphipods/RAxML/RAxML_bipartitions.datamphipod18S_ML_boot100")
-# plot(amphipodML)
-# amphipodML$tip.label[which(amphipodML$tip.label == "Phronima_species")] = "Phronima_sedentaria"
-# nodelabels()
-# amphipodML=root(amphipodML, 33)
-# plot(amphipodML)
+#Load amphipod tree Maximum Likelihood, Hyperietta species constrained
+amphipodML = read.tree("Amphipods/Interesting\ amphipods/RAxML/OI_constrained/RAxML_bipartitions.datamphipodOI18S_ML_constrained")
+plot(amphipodML)
+amphipodML$tip.label[which(amphipodML$tip.label == "Phronima_species")] = "Phronima_sedentaria"
+amphipodML$tip.label[which(amphipodML$tip.label == "Paraphronima_species")] = "Paraphronima_gracilis"
+amphipodML = drop.tip(amphipodML, which(amphipodML$tip.label == "Lestrigonus_bengalensis"))
+plot(amphipodML)
+nodelabels()
+amphipodML=reroot(amphipodML, 76)
+plot(amphipodML)
 
 #Load amphipod tree Bayesian
-amphipodB = read.nexus("Amphipods/Interesting\ amphipods/output/datamphipod18S_MSA_bayesian_run_1.tree")
-plot(amphipodB)
-amphipodB$tip.label[which(amphipodB$tip.label == "Phronima_species")] = "Phronima_sedentaria"
-amphipodB$tip.label[which(amphipodB$tip.label == "Paraphronima_species")] = "Paraphronima_gracilis"
-nodelabels()
-amphipodB=reroot(amphipodB, 47)
-plot(amphipodB)
+# amphipodB = read.nexus("Amphipods/Interesting\ amphipods/output/OI/datamphipodOI18S_MSA_bayesian_run_1.tree")
+# plot(amphipodB)
+# amphipodB$tip.label[which(amphipodB$tip.label == "Phronima_species")] = "Phronima_sedentaria"
+# amphipodB$tip.label[which(amphipodB$tip.label == "Paraphronima_species")] = "Paraphronima_gracilis"
+# amphipodB = drop.tip(amphipodB, which(amphipodB$tip.label == "Lestrigonus_bengalensis"))
+# plot(amphipodB)
+# nodelabels()
+# amphipodB=reroot(amphipodB, 62)
+# plot(amphipodB)
 
 #HOST TREE
 refhostree = read.nexus("FirstHostRound/output/host18S_bayesian2_run_1.tree")
@@ -51,28 +56,26 @@ refhostree$tip.label
 # TREE = hostBayes
 
 #GTR+Gamma Maximum Likelihood
-MLext = read.tree("ExtendedHosts/RAxML/RAxML_bipartitions.EXThostML_boot100")
-badtips = which(!(MLext$tip.label %in% refhostree$tip.label))
-hostML = drop.tip(MLext, badtips)
-plot(hostML)
+MLext = read.tree("ExtendedHosts/RAxML/RAxML_bipartitions.host_ext2_ML_boot100")
+plot(MLext)
 nodelabels()
-hostML = reroot(hostML, 85)
-plot(hostML)
-TREE = hostML
+MLext = reroot(MLext, 80)
+plot(MLext)
+TREE = MLext
 
 #replace _ with spaces in tipnames of both trees
 TREE$tip.label = str_replace_all(TREE$tip.label,'_',' ')
 #amphipodML$tip.label = str_replace_all(amphipodML$tip.label,'_',' ')
-amphipodB$tip.label = str_replace_all(amphipodB$tip.label,'_',' ')
+amphipodML$tip.label = str_replace_all(amphipodML$tip.label,'_',' ')
 TREE$tip.label
-amphipodB$tip.label
+amphipodML$tip.label
 
 #prune the matrix according to amphipod spp available in phylogeny
-amphispp = amphipodB$tip.label
+amphispp = amphipodML$tip.label
 prunedmatrix = assmatrix[which(assmatrix$amphipod %in% amphispp),]
 prunedass = as.matrix(ass[which(ass$amphipod %in% amphispp),])
 prunedass[,2] = as.matrix(str_replace_all(prunedass[,2],'conica','sp.'))
-heatmap(as.matrix(prunedmatrix[,2:94]), col=c("white", "orange"), Rowv=NA, Colv=NA)
+heatmap(as.matrix(prunedmatrix[,2:ncol(prunedmatrix)]), col=c("white", "orange"), Rowv=NA, Colv=NA)
 
 #Get species shared with the hosts
 sharedspp = as.vector(prunedass[,2][which(prunedass[,2] %in% TREE$tip.label)])
@@ -97,8 +100,8 @@ rownames(reprunedassmatrix) = dcast(as.data.frame(reprunedass), amphipod~host, l
 heatmap(reprunedassmatrix[,2:ncol(reprunedassmatrix)], col=c("white", "orange"), Rowv=NA, Colv=NA)
 
 #prune the amphipod tree to match the species in reprunedmatrix
-prunedamphipodB = drop.tip(amphipodB, which(!(amphipodB$tip.label %in% rownames(reprunedassmatrix))))
-ultramphipod = chronos(prunedamphipodB)
+prunedamphipodML = drop.tip(amphipodML, which(!(amphipodML$tip.label %in% rownames(reprunedassmatrix))))
+ultramphipod = chronos(prunedamphipodML)
 plot(ultramphipod)
 
 #define association network
@@ -181,7 +184,6 @@ D = prepare_paco_data(cophenetic(ultram), cophenetic(ultramphipod), comm[which(r
 D = add_pcoord(D)
 D = PACo(D, nperm=10, seed=42, method="r0", correction='cailliez')
 print(D$gof)
-paco_links(D)
 
 #Popularity of hosts, generalist/specialist amphipods
 table(reprunedass[,2])

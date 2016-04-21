@@ -74,8 +74,17 @@ Asterias forbesi.
 <b>Amphipod 18S phylogeny:</b>
 
 Outgroups:
-Cyathura sp.
-Idotea sp.
+Cyathura carinata, 
+Idotea baltica.
+
+Ingroups:
+Themisto abyssorum, 
+Cystisoma pellucida, 
+Hyperietta sibaginis, 
+Hyperietta parviceps, 
+Brachyscelus rapax, 
+Phrosina semilunata, 
+Rhabdosoma whitei.
 
 ###For both amphipods and hosts:
 
