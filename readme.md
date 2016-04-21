@@ -19,7 +19,7 @@ Your favorite marine organism inhabits the eastern seaboard of some contient. Ec
 
 ![Figure 1](https://rawgit.com/Jcbnunez/phylobio_final_project/master/model_system.png "Figure 1 Ecology of your favorite Marine Organism")
 
-*Figure 1:* Left - A "map" of the sampled populations correlated with the dominant haplogroup. Right - a putative topology of a phylogeny including populations of the 2 major haplogroups and a sister taxa of your favorite marine organism.    
+***Figure 1:** Left - A "map" of the sampled populations correlated with the dominant haplogroup. Right - a putative topology of a phylogeny including populations of the 2 major haplogroups and a sister taxa of your favorite marine organism.*    
 
 This historical event has a very distinct demographic signal occurring in the chromosome K such that organism south of the break have a particular set of haplogroups and viceversa for the north. However, populations of your favorite marine organism living close to Middelcity town show a conspicuous introgression pattern such that about 50% of organisms living in this area show either a discrete northern or discrete southern haplogroup (Figure 2). In other words, demographic signals from chromosome K tend to split the middlecity populaiton in 2 groups that cluster with organisms living miles appart rather than reconstructing a single population even thought gene flow  among middlecity seems to be unrestricted.
 
@@ -27,14 +27,14 @@ This project will utilize phylogenetic reconstruction methods to unravel the dem
 
 ![Figure 2](https://rawgit.com/Jcbnunez/phylobio_final_project/master/cline_network_phylo.png "Figure 2 Maximun Parsimony Network with full chromosome haplotypes of  your favorite Marine Organism")
 
-*Figure 2:* a maximun parsimony haplotype network with individuals from all populations and the outgroup.  
+***Figure 2:** a maximun parsimony haplotype network with individuals from all populations and the outgroup.*
 
 ## Methods
 Data for this project corresponds to real anonymized sequencing data from various populations of *your favorite marine organism.* Sequencing data was assembles to high coverage and mapping quality standards to a reference sequence of chromosome K available in NCBI. Data was anonymized using scripts 1, 2, and 3 (see supplement). Monomorphic and singleton (parsimony non-informative) locus were filtered using TASSEL 5 (http://www.maizegenetics.net/#!tassel/c17q9). Nexus files were built in SEAVIEW (http://www.molecularevolution.org/software/alignment/seaview). As opposed to MESQUITE, SEAVIEW outputs revbayes ready NEXUS files.
 
 Phylogenetic reconstructions were conducted in revbayes (rb) version 1.00 (March 2016) using two types of runs: heavy and light. Heavy runs were computationally expensive with 4 independent searches and 100,000 generations. Light runs were computationally moderate with only 2 searches and 30,000 generations. For both types of runs, searches were conducted in independent nodes of the OSCAR computer cluster using the MPI version of revbayes (rb-mpi; rb scripts 4 and 5 are also included in the supplement). A major advantage of RevBayes is its modular nature allowing phylogenetic reconstruction to be informed by different assumptions and models: rate matrix(figure 3), among site variation(figure 4), tree topology (Figure 5), and the phylogenetic MCMC model (Figure 6).
 
-The original vision of this project was to compare the chromosomal tree with each individual gene tree in the molecule. However, given time constrains, this project will present a 'Lite' version of the original vision focusing on the comparison of the  
+The original vision of this project was to compare the chromosomal tree with each individual gene tree in the molecule. However, given time constrains, this project will present a 'Lite' version of the original vision focusing on the comparison of the main phylogeny constructed using the complete chromosome K sequences with 3 genes (gene a6, Gene CI, gene BigGene) and 1 neutral marker. 
 
 #####Figure 3: Rate matrix
 ![Figure 3](https://rawgit.com/Jcbnunez/phylobio_final_project/master/rate_matrix.png "Figure 3 Rate Matrix")
@@ -59,15 +59,18 @@ ___
 **Chromosomal Tree**
 Two runs of phylogenetic inferences were conducted with the entire chromosomal sequence in RevBayes. Only one of the two runs showed parameter convergence (Mean of Posterior Distribution = -11907.167; ESS = 922). Other quality measures of the inference are also explored: tree space uncertainty of the best tree in the tree space is shown in figure 7 (Due to time and computational constrains, only 10% of the treespace is shown). Posterior probability search and probability distribution are shown in figure 8. 
 
+Figure 7
 
 ![Figure 8](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_posterior_QC1.png "Figure 8: Chromosome K Quality Control of Parameter Convergence")
-**Figure 8:** Parameter searches conducted by revBayes during phylogenetic inference. Left: PDF of sampled posteriors. Right: Posterior sampling per state (i.e. *per* generations)
+***Figure 8:** Parameter searches conducted by revBayes during phylogenetic inference of chromosome K. Left: PDF of sampled posteriors. The blue vertical line represent the mean of the sampling distribution. Right: Posterior sampling per state (i.e. *per* generations)*
 
 
-**Gene Tree A6:** Two independent runs were conducted with the sequence of gene A. For both sequences, parameter searches converged to similar posterior distributions (Distribution Mean 1 = -1695.242, ESS = 992, Distribution Mean 2 = -1695.473, ESS = 739). Distribution and parameter search *per* state are shown in figure 9. 
+**Gene Tree A6:** Two independent runs were conducted with the sequence of gene A. Tree space uncertainty and and best tree are shown in figure 9. For both runs, parameter searches converged to similar posterior distributions (Distribution Mean 1 = -1695.242, ESS = 992, Distribution Mean 2 = -1695.473, ESS = 739). Distribution and parameter search *per* state are shown in figure 10. 
 
-![Figure 9](https://rawgit.com/Jcbnunez/phylobio_final_project/master/A_posterior_QC2.png "Figure 9: Gene A6 Quality Control of Parameter Convergence")
+Figure 9
 
+![Figure 10](https://rawgit.com/Jcbnunez/phylobio_final_project/master/A_posterior_QC2.png "Figure 10: Gene A6 Quality Control of Parameter Convergence")
+***Figure 9:** Parameter searches conducted by revBayes during phylogenetic inference for gene a6. Left: PDF of sampled posteriors. The vertical lines represent the mean of the sampling distribution. The color scheme is blue and red for first and second independent run respectively. Right: Posterior sampling per state (i.e. *per* generations.) Color scheme is the same as the sampling distributions*
 
 
 
