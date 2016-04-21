@@ -32,7 +32,9 @@ This project will utilize phylogenetic reconstruction methods to unravel the dem
 ## Methods
 Data for this project corresponds to real anonymized sequencing data from various populations of *your favorite marine organism.* Sequencing data was assembles to high coverage and mapping quality standards to a reference sequence of chromosome K available in NCBI. Data was anonymized using scripts 1, 2, and 3 (see supplement). Monomorphic and singleton (parsimony non-informative) locus were filtered using TASSEL 5 (http://www.maizegenetics.net/#!tassel/c17q9). Nexus files were built in SEAVIEW (http://www.molecularevolution.org/software/alignment/seaview). As opposed to MESQUITE, SEAVIEW outputs revbayes ready NEXUS files.
 
-Phylogenetic reconstructions were conducted in revbayes (rb) version 1.00 (March 2016) using two types of runs: heavy and light. Heavy runs were computationally expensive with 4 independent searches and 100,000 generations. Light runs were computationally moderate with only 2 searches and 30,000 generations. For both types of runs, searches were conducted in independent nodes of the OSCAR computer cluster using the MPI version of revbayes (rb-mpi; rb scripts 4 and 5 are also included in the supplement). A major advantage of RevBayes is its modular nature allowing phylogenetic reconstruction to be informed by different assumptions and models: rate matrix(figure 3), among site variation(figure 4), tree topology (Figure 5), and the phylogenetic MCMC model (Figure 6). 
+Phylogenetic reconstructions were conducted in revbayes (rb) version 1.00 (March 2016) using two types of runs: heavy and light. Heavy runs were computationally expensive with 4 independent searches and 100,000 generations. Light runs were computationally moderate with only 2 searches and 30,000 generations. For both types of runs, searches were conducted in independent nodes of the OSCAR computer cluster using the MPI version of revbayes (rb-mpi; rb scripts 4 and 5 are also included in the supplement). A major advantage of RevBayes is its modular nature allowing phylogenetic reconstruction to be informed by different assumptions and models: rate matrix(figure 3), among site variation(figure 4), tree topology (Figure 5), and the phylogenetic MCMC model (Figure 6).
+
+The original vision of this project was to compare the chromosomal tree with each individual gene tree in the molecule. However, given time constrains, this project will present a 'Lite' version of the original vision focusing on the comparison of the  
 
 #####Figure 3: Rate matrix
 ![Figure 3](https://rawgit.com/Jcbnunez/phylobio_final_project/master/rate_matrix.png "Figure 3 Rate Matrix")
@@ -52,12 +54,37 @@ ___
 
 ## Results
 
+###**Phylogenetic Inference Quality Control**
+
+**Chromosomal Tree**
+Two runs of phylogenetic inferences where conducted with the entire chromosomal sequence in RevBayes. Only one of the two runs showed parameter convergence (Mean of Posterior Distribution = -11907.167; ESS = 922). Other quality measures of the inference are also explored: tree space uncertainty of the best tree in the tree space is shown in figure 7 (Due to time and computational constrains, only 10% of the treespace is shown). Posterior probability search and probability distribution are shown in figure 8. 
+
+
+![Figure 8](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_posterior_QC.png "Figure 8: Chromosome K Quality Control of Parameter Convergence")
+
+
+
+**Gene Tree A6**
+
+**Gene Tree CI**
+
+**Gene Tree BigGene**
+
+**Gene Tree Neutral Marker**
+
+###**Phylogenetic Signal**
+
+
+and thus was used as the phylogeny for the chromosome.  The tree shows the split of the northern and Southern clades (Posterior probability = 0.92). As expected from the network analysis, individuals from the introgression zone clustered within either of the clades.      
+
 **Figure 7:** Left: Phylogenetic reconstruction of of populations of your favorite organism. Branch leading to the split of the norther and souther clades is indicated in gold, posterior probability of the branch is also shown. Right: Mulutiple sequence aligment (MSA) of chromosome K used in the phylogenetic reconstruction
 ![Figure 5](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_wholechrom_phylo.png "Figure 7: Chromosome K phylogeny")
 
 
 
 ## Discussion
+
+
 
 
 #Part 2: **"Phylogenetic Reconstruction of the Evolution of Protein B"** 
