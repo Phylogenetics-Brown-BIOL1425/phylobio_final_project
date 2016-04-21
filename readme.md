@@ -61,7 +61,7 @@ Two runs of phylogenetic inferences where conducted with the entire chromosomal 
 
 
 ![Figure 8](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_posterior_QC.png "Figure 8: Chromosome K Quality Control of Parameter Convergence")
-
+**Figure 8:** Parameter searches conducted by revBayes during phylogenetic inference. Left: PDF of sampled posteriors. Right: Posterior sampling per state (i.e. *per* generations)
 
 
 **Gene Tree A6**
