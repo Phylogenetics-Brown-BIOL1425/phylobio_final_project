@@ -60,7 +60,7 @@ ___
 Two runs of phylogenetic inferences where conducted with the entire chromosomal sequence in RevBayes. Only one of the two runs showed parameter convergence (Mean of Posterior Distribution = -11907.167; ESS = 922). Other quality measures of the inference are also explored: tree space uncertainty of the best tree in the tree space is shown in figure 7 (Due to time and computational constrains, only 10% of the treespace is shown). Posterior probability search and probability distribution are shown in figure 8. 
 
 
-![Figure 8](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_posterior_QC.png "Figure 8: Chromosome K Quality Control of Parameter Convergence")
+![Figure 8](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_posterior_QC1.png "Figure 8: Chromosome K Quality Control of Parameter Convergence")
 **Figure 8:** Parameter searches conducted by revBayes during phylogenetic inference. Left: PDF of sampled posteriors. Right: Posterior sampling per state (i.e. *per* generations)
 
 
@@ -78,7 +78,7 @@ Two runs of phylogenetic inferences where conducted with the entire chromosomal 
 and thus was used as the phylogeny for the chromosome.  The tree shows the split of the northern and Southern clades (Posterior probability = 0.92). As expected from the network analysis, individuals from the introgression zone clustered within either of the clades.      
 
 **Figure 7:** Left: Phylogenetic reconstruction of of populations of your favorite organism. Branch leading to the split of the norther and souther clades is indicated in gold, posterior probability of the branch is also shown. Right: Mulutiple sequence aligment (MSA) of chromosome K used in the phylogenetic reconstruction
-![Figure 5](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_wholechrom_phylo.png "Figure 7: Chromosome K phylogeny")
+
 
 
 
