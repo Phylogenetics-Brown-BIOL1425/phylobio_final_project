@@ -42,11 +42,13 @@ The goal of this project is to compare the evolutionary histories of hyperiid am
 
 ## Methods
 
-Hyperiid amphipod - Gelatinous host associations (presence) were recorded from the literature review.
+Hyperiid amphipod - Gelatinous host associations (unquantified, recorded categorically as presence) were recorded from the literature review.
 
 Host and amphipod 18S fasta sequences were retrieved from NCBI Batch Entrez using the GI numbers for each sequence.
 
-The following taxa were included (and pruned out a posteriori) to increase the robustness of the analysis and reduce the effect of long branch attraction:
+Additional taxa were included (and pruned out a posteriori) to increase the robustness of the analysis and reduce the effect of long branch attraction. The hyperiid amphipod tree showed a rogue taxon "Hyperietta stephenseni" which consistently appeared outside its genus clade and as sister group to all other species. Its 18S sequence, as annotated in NCBI differed much from every other in the alignment. This is possibly due to incorrect annotation or contamination. {BLAST to check!!}. It has critical information as it is the only taxon for which I had available association data with radiolarians, so I could not simply remove it. Therefore, I applied a constraint (specified below) during the RAxML analysis to procrust its position in the tree, informed by alternative phylogenies (Hurt et al., 2013) and taxonomic information. Lestrigonus schizogeneios was also showing a similar behavior, but as it did not have critical ecological information, I decided to remove the taxon a posteriori.
+
+For the sake of making good use of species-to-species association data for interesting species which do not have available annotated 18S sequence data, I used "sequence proxies". This artifact consists in using a sequence annotated as "Species sp." as a placeholder, assuming it would have an approximate phylogenetic placement to the morphospecies of interest.
 
 <b>Host 18S phylogeny:</b>
 
@@ -71,6 +73,12 @@ Helix aspersa.
 Other deuterostome:
 Asterias forbesi.
 
+Sequence proxies:
+Bolinopsis sp. used as Bolinopsis vitrea.
+Pandea conica used as Pandea sp.
+Solmissus sp. as Solmissus incissa.
+Cavolinia sp. as Cavolinia longirostris.
+
 <b>Amphipod 18S phylogeny:</b>
 
 Outgroups:
@@ -88,6 +96,10 @@ Rhabdosoma whitei.
 
 Constraint: (Hyperietta stephenseni, Hyperietta parviceps, Hyperietta sibaginis, Eupronoe minuta);
 
+Sequence proxies: 
+Phronima sp. used as Phronima sedentaria.
+Paraphronima sp. used as Paraphronima gracilis.
+
 ###For both amphipods and hosts:
 
 The MSA alignments were carried out using MAFFT (Method: L-INS-i, no additonal parameters). I used Mesquite 2.75 (Maddison, 1994) to output the alignments in Phylipp and Nexus formats for phylogenetic analysis.
@@ -98,15 +110,14 @@ raxml -T 8 -m GTRGAMMA -n EXThostML_boot100 -s host_ext_MSA.phy -p 12345 -f a -x
 
  and [RevBayes](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/ExtendedHosts/18S_GTRg.Rev) GTR+Gamma (follow link for model specifications). 
 
-In both amphipods and hosts, there was a good agreement between RevBayes and RAxML trees. 
+In both amphipods and hosts, there was a good agreement between RevBayes and RAxML trees. However, only RAxML trees were used for the downstream analyses.
 
-[FM1](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/raw_hostpleuro.png)
+![FM1](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/raw_hostpleuro.png)
 Supplementary figure 1. Host 18S GTR+Gamma RAxML tree. 100 non-parametric bootstrap replicates generated. Nodes labeled with bootstrap support values.
 
-[FM1](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/constrainedRAW.png)
+![FM2](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/constrainedRAW.png)
 Supplementary figure 2. Hyperiid amphipod 18S GTR+Gamma bayesian (RevBayes) tree. Nodes labeled with bayesian posteriors.
 
-Hyperiid amphipod bayesian GTR+Gamma tree (Supplementary figure 1) shows good convergence in 2 independent MCMC runs (Posterior ESS: 1067, Likelihood ESS: 1040). RAxML hyperiid amphipod tree presented unidentified rooting problems downstream and was not used. The RAxML tree was used for host species (Supplementary figure 2).
 
 ###Analysis and visualization:
 
@@ -129,16 +140,16 @@ Test for phylogenetic clustering picante::phylostruct(), and per habitat picante
 
 ###Phylogenetic analyses:
 
-![Figure 1. Amphipod species 18S bayesian best tree under a GTR+Gamma DNA evolution model. Nodes labeled with bayesian posteriors.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/amphipod_phylogeny_unp.png)
-Figure 1. Amphipod species 18S bayesian best tree under a GTR+Gamma DNA evolution model. 
+![Figure 1. Ultrametric amphipod species 18S GTR+Gamma ML tree. Nodes labeled with bayesian posteriors.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/ultramphipod.png)
+Figure 1. Ultrametric hyperiid amphipod species 18S GTR+Gamma ML tree. 
 
 Amphipod phylogeny:
 
 The amphipod 18S gene tree produced (Figure 1) accurately reconstructs the clades Physosomata, Physocephalata, Oxycephalidae, and Vibilidae.
 It does not, however, reconstruct Platysceloidea nor Phronimoidea. These artifacts could be due to reduced taxon sampling and inability of the 18S gene to recapitulate the species tree.
 
-![Figure 2. Host species 18S RAxML maximum likelihood tree under a GTR+Gamma DNA evolution model. 100 non-parametric bootstrap replicates generated. Nodel labeled with bootstrap support values.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/hostMLtree.png)
-Figure 2. Host species 18S RAxML maximum likelihood tree under a GTR+Gamma DNA evolution model.
+![Figure 2. Host species 18S RAxML maximum likelihood tree under a GTR+Gamma DNA evolution model. 100 non-parametric bootstrap replicates generated. Nodel labeled with bootstrap support values.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/ultram.png)
+Figure 2. Ultrametric gelatinous zooplankton host species 18S GTR+Gamma ML tree.
 
 Host phylogeny:
 
@@ -180,7 +191,7 @@ But, how far did sharing a common evolutionary history generate this association
 ![Figure 12](https://github.com/antropoteuthis/phylobio_final_project/raw/master/Good_Cophylo.png)
 Figure 12. Cophylogeny of amphipods and gelatinous hosts produced using ape::cophyloplot.
 
-The cophylogeny (Figure 12) shows the realtionship between common ancestry and association patterns. Global congruence (Parafit) between host and amphipod trees: 46.846, p-value=0.09. The trees are not significantly congruent enough to support a prevalent co-speciation scenario.
+The cophylogeny (Figure 12) shows the realtionship between common ancestry and association patterns. Global congruence (Parafit) between host and amphipod trees: 46.846, p-value=0.09. The trees are somewhat congruent, enough to support a shared macroevolutionary scenario.
 
 ![Figure 13](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/good_specificity.png)
 Figure 13. Amphipod phylogeny showing a brownian motion reconstruction of host specifity (blue - generalist, red - specialist).
@@ -205,12 +216,17 @@ As we can see in Figure 14, thaliacean species harbor the richest assemblage of 
 ![F15](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/clustering.png)
 Figure 15. Phylogenetic overdispersion of amphipod species within each host.
 
+But, which phylogeny has a stronger impact on the associations?
+
+A mantel test of the phylogenetic distance matrices against the association-based distance matrix for each group reveals:
+Hyperiid amphipods: -0.127, p=0.861 (non-significant relationship).
+Hosts: 0.0124, p=0.427 (non-significant relationship).
 
 ## Discussion
 
 These results indicate that hyperiid amphipods...
 
-Given the low global fit obtained, it is likely that the evolutionary histories of these groups were not coupled (not dominated by cospeciation events). However, there are a few possible causes that could obscure the cophylogenetic signal in the data:
+Given the low global fit significance obtained, it is likely that the evolutionary histories of these groups were not completely coupled (not dominated by cospeciation events). However, there are a few possible causes that could obscure the cophylogenetic signal in the data:
 
 1) The different phylogenetic scales comprised. The gelatinous zooplankton tree contains taxa across kingdoms of life, from radiolarians to chordates, while the amphipod tree contains species from a single suborder, with a much more recent common ancestor. Unlike in the case of Hyperiid amphipods (Browne, 2007) the MRCA of the hosts has probably had a very different ecology than the tip species, and there is no reason to believe the MRCAs of the main host clades (Urochordates, Ctenophores, Cnidarians...) had been pelagic, lest been associated with hyperiid amphipods at all.
 
@@ -218,9 +234,13 @@ Given the low global fit obtained, it is likely that the evolutionary histories 
 
 3) Host switching and limited specificity. Not all hyperiid amphipods are obligate parasites/parasitoids of a narrow range of host taxa. Many, like Eupronoe minuta, dwell among a diversity of species. Host specificity varies greatly throughout the phylogeny (Figure 14) so there are reasons to believe host switching could have played a major role in shaping the cophylogeny.
 
-The biggest difficulty in implementing these analyses was obtaining reliable trees. 18S gene trees hardly conform to the expected species trees. Another difficulty I found was figuring out what tools to use and where to find them. Cophylogenetics and phylogenetic community ecology are not very popular fields, so few educational resources and guides are available for newcomers and early career scientists. The cophylogenetic analyses carried out here are not the only tests that can be done. There are many others such as Jane (), Tarzan(), ... that claim to have a more accurate algorithm to compute congruence and infer evolutionary events. I feel that this field needs a thorough revision of the methods. 
+The biggest difficulty in implementing these analyses was obtaining reliable trees. 18S gene trees hardly conform to the expected species trees. In the case of gelatinous hosts, adding ingroups and outgroups wass sufficient to fix the greatest anomalies. For the hyperiid amphipod tree, I had to apply an external constraint to keep <i> Hyperietta stephenseni </i> from showing up as sistergroup to every other amphipod taxon. 
 
-If I did these analyses again, I would use concatenated matrix trees with newly collected molecular data for the species of interest. This way I would provide more accurate phylogenies upstrem, which would greatly improve the overall accuracy of the analyses. In addition, I would put more care in making informed decisions on the alignment and tree search parameters used.
+Another difficulty I found was figuring out what tools to use for cophylogenetic analyses and where to find them. Cophylogenetics and phylogenetic community ecology are not very popular fields, so few educational resources and guides are available for newcomers and early career scientists. The cophylogenetic analyses carried out here are not the only tests that can be done. There are many others such as CopyCat(), Jane (), Tarzan(), ... that claim to have a more accurate algorithm to compute congruence and infer evolutionary events. I feel that this field needs a thorough revision of the methods. 
+
+If I did these analyses again, I would use concatenated matrix trees with newly collected molecular data for the species of interest. This way I would provide more accurate phylogenies upstrem, which would greatly improve the overall accuracy of the analyses. In addition, I would put more care in making informed decisions on the alignment and tree search parameters used. 
+
+Moreover, the association data used included only presence data (absences not reported), and had no information on the strength or frequency of the interaction, nor the type of interaction (parasitoidism, parasism, predation, phoresis...). In the future, I intend to record a detailed matrix with these data to better understand these interactions in the context of cophylogenetics.
 
 
 ## References

@@ -9,6 +9,7 @@ library(network)
 library(dendextend)
 library(picante)
 library(paco)
+library(ade4)
 
 setwd("~/Documents/0BIOL_Phylogenetics/phylobio_final_project")
 ass = unique(read.table("Associations.csv", sep = '\t', header = T)[,c(1,2)])
@@ -41,10 +42,6 @@ plot(amphipodML)
 # amphipodB=reroot(amphipodB, 62)
 # plot(amphipodB)
 
-#HOST TREE
-refhostree = read.nexus("FirstHostRound/output/host18S_bayesian2_run_1.tree")
-refhostree$tip.label
-
 #Bayesian GTR+Gamma tree
 # extreeBAYES = read.nexus("ExtendedHosts/output/host_ext_MSA_bayesian_run_1.tree")
 # badtips = which(!(extreeBAYES$tip.label %in% hostree$tip.label))
@@ -61,6 +58,9 @@ plot(MLext)
 nodelabels()
 MLext = reroot(MLext, 80)
 plot(MLext)
+MLext$tip.label[which(MLext$tip.label == "Bolinopsis_sp.")] = "Bolinopsis_vitrea"
+MLext$tip.label[which(MLext$tip.label == "Cavolinia_sp.")] = "Cavolinia_longirostris"
+MLext$tip.label[which(MLext$tip.label == "Solmissus sp.")] = "Solmissus_incissa"
 TREE = MLext
 
 #replace _ with spaces in tipnames of both trees
@@ -188,7 +188,6 @@ D = PACo(D, nperm=100, seed=42, method="r0", correction='cailliez')
 print(D$gof)
 D
 
-
 #Popularity of hosts, generalist/specialist amphipods
 table(reprunedass[,2])
 specificity = as.vector(table(reprunedass[,1]))
@@ -199,3 +198,13 @@ popularity = as.vector(table(reprunedass[,2]))
 names(popularity) = names(table(reprunedass[,2]))
 contMap(ultram, popularity)
 
+#Which phylogeny has a stronger signal?
+pdist_amphipods = as.dist(cophenetic(ultramphipod))
+pdist_hosts = as.dist(cophenetic(ultram))
+adist_amphipods = species.dist(prunecomm)
+adist_hosts = species.dist(t(comm[which(rownames(comm) %in% ultram$tip.label),]))
+mantel_amphi = mantel.rtest(pdist_amphipods, adist_amphipods, nrepet = 9999)
+mantel_host = mantel.rtest(pdist_hosts, adist_hosts, nrepet = 9999)
+
+dim(as.matrix(adist_hosts))
+dim(as.matrix(pdist_hosts))
