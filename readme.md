@@ -59,14 +59,7 @@ ___
 **Chromosomal Tree**
 Two runs of phylogenetic inferences were conducted with the entire chromosomal sequence in RevBayes. Only one of the two runs showed parameter convergence (Mean of Posterior Distribution = -11907.167; ESS = 922). Other quality measures of the inference are also explored: tree space uncertainty of the best tree in the tree space is shown in figure 7 (Due to time and computational constrains, only 10% -4000 randomly sampled trees- of the treespace is shown). Posterior probability search and probability distribution are shown in figure 8. 
 
-###A
-![Figure 7](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_chrom_treespace_ultrametric.png "Figure 7: Tree Space ")
-###B
-![Figure 7b](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_treespace_withbrlenght.png "Figure 7b: Tree Space with branch lenght ")
-*Figure 7A: Light blue, 10% of the tree space constructed for chromosome K. Red, Best tree. For figure A  trees have been modified such that all branch lengths are equivalent. Only Topology is shown.*
-
-
-
+Figure 7
 
 ![Figure 8](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_posterior_QC1.png "Figure 8: Chromosome K Quality Control of Parameter Convergence")
 *Figure 8: Parameter searches conducted by revBayes during phylogenetic inference of chromosome K. Left: PDF of sampled posteriors. The blue vertical line represent the mean of the sampling distribution. Right: Posterior sampling per state (i.e. *per* generations)*
@@ -74,7 +67,9 @@ Two runs of phylogenetic inferences were conducted with the entire chromosomal s
 
 **Gene Tree A6:** Two independent runs were conducted with the sequence of gene A. Tree space uncertainty and and best tree are shown in figure 9. For both runs, parameter searches converged to similar posterior distributions (Distribution Mean 1 = -1695.242, ESS = 992, Distribution Mean 2 = -1695.473, ESS = 739). Distribution and parameter search *per* state are shown in figure 10. 
 
-Figure 9
+![Figure 9](https://rawgit.com/Jcbnunez/phylobio_final_project/master/a_treespace.png "Figure 9: Tree Space with branch lenght ")
+*Figure 9: Light blue, 10% of the tree space constructed for chromosome K. Red, Best tree. 
+
 
 ![Figure 10](https://rawgit.com/Jcbnunez/phylobio_final_project/master/A_posterior_QC2.png "Figure 10: Gene A6 Quality Control of Parameter Convergence")
 *Figure 10: Parameter searches conducted by revBayes during phylogenetic inference for gene a6. Left: PDF of sampled posteriors. The vertical lines represent the mean of the sampling distribution. The color scheme is blue and red for first and second independent run respectively. Right: Posterior sampling per state (i.e. *per* generations.) Color scheme is the same as the sampling distributions*
