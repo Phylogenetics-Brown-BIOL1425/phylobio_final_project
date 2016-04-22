@@ -33,11 +33,13 @@ The data I will use are (my own data/ data publicly available at YYY/ simulation
 The Temnospondyls were a highly diverse and successful order of amphibian-like tetrapods that arose during the Carboniferous. Managing to survive the devastating Permian extinction, they persisted through the Triassic but were almost entirely wiped out by the smaller Triassic-Jurassic extinction. The latest known temnospondyl species died off during the Cretaceous.
 There is controversy about the placement of Temnospondyli with regards to Amphibia. It is unclear whether temnospondyls were an ancestral group to amphibians, or whether they were an divergent group with no modern descendents. Their relationship to Lepospondyls, another extinct clade extant at the same time and suffering from the same ambiguity, is likewise confused.
 
-A seminal paper by Yates and Warren in 2000 created a phylogeny of the temnospondyls using parsimony. I plan to use the character data from this paper to create a tree using maximum likelihood methods. I further intend to apply biogeographical methods (currently, I am looking into the Ramachandran and Rosenberg paper) to analyze the geographical distribution of the represented taxa, taking into account the long geologic time scales over which the species are distributed.
+A seminal paper by Yates and Warren in 2000 created a phylogeny of the temnospondyls using parsimony. I plan to use the character data from this paper to create a tree using RAxML's three multistate models. I further intend to apply biogeographical methods (currently, I am looking into the Ramachandran and Rosenberg paper) to analyze the geographical distribution of the represented taxa, taking into account the long geologic time scales over which the species are distributed.
 
 ## Methods
 
 The tools I used were... See analysis files at (links to analysis files).
+
+I created the trees with RAxML, using each of the multistate models built in to the program. I chose to run my analyses with the multistate GAMMA model of heterogeneity (RAxML command `-m MULTIGAMMA`) because I decided that the most naive option would require the fewest initial assumptions about parameter values, etc. I chose to bootstrap each with 100 iterations, and also varied the seed three times for each run, in order to be certain of my results. The shell file and input data are included in the git repository.
 
 ## Results
 
