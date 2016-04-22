@@ -86,6 +86,8 @@ Brachyscelus rapax,
 Phrosina semilunata, 
 Rhabdosoma whitei.
 
+Constraint: (Hyperietta stephenseni, Hyperietta parviceps, Hyperietta sibaginis, Eupronoe minuta);
+
 ###For both amphipods and hosts:
 
 The MSA alignments were carried out using MAFFT (Method: L-INS-i, no additonal parameters). I used Mesquite 2.75 (Maddison, 1994) to output the alignments in Phylipp and Nexus formats for phylogenetic analysis.
@@ -98,10 +100,10 @@ raxml -T 8 -m GTRGAMMA -n EXThostML_boot100 -s host_ext_MSA.phy -p 12345 -f a -x
 
 In both amphipods and hosts, there was a good agreement between RevBayes and RAxML trees. 
 
-[FM1](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/rawhost_tree.png)
+[FM1](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/raw_hostpleuro.png)
 Supplementary figure 1. Host 18S GTR+Gamma RAxML tree. 100 non-parametric bootstrap replicates generated. Nodes labeled with bootstrap support values.
 
-[FM1](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/rawamphipod_tree.png)
+[FM1](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/constrainedRAW.png)
 Supplementary figure 2. Hyperiid amphipod 18S GTR+Gamma bayesian (RevBayes) tree. Nodes labeled with bayesian posteriors.
 
 Hyperiid amphipod bayesian GTR+Gamma tree (Supplementary figure 1) shows good convergence in 2 independent MCMC runs (Posterior ESS: 1067, Likelihood ESS: 1040). RAxML hyperiid amphipod tree presented unidentified rooting problems downstream and was not used. The RAxML tree was used for host species (Supplementary figure 2).
@@ -175,30 +177,34 @@ But, how far did sharing a common evolutionary history generate this association
 
 ###Cophylogenetic analysis
 
-![Figure 12](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/cophylogeny.png)
+![Figure 12](https://github.com/antropoteuthis/phylobio_final_project/raw/master/Good_Cophylo.png)
 Figure 12. Cophylogeny of amphipods and gelatinous hosts produced using ape::cophyloplot.
 
-The cophylogeny (Figure 12) shows the realtionship between common ancestry and association patterns. Global congruence (Parafit) between host and amphipod trees: 13.83, p-value=0.231. The trees are not significantly congruent enough to support a prevalent co-speciation scenario.
+The cophylogeny (Figure 12) shows the realtionship between common ancestry and association patterns. Global congruence (Parafit) between host and amphipod trees: 46.846, p-value=0.09. The trees are not significantly congruent enough to support a prevalent co-speciation scenario.
 
-![Figure 13](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/specificity.png)
+![Figure 13](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/good_specificity.png)
 Figure 13. Amphipod phylogeny showing a brownian motion reconstruction of host specifity (blue - generalist, red - specialist).
 
 Figure 13 shows the evolution a key aspect of hyperiid amphipods' ecological role: host specificity. Host specificty could be used as a proxy of likelihood to interact as a parasite/parasitoid (with greater chance of a co-speciation history) rather than a generalist predator or hitchhiker.
 
-![Figure 14](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/popularity.png)
+![Figure 14](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/good_popularity.png)
 Figure 14. Gelatinous host phylogeny showing a brownian motion reconstruction of amphipod richness (blue - common target, red - rare target).
 
 From the other side of the story, Figure 14 shows the evolution of the suitability of gelatinous hosts to a broad spectrum of hyperiid amphipod species. Hosts that harbor more species, such as salps, are less likely to develop a coevolutionary armsrace against a particular amphipod species.
 
-The PACo (Balbuena et al., 2013) analysis of phylogenetic structure detected a phylogenetically overdispersed pattern (Procrustes sum of squares = 9.19, goodness-of-fit: p-value=0, sum of squares=9.189, number of permutations =10) in the associations data, accounting for both the host and amphipod phylogenies.
+The PACo (Balbuena et al., 2013) analysis of phylogenetic structure detected a slight fit (Procrustes sum of squares = 23.07, goodness-of-fit: p-value=0, number of permutations =10).
 
 ###Phylogenetic community ecology
 
-The picante::phylostruct permutation test for phylogenetic signal in community composition (using the amphipod phylogeny and the hosts as communities) detected an overdispersed pattern (mean observed= -0.8222, expected null = -0.955), in agreement with the PACo analysis.
+The picante::phylostruct permutation test for phylogenetic signal in community composition (using the amphipod phylogeny and the hosts as communities) detected an overdispersed pattern (mean observed= -1.15, expected null = -1.24).
 
 The mean value of the phylogenetic clustering analysis of amphipod species for all hosts was 0.9083, indicating again a slightly overdispersed structure. However the standard deviation (0.3953) was large. Some hosts (<i>Thalia democratica</i> and <i>Iasis zonaria</i>) had a greatly overdispersed amphipod community, whilst others (<i>Cyclosalpa affinis, Eurhamphaea vexilligera</i>, and <i>Pterotrachea hippocampus</i>) had a distinct phylogenetic clustering in their amphipod assemblage (Figure 15).
 
 As we can see in Figure 14, thaliacean species harbor the richest assemblage of hyperiid amphipods. Brownian motion reconstruction suggests the appearance of a key trait in their MRCA that rendered these animals widely favorable hosts for hyperiid amphipods.
+
+![F15](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/clustering.png)
+Figure 15. Phylogenetic overdispersion of amphipod species within each host.
+
 
 ## Discussion
 

@@ -167,8 +167,9 @@ mpd(prunecomm, cophenetic(ultramphipod))
 ses.mntd(prunecomm, cophenetic(ultramphipod))
 ses.mpd(prunecomm, cophenetic(ultramphipod))
 PSClustering = psc(prunecomm, cophenetic(ultramphipod))
-mean(PSClustering$PSCs[which(!is.na(PSClustering$PSCs[1:60]))])
-barplot(PSClustering$PSCs[which(!is.na(PSClustering$PSCs[1:60]))], names.arg = rownames(PSClustering)[which(!is.na(PSClustering$PSCs[1:60]))], col='magenta', las=2)
+mean(PSClustering$PSCs[which(!is.na(PSClustering$PSCs[1:(nrow(PSClustering)-2)]))])
+par(mar=rep(5,4))
+barplot(PSClustering$PSCs[which(!is.na(PSClustering$PSCs[1:(nrow(PSClustering)-2)]))], names.arg = rownames(PSClustering)[which(!is.na(PSClustering$PSCs[1:(nrow(PSClustering)-2)]))], col='magenta', las=3)
 phylostruct(prunecomm, cophenetic(ultramphipod))
 
 #Cophylogenies
@@ -176,14 +177,17 @@ reprunedass = as.data.frame(reprunedass)
 #write.table(reprunedass, "reprunedass.txt", sep='\t')
 rownames(reprunedass) = 1:nrow(reprunedass)
 cophyloplot(ultramphipod, ultram, assoc = reprunedass, type="phylogram", space=110, gap=0,show.tip.label=T, use.edge.length=F, col="orange")
-cophyloplot(ultramphipod, ultram, assoc = reprunedass, type="phylogram", space=110, gap=0,show.tip.label=T, use.edge.length=F, col="orange", rotate = T)
+#cophyloplot(ultramphipod, ultram, assoc = reprunedass, type="phylogram", space=110, gap=0,show.tip.label=T, use.edge.length=F, col="orange", rotate = T)
 #cophy = cophylo(ultramphipod, ultram, assoc = reprunedass, rotate = F)
 #plot(cophy)
+
 Parafit = parafit(as.matrix(cophenetic(ultram)),as.matrix(cophenetic(ultramphipod)), comm[which(rownames(comm) %in% ultram$tip.label),which(colnames(comm) %in% ultramphipod$tip.label)])
 D = prepare_paco_data(cophenetic(ultram), cophenetic(ultramphipod), comm[which(rownames(comm) %in% ultram$tip.label),which(colnames(comm) %in% ultramphipod$tip.label)])
 D = add_pcoord(D)
-D = PACo(D, nperm=10, seed=42, method="r0", correction='cailliez')
+D = PACo(D, nperm=100, seed=42, method="r0", correction='cailliez')
 print(D$gof)
+D
+
 
 #Popularity of hosts, generalist/specialist amphipods
 table(reprunedass[,2])
