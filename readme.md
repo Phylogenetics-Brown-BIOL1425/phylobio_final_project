@@ -140,7 +140,7 @@ Test for phylogenetic clustering picante::phylostruct(), and per habitat picante
 
 ###Phylogenetic analyses:
 
-![Figure 1. Ultrametric amphipod species 18S GTR+Gamma ML tree. Nodes labeled with bayesian posteriors.](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/ultramphipod.png)
+![Figure 1. Ultrametric amphipod species 18S GTR+Gamma ML tree. Nodes labeled with bayesian posteriors.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/ultramphipod.png)
 Figure 1. Ultrametric hyperiid amphipod species 18S GTR+Gamma ML tree. 
 
 Amphipod phylogeny:
@@ -148,7 +148,7 @@ Amphipod phylogeny:
 The amphipod 18S gene tree produced (Figure 1) accurately reconstructs the clades Physosomata, Physocephalata, Oxycephalidae, and Vibilidae.
 It does not, however, reconstruct Platysceloidea nor Phronimoidea. These artifacts could be due to reduced taxon sampling and inability of the 18S gene to recapitulate the species tree.
 
-![Figure 2. Host species 18S RAxML maximum likelihood tree under a GTR+Gamma DNA evolution model. 100 non-parametric bootstrap replicates generated. Nodel labeled with bootstrap support values.](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/ultram.png)
+![Figure 2. Host species 18S RAxML maximum likelihood tree under a GTR+Gamma DNA evolution model. 100 non-parametric bootstrap replicates generated. Nodel labeled with bootstrap support values.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/ultram.png)
 Figure 2. Ultrametric gelatinous zooplankton host species 18S GTR+Gamma ML tree.
 
 Host phylogeny:
