@@ -59,7 +59,8 @@ ___
 **Chromosomal Tree**
 Two runs of phylogenetic inferences were conducted with the entire chromosomal sequence in RevBayes. Only one of the two runs showed parameter convergence (Mean of Posterior Distribution = -11907.167; ESS = 922). Other quality measures of the inference are also explored: tree space uncertainty of the best tree in the tree space is shown in figure 7 (Due to time and computational constrains, only 10% -4000 randomly sampled trees- of the treespace is shown). Posterior probability search and probability distribution are shown in figure 8. 
 
-Figure 7
+![Figure 7](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_tree_space.png "Figure 7: Chromosome K Quality Control of Parameter Convergence")
+*Figure 7: Light blue, 10% of the tree space constructed for chromosome K. Red, Best tree.
 
 ![Figure 8](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_posterior_QC1.png "Figure 8: Chromosome K Quality Control of Parameter Convergence")
 *Figure 8: Parameter searches conducted by revBayes during phylogenetic inference of chromosome K. Left: PDF of sampled posteriors. The blue vertical line represent the mean of the sampling distribution. Right: Posterior sampling per state (i.e. *per* generations)*
