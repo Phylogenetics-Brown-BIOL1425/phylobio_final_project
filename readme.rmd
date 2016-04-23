@@ -30,7 +30,7 @@ It seems inevitable that climate change, along with other anthropogenic factors,
 
 __**The methods I will use to do this are...**__
 
-My goal is to construct the phylogeny for a widely distributed group of species (exact group pending further research) and map the degree to which each tip node is imperiled onto the phylogeny. With this information, along with a relatedness metric such as  distance between tip node sequence, I hope to observe the pattern of endangerment within the phylogenetic tree (whether it is clustered or uniform), and possibly even which types of genetic information (genes) are most frequently lost. 
+My goal is to construct the phylogeny for amphibians and map the degree to which each tip node is imperiled onto the phylogeny. With this information, along with a relatedness metric such as  distance between tip node sequence, I hope to observe the pattern of endangerment within the phylogenetic tree (whether it is clustered or uniform), and possibly even which types of genetic information (genes) are most frequently lost. 
 
 
 
@@ -54,14 +54,14 @@ ____________
 
 ```{r}
 setwd("~/Dropbox/Brown University/BIOL1425/phylobio_final_project/")
-data=read.csv("fulldata.csv",header = TRUE)
+accessions=read.csv("Pyrondata.csv",header = TRUE)
 # data is from Pyron 2011
-row.names(data)=data[,1]
-specieslist=data[,1]
-data=data[-2873,]
-data=data[,-1]
-dim(data)
-data[1,]
+row.names(accessions)=accessions[,1]
+specieslist=accessions[,1]
+accessions=accessions[-2873,]
+accessions=accessions[,-1]
+dim(accessions)
+accessions[1,]
 
 IUCN_amphibia=read.csv("IUCN_amphibia.csv", header = TRUE)
 IUCN_amphibia
@@ -70,23 +70,34 @@ names(IUCN_amphibia)
 row.names(IUCN_amphibia)=IUCN_amphibia[,6]
 IUCN_amphibia=IUCN_amphibia[,-6]
 
-data=data[rownames(data)%in%rownames(IUCN_amphibia),]
-dim(data)
-data[1,]
-#filtered data so that only contains rows for species with values listed in IUCN_amphibia
+accessions=accessions[rownames(accessions)%in%rownames(IUCN_amphibia),]
+dim(accessions)
+accessions[1,]
+#filtered accessions so that only contains rows for species with values listed in IUCN_amphibia
 
-IUCN_amphibia_matched=IUCN_amphibia[rownames(IUCN_amphibia)%in%rownames(data),]
+IUCN_amphibia_matched=IUCN_amphibia[rownames(IUCN_amphibia)%in%rownames(accessions),]
 IUCN_amphibia_matched
 dim(IUCN_amphibia_matched)
 names(IUCN_amphibia_matched)
 
-data[,13]=IUCN_amphibia_matched[,9]
-data[,14]=IUCN_amphibia_matched[,10]
-names(data)[13]="Red_list_status"
-names(data)[14]="Red_list_criteria"
-names(data)
+accessions[,13]=IUCN_amphibia_matched[,9]
+accessions[,14]=IUCN_amphibia_matched[,10]
+names(accessions)[13]="Red_list_status"
+names(accessions)[14]="Red_list_criteria"
+names(accessions)
 
-dim(data)
+
+x=row.names(accessions[which(!is.na(accessions[,1])==TRUE),])
+#the species for which there are values!=NA in column 1
+y=accessions[which(!is.na(accessions[,1])==TRUE),1]
+#the values for the species that have values in column 1
+
+
+y=accessions[which(!is.na(accessions[,1])==TRUE),1]
+y
+which(!is.na(accessions[,1])==TRUE)
+row.names(accessions[which(!is.na(accessions[,1])==TRUE),])
+accessions[which(!is.na(accessions[,1])==TRUE),]
 ```
 The tools I used were... See analysis files at (links to analysis files).
 
