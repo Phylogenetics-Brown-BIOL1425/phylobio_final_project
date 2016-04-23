@@ -87,7 +87,7 @@ Two runs of phylogenetic inferences were conducted with the entire chromosomal s
 
 **Gene Tree BigGene**
 
-![Figure 13](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BG_treespace.png "Figure 13: Tree Space with branch lenght ")
+![Figure 13](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BG_treespace2.png "Figure 13: Tree Space with branch lenght ")
 *Figure 13: Light blue, 10% of the tree space constructed for the neutral marker. Red, Best tree. 
 
 ![Figure 14](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BG_posterior_QC.png "Figure 14: Big Gene Quality Control of Parameter Convergence")
