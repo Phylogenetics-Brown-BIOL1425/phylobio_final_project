@@ -77,7 +77,7 @@ Two runs of phylogenetic inferences were conducted with the entire chromosomal s
 
 **Gene Tree CI:** Two independent runs were conducted with the sequence of gene CI. Tree space uncertainty and and best tree are shown in figure 11. For both runs, parameter searches converged to similar posterior distributions, the effective sample size of these searches was relatively small (Distribution Mean 1 = -3742.323, ESS = 115, Distribution Mean 2 = -3741.266, ESS = 182). Distribution and parameter search *per* state are shown in figure 12. 
 
-![Figure 11](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BG_treespace.png "Figure 11: Tree Space with branch lenght ")
+![Figure 11](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BG_treespace2.png "Figure 11: Tree Space with branch lenght ")
 *Figure 11: Light blue, 10% of the tree space constructed for Big Gene. Red, Best tree. 
 
 
