@@ -3,6 +3,6 @@ treedata = "(((((((((((((((Tyrannosaurus,Tarbosaurus),Daspletosaurus),(Gorgosaur
 phy = read.newick(text=treedata)
 phy 
 phy2 = collapse.singles(phy)
-plot(phy2)
+plot.phylo(phy2, edge.width = 2, font = 4, cex = 0.53, label.offset = 0.5, no.margin=T)
 phy2$edge
 phy2$tip.label
