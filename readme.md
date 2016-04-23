@@ -92,3 +92,5 @@ If I did these analyses again, I would...
 20. “Comparative Osteology and Phylogenetic Relationship of *Edmontosaurus* and *Shantungosaurus* (Dinosauria: Hadrosauridae) from the Upper Cretaceous of North America and East Asia”. Xing et al. (2014).
 
 21. “A New Species of Camptosaurs (Ornithopoda: Dinosauria) from the Morrison Formation (Upper Jurassic) of Dinosaur National Monument, Utah, and  Biomechanics Analysis of its Forelimb”. Carpenter and Wilson (2008).
+
+22. “How many dinosaur species were there? Fossil bias and true richness estimated using a Poisson sampling model”. Starrfelt and Liow (2016).
