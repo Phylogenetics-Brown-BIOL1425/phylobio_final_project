@@ -11,8 +11,5 @@ FAD = data$FAD
 LAD = data$LAD
 time_data = read.table("time_data.txt", row.names = 1, sep="\t", header = T)
 
-scale_Tree = cal3TimePaleoPhy(phylogeny, time_data, sampRate = 0.01, brRate = 0.01, extRate = 0.01, dateTreatment = "minMax", ntrees=1)
+scale_Tree = cal3TimePaleoPhy(phylogeny, time_data, sampRate = 0.192, brRate = 0.1, extRate = 0.1, dateTreatment = "minMax", ntrees=1)
 plot(scale_Tree, edge.width = 2, font = 4, cex = 0.53, label.offset = 0.5, no.margin = T)
-
-
-
