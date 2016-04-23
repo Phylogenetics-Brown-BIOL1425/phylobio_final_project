@@ -78,7 +78,7 @@ Two runs of phylogenetic inferences were conducted with the entire chromosomal s
 **Gene Tree CI:** Two independent runs were conducted with the sequence of gene CI. Tree space uncertainty and and best tree are shown in figure 11. For both runs, parameter searches converged to similar posterior distributions, the effective sample size of these searches was relatively small (Distribution Mean 1 = -3742.323, ESS = 115, Distribution Mean 2 = -3741.266, ESS = 182). Distribution and parameter search *per* state are shown in figure 12. 
 
 ![Figure 11](https://rawgit.com/Jcbnunez/phylobio_final_project/master/CI_treespace2.png "Figure 11: Tree Space with branch lenght ")
-*Figure 131 Light blue, 10% of the tree space constructed for Gene CI. Red, Best tree. 
+*Figure 11: Light blue, 10% of the tree space constructed for Gene CI. Red, Best tree. 
 
 
 ![Figure 12](https://rawgit.com/Jcbnunez/phylobio_final_project/master/CI_posterior_QC.png "Figure 12: Gene CI Quality Control of Parameter Convergence")
@@ -95,8 +95,8 @@ Figure 13
 
 **Loci Tree Neutral Marker**
 
-Figure 15:
-
+![Figure 15](https://rawgit.com/Jcbnunez/phylobio_final_project/master/NM_treespace.png "Figure 15: Tree Space with branch lenght ")
+*Figure 15: Light blue, 10% of the tree space constructed for chromosome K. Red, Best tree. 
 
 ![Figure 16](https://rawgit.com/Jcbnunez/phylobio_final_project/master/NM_posterior_QC.png "Figure 16: Loci NM Quality Control of Parameter Convergence")
 *Figure 16: Parameter searches conducted by revBayes during phylogenetic inference for loci CI. Left: PDF of sampled posteriors. The vertical lines represent the mean of the sampling distribution. The color scheme is blue and red for first and second independent run respectively. Right: Posterior sampling per state (i.e. *per* generations.) Color scheme is the same as the sampling distributions*
