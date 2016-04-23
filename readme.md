@@ -87,7 +87,8 @@ Two runs of phylogenetic inferences were conducted with the entire chromosomal s
 
 **Gene Tree BigGene**
 
-Figure 13
+![Figure 13](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BG_treespace.png "Figure 13: Tree Space with branch lenght ")
+*Figure 13: Light blue, 10% of the tree space constructed for the neutral marker. Red, Best tree. 
 
 ![Figure 14](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BG_posterior_QC.png "Figure 14: Big Gene Quality Control of Parameter Convergence")
 *Figure 14: Parameter searches conducted by revBayes during phylogenetic inference for the Big Gene. Left: PDF of sampled posteriors. The vertical lines represent the mean of the sampling distribution. The color scheme is blue and red for first and second independent run respectively. Right: Posterior sampling per state (i.e. *per* generations.) Color scheme is the same as the sampling distributions*
@@ -96,7 +97,7 @@ Figure 13
 **Loci Tree Neutral Marker**
 
 ![Figure 15](https://rawgit.com/Jcbnunez/phylobio_final_project/master/NM_treespace.png "Figure 15: Tree Space with branch lenght ")
-*Figure 15: Light blue, 10% of the tree space constructed for chromosome K. Red, Best tree. 
+*Figure 15: Light blue, 10% of the tree space constructed for the neutral marker. Red, Best tree. 
 
 ![Figure 16](https://rawgit.com/Jcbnunez/phylobio_final_project/master/NM_posterior_QC.png "Figure 16: Loci NM Quality Control of Parameter Convergence")
 *Figure 16: Parameter searches conducted by revBayes during phylogenetic inference for loci CI. Left: PDF of sampled posteriors. The vertical lines represent the mean of the sampling distribution. The color scheme is blue and red for first and second independent run respectively. Right: Posterior sampling per state (i.e. *per* generations.) Color scheme is the same as the sampling distributions*
