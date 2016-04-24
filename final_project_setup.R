@@ -11,5 +11,22 @@ FAD = data$FAD
 LAD = data$LAD
 time_data = read.table("time_data.txt", row.names = 1, sep="\t", header = T)
 
-scale_Tree = cal3TimePaleoPhy(phylogeny, time_data, sampRate = 0.192, brRate = 0.0755, extRate = 0.0755, dateTreatment = "minMax", ntrees=1) # sampling rate = 0.192, and birth and extinction rates calculated as average of 0.001 and 0.15 = 0.0755. Based on Starrfelt and Liow paper.
+scale_Tree = cal3TimePaleoPhy(phylogeny, time_data, sampRate = 0.01, brRate = 0.01, extRate = 0.01, dateTreatment = "minMax", ntrees=1) # sampling rate = 0.192, and birth and extinction rates calculated as average of 0.001 and 0.15 = 0.0755. Based on Starrfelt and Liow paper.
 plot(scale_Tree, edge.width = 2, font = 4, cex = 0.53, label.offset = 0.5, no.margin = T)
+
+tree_scaler = function(tree,occurrence,repetitions) {
+  all_Lengths = matrix(data=NA,nrow=134,ncol=repetitions) 
+  for (i in 1:repetitions) {
+    birthRate = runif(1,min=0.001,max=0.15)
+    extRate = runif(1,min=0.001,max=0.15)
+    samplRate = runif(1,min=0.146,max=0.262)
+    scaledTree = cal3TimePaleoPhy(tree = tree,timeData = occurrence, sampRate = samplRate, brRate = birthRate, extRate = extRate, dateTreatment = "minMax", ntrees = 1)
+    branchLength = scaledTree$edge.length
+    all_Lengths[,i] = branchLength
+  }
+  assign ("all_Lengths",all_Lengths,.GlobalEnv)
+  return(all_Lengths)
+}
+
+tree_scaler(phylogeny,time_data,100)
+avg_Lengths = rowMeans (all_Lengths,na.rm=FALSE,dims=1)
