@@ -116,6 +116,19 @@ and thus was used as the phylogeny for the chromosome.  The tree shows the split
 ####Gene CI
 ![Figure 19](https://rawgit.com/Jcbnunez/phylobio_final_project/master/CI_phylogeny.png "Figure 19: phylogeny for gene CI")
 
+![Figure 20A](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_CI_entangled.png "Figure 20A: tangled K vs BG")
+**Pre-entanglement**
+Entanglement = 0.4619899
+
+![Figure 20B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_CI_untangled.png "Figure 20B: untangled K vs BG")
+**Post-entanglement**
+Post-entanglement coefficient is = 0.35123
+
+![Figure 20C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_CI_BK.png "Figure 20C: untangled K vs CI")
+**Fowlkes–Mallows index of "dissimilarity"**
+
+
+
 ####Gene Big Gene
 ![Figure 20](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BG_phylogeny.png "Figure 20: phylogeny for gene BG")
 
