@@ -129,13 +129,16 @@ and thus was used as the phylogeny for the chromosome.  The tree shows the split
 
 ![Figure X](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_tangled.png "Figure X: tangled K vs BG")
 
-###Pre-untanglement
+**Pre-entanglement**
 Untangled Tanglegram of Big Gene vs Chromosome K. In this state the entanglement coefficient is =  0.8978911.
 
 ![Figure X](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_untangled.png "Figure X: untangled K vs BG")
 
-###Post-untanglement
+**Post-entanglement**
 Post-entanglement coefficient is = 0.0322881
+
+![Figure X](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_BK.png "Figure X: untangled K vs BG")
+**Fowlkes–Mallows index of "dissimilarity"**
 
 
 
