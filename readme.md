@@ -49,6 +49,8 @@ The tools I used were... See analysis files at (links to analysis files).
 
 ![Initial simulated tree with 700 tips to represent the 700 extant species of *Selaginella*](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/700_tips_starting_tree.png)
 
+Initial simulated tree with 700 tips to represent the 700 extant species of *Selaginella*
+
 ## Discussion
 
 These results indicate...
