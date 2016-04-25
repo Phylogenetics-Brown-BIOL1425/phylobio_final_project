@@ -129,6 +129,17 @@ Post-entanglement coefficient is = 0.0322881
 ####Gene A
 ![Figure 18](https://rawgit.com/Jcbnunez/phylobio_final_project/master/a6_phylo.png "Figure 18: phylogeny for gene A")
 
+![Figure 18B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_A_tangled.png "Figure 18B: phylogeny for gene A")
+**Pre-entanglement**
+Entanglement = 0.3317921
+
+![Figure 18C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_A6_untangled.png "Figure 18C: phylogeny for gene A")
+**Post-entanglement**
+Post-entanglement coefficient is = 0.1615409
+
+![Figure 18D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_A6_BK.png "Figure 18D: phylogeny for gene A")
+
+
 
 ####Gene CI
 ![Figure 19](https://rawgit.com/Jcbnunez/phylobio_final_project/master/CI_phylogeny.png "Figure 19: phylogeny for gene CI")
