@@ -110,25 +110,6 @@ and thus was used as the phylogeny for the chromosome.  The tree shows the split
 **Figure 17:** Left: Phylogenetic reconstruction of of populations of your favorite organism. Branch leading to the split of the norther and souther clades is indicated in gold, posterior probability of the branch is also shown. Right: Mulutiple sequence aligment (MSA) of chromosome K used in the phylogenetic reconstruction
 
 
-####Gene A
-![Figure 18](https://rawgit.com/Jcbnunez/phylobio_final_project/master/a6_phylo.png "Figure 18: phylogeny for gene A")
-
-####Gene CI
-![Figure 19](https://rawgit.com/Jcbnunez/phylobio_final_project/master/CI_phylogeny.png "Figure 19: phylogeny for gene CI")
-
-![Figure 20A](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_CI_entangled.png "Figure 20A: tangled K vs BG")
-**Pre-entanglement**
-Entanglement = 0.4619899
-
-![Figure 20B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_CI_untangled.png "Figure 20B: untangled K vs BG")
-**Post-entanglement**
-Post-entanglement coefficient is = 0.35123
-
-![Figure 20C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_CI_BK.png "Figure 20C: untangled K vs CI")
-**Fowlkes–Mallows index of "dissimilarity"**
-
-
-
 ####Gene Big Gene
 ![Figure 20](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BG_phylogeny.png "Figure 20: phylogeny for gene BG")
 
@@ -143,6 +124,24 @@ Untangled Tanglegram of Big Gene vs Chromosome K. In this state the entanglement
 Post-entanglement coefficient is = 0.0322881
 
 ![Figure 20C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_BK.png "Figure 20C: untangled K vs BG")
+**Fowlkes–Mallows index of "dissimilarity"**
+
+####Gene A
+![Figure 18](https://rawgit.com/Jcbnunez/phylobio_final_project/master/a6_phylo.png "Figure 18: phylogeny for gene A")
+
+
+####Gene CI
+![Figure 19](https://rawgit.com/Jcbnunez/phylobio_final_project/master/CI_phylogeny.png "Figure 19: phylogeny for gene CI")
+
+![Figure 20A](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_CI_entangled.png "Figure 20A: tangled K vs BG")
+**Pre-entanglement**
+Entanglement = 0.4619899
+
+![Figure 20B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_CI_untangled.png "Figure 20B: untangled K vs BG")
+**Post-entanglement**
+Post-entanglement coefficient is = 0.35123
+
+![Figure 20C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_CI_BK.png "Figure 20C: untangled K vs CI")
 **Fowlkes–Mallows index of "dissimilarity"**
 
 
