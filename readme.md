@@ -118,7 +118,6 @@ Supplementary figure 1. Host 18S GTR+Gamma ML (RAxML) tree. 100 non-parametric b
 ![FM2](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/constrainedRAW.png)
 Supplementary figure 2. Hyperiid amphipod 18S GTR+Gamma ML (RAxML) tree. Nodes labeled with bootstrap support values.
 
-
 ###Analysis and visualization:
 
 For the analysis and visualizations in R, I used the packages: 
@@ -127,7 +126,7 @@ ape, phytools, phangorn, adephylo, ggtree, dendextrend, picante, paco, and igrap
 
 Trees were pruned to contain only the tips for which I have association data for, and transformed into ultrametric using ape::chronos(). trees were also stored as phylogenetic distance matrices using cophenetic().
 
-The association matrix obtained from the literature review was pruned to contain only species represented in the phylogenies used. Associations were visualized using igraph::tkplot(). Inter-host ecological distance matrix was calculated using picante::comdist(). Inter-amphipod ecological distance matrix was calculated using picante::species.dist().
+The association matrix obtained from the literature review was pruned to contain only species represented in the phylogenies used. Associations were visualized using igraph::tkplot(). Inter-host ecological distance matrix was calculated using picante::comdist(). Inter-amphipod ecological distance matrix was calculated using picante::species.dist(). Bipartite network analysis was carried out using bipartite.
 
 Host-amphipod cophylogenetic congruence (level of cospeciation) was tested using a Procrustean Application to Cophylogenetic Analysis paco::PACo() (r0 permutation method, cailliez correction method), and ParaFit global fit methods ape::parafit.
 
@@ -200,11 +199,9 @@ Weighted cluster coefficient |
 0.2820054 | 0.3519910 
 Niche overlap | 
 0.02205080 | 0.03186021 
-Togetherness |  
-0.006840611 | 0.009385391 
 C-score |  
 0.9565487 | 0.9437260 
-V ratio |  
+Variance ratio |  
 2.003145 | 1.141083 
 Discrepancy |  
 180 | 180 
@@ -214,14 +211,14 @@ Robustness |
 0.650927 | 0.6458423 
 Functional complementarity |  
 135.5728 | 141.5899 
-Partner diversity |  
+Partner H' diversity |  
 1.255991 | 1.022370 
 Generality | Vulnerability 
 4.549296 | 3.375587 
 
-Overall robustness: 0.8069
-Overall discrepancy (number of links to a maximally connected network) is 180 links.
+With a total number of links of 213, the overall discrepancy (number of missing links to a maximally connected network of 393 links) is 180 links. The average generality for the hyperiid amphipods included in this study is of 4-5 host species per predator, while the average vulnerability to amphipod colonization for these gelatinous animals is of 3-4 amphipod species per host. The Shannon-Weaver H diversity index of links per species is higher for hyperiid amphipods than for gelatinous hosts, although from binary data it is not informed by the frequency nor relative abundance of the associations. The robustness and extinction slope (resilience to extinction of associated taxa) for hyperiid amphipods came out higher than for gelatinous hosts, probably realted to the higher partner diversity. However, it does not make sense to talk about host robustness, as gelatinous zooplankton could probably survive just as well or better without hyperiid amphipods, given the nature of these interactions. 
 
+The C-scores close to 1 indicates a signal of repulsion between species, possibly due to competition. However, the variance ratios larger than 1 indicate positive agregation signal. I do not believe any of these indices as they are not informed by phylogenetic relationships.
 
 But, how far did sharing a common evolutionary history generate this association network?
 
@@ -230,7 +227,7 @@ But, how far did sharing a common evolutionary history generate this association
 ![Figure 12](https://github.com/antropoteuthis/phylobio_final_project/raw/master/Good_Cophylo.png)
 Figure 12. Cophylogeny of amphipods and gelatinous hosts produced using ape::cophyloplot.
 
-The cophylogeny (Figure 12) shows the realtionship between common ancestry and association patterns. Global congruence (Parafit) between host and amphipod trees: 46.846, p-value=0.09. The trees are somewhat congruent, enough to support a shared macroevolutionary scenario.
+The cophylogeny (Figure 12) shows the realtionship between common ancestry and association patterns. Global congruence (Parafit) between host and amphipod trees: 46.846, p-value=0.09. The trees show some congruence, possibly enough to support a shared macroevolutionary scenario.
 
 ![Figure 13](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/good_specificity.png)
 Figure 13. Amphipod phylogeny showing a brownian motion reconstruction of host specifity (blue - generalist, red - specialist).
@@ -238,15 +235,15 @@ Figure 13. Amphipod phylogeny showing a brownian motion reconstruction of host s
 Figure 13 shows the evolution a key aspect of hyperiid amphipods' ecological role: host specificity. Host specificty could be used as a proxy of likelihood to interact as a parasite/parasitoid (with greater chance of a co-speciation history) rather than a generalist predator or hitchhiker. Blomberg's K for phylogenetic signal in host specificity is medium, 0.3242.
 
 ![Figure 14](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/good_popularity.png)
-Figure 14. Gelatinous host phylogeny showing a brownian motion reconstruction of amphipod richness (blue - common target, red - rare target).
+Figure 14. Gelatinous host phylogeny showing a brownian motion reconstruction of associated amphipod richness - vulnerability (blue - common target, red - rare target).
 
 From the other side of the story, Figure 14 shows the evolution of the suitability of gelatinous hosts to a broad spectrum of hyperiid amphipod species. Hosts that harbor more species, such as salps, are less likely to develop a coevolutionary armsrace against a particular amphipod species. Blomberg's K for phylogenetic signal in amphipod richness is low, 0.0689.
 
-The PACo (Balbuena et al., 2013) analysis of phylogenetic structure detected a slight fit (Procrustes sum of squares = 23.07, goodness-of-fit: p-value=0, number of permutations =10).
+The PACo (Balbuena et al., 2013) analysis of phylogenetic structure detected a slight but significant fit (Procrustes sum of squares = 23.07, goodness-of-fit: p-value=0, number of permutations =10), indicating the presence of co-divergence in shaping the topology of the cophylogeny.
 
 ###Phylogenetic community ecology
 
-The picante::phylostruct permutation test for phylogenetic signal in community composition (using the amphipod phylogeny and the hosts as communities) detected an overdispersed pattern (mean observed= -1.15, expected null = -1.24).
+The picante::phylostruct permutation test for phylogenetic signal in community composition (using the amphipod phylogeny and the hosts as communities) detected an overdispersed pattern (mean observed= -1.15, expected null = -1.24), in other words, a phylogenetic repulsion signal.
 
 The mean value of the phylogenetic clustering analysis of amphipod species for all hosts was 0.9083, indicating again a slightly overdispersed structure. However the standard deviation (0.3953) was large. Some hosts (<i>Thalia democratica</i> and <i>Iasis zonaria</i>) had a greatly overdispersed amphipod community, whilst others (<i>Cyclosalpa affinis, Eurhamphaea vexilligera</i>, and <i>Pterotrachea hippocampus</i>) had a distinct phylogenetic clustering in their amphipod assemblage (Figure 15).
 
@@ -257,9 +254,9 @@ Figure 15. Phylogenetic overdispersion of amphipod species within each host.
 
 But, which phylogeny has a stronger impact on the associations?
 
-A mantel test of the phylogenetic distance matrices against the association-based distance matrix for each group reveals:
+A mantel test of the phylogenetic distance matrices against the association-based distance matrice (as carried out in Bersier & Kehrli, 2008) for each group reveals:
 Hyperiid amphipods: r = -0.127, p=0.861 (non-significant relationship).
-Hosts: r = 0.0124, p=0.427 (non-significant relationship).
+Gelatinous zooplankton hosts: r = 0.0124, p=0.427 (non-significant relationship).
 
 ## Discussion
 

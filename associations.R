@@ -53,7 +53,7 @@ plot(amphipodML)
 # plot(hostBayes)
 # TREE = hostBayes
 
-#GTR+Gamma Maximum Likelihood
+#GTR+Gamma Maximum Likelihood tree for gelatinous hosts
 MLext = read.tree("ExtendedHosts/RAxML/RAxML_bipartitions.host_ext2_ML_boot100")
 plot(MLext)
 nodelabels()
@@ -227,3 +227,4 @@ visweb(web)
 togetherness(web) #T-score, level of similarity between species
 grouplevel(web)
 robustness(second.extinct(web))
+C.score(web)
