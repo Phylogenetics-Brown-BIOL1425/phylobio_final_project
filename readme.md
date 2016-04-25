@@ -47,7 +47,7 @@ The tools I used were... See analysis files at (links to analysis files).
 
 ## Results
 
-The tree in Figure 1...
+https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/700_tips_starting_tree.png
 
 ## Discussion
 
