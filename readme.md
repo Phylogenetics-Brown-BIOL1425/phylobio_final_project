@@ -187,6 +187,7 @@ Hosts show an even more complex association similarity matrix (Figure 10), propo
 Bipartite network analysis (bipartite::grouplevel, HL represents the hyperiid amphipods, LL represents the gelatinous hosts):
 
 Hyperiid amphipods | Gelatinous hosts
+------------------ | ------------------
 Number of species |  
 81 | 93
 Mean links per species |  
