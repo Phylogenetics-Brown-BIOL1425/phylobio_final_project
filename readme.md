@@ -54,7 +54,7 @@ ___
 
 ## Results
 
-###**Phylogenetic Inference Quality Control**
+##**Phylogenetic Inference Quality Control**
 
 **Chromosomal Tree**
 Two runs of phylogenetic inferences were conducted with the entire chromosomal sequence in RevBayes. Only one of the two runs showed parameter convergence (Mean of Posterior Distribution = -11907.167; ESS = 922). Other quality measures of the inference are also explored: tree space uncertainty of the best tree in the tree space is shown in figure 7 (Due to time and computational constrains, only 10% -4000 randomly sampled trees- of the treespace is shown). Posterior probability search and probability distribution are shown in figure 8. 
@@ -102,7 +102,7 @@ Two runs of phylogenetic inferences were conducted with the entire chromosomal s
 ![Figure 16](https://rawgit.com/Jcbnunez/phylobio_final_project/master/NM_posterior_QC.png "Figure 16: Loci NM Quality Control of Parameter Convergence")
 *Figure 16: Parameter searches conducted by revBayes during phylogenetic inference for loci CI. Left: PDF of sampled posteriors. The vertical lines represent the mean of the sampling distribution. The color scheme is blue and red for first and second independent run respectively. Right: Posterior sampling per state (i.e. *per* generations.) Color scheme is the same as the sampling distributions*
 
-###**Phylogenetic Signal**
+##**Phylogenetic Signal**
 
 and thus was used as the phylogeny for the chromosome.  The tree shows the split of the northern and Southern clades (Posterior probability = 0.92). As expected from the network analysis, individuals from the introgression zone clustered within either of the clades.      
 
@@ -119,28 +119,46 @@ and thus was used as the phylogeny for the chromosome.  The tree shows the split
 ####Gene Big Gene
 ![Figure 20](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BG_phylogeny.png "Figure 20: phylogeny for gene BG")
 
-####Neutral Loci
-![Figure 21](https://rawgit.com/Jcbnunez/phylobio_final_project/master/NM_phylo.png "Figure 21: phylogeny for gene BG")
-
-###**Clustering Based Analysis**
-
-
-####Gene Big Gene vs. Chromosomal Tree
-
-![Figure X](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_tangled.png "Figure X: tangled K vs BG")
+![Figure 20A](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_tangled.png "Figure 20A: tangled K vs BG")
 
 **Pre-entanglement**
 Untangled Tanglegram of Big Gene vs Chromosome K. In this state the entanglement coefficient is =  0.8978911.
 
-![Figure X](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_untangled.png "Figure X: untangled K vs BG")
+![Figure 20B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_untangled.png "Figure 20B: untangled K vs BG")
 
 **Post-entanglement**
 Post-entanglement coefficient is = 0.0322881
 
-![Figure X](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_BK.png "Figure X: untangled K vs BG")
+![Figure 20C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_BK.png "Figure 20C: untangled K vs BG")
 **Fowlkes–Mallows index of "dissimilarity"**
 
 
+####Neutral Loci
+![Figure 21](https://rawgit.com/Jcbnunez/phylobio_final_project/master/NM_phylo2.png "Figure 21: phylogeny for gene BG")
+
+![Figure 21B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_NM_tangled.png "Figure 21B: phylogeny for gene BG")
+Entanglement = 0.3514943
+
+![Figure 21C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_NM_untangled.png "Figure 21C: phylogeny for gene BG")
+Entanglement = 0.2572355
+
+![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_NM_BK.png "Figure 21D: phylogeny for gene BG")
+**Fowlkes–Mallows index of "dissimilarity"**
+
+
+
+
+##**Clustering Based Analysis**
+
+
+####Gene A vs. Chromosomal Tree
+
+####Gene CI vs. Chromosomal Tree
+
+####Gene Big Gene vs. Chromosomal Tree
+
+
+####Neutral Marker vs. Chromosomal Tree
 
 
 ## Discussion
