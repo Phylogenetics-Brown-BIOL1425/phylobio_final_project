@@ -51,6 +51,11 @@ The tools I used were... See analysis files at (links to analysis files).
 
 Initial simulated tree with 700 tips to represent the 700 extant species of *Selaginella*
 
+![Simulated characters mapped onto tree](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/700_tips_characters_1.png)
+
+Simulated characters mapped onto tree
+
+
 ## Discussion
 
 These results indicate...
