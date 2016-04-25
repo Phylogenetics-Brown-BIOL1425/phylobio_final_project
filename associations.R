@@ -10,6 +10,7 @@ library(dendextend)
 library(picante)
 library(paco)
 library(ade4)
+library(bipartite)
 
 setwd("~/Documents/0BIOL_Phylogenetics/phylobio_final_project")
 ass = unique(read.table("Associations.csv", sep = '\t', header = T)[,c(1,2)])
@@ -193,10 +194,12 @@ table(reprunedass[,2])
 specificity = as.vector(table(reprunedass[,1]))
 names(specificity) = names(table(reprunedass[,1]))
 contMap(ultramphipod, specificity)
+Kcalc(specificity, ultramphipod)
 
 popularity = as.vector(table(reprunedass[,2]))
 names(popularity) = names(table(reprunedass[,2]))
 contMap(ultram, popularity)
+Kcalc(popularity, ultram)
 
 #Which phylogeny has a stronger signal?
 pdist_amphipods = as.dist(cophenetic(ultramphipod))
@@ -206,5 +209,21 @@ adist_hosts = species.dist(t(comm[which(rownames(comm) %in% ultram$tip.label),])
 mantel_amphi = mantel.rtest(pdist_amphipods, adist_amphipods, nrepet = 9999)
 mantel_host = mantel.rtest(pdist_hosts, adist_hosts, nrepet = 9999)
 
-dim(as.matrix(adist_hosts))
-dim(as.matrix(pdist_hosts))
+#Network analysis
+assnet = as.network(as.matrix(ass))
+plot(assnet)
+amphinet = as.network(melt(as.matrix(adist_amphipods))[which(melt(as.matrix(adist_amphipods))[,3] > 0.2),-3])
+hostnet = as.network(melt(as.matrix(adist_hosts))[which(melt(as.matrix(adist_hosts))[,3] > 0.2),-3])
+plot(amphinet)
+plot(hostnet)
+amphiALL = as.network(melt(as.matrix(adist_amphipods))[,-3])
+hostALL = as.network(melt(as.matrix(adist_hosts))[,-3])
+
+web = t(assmatrix[,-1])
+discrepancy(web)
+pdi = PDI(web) #paired differences index
+pac = PAC(web) #potential for apparent competition
+visweb(web)
+togetherness(web) #T-score, level of similarity between species
+grouplevel(web)
+robustness(second.extinct(web))

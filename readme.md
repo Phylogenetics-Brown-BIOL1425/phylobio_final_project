@@ -46,7 +46,7 @@ Hyperiid amphipod - Gelatinous host associations (unquantified, recorded categor
 
 Host and amphipod 18S fasta sequences were retrieved from NCBI Batch Entrez using the GI numbers for each sequence.
 
-Additional taxa were included (and pruned out a posteriori) to increase the robustness of the analysis and reduce the effect of long branch attraction. The hyperiid amphipod tree showed a rogue taxon "Hyperietta stephenseni" which consistently appeared outside its genus clade and as sister group to all other species. Its 18S sequence, as annotated in NCBI differed much from every other in the alignment. This is possibly due to incorrect annotation or contamination. {BLAST to check!!}. It has critical information as it is the only taxon for which I had available association data with radiolarians, so I could not simply remove it. Therefore, I applied a constraint (specified below) during the RAxML analysis to procrust its position in the tree, informed by alternative phylogenies (Hurt et al., 2013) and taxonomic information. Lestrigonus schizogeneios was also showing a similar behavior, but as it did not have critical ecological information, I decided to remove the taxon a posteriori.
+Additional taxa were included (and pruned out a posteriori) to increase the robustness of the analysis and reduce the effect of long branch attraction. The hyperiid amphipod tree showed a rogue taxon "Hyperietta stephenseni" which consistently appeared outside its genus clade and as sister group to all other species. Its 18S sequence, as annotated in NCBI differed much from every other in the alignment. This is possibly due to incorrect annotation or contamination (BLAST 2nd hit: Epimeriella walkeri, gammaridean amphipod -- E = 0.0). It has critical information as it is the only taxon for which I had available association data with radiolarians, so I could not simply remove it. Therefore, I applied a constraint (specified below) during the RAxML analysis to procrust its position in the tree, informed by alternative phylogenies (Hurt et al., 2013) and taxonomic information. Lestrigonus schizogeneios was also showing a similar behavior, but as it did not have critical ecological information, I decided to remove the taxon a posteriori.
 
 For the sake of making good use of species-to-species association data for interesting species which do not have available annotated 18S sequence data, I used "sequence proxies". This artifact consists in using a sequence annotated as "Species sp." as a placeholder, assuming it would have an approximate phylogenetic placement to the morphospecies of interest.
 
@@ -184,6 +184,44 @@ Figure 11. Multidimensional scaling plot for host distance matrix used in Figure
 
 Hosts show an even more complex association similarity matrix (Figure 10), proportional to the greater number of taxa included. In this case, an increased number of shared amphipod species has very different ecological implications. A gelatinous macroplankton community assemblage with many shared amphipod species would favor a greater amphipod diversity, greater chances of interspecies transfection of amphipods, and relief of predation (sensu lato) pressure on the host populations. The medusae Pelagia noctiluca, Pandea conica, and the salp Salpa aspera showed the most differentiated amphipod associations (Figure 11).
 
+Bipartite network analysis (bipartite::grouplevel, HL represents the hyperiid amphipods, LL represents the gelatinous hosts):
+
+Hyperiid amphipods | Gelatinous hosts
+Number of species |  
+81 | 93
+Mean links per species |  
+4.549296 | 3.375587 
+Mean shared species per species |  
+0.07808642 | 0.08835905
+Cluster coefficient |  
+0.04891716 | 0.04167391 
+Weighted cluster coefficient |  
+0.2820054 | 0.3519910 
+Niche overlap | 
+0.02205080 | 0.03186021 
+Togetherness |  
+0.006840611 | 0.009385391 
+C-score |  
+0.9565487 | 0.9437260 
+V ratio |  
+2.003145 | 1.141083 
+Discrepancy |  
+180 | 180 
+Extinction slope |  
+1.893307 | 1.849264 
+Robustness |  
+0.650927 | 0.6458423 
+Functional complementarity |  
+135.5728 | 141.5899 
+Partner diversity |  
+1.255991 | 1.022370 
+Generality | Vulnerability 
+4.549296 | 3.375587 
+
+Overall robustness: 0.8069
+Overall discrepancy (number of links to a maximally connected network) is 180 links.
+
+
 But, how far did sharing a common evolutionary history generate this association network?
 
 ###Cophylogenetic analysis
@@ -196,12 +234,12 @@ The cophylogeny (Figure 12) shows the realtionship between common ancestry and a
 ![Figure 13](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/good_specificity.png)
 Figure 13. Amphipod phylogeny showing a brownian motion reconstruction of host specifity (blue - generalist, red - specialist).
 
-Figure 13 shows the evolution a key aspect of hyperiid amphipods' ecological role: host specificity. Host specificty could be used as a proxy of likelihood to interact as a parasite/parasitoid (with greater chance of a co-speciation history) rather than a generalist predator or hitchhiker.
+Figure 13 shows the evolution a key aspect of hyperiid amphipods' ecological role: host specificity. Host specificty could be used as a proxy of likelihood to interact as a parasite/parasitoid (with greater chance of a co-speciation history) rather than a generalist predator or hitchhiker. Blomberg's K for phylogenetic signal in host specificity is medium, 0.3242.
 
 ![Figure 14](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/good_popularity.png)
 Figure 14. Gelatinous host phylogeny showing a brownian motion reconstruction of amphipod richness (blue - common target, red - rare target).
 
-From the other side of the story, Figure 14 shows the evolution of the suitability of gelatinous hosts to a broad spectrum of hyperiid amphipod species. Hosts that harbor more species, such as salps, are less likely to develop a coevolutionary armsrace against a particular amphipod species.
+From the other side of the story, Figure 14 shows the evolution of the suitability of gelatinous hosts to a broad spectrum of hyperiid amphipod species. Hosts that harbor more species, such as salps, are less likely to develop a coevolutionary armsrace against a particular amphipod species. Blomberg's K for phylogenetic signal in amphipod richness is low, 0.0689.
 
 The PACo (Balbuena et al., 2013) analysis of phylogenetic structure detected a slight fit (Procrustes sum of squares = 23.07, goodness-of-fit: p-value=0, number of permutations =10).
 
@@ -219,8 +257,8 @@ Figure 15. Phylogenetic overdispersion of amphipod species within each host.
 But, which phylogeny has a stronger impact on the associations?
 
 A mantel test of the phylogenetic distance matrices against the association-based distance matrix for each group reveals:
-Hyperiid amphipods: -0.127, p=0.861 (non-significant relationship).
-Hosts: 0.0124, p=0.427 (non-significant relationship).
+Hyperiid amphipods: r = -0.127, p=0.861 (non-significant relationship).
+Hosts: r = 0.0124, p=0.427 (non-significant relationship).
 
 ## Discussion
 
