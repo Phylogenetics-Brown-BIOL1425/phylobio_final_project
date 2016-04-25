@@ -110,18 +110,32 @@ and thus was used as the phylogeny for the chromosome.  The tree shows the split
 **Figure 17:** Left: Phylogenetic reconstruction of of populations of your favorite organism. Branch leading to the split of the norther and souther clades is indicated in gold, posterior probability of the branch is also shown. Right: Mulutiple sequence aligment (MSA) of chromosome K used in the phylogenetic reconstruction
 
 
-###Gene A
+####Gene A
 ![Figure 18](https://rawgit.com/Jcbnunez/phylobio_final_project/master/a6_phylo.png "Figure 18: phylogeny for gene A")
 
-###Gene CI
+####Gene CI
 ![Figure 19](https://rawgit.com/Jcbnunez/phylobio_final_project/master/CI_phylogeny.png "Figure 19: phylogeny for gene CI")
 
-###Gene Big Gene
+####Gene Big Gene
 ![Figure 20](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BG_phylogeny.png "Figure 20: phylogeny for gene BG")
 
-###Neutral Loci
+####Neutral Loci
 ![Figure 21](https://rawgit.com/Jcbnunez/phylobio_final_project/master/NM_phylo.png "Figure 21: phylogeny for gene BG")
 
+###**Clustering Based Analysis**
+
+
+####Gene Big Gene vs. Chromosomal Tree
+
+![Figure X](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_tangled.png "Figure X: tangled K vs BG")
+
+###Pre-untanglement
+Untangled Tanglegram of Big Gene vs Chromosome K. In this state the entanglement coefficient is =  0.8978911.
+
+![Figure X](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_untangled.png "Figure X: untangled K vs BG")
+
+###Post-untanglement
+Post-entanglement coefficient is = 0.0322881
 
 
 
