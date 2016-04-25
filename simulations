@@ -6,12 +6,8 @@ set.seed(4984356)
 
 #only requires number of taxa --ultrametric tree 
 ##taxa with most characters filled in
-t <- rcoal( 42 )
-plot( t )
-
-##all taxa for tree I made
-t <- rcoal( 247 )
-plot( t )
+t <- rcoal( 700 )
+plot( t,show.tip.label = FALSE,edge.color = "black")
 
 
 ##simulating character evolution
