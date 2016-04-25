@@ -104,10 +104,26 @@ Two runs of phylogenetic inferences were conducted with the entire chromosomal s
 
 ###**Phylogenetic Signal**
 
-
 and thus was used as the phylogeny for the chromosome.  The tree shows the split of the northern and Southern clades (Posterior probability = 0.92). As expected from the network analysis, individuals from the introgression zone clustered within either of the clades.      
 
-**Figure 7:** Left: Phylogenetic reconstruction of of populations of your favorite organism. Branch leading to the split of the norther and souther clades is indicated in gold, posterior probability of the branch is also shown. Right: Mulutiple sequence aligment (MSA) of chromosome K used in the phylogenetic reconstruction
+![Figure 17](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_phylogeny.png "Figure 17: phylogeny for chromosome K")
+**Figure 17:** Left: Phylogenetic reconstruction of of populations of your favorite organism. Branch leading to the split of the norther and souther clades is indicated in gold, posterior probability of the branch is also shown. Right: Mulutiple sequence aligment (MSA) of chromosome K used in the phylogenetic reconstruction
+
+
+Gene A
+![Figure 18](https://rawgit.com/Jcbnunez/phylobio_final_project/master/a6_phylo.png "Figure 18: phylogeny for gene A")
+
+Gene CI
+![Figure 19](https://rawgit.com/Jcbnunez/phylobio_final_project/master/CI_phylogeny.png "Figure 19: phylogeny for gene CI")
+
+Gene Big Gene
+![Figure 20](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BG_phylogeny.png "Figure 20: phylogeny for gene BG")
+
+
+BG_phylogeny.png
+
+
+Neutral Loci
 
 
 
