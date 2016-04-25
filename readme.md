@@ -28,11 +28,16 @@ To answer these questions I will construct a phylogeny of *Selaginella* based on
 What I described above is the ultimate goal I have for the project. However, I do not currently have the data on these characters that I need to actually run these analyses. Accordingly, for the sake of this class project (which will have to be finshed well before I have the data for the questions I'm actually interested in), I am going to simulate trees and character data. If I have time, I will plug in the sparse real character data that I currently have. (Though it certainly isn't enough to learn anything biologically relevant).
 
 My current game plan, which I'm about to try to do today, is this:
+
 1) Simulate a tree with 700 tips (the approximate number of *Selaginella* species)
+
 2) Simulate 5 characters (meant to represent: 1. megasporangia discharge type, 2. microsporangia discharge type, 3. sporangial arrangement, 4. megasporangium anatomy, and 5. microsporangium anatomy)
 	The variances for traits 1, 2, and 3 will be estimated from available data in the literature. Characters 1 and 4 should covary strongly, as should characters 2 and 5, (because anatomy of the sporangium is mechanically how different discharge types work and therefore must basically always be very closely related). Outside of these constraints, I will check the sensitivity of the anaylses to different variances and covariances for these simulated variables. 
+
 3) Calculate independent contrasts & covariances: I'll ultimately present the covariance matrix for these traits with respect to the 700 tip tree (one for each different sensitivity test for comparison)
+
 4) Ignore phylogeny: Finally, I'll do the same analyses for these simulated characters, but without taking the simulated phylogeny into account in order to determine the strength of the effect of the phylogeny. 
+
 5) I will repeat all of these steps for the same tree, but with tips successively dropped (to 350, 250, 50, 20, and 3 tips), so that I can get an idea of how my real characters (when I have that data) will be affected by my taxon sampling and the taxon sampling of the most recent phylogeny available when it's time for my real analyses. 
 
 
