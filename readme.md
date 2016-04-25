@@ -46,59 +46,59 @@ Hyperiid amphipod - Gelatinous host associations (unquantified, recorded categor
 
 Host and amphipod 18S fasta sequences were retrieved from NCBI Batch Entrez using the GI numbers for each sequence.
 
-Additional taxa were included (and pruned out a posteriori) to increase the robustness of the analysis and reduce the effect of long branch attraction. The hyperiid amphipod tree showed a rogue taxon "Hyperietta stephenseni" which consistently appeared outside its genus clade and as sister group to all other species. Its 18S sequence, as annotated in NCBI differed much from every other in the alignment. This is possibly due to incorrect annotation or contamination (BLAST 2nd hit: Epimeriella walkeri, gammaridean amphipod -- E = 0.0). It has critical information as it is the only taxon for which I had available association data with radiolarians, so I could not simply remove it. Therefore, I applied a constraint (specified below) during the RAxML analysis to procrust its position in the tree, informed by alternative phylogenies (Hurt et al., 2013) and taxonomic information. Lestrigonus schizogeneios was also showing a similar behavior, but as it did not have critical ecological information, I decided to remove the taxon a posteriori.
+Additional taxa were included (and pruned out a posteriori) to increase the robustness of the analysis and reduce the effect of long branch attraction. The hyperiid amphipod tree showed a rogue taxon "*Hyperietta stephenseni*" which consistently appeared outside its genus clade and as sister group to all other species. Its 18S sequence, as annotated in NCBI differed much from every other in the alignment. This is possibly due to incorrect annotation or contamination (BLAST 2nd hit: *Epimeriella walkeri*, gammaridean amphipod -- E = 0.0). It has critical information as it is the only taxon for which I had available association data with radiolarians, so I could not simply remove it. Therefore, I applied a constraint (specified below) during the RAxML analysis to procrust its position in the tree, informed by alternative phylogenies (Hurt et al., 2013) and taxonomic information. Lestrigonus schizogeneios was also showing a similar behavior, but as it did not have critical ecological information, I decided to remove the taxon a posteriori.
 
 For the sake of making good use of species-to-species association data for interesting species which do not have available annotated 18S sequence data, I used "sequence proxies". This artifact consists in using a sequence annotated as "Species sp." as a placeholder, assuming it would have an approximate phylogenetic placement to the morphospecies of interest.
 
 <b>Host 18S phylogeny:</b>
 
 Outgroup:
-Euglena intermedia
+*Euglena intermedia*
 
 Ingroups:
 Rhizarians:
-Globigerina bulloides. 
+*Globigerina bulloides*. 
 Spumellarian radiolarian (unidentified). 
 Choanoflagellates:
-Salpingoeca rosetta, 
-Sphaeroeca leprechaunica. 
+*Salpingoeca rosetta*, 
+*Sphaeroeca leprechaunica*. 
 Sponges:
-Hippospongia lachne, 
-Suberites ficus. 
+*Hippospongia lachne*, 
+*Suberites ficus*. 
 Placozoan:
-Trichoplax sp. 
+*Trichoplax sp*. 
 Other protostomes:
-Maja brachydactyla, 
-Helix aspersa. 
+*Maja brachydactyla*, 
+*Helix aspersa*. 
 Other deuterostome:
-Asterias forbesi.
+*Asterias forbesi*.
 
 Sequence proxies:
-Bolinopsis sp. used as Bolinopsis vitrea.
-Pandea conica used as Pandea sp.
-Solmissus sp. as Solmissus incissa.
-Cavolinia sp. as Cavolinia longirostris.
+*Bolinopsis sp.* used as *Bolinopsis vitrea*.
+*Pandea conica* used as *Pandea sp.*
+*Solmissus sp.* as *Solmissus incissa*.
+*Cavolinia sp.* as *Cavolinia longirostris*.
 
 <b>Amphipod 18S phylogeny:</b>
 
 Outgroups:
-Cyathura carinata, 
-Idotea baltica.
+*Cyathura carinata*, 
+*Idotea baltica*.
 
 Ingroups:
-Themisto abyssorum, 
-Cystisoma pellucida, 
-Hyperietta sibaginis, 
-Hyperietta parviceps, 
-Brachyscelus rapax, 
-Phrosina semilunata, 
-Rhabdosoma whitei.
+*Themisto abyssorum*, 
+*Cystisoma pellucida*, 
+*Hyperietta sibaginis*, 
+*Hyperietta parviceps*, 
+*Brachyscelus rapax*, 
+*Phrosina semilunata*, 
+*Rhabdosoma whitei*.
 
 Constraint: (Hyperietta stephenseni, Hyperietta parviceps, Hyperietta sibaginis, Eupronoe minuta);
 
 Sequence proxies: 
-Phronima sp. used as Phronima sedentaria.
-Paraphronima sp. used as Paraphronima gracilis.
+*Phronima sp.* used as *Phronima sedentaria*.
+*Paraphronima sp.* used as *Paraphronima gracilis*.
 
 ###For both amphipods and hosts:
 
