@@ -201,6 +201,18 @@ names(popularity) = names(table(reprunedass[,2]))
 contMap(ultram, popularity)
 Kcalc(popularity, ultram)
 
+#sensitivity test with equal branchlengths
+flatamphipod = ultramphipod
+flatamphipod$edge.length = rep(1,length(flatamphipod$edge.length))
+plot(flatamphipod)
+contMap(flatamphipod, specificity)
+Kcalc(specificity, flatamphipod)
+
+flatam = ultram
+flatam$edge.length = rep(1,length(flatam$edge.length))
+contMap(flatam, popularity)
+Kcalc(popularity, flatamphipod)
+
 #Which phylogeny has a stronger signal?
 pdist_amphipods = as.dist(cophenetic(ultramphipod))
 pdist_hosts = as.dist(cophenetic(ultram))

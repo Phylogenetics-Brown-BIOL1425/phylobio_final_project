@@ -48,14 +48,14 @@ Host and amphipod 18S fasta sequences were retrieved from NCBI Batch Entrez usin
 
 Additional taxa were included (and pruned out a posteriori) to increase the robustness of the analysis and reduce the effect of long branch attraction. The hyperiid amphipod tree showed a rogue taxon "*Hyperietta stephenseni*" which consistently appeared outside its genus clade and as sister group to all other species. Its 18S sequence, as annotated in NCBI differed much from every other in the alignment. This is possibly due to incorrect annotation or contamination (BLAST 2nd hit: *Epimeriella walkeri*, gammaridean amphipod -- E = 0.0). It has critical information as it is the only taxon for which I had available association data with radiolarians, so I could not simply remove it. Therefore, I applied a constraint (specified below) during the RAxML analysis to procrust its position in the tree, informed by alternative phylogenies (Hurt et al., 2013) and taxonomic information. Lestrigonus schizogeneios was also showing a similar behavior, but as it did not have critical ecological information, I decided to remove the taxon a posteriori.
 
-For the sake of making good use of species-to-species association data for interesting species which do not have available annotated 18S sequence data, I used "sequence proxies". This artifact consists in using a sequence annotated as "Species sp." as a placeholder, assuming it would have an approximate phylogenetic placement to the morphospecies of interest.
+For the sake of making good use of species-to-species association data for interesting species which do not have available annotated 18S sequence data, I used "sequence proxies". This artifact consists in using a sequence annotated as "Species sp." as a placeholder (or viceversa), assuming it would have an approximate phylogenetic placement to the morphospecies of interest.
 
 <b>Host 18S phylogeny:</b>
 
-Outgroup:
+**Outgroup:**
 *Euglena intermedia*
 
-Ingroups:
+**Ingroups:**
 Rhizarians:
 *Globigerina bulloides*. 
 Spumellarian radiolarian (unidentified). 
@@ -73,19 +73,21 @@ Other protostomes:
 Other deuterostome:
 *Asterias forbesi*.
 
-Sequence proxies:
+**Sequence proxies:**
 *Bolinopsis sp.* used as *Bolinopsis vitrea*.
 *Pandea conica* used as *Pandea sp.*
 *Solmissus sp.* as *Solmissus incissa*.
 *Cavolinia sp.* as *Cavolinia longirostris*.
+*Sphaerozoum punctatum* as *Sphaerozoum sp.*
+*Collozoum inerme* as *Collozoum sp.*
 
 <b>Amphipod 18S phylogeny:</b>
 
-Outgroups:
+**Outgroups:**
 *Cyathura carinata*, 
 *Idotea baltica*.
 
-Ingroups:
+**Ingroups:**
 *Themisto abyssorum*, 
 *Cystisoma pellucida*, 
 *Hyperietta sibaginis*, 
@@ -94,9 +96,10 @@ Ingroups:
 *Phrosina semilunata*, 
 *Rhabdosoma whitei*.
 
-Constraint: (Hyperietta stephenseni, Hyperietta parviceps, Hyperietta sibaginis, Eupronoe minuta);
+**Constraint:**
+(Hyperietta stephenseni, Hyperietta parviceps, Hyperietta sibaginis, Eupronoe minuta);
 
-Sequence proxies: 
+**Sequence proxies:** 
 *Phronima sp.* used as *Phronima sedentaria*.
 *Paraphronima sp.* used as *Paraphronima gracilis*.
 
@@ -173,7 +176,7 @@ Figure 8. Heatmap of the pairwise distances between amphipod species computed fr
 ![F9](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/amphipodMDS.png)
 Figure 11. Multidimensional scaling plot for amphipod distance matrix used in Figure 9.
 
-Amphipods show interesting host sharing patterns (Figure 8) that reflect on the possible competitive interactions in environments where they may coexist, given limited host space. The species Vibilia viatrix, Vibilia propinqua, Vibilia armata, and Phronima sedentaria (well-known salp dwellers) show the greatest disparity in host association compared to the rest (Figure 9).
+Amphipods show interesting host sharing patterns (Figure 8) that reflect on the possible competitive interactions in environments where they may coexist, given limited host space. The species *Vibilia viatrix*, *Vibilia propinqua*, *Vibilia armata*, and *Phronima sedentaria* (well-known salp dwellers) show the greatest disparity in host association compared to the rest (Figure 9).
 
 ![F10](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/hostdist.png)
 Figure 10. Heatmap of the pairwise distances between gelatinous host species computed from matrix of common inhabitant species (amphipods).
@@ -181,7 +184,7 @@ Figure 10. Heatmap of the pairwise distances between gelatinous host species com
 ![F11](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/hostMDS.png)
 Figure 11. Multidimensional scaling plot for host distance matrix used in Figure 10.
 
-Hosts show an even more complex association similarity matrix (Figure 10), proportional to the greater number of taxa included. In this case, an increased number of shared amphipod species has very different ecological implications. A gelatinous macroplankton community assemblage with many shared amphipod species would favor a greater amphipod diversity, greater chances of interspecies transfection of amphipods, and relief of predation (sensu lato) pressure on the host populations. The medusae Pelagia noctiluca, Pandea conica, and the salp Salpa aspera showed the most differentiated amphipod associations (Figure 11).
+Hosts show an even more complex association similarity matrix (Figure 10), proportional to the greater number of taxa included. In this case, an increased number of shared amphipod species has very different ecological implications. A gelatinous macroplankton community assemblage with many shared amphipod species would favor a greater amphipod diversity, greater chances of interspecies transfection of amphipods, and relief of predation (sensu lato) pressure on the host populations. The medusae Pelagia noctiluca, *Pandea conica*, and the salp *Salpa aspera* showed the most differentiated amphipod associations (Figure 11).
 
 Bipartite network analysis (bipartite::grouplevel, HL represents the hyperiid amphipods, LL represents the gelatinous hosts):
 
@@ -232,7 +235,7 @@ The cophylogeny (Figure 12) shows the realtionship between common ancestry and a
 ![Figure 13](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/good_specificity.png)
 Figure 13. Amphipod phylogeny showing a brownian motion reconstruction of host specifity (blue - generalist, red - specialist).
 
-Figure 13 shows the evolution a key aspect of hyperiid amphipods' ecological role: host specificity. Host specificty could be used as a proxy of likelihood to interact as a parasite/parasitoid (with greater chance of a co-speciation history) rather than a generalist predator or hitchhiker. Blomberg's K for phylogenetic signal in host specificity is medium, 0.3242.
+Figure 13 shows the evolution a key aspect of hyperiid amphipods' ecological role: host specificity. Host specificty could be used as a proxy of likelihood to interact as a parasite/parasitoid (with greater chance of a co-speciation history) rather than a generalist predator or hitchhiker. Blomberg's K for phylogenetic signal (Blomberg et al., 2003) in host specificity is medium, 0.3242. Interestingly, if we remove the effect of branch lengths (setting them all to 1), we get a Blomberg's K of 0.63277. This is a common sensitivity analysis for studying the evolution of continuous traits, as there is not much theoretical support to believe that the rate of molecular evolution in a random gene or genes would be correlated with phenotypic or ecological traits.
 
 ![Figure 14](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/good_popularity.png)
 Figure 14. Gelatinous host phylogeny showing a brownian motion reconstruction of associated amphipod richness - vulnerability (blue - common target, red - rare target).
@@ -254,7 +257,7 @@ Figure 15. Phylogenetic overdispersion of amphipod species within each host.
 
 But, which phylogeny has a stronger impact on the associations?
 
-A mantel test of the phylogenetic distance matrices against the association-based distance matrice (as carried out in Bersier & Kehrli, 2008) for each group reveals:
+A mantel test of the phylogenetic distance matrices against the association-based distance matrices (as carried out in Bersier & Kehrli, 2008) for each group reveals:
 Hyperiid amphipods: r = -0.127, p=0.861 (non-significant relationship).
 Gelatinous zooplankton hosts: r = 0.0124, p=0.427 (non-significant relationship).
 
@@ -272,7 +275,7 @@ Given the low global fit significance obtained, it is likely that the evolutiona
 
 The biggest difficulty in implementing these analyses was obtaining reliable trees. 18S gene trees hardly conform to the expected species trees. In the case of gelatinous hosts, adding ingroups and outgroups wass sufficient to fix the greatest anomalies. For the hyperiid amphipod tree, I had to apply an external constraint to keep <i> Hyperietta stephenseni </i> from showing up as sistergroup to every other amphipod taxon. 
 
-Another difficulty I found was figuring out what tools to use for cophylogenetic analyses and where to find them. Cophylogenetics and phylogenetic community ecology are not very popular fields, so few educational resources and guides are available for newcomers and early career scientists. The cophylogenetic analyses carried out here are not the only tests that can be done. There are many others such as CopyCat(), Jane (), Tarzan(), ... that claim to have a more accurate algorithm to compute congruence and infer evolutionary events. I feel that this field needs a thorough revision of the methods. 
+Another difficulty I found was figuring out what tools to use for cophylogenetic analyses and where to find them. Cophylogenetics and phylogenetic community ecology are not very popular fields, so few educational resources and guides are available for newcomers and early career scientists. The cophylogenetic analyses carried out here are not the only tests that can be done. There are many others such as CopyCat (Meier-Kolthof et al., 2007), Jane (Conow et al., 2010), etcetera ... which claim to have a more accurate algorithm to compute congruence and infer co-evolutionary events. I feel that this field needs a thorough revision of the methods. 
 
 If I did these analyses again, I would use concatenated matrix trees with newly collected molecular data for the species of interest. This way I would provide more accurate phylogenies upstrem, which would greatly improve the overall accuracy of the analyses. In addition, I would put more care in making informed decisions on the alignment and tree search parameters used. 
 
@@ -282,6 +285,12 @@ Moreover, the association data used included only presence data (absences not re
 ## References
 
 [Balbuena, Juan Antonio, Raúl Míguez-Lozano, and Isabel Blasco-Costa. "PACo: a novel procrustes application to cophylogenetic analysis." PloS one 8.4 (2013): e61048.](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0061048)
+
+[Bersier, Louis-Félix, and Patrik Kehrli. "The signature of phylogenetic constraints on food-web structure." Ecological Complexity 5.2 (2008): 132-139.](http://doc.rero.ch/record/9250/files/bersier_spc.pdf)
+
+[Blomberg, Simon P., Theodore Garland, and Anthony R. Ives. "Testing for phylogenetic signal in comparative data: behavioral traits are more labile." Evolution 57.4 (2003): 717-745.](https://www.researchgate.net/profile/Theodore_Garland/publication/10731925_Blomberg_SP_Garland_T_Jr_Ives_AR_Testing_for_phylogenetic_signal_in_comparative_data_behavioral_traits_are_more_labile_Evolution_57_717-745/links/0912f502a5b821a033000000.pdf)
+
+[Conow, Chris, et al. "Jane: a new tool for the cophylogeny reconstruction problem." Algorithms for Molecular Biology 5.1 (2010): 1.](http://www.biomedcentral.com/1748-7188/5/16)
 
 [Dahl, Roald. James and the giant peach: a children's story. Alfred A. Knopf Books for Young Readers, 1996.](http://reednovelstudies.org/downloads/James_and_The_Giant_Peach_Novel_Study_Preview.pdf)
 
@@ -307,7 +316,11 @@ Moreover, the association data used included only presence data (absences not re
 
 [Laval, Philippe. "The barrel of the pelagic amphipod Phronima sedentaria (Forsk.)(Crustacea: Hyperiidea)." Journal of Experimental Marine Biology and Ecology 33.3 (1978): 187-211.](http://www.sciencedirect.com/science/article/pii/0022098178900084)
 
+[Maddison, Wayne P. "Gene trees in species trees." Systematic biology 46.3 (1997): 523-536.](http://www.markolabhawaii.org/Marko_Lab_at_UH_Manoa/ZOOL_719_-_Readings_files/Maddison%201997.pdf)
+
 [Madin LP, Harbison GR. The associations of Amphipoda Hyperiidea with gelatinous zooplankton—I. Associations with Salpidae. Deep Sea Research. 1977 May 1;24(5):449IN1457-56IN4463.](http://www.sciencedirect.com/science/article/pii/0146629177904830)
+
+[Meier-Kolthoff, Jan P., et al. "COPYCAT: cophylogenetic analysis tool." Bioinformatics 23.7 (2007): 898-900.](http://bioinformatics.oxfordjournals.org/content/23/7/898.long)
 
 
 
