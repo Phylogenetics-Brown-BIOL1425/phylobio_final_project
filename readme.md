@@ -65,9 +65,15 @@ The biggest difficulty in implementing these analyses was...
 If I did these analyses again, I would...
 
 ##Acknowledgements
+Mike Rosario
+
 Casey Dunn
+
 Abby Moore
+
 Andrew Leslie 
+
+
 
 ## References
 
@@ -77,7 +83,7 @@ Filippini-De Giorgi, A., Holderegger, R., & Schneller, J. (1997). Aspects of spo
 
 Horner, H.T. & Arnott, H.J. (1963). Sporangial arrangement in North American species of Selaginella. Botanical Gazette, 124, 371-383. 
 
-Ingold, C.T. (1939). Spore discharge in land plants. Oxford: Oxford University Press
+Ingold, C.T. (1939). Spore discharge in land plants. Oxford: Oxford University Press.
 
 Koller, A.L. & Scheckler, S.E. (1986). Variations in microsporangia and microspore dispersal in Selaginella. American Journal of Botany, 73, 1274-1288
 
