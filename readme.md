@@ -33,7 +33,7 @@ Finally, we will try to investigate two important questions: A) where does the c
 
 ## Methods
 
-# Data Collection
+### Data Collection
 
 Data regarding 4th trochanter position and body mass were collected for 68 taxa: 23 Saurischian dinosaurs, 44 Ornithischian dinosaurs, and one non-dinosaurian Dinosauromorph Marasuchus (included as the outgroup). Because a quadrupedal stance necessarily requires a different muscle architecture, and because many quadrupedal dinosaurs evolved to gargantuan size, phylogenetic patterns in the position of the 4th trochanter quadrupedal taxa and the resultant paleobiological implications would be difficult to rigorously compare to those obtained with bipedal taxa. As this study was prompted by the anatomy of bipedal or facultatively bipedal Ornithopod dinosaurs, all obligate quadrupeds were elected to be excluded from the dataset. 
 
@@ -41,7 +41,7 @@ Data on the 4th trochanter position and body mass were amassed from two sources:
 
 After initial data collection, a phylogenetic tree was constructed of only those taxa whose data had been collected. The phylogenetic tree was based on trees published in the literature, with several different papers used to determine the relationships for different clades of the tree. There was minimal disagreement between the trees from the literature. During construction of the relationships, two general rules were used: 1) When a taxon's placement differed between trees, preference was given to the more recently obtained tree; 2) When the phylogenetic resolution between different taxa was greater on one tree than on another, preference was given to the former tree regardless of which tree was more recently obtained. The resulting phylogenetic tree does not contain any polytomies, and given the method of construction of the tree, represents the most up-to-date knowledge of the relationship between these taxa.
 
-# Construction of a Time-Calibrated Phylogenetic Tree
+### Construction of a Time-Calibrated Phylogenetic Tree
 
 
 
