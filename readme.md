@@ -33,9 +33,17 @@ Finally, we will try to investigate two important questions: A) where does the c
 
 ## Methods
 
-Data regarding 4th trochanter position and body mass were collected for 68 taxa; 23 Saurischian dinosaurs, 44 Ornithischian dinosaurs, and 1 non-dinosaur Dinosauromorph (included as the outgroup). Because a quadrupedal stance necessarily requires different muscle architecture, and because many quadrupedal dinosaurs evolved to gargantuan size, we worried that quadrupedal taxa would be difficult to rigorously compare to bipedal taxa. Since this study was prompted by the anatomy of bipedal or facultatively bipedal Ornithopod dinosaurs, we elected to exclude all obligate quadrupeds from the dataset. 
+# Data Collection
 
-After initial data collection, we compiled a phylogenetic tree of only the taxa for which we had collected data. We based our tree on published trees, which were mostly in agreement. When a taxon's placement differed between trees, we gave preference to the more recently obtained tree. 
+Data regarding 4th trochanter position and body mass were collected for 68 taxa: 23 Saurischian dinosaurs, 44 Ornithischian dinosaurs, and one non-dinosaurian Dinosauromorph Marasuchus (included as the outgroup). Because a quadrupedal stance necessarily requires a different muscle architecture, and because many quadrupedal dinosaurs evolved to gargantuan size, phylogenetic patterns in the position of the 4th trochanter quadrupedal taxa and the resultant paleobiological implications would be difficult to rigorously compare to those obtained with bipedal taxa. As this study was prompted by the anatomy of bipedal or facultatively bipedal Ornithopod dinosaurs, all obligate quadrupeds were elected to be excluded from the dataset. 
+
+Data on the 4th trochanter position and body mass were amassed from two sources: Gregory S. Paul’s “The Princeton Field Guide to Dinosaurs”, and Scott Hartman’s website “Scott Hartman’s Skeletal Drawing.com”. Paul’s book was used as the primary resource for body mass. 4th trochanter position was also measured for several of the taxa included here via manual measurement by a ruler; the values were then scaled up as dictated by the scale bar provided for the taxa. Hartman’s website was used solely as a source for the 4th trochanter positions; skeletal diagrams from the website of those taxa not found in Paul’s book were uploaded onto Adobe Illustrator(C), and the ruler tool was used to determine 4th trochanter position. 
+
+After initial data collection, a phylogenetic tree was constructed of only those taxa whose data had been collected. The phylogenetic tree was based on trees published in the literature, with several different papers used to determine the relationships for different clades of the tree. There was minimal disagreement between the trees from the literature. During construction of the relationships, two general rules were used: 1) When a taxon's placement differed between trees, preference was given to the more recently obtained tree; 2) When the phylogenetic resolution between different taxa was greater on one tree than on another, preference was given to the former tree regardless of which tree was more recently obtained. The resulting phylogenetic tree does not contain any polytomies, and given the method of construction of the tree, represents the most up-to-date knowledge of the relationship between these taxa.
+
+# Construction of a Time-Calibrated Phylogenetic Tree
+
+
 
 ## Results
 
