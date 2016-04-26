@@ -42,11 +42,13 @@ The goal of this project is to compare the evolutionary histories of hyperiid am
 
 ## Methods
 
-Hyperiid amphipod - Gelatinous host associations (unquantified, recorded categorically as presence) were recorded from the literature review.
+Hyperiid amphipod - Gelatinous host associations (unquantified, recorded categorically as presence) were recorded from the literature review. Most associations not resolved to the species level were discarded for this study. [Associations file here](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/Associations.csv)
 
-Host and amphipod 18S fasta sequences were retrieved from NCBI Batch Entrez using the GI numbers for each sequence.
+Host and amphipod 18S fasta sequences were retrieved from NCBI Batch Entrez using the GI numbers for each taxon sequence.
+[Hosts sequences FASTA](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/ExtendedHosts/host_ext_oneline.fasta)
+[Amphipods sequences FASTA](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/Amphipods/Interesting\ amphipods/datamphipod18S_oneline.fasta)
 
-Additional taxa were included (and pruned out a posteriori) to increase the robustness of the analysis and reduce the effect of long branch attraction. The hyperiid amphipod tree showed a rogue taxon "*Hyperietta stephenseni*" which consistently appeared outside its genus clade and as sister group to all other species. Its 18S sequence, as annotated in NCBI differed much from every other in the alignment. This is possibly due to incorrect annotation or contamination (BLAST 2nd hit: *Epimeriella walkeri*, gammaridean amphipod -- E = 0.0). It has critical information as it is the only taxon for which I had available association data with radiolarians, so I could not simply remove it. Therefore, I applied a constraint (specified below) during the RAxML analysis to procrust its position in the tree, informed by alternative phylogenies (Hurt et al., 2013) and taxonomic information. Lestrigonus schizogeneios was also showing a similar behavior, but as it did not have critical ecological information, I decided to remove the taxon a posteriori.
+Additional taxa were included (and pruned out a posteriori) to increase the robustness of the analysis and reduce the effect of long branch attraction. The hyperiid amphipod tree showed a rogue taxon "*Hyperietta stephenseni*" which consistently appeared outside its genus clade and as sister group to all other species. Its 18S sequence, as annotated in NCBI differed much from every other in the alignment. This is possibly due to incorrect annotation or contamination (BLAST 2nd hit: *Epimeriella walkeri*, gammaridean amphipod -- 99% cover, E = 0.0). It has critical information as it is the only taxon for which I had available association data with radiolarians, so I could not simply remove it. Therefore, I applied a constraint (specified below) during the RAxML analysis to procrust its position in the tree, informed by alternative phylogenies (Hurt et al., 2013) and taxonomic information. Lestrigonus schizogeneios was also showing a similar behavior, but as it did not have critical ecological information, I decided to remove the taxon a posteriori.
 
 For the sake of making good use of species-to-species association data for interesting species which do not have available annotated 18S sequence data, I used "sequence proxies". This artifact consists in using a sequence annotated as "Species sp." as a placeholder (or viceversa), assuming it would have an approximate phylogenetic placement to the morphospecies of interest.
 
@@ -97,7 +99,7 @@ Other deuterostome:
 *Rhabdosoma whitei*.
 
 **Constraint:**
-(Hyperietta stephenseni, Hyperietta parviceps, Hyperietta sibaginis, Eupronoe minuta);
+(*Hyperietta stephenseni, Hyperietta parviceps, Hyperietta sibaginis, Eupronoe minuta*);
 
 **Sequence proxies:** 
 *Phronima sp.* used as *Phronima sedentaria*.
@@ -131,8 +133,7 @@ Trees were pruned to contain only the tips for which I have association data for
 
 The association matrix obtained from the literature review was pruned to contain only species represented in the phylogenies used. Associations were visualized using igraph::tkplot(). Inter-host ecological distance matrix was calculated using picante::comdist(). Inter-amphipod ecological distance matrix was calculated using picante::species.dist(). Bipartite network analysis was carried out using bipartite.
 
-Host-amphipod cophylogenetic congruence (level of cospeciation) was tested using a Procrustean Application to Cophylogenetic Analysis paco::PACo() (r0 permutation method, cailliez correction method), and ParaFit global fit methods ape::parafit.
-
+Host-amphipod cophylogenetic congruence (level of cospeciation) was tested using a Procrustean Application to Cophylogenetic Analysis paco::PACo() (r0 permutation method, cailliez correction method), and ParaFit global fit methods ape::parafit. Phylogenetic signal in generality and vulnerability traits calculated using Blomberg's K with picante::Kcalc().
 Cophylogeny plot was produced using ape::cophyloplot().
 
 Phylogenetic community ecology methods used were:
