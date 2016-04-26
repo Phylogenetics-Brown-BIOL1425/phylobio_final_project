@@ -1,19 +1,18 @@
-#simulations
-##from the comparative r repo
+#Simulations: Simulating trees and character evolution 
+
+#simulating phylogeny 
 
 library(ape)
 set.seed(4984356)
 
-#only requires number of taxa --ultrametric tree 
-##taxa with most characters filled in
 t <- rcoal( 700 )
 plot( t,show.tip.label = FALSE,show.node.label = TRUE)
 
 
-##simulating character evolution
-sim.char()
+#simulating character evolution
 
-##Simulating 5 characters: 
+##simulating 5 characters: 
+
 1. megaspore discharge type (variance=1)
 2. microspore discharge type (variance=1)
 3. sporangial arrangement (varaince=0.32)
@@ -50,6 +49,14 @@ vcv[5,2] <- 0.9
 vcv[5,3] <- 0.0
 vcv[5,4] <- 0.2
 
+vcv <- diag( 3 )
+vcv[1,2] <- 0.2
+vcv[1,3] <- 0.0
+vcv[2,1] <- 0.2
+vcv[2,3] <- 0.0
+vcv[3,3] <- 0.3
+
+
 ##generate multiple simulated datasets on tree t according to vcv:
 library(geiger)
 D <- sim.char( t, vcv, nsim = 100, model = "BM", root = 0 )
@@ -63,11 +70,30 @@ table.phylo4d( D4, box=FALSE )
 ic1 <- pic( D[,1,1], t )
 ic2 <- pic( D[,2,1], t )
 ic3 <- pic( D[,3,1], t )
+ic4 <- pic( D[,4,1], t )
+ic5 <- pic( D[,5,1], t )
+ic6 <- pic( D[,2,2], t )
+ic7 <- pic( D[,2,3], t )
+ic8 <- pic( D[,2,4], t )
+ic9 <- pic( D[,2,5], t )
+ic10 <- pic( D[,3,3], t )
+ic11 <- pic( D[,3,4], t )
+ic12 <- pic( D[,3,5], t )
+ic13 <- pic( D[,4,4], t )
+ic14 <- pic( D[,4,5], t )
+ic15 <- pic( D[,5,5], t )
+
+cov( cbind( ic1, ic2, ic3, ic4, ic5, ic6, ic7, ic8, ic9, ic10, ic11, ic12, ic13, ic14, ic15 ) )
+
+ic1 <- pic( D[,1,1], t )
+ic2 <- pic( D[,2,1], t )
+ic3 <- pic( D[,3,1], t )
 
 cov( cbind( ic1, ic2, ic3 ) )
 
 ##covariance of values at the tips (not independent contrasts)
 cov( cbind( D[,1,1], D[,2,1], D[,3,1] ) )
 
+cov( cbind( D[,1,1], D[,2,1], D[,3,1] ) )
 
 
