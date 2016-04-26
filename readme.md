@@ -9,7 +9,7 @@ Part 1, titled "phylogenetic reconstruction of demographic structure in admixed 
 
 Part 2, tiled "Phylogenetic Reconstruction of the Evolution of Protein B" seeks to reconstruct the evolutionary history of two putatively sister taxa of protein (A and B). This project looks at long evolutionary times and thus it is interested in investigating the topology and potential branch length leading to the different protein families (tips). Due to long divergence, nucleotide level signal is highly convoluted, thus, I will use protein level sequences. 
 
-#Part 1: **"Phylogenetic reconstruction of demographic structure in admixed populations"**
+#Part 1: **"Phylogenetic reconstruction of demographic structure in introgressed populations"**
 
 ## Introduction and Goals
 
@@ -108,6 +108,16 @@ and thus was used as the phylogeny for the chromosome.  The tree shows the split
 
 ![Figure 17](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_phylogeny.png "Figure 17: phylogeny for chromosome K")
 **Figure 17:** Left: Phylogenetic reconstruction of of populations of your favorite organism. Branch leading to the split of the norther and souther clades is indicated in gold, posterior probability of the branch is also shown. Right: Mulutiple sequence aligment (MSA) of chromosome K used in the phylogenetic reconstruction
+
+##Phylogenetic Signal Confounded in low sequencing covergage 
+
+**Sequencing Coverage Across the tips**
+![Figure 17B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/N_mapped_BR.png "Figure 17B: phylogeny for gene BG")
+Blomber's k = 0.01374608
+
+**Sequencing Coverage Across the tips - with flat (br = 1) branch lengths**
+![Figure 17B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/N_mapped_noBR.png "Figure 17B: phylogeny for gene BG")
+Blomber's k = 0.2848437
 
 
 ####Gene Big Gene
