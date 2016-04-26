@@ -98,6 +98,10 @@ y
 which(!is.na(accessions[,1])==TRUE)
 row.names(accessions[which(!is.na(accessions[,1])==TRUE),])
 accessions[which(!is.na(accessions[,1])==TRUE),]
+
+for (i in 1:length(accessions[,1])){
+  print(accessions[i,1])
+}
 ```
 The tools I used were... See analysis files at (links to analysis files).
 
