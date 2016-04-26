@@ -52,6 +52,8 @@ ____________
 
 ## Methods
 
+I started by downloading the accession numbers for 12 genes published Pyron 2011, used in the construction of a comprehensive Amphibia phylogeny, storing them in a data frame called accessions.  
+
 ```{r}
 setwd("~/Dropbox/Brown University/BIOL1425/phylobio_final_project/")
 accessions=read.csv("Pyrondata.csv",header = TRUE)
@@ -63,23 +65,32 @@ accessions=accessions[,-1]
 dim(accessions)
 accessions[1,]
 
+```
+I then downloaded a list of all the IUCN designations from the IUCN Red List database (http://www.iucnredlist.org/), storing it locally as a .csv and within the R environment as IUCN_amphibia.
+```{r}
 IUCN_amphibia=read.csv("IUCN_amphibia.csv", header = TRUE)
 IUCN_amphibia
 dim(IUCN_amphibia)
 names(IUCN_amphibia)
 row.names(IUCN_amphibia)=IUCN_amphibia[,6]
 IUCN_amphibia=IUCN_amphibia[,-6]
-
+```
+By searching the row names of each dataframe, I pared down the rows in accessions so that I only look at species with designations in the IUCN database. This removed about 500 rows from the original Pyron dataset.
+```{r}
 accessions=accessions[rownames(accessions)%in%rownames(IUCN_amphibia),]
 dim(accessions)
 accessions[1,]
 #filtered accessions so that only contains rows for species with values listed in IUCN_amphibia
-
+```
+I then created an IUCN_amphibia_matched dataframe, which listed only those rows which are in accessions, effectively creating two dataframes with identical rows.
+```{r}
 IUCN_amphibia_matched=IUCN_amphibia[rownames(IUCN_amphibia)%in%rownames(accessions),]
 IUCN_amphibia_matched
 dim(IUCN_amphibia_matched)
 names(IUCN_amphibia_matched)
-
+```
+I then went into the matched IUCN dataframe and extracted the Red_list_status and Red_list_criteria columns and appended them to my accessions dataframe. 
+```{r}
 accessions[,13]=IUCN_amphibia_matched[,9]
 accessions[,14]=IUCN_amphibia_matched[,10]
 names(accessions)[13]="Red_list_status"
@@ -87,23 +98,27 @@ names(accessions)[14]="Red_list_criteria"
 names(accessions)
 
 
-x=row.names(accessions[which(!is.na(accessions[,1])==TRUE),])
+#x=row.names(accessions[which(!is.na(accessions[,1])==TRUE),])
 #the species for which there are values!=NA in column 1
-y=accessions[which(!is.na(accessions[,1])==TRUE),1]
+#y=accessions[which(!is.na(accessions[,1])==TRUE),1]
 #the values for the species that have values in column 1
 
 
-y=accessions[which(!is.na(accessions[,1])==TRUE),1]
-y
-which(!is.na(accessions[,1])==TRUE)
-row.names(accessions[which(!is.na(accessions[,1])==TRUE),])
-accessions[which(!is.na(accessions[,1])==TRUE),]
+#y=accessions[which(!is.na(accessions[,1])==TRUE),1]
 
-for (i in 1:length(accessions[,1])){
-  print(accessions[i,1])
-}
+#which(!is.na(accessions[,1])==TRUE)
+#row.names(accessions[which(!is.na(accessions[,1])==TRUE),])
+#accessions[which(!is.na(accessions[,1])==TRUE),]
+
 ```
+I then exported my accessions dataframe to a .csv file
+```{r}
+write.csv(accessions,file = "accessions2.csv")
+```
+
 The tools I used were... See analysis files at (links to analysis files).
+
+
 
 ## Results
 
