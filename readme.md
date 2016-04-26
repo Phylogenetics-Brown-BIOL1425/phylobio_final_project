@@ -41,6 +41,9 @@ The mRNA sequences I intend to use in particular correspond to the transcript fo
 ## Methods
 
 The tools I used were... See analysis files at (links to analysis files).
+Mafft: Started with affine gap: open penalty 1.5, penalty .5
+Since data is all mRNA sequences, I had figured that gaps should probably be penalized somewhat harshly, but I underestimated the amount of missing data from each
+sequence, and I may have to realign with the fact in mind that very little of the sequences actually matches any of the other sequence due to holes in the data.
 
 ## Results
 
