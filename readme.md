@@ -43,7 +43,7 @@ After initial data collection, a phylogenetic tree was constructed of only those
 
 ### Construction of a Time-Calibrated Phylogenetic Tree
 
-
+The phylogenetic tree at this stage is not time-calibrated, and shows purely the relationships among the constituent taxa. In order to carry out the analysis of this paper, the branches of the phylogeny must be scaled to time——a time-calibrated phylogenetic tree is needed. Obtaining such a phylogeny is typically difficult for fossil taxa for several reasons: 1) the first and last appearance dates of fossil taxa do not necessarily represent the actual first and last appearance dates for the taxa; 2) the date of divergence of two different taxa is not known with precision, and methods of constraint for estimating internal branch lengths based on the ranges of the terminal taxa have several difficulties based on the method used and the location and number of internal nodes for which dates are well known; 3) molecular phylogenetic analyses cannot be conducted due to the lack of soft tissue preservation and the short life of organic molecules and DNA in fossil taxa, especially those from the Mesozoic; 4) different fossil taxa have been discovered in different 
 
 ## Results
 
