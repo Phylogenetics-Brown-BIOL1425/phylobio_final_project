@@ -47,7 +47,9 @@ sequence, and I may have to realign with the fact in mind that very little of th
 
 ## Results
 
-The tree in Figure 1...
+It looks like the duplication event I was interested in may have occured IN the organism in question, or at least in a very recent ancestor, and may not actually
+be useful for the purposes of my project. I may try again with another gene (rhodopsin?) to see if I can resolve a clade for the sophisiticated control of chromatophores
+even without a specific gene duplication event.
 
 ## Discussion
 
