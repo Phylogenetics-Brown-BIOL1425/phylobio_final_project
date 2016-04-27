@@ -28,9 +28,24 @@ Data for this project corresponds to real anonymized sequencing data from variou
 
 Phylogenetic reconstructions were conducted in revbayes (rb and rb-mpi) version 1.00 (March 2016) using 2 independent parameter searches of 40,000 generations and a burn-in of 10,000 generations. For both types of runs, searches were conducted in independent nodes of the OSCAR computer cluster using the MPI version of revbayes (rb-mpi). A major advantage of RevBayes is its modular nature allowing phylogenetic reconstruction to be informed by different assumptions and models: rate matrix(figure 3), among site variation(figure 4), tree topology (Figure 5), and the phylogenetic MCMC model (Figure 6).
 
-The original vision of this project was to compare the chromosomal tree with each individual gene tree in the molecule. However, given time constrains, this project will present a 'Lite' version of the original vision focusing on the comparison of the main phylogeny constructed using the complete chromosome K sequences with 3 genes (gene a6, Gene CI, gene BigGene) and 1 neutral marker. 
+#####Figure 3: Rate matrix
+![Figure 3](https://rawgit.com/Jcbnunez/phylobio_final_project/master/rate_matrix.png "Figure 3 Rate Matrix")
+___
 
-Phylogenetic visualizations were produced in R using ggtree(https://www.bioconductor.org/packages/3.3/bioc/vignettes/ggtree/inst/doc/ggtree.html) and ape(https://cran.r-project.org/web/packages/ape/index.html). Visualization of posterior probabilities were produced using ggplot2. For some clustering tests, ape phylogenetic objects were converted to dendrograms and analyzed using the R package dendextend (https://cran.r-project.org/web/packages/dendextend/index.html). Blomberg's K estimates of phylogenetic signal were estimated using the R package "picante" (https://cran.r-project.org/web/packages/picante/index.html). Many clustering analyses were conducting under the assumptions that ultrametric phylogenetic trees, like dendrograms, can be seen as sets of nested lists possessing particular attributes. These clustering analyses mainly investigated the similarity between trees inferred using the entirety of the data set vs. trees inferred using only subsets of the data (chromosome trees vs. locus trees). These methods consist of: a) Tanglegrams, a comparison method that investigates the similarities in hierarchical clustering between the locus and chromosomal trees.  Tanglegrams allows for the estimation of "entanglement", a parameter which indicates the degree in which the branches and tips retain order between trees (lower entanglement suggests highest conservation of structure). Since tree topology can be represented in multiple ways, the relationship between two trees may not be entirely intuitive at face value. Built in algorithms in dendextend were used to "disentangle" tree visualization such that both topologies are visualized to the highest degree of similarity. Tree similarity was compared quantitively using two metrics, Baker's Gamma Index (Baker, 1974) measures the degree of association between two sets of hierarchical clusters (trees in this case), and The Fowlkes-Mallows Index (Fowlkes 1983). Statistical confidence for the Baker's Gamma Index was estimated using a permutation test (here done with 100 repetitions) as follows:
+#####Figure 4: Site Variation
+![Figure 4](https://rawgit.com/Jcbnunez/phylobio_final_project/master/among_sites_rate.png "Figure 4 Site Variation")
+___
+
+#####Figure 5: Topology
+![Figure 5](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Phylogeny_topology.png "Figure 4 Site Variation")
+___
+
+#####Figure 6: phyloMCMC
+![Figure 5](https://rawgit.com/Jcbnunez/phylobio_final_project/master/phyloMCMC.png "Figure 4 Site Variation")
+ 
+ The original vision of this project was to compare the chromosomal tree with each individual gene tree in the molecule. However, given time constrains, this project will present a 'Lite' version of the original vision focusing on the comparison of the main phylogeny constructed using the complete chromosome K sequences with 3 genes (gene a6, Gene CI, gene BigGene) and 1 neutral marker. 
+
+Phylogenetic visualizations were produced in R using ggtree(https://www.bioconductor.org/packages/3.3/bioc/vignettes/ggtree/inst/doc/ggtree.html) and ape(https://cran.r-project.org/web/packages/ape/index.html). Visualization of posterior probabilities were produced using ggplot2. For some clustering tests, ape phylogenetic objects were converted to dendrograms and analyzed using the R package dendextend (https://cran.r-project.org/web/packages/dendextend/index.html). Blomberg's K estimates of phylogenetic signal were estimated using the R package "picante" (https://cran.r-project.org/web/packages/picante/index.html). Many clustering analyses were conducting under the assumptions that ultrametric phylogenetic trees, like dendrograms, can be seen as sets of nested lists possessing particular attributes. These clustering analyses mainly investigated the similarity between trees inferred using the entirety of the data set vs. trees inferred using only subsets of the data (chromosome trees vs. locus trees). These methods consist of: a) Tanglegrams, a comparison method that investigates the similarities in hierarchical clustering between the locus and chromosomal trees.  Tanglegrams allows for the estimation of "entanglement", a parameter which indicates the degree in which the branches and tips retain order between trees (lower entanglement suggests highest conservation of structure). Since tree topology can be represented in multiple ways, the relationship between two trees may not be entirely intuitive at face value. Built in algorithms in dendextend were used to "disentangle" tree visualization such that both topologies are visualized to the highest degree of similarity. Tree similarity was compared quantitively using two metrics, Baker's Gamma Index (Baker, 1974) measures the degree of association between two sets of hierarchical clusters (trees in this case), and The Fowlkes-Mallows Index (Fowlkes and Mallows, 1983). Statistical confidence for the Baker's Gamma Index was estimated using a permutation test (here done with 100 repetitions) as follows:
 
 ```{r}
 
@@ -55,29 +70,12 @@ for(i in 1:rep) {
 
 round(sum(K_BG_cor < cor_bakers_gamma_results)/ rep, 4)
 
-
 ```
-
-
-
-
-#####Figure 3: Rate matrix
-![Figure 3](https://rawgit.com/Jcbnunez/phylobio_final_project/master/rate_matrix.png "Figure 3 Rate Matrix")
-___
-
-#####Figure 4: Site Variation
-![Figure 4](https://rawgit.com/Jcbnunez/phylobio_final_project/master/among_sites_rate.png "Figure 4 Site Variation")
-___
-
-#####Figure 5: Topology
-![Figure 5](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Phylogeny_topology.png "Figure 4 Site Variation")
-___
-
-#####Figure 6: phyloMCMC
-![Figure 5](https://rawgit.com/Jcbnunez/phylobio_final_project/master/phyloMCMC.png "Figure 4 Site Variation")
-   
+The Fowlkes-Mallows Index is another measure of the association between two trees. The index investigates the similarity between the trees when these trees are subdivided in clusters of size "k" from the trees. The expected value of Fowlkes-Mallows under the null hypothesis that the two trees are not similar can be compared to the observed values of Fowlkes-Mallows to obtain an idea of the similarity of the trees at different "depths" of the topology.  
 
 ## Results
+___
+
 
 ##**Phylogenetic Inference Quality Control**
 
