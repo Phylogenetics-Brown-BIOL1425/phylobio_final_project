@@ -3,9 +3,7 @@ ___
 
 # Abstract
 
-The primary goal of these projects is to apply the knowledge and tools acquired in phylogenetic biology to problems in ecology and evolution. This project has 2 parts, both centered in the use of three topology for inferring evolutionary relationship among and between taxa, these parts differ in the scale of evolutionary relationship of interest and the type of information used for the inference. 
-
-Part 1, titled "phylogenetic reconstruction of demographic structure in admixed populations", uses phylogenetic methods to unravel demographic signals in a complete chromosome compared to individual genes within the chromosome. This part looks at short evolutionary scales and its primarily intersted in the topology leading to the population members as the tips of the phylogeny. DNA sequences were used for this part of the project, and at its core, it is comparison of "chromosomal/concatenated locus trees" vs. "gene trees".     
+The primary goal of these projects is to apply the knowledge and tools acquired in phylogenetic biology to problems in ecology and evolution. This project has 2 parts, both centered in the use of three topology for inferring evolutionary relationship among and between taxa, these parts differ in the scale of evolutionary relationship of interest and the type of information used for the inference. "Phylogenetic reconstruction of demographic structure in introgressed populations", uses phylogenetic methods to untangle  demographic signals in a complete chromosome compared to individual genes within the chromosome. This part looks at short evolutionary scales and its primarily intersted in the topology leading to the population members as the tips of the phylogeny. DNA sequences were used for this part of the project, and at its core, it is comparison of "chromosomal/concatenated locus trees" vs. "gene trees".     
 
 **"Phylogenetic reconstruction of demographic structure in introgressed populations"**
 
