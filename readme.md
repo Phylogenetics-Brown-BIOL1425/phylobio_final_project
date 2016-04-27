@@ -158,9 +158,8 @@ Untangled Tanglegram of Big Gene vs Chromosome K. In this state the entanglement
 **Post-entanglement**
 Post-entanglement coefficient is = 0.0322881
 
-![Figure 20B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Bakers_gamma_kvsBG2.png "Figure 20B: untangled K vs BG")
+![Figure 20B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Bakers_gamma_kvsBG3.png "Figure 20B: untangled K vs BG")
 **Baker's Gamma**
-
 
 ![Figure 20C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_BK.png "Figure 20C: untangled K vs BG")
 **Fowlkes–Mallows index of "dissimilarity"**
@@ -176,7 +175,11 @@ Entanglement = 0.3317921
 **Post-entanglement**
 Post-entanglement coefficient is = 0.1615409
 
+![Figure 20B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Baker_gamma_K_A6.png "Figure 20B: untangled K vs BG")
+**Baker's Gamma**
+
 ![Figure 18D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_A6_BK.png "Figure 18D: phylogeny for gene A")
+**Fowlkes–Mallows index of "dissimilarity"**
 
 ####Gene CI
 ![Figure 19](https://rawgit.com/Jcbnunez/phylobio_final_project/master/CI_phylogeny.png "Figure 19: phylogeny for gene CI")
@@ -189,7 +192,7 @@ Entanglement = 0.4619899
 **Post-entanglement**
 Post-entanglement coefficient is = 0.35123
 
-![Figure 20B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Bakers_gamma_K_CI.png "Figure 20B: untangled K vs BG")
+![Figure 20B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Bakers_gamma_K_CI2.png "Figure 20B: untangled K vs BG")
 **Baker's Gamma**
 
 ![Figure 20C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_CI_BK.png "Figure 20C: untangled K vs CI")
