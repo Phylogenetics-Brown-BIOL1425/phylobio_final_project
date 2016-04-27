@@ -5,7 +5,7 @@ ___
 
 The primary goal of these projects is to apply the knowledge and tools acquired in phylogenetic biology to problems in ecology and evolution. This project has 2 parts, both centered in the use of three topology for inferring evolutionary relationship among and between taxa, these parts differ in the scale of evolutionary relationship of interest and the type of information used for the inference. "Phylogenetic reconstruction of demographic structure in introgressed populations", uses phylogenetic methods to untangle  demographic signals in a complete chromosome compared to individual genes within the chromosome. This part looks at short evolutionary scales and its primarily intersted in the topology leading to the population members as the tips of the phylogeny. DNA sequences were used for this part of the project, and at its core, it is comparison of "chromosomal/concatenated locus trees" vs. "gene trees".     
 
-**"Phylogenetic reconstruction of demographic structure in introgressed populations"**
+#**"Phylogenetic reconstruction of demographic structure in introgressed populations"**
 
 ## Introduction and Goals
 
@@ -188,6 +188,9 @@ Entanglement = 0.4619899
 ![Figure 20B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_CI_untangled.png "Figure 20B: untangled K vs BG")
 **Post-entanglement**
 Post-entanglement coefficient is = 0.35123
+
+![Figure 20B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Bakers_gamma_K_CI.png "Figure 20B: untangled K vs BG")
+**Baker's Gamma**
 
 ![Figure 20C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_CI_BK.png "Figure 20C: untangled K vs CI")
 **Fowlkes–Mallows index of "dissimilarity"**
