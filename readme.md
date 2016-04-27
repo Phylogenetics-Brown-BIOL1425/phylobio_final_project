@@ -1,21 +1,17 @@
 # Phylogenetic Biology - Final Project
 ___
 
-# General introduction 
+# Abstract
 
 The primary goal of these projects is to apply the knowledge and tools acquired in phylogenetic biology to problems in ecology and evolution. This project has 2 parts, both centered in the use of three topology for inferring evolutionary relationship among and between taxa, these parts differ in the scale of evolutionary relationship of interest and the type of information used for the inference. 
 
 Part 1, titled "phylogenetic reconstruction of demographic structure in admixed populations", uses phylogenetic methods to unravel demographic signals in a complete chromosome compared to individual genes within the chromosome. This part looks at short evolutionary scales and its primarily intersted in the topology leading to the population members as the tips of the phylogeny. DNA sequences were used for this part of the project, and at its core, it is comparison of "chromosomal/concatenated locus trees" vs. "gene trees".     
 
-Part 2, tiled "Phylogenetic Reconstruction of the Evolution of Protein B" seeks to reconstruct the evolutionary history of two putatively sister taxa of protein (A and B). This project looks at long evolutionary times and thus it is interested in investigating the topology and potential branch length leading to the different protein families (tips). Due to long divergence, nucleotide level signal is highly convoluted, thus, I will use protein level sequences. 
-
-#Part 1: **"Phylogenetic reconstruction of demographic structure in introgressed populations"**
+**"Phylogenetic reconstruction of demographic structure in introgressed populations"**
 
 ## Introduction and Goals
 
 Your favorite marine organism inhabits the eastern seaboard of some contient. Ecological conditions across the eastern seaboard of some continent are variable thus your favorite organism is exposed to a drastic range of ecological conditions. The demographic history of this organism is characterized by historical phylogenetic break occurring at the height of Middlecity (Figure 1). This phylogenetic break is likely due to a vicariance event occurring  recently in geologic time. 
-
-
 
 ![Figure 1](https://rawgit.com/Jcbnunez/phylobio_final_project/master/model_system.png "Figure 1 Ecology of your favorite Marine Organism")
 
@@ -32,9 +28,40 @@ This project will utilize phylogenetic reconstruction methods to unravel the dem
 ## Methods
 Data for this project corresponds to real anonymized sequencing data from various populations of *your favorite marine organism.* Sequencing data was assembles to high coverage and mapping quality standards to a reference sequence of chromosome K available in NCBI. Data was anonymized using scripts 1, 2, and 3 (see supplement). Monomorphic and singleton (parsimony non-informative) locus were filtered using TASSEL 5 (http://www.maizegenetics.net/#!tassel/c17q9). Nexus files were built in SEAVIEW (http://www.molecularevolution.org/software/alignment/seaview). As opposed to MESQUITE, SEAVIEW outputs revbayes ready NEXUS files.
 
-Phylogenetic reconstructions were conducted in revbayes (rb) version 1.00 (March 2016) using two types of runs: heavy and light. Heavy runs were computationally expensive with 4 independent searches and 100,000 generations. Light runs were computationally moderate with only 2 searches and 30,000 generations. For both types of runs, searches were conducted in independent nodes of the OSCAR computer cluster using the MPI version of revbayes (rb-mpi; rb scripts 4 and 5 are also included in the supplement). A major advantage of RevBayes is its modular nature allowing phylogenetic reconstruction to be informed by different assumptions and models: rate matrix(figure 3), among site variation(figure 4), tree topology (Figure 5), and the phylogenetic MCMC model (Figure 6).
+Phylogenetic reconstructions were conducted in revbayes (rb and rb-mpi) version 1.00 (March 2016) using 2 independent parameter searches of 40,000 generations and a burn-in of 10,000 generations. For both types of runs, searches were conducted in independent nodes of the OSCAR computer cluster using the MPI version of revbayes (rb-mpi). A major advantage of RevBayes is its modular nature allowing phylogenetic reconstruction to be informed by different assumptions and models: rate matrix(figure 3), among site variation(figure 4), tree topology (Figure 5), and the phylogenetic MCMC model (Figure 6).
 
 The original vision of this project was to compare the chromosomal tree with each individual gene tree in the molecule. However, given time constrains, this project will present a 'Lite' version of the original vision focusing on the comparison of the main phylogeny constructed using the complete chromosome K sequences with 3 genes (gene a6, Gene CI, gene BigGene) and 1 neutral marker. 
+
+Phylogenetic visualizations were produced in R using ggtree(https://www.bioconductor.org/packages/3.3/bioc/vignettes/ggtree/inst/doc/ggtree.html) and ape(https://cran.r-project.org/web/packages/ape/index.html). Visualization of posterior probabilities were produced using ggplot2. For some clustering tests, ape phylogenetic objects were converted to dendrograms and analyzed using the R package dendextend (https://cran.r-project.org/web/packages/dendextend/index.html). 
+
+-- Many clustering analyses were conducting under the assumptions that ultrametric phylogenetic trees, like dendrograms, can be seen as sets of nested lists possessing particular attributes. These clustering analyses mainly investigated the similarity between trees inferred using the entirety of the data set vs. trees inferred using only subsets of the data (chromosome trees vs. locus trees). These methods consist of: a) Tanglegrams, a comparison method that investigates the similarities in hierarchical clustering between the locus and chromosomal trees.  Tanglegrams allows for the estimation of "entanglement", a parameter which indicates the degree in which the branches and tips retain order between trees (lower entanglement suggests highest conservation of structure). Since tree topology can be represented in multiple ways, the relationship between two trees may not be entirely intuitive at face value. Built in algorithms in dendextend were used to "disentangle" tree visualization such that both topologies are visualized to the highest degree of similarity. Tree similarity was compared quantitively using two metrics, Baker's Gamma Index (Baker, 1974) measures the degree of association between two sets of hierarchical clusters (trees in this case), and The Fowlkes-Mallows Index (Fowlkes 1983). Statistical confidence for the Baker's Gamma Index was estimated using a permutation test (here done with 1000 repetitions) as follows:
+
+```{r}
+
+set.seed(123456) #setting a random seed
+K_cor <- cor_bakers_gamma(k_dend, k_dend) #estimating the baker's index  between two indetical trees from the chromosome K. This set a null expectation.
+K_BG_cor <- cor_bakers_gamma(k_dend,BG_dend) #estimating the baker's index between a gene tree and a chromosome tree. Here trees have been transformed to dendrograms (input trees were ultrametic). 
+
+rep = 1000 #Number of iterations
+
+cor_bakers_gamma_results <- numeric(rep) #Generating vector to store results
+dend_mixed <- k_dend
+
+#sampling loop
+for(i in 1:rep) {
+   dend_mixed <- sample.dendrogram(dend_mixed, replace = FALSE)
+   cor_bakers_gamma_results[i] <- cor_bakers_gamma(k_dend, dend_mixed)
+}
+
+#P-value was estimated from the sampling distribution
+
+round(sum(K_BG_cor < cor_bakers_gamma_results)/ rep, 4)
+
+
+```
+
+
+
 
 #####Figure 3: Rate matrix
 ![Figure 3](https://rawgit.com/Jcbnunez/phylobio_final_project/master/rate_matrix.png "Figure 3 Rate Matrix")
@@ -109,15 +136,15 @@ and thus was used as the phylogeny for the chromosome.  The tree shows the split
 ![Figure 17](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_phylogeny.png "Figure 17: phylogeny for chromosome K")
 **Figure 17:** Left: Phylogenetic reconstruction of of populations of your favorite organism. Branch leading to the split of the norther and souther clades is indicated in gold, posterior probability of the branch is also shown. Right: Mulutiple sequence aligment (MSA) of chromosome K used in the phylogenetic reconstruction
 
-##Phylogenetic Signal Confounded in low sequencing covergage 
+###Phylogenetic Signal Confounded in low sequencing coverage and/or bad loci calls
 
 **Sequencing Coverage Across the tips**
 ![Figure 17B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/N_mapped_BR.png "Figure 17B: phylogeny for gene BG")
-Blomber's k = 0.01374608
+Blomberg's K = 0.01374608
 
 **Sequencing Coverage Across the tips - with flat (br = 1) branch lengths**
 ![Figure 17B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/N_mapped_noBR.png "Figure 17B: phylogeny for gene BG")
-Blomber's k = 0.2848437
+Blomberg's K = 0.2848437
 
 
 ####Gene Big Gene
@@ -132,6 +159,10 @@ Untangled Tanglegram of Big Gene vs Chromosome K. In this state the entanglement
 
 **Post-entanglement**
 Post-entanglement coefficient is = 0.0322881
+
+![Figure 20B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Bakers_gamma_kvsBG.png "Figure 20B: untangled K vs BG")
+**Baker's Gamma**
+
 
 ![Figure 20C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_BK.png "Figure 20C: untangled K vs BG")
 **Fowlkes–Mallows index of "dissimilarity"**
@@ -148,8 +179,6 @@ Entanglement = 0.3317921
 Post-entanglement coefficient is = 0.1615409
 
 ![Figure 18D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_A6_BK.png "Figure 18D: phylogeny for gene A")
-
-
 
 ####Gene CI
 ![Figure 19](https://rawgit.com/Jcbnunez/phylobio_final_project/master/CI_phylogeny.png "Figure 19: phylogeny for gene CI")
@@ -178,60 +207,11 @@ Entanglement = 0.2572355
 ![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_NM_BK.png "Figure 21D: phylogeny for gene BG")
 **Fowlkes–Mallows index of "dissimilarity"**
 
-
-
-
-##**Clustering Based Analysis**
-
-
-####Gene A vs. Chromosomal Tree
-
-####Gene CI vs. Chromosomal Tree
-
-####Gene Big Gene vs. Chromosomal Tree
-
-
-####Neutral Marker vs. Chromosomal Tree
-
-
-## Discussion
+####Potential sequence length Bias of phylogenetic signal 
 
 
 
 
-#Part 2: **"Phylogenetic Reconstruction of the Evolution of Protein B"** 
-
-**Project done in collaboration with** *Chitan Modi* and *Isaiah Bryant* from the *Weinreich lab*. 
-
-## Introduction and Goals
-
-Our project seeks to study evolutionary relationships among different families Proteins B and their relationship to their sister of family A. Studies of Protein B suggests 4 major classes of protein B (B-a, B-b, B-c, B-d). Each one of these classes has distinctive and characteristic catalitic chemistry. However they are all descendants from Protein A. This projects seeks to resolve the origin of each class of protein B with the respect to proteins A. In other words, what and when particular classes of protein A gave rise to each class of protein B. Understading the evolution of protein B is important as this protein has applications in medicine and health.  
-   
-We will generate phylogenetic reconstructions using Both ML and Bayesian approaches using thousands of amino acid sequences from proteins A and B. We will also map Physicochemical traits of the proteins on the tree to gain a greater understading of functional evolution. 
-
-The amino acid data will be obtained from the MEROPS data base (Rawlings et al. 2016), an online data base for pepdidases maintained by the wellcome trust sanger institute. MSAs
-
-## Methods
-
-Sequences from Proteins A and B were downloaded from MEROPS (https://merops.sanger.ac.uk/cgi-bin/family_index?type=P#S). Multiple sequence alignments (MSA) were performed in PROMALIS3D (http://prodata.swmed.edu/promals3d/promals3d.php). Protein identities were anonymized using an R script (Scripts 1 and 2; provided in the supplement). Nexus files were generated using mesquite (https://github.com/MesquiteProject/MesquiteCore). Phylogenetic reconstructions were constructed using bayesian inference in RevBayes (version of March 2016; http://revbayes.github.io). MSAs were filtered using GBlocks (http://molevol.cmima.csic.es/castresana/Gblocks.html) using parameters as defined in Table 1.
-
-**Table 1:** *Parameters using for GBlock MSA filtering: 1. Minimum Number Of Sequences For A Conserved Position, 2. Minimum Number Of Sequences For A Flank Position, 3. Maximum Number Of Contiguous Nonconserved Positions, 4. Minimum Length Of A Block, 5. Allowed Gap Positions.*
-
-|  Family |  1 |  2 |  3 | 4 |  5  | Blocks Kept | %Filtering |
-|:-------:|:--:|:--:|:--:|:-:|:---:|:-----------:|:----------:|
-| S11.001 | 36 | 36 | 10 | 6 | All |     388     |     19     |
-| S11.002 | 84 | 84 | 20 | 6 | All |     295     |     32     |
-| S11.005 | 94 | 94 | 20 | 6 | All |     380     |     16     |
-| S12.003 | 83 | 83 | 30 | 6 | All |     379     |     24     |
-| S12.009 | 60 | 60 | 40 | 6 | All |     344     |     15     |
-| S12.A21 | 17 | 20 | 20 | 6 | All |     297     |     25     |
-| S12.A23 | 27 | 27 | 40 | 6 | All |     235     |     37     |
-| S12.A28 |  5 |  5 | 50 | 6 | All |     300     |     25     | 
-
-
-## Results
-
-The tree in Figure 1...
 
 ## Discussion
 
@@ -243,7 +223,9 @@ If I did these analyses again, I would...
 
 ## References
 
-Rawlings, N.D., Barrett, A.J. & Finn, R.D. (2016) Twenty years of the MEROPS database of proteolytic enzymes, their substrates and inhibitors. Nucleic Acids Res 44, D343-D350.
+Baker, Frank B. "Stability of two hierarchical grouping techniques Case I: Sensitivity to data errors." Journal of the American Statistical Association 69.346 (1974): 440-445.
+
+Fowlkes, Edward B., and Colin L. Mallows. "A method for comparing two hierarchical clusterings." Journal of the American statistical association 78.383 (1983): 553-569.
 
 ## Supplement 
 
