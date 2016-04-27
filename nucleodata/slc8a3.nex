@@ -1,5 +1,5 @@
 #NEXUS
-[written Tue Apr 26 21:15:08 EDT 2016 by Mesquite  version 3.04 (build 725) at Williams-MacBook-Pro-8.local/10.38.40.1]
+[written Wed Apr 27 12:21:48 EDT 2016 by Mesquite  version 3.04 (build 725) at Williams-MacBook-Pro-8.local/192.168.1.132]
 
 BEGIN TAXA;
 	TITLE Taxa;
@@ -207,14 +207,14 @@ Begin MESQUITE;
 		MESQUITESCRIPTVERSION 2;
 		TITLE AUTO;
 		tell ProjectCoordinator;
-		timeSaved 1461719708544;
+		timeSaved 1461774109185;
 		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
 		tell It;
-			setID 0 1135889681715691197;
+			setID 0 5218349722318209732;
 		endTell;
 		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
 		tell It;
-			setID 0 7749110871846174658;
+			setID 0 3959311425303824690;
 			mqVersion 304;
 			checksumv 0 3 786273449 null  getNumChars 2959 numChars 2959 getNumTaxa 159 numTaxa 159   short true   bits 3458764513820540943   states 15   sumSquaresStatesOnly 4031229.0 sumSquares -1.1087184941202205E23 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
 			mqVersion;

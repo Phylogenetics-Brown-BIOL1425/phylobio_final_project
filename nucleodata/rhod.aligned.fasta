@@ -1189,7 +1189,7 @@ tttgtcaccatccagcacaagaagctccgaacacccttaaactacatcctgctgaacttg
 gcgtttgccaaccacttcatggtcctgtgtggattcaccatcacgctgtacacctccctc
 catggatacttcgtatttggacagagtgggtgctacc---------------------
 >Gephyromantis_malagasius
---------------------------------tttttccatgtct-acaagactggggta
+--------------------------------tttttccatgtcta-caagactggggta
 gtacgaagccccttcgagtaccctcagtattacctggcagagccatggaagtattcaata
 ttgtctgcctacatgttcttgctcatcctcctcgggttcccaattaacttcatgaccctg
 gacgtcaccatccagcacaagaagctccgaacacccttaaactacatcctgctcaacttg
@@ -1847,7 +1847,7 @@ tatgtcactgtccagcataaaaagctgcggacacccttaaactacattctactcaatttg
 gtctttgccaatcatttcatggtcctgtgtggattcaccgtgacgttgtactcctccttg
 aatggctacttcgccttcggtcagaccggctgctacktt-------------------
 >Spinomantis_elegans
----------------------------------ttttttccatgtctacagactggggta
+-------------------------------ttttttccatgtcta--cagactggggta
 gtacgaagccccttcgaataccctcagtattacctggcagagccatggaagtattcaata
 ttggctgcctacatgttcttgcttatcctcctcgggctcccaattaacttcatgaccctg
 tacgtcaccatccagcacaagaagctccgaacacccttaaactacatcctgctgaacttg
@@ -2015,7 +2015,7 @@ tacgtcaccatccagcacaagaagctccgaacacccttaaactacatcctgctgaacttg
 gcgtttgccaaccacttcatgatcctgtgtggattcaccatcacgctgtacacctccctc
 catggatacttcgtattcggacagagcgggtgctactttgaaggcttcttcgctaca-
 >Gephyromantis_silvanus
----------------------------------tttttcccatgtctacagactggggta
+-------------------------------tttttcccatgtcta--cagactggggta
 gtacgaagccccttcgagtaccctcagtattacctggcagagccatggaagtattcaata
 ttggctgcctacatgttcttgctcatcctcctcgggctcccaattaacttcatgaccctg
 tacgtcaccatccagcacaagaagctccgaacacccttaaactacatcctgctcaacttg

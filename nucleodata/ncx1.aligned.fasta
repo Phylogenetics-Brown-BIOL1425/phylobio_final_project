@@ -20,7 +20,7 @@ ctgttgccctgactatcatgcgtcgaggcggagatttgactaacactgtgtttgttgact
 tcagaaccgaagatggctcggccaatgcaggttccgactacgagtttactgaagggacag
 tggtcttcaaaccgggtgagacacagaaagaaatccgagttggtatcattgacgatgata
 tattcgaagaagatgaaaatttcctcgttcacctcagtaatataaaagtaaactcc---c
-aaacagca---ga------tgttaatcttgagaccaaccatataacaa-cccttgcttgc
+aaacagca---gat------gttaatcttgagaccaaccatataacaa-cccttgcttgc
 ctt-ggatcaccgtccacggccaca--------------------------
 >Amphiuma_means
 ------------------------------------------------------------
@@ -44,7 +44,7 @@ ctgttgccttgaccataatacgacgaggtggggatttgacaaatactgtgtttgttgact
 ttagaacagaagatggcacagctaatgcaggatctgattaygagtttactgaagggacag
 tggtcttcaaaccaggtgagacacagaaagaaatccgtgttggcataattgatgatgaca
 tctttgaggaagatgagaatttcctggttcacctcagtaacattaaagtcaactct---c
-agtcagca---ga------tgtaaatctggaggccaaccatattacac-cccttgcttgc
+agtcagca---gat------gtaaatctggaggccaaccatattacac-cccttgcttgc
 cta-ggatcgccatcaacagccaccgttacgatc-----------------
 >Amphiuma_tridactylum
 ------------------------------------------------------------
@@ -92,7 +92,7 @@ ctgttgctctgacaattattcgaaggggtggtgatttgaccaatactgtgtttgttgact
 tcagaacagaagatgggacagccaatgcagggtctgattatgagttcaccgaagggacag
 tggtcttcaaaccaggtgagacacagaaagaaatacgtgttggcatcattgacgatgaca
 tatttgaagaagacgagaacttccttgttcacctcagtaacataaaagtcaactcc---c
-agacagca---ga------tattaacctcgagaccnatcacataacaa-cacttgcttgc
+agacagca---gat------attaacctcgagaccnatcacataacaa-cacttgcttgc
 ctt-ggatcaccagccacagccacagtcaccat------------------
 >Siren_intermedia
 ------------------------------------------------------------
@@ -116,7 +116,7 @@ cggtggccctgaccatcatgagacgagggggtgacctgaccaacacggtgtttgtggatt
 tcagaactgaggatggcacagccaatgcggggtccgactatgagttcaccgaaggaacag
 tggtgttcaagccgggcgagacgcagaaggagatccgggtgggcatcatcgatgacgata
 tttttgaagaagacgagaatttccttgttcacctcagtaacgtgaaggtcaactcc---c
-agaccgca---ga------tgtcaacctagaggtcaaccacattacca-ccctcgcttgc
+agaccgca---gat------gtcaacctagaggtcaaccacattacca-ccctcgcttgc
 ctt-ggatcgccctctacagccacagtcaccat------------------
 >Lepidobatrachus_laevis
 ------------------------------------------------------------
@@ -140,7 +140,7 @@ cagtggctctaacaattgttcgtcggggcggtgatttaaccaacacagtctttgtagact
 tcagaacagaagatggcacagcaaatgctggatccgattatgaatttactgaagggactg
 ttgcattcaagcctggtgagacacagaaagagattagggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaatattcgagttaactct---g
-aaaccaca---ga------tgtaaattttgagtcaaatcatgtaacat-cacttgcatgt
+aaaccaca---gat------gtaaattttgagtcaaatcatgtaacat-cacttgcatgt
 cty-ggatcaccctcaacagccacggttaccatc-----------------
 >Bufo_bufo
 ------------------------------------------------------------
@@ -164,7 +164,7 @@ cagtggcactaacaattgttcgccggggcggtgatttaaccaacacagtgttcgtggact
 tcagaacagaagatggcacagcaaatgctggatctgattatgaatttacagaaggaatgg
 ttgtgttcaagcccggtgagacacaaaaagagattaaggttggcattattgatgacgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaacatacgagttaactct---g
-aaaccaca---ga------cgtaaatttcgagtccaatcacgtaacat-cacttgcatgt
+aaaccaca---gac------gtaaatttcgagtccaatcacgtaacat-cacttgcatgt
 ctt-ggatcaccctcaacaacaacagttaccatc-----------------
 >Rana_temporaria
 ------------------------------------------------------------
@@ -188,7 +188,7 @@ cagtagctctaaccattgttcgccgaggtggtgatttgaccaacacagtattcgtagatt
 ttagaacagaagatgggactgccaatgcaggctcagattatgaatttactgaagggactg
 ttgttttcaaacctggtgagacacagaaggaagtcagggttggcattattgatgatgaca
 tttttgaagaagatgaaaacttcctggtccacctcagcaatgtgcgcattaactct---g
-agacaaca---ga------agtgaaccttgaatctaatcacgtggcat-ctcttgcatgt
+agacaaca---gaa------gtgaaccttgaatctaatcacgtggcat-ctcttgcatgt
 ctt-ggatcaccctctacagccacagttactata-----------------
 >Nesomantis_thomasseti
 ------------------------------------------------------------
@@ -212,7 +212,7 @@ caatggcgctcacaattgttcgtcgtggaggtgatttaaccaacacagtntttgtagact
 tcagaacagaagatggtactgccaatgctggttcagattatgaatttactgaagggacaa
 ttgtcttcaaacctggcgagacccagaaagaaattagagttggtatcattgatgatgaca
 tatttgaagaagatgaaaattttctggtccatctaagcaatgttcgagttaactcntctg
-agnccaca---ga------agttaaccttgaagtcaaccatgtgacac-ctcttgcatgc
+agnccaca---gaa------gttaaccttgaagtcaaccatgtgacac-ctcttgcatgc
 ttg-agctcacc---------------------------------------
 >Hypogeophis_rostratus
 ----------------cttaggggtgtctatcatagctgatcgttttatgtcatctatcg
@@ -236,7 +236,7 @@ cggtggctctgaccatcgttcgccgtggtggtgatttgagcaacactgtgtgtattgact
 ttagaacagaggatggcacagcaaatgcagggtctgattatgaattcactgaagggactg
 tggtcttcaagccaggagaaacacagaaagaaataagggttggcatcattgatgatgaca
 tttttgaagaagatgagaacttcctggtacatttaagtaacatcaaagtgaattct---g
-aaggatca---ga------agtcaaccttgatgccaaccacgtggcac-aacttgcttgc
+aaggatca---gaa------gtcaaccttgatgccaaccacgtggcac-aacttgcttgc
 ctt-ggttcaccttgtactgccacagtgactatt-----------------
 >Ichthyophis_bannanicus
 ----------------tttgggagtatccatcatagccgatcggtttatgtcttctattg
@@ -260,7 +260,7 @@ cagtggccctgaccattgttcgccgcggtggtgatttgagcaacactgtgtttgtggact
 ttagaacagaggacggtacagcaaatgcagggtctgattacgagttcactgaagggactg
 tgatcttcaagccaggagagaagcagaaagaaataagggttggcatcattgatgatgaca
 tttttgaagaagacgagaacttcctggtccatctaagcaatgtcaaagtgaattct---g
-aagaacca---ga------agtcaaccctaaggccaaccatgtcacac-cacttgcttgc
+aagaacca---gaa------gtcaaccctaaggccaaccatgtcacac-cacttgcttgc
 ctt-ggatctccctgtactgccacagtgaccatc-----------------
 >Bufo_gargarizans
 ------------------------------------------------------------
@@ -284,7 +284,7 @@ cagtggcactaacaattgttcgccggggcggtgatttaaccaacacagtgttcgtggact
 tcagaacagaagatggcacagcaaatgctggatctgattatgaatttacagaaggaatgg
 ttgtgttcaagcccggtgagacacaaaaagagattaaggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaacatacgagttaactct---g
-aaaccaca---ga------cgtaaattttgagtccaatcacgtaacat-cacttgcatgt
+aaaccaca---gac------gtaaattttgagtccaatcacgtaacat-cacttgcatgt
 ctt-ggatcaccctcaacagcaacagttaccatc-----------------
 >Litoria_caerulea
 ------------------------------------------------------------
@@ -308,7 +308,7 @@ cagtggcaataactgttgttcgtcggggcggtgatttaaccaayacagtctttgtagact
 ttagaacagaagatggcaccgcaaatgctggatccgattatgaatttactgaaggaacag
 ttgttttcaagcctggtgagacacagaaagagattagggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaatgttaaagttaactcc---g
-aaaccaca---ga------agtcaattttgagtcaaatcatgtaacat-cacttgcatgt
+aaaccaca---gaa------gtcaattttgagtcaaatcatgtaacat-cacttgcatgt
 ctt-ggatcaccctcaacagccacagtyaccatc-----------------
 >Calotriton_asper
 ------------------------------------------------------------
@@ -332,7 +332,7 @@ ctgttgctctgacaattattcgaaggggtggggatttgaccaatactgtgtttgttgact
 tcagaacagaagatgggacagccaatgcagggtctgattatgagttcaccgaagggacag
 tggtcttcaaacctggtgagacacagaaagaaatacgtgttggcatcattgacgatgaca
 tatttgaagaagatgagaacttcctcgttcatctcagtaacataaaagtcaactcc---c
-agacagca---ga------tatcaacctggagaccaatcacattacaa-cacttgcttgc
+agacagca---gat------atcaacctggagaccaatcacattacaa-cacttgcttgc
 ctt-ggatcaccagccacagccacagtcaccatct----------------
 >Heleophryne_purcelli
 ------------------------------------------------------------
@@ -356,7 +356,7 @@ ctgtggcactgacaatatttcgccgcggaggtgatctaaccaatacagtgtttgtagact
 tcagaacagaagatggtactgccaatgctggttcagattatgaatttacagaagggactg
 ttgttttcaaacctggtgagacccagaaagagattagggttggcattattgatgatgaca
 tctttgaagaagacgaaaactttctggtacatcttagcaatgttcgagttaactct---g
-aaaaaaca---ga------aatgaaccttgaaaccaaccacgtaacac-ctcttgcatgc
+aaaaaaca---gaa------atgaaccttgaaaccaaccacgtaacac-ctcttgcatgc
 ctc-ggctcaccttctacaacaacagttaccatc-----------------
 >Dendrobates_auratus
 ------------------------------------------------------------
@@ -380,7 +380,7 @@ cagtggcactaacaattattcgtcggggtggtgatttaaccaacacagtctttgtagatt
 tcagaacagaagatggcacagcaaatgccggatcagattatgaatttactgaaggaatgr
 ttgtatttaagcctggagagacacaaaaagagattcgagttggcattattgatgatgaca
 tttttgaagaagatgaaaactttttggtccatctgagcaatgttcgagttaacgct---g
-aaaccaca---ga------agtaaattttgagtcaaatcatgtaacct-cacttgcatgt
+aaaccaca---gaa------gtaaattttgagtcaaatcatgtaacct-cacttgcatgt
 ctc-gggtcacctacaacagccactgttacaatc-----------------
 >Dicamptodon_ensatus
 ------------------------------------------------------------
@@ -428,7 +428,7 @@ ctgttgcgctgaccgttatacgaagagggggggatttgaccaatactgtatttgttgact
 tcagaacagaagatggcacagccaatgcaggttccgattatgagtttactgaagggacag
 tggtcttcaaaccaggtgagacccagaaggaaatccgtgttggcataatcgacgatgaca
 tatttgaagaagatgagaatttccttgttcacctcagtaacataaaagtcaactcc---c
-rgtcagcc---ga------tgtcaaccttgaggccaaccacattacac-cactcgcttgc
+rgtcagcc---gat------gtcaaccttgaggccaaccacattacac-cactcgcttgc
 ctc-ggatcaccatcaacgaccaccgtcaccatct----------------
 >Rhinoderma_darwinii
 ------------------------------------------------------------
@@ -452,7 +452,7 @@ cagtggcactaacaattgttcgtcggggtggtgatttaaccaacacagtctttgtagagt
 tcagaacagaagatggcacagcaaatgctggatcagattatgaattcactgaagggacag
 tagttttcaagcctggtgagacacaaaaagagattagagttggaattattgatgatgaca
 tatttgaagaagatgaaaactttctggtccatcttagcaatattcgagtcaactct---g
-aaaccata---ga------tgtgaattttgagtcaaataatgtgacat-cacttgcatgt
+aaaccata---gat------gtgaattttgagtcaaataatgtgacat-cacttgcatgt
 ctt-ggatcaccctcaacagccacagttaccatcttt--------------
 >Melanophryniscus_stelzneri
 ------------------------------------------------------------
@@ -476,7 +476,7 @@ cagtggcactaacaattgttcgtcggggtggtgatttaactaacacagtgttcgtagact
 ttagaacagaagatggcacagcaaatgctggatccgattatgagtttactgaaggaatgg
 ttgtcttcaagcctggtgagacacagaaagaggtcaaggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaatgtacgagttaacgct---g
-aaaccaca---ga------agtacattttgagtccaatcacgtaacat-cactggcatgt
+aaaccaca---gaa------gtacattttgagtccaatcacgtaacat-cactggcatgt
 ctt-ggatcaccctcaacagccacagttaccatc-----------------
 >Schismaderma_carens
 ------------------------------------------------------------
@@ -500,7 +500,7 @@ cagtggcactaacaattgttcgccggggcggtgatttaaccaacacagtgttcgtggact
 tcagaactgaagatggcacagcaaatgctggatctgattatgaatttacagaaggaatgg
 ttgtgttcaagcccggtgagacacaaaaagagattaaggttggcattattgatgatgaca
 tttttgaagaagatgaaaactttctggtccatcttagcaacatacgagttaactct---g
-aaaccaca---ga------tgtaaatttcgagtccaatcacataacat-cacttgcatgt
+aaaccaca---gat------gtaaatttcgagtccaatcacataacat-cacttgcatgt
 ctc-ggatcaccctcaacagcaacagttaccatc-----------------
 >Occidozyga_laevis
 ------------------------------------------------------------
@@ -524,7 +524,7 @@ cagtagctttgaccattgttcgtagaggaggtgatttgaccaacacagtatttgtagatt
 ttagaacagaagatgggactgccaatgcaggctcagattatgaatttactgaagggactg
 ttgttttcaaacctggagagacccagaaagagatcagggttggcattattgatgatgata
 tttttgaagaagatgaaaacttcctggtccacctcagcaatgttcgtgttaattct---g
-agacaaca---ga------ggtgaatcttgagtccaatcatgtggcat-ctcttgcatgc
+agacaaca---gag------gtgaatcttgagtccaatcatgtggcat-ctcttgcatgc
 ctt-ggatcaccctctacagccaccg-------------------------
 >Limnonectes_magnus
 ------------------------------------------------------------
@@ -548,7 +548,7 @@ cagtggctctgactattgttcgtaaaggaggcgatttgaccaacacggtatttgtagact
 ttagaacagaagatgggactgccaatgcaggctcagattatgaatttactgaagggactg
 ttgttttcaaacctggagagacccagaaagagatcagagttggcattattgatgatgata
 tttttgaagaagatgaaaacttcctggtccaccttagcaatgtccgcgttaactct---g
-agacaaca---ga------ggtgaaccttgaatctaatcatgtggcat-cccttgcatgc
+agacaaca---gag------gtgaaccttgaatctaatcatgtggcat-cccttgcatgc
 ctt-ggatcaccctctacagccacagttacaatc-----------------
 >Phyllobates_vittatus
 ------------------------------------------------------------
@@ -572,7 +572,7 @@ cagtggcactaacaattattcgtcggggtggcgatttaaccaacacggtatttgtagact
 tcagaacagaagatggcacagcaaatgccggatcagattatgaatttactgaaggaatgg
 ttgtattcaagcctggagagacacaaaaagagattagggttggcattattgatgatgaca
 tttttgaagaagatgaaaacttcttggtccatctgagcaatgttcgagtaaacgct---g
-aaaccaca---ga------agtaaattttgagtcaaatcatgtaacct-cacttgcatgt
+aaaccaca---gaa------gtaaattttgagtcaaatcatgtaacct-cacttgcatgt
 ctc-gggtcacctacaaccgccacagttactatc-----------------
 >Desmognathus_monticola
 ------------------------------------------------------------
@@ -596,7 +596,7 @@ ctgtagcactgatcattatgcgacgaggaggggatttgacaaatacagtgtttgttgact
 tcagaacagaagatggcacagcgaatgcgggatctgattatgagtttacagaaggaacag
 tagtcttcaagccaggagagacacagaaagaaatccgcgttggcatcatcgacgatgaca
 tatttgaagaagatgaaaacttccttgttcacctcagtaacataaaagtcaactcc---c
-agtcagca---ga------tgtcaacctcgaagccaatcatattacac-ccctggcttac
+agtcagca---gat------gtcaacctcgaagccaatcatattacac-ccctggcttac
 ctt-ggatcaccagcaacggccactgttaccatc-----------------
 >Eleutherodactylus_coqui
 ------------------------------------------------------------
@@ -620,7 +620,7 @@ cagtggcactcacaattgctcgtcgaggcggtgatttaaacaacacagtctttgtagact
 tcagaacagaagatggcacggcaaatgctggttcagattatgaatttactgaaggaacag
 ttgttttcaagcctggcgagacccagaaagagattagggttggcatcatcgatgatgaca
 tctttgaagaagatgaaaactttctagtccatcttagcaatattcgagttaactct---g
-aaaacaca---ga------agtaaattttgagtcaaatcatgtaacat-cactcgcttgt
+aaaacaca---gaa------gtaaattttgagtcaaatcatgtaacat-cactcgcttgt
 ctt-ggatcaccctcaacagccacagttaccatc-----------------
 >Hydromantes_platycephalus
 ------------------------------------------------------------
@@ -668,7 +668,7 @@ ctgttgctttgacaattatgcgaaggggcggggatttgaccaacactgtgtttgttgact
 tcagaacagaagatggcacagccaatgcagggtctgattatgagttcactgaagggacag
 tggtcttcaaaccaggtgagacacagaaagaaatccgtgttggcatcattgacgatgaca
 tatttgaagaagacgagaacttccttgttcacctcagtaacataaaagtaaactcc---c
-agacagca---ga------tatcaacctcgagaccaatcatattacaa-cacttgcttgc
+agacagca---gat------atcaacctcgagaccaatcatattacaa-cacttgcttgc
 ctg-ggatcgccagccacaaccacagacaccatc-----------------
 >Euphlyctis_cyanophlyctis
 ------------------------------------------------------------
@@ -764,7 +764,7 @@ cagtagctctaaccattgttcgtcgaggaggtgatttaactaacacagtgtttgtagatt
 tcagaacagaagatggaactgccaatgcaggctctgattatgaattcactgaaggaactg
 ttgttttcaaacctggagagacccagaaagaggtcagagttggcattattgatgatgata
 tctttgaagaagatgagaacttcttggtccacctcagcaatgtgcgcgttaactgt---g
-aaaccaca---ga------ggtgaaccttgagtctaatcatgtgacac-ctcttgcatgc
+aaaccaca---gag------gtgaaccttgagtctaatcatgtgacac-ctcttgcatgc
 tta-gggtcaccctctacagccactgttactatc-----------------
 >Arthroleptis_variabilis
 ------------------------------------------------------------
@@ -788,7 +788,7 @@ cagtagctctaactattagtcgycggggaggtgatttgaccaacacagtatttgtagatt
 tcagaacagaagatgggactgccaatgcaggttcagattatgaatttactgaaggtactg
 ttgttttcaaacctggagaaacccagaaagagataagagttggcattattgatgatgaca
 tctttgaagaagatgaaaatttccttgtgcacctcagcaatattcgtgttaactct---g
-aaacgaca---ga------ggtgaatcttgaatctaatcatgtggcat-ctcttgcatgt
+aaacgaca---gag------gtgaatcttgaatctaatcatgtggcat-ctcttgcatgt
 ctt-ggatcaccctctacagccactgttactatc-----------------
 >Ptychadena_mascareniensis
 ------------------------------------------------------------
@@ -812,7 +812,7 @@ cagtagctcttaccattgtacgtcgaggaggtgatttgaccaacacagtgtttgtcgatt
 tcagaacagaagacggaactgccaatgcaggctcagattatgaatttactgaaggaactg
 ttgtttttaaaccaggagagacccagaaagagatcagagtcggcatcattgatgatgaca
 tttttgaagaagatgaaaacttcctggtccaccttagtaatgttcgtgttaactct---g
-agacaaca---ga------ggcgaaccatgaatctaatcatgtggcat-ccctagcatgt
+agacaaca---gag------gcgaaccatgaatctaatcatgtggcat-ccctagcatgt
 ctt-ggatcaccttctacagctacagttaccatc-----------------
 >Epipedobates_tricolor
 ------------------------------------------------------------
@@ -836,7 +836,7 @@ cagtggcactaacacttgttcgtcggggtggcgatttaaccaacacagtctttgtagact
 tcagaacagaagatggcacagcaaatgccggatccgattatgaatttactgaaggaatgg
 ttgtattcaagcctggagagacccaaaaagagattagagttggcattattgatgatgaca
 tttttgaagaagatgaaaactttttggtccatctgagtaatgttcgagttaatgct---g
-aaaccaca---ga------agtaaatttcgaatcgaatcatgtaacct-cacttgcatgt
+aaaccaca---gaa------gtaaatttcgaatcgaatcatgtaacct-cacttgcatgt
 ctt-gggtcaccttcaacagccacagtcactatc-----------------
 >Hoplobatrachus_tigerinus
 ------------------------------------------------------------
@@ -857,10 +857,10 @@ atcgcattcaggccacccgtttgatgactggtgctggcaatatattaaagagacacgcag
 cagatcaggctaggaaagcagtaagcatgcatgaggttaacaatgaagcagttgaaaatg
 atcctgtcagcaagatttactttgagcagtccacttaccagtgcttagagaactgtggta
 cagtagctctgaccattgttcgtagaggaggtgatctgaccaacacagtttttgtagact
-ttagaacagaagatggcactgcaaatgcaggctcagattacgaattactgaagcacg---
+ttagaacagaagatggcactgcaaatgcaggctcagattacgaatt--------------
 ------------------------------------------------------------
 ------------------------------------------------------------
-------------------------------------------------------------
+-------------------------------actgaagcacg------------------
 ---------------------------------------------------
 >Limnonectes_laticeps
 ------------------------------------------------------------
@@ -930,9 +930,9 @@ cagatcaagctaggaaagcagtcagcatgcatgaggttaacaatgaagctgttgaaaatg
 atcctgtcagcaagatttactttgagcaggccaattaccagtgcttagagaactgtggca
 cagtagctctgaccattgttcgcagaggaggtgatcttaccaacacagtatttgtagact
 ttagaactgaagatgggactgccaatgccggttcagattatgaattcactgaaggactgt
-tgtattcaacc-------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
+----------------------------tgtattcaacc---------------------
 ---------------------------------------------------
 >Cacosternum_boettgeri
 --------------------ggagtatctattattgctgaccgtttcatgtcctccattg
@@ -956,7 +956,7 @@ cagtagctctgactattgttcgtcgaggaggtgatttgaccaacacagtatttgtcgatt
 ttagaacagaagatggaactgccaatgccggctccgattatgaatttactgaagggactg
 ttgttttcaaacctggagagacccagaaagaggtcagggttggcattattgatgatgaca
 tttttgaagaagatgaaaacttcttggtccacctcagcaatgttcgtgttaacgct---g
-agtcaaca---ga------agttaaccttgaatcgaatcatgtggcat-ctcttgcatgc
+agtcaaca---gaa------gttaaccttgaatcgaatcatgtggcat-ctcttgcatgc
 ctt-ggaacaccctctacagccacagttactat------------------
 >Bolitoglossa_mexicana
 ------------------------------------------------------------
@@ -980,7 +980,7 @@ ctgtagccctaaccattatgcgacgaggaggggatctgacaaatacggtgtttgttgaat
 tcagaacagaagatggcacagcaaacgcgggctctgattatgagttcacagaagggacag
 tggtctttaagccaggtgagacacagaaagaaatccgcgttggcatcatcgacgatgaca
 tatttgaagaagatgaaaatttccttgttcacctcagtaacataaaagtcaactca---c
-agtctgca---ga------tgttaaccttgaggccaatcatattacat-ccctcgcatgc
+agtctgca---gat------gttaaccttgaggccaatcatattacat-ccctcgcatgc
 ctt-ggatcaccagcaacggccactgtcaccatcttt--------------
 >Dermophis_mexicanus
 --------------------agggtgc---tactagctgatcsktttatgtcgtctattg
@@ -1004,7 +1004,7 @@ cggtggctctgactattgttcgccgtggtggtgatttgagcaacactgtgtgtgttgact
 ttagaacagaggatggcacagcaaacgcagggtctgattatgagttcactgaaggaactg
 tggtcttcaagccaggagaaacacagaaagaaatcagggttggcatcatcgatgatgaca
 tttttgaagaagacgagaactttctggtacatttaagtaatgtcaaggtgaattct---g
-aaggacca---ga------agtcaactctgacaccaaccatgtggcac-cacttgcatgc
+aaggacca---gaa------gtcaactctgacaccaaccatgtggcac-cacttgcatgc
 ctt-ggttcaccctgtactaccacagtgaccattttt--------------
 >Herpele_squalostoma
 ----------------cttaggggtgtcgatcgtagctgatcgttttatgtcctccatcg
@@ -1028,7 +1028,7 @@ cagtggcgctgaccattgttcgccggggtggtgatttgagcaacactgtgtgtgttgatt
 tcagaacagaggatggcacagcaaatgcggggtctgattatgagtttactgaagggactg
 tggtcttcaagccaggggaaacacagaaagagataagagttggcatcattgatgatgaca
 tttttgaagaagatgagaacttcctggtccatttaagtaatgtcaaagtgagttct---g
-aaggatca---ga------cgtcmaccttgatgccaaccacgtggcac-cacttgcttgc
+aaggatca---gac------gtcmaccttgatgccaaccacgtggcac-cacttgcttgc
 ctt-ggatcaccttgcactgccacagtgaccatcttt--------------
 >Boophis_xerophilus
 ------------------------------------------------------------
@@ -1052,7 +1052,7 @@ cagtagctctgactattgttcgtcgaggaggtgatttgaccaacacagtatttgtagatt
 ttagaacagaagacgggactgccaatgcaggctcagattatgaatttactgaagggactg
 ttgtttttaaacctggagagacccagaaagagatcagggttggcattattgatgatgaca
 tttttgaagaggatgaaaacttcttggtccacctcagcaatgtccgtgtaaactct---g
-agacaaca---ga------agtgaatcttgaatctaatcatgtggcag-ctcttgcatgc
+agacaaca---gaa------gtgaatcttgaatctaatcatgtggcag-ctcttgcatgc
 ctt-ggatcaccctccacagccacagttactatc-----------------
 >Kaloula_taprobanica
 ----------------------------tattatagctgatcgattcatgtcctctattg
@@ -1076,7 +1076,7 @@ ctgttgctctaacaattgtccgaagaggaggagatttgaccaacacagtgtttgtagatt
 ttagaacagaagatggcactgccaatgcaggctcagattatgaatttaccgaagggactg
 tagttttcaaacccggagagacccagaaggagattagagtaggcattatagatgatgata
 tctttgaagaagatgaaaacttcctggtccacctcagcaatgttcgcgtcaactct---g
-aaacaaca---ga------ggtgaacccagaatctaatcacgtgacag-ctcttgcatgt
+aaacaaca---gag------gtgaacccagaatctaatcacgtgacag-ctcttgcatgt
 ctt-ggacagccctccacagccayagttactata-----------------
 >Laliostoma_labrosum
 ------------------------------------------------------------
@@ -1100,7 +1100,7 @@ cagtagctctgaccattgttcgtcgaggtggtgatttgaccaacacagtatttgtagatt
 ttagaacagaagacggaactgccaatgcaggctcagattatgaattcactgaagggactg
 ttgttttcaaacctggagagacccagaaagagatcagggttggcattattgatgatgaca
 tttttgaagaggatgaaaacttcctggtccatcttagcaatgttcgtgtgaattct---g
-agacaaca---ga------gttgaatcttgaatctaatcacgtggcat-ctcttgcatgt
+agacaaca---gag------ttgaatcttgaatctaatcacgtggcat-ctcttgcatgt
 ctt-ggatcaccctcaacagccacagttactatc-----------------
 >Mantidactylus_ulcerosus
 ------------------------------------------------------------
@@ -1124,7 +1124,7 @@ cagtagctctgaccattgttcgtcgaggaggtgatttgaccaacacagtatttgtagatt
 ttagaacagaagatgggactgccaatgcaggctcagattatgaatttactgaagggactg
 ttgtttttaaacccggtgagacccagaaagaaatcagggttggcattattgatgatgaca
 tttttgaagaggatgaaaacttcctggtccacctcagcaatgttcgtgtgaactgt---g
-agacaaca---ga------tgtgaatcttgaatctaatcatgtggcat-cacttgcatgc
+agacaaca---gat------gtgaatcttgaatctaatcatgtggcat-cacttgcatgc
 att-ggatcacctgctacagccacagttactatc-----------------
 >Nannophrys_ceylonensis
 ------------------------------------------------------------
@@ -1148,7 +1148,7 @@ cagtagctctgaccattgttcgtagaggaggtgatctgaccaacacagtatttgtagatt
 ttagaacagaagatggcactgcaaatgcaggctcagattacgaatttactgaagggactg
 ttgtatttaaacccggagagacccagaaagagatcagggttggcattattgatgatgaca
 tttttgaagaagatgaaaacttcctggtccacctcagcaatgttcgtgttaactct---g
-agacaaca---ga------agtgaaccttgaattgaatcatgtggcac-ctcttgcatgc
+agacaaca---gaa------gtgaaccttgaattgaatcatgtggcac-ctcttgcatgc
 ctt-ggatcacccaccacagccacagttaccatc-----------------
 >Rhacophorus_malabaricus
 ------------------------------------------------------------
@@ -1172,7 +1172,7 @@ cagtagctctgaccattgttcgtcgaggaggtgatttgaccaacacagtatttgtagatt
 ttagaacagaagacgggactgccaatgcaggctcagattatgaatttactgaagggactg
 ttgtttttaaacctggagagacccagaaagagatcagggttggcattattgatgatgaca
 tctttgaagaagatgaaaacttccttgtccacctcagtaatgttcgcgttaactct---g
-agacaaca---ca------ggttcatcttgaatctaatcatgtgacaa-ctcttgcatgc
+agacaaca---cag------gttcatcttgaatctaatcatgtgacaa-ctcttgcatgc
 ctt-ggatcaccctccacaaccacagttactatc-----------------
 >Andrias_davidianus
 ------------------------------------------------------------
@@ -1196,7 +1196,7 @@ ctgttgcgctgaccgttatgcgacgaggtggggatttgaccaatactgtgtttgttgact
 tcagaactgaagatggaacagccaacgcagggtctgattacgagtttactgaagggacag
 tggtcttcaagccaggcgagacacagaaagaaatccgcgttggcataattgacgatgaca
 tatttgaagaagacgagaattttcttgttcacatcagtaatgtaagggtcaattcc---c
-agacagca---ga------tgtcaacctggagaccaaccatattacaa-cccttgcttgc
+agacagca---gat------gtcaacctggagaccaaccatattacaa-cccttgcttgc
 ctt-ggatcgccatctacggccacagtcaccatc-----------------
 >Plethodon_cinereus
 ------------------------------------------------------------
@@ -1220,7 +1220,7 @@ ctgtagctctgaccattatgcgacgaggaggggatttgacaaatacagtgtttgttgact
 tcagaacagaagatggcacagcgaatgcgggatctgattatgagtttacagaaggaacag
 tagtcttcaagccaggtgagacacagaaagaaatccgcgttggcatcatcgacgatgaca
 tatttgaagaagatgaaaatttccttgttcacctcagtaacataaaagtcaactcc---c
-agtcagca---ga------tgtcaacctcgaagccaatcatattacac-cccttgcttgc
+agtcagca---gat------gtcaacctcgaagccaatcatattacac-cccttgcttgc
 ctt-ggatctccagcaacggctactgtcaccatc-----------------
 >Tomopterna_natalensis
 ----------------cctaggggtatctattattgccgatcgtttcatgtcctctattg
@@ -1244,7 +1244,7 @@ cmgtagckctgaccattttccgtcgaggaggtgatttgaccaacacagtatttgtagatt
 ttagaacagaagacgggactgccaacgcaggctcagattatgaatttactgaaggaactg
 ttgttttcaaacctggagagacccagaaagagatcagggttggcattattgatgatgaca
 tttttgaagaagatgagaacttcttggtccacctcagcaatgttcgtgttaactct---g
-agagaaca---ga------ggtgaaccttgaatcgaatcacgtggcat-ctcttgcatgc
+agagaaca---gag------gtgaaccttgaatcgaatcacgtggcat-ctcttgcatgc
 ctt-ggaacaccctctacagccacagttactatc-----------------
 >Microhyla_ornata
 ------------------------------------------------------------
@@ -1268,7 +1268,7 @@ ctgttgctttaacaattgttcgkaggggaggagatttaaccaacacagtgtttgtcgatt
 ttagaacagaagatggcactgccaatgcaggatcagattatgagtttactgaagggactg
 tcgttttcaaacccggagagacccagaaggaaattagagtaggcattatagatgatgaca
 tctttgaagaagacgaaaatttcctggtccacctcagcaatgttcgagtcaactcc---g
-aaaca---gtggt------ggtgaacccagaatccaaccaygtgacaa-ctctygcatgt
+aaaca---gtggtg------gtgaacccagaatccaaccaygtgacaa-ctctygcatgt
 ctt-ggacaaccctccacrgccacagttaccatc-----------------
 >Dermatonotus_muelleri
 ------------------------------------------------------------
@@ -1292,7 +1292,7 @@ ctgtagctcttacaatcgttcgaaggggaggagatttgaccaacacagtgtttgtagatt
 ttagaaccgaagatggcactgccaatgcaggctcagattatgaatttaccgaagggactg
 ttgttttcaaacctggtgagacccagaaggagatcagagtaggcattatagacgatgata
 tctttgaagaagatgaaaatttcctagtccatctaagcaatgttcgagctaactct---g
-aaactgca---ga------ggtgaacccagaatccaaccatgtgacag-ctcttgcttgt
+aaactgca---gag------gtgaacccagaatccaaccatgtgacag-ctcttgcttgt
 ctt-ggtgaagtctccacagcaacagttactatc-----------------
 >Sphaerotheca_dobsonii
 ------------------------------------------------------------
@@ -1340,7 +1340,7 @@ ctgtagctctaactgttgttcgaaggggaggagatttgaccaacacagtgtttgtagact
 ttagaacagaagatggcactgctaacgcaggctcagattatgaatttactgaaggtactg
 ttgttttcaaacccggagagacccagaaggagataagagtaggcattatagatgatgata
 tctttgaagaagatgaaaacttcctggtccacctcagcaatgttcgagtcaactct---g
-aaacaaca---ga------ggtgaaccctgaatctaatcacgtaacag-ctctggcttgt
+aaacaaca---gag------gtgaaccctgaatctaatcacgtaacag-ctctggcttgt
 ctt-ggacaaccctccacagccacagttactatttttgacgatgaccatgc
 >Breviceps_mossambicus
 ------------------------------------------------------------
@@ -1364,7 +1364,7 @@ cagtagccctaaccattgttcgtcgaggaggtgatttgactaacacagtgtttgtagact
 tcagaacagaagatggtactgctaatgcaggctctgattatgaattcactgaaggaactg
 ttgtktttaaacctggagagacccagaaagagataagggttggcattattgatgatgata
 tctttgaagaagatgaaaacttcttggtccacctcagcaatgttcgagttaactgt---g
-a---aaca---ga------ggtaaatcctgactctaatcatgtgacac-ctcttgcatgc
+a---aaca---gag------gtaaatcctgactctaatcatgtgacac-ctcttgcatgc
 ctc-ggaccaccctctacagccactgttacaatc-----------------
 >Fejervarya_iskandari
 ------------------------------------------------------------
@@ -1412,7 +1412,7 @@ ctgttgctctgaccgtaatgcgacgaggtggggatttgaccaacactgtgtttgttgact
 tcagaaccgaagatggcacagccaacgcaggatccgactacgagttcaccgaagggacag
 tggtcttcaagccaggtgagacacagaaagaaatacgcgttggcataattgatgatgaca
 tatttgaagaggacgagaatttccttgttcacctcagtaacgtgaaggtcaactcc---c
-agacagca---ga------tgtcaacctggagaccaaccatattacaa-cccttgcttgc
+agacagca---gat------gtcaacctggagaccaaccatattacaa-cccttgcttgc
 ctc-ggttcgc----------------------------------------
 >Nectophrynoides_tornieri
 ------------------------------------------------------------
@@ -1436,7 +1436,7 @@ cagtggcactaaccgttgttcgccggggtggtgatttaaccaacacagtgttcgtggact
 tcagaacagaagatggcacagcaaatgctggatctgattatgaatttacagaaggaatgg
 ttgtgttcaagcccggtgagacccaaaaagagattaaggttggcattattgatgacgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaacatacgagtgaactct---g
-aaaccgca---ga------cgcaaatttcgtgtccaatcacgtgacat-cacttgcatgt
+aaaccgca---gac------gcaaatttcgtgtccaatcacgtgacat-cacttgcatgt
 ctt-ggatcaccctcaacagccacagtgaccatc-----------------
 >Pedostibes_hosii
 ------------------------------------------------------------
@@ -1460,7 +1460,7 @@ cagtggcactaacaatttttcgccgtggcggtgatttaaccaacacagtgttcgtggact
 tcagaacagaagatggcacagcaaatgctggatctgattatgaatttaccgaaggaatgg
 ttgtgttcaagcccggtgagacacaaaaagagattaaggttggcattattgacgacgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaacatacgagttaactct---g
-aaaccgca---ga------tgtaaatttcgagtccaatcacgtaacct-cacttgcatgt
+aaaccgca---gat------gtaaatttcgagtccaatcacgtaacct-cacttgcatgt
 ctt-ggatcgccctcaacagcaa----------------------------
 >Ansonia_leptopus
 ------------------------------------------------------------
@@ -1484,7 +1484,7 @@ cagtggcactaacaattgttcgccggggtggcgatttaaccaacaaagtgtttgtrgact
 tcagaacagaagatggcacagcaaatgctggatctgattatgaatttacagaaggaacga
 ttgtgttcaagcccggtgagacgcaaaaagaggttaaggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaacatacgagttaactct---g
-aaaccgca---ga------tgtaaattttgagtccaatcacgtaacat-cncttgcatgt
+aaaccgca---gat------gtaaattttgagtccaatcacgtaacat-cncttgcatgt
 ctt-ggatcaccctcancagcaacagttaccatc-----------------
 >Brachycephalus_ephippium
 ------------------------------------------------------------
@@ -1508,7 +1508,7 @@ cagtggcactaacaattgcccgccgaggcggtgatttaaccaacacagtctttgtagact
 tcagaacagaagatggcacagcaaatgctggttcagattatgaatttactgaagggacag
 ttgtttttaagagtggtgagacacagaaagagattagagttggcattattgatgatgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaatattcgggtgaactct---a
-gaaccaca---aa------cgtaaattttgactcaaattgtgtagcct-cacttgcatgt
+gaaccaca---aac------gtaaattttgactcaaattgtgtagcct-cacttgcatgt
 ctt-ggatcaccctcaacagccacagt------------------------
 >Kaloula_pulchra
 ----------------cctaggagtatctattatagctgatcgrttcatgtcctctattg
@@ -1532,7 +1532,7 @@ ctgtcgctctaacaattgtccggagaggaggagatttgaccaacacagtgtttgtagatt
 ttagaacagaagacggcactgccaacgcaggctcagattatgaattcaccgaagggaccg
 tcgttttcaaacctggagagacccagaaggagattagagtaggcattatagatgatgata
 tctttgaagaagatgaaaacttcctggtccacctcagcaatgttcgagccaactct---g
-aaacaata---ga------ggtgaacccagactctaatcacgtgacag-ctcttgcatgt
+aaacaata---gag------gtgaacccagactctaatcacgtgacag-ctcttgcatgt
 ctt-ggacagccctccatagccaccgttactat------------------
 >Buergeria_buergeri
 ------------------------------------------------------------
@@ -1556,7 +1556,7 @@ cagtagctctgaccattgttcgccgaggaggtgatctgaccaacacagtattcgtagatt
 ttagaacagaagacgggacagccaatgcaggctcagattatgaatttactgaagggactg
 ttgttttcaaacctggagagatccagaaagaggtcagggtaggcattattgatgatgaca
 tttttgaagaagatgaaaacttcttggtccacctcagtaatgttcgtattaattct---g
-agacaaca---ga------ggtgaatcttgaatctaatcatgtggcag-ctgttgcatgc
+agacaaca---gag------gtgaatcttgaatctaatcatgtggcag-ctgttgcatgc
 ctt-ggatcaccctctacagccacagttactatt-----------------
 >Rhinatrema_bivittatum
 ----------------cttaggagtgtctatcatagctgatcgttttatgtcttctatag
@@ -1580,7 +1580,7 @@ ctgtggctttgactattgttcgccgtggcggtgatttaggcaacactgtgtttgtggact
 ttagaacagaggatggcacagcgaatgcagggtctgattatgagttcactgaagggactg
 tgatcttcaagccaggggaaacacagaaagaaatccgggttggcattattgatgatgaca
 tttttgaagaagatgagaactttatggttcatctaagtaatatcaaagtgaactct---g
-aaggacca---ga------agtcaactctgaagccaaccatgttgcaa-cacttgcttgc
+aaggacca---gaa------gtcaactctgaagccaaccatgttgcaa-cacttgcttgc
 ctt-ggatcaccctgcacagccacagtgaccatcttt--------------
 >Ichthyophis_orthoplicatus
 -----------------ttgggagtatccattatagccgatcggtttatgtcttctattg
@@ -1604,7 +1604,7 @@ cagtggccctgaccattgttcgccgcggtggtgatttgagcaacactgtgtttgtggact
 ttagaacagaggacggtacagcaaatgcagggtctgattacgagttcactgaagggactg
 tgatcttcaagccaggagagaagcagaaagaaataagggttggcatcattgatgatgaca
 tttttgaagaagacgagaacttyctggtccatctaagcaatgtcaaattgaattct---g
-aagaacca---ga------agtcaaccctaaggccaaccatgtcgcac-cgcttgcttgc
+aagaacca---gaa------gtcaaccctaaggccaaccatgtcgcac-cgcttgcttgc
 ctt-ggatctccctgtactgccacagtgaccatcttt--------------
 >Ichthyophis_glutinosus
 ------------------------------------------------------------
@@ -1628,7 +1628,7 @@ cagtggccctgaccattgttcgccgcggtggtgatttaagcaacactgtgtttgtggact
 ttagaacagaggacggtacagcaaatgcagggtctgattaygagttcactgaagggactg
 tgatcttcaagccaggagagaagcagaaagaaataagggttggcatcattgatgatgaca
 tttttgaagaagacgagaacttcctggtccatctaagcaatgtcaaattgaattct---g
-aagaacca---ga------agtcaaccctaaggccaaccatgtcgcac-cgcttgcttgc
+aagaacca---gaa------gtcaaccctaaggccaaccatgtcgcac-cgcttgcttgc
 ctt-ggatctccctgtactgccacagtgaccatc-----------------
 >Phrynohyas_venulosa
 ------------------------------------------------------------
@@ -1652,7 +1652,7 @@ cggtggcactaacaattgttcgtcggggcggtgatttaaccaacacagtctttgtagact
 tcagaacagaagatggcacagccaatgctggatcagattatgaatttactgaaggaacag
 ttgtgttcaagcccggtgagacacagaaagagattagggttggcattattgatgatgaca
 tttttgaagaagatgaaaattttttggtccatctaagcaatgtccgagtcaactct---g
-aaaccaca---ga------agtaaattttgagtcaaatcatgtaacat-cacttgcatgt
+aaaccaca---gaa------gtaaattttgagtcaaatcatgtaacat-cacttgcatgt
 ctt-ggatcaccctcaacagccacagttaccatc-----------------
 >Batrachyla_taeniata
 ------------------------------------------------------------
@@ -1676,7 +1676,7 @@ ccgtggcaataacagttgtccgtcggggcggtgatttaaccaacacggtctttgtggact
 ttagaacagaagatggcacagctaatgctggatccgattatgaatttactgaaggaactg
 ttgttttcaagcctggtgagacacagaaagagattagggttggcattattgatgatgaca
 tctttgaagaagacgaaaactttctggtccatcttagcaatgtccgtgttaactct---g
-aatccaca---ga------tgtccattttaaatcaaatcatgtaacat-cacttgcatgt
+aatccaca---gat------gtccattttaaatcaaatcatgtaacat-cacttgcatgt
 ctt-ggatcgccctccacagccacggttaccatc-----------------
 >Proteus_anguinus
 ------------------------------------------------------------
@@ -1700,7 +1700,7 @@ ctgttgctctgaccattgtacgaagagggggagatttgaccaatactgtgtttgttgact
 tcagaaccgaagatggcacagccaatgcagggtctgattatgagtttactgaagggacag
 tggtcttcaaacccggcgagacccagaaggaaatccgtgttggcataattgacgatgaca
 tatttgaagaagatgagaatttccttgttcacctcagtaacataaaagtcaactcc---c
-agtcagct---ga------tatcaaccttgaggccaaccacattactc-ctcttgcttgc
+agtcagct---gat------atcaaccttgaggccaaccacattactc-ctcttgcttgc
 ctc-ggattgccttcaacggccaccgtcaccatct----------------
 >Mannophryne_trinitatis
 ------------------------------------------------------------
@@ -1724,7 +1724,7 @@ cagtggcactaaccattgttcgccgcggcggggacttaaccaacacagtctttgtagact
 tcagaacagaagatggcacagcaaatgctggatctgattatgaatttactgaaggaatgg
 ttgtattcaaacccggagagacacaaaaagaaattagagttggcattattgatgatgaca
 tttttgaagaagatgaaaactttttggtccatctgagcaatgttcgagttaacgct---g
-aaaccaca---ga------agtaaattttgagtcaaatcatgtaacct-cacttgcatgt
+aaaccaca---gaa------gtaaattttgagtcaaatcatgtaacct-cacttgcatgt
 ctc-ggatcaccttcaacagccacagttactatcttt--------------
 >Leptodactylus_melanonotus
 ------------------------------------------------------------
@@ -1772,7 +1772,7 @@ ctgtggccctaacaatcgctcgtcggggcggtgatttaaccaacactgtctttgtagact
 tcagaacagaagatggcacagcaaacgctggatcagactacgaatttactgaaggaaccg
 tcgttttcaagcctggagagacacagaaagagattagggttggcattattgatgatgata
 tctttgaagaagatgagaactttctggtccatctcagcaatattcgagttaactct---g
-aaaccaca---ga------ggtaaatttcgagtcgaatcacgtagcat-cgcttgcatgt
+aaaccaca---gag------gtaaatttcgagtcgaatcacgtagcat-cgcttgcatgt
 ctt-ggttccccttcaacagccacagttaccatc-----------------
 >Centrolene_prosoblepon
 ------------------------------------------------------------
@@ -1796,7 +1796,7 @@ cggtggcactaacaattgttcgtcggggtggtgatttaaccaacacagtctttgtagact
 tcagaacagaagatggcacagcaaatgctggatcagattatgaattcaccgaaggaaccg
 ttgttttcaagcctggtgagacacagaaagagattagggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaatattcgagttaactct---g
-aaactacc---ga------agtaaattttgagtcaaatcatgtaacat-cacttgcatgt
+aaactacc---gaa------gtaaattttgagtcaaatcatgtaacat-cacttgcatgt
 ctt-ggatcaccctcaacaaccacagttactatt-----------------
 >Meristogenys_kinabaluensis
 ------------------------------------------------------------
@@ -1844,7 +1844,7 @@ cagtagctctgaccattgttcgccgaggtggtgatttgaccaatacagtatttgtagatt
 ttagaacagaagatgggactgccaacgcaggctcagattatgaatttactgaagggactg
 ttgttttcaaacctggggagacacagaaagagatcagggttggcattattgatgatgaca
 tttttgaagaagatgaaaacttcctggtccacctcagcaatgtgcgagttaattct---g
-agacagca---ga------agtgaaccttgaatctaatcacgtggcat-ctcttgcatgc
+agacagca---gaa------gtgaaccttgaatctaatcacgtggcat-ctcttgcatgc
 ctt-ggatcaccctctacagccacagttactata-----------------
 >Callulina_kreffti
 ------------------------------------------------------------
@@ -1868,7 +1868,7 @@ cagtagccctaaccattgttcgtcgaggaggtgatttgacgaatacagtgtttgtagact
 tcagaacagaagatggtactgctaacgcaggttctgattatgaattcactgaaggaacta
 ttgtttttaaacctggagagacccagaaagagataagggttggcattattgatgatgata
 tctttgaagaagatgaaaacttcttggtccacctcagcaatgttcgagttaactgt---g
-aaacaaca---ga------ggtaaaccttgagtctaatcatgtgacac-ctcttgcatgc
+aaacaaca---gag------gtaaaccttgagtctaatcatgtgacac-ctcttgcatgc
 ctg-ggatcaccctctacaaccactgttactatc-----------------
 >Gastrophryne_olivacea
 ------------------------------------------------------------
@@ -1892,7 +1892,7 @@ ctgtagctctaacaatcrttcgaaggggaggagatttgaccaacacagtgtttgtagatt
 ttagaaccgaagatggaactgccaatgctggctcagattatgaatttactgaagggactg
 tagttttcaaacctggagagacccagaaagagatcagagtaggcattattgatgatgata
 tttttgaagaagatgaaaacttcctggtccatcttagcaatgttcgagccaactct---g
-aaacaaca---ga------ggtgaacccagaattaaaccatgtgacag-ctcttgcttgt
+aaacaaca---gag------gtgaacccagaattaaaccatgtgacag-ctcttgcttgt
 ctt-ggtgaaatctccacagccacagttaccatc-----------------
 >Hyla_arenicolor
 ------------------------------------------------------------
@@ -1916,7 +1916,7 @@ cagtggcactaacaattgttcgtcggggtggtgatttaaccaacactgtctttgtagact
 tcagaacagaagatggcacagcaaatgctggatcagattatgaatttactgaaggaactg
 ttgtgttcaagcctggtgagacacagaaggagattagggttggcattattgatgatgaca
 tctttgaagaagatgaaaattttctggtccatcttagcaatgttcgagtaaactct---g
-aaaccacc---ga------agcaaattttgagtcaaatcacataacat-cacttgcatgt
+aaaccacc---gaa------gcaaattttgagtcaaatcacataacat-cacttgcatgt
 ctt-ggatcacccacaacagccacagttactatc-----------------
 >Nasikabatrachus_sahyadrensis
 ------------------------------------------------------------
@@ -1940,7 +1940,7 @@ cagtggcactgactatcattcgtcgtggaggtgacttaaccaacacagtgtttgtagact
 tcagaacagaggatggtactgccaatgctggttcagattatgaatttactgaagggacaa
 ttgtcttcaaacctggtgagacccagaaagaaatcagggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttctggtccatttaagtaatgttcgagttaacgca---g
-aaactaca---ga------agtgaaccttgaatccaaccatgtgacac-ctcttgcatgc
+aaactaca---gaa------gtgaaccttgaatccaaccatgtgacac-ctcttgcatgc
 tta-ggctcaccttccacagccacagtcaccatc-----------------
 >Myobatrachus_gouldii
 -----------------ctaggagtatcaatcatagccgaccgattcatgtcctctattg
@@ -1964,7 +1964,7 @@ cagtggcattaacaattgtgcgtcgtggaggtgatttgaccaacacagtgtttgtagact
 tcagaactgaagatggcactgccaatgctggctcagattatgaatttacggaagggacag
 ttgttttcaaacctggcgagacacagaaagagattagggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttgtagtccaccttagtaatgttcgagttaatgct---g
-agatcaca---ga------aatgaatgctgaatccaaccatgtcacat-ctcttgctttc
+agatcaca---gaa------atgaatgctgaatccaaccatgtcacat-ctcttgctttc
 ctc-ggatcaccttctacagccacagtcaccatc-----------------
 >Boulengerula_boulengeri
 ------------------taggggtgtcaatcatagccgatcgttttatgtcctccatcg
@@ -1988,7 +1988,7 @@ cagtggcgctgaccattgttcgccggggtggtgatttgagcaataccgtgtgtgttgact
 tcagaaccgaggatggcacagcaaatgcagggtctgattatgagttcactgaagggactg
 ttgtcttcaagccaggggaaacacagaaagagataagggttggcatcattgatgatgaca
 tttttgaagaagatgagaacttcctggtccatttaagtagtgtcagagtgaatgct---g
-aaggatca---ga------tgtcaaccctgaggccaatcatgtggcac-cacttgcttgc
+aaggatca---gat------gtcaaccctgaggccaatcatgtggcac-cacttgcttgc
 ctt-ggngccccctgcacttccaca--------------------------
 >Scolecomorphus_uluguruensis
 -------------------------gtgctacgtcgctgac--gtttatgtcttctattg
@@ -2012,7 +2012,7 @@ cagtggctctgaccattgcccgtcgtggtggtgatttgagtaacacagtgtttgttgact
 ttagaacggaggacggcacagcaaatgcaggatctgattatgagttcactgaaggaactg
 tggtcttcaagccaggagaaacacagaaagaaataagggttggcatcattgatgatgata
 tttttgaagaagacgagaacttcctggtccatttaagtaacatcaaagtgaattct---g
-aaagttca---ga------atacaaccctgaggctaaccatgtagcat-ctcttgcttgc
+aaagttca---gaa------tacaaccctgaggctaaccatgtagcat-ctcttgcttgc
 ctt-ggatcaccctgcactgccacagtgaccatcttt--------------
 >Scolecomorphus_vittatus
 ----------------cttgggggtgtctatcgtcgctgatcgttttatgtcttctattg
@@ -2036,7 +2036,7 @@ cagtggctctgaccattgcccgtcgtggtggtgatntgagtaacacagtgtttgttgact
 ttagaacggaggacggaacagcaaatgcaggatctgattatgagttcactgaaggaactg
 tggtcttcaagccaggagaaacacagaaagaaataagggttggcatcattgatgatgata
 tttttgaagaagacgagaacttcctggnccatttaagtaacatcaaagtgaattct---g
-aaagttca---ga------agacaaccctgaggctaaccatgtggcat-ctcttgcttgc
+aaagttca---gaa------gacaaccctgaggctaaccatgtggcat-ctcttgcttgc
 ctt-ggatcaccctgcactgccacagtgaccatc-----------------
 >Dyscophus_antongilii
 ----------------cctaggagtatctattatagctgacagattcatgtcttctattg
@@ -2060,7 +2060,7 @@ ctgttgctctaacaatagttcgaaggggaggagatttgaccaacacagtgtttgtagatt
 ttagaacagaagatggcagtgctaatgcaggctcagattatgaatttactgaagggactg
 tagttttcaaacctggagagacccagaaggagattagagtaggcatcatagatgatgata
 tctttgaagaagacgaaaacttcctggttcacctcagcaatgttcgagccaactct---g
-aaacaaca---ga------ggtgaacccagagtctaatcacgtgacag-ctcttgcatgt
+aaacaaca---gag------gtgaacccagagtctaatcacgtgacag-ctcttgcatgt
 ctt-ggacaaccctccacagccacagttactatc-----------------
 >Lankanectes_corrugatus
 ------------------------------------------------------------
@@ -2084,7 +2084,7 @@ cagtagctctgaccattgttcgtcgaggaggtgatttgaccaacacagtatttgtagatt
 ttagaacagaagatgggactgccaatgcaggctcagattatgaatttactgaagggactg
 ttgttttcaaacctggagagacccagaaagagatcagggttggcattatcgatgatgaca
 tttttgaagaagatgaaaacttcctggtccacctcagcaatgttcgcgttaacgct---g
-agacaaca---ga------ggtgaaccttgaaactaatcatgtgacac-ctcttgcatgt
+agacaaca---gag------gtgaaccttgaaactaatcatgtgacac-ctcttgcatgt
 ctt-ggatcaccctctacagcyacagttactatc-----------------
 >Hoplophryne_rogersi
 ----------------cttaggggtatctattatagctgatcgatttatgtcttctattg
@@ -2108,7 +2108,7 @@ ctgtagctttaacaattgttcggagaggaggagatttgaccaacacagtgtttgtagatt
 ttagaacagaagatggcactgctaatgcaggctccgattatgaatttaccgaaggcactg
 ttgttttcaaacctggagagacccagaaggagattagagtaggcattatagatgatgata
 tctttgaagaagatgaaaacttcctagttcacctcagcaatgttcgagtcaactct---g
-aaacaacagttga------ggtgaacccagagtctaatcacgtgacag-ttcttgcatgt
+aaacaacagttgag------gtgaacccagagtctaatcacgtgacag-ttcttgcatgt
 ctt-ggactgctctctactgccacagttactatc-----------------
 >Spelaeophryne_methneri
 ------------------------------------------------------------
@@ -2132,7 +2132,7 @@ cagtagccctaaccattgttcgtcgaggaggtgatttgacaaacacagtgtttgtagatt
 tcagaacagaagatggtactgctaacgcaggttctgattatgaattcactgaaggaactg
 ttgtttttaaacctggagagacccaaaaagagataagggtgggcattattgatgatgata
 tctttgaggaagatgaaaacttcttggtccacctcagcaatgttcgagttaactgt---g
-aaacaaca---ga------ggtaaaccttgagtctaatcatgtgacac-ctcttgcatgc
+aaacaaca---gag------gtaaaccttgagtctaatcatgtgacac-ctcttgcatgc
 ctg-ggatcaccctctacagc------------------------------
 >Rhyacotriton_variegatus
 ------------------------------------------------------------
@@ -2156,7 +2156,7 @@ ctgttgctctgaccattatgcgacgaggtggggatttgacaaatactgtttttgttgact
 tccgaacagaagatggttcagccaatgcaggatctgattatgagtttactgaagggacag
 tggtcttcaaaaaaggtgacacacagaaagaaatacgcgttggcataattgatgacgaca
 tatttgaggaagacgagaacttccttgttcacctcagtaacataaaagtcaactcc---c
-agtcagca---ga------tgtcaacctcgaggccaaccatattacac-cactcgcttgc
+agtcagca---gat------gtcaacctcgaggccaaccatattacac-cactcgcttgc
 ctt-ggatcaccatcaacagccaccgtcaccatc-----------------
 >Amphiuma_pholeter
 ------------------------------------------------------------
@@ -2204,7 +2204,7 @@ cggtggccctgaccatcatgagacgagggggtgacctgaccaacacggtgtttgtggatt
 tcagaactgaggatggcacagccaatgcggggtccgactatgagttcaccgaaggaacag
 tggtgttcaagccgggcgagacgcagaaggagatccgggtgggcatcatcgatgacgata
 tttttgaagaagacgagaatttccttgttcacctcagtaacgtgaaggtcaactcc---c
-agwccgca---ga------tgtcaacctagaggccaaccacattacca-ccctcgcttgc
+agwccgca---gat------gtcaacctagaggccaaccacattacca-ccctcgcttgc
 ctt-ggatcgccctctacagccacagtcaccatct----------------
 >Glyphoglossus_molossus
 ------------------------------------------------------------
@@ -2228,7 +2228,7 @@ ctgttgctctaacaattgttcggaaaggaggagatttaaccaacacagtgtttgtagatt
 ttagaacagaagatggcactgccaatgcaggctctgattatgagtttactgaagggactg
 tagttttcaaacctggagagacccagaaggaaattagagtaggcattatagatgatgata
 tctttgaagaagacgaaaatttcctagtccacctcagcaacgttagagtcaactct---g
-aaaca---gcaga------gctgaacccagaatctaaccatgtgacaa-ctcttgcatgt
+aaacagca---gag------ctgaacccagaatctaaccatgtgacaa-ctcttgcatgt
 ctt-ggacaatcctccactgccacagttactatcttt--------------
 >Fejervarya_orissaensis
 ------------------------------------------------------------
@@ -2276,7 +2276,7 @@ cagtggcactaacaattgttcgtcggggtggtgacttaaccaacacagtctttgtagact
 tcagaacagaagatggcacagcaaatgctggatcagattatgaatttactgaaggaacag
 tagtgttcaagcctggtgagacacagaaagagattagggttggcattatcgatgatgaca
 tctttgaagaagatgaaaattttctggtccatcttagcaacattcgagttaactct---g
-aaaccaca---ga------agcaaattttgaatcgaatcacgtaactt-cactcgcatgt
+aaaccaca---gaa------gcaaattttgaatcgaatcacgtaactt-cactcgcatgt
 ctt-ggatcacctacgacagcgacagttaccatt-----------------
 >Flectonotus_fitzgeraldi
 ------------------------------------------------------------
@@ -2300,7 +2300,7 @@ cagtagcactaacaattgttcgtcggggcggtgatttaaccaacacagtctttgtagact
 tcagaacagaagatggcacagcaaatgccggatcagattatgaatttactgaaggaacag
 ttgttttcaagcctggtgagacacagaaagagattagggtaggcattattgatgatgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaatgttcgcgttaactct---g
-aaaccaca---ga------agtaaaatttgagtcaaatcacgtaacat-cacttgcatgt
+aaaccaca---gaa------gtaaaatttgagtcaaatcacgtaacat-cacttgcatgt
 ctt-ggatcaccctcaacagccacagttactatcttc--------------
 >Phyllomedusa_hypochondrialis
 ------------------------------------------------------------
@@ -2324,7 +2324,7 @@ cagtggcactcacgatcgttcggcggggcggtgatttaaccaacacggtctttgtagact
 tcagaacagaagacggcacrgcaaatgccggatcagattatgaatttaccgaaggaacag
 ttgtcttcaagcccggtgagacccagaaagagatcagggttggcattatcgacgatgaca
 tctttgaagaagatgaaaattttctggtccatcttagcaatgtccgcgttaattgt---g
-aaaccacg---ga------ggtcaattttgagtcaaatcacgtaacat-cactcgcatgt
+aaaccacg---gag------gtcaattttgagtcaaatcacgtaacat-cactcgcatgt
 ctc-ggatcaccctcaacagccacagttaccatc-----------------
 >Siphonops_paulensis
 ----------------cttaggggtgtctatcatagctgatcgttttatgtcgtctattg
@@ -2348,7 +2348,7 @@ cggtggctctgaccattgttcgccgtggtggtgatttgagcaacactgtgcgtgtcaact
 ttagaacagaggatggcacggcaaatgcagggtctgattatgagttcactgaagggactg
 tggtcttcaagccaggagaaacacagaaagaaataagggttggcatcatcgatgatgaca
 tttttgaagaagacgagaactttctggtacatttaagtaacatcaaagttaattct---g
-aaggatca---ga------agtcaactctgaggccaaccacgtggcac-cacttgcttgc
+aaggatca---gaa------gtcaactctgaggccaaccacgtggcac-cacttgcttgc
 ctt-ggttcaccctgtactgccacagtgaccatcttt--------------
 >Luetkenotyphlus_brasiliensis
 ----------------cttaggggtgtctatcatagctgatcgttttatgtcatctatcg
@@ -2372,7 +2372,7 @@ cggtggctctgaccattgttcgccgtggtggtgatttgagcaacactgtgtgggtcaact
 ttagaacagaggatggcacggcaaatgcagggtctgattatgagttcactgaagggactg
 tggtcttcaagtcaggagaaacacagaaagaaataagggttggcatcatcgatgatgaca
 tttttgaagaagatgagaacttcctggtacatttaagtaatgtcaaagtgaattct---g
-aaggatca---ga------agtcaactctgagaccaaccacgtggcac-cacttgcttgc
+aaggatca---gaa------gtcaactctgagaccaaccacgtggcac-cacttgcttgc
 ctt-ggttcaccctgtactgccacagtgaccatcttt--------------
 >Meristogenys_jerboa
 ------------------------------------------------------------
@@ -2444,7 +2444,7 @@ ctgtagctctaacagttgttcggagrggaggagatttgaccaacacagtgtttgtagatt
 ttagaacagaagatggaactgccaatgcaggctcagattatgaatttactgaagggactg
 ttgttttcaaacctggcgagacccagaaggagattagagtaggcattatagacgatgata
 tctttgaagaagatgagaacttcctggtccacctcagcaatgttagagttgaatct---g
-aaacagca---ga------agtgaacccagaatctaatcatgtgacag-ctcttgcatgc
+aaacagca---gaa------gtgaacccagaatctaatcatgtgacag-ctcttgcatgc
 ctt-ggacaactctccacagccacagttact--------------------
 >Odontophrynus_occidentalis
 ------------------------------------------------------------
@@ -2468,7 +2468,7 @@ cagtggcactgaccattgttcgccggggcggtgatttaaccaacacagtcttcgtagact
 tcagaacagaagacggcacagcaaatgctggatcagattatgaatttactgaagggacag
 ttgttttcaagcctggcgagacacagaaagagattcgggttggcattattgatgatgaca
 tctttgaagaagatgaaaacttcctggtccatcttagcaatattcgagttaactct---g
-aaaccata---ga------tataaattttgagtcaaatcatgtaacgt-cacttgcatgt
+aaaccata---gat------ataaattttgagtcaaatcatgtaacgt-cacttgcatgt
 ctt-ggatcaccctcaacagccacggttaccatc-----------------
 >Eleutherodactylus_cruentus
 ------------------------------------------------------------
@@ -2492,7 +2492,7 @@ cagtggcactagcaatcgctcgtcgcggcggtgacttaaccaacaccgtctttgtagact
 tcagaacagaagatggcacagcaaacgctggatcagattatgaatttactgaaggaactg
 ttgtattcaagcccggagagacacagaaagagattagggttggcattattgacgatgaca
 tctttgaagaagacgagaactttctggtccatcttagcaatgtccgcgttaactct---g
-aaaacaca---aa------agtaaattttgagtcaaatcacgtagcat-cgcttg-----
+aaaacaca---aaa------gtaaattttgagtcaaatcacgtagcat-cgcttg-----
 ---------------------------------------------------
 >Rheobatrachus_silus
 ------------------------------------------------------------
@@ -2516,7 +2516,7 @@ cagtggcactaacaattgttcgtcgtggaggagatttgaccaacacagtgtttgtagatt
 tcagaacagaagacggtacagccaatgccggttcagattatgaatttactgaaggaacag
 ttgtcttcaagcctggtgagacccagaaagaaataagggttggcattattgatgatgaca
 tttttgaagaagatgaaaactttgtggttcatctgagcaatgttcgagttaactct---g
-aggtaaca---ga------agtgaatgctgaatccaaccatgtaacat-ctcttgcatgc
+aggtaaca---gaa------gtgaatgctgaatccaaccatgtaacat-ctcttgcatgc
 ctc-ggatcaccttccacagccacagttaccata-----------------
 >Crinia_signifera
 ----------------cctaggagtatcaatcatagccgacagattcatgtcctctattg
@@ -2540,7 +2540,7 @@ cagtggccctaacaattgtgcgccgaggaggtgatttgaccaacacagtgtttgtagact
 tcagaacagaagatggtactgccaatgctggttcagattatgaatttactgaagggacag
 ttgttttcaaacctggtgagacccagaaagaaattagggttggcattattgacgatgaca
 tctttgaagaagatgaaaattttgtagttcatcttagcaatgttcgagttaacgct---g
-agatcaca---ga------aatgaattctgaatccaaccatgtgacat-ctcttgcttgc
+agatcaca---gaa------atgaattctgaatccaaccatgtgacat-ctcttgcttgc
 ctc-ggatcaccttctacagccacagtcaccatt-----------------
 >Mixophyes_balbus
 ----------------cctaggagtatcaatcatagctgatcggttcatgtcctctattg
@@ -2564,7 +2564,7 @@ ctgtggcaataacagttgtacgtcgtggaggtgatttgaccaacacagtgtttgtagact
 tcagaacagaagatggtactgccaatgctggttcagattatgaatttactgaagggacag
 ttgttttcaaacctggtgagacccaraaagaaattagggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttgtggtccatcttagcaatgttcgagttaactct---g
-agatcaca---gg------agtgaatgttgaaaccaaccatgtaacat-ctcttgcatgt
+agatcaca---gga------gtgaatgttgaaaccaaccatgtaacat-ctcttgcatgt
 ctc-ggagcactctctacagccacagttaccatc-----------------
 >Sphenophryne_cornuta
 ------------------------------------------------------------
@@ -2588,7 +2588,7 @@ cygtggctctaactattgttcggaggggaggagatttgacgaacacagtgtttgtagatt
 ttagaacagaagatggcactgccaatgcaggctcagattatgaatttactgaagggactg
 ttgttttcaaacccggagagatccagaaagagattagagtaggcattatagatgatgata
 tctttgaagaagatgaaaacttcctggtccacctcagyaatgttcgagccaactct---g
-aatcwgta---ga------ggtgaacccagaatctaatcatgtgacac-cacttgcgtgt
+aatcwgta---gag------gtgaacccagaatctaatcatgtgacac-cacttgcgtgt
 ctt-ggacaaccctccacagccaccgttactatc-----------------
 >Barygenys_flavigularis
 -----------------ctaggagtgtctattatagctgatcgattcatgtcttccattg
@@ -2612,7 +2612,7 @@ ctgtggctctaaccattgttcggaggggaggagatttgacaaacacagtgtttgtagatt
 ttagaacagaagatggcactgctaatgcaggctcagattatgaatttactgaaggggctg
 ttgtcttcaaacccggagagatccagaaagagattagagtaggcattatagatgatgata
 tctttgaagaagatgaaaactttctggtccacctcagcaatgttcgagccaactct---g
-aaacagta---ga------ggtgaacccagaatctaatcatgtgatgc-cacttgcatgt
+aaacagta---gag------gtgaacccagaatctaatcatgtgatgc-cacttgcatgt
 ctt-ggacaaccctccacagccactgttactatc-----------------
 >Phrynopus_bracki
 ------------------------------------------------------------
@@ -2636,7 +2636,7 @@ cagtggcactaacaatttttcgtcgaggcggagatttaaccaacacagtctttgtagatt
 tcagaacagaagatggcacagcaaatgctggatcagattatgaatttactgaagggacag
 ttgttttcaagcccggtgagacacagaaagaggttagggttggcattattgatgatgaca
 tttttgaagaagatgaaaactttctggtccatcttagcaatattcgagttaactct---g
-aaaccaca---aa------ggcaaattttgagtcaaatcacgtaacat-cacttgcatgt
+aaaccaca---aag------gcaaattttgagtcaaatcacgtaacat-cacttgcatgt
 ctc-agttcaccctcaacagcc-----------------------------
 >Conraua_crassipes
 ------------------------------------------------------------
@@ -2660,7 +2660,7 @@ cagtagctctgaccattgttcgtcgaggaggtgatttgaccaacacagtatttgttgatt
 ttagaacagaagatgggactgccaatgcaggctcagattatgaatttactgaagggactg
 ttgttttcaaaccaggagagacccagaaagaaatcagagttggcattattgatgatgaca
 tttttgaagaagatgaaaacttcctggtccacctcagcaatgttcgtgttaactct---g
-agacaacc---ga------agtgaaccttgaatctaatcacgtggcat-ctcttgcatgc
+agacaacc---gaa------gtgaaccttgaatctaatcacgtggcat-ctcttgcatgc
 ctt-ggatcaccctctactgccacagtcaccatc-----------------
 >Atelopus_barbotini
 ------------------------------------------------------------
@@ -2684,7 +2684,7 @@ cagtggaactaacaattgttcgcaggggcggtgatttaaccaacacagtgttcgtggact
 tcagaacagaagatggcacagcaaatgctggatctgattatgaatttactgaagggatgg
 ttgttttcaagcctggtgagacactgaaagagattaaggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttctggtccatcttgccaatgtacgagtaaactct---g
-aaaccaga---ga------tgtaaattttgagtccaatcacgtaacat-cacttgcatgt
+aaaccaga---gat------gtaaattttgagtccaatcacgtaacat-cacttgcatgt
 ctt-ggatcaccctcaactgccacagttaccatc-----------------
 >Phrynobatrachus_africanus
 ------------------------------------------------------------
@@ -2732,7 +2732,7 @@ cagtagctctgactattgttcgtcgaggaggagatttgaccaacacagtatttgtagatt
 ttagaacagaagatgggactgccaatgcaggctcagattatgaatttactgaagggactg
 ttgttttcaaaccaggagaaacccagaaagaaatcagagttggcattattgatgatgaca
 tctttgaagaagatgaaaacttcctggttcacctcagcaatgttcgtgttaacgct---g
-agacaaca---ga------agtaaaccttgaatctaatcacgtggcat-ctctagcttgc
+agacaaca---gaa------gtaaaccttgaatctaatcacgtggcat-ctctagcttgc
 ctt-ggctcaccctctacagctacagttactatc-----------------
 >Pyxicephalus_edulis
 ------------------------------------------------------------
@@ -2756,7 +2756,7 @@ cagtagctctgaccatttttcgtcgaggaggtgatttgaccaatacagtatttgtagatt
 ttagaacagaagacggtactgccaatgctggttcagattatgaatttactgaagggactg
 ttgttttcaaacctggcgagacccagaaagagatcagagttggcattattgatgatgaca
 tttttgaagaagatgaaaactttttggtccacctaagcaatattcgtgtgaactct---g
-agacaaca---ga------agtgaaccttgaatctaatcacgtggcat-ctcttgcatgc
+agacaaca---gaa------gtgaaccttgaatctaatcacgtggcat-ctcttgcatgc
 ctt-ggatcaccctctacagcctacggtact--------------------
 >Taricha_torosa
 ------------------------------------------------------------
@@ -2780,7 +2780,7 @@ ctgttgctctgacagttattcgaaggggtggggatttgaccaacactgtgtttgttgact
 tcagaacagaagatggaacagccaatgcagggtctgattatgagttcacagaagggacag
 tggtcttcaaaccaggtgagacacagaaagaaatacgtgttggcatcattgacgatgaca
 tatttgaagaagacgagaacttcctcgttcacctcagtaacataaaagtcaactcc---c
-agacagca---ga------tatcaaccttgagaccaatcatattacaaccacttgcttgc
+agacagca---gat------atcaaccttgagaccaatcatattacaaccacttgcttgc
 cttgggatcaccagccacagccaca--------------------------
 >Haddadus_binotatus
 ------------------------------------------------------------
@@ -2804,7 +2804,7 @@ cagtggcattaacaattgctcgtcgaggcggtgatttaaccaacactgtctttgttgact
 tcagaacagaagatggcacagcaaacgctggatcagattatgaatttactgaaggaacag
 ttgtcttcaaacctggtgagacacagaaagagattagggttggcattattgatgatgata
 tctttgaagaagatgaaaactttctggtccatcttagcaatattcgagttaactct---g
-aaaccaca---ga------agtaaattttgagtccaatcacgtagcat-cacttgcatgt
+aaaccaca---gaa------gtaaattttgagtccaatcacgtagcat-cacttgcatgt
 ctt-ggttcaccctc------------------------------------
 >Eleutherodactylus_marnockii
 ------------------------------------------------------------
@@ -2828,7 +2828,7 @@ cagtggcactcacaattgctcgtcgaggcggtgacttaaccaacacagtctttgtagact
 tcagaacagaagatggcacagcaaatgctggatccgattatgaatttaccgaaggaactg
 ttgttttcaagcctggcgagacccagaaagagattagagttggcattatcgatgatgaca
 tctttgaagaagatgaaaactttctagtccatcttagcaatatccgagttaactct---g
-aaaccaca---ga------ggtaaattttgagtcgaatcatatagcat-cactggcatgt
+aaaccaca---gag------gtaaattttgagtcgaatcatatagcat-cactggcatgt
 ctt-ggatcaccctcaacagccacagttacca-------------------
 >Calluella_guttulata
 ccatggtttacatgttcctaggagtatctattatagctgaccgattcatgtcttctatcg
@@ -2852,7 +2852,7 @@ ctgttgcactaacaattgttcggaagggaggagatttaaccaacacagtgtttgtagatt
 ttagaacagaagatggcactgccaatgcaggctctgattatgagtttactgaagggactg
 tagtttttaaacctggagagacccagaaggaaattagggtaggcattatagatgatgata
 tctttgaagaagacgaaaatttcctagtccacctcagcaacattcgagtcaactct---g
-aagca---gcaga------gttaaacccagaatctaaccacgtgacag-ctcttgcatgc
+aagcagca---gag------ttaaacccagaatctaaccacgtgacag-ctcttgcatgc
 ctt-ggacaatcatccactgccacagtcactatat----------------
 >Wolterstorffina_parvipalmata
 ------------------------------------------------------------
@@ -2876,7 +2876,7 @@ cagtggcactaacaattgttcgccggggaggtgatttaaccaacacagtgttcgtggact
 tcagaacagaagatggcacagcaaatgctggatctgattatgaatttaccgaaggaatga
 ttgtgttcaagcccggtgagacacaaaaagagattaaggttggcattatagatgacgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaacatacgagttaactct---g
-aaaccaca---ga------tgtacattttgagtctaatcacgtaacat-cgcttgcatgt
+aaaccaca---gat------gtacattttgagtctaatcacgtaacat-cgcttgcatgt
 ctt-ggatcaccctcaacagccacagttaccatc-----------------
 >Afrixalus_dorsalis
 ------------------------------------------------------------
@@ -2900,7 +2900,7 @@ cagtagctctgaccattgttcgtcgaggaggtgatttaaccaacacagtgtttgtagaat
 tcagaacggaagatggcactgccaacgcaggctctgattatgaattcactgaagggactg
 ttgtgttcaaacctggagagacccagaaagagatcagggttggcattattgatgatgaca
 tttttgaagaagatgaaaatttcctggttcacctcagcaatgttagagttaactct---g
-aaacgrca---ga------ggcaaaccttgaatctaatcatgtgacac-ctcttgcatgc
+aaacgrca---gag------gcaaaccttgaatctaatcatgtgacac-ctcttgcatgc
 ctt-ggatcaccctctacagccactgttactatc-----------------
 >Elachistocleis_ovalis
 ------------------------------------------------------------
@@ -2924,7 +2924,7 @@ ctgtagcgctaacaatcattcgaaggggaggagatttgaccaacacagtgtttgtagatt
 ttagaaccgaagatggcactgccaatgcaggctcagattatgaatttactgaagggactg
 ttgttttcaaacctggagagacccagaaggagatcagagtaggcattattgatgatgata
 tctttgaagaagatgaaaacttcctggtccaccttagcaatgttcgagccaactct---g
-aaacaacc---ga------tgtgaacccagaatctaaccatgtgacag-ctcttgcttgt
+aaacaacc---gat------gtgaacccagaatctaaccatgtgacag-ctcttgcttgt
 ctt-ggagaagtctccacagccacagttactatc-----------------
 >Platymantis_hazelae
 ------------------------------------------------------------
@@ -2948,7 +2948,7 @@ cagtagctctgaccattgttcgtcgaggaggtgatttgaccaacacagtatttgtagctt
 ttagaacagaagatgggactgcaaatgcaggctcagattatgaatttactgaagggactg
 ttgttttcaaacctggggagactcagaaagagatcagggttggcattattgatgatgaca
 tttttgaagaagatgaaaacttccttgtccacctcagcaatgttcgtgttaactct---g
-agacaaca---ga------agtgaaccttcaatctaatcatgtggcat-ctcttgcatgc
+agacaaca---gaa------gtgaaccttcaatctaatcatgtggcat-ctcttgcatgc
 ctt-ggaacaccctctacagccacagttactatc-----------------
 >Uperoleia_laevigata
 ----------------cctaggagtatcaatcatagctgaccgattcatgtcctctattg
@@ -2972,7 +2972,7 @@ cagtggcgctaacaattgtgcgtcgtggaggtgatttgaccaacacagtgtttgtagatt
 tcagaacagaagatggtactgccaatgctggttcagattatgaatttacagaagggacag
 ttgttttcaaacctggcgagacccagaaagagattagggtaggaattattgatgatgaca
 tytttgaagaagatgaaaactttgtggtccatcttagtaatgttcgagttaatgct---g
-aaatcaca---ga------aatkaatgccgaatccaaccatgtcacat-ctcttgcttgc
+aaatcaca---gaa------atkaatgccgaatccaaccatgtcacat-ctcttgcttgc
 ctc-ggatcaccttctacaaccacagtcaccata-----------------
 >Ansonia_longidigita
 ------------------------------------------------------------
@@ -2996,7 +2996,7 @@ cagtggcactaacaattgttcgccggggtggcgatttaaccaacaaagtgttcgtggact
 tcagaacagaagatggcacagcaaatgcaggatctgattatgaatttacagaaggaacga
 ttgtattcaagcccggtgagacacaaaaagaggttaaggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaacatacgagttaactct---g
-aaaccgca---ga------tgtaaattttgagtccaatcacgtaacat-cacttgcatgt
+aaaccgca---gat------gtaaattttgagtccaatcacgtaacat-cacttgcatgt
 ctt-ggatcaccctcaacagcaac---------------------------
 >Meristogenys_whiteheadi
 ------------------------------------------------------------
@@ -3044,7 +3044,7 @@ cagtggcactaacaattgctcgtcggggcggtgatttaaccaacacagtctttgtagact
 tcaggacagaagatggcacagcaaatgctggatccgattatgaatttactgaaggaacag
 ttgttttcaagcctggtgagacccagaaggagattagggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaatatacgtgttaactct---g
-aaaccaca---ga------agtaaattttgagtcaaatcatgtaacat-cacttgcatgt
+aaaccaca---gaa------gtaaattttgagtcaaatcatgtaacat-cacttgcatgt
 ctt-ggatcaccctcaacggcc-----------------------------
 >Stefania_ginesi
 ------------------------------------------------------------
@@ -3068,7 +3068,7 @@ cagtggcactaacaattgttcgtcggggcggtgatttaactaacacagtctttgtagact
 tcagaacagaagatggcacagcaaatgctggatcagattatgaatttactgaaggaacag
 ttgttttcaagcctggtgagacacagaaagagattagggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaatgttcgcgttaactct---g
-aaaccaca---ga------agtaaattttgagtcaaatcatgtaacat-cacttgcatgt
+aaaccaca---gaa------gtaaattttgagtcaaatcatgtaacat-cacttgcatgt
 ctt-ggatcaccctcaacgaccacagttactatc-----------------
 >Fejervarya_triora
 ------------------------------------------------------------
@@ -3116,7 +3116,7 @@ ctgtagctctaacagttgttcggaggggaggagatttgaccaacacagtgtttgtagatt
 ttagaacagaagatggaactgccaatgcaggctcagattatgaatttactgaagggactg
 ttgttttcaaacctggcgagacccagaaggagattagagtaggcattatagacgatgata
 tctttgaagaagatgagaacttcctggtccacctcagcaatgttagagttgaatct---g
-aaacarca---ga------agtgaacccagaatctaatcatgtgacag-ctcttgcatgt
+aaacarca---gaa------gtgaacccagaatctaatcatgtgacag-ctcttgcatgt
 ctt-ggacaactctccacagccacagttactatattt--------------
 >Kalophrynus_intermedius
 ------------------------------------------------------------
@@ -3140,7 +3140,7 @@ ctgtagctctaacagttgttcggaggggaggagatttgaccaacacagtgtttgtagatt
 ttagaacagaagatggaactgccaatgcaggctccgattatgaatttactgaagggactg
 ttgttttcaaacctggcgagacccagaaggagattagagtaggcattatagacgatgata
 tctttgaagaagatgagaacttcctggtccacctcagcaatgttagagttgaatct---g
-aaacagca---ga------agtgaacccagaatctaatcatgtgacag-ctcttgcatgt
+aaacagca---gaa------gtgaacccagaatctaatcatgtgacag-ctcttgcatgt
 ctt-nnncaactctccacagccacagtnacca-------------------
 >Microhyla_borneensis
 ----------------tttaggagtatctattatagctgatcgatttatgtcttctatcg
@@ -3164,7 +3164,7 @@ ctgttgctctaacaattgtacggaggggaggagatttaaccaacacagtgtttgttgatt
 ttagaacagaagatggcactgccaatgcaggatcagattatgagttcactgaagggactg
 tcgttttcaaacccggagagacccagaaggaaattagagttggcattatagatgatgata
 tctttgaagaagacgaaaatttcctggtccacctcagcaatgttcgcgtcaacgcc---g
-aaacagccgtggt------ggtgaacccagagtctaaccacgtgacaa-ctcttgcatgt
+aaacagccgtggtg------gtgaacccagagtctaaccacgtgacaa-ctcttgcatgt
 ctt-ggacaaccctccacagccacagttactatcttt--------------
 >Ramanella_variegata
 ----------------cctaggagtatctattatagctgatcgattcatgtcctctattg
@@ -3188,7 +3188,7 @@ ctgttgctctaacaattgttcggagaggaggagatttgaccaacacggtgtttgtagact
 ttagaacagaagatggcacagccaatgcaggctcagattatgaatttaccgaagggactg
 tagttttcaaaccaggagagacccagaaggagattagagtaggcattatagatgatgata
 tctttgaagaagacgaaaacttcctggtgcacctcagcaatgttcgagccaactct---g
-aaacagca---ga------ggtgaacccagaatctaatcacgtcacaa-ctcttgcatgt
+aaacagca---gag------gtgaacccagaatctaatcacgtcacaa-ctcttgcatgt
 ctt-ggacaaccctccacagccacagttactatcttt--------------
 >Hylophorbus_rufescens
 ----------------cctaggggtgtctattatagctgatcgattcatgtcttctattg
@@ -3212,7 +3212,7 @@ ctgtggctctaaccattgttcggaggggaggcgatttgacgaacacagtgtttgtagatt
 ttagaacagaagatggcactgccaatgcaggctcagattatgaatttactgaaggcactg
 ttgttttcaaacccggagagatccagaaagagattagagtaggcattatagatgatgata
 tctttgaagaagatgaaaacttcctggtccacctcagcaatgttcgagccaactct---g
-aaacagta---ga------ggtgaacccagaatctaatcatgtgacac-cacttgcatgt
+aaacagta---gag------gtgaacccagaatctaatcatgtgacac-cacttgcatgt
 ctt-ggacaaccctccacagccactgttactatc-----------------
 >Melanobatrachus_indicus
 ------------------------------------------------------------
@@ -3236,7 +3236,7 @@ ctgtagctctaacaattgttcggaggggaggagatttgaccaacacagtgtttattgact
 ttagaacagaagatggcactgccaatgctggctcagattatgaatttactgaagggactg
 ttgttttcaaacctggagagacccagaaggaaattagagtaggcattatagatgatgata
 tctttgaagaagatgaaaacttcttggtccacctcagcaatattcgagtcaactct---g
-aaacagta---ga------agtgaacccagaatctaatcatgtgacag-ctcttgcatgc
+aaacagta---gaa------gtgaacccagaatctaatcatgtgacag-ctcttgcatgc
 ctt-ggacaaccatccacagccacagttactatt-----------------
 >Metaphrynella_sundana
 -------------------------tactattatagcggaccgatttatgtcctctattg
@@ -3260,7 +3260,7 @@ ctgttgcgctaacaattgttcggagagggggagatttgaccaacacggtgtttgtagatt
 ttagaacagaagacggcactgccaatgccggctcagattatgaatttaccgaagggactg
 tagttttcaaacctggagagacccagaaggagatcagagtaggcattatagatgatgata
 tctttgaagaagacgaaaacttcctggtccacctcagcaatgtccgagccaactct---g
-aaacaacg---ga------ggcgagcccagaatcgaatcacgtgacgg-ctcttgcatgt
+aaacaacg---gag------gcgagcccagaatcgaatcacgtgacgg-ctcttgcatgt
 ctt-gggcaaacctctacagccacagttaccatc-----------------
 >Uperodon_systoma
 ----------------cttaggagtatctattatagctgatcgattcatgtcctctattg
@@ -3284,7 +3284,7 @@ ctgttgctctaacaattgttcggagaggaggagatttgaccaacacagtgtttgtagact
 tcagaacagaagatggcactgccaatgcaggctcagattatgaatttaccgaagggactg
 tagttttcaaacctggagagacccagaaggagattagagtkggcatcatagatgatgata
 tctttgaagaagacgaaaacttcctggtccacctcagcaatgttcgagccaactct---g
-aaacggca---ga------ggtgaacccagaatctaatcacgtcacag-ctcttgcatgt
+aaacggca---gag------gtgaacccagaatctaatcacgtcacag-ctcttgcatgt
 ctt-ggacaaccctccacagccacagttactatc-----------------
 >Xenobatrachus_obesus
 --------tacatgttcctaggagtgtctattatagctgatcgattcatgtcttctattg
@@ -3308,7 +3308,7 @@ ctgtggctctgaccattgttcggaggggaggagatttgacgaacacagtgtttgtagatt
 ttagaacagaagatggcactgccaatgcaggctcagattatgaatttactgaagggactg
 ttgttttcaaacccggagagatccagaaagagattagagtaggcattatagatgatgata
 tctttgaagaagatgaaaacttcctggtccacctcagcaatgttcgagccaactct---g
-aaacagta---ga------ggtgaacccagaatctaatcatgtgacac-cacttgcatgt
+aaacagta---gag------gtgaacccagaatctaatcatgtgacac-cacttgcatgt
 ctt-ggacaaccctccacagccactgttactatc-----------------
 >Chthonerpeton_indistinctum
 ------------------------------------------------------------
@@ -3332,7 +3332,7 @@ cagtggctctgaccattgttcgccgtggcggtgatttgagcaacactgtatgcgtagatt
 ttagaacagaggacggcacagcaaatgcagggtccgattacgagttcagtgaaggaactg
 tggtcttcaagccaggggagacccagaaagaaataagggttggcataattgatgatgaca
 tttttgaagaagatgagaacttcctggtccatttaagtaacgtcaaagtgaattcc---a
-aaggatca---ga------agtcaactctgaggccaatcatgtggcat-cacttgcttgc
+aaggatca---gaa------gtcaactctgaggccaatcatgtggcat-cacttgcttgc
 ctt-ggttcaccctgcactgccac---------------------------
 >Cochranella_granulosa
 ------------------------------------------------------------
@@ -3356,7 +3356,7 @@ cggtggcactaacarttgttcgtcggggtggtgatttaaccaacacagtctttgttgagt
 tcagaacagaagatggcacagcaaatgctggatcagattatgaatttaccgaaggaactg
 ttgttttcaagcctggtgagacacagaaagagattagggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaatattcgrgttaactct---g
-aaactacc---aa------tgtaaattttgagtcaaatcatgtnacat-cacttgcatgt
+aaactacc---aat------gtaaattttgagtcaaatcatgtnacat-cacttgcatgt
 ctt-ggatcaccctcaacagccacag-------------------------
 >Litoria_maini
 ------------------------------------------------------------
@@ -3380,7 +3380,7 @@ cagtggcaataaccgttgttcgtcggggcggtgatttaaccaacacagtctttgtagact
 ttagaacagaagatggcacagcaaatgctggatcagattatgaatttactgaaggaacag
 ttgttttcaagcctggtgagacacagaaagagattagggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaatgttcgagttaactcc---g
-aaaccaca---ga------agtcaattttgagtcaaatcatgtcacat-cactggcatgt
+aaaccaca---gaa------gtcaattttgagtcaaatcatgtcacat-cactggcatgt
 ctt-ggatcaccctcaacagccacag-------------------------
 >Necturus_punctatus
 ------------------------------------------------------------
@@ -3404,7 +3404,7 @@ ctgttgcgctgaccgttatacgaagagggggggatttgaccaatactgtatttgttgact
 tcagaacagaagatggcaccgccaatgcaggttccgattatgagtttactgaagggacag
 tggtcttcaaaccaggtgagacccagaaggaaatccgtgttggcataatcgacgatgaca
 tatttgaagaagatgagaatttccttgttcacctcagtaacataaaagtcaactcc---c
-agtcagcc---ga------tgtcaaccttgaggccaaccacattacac-cactcgcttgc
+agtcagcc---gat------gtcaaccttgaggccaaccacattacac-cactcgcttgc
 ctc-ggatcaccatcaacgaccaccgtcaccatc-----------------
 >Praslinia_cooperi
 ------------------------------------------------------------
@@ -3428,7 +3428,7 @@ cggtggctttgaccattgttcgccgtggtggtgatttgagcaacactctgcgcgttgact
 ttagaacagaagatggcacagcaaatgcagggtctgattatgaattcaccgaagggactg
 tggtcttcaagccaggagaaacacagaaagaaataagggttggcatcatcgatgatgaca
 tttttgaagaagacgagaacttcctggtacatttaagtaacctcaaagtgaattct---g
-aagcttca---ga------agtcaaccttgatgccaaccacgtggcac-aacttgcttgc
+aagcttca---gaa------gtcaaccttgatgccaaccacgtggcac-aacttgcttgc
 ctt-ggttcaccttgtactgccacagtgactatcttt--------------
 >Pseudotriton_montanus
 ------------------------------------------------------------
@@ -3452,7 +3452,7 @@ ctgtagccctgaccattatgcgacgaggaggggatttgacaaatacagtgtttgttgact
 tcagaacagaagatggcacagcgaatgcgggttctgattatgaatttacagaaggtacag
 tggtcttcaagccaggtgagacacagaaagaaatccgcgtaggtatcatngacgatgaca
 tatttgaagaagatgaaaatttccttnntcacctcagtaacataaaagtcaactca---c
-agtctgca---ga------tgtcaacctcgaggncaatcatattacac-ccctnncttgc
+agtctgca---gat------gtcaacctcgaggncaatcatattacac-ccctnncttgc
 ctn-ngatcgccagcaacag-------------------------------
 >Schistometopum_thomense
 ----------------cttaggggtgtctatcatagctgatcgttttatgtcgtctattg
@@ -3476,7 +3476,7 @@ cagtggctctgactatcgttcgccgtggtggtgatttgagcaacactgtgtttgttgact
 ttagaacagaggatggcacagcaaatgcagggtctgattatgagttcactgaagggactg
 tggtcttcaagccaggagaaacacagaaagaaataagtgttggcataattgatgatgaca
 tttttgaagaagatgagaactttctggtacatttaagtaacatccaagtgaattgt---g
-aaggacca---ga------agtcaactctgaggccaaccatgtggcac-cacttgcttgc
+aaggacca---gaa------gtcaactctgaggccaaccatgtggcac-cacttgcttgc
 ctt-ggttcaccctgtactgccacagtgaccatcttt--------------
 >Adenomus_kelaartii
 ------------------------------------------------------------
@@ -3500,7 +3500,7 @@ cagtggcactaacaattgttcgccgcggcggcgatttaaccaacaccgtgttcgtggagt
 tcagaacagaagatggcacagcaaatgctggatctgattatgaatttacagaaggaacgg
 ttgtgttcaagcccggtgagacgcaaaaagagattaaggttggcattattgatgacgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaacatacgagtkaactct---g
-aaaccaca---ga------cttaaatttcgagtccaatcacgtaacat-cacttgcatgt
+aaaccaca---gac------ttaaatttcgagtccaatcacgtaacat-cacttgcatgt
 ctt-ggatcaccctcaacagcaacagttaccatc-----------------
 >Leptophryne_borbonica
 ------------------------------------------------------------
@@ -3524,7 +3524,7 @@ cagtggcactaacaatttttcgccggggcggtgatttaaccaacacagtgttcgttgact
 tcagaacagaagatggcacagcaaatgctggatctgattatgaattcacagaaggaatgg
 ttgtgttcaagcccggtgagacacagaaagagattaaggttggcattattgatgacgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaacatacgagttaactct---g
-aaaccaca---ga------tgtaaatttcgaatccaatcaygtagcat-cacttgcatgy
+aaaccaca---gat------gtaaatttcgaatccaatcaygtagcat-cacttgcatgy
 ctt-ggatcaccttcaacrgcaacagttaccatc-----------------
 >Mertensophryne_micranotis
 ------------------------------------------------------------
@@ -3548,7 +3548,7 @@ cagtggcgctaacaatagtccgccggggcggtgatttaaccaacacagtgttcgtggaat
 tcagaaccgaagatggcacagcaaatgctggatctgattatgaatttaccgaaggaacga
 ttgtgttcaagcccggtgagacacaaaaagagattaaagttggcattattgatgacgaca
 tttttgaagaagatgagaactttctggtccatcttagcaacattcgagttaactct---g
-aaaccgca---ga------tgtaaatttcgagtccaatcacgtaacat-cactggcatgt
+aaaccgca---gat------gtaaatttcgagtccaatcacgtaacat-cactggcatgt
 ctt-ggatcaccctcaacagccacagttaccatc-----------------
 >Meristogenys_poecilus
 ------------------------------------------------------------
@@ -3596,7 +3596,7 @@ cagtggcactaacaattgttcgccgaggcggtgatttaaccaacaaagtgtttgtggact
 tcagaacagaagatggcacagcaaatgctggctctgattatgaatttacagaaggaacga
 ttgtgttcaagcccggtgagacacaaaaagaggttaaggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaacatacgagttaactct---g
-aaaccgca---ga------tgtaaatttcgagtccaatcacgtaacat-cacttgcatgt
+aaaccgca---gat------gtaaatttcgagtccaatcacgtaacat-cacttgcatgt
 ctt-ggatcaccctcaacagcaacagttacaatc-----------------
 >Diasporus_diastema
 ------------------------------------------------------------
@@ -3620,7 +3620,7 @@ cagtagcactaacaatcgctcgtcgaggtggtgatttaaccaacacagtctttgtagact
 tcagaacagaagatggcacagcaaatgctggatccgattatgaatttactgaaggaacag
 ttgttttcaagcctggcgagactcagaaagagattagggttggcattattgatgatgaca
 tcttcgaagaagatgaaaactttctcgtccatcttagcaacattcgagttaactct---g
-aaaccaca---gg------agtaaattttgagtcaaatcatgtatcat-cacttgcatgt
+aaaccaca---gga------gtaaattttgagtcaaatcatgtatcat-cacttgcatgt
 ctt-ggatcaccctcaacagccacagttaccatc-----------------
 >Ischnocnema_guentheri
 ------------------------------------------------------------
@@ -3644,7 +3644,7 @@ cagtggcactaacaattgcccgtcgaggcggtgatttaaccaacacagtctttgtagact
 tcagaacagaagatggcacagcaaatgctggatcagattatgaatttactgaaggaacag
 ttgttttcaagcctggtgagacacagaaagagattagggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttctagtccatcttagcaatattcgagttaactct---g
-aaaccacc---aa------cgtaaattttgagtcaaatcatgtagcat-cacttgcatgt
+aaaccacc---aac------gtaaattttgagtcaaatcatgtagcat-cacttgcatgt
 ctt-ggatcaccctcaacaaccacagttactatc-----------------
 >Hypodactylus_brunneus
 ------------------------------------------------------------
@@ -3668,7 +3668,7 @@ cagtggcaataacaattgctcgtcgaggcggagatttaaccaacacagtctttgtagact
 tcagaaccgaagatggcacagcaaatgctggatcagattatgaatttactgaaggaacaa
 ttgttttcaagcctggtgagacacagaaagagattagggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaatattcgagttaactct---g
-aaaccaca---ga------ggtcaattttgtgtcaaatcacgtagcat-cgcttgcatgt
+aaaccaca---gag------gtcaattttgtgtcaaatcacgtagcat-cgcttgcatgt
 ctt-ggttcaccttcaacagccacagtcaccatc-----------------
 >Craugastor_biporcatus
 ------------------------------------------------------------
@@ -3692,7 +3692,7 @@ cagtggcactaacaattattcgtagaggcggtgatttaaccaacaccgtctttgtagact
 tcagaacagaagatggcacagcaaatgctggatcagattatgagtttactgaaggaacag
 ttgttttcaagcctggtgagacacagaaagagattagggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaatattcgagtaaactct---g
-aaaccaca---ga------agtaaattttgagtcaaatcacgtagcat-cacttgcatgt
+aaaccaca---gaa------gtaaattttgagtcaaatcacgtagcat-cacttgcatgt
 ctt-ggttcaccctcaacagccacagttaccatc-----------------
 >Pelophryne_misera
 ------------------------------------------------------------
@@ -3716,7 +3716,7 @@ cagtggcactaacaattgttcgccggggcggtgatttaaccaacaaagtgttcgtggact
 tcagaacagaagatggcacagcaaatgctggatctgattatgaatttacagaaggaacgg
 ttgtgttcaagcccggtgagacacaaaaagagattaaggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaacatacgagttaactct---g
-aaaccgca---ga------tgtaaatttcgagtccaatcacgtaacat-cacttgcatgt
+aaaccgca---gat------gtaaatttcgagtccaatcacgtaacat-cacttgcatgt
 ctc-ggatcacccacaacagcaacagttaccatc-----------------
 >Adelophryne_gutturosa
 ------------------------------------------------------------
@@ -3740,7 +3740,7 @@ gagtggcactaacaattgttcgtcgaggcggtgatttaacaaacacagtttttgtagact
 tcagaacagaagatggcacagcaaacgctggatccgattatgaattcactgaagggacag
 ttgttttcaagcgtggtgagacacagaaagaggttagggttggtattatcgatgatgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaatgtccgagttaactct---g
-aaaccaca---ga------agtaaattttgagtctaatcatgtagcat-cacttgcatgt
+aaaccaca---gaa------gtaaattttgagtctaatcatgtagcat-cacttgcatgt
 ctt-ggatcaccc--------------------------------------
 >Psychrophrynella_wettsteini
 ------------------------------------------------------------
@@ -3764,7 +3764,7 @@ cagtggcactaacaattgttcgtcgaggcggtgatttaaccaacacagtctttgtagact
 tcagaacagaagatggcacagcaaacgctggatccgattatgaatttactgaaggaactg
 ttgttttcaagcctggtgagacccagaaagagattagggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaatattcgggttaacgct---g
-aaaccaca---ga------agtcaattttgagtcaaatcacctagcat-cacttacatgt
+aaaccaca---gaa------gtcaattttgagtcaaatcacctagcat-cacttacatgt
 ctc-ggttcaccctcaacagccacagttaccayc-----------------
 >Ansonia_spinulifer
 ------------------------------------------------------------
@@ -3788,7 +3788,7 @@ cagtggcactaacaattgttcgccggggcggtgatttaaccaacaaagtgtttgtggact
 tcagaacagaagatggcacagcaaatgctggatctgattatgaatttacagaaggaacga
 ttgtgttcaagcccggtgagacacaaaaagaggttaaggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaacatamgagttaactct---g
-aaacygca---ga------tgtaaatttcgagtccaatcacgtaacat-cacttgcatgt
+aaacygca---gat------gtaaatttcgagtccaatcacgtaacat-cacttgcatgt
 ctt-ggatcaccctcaacagcaacagttaccatc-----------------
 >Nectophrynoides_viviparus
 ------------------------------------------------------------
@@ -3812,7 +3812,7 @@ cagtggcactaaccgttgttcgccggggtggtgatttaaccaacacagtgttcgtggact
 tcagaacagaagatggcacagcaaatgctggatctgattatgaatttacagaaggaatgg
 ttgtgttcaagcccggtgagacccaaaaagagattaaggttggcattattgatgacgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaacatacgagtgaactct---g
-aaaccgca---aa------cgtaaatttcgagtccaagcacgtgacat-cacttgcatgt
+aaaccgca---aac------gtaaatttcgagtccaagcacgtgacat-cacttgcatgt
 ctt-ggatcaccctcaacagccacagtgaccatc-----------------
 >Pedostibes_tuberculosus
 ------------------------------------------------------------
@@ -3836,7 +3836,7 @@ cagtggcactaacaatcgttcgccggggcggcgatttaaccaacacagtgttcgtggact
 tcagaacagaagatggcacagcaaatgctggatctgattatgaatttacagaaggaatgg
 tcgtgttcaagcccggtgagacacaaaaagagattaaggttggcattattgatgacgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaacatacgagttaactct---g
-aaaccaca---ga------cataaatttcgagtccaatcacgtaacat-cacttgcatgt
+aaaccaca---gac------ataaatttcgagtccaatcacgtaacat-cacttgcatgt
 ctt-gg---------------------------------------------
 >Pelophryne_signata
 ------------------------------------------------------------
@@ -3860,7 +3860,7 @@ cagtggcactaacaattgttcgccggggcggtgatttaaccaacaaagtgtttgtggact
 tcagaacagaagatggcacagcaaatgctggatctgattatgaatttacagaaggaacgg
 ttgtgttcaagcccggtgaracacaaaaagagattaaggttggcattattgatgatgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaacatacgagttaactct---g
-aaaccaca---ga------tgtaaatttcgagtccaatcacgtaacat-cacttgcatgt
+aaaccaca---gat------gtaaatttcgagtccaatcacgtaacat-cacttgcatgt
 ctc-ggatcacccacaacagcaacagt------------------------
 >Bufo_verrucosissimus
 ------------------------------------------------------------
@@ -3884,7 +3884,7 @@ cagtggcactaacaattgttcgccggggcggtgatttaaccaacacagtgttcgtggact
 tcagaacagaagatggcacagcaaatgctggatctgattatgaatttacagaaggaatgg
 ttgtgttcaagcccggtgagacacaaaaagagattaaggttggcattattgatgacgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaacatacgagttaactct---g
-aaaccaca---ga------cgtaaatttcgagtccaatcacgtaacat-cacttgcatgt
+aaaccaca---gac------gtaaatttcgagtccaatcacgtaacat-cacttgcatgt
 ctt-ggatcaccctcaacaacaacagttaccatc-----------------
 >Churamiti_maridadi
 ------------------------------------------------------------
@@ -3908,5 +3908,5 @@ cagtggcactagccattgttcgccggggcggtgatttaaccaacacagtgttcgtggact
 tcagaacagaagatggcacagcaaatgccggatctgattatgaatttacagaaggaatgg
 ttgtgttcaagcccggtgagacccaaaaagagattaaggttggcattattgatgacgaca
 tctttgaagaagatgaaaactttctggtccatcttagcaacatacgagtgaactct---g
-aaaccaca---aa------cgtaaatttcgagtccaatcacgtgatgt-cacttgcatgt
+aaaccaca---aac------gtaaatttcgagtccaatcacgtgatgt-cacttgcatgt
 ctt-ggatcaccctcaacagccacagtgaccatc-----------------
