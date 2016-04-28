@@ -21,12 +21,18 @@ Some guidelines and tips:
 OK, here we go.
 
 # Title of my project
+```{r}
+setwd("~/Dropbox/Brown University/BIOL1425/phylobio_final_project/")
+```
 
-Extinction and the loss of phylogenetic diversity
+Sensitivity Analysis of EDGE values
 
 ## Introduction and Goals
 
-It seems inevitable that climate change, along with other anthropogenic factors, will continue to drive the endangerment and extinction of taxa for the immediate future. Each species is by definition a unique parcel of genetic information, which means that an extinction is the loss of a unique genome. With the number of endgangered taxa mounting, it is important to understand the ways in which species will go extinct, and what that means for the loss of phylogenetic diversity. 
+It seems inevitable that climate change, along with other anthropogenic factors, will continue to drive the endangerment and extinction of taxa for the immediate future. Each species is by definition a unique parcel of genetic information, which means that an extinction is the loss of a unique genome. With the number of endgangered taxa mounting, it is important to understand the ways in which species will go extinct, and what that means for the loss of phylogenetic diversity. EDGE values (Isaac et al 2007) are a proposed method of combining a species' probability of extinction with a measure of its unique evolutionary history. Calculation of the evolutionary distinctiveness (ED) value is based on tree topology, where a species' score is  the total branch length from the root node to its tip, where internal branches' weight is scaled by the number of tip taxa that share that branch.
+```{r}
+![Isaac 2007 Fig 1](/images/Isaac_fig1.png)
+```
 
 __**The methods I will use to do this are...**__
 
@@ -36,13 +42,17 @@ My goal is to construct the phylogeny for amphibians and map the degree to which
 
 __**The data I will use are (my own data/ data publicly available at YYY/ simulations)**__
 
-I expect I will draw on data from an existing published phylogeny or collection of published data. I will score degree of endangerment by classification on IUCN red list, though I will look into a continuous variable that describes endangerment. 
+I am drawing my data entirely from the supplementary table of accession numbers provided in Pyron 2011.
 
 ___________
 
 Davies, T. Jonathan, Gideon F. Smith, Dirk U. Bellstedt, James S. Boatwright, Benny Bytebier, Richard M. Cowling, Félix Forest, Luke J. Harmon, A. Muthama Muasya, Brian D. Schrire, Yolande Steenkamp, Michelle Van Der Bank, and Vincent Savolainen. "Extinction Risk and Diversification Are Linked in a Plant Biodiversity Hotspot." PLoS Biology PLoS Biol 9.5 (2011): n. pag. Web. <http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1000620>.
 
+Isaac, Nick J.b., Samuel T. Turvey, Ben Collen, Carly Waterman, and Jonathan E.m. Baillie. "Mammals on the EDGE: Conservation Priorities Based on Threat and Phylogeny." PLoS ONE 2.3 (2007): n. pag. Web. 28 Apr. 2016. <http://journals.plos.org/plosone/article/asset?id=10.1371/journal.pone.0000296.PDF>.
+
 Purvis, A. "Nonrandom Extinction and the Loss of Evolutionary History." Science 288.5464 (2000): 328-30. Web. <http://science.sciencemag.org/content/288/5464/328>.
+
+Pyron, R. Alexander, and John J. Wiens. "A Large-scale Phylogeny of Amphibia including over 2800 Species, and a Revised Classification of Extant Frogs, Salamanders, and Caecilians." Molecular Phylogenetics and Evolution 61.2 (2011): 543-83. Web. 28 Apr. 2016. <http://www.sciencedirect.com/science/article/pii/S105579031100279X>.
 
 Rolland, J., M. W. Cadotte, J. Davies, V. Devictor, S. Lavergne, N. Mouquet, S. Pavoine, A. Rodrigues, W. Thuiller, L. Turcati, M. Winter, L. Zupan, F. Jabot, and H. Morlon. "Using Phylogenies in Conservation: New Perspectives." Biology Letters 8.5 (2011): 692-94. Web. <http://rsbl.royalsocietypublishing.org/content/early/2011/11/21/rsbl.2011.1024>.
 
@@ -55,7 +65,6 @@ ____________
 I started by downloading the accession numbers for 12 genes published Pyron 2011, used in the construction of a comprehensive Amphibia phylogeny, storing them in a data frame called accessions.  
 
 ```{r}
-setwd("~/Dropbox/Brown University/BIOL1425/phylobio_final_project/")
 accessions=read.csv("Pyrondata.csv",header = TRUE)
 # data is from Pyron 2011
 row.names(accessions)=accessions[,1]
@@ -69,7 +78,6 @@ accessions[1,]
 I then downloaded a list of all the IUCN designations from the IUCN Red List database (http://www.iucnredlist.org/), storing it locally as a .csv and within the R environment as IUCN_amphibia.
 ```{r}
 IUCN_amphibia=read.csv("IUCN_amphibia.csv", header = TRUE)
-IUCN_amphibia
 dim(IUCN_amphibia)
 names(IUCN_amphibia)
 row.names(IUCN_amphibia)=IUCN_amphibia[,6]
@@ -80,12 +88,10 @@ By searching the row names of each dataframe, I pared down the rows in accession
 accessions=accessions[rownames(accessions)%in%rownames(IUCN_amphibia),]
 dim(accessions)
 accessions[1,]
-#filtered accessions so that only contains rows for species with values listed in IUCN_amphibia
 ```
 I then created an IUCN_amphibia_matched dataframe, which listed only those rows which are in accessions, effectively creating two dataframes with identical rows.
 ```{r}
 IUCN_amphibia_matched=IUCN_amphibia[rownames(IUCN_amphibia)%in%rownames(accessions),]
-IUCN_amphibia_matched
 dim(IUCN_amphibia_matched)
 names(IUCN_amphibia_matched)
 ```
@@ -118,7 +124,7 @@ write.csv(accessions,file = "accessions2.csv")
 
 The tools I used were... See analysis files at (links to analysis files).
 
-
+Accession numbers for sequences were gathered from Pyron 2011
 
 ## Results
 
