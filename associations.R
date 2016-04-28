@@ -172,7 +172,8 @@ ses.mpd(prunecomm, cophenetic(ultramphipod))
 PSClustering = psc(prunecomm, cophenetic(ultramphipod))
 mean(PSClustering$PSCs[which(!is.na(PSClustering$PSCs[1:(nrow(PSClustering)-2)]))])
 par(mar=rep(5,4))
-barplot(PSClustering$PSCs[which(!is.na(PSClustering$PSCs[1:(nrow(PSClustering)-2)]))], names.arg = rownames(PSClustering)[which(!is.na(PSClustering$PSCs[1:(nrow(PSClustering)-2)]))], col='magenta', las=3)
+par(oma=rep(3.1,4))
+barplot(PSClustering$PSCs[which(!is.na(PSClustering$PSCs[1:(nrow(PSClustering)-2)]))], names.arg = rownames(PSClustering)[which(!is.na(PSClustering$PSCs[1:(nrow(PSClustering)-2)]))], col='magenta', las=3, cex.names = 0.7)
 phylostruct(prunecomm, cophenetic(ultramphipod))
 
 #Cophylogenies
@@ -183,6 +184,12 @@ cophyloplot(ultramphipod, ultram, assoc = reprunedass, type="phylogram", space=1
 #cophyloplot(ultramphipod, ultram, assoc = reprunedass, type="phylogram", space=110, gap=0,show.tip.label=T, use.edge.length=F, col="orange", rotate = T)
 #cophy = cophylo(ultramphipod, ultram, assoc = reprunedass, rotate = F)
 #plot(cophy)
+competition = melt(as.matrix(adist_amphipods))
+colnames(competition) = c("amphi1", "amphi2", "score")
+competition = competition[which(competition$score > 0.00001 | competition$score < -0.00001),c(1:2)]
+competition = competition[!duplicated(t(apply(competition, 1, sort))),]
+cophyloplot(ultramphipod, ultramphipod, assoc = competition, type="phylogram", space=110, gap=0,show.tip.label=T, use.edge.length=F, col="orange")
+
 
 #Popularity of hosts, generalist/specialist amphipods
 table(reprunedass[,2])
