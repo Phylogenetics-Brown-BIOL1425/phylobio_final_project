@@ -42,10 +42,14 @@ The goal of this project is to compare the evolutionary histories of hyperiid am
 
 ## Methods
 
-Hyperiid amphipod - Gelatinous host associations (unquantified, recorded categorically as presence) were recorded from the literature review. Most associations not resolved to the species level were discarded for this study. [Associations file here](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/Associations.csv)
+Hyperiid amphipod - Gelatinous host associations (unquantified, recorded categorically as presence) were recorded from the literature review. Most associations not resolved to the species level were discarded for this study.
+
+[Associations file here.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/Associations.csv)
 
 Host and amphipod 18S fasta sequences were retrieved from NCBI Batch Entrez using the GI numbers for each taxon sequence.
+
 [Hosts sequences FASTA](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/ExtendedHosts/host_ext_oneline.fasta)
+
 [Amphipods sequences FASTA](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/Amphipods/Interesting\ amphipods/datamphipod18S_oneline.fasta)
 
 Additional taxa were included (and pruned out a posteriori) to increase the robustness of the analysis and reduce the effect of long branch attraction. The hyperiid amphipod tree showed a rogue taxon "*Hyperietta stephenseni*" which consistently appeared outside its genus clade and as sister group to all other species. Its 18S sequence, as annotated in NCBI differed much from every other in the alignment. This is possibly due to incorrect annotation or contamination (BLAST 2nd hit: *Epimeriella walkeri*, gammaridean amphipod -- 99% cover, E = 0.0). It has critical information as it is the only taxon for which I had available association data with radiolarians, so I could not simply remove it. Therefore, I applied a constraint (specified below) during the RAxML analysis to procrust its position in the tree, informed by alternative phylogenies (Hurt et al., 2013) and taxonomic information. Lestrigonus schizogeneios was also showing a similar behavior, but as it did not have critical ecological information, I decided to remove the taxon a posteriori.
@@ -127,6 +131,7 @@ Supplementary figure 2. Hyperiid amphipod 18S GTR+Gamma ML (RAxML) tree. Nodes l
 
 For the analysis and visualizations in R, I used the packages: 
 ape, phytools, phangorn, adephylo, ggtree, dendextrend, picante, paco, and igraph.
+
 [RScript link](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/associations.R)
 
 Trees were pruned to contain only the tips for which I have association data for, and transformed into ultrametric using ape::chronos(). trees were also stored as phylogenetic distance matrices using cophenetic().
@@ -231,7 +236,7 @@ But, how far did sharing a common evolutionary history generate this association
 ![Figure 12](https://github.com/antropoteuthis/phylobio_final_project/raw/master/Good_Cophylo.png)
 Figure 12. Cophylogeny of amphipods and gelatinous hosts produced using ape::cophyloplot.
 
-The cophylogeny (Figure 12) shows the realtionship between common ancestry and association patterns. Global congruence (Parafit) between host and amphipod trees: 46.846, p-value=0.09. The trees show some congruence, possibly enough to support a shared macroevolutionary scenario.
+The cophylogeny (Figure 12) shows the realtionship between common ancestry and association patterns. Global congruence (Parafit) between host and amphipod trees: 31.16939 , p-value = 0.148. The trees show some congruence, not significant enough to support a shared macroevolutionary scenario. However, if branch lengths are all set to 1, the values obtained are ParaFitGlobal = 124916 , p-value = 0.067, supporting a significant cospeciative macroevolutionay scenario.
 
 ![Figure 13](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/good_specificity.png)
 Figure 13. Amphipod phylogeny showing a brownian motion reconstruction of host specifity (blue - generalist, red - specialist).
@@ -241,9 +246,17 @@ Figure 13 shows the evolution a key aspect of hyperiid amphipods' ecological rol
 ![Figure 14](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/good_popularity.png)
 Figure 14. Gelatinous host phylogeny showing a brownian motion reconstruction of associated amphipod richness - vulnerability (blue - common target, red - rare target).
 
-From the other side of the story, Figure 14 shows the evolution of the suitability of gelatinous hosts to a broad spectrum of hyperiid amphipod species. Hosts that harbor more species, such as salps, are less likely to develop a coevolutionary armsrace against a particular amphipod species. Blomberg's K for phylogenetic signal in amphipod richness is low, 0.0689.
+From the other side of the story, Figure 14 shows the evolution of the suitability of gelatinous hosts to a broad spectrum of hyperiid amphipod species. Hosts that harbor more species, such as salps, are less likely to develop a coevolutionary armsrace against a particular amphipod species. Blomberg's K for phylogenetic signal in amphipod richness is low, 0.0689 (0.6877 with flat branch lengths, a tenfold increase).
 
-The PACo (Balbuena et al., 2013) analysis of phylogenetic structure detected a slight but significant fit (Procrustes sum of squares = 23.07, goodness-of-fit: p-value=0, number of permutations =10), indicating the presence of co-divergence in shaping the topology of the cophylogeny.
+The PACo (Balbuena et al., 2013) analysis of phylogenetic structure detected a slight but significant fit (Procrustes sum of squares = 17.08, goodness-of-fit: p-value = 0, number of permutations = 100), indicating the presence of co-divergence in shaping the topology of the cophylogeny.
+
+But, which phylogeny has a stronger impact on the associations?
+
+A mantel test of the phylogenetic distance matrices against the association-based distance matrices (as carried out in Bersier & Kehrli, 2008) for each group reveals:
+Hyperiid amphipods: r = -0.127, p=0.861 (non-significant relationship).
+Gelatinous zooplankton hosts: r = 0.0124, p=0.427 (non-significant relationship).
+
+On a second approach to this question, I tried obtaining the mean Blomberg's K for each association in contrast to each of the phylogenies. The hyperiid amphipod phylogeny had a mean K of 0.5730 (SE: 0.5969), and the gelatinous host phylogeny had a mean K of 0.1583 (SE: 0.2901). The standard error values do not undermine the mean avlues, as the dispersion in this distribution is truncated to the left at 0. While we can probably conclude that phylogenetic signal exists in the association data with respect to both phylogenies, we cannot conclude that they are significantly different with this test.
 
 ###Phylogenetic community ecology
 
@@ -255,12 +268,6 @@ As we can see in Figure 14, thaliacean species harbor the richest assemblage of 
 
 ![F15](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/clustering.png)
 Figure 15. Phylogenetic overdispersion of amphipod species within each host.
-
-But, which phylogeny has a stronger impact on the associations?
-
-A mantel test of the phylogenetic distance matrices against the association-based distance matrices (as carried out in Bersier & Kehrli, 2008) for each group reveals:
-Hyperiid amphipods: r = -0.127, p=0.861 (non-significant relationship).
-Gelatinous zooplankton hosts: r = 0.0124, p=0.427 (non-significant relationship).
 
 ## Discussion
 

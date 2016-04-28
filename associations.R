@@ -63,6 +63,7 @@ MLext$tip.label[which(MLext$tip.label == "Bolinopsis_sp.")] = "Bolinopsis_vitrea
 MLext$tip.label[which(MLext$tip.label == "Cavolinia_sp.")] = "Cavolinia_longirostris"
 MLext$tip.label[which(MLext$tip.label == "Solmissus sp.")] = "Solmissus_incissa"
 TREE = MLext
+plot(TREE)
 
 #replace _ with spaces in tipnames of both trees
 TREE$tip.label = str_replace_all(TREE$tip.label,'_',' ')
@@ -82,8 +83,8 @@ heatmap(as.matrix(prunedmatrix[,2:ncol(prunedmatrix)]), col=c("white", "orange")
 sharedspp = as.vector(prunedass[,2][which(prunedass[,2] %in% TREE$tip.label)])
 
 #prune the host tree with the shared species in association data and amphipod tree
-nodatatipnames = TREE$tip.label[which(!(TREE$tip.label %in% sharedspp))]
-nodatatips = c(1:length(TREE$tip.label))[which(TREE$tip.label %in% nodatatipnames)]
+nodatatipnames = TREE$tip.label[which(!(TREE$tip.label %in% unique(sharedspp)))]
+nodatatips = which(TREE$tip.label %in% nodatatipnames)
 prunedtree = drop.tip(TREE, nodatatips)
 prunedtree$tip.label
 plot(prunedtree)
@@ -104,6 +105,7 @@ heatmap(reprunedassmatrix[,2:ncol(reprunedassmatrix)], col=c("white", "orange"),
 prunedamphipodML = drop.tip(amphipodML, which(!(amphipodML$tip.label %in% rownames(reprunedassmatrix))))
 ultramphipod = chronos(prunedamphipodML)
 plot(ultramphipod)
+reprunedassmatrix = reprunedassmatrix[match(ultramphipod$tip.label, rownames(reprunedassmatrix)),]
 
 #define association network
 g <- graph_from_edgelist(as.matrix(ass))
@@ -156,7 +158,7 @@ MPC = match.phylo.comm(ultramphipod, comm)
 
 ##Phylogenetic clustering
 #prune the comm matrix
-prunecomm = prune.sample(comm,ultramphipod)
+#prunecomm = prune.sample(comm,ultramphipod)
 prunecomm = comm[,which(colnames(comm) %in% ultramphipod$tip.label)]
 #add the phylocom even and random rows
 even = rep(0.5,ncol(prunecomm))
@@ -182,13 +184,6 @@ cophyloplot(ultramphipod, ultram, assoc = reprunedass, type="phylogram", space=1
 #cophy = cophylo(ultramphipod, ultram, assoc = reprunedass, rotate = F)
 #plot(cophy)
 
-Parafit = parafit(as.matrix(cophenetic(ultram)),as.matrix(cophenetic(ultramphipod)), comm[which(rownames(comm) %in% ultram$tip.label),which(colnames(comm) %in% ultramphipod$tip.label)])
-D = prepare_paco_data(cophenetic(ultram), cophenetic(ultramphipod), comm[which(rownames(comm) %in% ultram$tip.label),which(colnames(comm) %in% ultramphipod$tip.label)])
-D = add_pcoord(D)
-D = PACo(D, nperm=100, seed=42, method="r0", correction='cailliez')
-print(D$gof)
-D
-
 #Popularity of hosts, generalist/specialist amphipods
 table(reprunedass[,2])
 specificity = as.vector(table(reprunedass[,1]))
@@ -211,15 +206,46 @@ Kcalc(specificity, flatamphipod)
 flatam = ultram
 flatam$edge.length = rep(1,length(flatam$edge.length))
 contMap(flatam, popularity)
-Kcalc(popularity, flatamphipod)
+Kcalc(popularity, flatam)
+
+Parafit = parafit(as.matrix(cophenetic(ultram)),as.matrix(cophenetic(ultramphipod)), t(reprunedassmatrix), correction = 'cailliez')
+D = prepare_paco_data(cophenetic(ultram), cophenetic(ultramphipod), t(reprunedassmatrix))
+D = add_pcoord(D)
+D = PACo(D, nperm=100, seed=42, method="r0", correction='cailliez')
+print(D$gof)
+D
+#that with flat branch lengths
+parafit(as.matrix(cophenetic(flatam)),as.matrix(cophenetic(flatamphipod)), t(reprunedassmatrix), correction = 'cailliez')
+D = prepare_paco_data(cophenetic(flatam), cophenetic(flatamphipod), t(reprunedassmatrix))
+D = add_pcoord(D)
+D = PACo(D, nperm=100, seed=42, method="r0", correction='cailliez')
+print(D$gof)
+D
 
 #Which phylogeny has a stronger signal?
 pdist_amphipods = as.dist(cophenetic(ultramphipod))
 pdist_hosts = as.dist(cophenetic(ultram))
-adist_amphipods = species.dist(prunecomm)
-adist_hosts = species.dist(t(comm[which(rownames(comm) %in% ultram$tip.label),]))
+
+adist_amphipods = species.dist(t(reprunedassmatrix))
+adist_hosts = species.dist(reprunedassmatrix)
 mantel_amphi = mantel.rtest(pdist_amphipods, adist_amphipods, nrepet = 9999)
 mantel_host = mantel.rtest(pdist_hosts, adist_hosts, nrepet = 9999)
+
+mean(multiPhylosignal(t(reprunedassmatrix), ultram)[,1])
+sd(multiPhylosignal(t(reprunedassmatrix), ultram)[,1])
+mean(multiPhylosignal(reprunedassmatrix, ultramphipod)[,1])
+sd(multiPhylosignal(reprunedassmatrix, ultramphipod)[,1])
+
+mean(multiPhylosignal(t(reprunedassmatrix), flatam)[,1])
+sd(multiPhylosignal(t(reprunedassmatrix), flatam)[,1])
+mean(multiPhylosignal(reprunedassmatrix, flatamphipod)[,1])
+sd(multiPhylosignal(reprunedassmatrix, flatamphipod)[,1])
+
+hosthc = hclust(adist_hosts)
+amphihc = hclust(adist_amphipods)
+
+Bk_plot(as.dendrogram(ultram), hosthc)
+Bk_plot(as.dendrogram(ultramphipod), amphihc)
 
 #Network analysis
 assnet = as.network(as.matrix(ass))
