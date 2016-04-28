@@ -25,20 +25,21 @@ The *Selaginella* genus is an excellent study group to investigate the diversity
 The goal of my project is to examine the diversity of megaspore and microspore release mechanisms within *Selaginella* in a phylogenetic and ecological context, ultimately to determine whether spore release mechanisms differ between megaspores and microspores, and whether they vary by major biome and/or clade. 
 To answer these questions I will construct a phylogeny of *Selaginella* based on rbcL sequences for the species available in GenBank. I view this part of my final project as an exercise to work on my computational skills rather than as essential to the project; molecular phylogenies of Selaginella have been constructed (e.g. Korall & Kenrick 2004; Zhou et al. 2015) and I could (and may, depending on the outcome of the phylogeny I construct) ultimately choose to plot the characters I am interested in onto the most recent published phylogeny. I then will plot sporangial arrangement (of megaspores and microspores within the strobilus) and anatomy (different wall thickenings are associated with different discharge mechanisms) on the tree. Data for these characters will come predominantly from the literature (Horner & Arnott 1963; Somers 1982; Koller & Scheckler 1986; Quansah 1988; Schneller et al. 2008). I will include some of my personal observations and data, should I get the materials to embed and section strobili of the *Selaginella* species that I currently have. However, it is unlikely I will have collected much of my own data by the due date of this project, and accordingly I plan to continually add to the tree I create as I continue to collect data. 
 
-What I described above is the ultimate goal I have for the project. However, I do not currently have the data on these characters that I need to actually run these analyses. Accordingly, for the sake of this class project (which will have to be finshed well before I have the data for the questions I'm actually interested in), I am going to simulate trees and character data. If I have time, I will plug in the sparse real character data that I currently have. (Though it certainly isn't enough to learn anything biologically relevant).
+What I described above is the ultimate goal I have for the project. However, I do not currently have the data on these characters that I need to actually run these analyses. Accordingly, for the sake of this class project (which will have to be finshed well before I have the data for the questions I'm actually interested in), I am going to simulate trees and character data. .
 
 My current game plan, which I'm about to try to do today, is this:
 
 1) Simulate a tree with 700 tips (the approximate number of *Selaginella* species)
 
-2) Simulate 5 characters (meant to represent: 1. megasporangia discharge type, 2. microsporangia discharge type, 3. sporangial arrangement, 4. megasporangium anatomy, and 5. microsporangium anatomy)
-	The variances for traits 1, 2, and 3 will be estimated from available data in the literature. Characters 1 and 4 should covary strongly, as should characters 2 and 5, (because anatomy of the sporangium is mechanically how different discharge types work and therefore must basically always be very closely related). Outside of these constraints, I will check the sensitivity of the anaylses to different variances and covariances for these simulated variables. 
+2) Simulate 5 characters
 
-3) Calculate independent contrasts & covariances: I'll ultimately present the covariance matrix for these traits with respect to the 700 tip tree (one for each different sensitivity test for comparison)
+3) Calculate independent contrasts & get the covariance matrix: I'll ultimately present the covariance matrix for these traits with respect to the 700 tip tree 
 
 4) Ignore phylogeny: Finally, I'll do the same analyses for these simulated characters, but without taking the simulated phylogeny into account in order to determine the strength of the effect of the phylogeny. 
 
-5) I will repeat all of these steps for the same tree, but with tips successively dropped (to 350, 250, 50, 20, and 3 tips), so that I can get an idea of how my real characters (when I have that data) will be affected by my taxon sampling and the taxon sampling of the most recent phylogeny available when it's time for my real analyses. 
+5) I will repeat all of these steps for the same tree, but with tips successively dropped (to 350, 250, 100, 50, 25, and 3 tips), so that I can get an idea of how my real characters (when I have that data) will be affected by my taxon sampling and the taxon sampling of the most recent phylogeny available when it's time for my real analyses. 
+
+6) If I have time, I'll play around with adding more characters and checking the sensitivity of the analyses to changing the variance of the characters, since there isn't enough data in the literature for me to use an estimate of the variance based on real life. 
 
 
 ## Methods
@@ -54,6 +55,14 @@ Initial simulated tree with 700 tips to represent the 700 extant species of *Sel
 ![Simulated characters mapped onto tree](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/700_tips_characters_1.png)
 
 Simulated characters mapped onto tree
+
+![350tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/350tips.png)
+
+![250tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/250tips.png)
+
+![100tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/100tips.png)
+
+![50tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/50tips.png)
 
 
 ## Discussion

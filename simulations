@@ -25,29 +25,12 @@ t6<- drop.tip(t5, sample(x = 1:50, size = 25, replace = F))
 plot(t6,show.tip.label = FALSE)
 
 t7<- drop.tip(t6, sample(x = 1:25, size = 22, replace = F))
-plot(t7,show.tip.label = FALSE)
+plot(t,show.tip.label = FALSE)
 
 
 #simulating character evolution
 
-##simulating 5 characters: 
-
-1. megaspore discharge type (variance=1)
-2. microspore discharge type (variance=1)
-3. sporangial arrangement (varaince=0.32)
-4. megasporangium anatomy (variance=1)
-5. microsporangium anatomy (variance=1)
-
-Covaraince:
-1&4= 0.9
-2&5= 0.9
-3 is 0 with all other characters
-1&2= 0.2
-1&5= 0.2
-2&1= 0.2
-2&5= 0.2
-
-make a variance-covariance matrix to describe this relationship:
+variance-covariance matrix:
 
 vcv <- diag( 5 )
 vcv[1,2] <- 0.2
@@ -71,6 +54,61 @@ library( adephylo )
 library( phylobase )
 D4 <- phylo4d( t, D[,,1] )
 table.phylo4d( D4, box=FALSE )
+
+##tree2
+library(geiger)
+D <- sim.char( t2, vcv, nsim = 100, model = "BM", root = 0 )
+D[,,1]
+library( adephylo )
+library( phylobase )
+D4 <- phylo4d( t2, D[,,1] )
+table.phylo4d( D4, box=FALSE )
+
+##tree3
+library(geiger)
+D <- sim.char( t3, vcv, nsim = 100, model = "BM", root = 0 )
+D[,,1]
+library( adephylo )
+library( phylobase )
+D4 <- phylo4d( t3, D[,,1] )
+table.phylo4d( D4, box=FALSE )
+
+##tree4
+library(geiger)
+D <- sim.char( t4, vcv, nsim = 100, model = "BM", root = 0 )
+D[,,1]
+library( adephylo )
+library( phylobase )
+D4 <- phylo4d( t4, D[,,1] )
+table.phylo4d( D4, box=FALSE )
+
+##tree5
+library(geiger)
+D <- sim.char( t5, vcv, nsim = 100, model = "BM", root = 0 )
+D[,,1]
+library( adephylo )
+library( phylobase )
+D4 <- phylo4d( t5, D[,,1] )
+table.phylo4d( D4, box=FALSE )
+
+##tree6
+library(geiger)
+D <- sim.char( t6, vcv, nsim = 100, model = "BM", root = 0 )
+D[,,1]
+library( adephylo )
+library( phylobase )
+D4 <- phylo4d( t6, D[,,1] )
+table.phylo4d( D4, box=FALSE )
+
+##tree7
+library(geiger)
+D <- sim.char( t7, vcv, nsim = 100, model = "BM", root = 0 )
+D[,,1]
+library( adephylo )
+library( phylobase )
+D4 <- phylo4d( t7, D[,,1] )
+table.phylo4d( D4, box=FALSE )
+
 
 ##independent contrasts 
 ic1 <- pic( D[,1,1], t )
