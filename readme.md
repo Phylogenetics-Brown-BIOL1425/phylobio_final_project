@@ -12,7 +12,23 @@ Hyperiid amphipods (Amphipoda:Peracarida:Eumalacostraca:Crustacea:Arthropoda) ar
 
 The specificity of the interactions varies across families of hyperiid amphipods. Some are specialist parasitoids like <i>Phronima sedentaria</i> on salps (Laval, 1978). Other are more like generalist hitchhickers like <i>Hyperia medusarum</i> (Laval, 1980). The gelatinous zooplankton hosts of hyperiid amphipods present an outstanding phylogenetic diversity, including colonial radiolarians, ctenophores, hydromedusae, scyphomedusae, siphonophore colonies, salps, and doliolids. Hosts and amphipods are delicate creatures, and their association can be easily broken by stress or disturbance, such as a plankton net tow. Consequentially, in studies using traditional plankton collection methods, these relationships are overlooked. However, these interactions have been successfully described in detail by scientists in the last century, after the advent of SCUBA diving techniques, which allow the careful collection of intact specimens using jars (Haddock, 2004).
 
-The follwoing articles comprise a broad compendium of these studies:
+The goal of this project is to compare the evolutionary histories of hyperiid amphipods and their hosts in the ocean. To do so, I will build an association matrix from the literature above on interspecific interactions. In order to study the interactions from a phylogenetic perspective I will need a phylogeny for the hyperiid amphipods, and a phylogeny for gelatinous hosts. To do so, I will download the 18S gene sequences from NCBI Nucleotide GeneBank for the diversity of host and amphipod species and build two gene trees to serve as a proxy for each of the species phylogeny.
+
+###Specific goals:
+
+1) Visualize the phylogenies together with the association network.
+
+2) Carry out a cophylogenetic analysis to measure global congruence between the trees. 
+
+3) Examine the evolution of host specificity in hyperiid amphipods, and colonization vulnerability in gelatinous hosts.
+
+4) Identify phylogenetic patterns in the colonization of living-habitat by hyperiid amphipods, thorugh a phylogenetic community ecology approach. Test for phylogenetic structure (clustering/overdispersion).
+
+## Methods
+
+### Association data:
+
+Hyperiid amphipod - Gelatinous host associations (unquantified, recorded categorically as presence) were recorded from the literature review of the following studied:
 
 [Madin LP, Harbison GR. The associations of Amphipoda Hyperiidea with gelatinous zooplankton—I. Associations with Salpidae. Deep Sea Research. 1977 May 1;24(5):449IN1457-56IN4463.](http://www.sciencedirect.com/science/article/pii/0146629177904830)
 
@@ -28,23 +44,11 @@ The follwoing articles comprise a broad compendium of these studies:
 
 [Gasca R, Hoover R, Haddock SH. New symbiotic associations of hyperiid amphipods (Peracarida) with gelatinous zooplankton in deep waters off California. Journal of the Marine Biological Association of the United Kingdom. 2015 May 1;95(03):503-11.](http://journals.cambridge.org/abstract_S0025315414001416)
 
-The goal of this project is to compare the evolutionary histories of hyperiid amphipods and their hosts in the ocean. To do so, I will build an association matrix from the literature above on interspecific interactions. In order to study the interactions from a phylogenetic perspective I will need a phylogeny for the hyperiid amphipods, and a phylogeny for gelatinous hosts. To do so, I will download the 18S gene sequences from NCBI Nucleotide GeneBank for the diversity of host and amphipod species and build two gene trees to serve as a proxy for each of the species phylogeny.
-
-###Specific goals:
-
-1) Visualize the phylogenies together with the association network.
-
-2) Carry out a cophylogenetic analysis to measure congruence between the trees and identify host switching patterns or incomplete sorting events during the coevolution of parasitoids and hosts. 
-
-3) Examine the evolution of host specificity in hyperiid amphipods, and colonization susceptibility in gelatinous hosts.
-
-4) Identify phylogenetic patterns in the colonization of living-habitat by hyperiid amphipods, thorugh a phylogenetic community ecology approach. Test for phylogenetic structure (clustering/overdispersion).
-
-## Methods
-
-Hyperiid amphipod - Gelatinous host associations (unquantified, recorded categorically as presence) were recorded from the literature review. Most associations not resolved to the species level were discarded for this study.
+Most associations not resolved to the species level were discarded for this study.
 
 [Associations file here.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/Associations.csv)
+
+### Molecular data:
 
 Host and amphipod 18S fasta sequences were retrieved from NCBI Batch Entrez using the GI numbers for each taxon sequence.
 
@@ -56,7 +60,7 @@ Additional taxa were included (and pruned out a posteriori) to increase the robu
 
 For the sake of making good use of species-to-species association data for interesting species which do not have available annotated 18S sequence data, I used "sequence proxies". This artifact consists in using a sequence annotated as "Species sp." as a placeholder (or viceversa), assuming it would have an approximate phylogenetic placement to the morphospecies of interest.
 
-<b>Host 18S phylogeny:</b>
+<b>Host 18S taxa:</b>
 
 **Outgroup:**
 *Euglena intermedia*
@@ -87,7 +91,7 @@ Other deuterostome:
 *Sphaerozoum punctatum* as *Sphaerozoum sp.*
 *Collozoum inerme* as *Collozoum sp.*
 
-<b>Amphipod 18S phylogeny:</b>
+<b>Amphipod 18S taxa:</b>
 
 **Outgroups:**
 *Cyathura carinata*, 
@@ -109,7 +113,7 @@ Other deuterostome:
 *Phronima sp.* used as *Phronima sedentaria*.
 *Paraphronima sp.* used as *Paraphronima gracilis*.
 
-###For both amphipods and hosts:
+### Phylogenetic analysis:
 
 The MSA alignments were carried out using MAFFT (Method: L-INS-i, no additonal parameters). I used Mesquite 2.75 (Maddison, 1994) to output the alignments in Phylipp and Nexus formats for phylogenetic analysis.
 
@@ -127,7 +131,7 @@ Supplementary figure 1. Host 18S GTR+Gamma ML (RAxML) tree. 100 non-parametric b
 ![FM2](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/constrainedRAW.png)
 Supplementary figure 2. Hyperiid amphipod 18S GTR+Gamma ML (RAxML) tree. Nodes labeled with bootstrap support values.
 
-###Analysis and visualization:
+### Eco-Evo analysis and visualization:
 
 For the analysis and visualizations in R, I used the packages: 
 ape, phytools, phangorn, adephylo, ggtree, dendextrend, picante, paco, and igraph.
@@ -136,9 +140,9 @@ ape, phytools, phangorn, adephylo, ggtree, dendextrend, picante, paco, and igrap
 
 Trees were pruned to contain only the tips for which I have association data for, and transformed into ultrametric using ape::chronos(). trees were also stored as phylogenetic distance matrices using cophenetic().
 
-The association matrix obtained from the literature review was pruned to contain only species represented in the phylogenies used. Associations were visualized using igraph::tkplot(). Inter-host ecological distance matrix was calculated using picante::comdist(). Inter-amphipod ecological distance matrix was calculated using picante::species.dist(). Bipartite network analysis was carried out using bipartite.
+The association matrix obtained from the literature review was pruned to contain only species represented in the phylogenies used. Associations were visualized using igraph::tkplot(). Inter-host ecological distance matrix was calculated using picante::comdist(). Inter-amphipod ecological distance matrix was calculated using picante::species.dist(). Bipartite network analysis was carried out using bipartite::grouplevel().
 
-Host-amphipod cophylogenetic congruence (level of cospeciation) was tested using a Procrustean Application to Cophylogenetic Analysis paco::PACo() (r0 permutation method, cailliez correction method), and ParaFit global fit methods ape::parafit. Phylogenetic signal in generality and vulnerability traits calculated using Blomberg's K with picante::Kcalc().
+Host-amphipod cophylogenetic congruence (level of cospeciation) was tested using ape::parafit (caillez corrected) and PACo, a Procrustean Application to Cophylogenetic Analysis paco::PACo() (r0 permutation method, cailliez correction method), and ParaFit global fit methods ape::parafit. Phylogenetic signal in generality and vulnerability traits calculated using Blomberg's K with picante::Kcalc().
 Cophylogeny plot was produced using ape::cophyloplot().
 
 Phylogenetic community ecology methods used were:
@@ -190,7 +194,7 @@ Figure 10. Heatmap of the pairwise distances between gelatinous host species com
 ![F11](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/hostMDS.png)
 Figure 11. Multidimensional scaling plot for host distance matrix used in Figure 10.
 
-Hosts show an even more complex association similarity matrix (Figure 10), proportional to the greater number of taxa included. In this case, an increased number of shared amphipod species has very different ecological implications. A gelatinous macroplankton community assemblage with many shared amphipod species would favor a greater amphipod diversity, greater chances of interspecies transfection of amphipods, and relief of predation (sensu lato) pressure on the host populations. The medusae Pelagia noctiluca, *Pandea conica*, and the salp *Salpa aspera* showed the most differentiated amphipod associations (Figure 11).
+Hosts show an even more complex association similarity matrix (Figure 10), proportional to the greater number of taxa included. The medusae Pelagia noctiluca, *Pandea conica*, and the salp *Salpa aspera* showed the most differentiated amphipod associations (Figure 11).
 
 Bipartite network analysis (bipartite::grouplevel, HL represents the hyperiid amphipods, LL represents the gelatinous hosts):
 
@@ -225,9 +229,7 @@ Partner H' diversity |
 Generality | Vulnerability 
 4.549296 | 3.375587 
 
-With a total number of links of 213, the overall discrepancy (number of missing links to a maximally connected network of 393 links) is 180 links. The average generality for the hyperiid amphipods included in this study is of 4-5 host species per predator, while the average vulnerability to amphipod colonization for these gelatinous animals is of 3-4 amphipod species per host. The Shannon-Weaver H diversity index of links per species is higher for hyperiid amphipods than for gelatinous hosts, although from binary data it is not informed by the frequency nor relative abundance of the associations. The robustness and extinction slope (resilience to extinction of associated taxa) for hyperiid amphipods came out higher than for gelatinous hosts, probably realted to the higher partner diversity. However, it does not make sense to talk about host robustness, as gelatinous zooplankton could probably survive just as well or better without hyperiid amphipods, given the nature of these interactions. 
-
-The C-scores close to 1 indicates a signal of repulsion between species, possibly due to competition. However, the variance ratios larger than 1 indicate positive agregation signal. I do not believe any of these indices as they are not informed by phylogenetic relationships.
+With a total number of links of 213, the overall discrepancy (number of missing links to a maximally connected network of 393 links) is 180 links. The average generality for the hyperiid amphipods included in this study is of 4-5 host species per predator, while the average vulnerability to amphipod colonization for these gelatinous animals is of 3-4 amphipod species per host. The Shannon-Weaver H diversity index of links per species is higher for hyperiid amphipods than for gelatinous hosts, although from binary data it is not informed by the frequency nor relative abundance of the associations. The robustness and extinction slope (resilience to extinction of associated taxa) for hyperiid amphipods came out higher than for gelatinous hosts, probably realted to the higher partner diversity. However, it does not make sense to talk about host robustness, as gelatinous zooplankton could probably survive just as well or better without hyperiid amphipods, given the nature of these interactions. The C-scores close to 1 indicates a signal of repulsion between species. 
 
 But, how far did sharing a common evolutionary history generate this association network?
 
@@ -242,7 +244,7 @@ The cophylogeny (Figure 12) shows the realtionship between common ancestry and a
 ![Figure 13](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/good_specificity.png)
 Figure 13. Amphipod phylogeny showing a brownian motion reconstruction of host specifity (blue - generalist, red - specialist).
 
-Figure 13 shows the evolution a key aspect of hyperiid amphipods' ecological role: host specificity. Host specificty could be used as a proxy of likelihood to interact as a parasite/parasitoid (with greater chance of a co-speciation history) rather than a generalist predator or hitchhiker. Blomberg's K for phylogenetic signal (Blomberg et al., 2003) in host specificity is medium, 0.3242. Interestingly, if we remove the effect of branch lengths (setting them all to 1), we get a Blomberg's K of 0.63277. Based on figure 13, The MRCA reconstruction would estimate it may have been associated with 2-3 host species.
+Figure 13 shows the evolution a key aspect of hyperiid amphipods' ecological role: host specificity. Host specificty could be used as a proxy of likelihood to interact as a parasite/parasitoid (with greater chance of a co-speciation history) rather than a generalist predator or hitchhiker. Blomberg's K for phylogenetic signal (Blomberg et al., 2003) in host specificity is medium, 0.3242. Interestingly, if we remove the effect of branch lengths, we get a Blomberg's K of 0.63277. Based on figure 13, The MRCA reconstruction would estimate it may have been associated with 2-3 host species.
 
 ![Figure 14](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/good_popularity.png)
 Figure 14. Gelatinous host phylogeny showing a brownian motion reconstruction of associated amphipod richness - vulnerability (blue - common target, red - rare target).
@@ -257,32 +259,42 @@ A mantel test of the phylogenetic distance matrices against the association-base
 Hyperiid amphipods: r = -0.127, p=0.861 (non-significant relationship).
 Gelatinous zooplankton hosts: r = 0.0124, p=0.427 (non-significant relationship).
 
-On a second approach to this question, I tried obtaining the mean Blomberg's K for each association in contrast to each of the phylogenies. The hyperiid amphipod phylogeny had a mean K of 0.5730 (SE: 0.5969), and the gelatinous host phylogeny had a mean K of 0.1583 (SE: 0.2901). The standard error values do not undermine the mean avlues, as the dispersion in this distribution is truncated to the left at 0. While we can probably conclude that phylogenetic signal exists in the association data with respect to both phylogenies, we cannot conclude that they are significantly different with this test.
+On a second approach to this question, I tried obtaining the mean Blomberg's K for each association in contrast to each of the phylogenies. The hyperiid amphipod phylogeny had a mean K of 0.5730 (SE: 0.5969), and the gelatinous host phylogeny had a mean K of 0.1583 (SE: 0.2901). The standard error values do not undermine the mean avlues, as the dispersion in this distribution is truncated to the left at 0. 
 
 ###Phylogenetic community ecology:
 
 The picante::phylostruct permutation test for phylogenetic signal in community composition (using the amphipod phylogeny and the hosts as communities) detected an overdispersed pattern (mean observed= -1.15, expected null = -1.24), in other words, a phylogenetic repulsion signal.
-
-As we can see in Figure 14, thaliacean species harbor the richest assemblage of hyperiid amphipods. Brownian motion reconstruction suggests the appearance of a key trait in their MRCA that rendered these animals widely favorable hosts for hyperiid amphipods.
 
 ![F15](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/clustering.png)
 Figure 15. Phylogenetic overdispersion of amphipod species within each host.
 
 The mean value of the phylogenetic clustering analysis of amphipod species for all hosts was 0.9083, indicating again a slightly overdispersed structure. However the standard deviation (0.3953) was large. Some hosts (<i>Thalia democratica</i> and <i>Iasis zonaria</i>) had a greatly overdispersed amphipod community, whilst others (<i>Cyclosalpa affinis, Eurhamphaea vexilligera</i>, and <i>Pterotrachea hippocampus</i>) had a distinct phylogenetic clustering in their amphipod assemblage (Figure 15).
 
-In order to further study the effect of competition in hyperiid amphipod living habitat occupation, wrangled the data to obtain host-sharing links between amphipod species (Figure 16). This can also be used for cophylogenetic analyses (Figure 17). 
+In order to further study the effect of competition in hyperiid amphipod living habitat occupation, wrangled the data to obtain host-sharing links between amphipod species (Figure 8). This can also be used for cophylogenetic analyses (Figure 16). 
 
-![F16](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/competition_heatmap.png)
-Figure 16. Heatmap showing the intensity of potential competititive relationships between hyperiid amphipods based on the number of hosts shared. Dendrograms show similarity in host species colonization.
+![F16](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/competition_cophylo.png)
+Figure 16. Cophylogeny of hyperiid amphipods with themselves, links showing one or more shared hosts.
 
-![F17](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/competition_cophylo.png)
-Figure 17. Cophylogeny of hyperiid amphipods with themselves, links showing one or more shared hosts.
-
-Parafit global fit values for this intra-clade cophylogeny (ParaFitGlobal = 2.738317 , p-value = 0.509) shows little significance.
-
-
+Parafit global fit values for this intra-clade cophylogeny (ParaFitGlobal = 2.738317 , p-value = 0.509) shows little significance. The species with more competition links with other species are *Lycaea pulex* and *Brachyscelus crusculum*.
 
 ## Discussion
+
+### Phylogenetic analyses:
+
+The trees reconstructed with 18S, though far from perfect, offered a good approximation of the species trees necessary for the downstream analyses. 
+The host tree was very nicely resolved, with a very agreeable topology, with exception of the ctenophore internal phylogenetic relationships.
+The amphipod tree failed to reconstruct many clades described in the recent phylogenetic literature. We may be able to conclude from these results that the 18S gene is a good estimator of phylogenetic relationships for deep relationships, but not so much for recent diversification histories. This is possibly due to its level of sequence conservatism due to its strict functional constraints.
+
+### Association ecology:
+
+The ecological analyses yielded fascinating results, describing the differences in association patterns from both the host and the hyperiid amphipod perspective. 
+
+Host sharing patterns in the ecological association matrix for amphipods revealed which taxa may be more prone to competition in a host-limited environment.
+The ecological similarity matrix built from the association data for hosts revealed great diversity in the number of amphipod species shared. An increased number of shared amphipod species has very different ecological implications. A gelatinous macroplankton community assemblage with many shared amphipod species would favor a greater amphipod diversity, greater chances of interspecies transfection of amphipods, and relief of predation (*sensu lato*) pressure on the host populations.
+
+The bipartite network analysis showed species overdispersion in amphipods, possibly due to competition. However, the variance ratios larger than 1 indicate positive agregation signal. I do not believe any of these indices as they are not informed by phylogenetic relationships. As niche theory would predict, "predators" have more prey connections than "prey" do, which in a simplistic view of the ecology, it facilitates predators not running out of prey, and it relieves predation pressure from prey. A relatively low discrepancy value indicates that this network has a high connectance (or association complexity), thich is also reflected in the robustness of amphipods to local extinction of host species. This could have been a selective pressure to increase overall generality in these species.
+
+### Cophylogenetic analysis:
 
 These results indicate that hyperiid amphipods and host have, to some extent, a shared evolutionary history.
 
@@ -294,18 +306,33 @@ Given the low global fit significance obtained, it is likely that the evolutiona
 
 3) Host switching and limited specificity. Not all hyperiid amphipods are obligate parasites/parasitoids of a narrow range of host taxa. Many, like Eupronoe minuta, dwell among a diversity of species. Host specificity varies greatly throughout the phylogeny (Figure 14) so there are reasons to believe host switching could have played a major role in shaping the cophylogeny.
 
-Removing the effects of branchlengths had a huge impact on the results of the cophylogenetic analysis and also on the estimated phylogenetic signal in the ecological traits generality/specificity, availability/vulnerability. It is likely, and specially true for the host tree (which yielded a tenfold increase in phylogenetic signal), that the evolutionary distances between the organims have a minor influence in determining the ecological relationships here studied. The astounding morphological and ecological adaptations that the representatives of the host lineages underwent to take on a pelagic existence (with some degree of convergence between them) probably has a much greater influence on the suitability of the host for hyperiid amphipod colonization. Nonetheless, my results show that the recent phylogenetic histories of these lineages do share some congruence with that of their associated amphipods, probably accounting for most of the global fit. 
+Removing the effects of branchlengths had a huge impact on the results of the cophylogenetic analysis and also on the estimated phylogenetic signal in the ecological traits generality/specificity, availability/vulnerability. It is likely, and specially true for the host tree (which yielded a tenfold increase in phylogenetic signal), that the evolutionary distances between the organisms have a minor influence in determining the ecological relationships here studied. The astounding morphological and ecological adaptations that the representatives of the host lineages underwent to take on a pelagic existence (with some degree of convergence between them) probably has a much greater influence on the suitability of the host for hyperiid amphipod colonization. Nonetheless, my results show that the recent phylogenetic histories of these lineages do share some congruence with that of their associated amphipods, probably accounting for most of the global fit.
 
-Phylogenetic community ecology analyses summarized the living habitat occupation by hyperiid amphipods. The generalized overdispersion pattern observed in the results may be accounting for competitive effects within each host. These negative ecological interactions could have shaped the host association process and the evolutionary history of hyperiid amphipods.
+Due to the small cophylogenetic signal, it was not possible to distinguish which phylogeny had stronger signal on the observed association data. While we can probably conclude that phylogenetic signal exists in the association data with respect to both phylogenies, we cannot conclude that they are significantly different with the tests carried out here.
+
+Only general cophylogenetic patterns were studied here. I did not attempt to reconstruct particular co-speciation or incomplete lineage sorting events in the cophylogeny. I believe the data used is not complete enough to have an accurate level of resolution for such questions.
+
+### Phylogenetic community ecology:
+
+Phylogenetic community ecology analyses summarized the living habitat occupation by hyperiid amphipods. The generalized overdispersion pattern observed in the results may be accounting for competitive effects within each host. These negative ecological interactions could have shaped the host association process and the evolutionary history of hyperiid amphipods. 
+
+A cophylogenetic analysis of the competitive associations (potential, given biogeographical coexistance of the amphipod species and the shared host species) shows a non significant global fit, which rejects the hypothesis of hyperiid amphipods sharing host species having speciated together. 
+
+As we can see in the figures, thaliacean species harbor the richest assemblage of hyperiid amphipods. Brownian motion reconstruction suggests the appearance of a key trait in their MRCA that rendered these animals widely favorable hosts for hyperiid amphipods.
+
+## Personal discussion
+
+### Difficulties:
 
 The biggest difficulty in implementing these analyses was obtaining reliable trees. 18S gene trees hardly conform to the expected species trees. In the case of gelatinous hosts, adding ingroups and outgroups wass sufficient to fix the greatest anomalies. For the hyperiid amphipod tree, I had to apply an external constraint to keep <i> Hyperietta stephenseni </i> from showing up as sistergroup to every other amphipod taxon. 
 
-Another difficulty I found was figuring out what tools to use for cophylogenetic analyses and where to find them. Cophylogenetics and phylogenetic community ecology are not very popular fields, so few educational resources and guides are available for newcomers and early career scientists. The cophylogenetic analyses carried out here are not the only tests that can be done. There are many others such as CopyCat (Meier-Kolthof et al., 2007), Jane (Conow et al., 2010), etcetera ... which claim to have a more accurate algorithm to compute congruence and infer co-evolutionary events. I feel that this field needs a thorough revision of the methods. 
+Another difficulty I found was figuring out what tools to use for cophylogenetic analyses and where to find them. Cophylogenetics and phylogenetic community ecology are not very popular fields, so few educational resources and guides are available for newcomers and early career scientists. The cophylogenetic analyses carried out here are not the only tests that can be done. There are many others such as CopyCat (Meier-Kolthof et al., 2007), Jane (Conow et al., 2010), etcetera ... , each claiming to have a more accurate algorithm to compute congruence and infer co-evolutionary events. I feel that this field needs a thorough revision of the methods available, in combination with a revision of the theoretical background and assumptions. 
 
-If I did these analyses again, I would use concatenated matrix trees with newly collected molecular data for the species of interest. This way I would provide more accurate phylogenies upstrem, which would greatly improve the overall accuracy of the analyses. In addition, I would put more care in making informed decisions on the alignment and tree search parameters used. 
+### Limitations:
+
+If I did these analyses again, I would use concatenated seuqence matrix trees with newly collected molecular data for the species of interest. This way I would provide more accurate phylogenies upstrem, which would greatly improve the overall accuracy of the analyses. In addition, I would put more care in making informed decisions on the alignment and tree search parameters used. I would explore the significance of each of the optional arguments, metrics, and correction methods for each one of the tools used.
 
 Moreover, the association data used included only presence data (absences not reported), and had no information on the strength or frequency of the interaction, nor the type of interaction (parasitoidism, parasism, predation, phoresis...). In the future, I intend to record a detailed matrix with these data to better understand these interactions in the context of cophylogenetics.
-
 
 ## References
 

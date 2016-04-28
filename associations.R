@@ -184,12 +184,31 @@ cophyloplot(ultramphipod, ultram, assoc = reprunedass, type="phylogram", space=1
 #cophyloplot(ultramphipod, ultram, assoc = reprunedass, type="phylogram", space=110, gap=0,show.tip.label=T, use.edge.length=F, col="orange", rotate = T)
 #cophy = cophylo(ultramphipod, ultram, assoc = reprunedass, rotate = F)
 #plot(cophy)
+
+##Study the effects of competition between hyperiid amphipods
 competition = melt(as.matrix(adist_amphipods))
 colnames(competition) = c("amphi1", "amphi2", "score")
 competition = competition[which(competition$score > 0.00001 | competition$score < -0.00001),c(1:2)]
 competition = competition[!duplicated(t(apply(competition, 1, sort))),]
 cophyloplot(ultramphipod, ultramphipod, assoc = competition, type="phylogram", space=110, gap=0,show.tip.label=T, use.edge.length=F, col="orange")
+compmatrix = as.matrix(dcast(competition, amphi1 ~ amphi2, length))
+rownames(compmatrix) = compmatrix[,1]
+compmatrix = compmatrix[,-1]
+class(compmatrix) = "numeric"
 
+atree1 = drop.tip(ultramphipod, which(!(ultramphipod$tip.label %in% rownames(compmatrix))))
+atree2 = drop.tip(ultramphipod, which(!(ultramphipod$tip.label %in% colnames(compmatrix))))
+flatatree1 = atree1
+flatatree1$edge.length = rep(mean(flatatree1$edge.length), length(flatatree1$edge.length))
+flatatree2 = atree2
+flatatree2$edge.length = rep(mean(flatatree2$edge.length), length(flatatree2$edge.length))
+
+pf_comp = parafit(as.matrix(cophenetic(atree1)),as.matrix(cophenetic(atree2)), compmatrix, correction = 'cailliez')
+pf_comp
+pf_comp_flat = parafit(as.matrix(cophenetic(flatatree1)),as.matrix(cophenetic(flatatree2)), compmatrix, correction = 'cailliez')
+pf_comp_flat
+
+cophyloplot(atree1, atree2, assoc = competition, type="phylogram", space=110, gap=0,show.tip.label=T, use.edge.length=F, col="red")
 
 #Popularity of hosts, generalist/specialist amphipods
 table(reprunedass[,2])
