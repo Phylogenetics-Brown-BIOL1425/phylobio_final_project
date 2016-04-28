@@ -1,54 +1,0 @@
-
-nseq =  9
-distance =  ktuples
-iterate =  0
-cycle =  2
-nthread = 0
-done.
-scoremtx = 1
-Gap Penalty = -1.53, +0.00, +0.00
-
-tuplesize = 6, dorp = p
-
-
-Making a distance matrix ..
-WARNING : Unknown character XWARNING : Unknown character XWARNING : Unknown character XWARNING : Unknown character XWARNING : Unknown character X    1 / 9
-done.
-
-Constructing a UPGMA tree ... 
-    0 / 9
-done.
-
-Progressive alignment ... 
-STEP     1 / 8 fSTEP     2 / 8 fSTEP     3 / 8 fSTEP     4 / 8 fSTEP     5 / 8 fSTEP     6 / 8 fSTEP     7 / 8 fSTEP     8 / 8 f
-done.
-
-disttbfast (aa) Version 7.017b alg=A, model=BLOSUM62,  1.530, -0.000, -0.000
-0 thread(s)
-nthread = 0
-blosum 62 / kimura 200
-done.
-scoremtx = 1
-Gap Penalty = -1.53, +0.00, +0.00
-Making a distance matrix .. 
-    0 / 8
-done.
-
-Constructing a UPGMA tree ... 
-    0 / 9
-done.
-
-Progressive alignment ... 
-STEP     1 /8 fSTEP     2 /8 fSTEP     3 /8 fSTEP     4 /8 fSTEP     5 /8 fSTEP     6 /8 fSTEP     7 /8 fSTEP     8 /8 f
-done.
-tbfast (aa) Version 7.017b alg=A, model=BLOSUM62,  1.530, -0.000, -0.000
-0 thread(s)
-
-
-Strategy:
- FFT-NS-2 (Fast but rough)
- Progressive method (guide trees were built 2 times.)
-
-If unsure which option to use, try 'mafft --auto input > output'.
-For more information, see 'mafft --help', 'mafft --man' and the mafft page.
-
