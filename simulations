@@ -37,6 +37,7 @@ vcv[1,2] <- 0.2
 vcv[1,3] <- 0.0
 vcv[1,4] <- 0.9
 vcv[1,5] <- 0.2
+vcv[3,3] <- 0.3
 
 vcv <- diag( 3 )
 vcv[1,2] <- 0.2
@@ -111,6 +112,16 @@ table.phylo4d( D4, box=FALSE )
 
 
 ##independent contrasts 
+
+##change t to change which tree it does it for 
+
+##3characters
+ic1 <- pic( D[,1,1], t )
+ic2 <- pic( D[,2,1], t )
+ic3 <- pic( D[,3,1], t )
+
+cov( cbind( ic1, ic2, ic3 ) )
+##5 characters
 ic1 <- pic( D[,1,1], t )
 ic2 <- pic( D[,2,1], t )
 ic3 <- pic( D[,3,1], t )
@@ -119,11 +130,7 @@ ic5 <- pic( D[,5,1], t )
 
 cov( cbind( ic1, ic2, ic3, ic4, ic5) )
 
-ic1 <- pic( D[,1,1], t )
-ic2 <- pic( D[,2,1], t )
-ic3 <- pic( D[,3,1], t )
 
-cov( cbind( ic1, ic2, ic3 ) )
 
 
 ##covariance of values at the tips (not independent contrasts)
