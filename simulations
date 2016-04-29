@@ -62,7 +62,7 @@ B <- sim.char( t2, vcv, nsim = 100, model = "BM", root = 0 )
 B[,,1]
 library( adephylo )
 library( phylobase )
-B4 <- phylo4d( t2, D[,,1] )
+B4 <- phylo4d( t2, B[,,1] )
 table.phylo4d( B4, box=FALSE )
 
 ##tree3
@@ -71,7 +71,7 @@ C <- sim.char( t3, vcv, nsim = 100, model = "BM", root = 0 )
 C[,,1]
 library( adephylo )
 library( phylobase )
-C4 <- phylo4d( t3, D[,,1] )
+C4 <- phylo4d( t3, C[,,1] )
 table.phylo4d( C4, box=FALSE )
 
 ##tree4
@@ -89,7 +89,7 @@ E <- sim.char( t5, vcv, nsim = 100, model = "BM", root = 0 )
 E[,,1]
 library( adephylo )
 library( phylobase )
-E4 <- phylo4d( t5, D[,,1] )
+E4 <- phylo4d( t5, E[,,1] )
 table.phylo4d( E4, box=FALSE )
 
 ##tree6
@@ -98,7 +98,7 @@ F <- sim.char( t6, vcv, nsim = 100, model = "BM", root = 0 )
 F[,,1]
 library( adephylo )
 library( phylobase )
-F4 <- phylo4d( t6, D[,,1] )
+F4 <- phylo4d( t6, F[,,1] )
 table.phylo4d( F4, box=FALSE )
 
 ##tree7
@@ -107,7 +107,7 @@ G <- sim.char( t7, vcv, nsim = 100, model = "BM", root = 0 )
 G[,,1]
 library( adephylo )
 library( phylobase )
-G4 <- phylo4d( t7, D[,,1] )
+G4 <- phylo4d( t7, G[,,1] )
 table.phylo4d( G4, box=FALSE )
 
 
