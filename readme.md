@@ -89,13 +89,15 @@ The biggest difficulty in implementing these analyses was...
 If I did these analyses again, I would...
 
 ##Acknowledgements
-Mike Rosario
+Andrew Leslie, for help with (hopefully if I get to this) heat-mapping the characters instead of using those ugly circles, and how to look at the evolution of discrete characters. 
 
-Casey Dunn
+Mike Rosario, for patiently helping me with R.
 
-Abby Moore
+Casey Dunn, for suggesting this simulated version of the project when I didn't have my own data to use.
 
-Andrew Leslie 
+Abby Moore, for heling me (last semester) build the trees in the *Selaginella* rbcL analysis folder of this repository. They're not technically part of this project, but I thought it would be useful to have all of my *Selaginella* phylogenetics projects in one place so that it's easier to come back to later on. 
+
+
 
 
 
