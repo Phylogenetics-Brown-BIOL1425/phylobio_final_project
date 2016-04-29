@@ -95,7 +95,7 @@ Mike Rosario, for patiently helping me with R.
 
 Casey Dunn, for suggesting this simulated version of the project when I didn't have my own data to use.
 
-Abby Moore, for heling me (last semester) build the trees in the *Selaginella* rbcL analysis folder of this repository. They're not technically part of this project, but I thought it would be useful to have all of my *Selaginella* phylogenetics projects in one place so that it's easier to come back to later on. 
+Abby Moore, for helping me (last semester) build the trees in the *Selaginella* rbcL analysis folder of this repository. They're not technically part of this project, but I thought it would be useful to have all of my *Selaginella* phylogenetics projects in one place so that it's easier to come back to later on. 
 
 
 
