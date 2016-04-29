@@ -113,7 +113,6 @@ table.phylo4d( G4, box=FALSE )
 
 ##independent contrasts 
 
-cov( cbind( ic1, ic2, ic3 ) )
 
 ##5 characters
 ic1 <- pic( A[,1,1], t )
@@ -201,6 +200,7 @@ cols<-rbPal(10)[as.numeric(cut(tree7,breaks=10))]
 heatmap(tree7,col=cols)
 
 ##covariance of values at the tips (not independent contrasts)
+
 notree1<-cov( cbind( A[,1,1], A[,2,1], A[,3,1], A[,4,1], A[,5,1] ) )
 library(RColorBrewer)
 rbPal<-colorRampPalette(c('blue','red')) 
@@ -243,8 +243,13 @@ rbPal<-colorRampPalette(c('blue','red'))
 cols<-rbPal(10)[as.numeric(cut(notree7,breaks=10))]
 heatmap(notree7,col=cols)
 
-cov( cbind( D[,1,1], D[,2,1], D[,3,1] ) )
 
+
+
+
+
+
+##bits of stuff that I used to build the above... 
 
 ##drop tips
 
