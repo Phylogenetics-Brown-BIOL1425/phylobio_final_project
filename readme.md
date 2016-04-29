@@ -220,6 +220,12 @@ Entanglement = 0.2572355
 
 **Notice the very short branch length**
 
+![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Concatnated_tanglegram.png "Figure 21D: phylogeny for gene BG")
+
+
+**Entanglement = 0.09186049**
+
+
 ![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BKandGamma_concatenated.png "Figure 21D: phylogeny for gene BG")
 
 
