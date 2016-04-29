@@ -32,7 +32,12 @@ The data I will use are sequences available online from different papers on prev
 
 ## Methods
 
-The tools I used were... See analysis files at (links to analysis files).
+Downloaded fasta files for the genes, trnK, trnL, and ITS as available for each species from GenBank, using the accession numbers in Table 2 of C. Brauchler et al 2010. 
+Combined the fasta files for each gene using the commands cat *_trnK.fasta > trnKcombined.raw.fasta cat *_trnL.fasta > trnLcombined.raw.fasta cat *_ITS.fasta > ITScombined.raw.fasta
+Changed the fasta header rows to have just the species name using the commands sed -E 's/>.+\| ([a-zA-Z]+) ([a-zA-Z]+)[\. ].+/>\1_\2/g' trnKcombined.raw.fasta > trnKcombined.fasta
+sed -E 's/>.+\| ([a-zA-Z]+) ([a-zA-Z]+)[\. ].+/>\1_\2/g' trnLcombined.raw.fasta > trnLcombined.fasta
+sed -E 's/>.+\| ([a-zA-Z]+) ([a-zA-Z]+)[\. ].+/>\1_\2/g' ITScombined.raw.fasta > ITScombined.fasta
+
 
 ## Results
 
