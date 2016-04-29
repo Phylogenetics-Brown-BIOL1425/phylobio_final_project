@@ -1,23 +1,14 @@
-# Phylogenetic Biology - Final Project
-
-# Introgression in *Viburnum*
+# Testing ipyrad parameter effects on tree output for a recently diverged group
 
 ## Introduction and Goals
 
-The sister species *Viburnum mattii* and *Viburnum oonakatensis* have produced previously identified hybrid swarms, (Donoghue, 1982) but we don't know the level of genetic contribution from the parents to individuals in the swarm. What is the extent of genetic introgression between these two species of *Viburnum*? In this study, I will:
+RADseq is a good method for sequencing parts of the genome. Once reads are sequenced, they have to be stitched together and aligned. One program for doing this, ipyrad ([Eaton, 2015](http)) has default parameters for stringency of alignment. Though the default parameters may work well in general, I do not know how well they work for recently diverged taxa that may have more sequence homology. In this study, I will run multiple assemblies with different levels of stringency in percent sequence/cluster overlap. I will then create trees with the different output files to see if we still reconstitute our expected trees.
 
-* Test the level of introgression between pure parent populations of *V. mattii* and *V. oonakatensis* (Are the parents truly genetically isolated to begin with?) 
+To run this analysis, we will use sequence data from species and hybrids from previously identified populations of *Viburnum*. (Donoghue, 1982) The structure of this data will allow us to see how changes in clustering stringeny change our ability to resolve tree topology for closely related parent species and their recent hybrids. Given the close relations of the these plants, I hypothesize that they will have relatively similar sequence data, allowing us to use a higher clustering stringency than the default.
 
-* Test for introgression between parents and hybrids (Do the hybrids show introgression between the parent species?) 
-
-* Test population structure of hybrids (How much of each hybrid's genome comes from one parent versus the other?) 
-
-The level of introgression and clustering of parental genetic contributions within the hybrids will give us a better idea about gene flow from the parental popluation to the hybrid swarm. Knowledge about the genetic contributions of the parents will inform future studies on heritable plant traits.
-
-The data I will use for this analysis are RADseq reads provided by Deren Eaton from plants obtained during a collecting trip in the summer of 2015. I will use pyRAD ([Eaton, 2014](http://bioinformatics.oxfordjournals.org/content/30/13/1844)) to perform contig assembly, tree assembly, and ABBA/BABA testing ([Durand et al., 2011](http://mbe.oxfordjournals.org/content/28/8/2239)) to test for introgression. I will also use Structure ([Pritchard et al., 2000](http://www.genetics.org/content/155/2/945.short)) to look at population structure clustering.
+## Introduction and Goals
 
 ## Methods
-
 The tools I used were... See analysis files at (links to analysis files).
 
 ## Results
