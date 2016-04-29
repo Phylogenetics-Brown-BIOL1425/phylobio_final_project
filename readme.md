@@ -48,13 +48,7 @@ The tools I used were... See analysis files at (links to analysis files).
 
 ## Results
 
-![Initial simulated tree with 700 tips to represent the 700 extant species of *Selaginella*](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/700_tips_starting_tree.png)
-
-Initial simulated tree with 700 tips to represent the 700 extant species of *Selaginella*
-
-![Simulated characters mapped onto tree](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/700_tips_characters_1.png)
-
-Simulated characters mapped onto tree
+![700tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/700_tips_starting_tree.png)
 
 ![350tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/350tips.png)
 
@@ -68,17 +62,19 @@ Simulated characters mapped onto tree
 
 ![3tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/3tips.png)
 
-![350tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tree2characters.png)
+![700tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/700tree_characters.png)
 
-![250tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tree3characters.png)
+![350tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/350tree_characters.png)
 
-![100tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tree4characters.png)
+![250tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/250tree_characters.png)
 
-![50tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tree5characters.png)
+![100tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/100tree_characters.png)
 
-![25tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tree6characters.png)
+![50tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/50tree_characters.png)
 
-![3tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tree7characters.png)
+![25tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/25tree_characters.png)
+
+![3tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/3tree_characters.png)
 
 ## Discussion
 
