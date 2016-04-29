@@ -23,6 +23,7 @@ OK, here we go.
 # Title of my project
 ```{r}
 setwd("~/Dropbox/Brown University/BIOL1425/phylobio_final_project/")
+
 ```
 
 Sensitivity Analysis of EDGE values
@@ -31,13 +32,12 @@ Sensitivity Analysis of EDGE values
 
 It seems inevitable that climate change, along with other anthropogenic factors, will continue to drive the endangerment and extinction of taxa for the immediate future. Each species is by definition a unique parcel of genetic information, which means that an extinction is the loss of a unique genome. With the number of endgangered taxa mounting, it is important to understand the ways in which species will go extinct, and what that means for the loss of phylogenetic diversity. EDGE values (Isaac et al 2007) are a proposed method of combining a species' probability of extinction with a measure of its unique evolutionary history. Calculation of the evolutionary distinctiveness (ED) value is based on tree topology, where a species' score is  the total branch length from the root node to its tip, where internal branches' weight is scaled by the number of tip taxa that share that branch.
 ```{r}
-![Isaac 2007 Fig 1](/images/Isaac_fig1.png)
+![Isaac2007_fig1](Isaac_fig1.png)
 ```
 
 __**The methods I will use to do this are...**__
 
-My goal is to construct the phylogeny for amphibians and map the degree to which each tip node is imperiled onto the phylogeny. With this information, along with a relatedness metric such as  distance between tip node sequence, I hope to observe the pattern of endangerment within the phylogenetic tree (whether it is clustered or uniform), and possibly even which types of genetic information (genes) are most frequently lost. 
-
+My goal is to construct the phylogeny for Salamandridae and map EDGE values (evolutionarily distinct, globally endangered) onto the tips.  
 
 
 __**The data I will use are (my own data/ data publicly available at YYY/ simulations)**__
@@ -75,46 +75,33 @@ dim(accessions)
 accessions[1,]
 
 ```
-I then downloaded a list of all the IUCN designations from the IUCN Red List database (http://www.iucnredlist.org/), storing it locally as a .csv and within the R environment as IUCN_amphibia.
+I then downloaded a list of all the IUCN designations for species within Salamandridae from the IUCN Red List database (http://www.iucnredlist.org/), storing it locally as a .csv and within the R environment as IUCN_salamandridae.
 ```{r}
-IUCN_amphibia=read.csv("IUCN_amphibia.csv", header = TRUE)
-dim(IUCN_amphibia)
-names(IUCN_amphibia)
-row.names(IUCN_amphibia)=IUCN_amphibia[,6]
-IUCN_amphibia=IUCN_amphibia[,-6]
+IUCN_salamandridae=read.csv("IUCN_salamandridae.csv", header = TRUE)
+dim(IUCN_salamandridae)
+names(IUCN_salamandridae)
+row.names(IUCN_salamandridae)=IUCN_salamandridae[,4]
+IUCN_salamandridae=IUCN_salamandridae[,-4]
 ```
 By searching the row names of each dataframe, I pared down the rows in accessions so that I only look at species with designations in the IUCN database. This removed about 500 rows from the original Pyron dataset.
 ```{r}
-accessions=accessions[rownames(accessions)%in%rownames(IUCN_amphibia),]
+accessions=accessions[rownames(accessions)%in%rownames(IUCN_salamandridae),]
 dim(accessions)
 accessions[1,]
 ```
-I then created an IUCN_amphibia_matched dataframe, which listed only those rows which are in accessions, effectively creating two dataframes with identical rows.
+I then created an IUCN_salamandridae_matched dataframe, which listed only those rows which are in accessions, effectively creating two dataframes with identical rows.
 ```{r}
-IUCN_amphibia_matched=IUCN_amphibia[rownames(IUCN_amphibia)%in%rownames(accessions),]
-dim(IUCN_amphibia_matched)
-names(IUCN_amphibia_matched)
+IUCN_salamandridae_matched=IUCN_salamandridae[rownames(IUCN_salamandridae)%in%rownames(accessions),]
+dim(IUCN_salamandridae_matched)
+names(IUCN_salamandridae_matched)
 ```
 I then went into the matched IUCN dataframe and extracted the Red_list_status and Red_list_criteria columns and appended them to my accessions dataframe. 
 ```{r}
-accessions[,13]=IUCN_amphibia_matched[,9]
-accessions[,14]=IUCN_amphibia_matched[,10]
+accessions[,13]=IUCN_salamandridae_matched[,7]
+accessions[,14]=IUCN_salamandridae_matched[,8]
 names(accessions)[13]="Red_list_status"
 names(accessions)[14]="Red_list_criteria"
 names(accessions)
-
-
-#x=row.names(accessions[which(!is.na(accessions[,1])==TRUE),])
-#the species for which there are values!=NA in column 1
-#y=accessions[which(!is.na(accessions[,1])==TRUE),1]
-#the values for the species that have values in column 1
-
-
-#y=accessions[which(!is.na(accessions[,1])==TRUE),1]
-
-#which(!is.na(accessions[,1])==TRUE)
-#row.names(accessions[which(!is.na(accessions[,1])==TRUE),])
-#accessions[which(!is.na(accessions[,1])==TRUE),]
 
 ```
 I then exported my accessions dataframe to a .csv file
@@ -125,6 +112,10 @@ write.csv(accessions,file = "accessions2.csv")
 The tools I used were... See analysis files at (links to analysis files).
 
 Accession numbers for sequences were gathered from Pyron 2011
+mafft alignment
+raxml (starting from hydroid)
+  justification in Pyron for ml method
+
 
 ## Results
 
