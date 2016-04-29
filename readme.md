@@ -101,24 +101,24 @@ Andrew Leslie
 
 ## References
 
-Cain, M.L., Milligan, B.G., & Strand, A.E. (2000). Long-distance seed dispersal in plant populations. American Journal of Botany, 87, 1217-1227
+Cain, M.L., Milligan, B.G., & Strand, A.E. (2000). Long-distance seed dispersal in plant populations. *American Journal of Botany*, 87, 1217-1227
 
-Filippini-De Giorgi, A., Holderegger, R., & Schneller, J. (1997). Aspects of spore dispersal in Selaginella. American Fern Journal, 87, 93-103
+Filippini-De Giorgi, A., Holderegger, R., & Schneller, J. (1997). Aspects of spore dispersal in *Selaginella*. American Fern Journal, 87, 93-103
 
-Horner, H.T. & Arnott, H.J. (1963). Sporangial arrangement in North American species of Selaginella. Botanical Gazette, 124, 371-383. 
+Horner, H.T. & Arnott, H.J. (1963). Sporangial arrangement in North American species of *Selaginella*. Botanical Gazette, 124, 371-383. 
 
 Ingold, C.T. (1939). Spore discharge in land plants. Oxford: Oxford University Press.
 
-Koller, A.L. & Scheckler, S.E. (1986). Variations in microsporangia and microspore dispersal in Selaginella. American Journal of Botany, 73, 1274-1288
+Koller, A.L. & Scheckler, S.E. (1986). Variations in microsporangia and microspore dispersal in *Selaginella*. *American Journal of Botany*, 73, 1274-1288
 
-Korall, P. & Kenrick, P. (2004). The phylogenetic history of Selaginellaceae based on DNA sequences from the plastid and nucleus: Extreme substitution rates and rate heterogeneity. Molecular Phylogenetics and Evolution, 31, 852-864. 
+Korall, P. & Kenrick, P. (2004). The phylogenetic history of Selaginellaceae based on DNA sequences from the plastid and nucleus: Extreme substitution rates and rate heterogeneity. *Molecular Phylogenetics and Evolution*, 31, 852-864. 
 
-Quansah, N. (1988). Sporangial distribution patterns in the strobili of African and Madagascan Selaginella. Annals of Botany, 61, 243-247. 
+Quansah, N. (1988). Sporangial distribution patterns in the strobili of African and Madagascan *Selaginella*. *Annals of Botany*, 61, 243-247. 
 
-Schneller, J., Gerber, H., & Zuppiger, A. (2008). Speed and force of spore ejection in Selaginella martensii. Botanica Helvetica, 118, 13-20
+Schneller, J., Gerber, H., & Zuppiger, A. (2008). Speed and force of spore ejection in *Selaginella martensii*. *Botanica Helvetica*, 118, 13-20
 
-Somers, P. (1982). A unique type of microsporangium in Selaginella series articulatae. American Fern Journal, 72, 88-92. 
+Somers, P. (1982). A unique type of microsporangium in *Selaginella* series articulatae. *American Fern Journal*, 72, 88-92. 
 
-Zhou, X.M., Rothfels, C.J., Zhang, L., He, Z.R., Le Pechon, T., He, H., Lu, N.T., Knapp, R., Lorence, D., He, X.J., Gao, X.F., & Zhang, L.B. (2015). A large-scale phylogeny of the lycophyte genus Selaginella (Selaginellaceae: Lycopodiopsida) based on plastid and nuclear loci.  Cladistics, 1-30.
+Zhou, X.M., Rothfels, C.J., Zhang, L., He, Z.R., Le Pechon, T., He, H., Lu, N.T., Knapp, R., Lorence, D., He, X.J., Gao, X.F., & Zhang, L.B. (2015). A large-scale phylogeny of the lycophyte genus *Selaginella* (Selaginellaceae: Lycopodiopsida) based on plastid and nuclear loci.  *Cladistics*, 1-30.
 
 
