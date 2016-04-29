@@ -68,6 +68,17 @@ Simulated characters mapped onto tree
 
 ![3tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/3tips.png)
 
+![350tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tree2characters.png)
+
+![250tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tree3characters.png)
+
+![100tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tree4characters.png)
+
+![50tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tree5characters.png)
+
+![25tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tree6characters.png)
+
+![3tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tree7characters.png)
 
 ## Discussion
 
