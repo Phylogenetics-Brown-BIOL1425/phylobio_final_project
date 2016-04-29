@@ -49,30 +49,30 @@ vcv[3,3] <- 0.3
 
 ##generate multiple simulated datasets on tree t according to vcv:
 library(geiger)
-D <- sim.char( t, vcv, nsim = 100, model = "BM", root = 0 )
-D[,,1]
+A <- sim.char( t, vcv, nsim = 100, model = "BM", root = 0 )
+A[,,1]
 library( adephylo )
 library( phylobase )
-D4 <- phylo4d( t, D[,,1] )
-table.phylo4d( D4, box=FALSE )
+A4 <- phylo4d( t, A[,,1] )
+table.phylo4d( A4, box=FALSE )
 
 ##tree2
 library(geiger)
-D <- sim.char( t2, vcv, nsim = 100, model = "BM", root = 0 )
-D[,,1]
+B <- sim.char( t2, vcv, nsim = 100, model = "BM", root = 0 )
+B[,,1]
 library( adephylo )
 library( phylobase )
-D4 <- phylo4d( t2, D[,,1] )
-table.phylo4d( D4, box=FALSE )
+B4 <- phylo4d( t2, D[,,1] )
+table.phylo4d( B4, box=FALSE )
 
 ##tree3
 library(geiger)
-D <- sim.char( t3, vcv, nsim = 100, model = "BM", root = 0 )
-D[,,1]
+C <- sim.char( t3, vcv, nsim = 100, model = "BM", root = 0 )
+C[,,1]
 library( adephylo )
 library( phylobase )
-D4 <- phylo4d( t3, D[,,1] )
-table.phylo4d( D4, box=FALSE )
+C4 <- phylo4d( t3, D[,,1] )
+table.phylo4d( C4, box=FALSE )
 
 ##tree4
 library(geiger)
@@ -85,56 +85,100 @@ table.phylo4d( D4, box=FALSE )
 
 ##tree5
 library(geiger)
-D <- sim.char( t5, vcv, nsim = 100, model = "BM", root = 0 )
-D[,,1]
+E <- sim.char( t5, vcv, nsim = 100, model = "BM", root = 0 )
+E[,,1]
 library( adephylo )
 library( phylobase )
-D4 <- phylo4d( t5, D[,,1] )
-table.phylo4d( D4, box=FALSE )
+E4 <- phylo4d( t5, D[,,1] )
+table.phylo4d( E4, box=FALSE )
 
 ##tree6
 library(geiger)
-D <- sim.char( t6, vcv, nsim = 100, model = "BM", root = 0 )
-D[,,1]
+F <- sim.char( t6, vcv, nsim = 100, model = "BM", root = 0 )
+F[,,1]
 library( adephylo )
 library( phylobase )
-D4 <- phylo4d( t6, D[,,1] )
-table.phylo4d( D4, box=FALSE )
+F4 <- phylo4d( t6, D[,,1] )
+table.phylo4d( F4, box=FALSE )
 
 ##tree7
 library(geiger)
-D <- sim.char( t7, vcv, nsim = 100, model = "BM", root = 0 )
-D[,,1]
+G <- sim.char( t7, vcv, nsim = 100, model = "BM", root = 0 )
+G[,,1]
 library( adephylo )
 library( phylobase )
-D4 <- phylo4d( t7, D[,,1] )
-table.phylo4d( D4, box=FALSE )
+G4 <- phylo4d( t7, D[,,1] )
+table.phylo4d( G4, box=FALSE )
 
 
 ##independent contrasts 
 
-##change t to change which tree it does it for 
-
-##3characters
-ic1 <- pic( D[,1,1], t )
-ic2 <- pic( D[,2,1], t )
-ic3 <- pic( D[,3,1], t )
-
 cov( cbind( ic1, ic2, ic3 ) )
 ##5 characters
-ic1 <- pic( D[,1,1], t )
-ic2 <- pic( D[,2,1], t )
-ic3 <- pic( D[,3,1], t )
-ic4 <- pic( D[,4,1], t )
-ic5 <- pic( D[,5,1], t )
-
+ic1 <- pic( A[,1,1], t )
+ic2 <- pic( A[,2,1], t )
+ic3 <- pic( A[,3,1], t )
+ic4 <- pic( A[,4,1], t )
+ic5 <- pic( A[,5,1], t )
 cov( cbind( ic1, ic2, ic3, ic4, ic5) )
 
+ic6 <- pic( B[,1,1], t2 )
+ic7 <- pic( B[,2,1], t2 )
+ic8 <- pic( B[,3,1], t2 )
+ic9 <- pic( B[,4,1], t2 )
+ic10 <- pic( B[,5,1], t2 )
+cov( cbind( ic6, ic7, ic8, ic9, ic10) )
 
+ic11 <- pic( C[,1,1], t3 )
+ic12 <- pic( C[,2,1], t3 )
+ic13 <- pic( C[,3,1], t3 )
+ic14 <- pic( C[,4,1], t3 )
+ic15 <- pic( C[,5,1], t3 )
+cov( cbind( ic11, ic12, ic13, ic14, ic15) )
 
+ic16 <- pic( D[,1,1], t4 )
+ic17 <- pic( D[,2,1], t4 )
+ic18 <- pic( D[,3,1], t4 )
+ic19 <- pic( D[,4,1], t4 )
+ic20 <- pic( D[,5,1], t4 )
+cov( cbind( ic16, ic17, ic18, ic19, ic20) )
+
+ic21 <- pic( E[,1,1], t5 )
+ic22 <- pic( E[,2,1], t5 )
+ic23 <- pic( E[,3,1], t5 )
+ic24 <- pic( E[,4,1], t5 )
+ic25 <- pic( E[,5,1], t5 )
+cov( cbind( ic21, ic22, ic23, ic24, ic25) )
+
+ic26 <- pic( F[,1,1], t6 )
+ic27 <- pic( F[,2,1], t6 )
+ic28 <- pic( F[,3,1], t6 )
+ic29 <- pic( F[,4,1], t6 )
+ic30 <- pic( F[,5,1], t6 )
+cov( cbind( ic26, ic27, ic28, ic29, ic30) )
+
+ic31 <- pic( G[,1,1], t7 )
+ic32 <- pic( G[,2,1], t7 )
+ic33 <- pic( G[,3,1], t7 )
+ic34 <- pic( G[,4,1], t7 )
+ic35 <- pic( G[,5,1], t7 )
+cov( cbind( ic31, ic32, ic33, ic34, ic35) )
 
 ##covariance of values at the tips (not independent contrasts)
-cov( cbind( D[,1,1], D[,2,1], D[,3,1] ) )
+cov( cbind( A[,1,1], A[,2,1], A[,3,1], A[,4,1], A[,5,1] ) )
+
+cov( cbind( B[,1,1], B[,2,1], B[,3,1], B[,4,1], B[,5,1] ) )
+
+cov( cbind( C[,1,1], C[,2,1], C[,3,1], C[,4,1], C[,5,1] ) )
+
+cov( cbind( D[,1,1], D[,2,1], D[,3,1], D[,4,1], D[,5,1] ) )
+
+cov( cbind( E[,1,1], E[,2,1], E[,3,1], E[,4,1], E[,5,1] ) )
+
+cov( cbind( F[,1,1], F[,2,1], F[,3,1], F[,4,1], F[,5,1] ) )
+
+cov( cbind( G[,1,1], G[,2,1], G[,3,1], G[,4,1], G[,5,1] ) )
+
 
 cov( cbind( D[,1,1], D[,2,1], D[,3,1] ) )
 
