@@ -48,33 +48,19 @@ The tools I used were... See analysis files at (links to analysis files).
 
 ## Results
 
-![700tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/700_tips_starting_tree.png)
+![Figure 2](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree1.png)
 
-![350tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/350tips.png)
+![Figure 4](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree2.png)
 
-![250tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/250tips.png)
+![Figure 6](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree3.png)
 
-![100tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/100tips.png)
+![Figure 8](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree4.png)
 
-![50tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/50tips.png)
+![Figure 10](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree5.png)
 
-![25tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/25tips.png)
+![Figure 12](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree6.png)
 
-![3tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/3tips.png)
-
-![700tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/700tree_characters.png)
-
-![350tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/350tree_characters.png)
-
-![250tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/250tree_characters.png)
-
-![100tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/100tree_characters.png)
-
-![50tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/50tree_characters.png)
-
-![25tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/25tree_characters.png)
-
-![3tips](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/3tree_characters.png)
+![Figure 14](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree7.png)
 
 ## Discussion
 
