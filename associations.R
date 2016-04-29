@@ -292,3 +292,14 @@ togetherness(web) #T-score, level of similarity between species
 grouplevel(web)
 robustness(second.extinct(web))
 C.score(web)
+
+#on the phylogeny species:
+pruneweb = t(reprunedassmatrix)
+discrepancy(pruneweb)
+pdi = PDI(pruneweb) #paired differences index
+pac = PAC(pruneweb) #potential for apparent competition
+visweb(pruneweb)
+togetherness(pruneweb) #T-score, level of similarity between species
+grouplevel(pruneweb)
+robustness(second.extinct(pruneweb))
+C.score(pruneweb)

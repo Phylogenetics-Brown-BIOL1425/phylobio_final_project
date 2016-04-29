@@ -150,7 +150,7 @@ Test for phylogenetic clustering picante::phylostruct(), and per habitat picante
 
 ## Results
 
-###Phylogenetic analyses:
+### Phylogenetic analyses:
 
 ![F1](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/ultramphipod.png)
 Figure 1. Ultrametric hyperiid amphipod species 18S GTR+Gamma ML tree. 
@@ -170,7 +170,7 @@ The 18S gene tree produced (Figure 2) accurately recognized the clades Radiozoa,
 ![Figure 3.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/annotated_tree.png)
 Figure 3. Host 18S tree with main clades collapsed and aligned with a picture of a representative association. Photographs by Steven Haddock and Jeff Molder.
 
-###Association ecology:
+### Association ecology:
 
 ![Figure 4.](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/screenshots/PS/AllSPP.png)
 Figure 4. Complete association network for hyperiid amphipods and their described gelatinous hosts from the literature review. Red: Hyperiid amphipods, Blue: Gelatinous hosts.
@@ -186,7 +186,7 @@ Figure 8. Heatmap of the pairwise distances between amphipod species computed fr
 ![F9](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/amphipodMDS.png)
 Figure 11. Multidimensional scaling plot for amphipod distance matrix used in Figure 9.
 
-Amphipods show interesting host sharing patterns (Figure 8) that reflect on the possible competitive interactions in environments where they may coexist, given limited host space. The species *Vibilia viatrix*, *Vibilia propinqua*, *Vibilia armata*, and *Phronima sedentaria* (well-known salp dwellers) show the greatest disparity in host association compared to the rest (Figure 9).
+Amphipods show interesting host sharing patterns (Figure 8) that reflect on the possible competitive interactions in environments where they may coexist, given limited host space. The species *Vibilia viatrix*, *Vibilia propinqua*, *Vibilia armata*, and *Phronima sedentaria* (well-known salp dwellers) show the greatest disparity in host association compared to the rest (Figure 9). These species also show a relatively large number of shared host species.
 
 ![F10](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/hostdist.png)
 Figure 10. Heatmap of the pairwise distances between gelatinous host species computed from matrix of common inhabitant species (amphipods).
@@ -196,7 +196,7 @@ Figure 11. Multidimensional scaling plot for host distance matrix used in Figure
 
 Hosts show an even more complex association similarity matrix (Figure 10), proportional to the greater number of taxa included. The medusae Pelagia noctiluca, *Pandea conica*, and the salp *Salpa aspera* showed the most differentiated amphipod associations (Figure 11).
 
-Bipartite network analysis (bipartite::grouplevel, HL represents the hyperiid amphipods, LL represents the gelatinous hosts):
+Bipartite network analysis (bipartite::grouplevel):
 
 Hyperiid amphipods | Gelatinous hosts
 ------------------ | ------------------
@@ -229,11 +229,46 @@ Partner H' diversity |
 Generality | Vulnerability 
 4.549296 | 3.375587 
 
-With a total number of links of 213, the overall discrepancy (number of missing links to a maximally connected network of 393 links) is 180 links. The average generality for the hyperiid amphipods included in this study is of 4-5 host species per predator, while the average vulnerability to amphipod colonization for these gelatinous animals is of 3-4 amphipod species per host. The Shannon-Weaver H diversity index of links per species is higher for hyperiid amphipods than for gelatinous hosts, although from binary data it is not informed by the frequency nor relative abundance of the associations. The robustness and extinction slope (resilience to extinction of associated taxa) for hyperiid amphipods came out higher than for gelatinous hosts, probably realted to the higher partner diversity. However, it does not make sense to talk about host robustness, as gelatinous zooplankton could probably survive just as well or better without hyperiid amphipods, given the nature of these interactions. The C-scores close to 1 indicates a signal of repulsion between species. 
+With a total number of links of 213, the overall discrepancy (number of missing links to a maximally connected network of 393 links - connectance: 0.5419) is 180 links. The average generality for the hyperiid amphipods included in this study is of 4-5 host species per predator, while the average vulnerability to amphipod colonization for these gelatinous animals is of 3-4 amphipod species per host. The Shannon-Weaver H diversity index of links per species is higher for hyperiid amphipods than for gelatinous hosts, although from binary data it is not informed by the frequency nor relative abundance of the associations. The robustness and extinction slope (resilience to extinction of associated taxa) for hyperiid amphipods came out higher than for gelatinous hosts, probably realted to the higher partner diversity. However, it does not make sense to talk about host robustness, as gelatinous zooplankton could probably survive just as well or better without hyperiid amphipods, given the nature of these interactions. The C-scores close to 1 indicates a signal of repulsion between species.
+
+In order to assess the effect of my limited taxon sampling, I also carried out this analysis on the web pruned to contain only the species for which I have phylogenetic information:
+
+Hyperiid amphipods | Gelatinous hosts
+------------------ | ------------------
+Number of species |  
+19 | 30
+Mean links per species |  
+3.90566 | 2.471698 
+Mean shared species per species |  
+0.22807 | 0.177011
+Cluster coefficient |  
+0.130188 | 0.130089 
+Weighted cluster coefficient |  
+0.409972 | 0.540425 
+Niche overlap | 
+0.054903 | 0.081450 
+C-score |  
+0.898538 | 0.876197 
+Variance ratio |  
+1.283105 | 0.810557 
+Discrepancy |  
+35 | 35 
+Extinction slope |  
+2.178230 | 1.430246 
+Robustness |  
+0.678184 | 0.587607 
+Functional complementarity |  
+36.248722 | 33.370904 
+Partner H' diversity |  
+1.221812 | 0.742254 
+Generality | Vulnerability 
+3.905660 | 2.471698 
+
+Reduced taxon sampling had a notable impact in reducing the number of links per species. However the ratio between each ecological group remains similar (complete: 1.3477, pruned: 1.580153), though slightly more extreme. Ratio of cluster coefficients remains constant, though the absolute value depends on the number of species. Apparent C-Score reduced, which could potentially bias our cophylogenetic analyses away from overdispersion. Variance ratio also reduced accordingly. Relative discrepancy to the maximum expected complexity is reduced (74/109) - thus apparent connectance increased to 0.679, together with an increase of the extinction slope for hyperiid amphipods, indicating a bias towards the overall robustness of hyperiid amphipods. Interestingly, the apparent Shannon-Weaver H' diversity index for partner associations did not change much for hyperiid amphipods, while it showed a visible decline for gelatinous hosts.
 
 But, how far did sharing a common evolutionary history generate this association network?
 
-###Cophylogenetic analysis:
+### Cophylogenetic analysis:
 
 
 ![Figure 12](https://github.com/antropoteuthis/phylobio_final_project/raw/master/Good_Cophylo.png)
@@ -261,7 +296,7 @@ Gelatinous zooplankton hosts: r = 0.0124, p=0.427 (non-significant relationship)
 
 On a second approach to this question, I tried obtaining the mean Blomberg's K for each association in contrast to each of the phylogenies. The hyperiid amphipod phylogeny had a mean K of 0.5730 (SE: 0.5969), and the gelatinous host phylogeny had a mean K of 0.1583 (SE: 0.2901). The standard error values do not undermine the mean avlues, as the dispersion in this distribution is truncated to the left at 0. 
 
-###Phylogenetic community ecology:
+### Phylogenetic community ecology:
 
 The picante::phylostruct permutation test for phylogenetic signal in community composition (using the amphipod phylogeny and the hosts as communities) detected an overdispersed pattern (mean observed= -1.15, expected null = -1.24), in other words, a phylogenetic repulsion signal.
 
@@ -293,6 +328,8 @@ Host sharing patterns in the ecological association matrix for amphipods reveale
 The ecological similarity matrix built from the association data for hosts revealed great diversity in the number of amphipod species shared. An increased number of shared amphipod species has very different ecological implications. A gelatinous macroplankton community assemblage with many shared amphipod species would favor a greater amphipod diversity, greater chances of interspecies transfection of amphipods, and relief of predation (*sensu lato*) pressure on the host populations.
 
 The bipartite network analysis showed species overdispersion in amphipods, possibly due to competition. However, the variance ratios larger than 1 indicate positive agregation signal. I do not believe any of these indices as they are not informed by phylogenetic relationships. As niche theory would predict, "predators" have more prey connections than "prey" do, which in a simplistic view of the ecology, it facilitates predators not running out of prey, and it relieves predation pressure from prey. A relatively low discrepancy value indicates that this network has a high connectance (or association complexity), thich is also reflected in the robustness of amphipods to local extinction of host species. This could have been a selective pressure to increase overall generality in these species.
+
+Reduced taxon sampling to conform to the phylogenetic data for further analyses had a noticeable effect in biasing the network topology towards a higher apparent connectance and a lower overall amphipod diversity per host. This could have repercussions downstream, such as 
 
 ### Cophylogenetic analysis:
 
