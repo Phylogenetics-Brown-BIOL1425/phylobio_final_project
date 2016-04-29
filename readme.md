@@ -214,7 +214,12 @@ Entanglement = 0.2572355
 
 ####Potential sequence length Bias of phylogenetic signal 
 
+####Tree built from the concatenated sequences of A6, CI, and the Neutral Marker 
 
+![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Concatenated_tree.png "Figure 21D: phylogeny for gene BG")
+
+
+**Notice the very short branch length**
 
 
 
