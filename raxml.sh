@@ -19,7 +19,9 @@ module load raxml
 
 mpirun -n 8 raxmlHPC-MPI -f a -x 12345 -p 12345 -N 100 -m GTRGAMMA -s alignments/gpt.phy -n gpt_100
 mpirun -n 8 raxmlHPC-MPI -f a -x 12345 -p 12345 -N 100 -m GTRGAMMA -s alignments/gpt2.phy -n gpt2_100
-#mpirun -n 8 raxmlHPC-MPI -f a -x 12345 -p 12345 -N 100 -m GTRGAMMA -s alignments/gpt_protein.phy -n gpt_protein_100
-#mpirun -n 8 raxmlHPC-MPI -f a -x 12345 -p 12345 -N 100 -m GTRGAMMA -s alignments/gpt2_protein.phy -n gpt2_protein_100
+mpirun -n 8 raxmlHPC-MPI -f a -x 12345 -p 12345 -N 100 -m GTRGAMMA -s alignments/mRNA.phy -n mRNA_100
+#mpirun -n 8 raxmlHPC-MPI -f a -x 12345 -p 12345 -N 100 -m GTRGAMMA -s alignments/gpt.protein.phy -n gpt_protein_100
+#mpirun -n 8 raxmlHPC-MPI -f a -x 12345 -p 12345 -N 100 -m GTRGAMMA -s alignments/gpt2.protein.phy -n gpt2_protein_100
+#mpirun -n 8 raxmlHPC-MPI -f a -x 12345 -p 12345 -N 100 -m GTRGAMMA -s alignments/protein.phy -n protein_100
 
-mv gpt* results
+mv RAXML* results
