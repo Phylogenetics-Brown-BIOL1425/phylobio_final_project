@@ -49,6 +49,8 @@ Such difficulties have now been addressed by several authors via advanced statis
 
 The R code used in order to construct the time-calibrated phylogeny is provided as part of the files uploaded onto this github repository. The R code additionally contains the code used for the analysis conducted in this study. An explanation of the code for both the time-calibrated phylogeny construction and the analysis is provided as comments within the code itself. Packages used in conducting the analyses were “ape”, “picante”, “phytools”, and “paleotree”.
 
+### Ancestral State Reconstruction
+
 ## Results
 
 The tree in Figure 1...
