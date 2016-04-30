@@ -56,6 +56,9 @@ library( phylobase )
 A4 <- phylo4d( t, A[,,1] )
 table.phylo4d( A4, box=FALSE )
 
+library(RColorBrewer)
+rbPal<-colorRampPalette(c('blue','red')) 
+
 ##tree2
 library(geiger)
 B <- sim.char( t2, vcv, nsim = 100, model = "BM", root = 0 )
