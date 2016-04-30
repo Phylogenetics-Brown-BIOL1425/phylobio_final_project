@@ -1,7 +1,3 @@
-- https://guides.github.com/features/mastering-markdown/
-- The project must be entirely reproducible. 
-- In addition to the results, the repository must include all the data (or links to data) and code needed to reproduce the results.
-
 # Cophylogenetic analysis of hyperiid amphipods and their gelatinous planktonic hosts.
 
 ## Introduction and Goals
@@ -180,7 +176,7 @@ Figure 5. Pruned association network for hyperiid amphipods and their described 
 
 The association data shows a complex interaction network (Figure 4), with generalists and specialists, that conserves a similar structure even with a constrained taxon sampling (Figure 5). 
 
-![F8](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/amphipoddist.png)
+![F8](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/amphidist1.png)
 Figure 8. Heatmap of the pairwise distances between amphipod species computed from matrix of common habitats(hosts).
 
 ![F9](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/amphipodMDS.png)
@@ -188,7 +184,7 @@ Figure 11. Multidimensional scaling plot for amphipod distance matrix used in Fi
 
 Amphipods show interesting host sharing patterns (Figure 8) that reflect on the possible competitive interactions in environments where they may coexist, given limited host space. The species *Vibilia viatrix*, *Vibilia propinqua*, *Vibilia armata*, and *Phronima sedentaria* (well-known salp dwellers) show the greatest disparity in host association compared to the rest (Figure 9). These species also show a relatively large number of shared host species.
 
-![F10](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/hostdist.png)
+![F10](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/hostdist2.png)
 Figure 10. Heatmap of the pairwise distances between gelatinous host species computed from matrix of common inhabitant species (amphipods).
 
 ![F11](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/hostMDS.png)
@@ -305,10 +301,13 @@ Figure 15. Phylogenetic overdispersion of amphipod species within each host.
 
 The mean value of the phylogenetic clustering analysis of amphipod species for all hosts was 0.9083, indicating again a slightly overdispersed structure. However the standard deviation (0.3953) was large. Some hosts (<i>Thalia democratica</i> and <i>Iasis zonaria</i>) had a greatly overdispersed amphipod community, whilst others (<i>Cyclosalpa affinis, Eurhamphaea vexilligera</i>, and <i>Pterotrachea hippocampus</i>) had a distinct phylogenetic clustering in their amphipod assemblage (Figure 15).
 
-In order to further study the effect of competition in hyperiid amphipod living habitat occupation, wrangled the data to obtain host-sharing links between amphipod species (Figure 8). This can also be used for cophylogenetic analyses (Figure 16). 
+In order to further study the effect of competition in hyperiid amphipod living habitat occupation, wrangled the data to obtain host-sharing links between amphipod species (Figure 8, 17). This can also be used for cophylogenetic analyses (Figure 16). 
 
 ![F16](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/competition_cophylo.png)
 Figure 16. Cophylogeny of hyperiid amphipods with themselves, links showing one or more shared hosts.
+
+![F17](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/competition_heatmap.png)
+Figure 17. Competition probability heatmap of hyperiid amphipod species available in the phylogeny. Dendrograms show host sharing similarities.
 
 Parafit global fit values for this intra-clade cophylogeny (ParaFitGlobal = 2.738317 , p-value = 0.509) shows little significance. The species with more competition links with other species are *Lycaea pulex* and *Brachyscelus crusculum*.
 
@@ -329,7 +328,7 @@ The ecological similarity matrix built from the association data for hosts revea
 
 The bipartite network analysis showed species overdispersion in amphipods, possibly due to competition. However, the variance ratios larger than 1 indicate positive agregation signal. I do not believe any of these indices as they are not informed by phylogenetic relationships. As niche theory would predict, "predators" have more prey connections than "prey" do, which in a simplistic view of the ecology, it facilitates predators not running out of prey, and it relieves predation pressure from prey. A relatively low discrepancy value indicates that this network has a high connectance (or association complexity), thich is also reflected in the robustness of amphipods to local extinction of host species. This could have been a selective pressure to increase overall generality in these species.
 
-Reduced taxon sampling to conform to the phylogenetic data for further analyses had a noticeable effect in biasing the network topology towards a higher apparent connectance and a lower overall amphipod diversity per host. This could have repercussions downstream, such as 
+Reduced taxon sampling to conform to the phylogenetic data for further analyses had a noticeable effect in biasing the network topology towards a higher apparent connectance and a lower overall amphipod diversity per host. This can be translated as a lower apparent vulnerability. This could have repercussions downstream, such as blurring the phylogenetic signal of the associations to the host phylogeny, and biasing the phylogenetic distribution of vulnerability.
 
 ### Cophylogenetic analysis:
 
