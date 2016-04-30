@@ -24,4 +24,4 @@ mpirun -n 8 raxmlHPC-MPI -f a -x 12345 -p 12345 -N 100 -m GTRGAMMA -s alignments
 #mpirun -n 8 raxmlHPC-MPI -f a -x 12345 -p 12345 -N 100 -m GTRGAMMA -s alignments/gpt2.protein.phy -n gpt2_protein_100
 #mpirun -n 8 raxmlHPC-MPI -f a -x 12345 -p 12345 -N 100 -m GTRGAMMA -s alignments/protein.phy -n protein_100
 
-mv RAXML* results
+mv RAxML* results
