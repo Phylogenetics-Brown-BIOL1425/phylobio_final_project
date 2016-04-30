@@ -7,7 +7,6 @@ library(ape)
 library(picante)
 library(paleotree)
 library(phytools)
-library(ggplot2)
 
 ## DATA COLLECTION
 
@@ -113,11 +112,11 @@ summary.lm(regressContrastPosition)
 
 # Ancestral State Reconstructuon
 fit = fastAnc(avg_Tree, trochanter_position, vars = TRUE, CI = TRUE)
-old.par = par (mfrow=c(1,2))
+# old.par = par (mfrow=c(1,2))
 # Plotting Phenogram
-phenogram(avg_Tree, trochanter_position, fize = 0.6, spread.costs=c(1,0))
+phenogram(avg_Tree, trochanter_position, fize = 0.6, spread.costs=c(1,0),link=0.2,offset=0)
 # Plotting Contour Map
 obj = contMap(avg_Tree, trochanter_position, type = "phylogram", legend = 0.7*max(nodeHeights(avg_Tree)), plot = TRUE)
 # Plotting Side-by-Side
-par(old.par)
+# par(old.par)
 ## Trait of a distinctive fourth trochanter first appears on the branch leading up to Heterodontosaurus among the Ornithischians, and independently in Herrerasaurus and the branch leading up to Neotheropoda (Dilophosaurus) in the Saurischians

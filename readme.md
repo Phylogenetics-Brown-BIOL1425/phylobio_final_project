@@ -71,38 +71,38 @@ If I did these analyses again, I would...
 
 4. “Caudofemoral Musculature and the Evolution of Theropod Locomotion”. Stephen M. Gatesy. *Paleobiology* 16 (1990): 170-186.
 
-5. "The Phylogeny and Evolutionary History of Tyrannosauroid dinosaurs". Stephen L. Brusatte and Thomas D. Carr. *Scientific Reports* (2016)
+5. "The Phylogeny and Evolutionary History of Tyrannosauroid dinosaurs". Stephen L. Brusatte and Thomas D. Carr. *Scientific Reports* 6 (2016).
 
-6. “A Complete Skeleton of a Late Triassic Saurischian and the Early Evolution of Dinosaurs”. Nesbitt et al. (2009). 
+6. “A Complete Skeleton of a Late Triassic Saurischian and the Early Evolution of Dinosaurs”. Nesbitt et al. *Science* (2009): 1530-1533.
 
-7. “The Phylogeny of Ceratosauria (Dinosauria: Theropoda)”. Carrano and Sampson (2008).
+7. “The Phylogeny of Ceratosauria (Dinosauria: Theropoda)”. Matthew T. Carrano and Scott D. Sampson. *Journal of Systematic Paleontology* 6 (2008): 183-236.
 
-8. “A new clade of archaic large-bodied predatory dinosaurs (Theropoda: Allosauroidea) that survived to the latest Mesozoic”. Benson, Carrano, and Brusatte (2010). 
+8. “A new clade of archaic large-bodied predatory dinosaurs (Theropoda: Allosauroidea) that survived to the latest Mesozoic”. Roger B. J. Benson, Matthew T. Carrano, and Stephen L. Brusatte. *Naturwissenshaften* 97 (2010): 71-78. 
 
-9. “Torvosaurus gurneyi n. sp., the Largest Terrestrial Predator from Europe, and a Proposed Terminology of the Maxilla Anatomy in Nonavian Theropods”. Hendrickx and Mateus (2014).
+9. “Torvosaurus gurneyi n. sp., the Largest Terrestrial Predator from Europe, and a Proposed Terminology of the Maxilla Anatomy in Nonavian Theropods”. Christophe Hendrickx and Octavio Mateus. *PLoS ONE* 9:3 (2014).
 
-10. “A Basal Dinosaur from the Dawn of the Dinosaur Era in Southwestern Pangaea”. Martinez et al. (2011).
+10. “A Basal Dinosaur from the Dawn of the Dinosaur Era in Southwestern Pangaea”. Martinez et al. *Science* 331 (2011):206-210.
 
-11. “New Dromaeosaurids (Dinosauria: Theropoda) from the Lower Cretaceous of Utah, and the Evolution of the Dromaeosaurid Tail”. Senter et al. (2012).
+11. “New Dromaeosaurids (Dinosauria: Theropoda) from the Lower Cretaceous of Utah, and the Evolution of the Dromaeosaurid Tail”. Senter et al. *PLoS ONE* 7:5 (2012).
 
-12. “New Basal Iguanodonts from the Cedar Mountain Formation of Utah and the Evolution of Thumb-Spiked Dinosaurs”. McDonald et al. (2010).
+12. “New Basal Iguanodonts from the Cedar Mountain Formation of Utah and the Evolution of Thumb-Spiked Dinosaurs”. McDonald et al. *PLoS ONE* 5:11 (2010).
 
-13. “Phylogeny of Basal Iguanodonts (Dinosauria: Ornithischia): An Update”. McDonald et al. (2012).
+13. “Phylogeny of Basal Iguanodonts (Dinosauria: Ornithischia): An Update”. Andrew T. McDonald. *PLoS ONE* 7:5 (2012).
 
-14. “New data on the diversity and abundance of small-bodied ornithopods (Dinosauria, Ornithischia) from the Belly River Group (Campanian) of Alberta”. Brown et al. (2013).
+14. “New data on the diversity and abundance of small-bodied ornithopods (Dinosauria, Ornithischia) from the Belly River Group (Campanian) of Alberta”. Brown et al. *Journal of Vertebrate Paleontology* 33 (2013): 495-520.
 
-15. “A new species of Saurolophine Hadrosaurid dinosaur from the Late Cretaceous of the Pacific coast of North America”. Marquez and Wagner (2013).
+15. “A new species of Saurolophine Hadrosaurid dinosaur from the Late Cretaceous of the Pacific coast of North America”. Albert Prieto-Marquez and Jonathan R. Wagner. *Acta Palaeontologica Polonica* 58 (2013): 255-268.
 
-16. "A new ornithopod (Dinosauria, Ornithischia) from the Upper Cretaceous of Antarctica an its palaeobiogeographical implications". Rozadilla et al. (2015).
+16. "A new ornithopod (Dinosauria, Ornithischia) from the Upper Cretaceous of Antarctica an its palaeobiogeographical implications". Rozadilla et al. *Cretaceous Research* 57 (2015): 311-324.
 
-17. "A New Leptoceratopsid (Ornithischia, Ceratopsia) with a Unique Ischium from the Upper Cretaceous of Shandong Province, China". He et al. (2015)
+17. "A New Leptoceratopsid (Ornithischia, Ceratopsia) with a Unique Ischium from the Upper Cretaceous of Shandong Province, China". He et al. *PLoS ONE* 10:12 (2015).
 
-18. “Pelvic and Hindlimb Musculature of Tyrannosaurus rex (Dinosauria:Theropoda)”. Carrano and Hutchinson (2002).
+18. “Pelvic and Hindlimb Musculature of Tyrannosaurus rex (Dinosauria:Theropoda)”. Matthew T. Carrano and John R. Hutchinson. *Journal of Morphology* 253 (2002): 207-228.
 
-19. "Dinosaurian Precursors from the Middle Triassic of Argentina: Marasuchus lilloensis, gen. nov.". Sereno and Arcucci (1994). 
+19. "Dinosaurian Precursors from the Middle Triassic of Argentina: Marasuchus lilloensis, gen. nov.". Paul C. Sereno and Andrea B. Arcucci. *Journal of Vertebrate Paleontology* 14 (1994): 53-73. 
 
-20. “Comparative Osteology and Phylogenetic Relationship of *Edmontosaurus* and *Shantungosaurus* (Dinosauria: Hadrosauridae) from the Upper Cretaceous of North America and East Asia”. Xing et al. (2014).
+20. “Comparative Osteology and Phylogenetic Relationship of *Edmontosaurus* and *Shantungosaurus* (Dinosauria: Hadrosauridae) from the Upper Cretaceous of North America and East Asia”. Xing et al. *Acta Geologica Sinica* 88 (2014): 1623-1652.
 
-21. “A New Species of Camptosaurs (Ornithopoda: Dinosauria) from the Morrison Formation (Upper Jurassic) of Dinosaur National Monument, Utah, and  Biomechanics Analysis of its Forelimb”. Carpenter and Wilson (2008).
+21. “A New Species of Camptosaurs (Ornithopoda: Dinosauria) from the Morrison Formation (Upper Jurassic) of Dinosaur National Monument, Utah, and  Biomechanics Analysis of its Forelimb”. Kenneth Carpenter and Yvonne Wilson. *Annals of Carnegie Museum* 76 (2008): 227-263.
 
-22. “How many dinosaur species were there? Fossil bias and true richness estimated using a Poisson sampling model”. Starrfelt and Liow (2016).
+22. “How many dinosaur species were there? Fossil bias and true richness estimated using a Poisson sampling model”. Jostein Starrfelt and Lee Hsiang Liow. *Philosophical Transactions of the Royal Society B* 371:1691 (2016).
