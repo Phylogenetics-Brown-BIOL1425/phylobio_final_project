@@ -58,6 +58,9 @@ table.phylo4d( A4, box=FALSE )
 
 library(RColorBrewer)
 rbPal<-colorRampPalette(c('blue','red')) 
+cols<-rbPal(10)[as.numeric(cut(A,breaks=10))]
+plot(A4,show.tip.label=FALSE,cex=0.175,adj=0.25)
+tiplabels(pch=22,cex=.3,bg=cols,col=NA,adj=8.4)
 
 ##tree2
 library(geiger)
