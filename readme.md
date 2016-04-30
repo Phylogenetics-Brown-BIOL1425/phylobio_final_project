@@ -50,13 +50,23 @@ The tools I used were... See analysis files at (links to analysis files).
 
 ![Figure 2](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree1.png)
 
+![Table 1](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tables/table1.png)
+
 ![Figure 4](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree2.png)
+
+![Table 2](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tables/table2.png)
 
 ![Figure 6](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree3.png)
 
+![Table 3](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tables/table3.png)
+
 ![Figure 8](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree4.png)
 
+![Table 4](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tables/table4.png)
+
 ![Figure 10](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree5.png)
+
+![Table 5](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tables/table5.png)
 
 ![Figure 12](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree6.png)
 
