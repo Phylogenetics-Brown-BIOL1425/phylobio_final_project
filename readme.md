@@ -28,8 +28,7 @@ The 4th trochanter is a prominent bony process found on the femur of archosaurs,
 
 We plan to demonstrate that the distinctive 4th trochanter morphology in Ornithischian dinosaurs represents a difference in their locomotor strategy relative to other dinosaur clades; the position of their 4th trochanter should be little affected by body size. We will first construct a composite phylogeny of the 68 dinosaur taxa for which we have body mass and 4th trochanter position data. This tree will be derived from published analyses of dinosaur phylogeny. We plan to utilize phylogenetic regression to prove that body size is poorly correlated with 4th trochanter position in dinosaurs, and that phlyogenetic affinity is a far better predictor of its location.
 
-Finally, we will try to investigate two important questions: A) where does the characteristic 4th trochanter morphology first appear in Dinosauria? and B) does the morphology of the 4th trochanter show any sensitivity to body mass, as would be expected in a group of animals with masses ranging 4 orders of magnitude?
-
+Finally, we will try to investigate two important questions: A) where does the characteristic 4th trochanter morphology first appear in Dinosauria? and B) does the morphology of the 4th trochanter show any sensitivity to body mass, as would be expected in a group of animals with masses ranging 4 orders of magnitude? We hope to answer these.
 
 ## Methods
 
