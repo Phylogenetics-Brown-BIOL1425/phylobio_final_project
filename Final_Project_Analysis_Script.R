@@ -127,10 +127,12 @@ phylosignal(x, avg_Tree)
 # Testing for Phylogenetic Signal in Saurischia
 phylosignal(trochanter_position_saurischia, avg_Tree_saurischia)
 phylosignal(body_mass_saurischia, avg_Tree_saurischia)
+## Yields K = 0.1641471 for trochanter position, indicating that related species resemble each other less than would be expected. The p-value however is 0.871, indicating that the results are not statistically significant. Yields K = 0.7972952 for body mass, indicating that related species resemble each other less than would be expected. The p-value is 0.001, much below 0.05, making the result statistically significant.
 
 # Testing for Phylogenetic Signal in Ornithischia
 phylosignal(trochanter_position_ornithischia, avg_Tree_ornithischia)
 phylosignal(body_mass_ornithischia, avg_Tree_ornithischia)
+## Yields K = 0.257648 for trochanter position, indicating that related species resemble each other less than would be expected. Yields K = 0.3091013 for body mass, indicating related species resemble each other less than expected. The p-value for both, however, is above 0.05, indicating that the two results are not statistically significant.
 
 # Testing for Correlation with Body Mass
 

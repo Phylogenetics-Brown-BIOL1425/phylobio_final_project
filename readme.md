@@ -24,15 +24,15 @@ The phylogenetic tree at this stage is not time-calibrated, and shows purely the
 
 Such difficulties have now been addressed by several authors via advanced statistical analyses of the fossil record and of the most optimal constraint methods for internal branch length calculation. The statistical software package R contains a package, paleotree(C), developed by professor David W. Bapst of the South Dakota School of Mines and Technology, that is designed to statistically analyze information on fossil taxa ranges and phylogenetic relationships and provide a time-calibrated phylogeny. The software R was used in this study partly because of the capabilities of this package, and partly because of its ease of use and the nature of the analysis being conducted.
 
-The R code used in order to construct the time-calibrated phylogeny is provided as part of the files uploaded onto this github repository. The R code additionally contains the code used for the analysis conducted in this study. An explanation of the code for both the time-calibrated phylogeny construction and the analysis is provided as comments within the code itself. Packages used in conducting the analyses were “ape”, “picante”, “phytools”, and “paleotree”.
-
-### Ancestral State Reconstruction
-
-
+The R code used in order to construct the time-calibrated phylogeny is provided as part of the files uploaded onto this github repository. The R code additionally contains the code used for the analysis conducted in this study. An explanation of the code for both the time-calibrated phylogeny construction and the analysis is provided as comments within the code. Packages used in conducting the analyses were “ape”, “picante”, “phytools”, and “paleotree”.
 
 ## Results
 
-The tree in Figure 1...
+### Phylogenetic Signal Testing
+
+Phylogenetic 
+
+### Ancestral State Reconstruction
 
 ## Discussion
 
