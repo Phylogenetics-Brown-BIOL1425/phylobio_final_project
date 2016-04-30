@@ -31,9 +31,9 @@ Sensitivity Analysis of EDGE values
 ## Introduction and Goals
 
 It seems inevitable that climate change, along with other anthropogenic factors, will continue to drive the endangerment and extinction of taxa for the immediate future. Each species is by definition a unique parcel of genetic information, which means that an extinction is the loss of a unique genome. With the number of endgangered taxa mounting, it is important to understand the ways in which species will go extinct, and what that means for the loss of phylogenetic diversity. EDGE values (Isaac et al 2007) are a proposed method of combining a species' probability of extinction with a measure of its unique evolutionary history. Calculation of the evolutionary distinctiveness (ED) value is based on tree topology, where a species' score is  the total branch length from the root node to its tip, where internal branches' weight is scaled by the number of tip taxa that share that branch.
-```{r}
+
 ![Isaac2007_fig1](Isaac_fig1.png)
-```
+
 
 __**The methods I will use to do this are...**__
 
@@ -43,20 +43,6 @@ My goal is to construct the phylogeny for Salamandridae and map EDGE values (evo
 __**The data I will use are (my own data/ data publicly available at YYY/ simulations)**__
 
 I am drawing my data entirely from the supplementary table of accession numbers provided in Pyron 2011.
-
-___________
-
-Davies, T. Jonathan, Gideon F. Smith, Dirk U. Bellstedt, James S. Boatwright, Benny Bytebier, Richard M. Cowling, Félix Forest, Luke J. Harmon, A. Muthama Muasya, Brian D. Schrire, Yolande Steenkamp, Michelle Van Der Bank, and Vincent Savolainen. "Extinction Risk and Diversification Are Linked in a Plant Biodiversity Hotspot." PLoS Biology PLoS Biol 9.5 (2011): n. pag. Web. <http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1000620>.
-
-Isaac, Nick J.b., Samuel T. Turvey, Ben Collen, Carly Waterman, and Jonathan E.m. Baillie. "Mammals on the EDGE: Conservation Priorities Based on Threat and Phylogeny." PLoS ONE 2.3 (2007): n. pag. Web. 28 Apr. 2016. <http://journals.plos.org/plosone/article/asset?id=10.1371/journal.pone.0000296.PDF>.
-
-Purvis, A. "Nonrandom Extinction and the Loss of Evolutionary History." Science 288.5464 (2000): 328-30. Web. <http://science.sciencemag.org/content/288/5464/328>.
-
-Pyron, R. Alexander, and John J. Wiens. "A Large-scale Phylogeny of Amphibia including over 2800 Species, and a Revised Classification of Extant Frogs, Salamanders, and Caecilians." Molecular Phylogenetics and Evolution 61.2 (2011): 543-83. Web. 28 Apr. 2016. <http://www.sciencedirect.com/science/article/pii/S105579031100279X>.
-
-Rolland, J., M. W. Cadotte, J. Davies, V. Devictor, S. Lavergne, N. Mouquet, S. Pavoine, A. Rodrigues, W. Thuiller, L. Turcati, M. Winter, L. Zupan, F. Jabot, and H. Morlon. "Using Phylogenies in Conservation: New Perspectives." Biology Letters 8.5 (2011): 692-94. Web. <http://rsbl.royalsocietypublishing.org/content/early/2011/11/21/rsbl.2011.1024>.
-
-Thuiller, Wilfried, Sébastien Lavergne, Cristina Roquet, Isabelle Boulangeat, Bruno Lafourcade, and Miguel. B. Araujo. "Consequences of Climate Change on the Tree of Life in Europe." Nature 470.7335 (2011): 531-34. Web. <http://www.nature.com/nature/journal/v470/n7335/full/nature09705.html>.
 
 ____________
 
@@ -79,15 +65,20 @@ I then downloaded a list of all the IUCN designations for species within Salaman
 ```{r}
 IUCN_salamandridae=read.csv("IUCN_salamandridae.csv", header = TRUE)
 dim(IUCN_salamandridae)
+#76 species of salamanders in IUCN database
 names(IUCN_salamandridae)
 row.names(IUCN_salamandridae)=IUCN_salamandridae[,4]
 IUCN_salamandridae=IUCN_salamandridae[,-4]
 ```
-By searching the row names of each dataframe, I pared down the rows in accessions so that I only look at species with designations in the IUCN database. This removed about 500 rows from the original Pyron dataset.
+By searching the row names of each dataframe, I pared down the rows in accessions so that I only look at species with designations in the IUCN database. This left me with 65 salamandridae species for phylogenetic analysis.
 ```{r}
 accessions=accessions[rownames(accessions)%in%rownames(IUCN_salamandridae),]
 dim(accessions)
 accessions[1,]
+```
+After looking at the accessions for each listed species, it became clear that the salamanders are data deficient for all genes except x12s, x16s, and cytb. For that reason, I dropped the other 9 genes from my analysis.
+```{r}
+accessions=accessions[,-c(4:12)]
 ```
 I then created an IUCN_salamandridae_matched dataframe, which listed only those rows which are in accessions, effectively creating two dataframes with identical rows.
 ```{r}
@@ -97,16 +88,16 @@ names(IUCN_salamandridae_matched)
 ```
 I then went into the matched IUCN dataframe and extracted the Red_list_status and Red_list_criteria columns and appended them to my accessions dataframe. 
 ```{r}
-accessions[,13]=IUCN_salamandridae_matched[,7]
-accessions[,14]=IUCN_salamandridae_matched[,8]
-names(accessions)[13]="Red_list_status"
-names(accessions)[14]="Red_list_criteria"
+accessions[,4]=IUCN_salamandridae_matched[,7]
+accessions[,5]=IUCN_salamandridae_matched[,8]
+names(accessions)[4]="Red_list_status"
+names(accessions)[5]="Red_list_criteria"
 names(accessions)
 
 ```
 I then exported my accessions dataframe to a .csv file
 ```{r}
-write.csv(accessions,file = "accessions2.csv")
+write.csv(accessions,file = "accessions_salamandridae.csv")
 ```
 
 The tools I used were... See analysis files at (links to analysis files).
@@ -130,5 +121,17 @@ The biggest difficulty in implementing these analyses was...
 If I did these analyses again, I would...
 
 ## References
+
+Davies, T. Jonathan, Gideon F. Smith, Dirk U. Bellstedt, James S. Boatwright, Benny Bytebier, Richard M. Cowling, Félix Forest, Luke J. Harmon, A. Muthama Muasya, Brian D. Schrire, Yolande Steenkamp, Michelle Van Der Bank, and Vincent Savolainen. "Extinction Risk and Diversification Are Linked in a Plant Biodiversity Hotspot." PLoS Biology PLoS Biol 9.5 (2011): n. pag. Web. <http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1000620>.
+
+Isaac, Nick J.b., Samuel T. Turvey, Ben Collen, Carly Waterman, and Jonathan E.m. Baillie. "Mammals on the EDGE: Conservation Priorities Based on Threat and Phylogeny." PLoS ONE 2.3 (2007): n. pag. Web. 28 Apr. 2016. <http://journals.plos.org/plosone/article/asset?id=10.1371/journal.pone.0000296.PDF>.
+
+Purvis, A. "Nonrandom Extinction and the Loss of Evolutionary History." Science 288.5464 (2000): 328-30. Web. <http://science.sciencemag.org/content/288/5464/328>.
+
+Pyron, R. Alexander, and John J. Wiens. "A Large-scale Phylogeny of Amphibia including over 2800 Species, and a Revised Classification of Extant Frogs, Salamanders, and Caecilians." Molecular Phylogenetics and Evolution 61.2 (2011): 543-83. Web. 28 Apr. 2016. <http://www.sciencedirect.com/science/article/pii/S105579031100279X>.
+
+Rolland, J., M. W. Cadotte, J. Davies, V. Devictor, S. Lavergne, N. Mouquet, S. Pavoine, A. Rodrigues, W. Thuiller, L. Turcati, M. Winter, L. Zupan, F. Jabot, and H. Morlon. "Using Phylogenies in Conservation: New Perspectives." Biology Letters 8.5 (2011): 692-94. Web. <http://rsbl.royalsocietypublishing.org/content/early/2011/11/21/rsbl.2011.1024>.
+
+Thuiller, Wilfried, Sébastien Lavergne, Cristina Roquet, Isabelle Boulangeat, Bruno Lafourcade, and Miguel. B. Araujo. "Consequences of Climate Change on the Tree of Life in Europe." Nature 470.7335 (2011): 531-34. Web. <http://www.nature.com/nature/journal/v470/n7335/full/nature09705.html>.
 
 
