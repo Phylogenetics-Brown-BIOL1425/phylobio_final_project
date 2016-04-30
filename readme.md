@@ -70,7 +70,11 @@ The tools I used were... See analysis files at (links to analysis files).
 
 ![Figure 12](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree6.png)
 
+[Table 6](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tables/table6.png)
+
 ![Figure 14](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree7.png)
+
+![Table 7](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tables/table7.png)
 
 ## Discussion
 
