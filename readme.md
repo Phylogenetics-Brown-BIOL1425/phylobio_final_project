@@ -37,7 +37,12 @@ Combined the fasta files for each gene using the commands cat *_trnK.fasta > trn
 Changed the fasta header rows to have just the species name using the commands sed -E 's/>.+\| ([a-zA-Z]+) ([a-zA-Z]+)[\. ].+/>\1_\2/g' trnKcombined.raw.fasta > trnKcombined.fasta
 sed -E 's/>.+\| ([a-zA-Z]+) ([a-zA-Z]+)[\. ].+/>\1_\2/g' trnLcombined.raw.fasta > trnLcombined.fasta
 sed -E 's/>.+\| ([a-zA-Z]+) ([a-zA-Z]+)[\. ].+/>\1_\2/g' ITScombined.raw.fasta > ITScombined.fasta
-
+Used mafft to align sequences with the commands 
+mafft trnKcombined.fasta > trnKcombined.aligned.fasta
+mafft trnLcombined.fasta > trnLcombined.aligned.fasta
+mafft ITScombined.fasta > ITScombined.aligned.fasta
+Used mesquite to change things into nexus files by opening the *aligned.fasta files and exporting them as *aligned.nex files
+Changed the JukesCantor code from the bayes_intro assignment to use these nexus files.
 
 ## Results
 
