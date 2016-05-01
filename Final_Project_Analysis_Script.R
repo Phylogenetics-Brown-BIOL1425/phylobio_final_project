@@ -102,11 +102,11 @@ avg_Tree = cal3TimePaleoPhy(tree = phylogeny, timeData = time_data, sampRate = r
 avg_Tree$edge.length = avg_Lengths
 plot(avg_Tree, edge.width = 2, font = 4, cex = 0.53, label.offset = 0.5, no.margin = T)
 
-avg_Tree_saurischia = cal3TimePaleoPhy(tree = phylogeny_saurischia, timeData = time_data_saurischia, sampRate = runif(1, min = 0.146, max = 0.262), brRate = runif(1, min = 0.001, max = 0.15), extRate = runif(1, min = 0.001, max = 0.15), dateTreatment = "minMax", ntrees = 1)
+avg_Tree_saurischia = cal3TimePaleoPhy(tree = phylogeny_saurischia, timeData = time_data_saurischia, sampRate = runif(1, min = 0.104, max = 0.243), brRate = runif(1, min = 0.001, max = 0.15), extRate = runif(1, min = 0.001, max = 0.15), dateTreatment = "minMax", ntrees = 1)
 avg_Tree_saurischia$edge.length = avg_Lengths_saurischia
 plot(avg_Tree_saurischia, edge.width = 2, font = 4, cex = 0.53, label.offset = 0.5, no.margin = T)
 
-avg_Tree_ornithischia = cal3TimePaleoPhy(tree = phylogeny_ornithischia, timeData = time_data_ornithischia, sampRate = runif(1, min = 0.146, max = 0.262), brRate = runif(1, min = 0.001, max = 0.15), extRate = runif(1, min = 0.001, max = 0.15), dateTreatment = "minMax", ntrees = 1)
+avg_Tree_ornithischia = cal3TimePaleoPhy(tree = phylogeny_ornithischia, timeData = time_data_ornithischia, sampRate = runif(1, min = 0.172, max = 0.355), brRate = runif(1, min = 0.001, max = 0.15), extRate = runif(1, min = 0.001, max = 0.15), dateTreatment = "minMax", ntrees = 1)
 avg_Tree_ornithischia$edge.length = avg_Lengths_ornithishia
 plot(avg_Tree_ornithischia, edge.width = 2, font = 4, cex = 0.53, label.offset = 0.5, no.margin = T)
 
