@@ -94,6 +94,8 @@ I then exported my accessions dataframe to a .csv file
 ```{r}
 write.csv(accessions,file = "accessions_salamandridae.csv")
 ```
+I removed T.vittatus sequence from x12s.fasta because it would not align (tried inputting the reverse complement without success).
+
 
 The tools I used were... See analysis files at (links to analysis files).
 
@@ -103,7 +105,7 @@ raxml (starting from hydroid)
   justification in Pyron for ml method
 
 ```{r}
-
+```
 
 ## Results
 
