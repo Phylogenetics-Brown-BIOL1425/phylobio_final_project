@@ -48,12 +48,13 @@ Figures 3 and 4 show the non-time-calibrated and time-calibrated composite Sauri
 SHOW FIGURES 3-6 HERE
 
 
-
-
-
 ### Phylogenetic Signal Testing
 
-Phylogenetic signal testing of our trees with regards to both trochanter position and body mass was conducted to determine the effect phylogeny had on the patterns observed. The function utilized was phylosignal(), provided by the package “picante”. 
+Phylogenetic signal testing of our trees with regards to both trochanter position and body mass was conducted to determine the effect phylogeny had on the patterns observed. The function utilized was **phylosignal()**, provided by the package “picante”. 
+
+The results of interest from our phylogenetic signal testing were the values obtained for K and p. The value K indicates whether related taxa within the tree under concern resemble each other more or less than would be expected under a random walk through morphospace. A K value greater than 1 indicates a greater than expected resemblance between related species, whereas a K value less than 1 indicates a less than expected resemblance between related species. The p-value indicates the statistical significance of the result. If the p-value obtained is greater than the accepted threshold, the results obtained from the data are interpreted to have potentially arisen from chance, and the results are referred to as being insignificant. If the p-value obtained is lower than the accepted threshold, this indicates that the probability of having obtained the results obtained due to chance is very low, and that the results are significant and likely represent the operation of an underlying non-random process. The p-value threshold chosen for this study is 0.05, the standard value used in most paleontological, scientific and statistical analyses.
+
+Phylogenetic signal testing of our entire data set yields a K of 1.267668 for trochanter position, and a K of 0.3015823 for body mass.
 
 ### Ancestral State Reconstruction
 
