@@ -192,8 +192,8 @@ abline(regress2)
 # Plotting Phenogram
 ##phenogram = phenogram(avg_Tree, trochanter_position, fize = 0.6, spread.labels=TRUE, spread.cost=c(2,2), link=50, offset=0.2, xlab = "Time (millions of years)", ylab = "Position of 4th Trochanter (% downshaft)")
 # Plotting Contour Map
-obj = contMap(avg_Tree, trochanter_position, type = "phylogram", legend = 0.7*max(nodeHeights(avg_Tree)), plot = TRUE, edge.width = 2, font = 4, cex = 0.53, label.offset = 0.5, no.margin = T)
+obj = contMap(avg_Tree, trochanter_position, type = "phylogram", legend = 0.7*max(nodeHeights(avg_Tree)), plot = TRUE)
 obj = setMap(obj, colors = c("blue", "cyan", "green", "yellow", "red"))
-plot(obj)
+plot(obj, lwd=2.5, fsize = 0.6)
 # Plotting Side-by-Side
 ## Trait of a distinctive fourth trochanter first appears on the branch leading up to Heterodontosaurus among the Ornithischians, and independently in Herrerasaurus and the branch leading up to Neotheropoda (Dilophosaurus) in the Saurischians
