@@ -1,0 +1,93 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 12575422
+##  Job Name : MyMPIJob
+##  Nodelist : node525
+##      CPUs : 8
+##   Mem/CPU : 2800 MB
+## Directory : /gpfs/scratch/guest317/phylobio_final_project/sala_data
+##   Started : Sun May  1 14:26:47 EDT 2016
+###############################################################################
+module: loading 'raxml/8.0.22'
+
+This is RAxML MPI Process Number: 0
+IMPORTANT WARNING: Alignment column 1533 contains only undetermined values which will be treated as missing data
+IMPORTANT WARNING: Alignment column 7839 contains only undetermined values which will be treated as missing data
+IMPORTANT WARNING: Alignment column 7840 contains only undetermined values which will be treated as missing data
+IMPORTANT WARNING: Alignment column 9906 contains only undetermined values which will be treated as missing data
+IMPORTANT WARNING: Alignment column 9907 contains only undetermined values which will be treated as missing data
+IMPORTANT WARNING: Alignment column 25513 contains only undetermined values which will be treated as missing data
+IMPORTANT WARNING: Alignment column 25571 contains only undetermined values which will be treated as missing data
+IMPORTANT WARNING: Alignment column 25572 contains only undetermined values which will be treated as missing data
+IMPORTANT WARNING: Alignment column 27661 contains only undetermined values which will be treated as missing data
+IMPORTANT WARNING: Alignment column 27662 contains only undetermined values which will be treated as missing data
+
+IMPORTANT WARNING
+Found 10 columns that contain only undetermined values which will be treated as missing data.
+Normally these columns should be excluded from the analysis.
+
+Just in case you might need it, an alignment file with 
+undetermined columns removed is printed to file concat.phy.reduced
+
+
+This is RAxML version 8.0.22 released by Alexandros Stamatakis on May 6 2014.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+David Dao         (KIT)
+Charlie Taylor    (UF)
+
+
+Alignment has 16310 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 80.07%
+
+RAxML rapid bootstrapping and subsequent ML search
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+
+Executing 100 rapid bootstrap inferences and thereafter a thorough ML search 
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heteorgeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 16310
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+/gpfs/runtime/opt/raxml/8.0.22/avx/bin/raxmlHPC-MPI -f a -x 12345 -p 12345 -N 100 -m GTRGAMMA -s concat.phy -n concat_boot100 
+
+
+
+Time for BS model parameter optimization on Process 0: 364.274345 seconds
+Bootstrap[0]: Time 913.071047 seconds, bootstrap likelihood -343166.342823, best rearrangement setting 13
+Bootstrap[1]: Time 511.814421 seconds, bootstrap likelihood -340926.154188, best rearrangement setting 13
+Bootstrap[2]: Time 516.024123 seconds, bootstrap likelihood -344798.312416, best rearrangement setting 12
+Bootstrap[3]: Time 559.675417 seconds, bootstrap likelihood -340496.579471, best rearrangement setting 15
+Bootstrap[4]: Time 551.065745 seconds, bootstrap likelihood -340703.391565, best rearrangement setting 10
+Bootstrap[5]: Time 479.781917 seconds, bootstrap likelihood -343044.980897, best rearrangement setting 10
+Bootstrap[6]: Time 321.294711 seconds, bootstrap likelihood -344781.423814, best rearrangement setting 6
+Bootstrap[7]: Time 582.037128 seconds, bootstrap likelihood -343490.162318, best rearrangement setting 14
+Bootstrap[8]: Time 272.235138 seconds, bootstrap likelihood -341041.753865, best rearrangement setting 5
+Bootstrap[9]: Time 356.571595 seconds, bootstrap likelihood -343283.916504, best rearrangement setting 7
+Bootstrap[10]: Time 338.219639 seconds, bootstrap likelihood -344171.450632, best rearrangement setting 7
+Bootstrap[11]: Time 268.704489 seconds, bootstrap likelihood -338976.656048, best rearrangement setting 5
+Bootstrap[12]: Time 370.729779 seconds, bootstrap likelihood -341772.106101, best rearrangement setting 8
+
+
+Overall Time for
