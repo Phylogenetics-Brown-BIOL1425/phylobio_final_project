@@ -188,7 +188,7 @@ abline(regress2)
 ## Correlation significant (0.0341)
 
 # Ancestral State Reconstructuon
-fit = fastAnc(avg_Tree, trochanter_position, vars = TRUE, CI = TRUE)
+# fit = fastAnc(avg_Tree, trochanter_position, vars = TRUE, CI = TRUE)
 # Plotting Phenogram
 ##phenogram = phenogram(avg_Tree, trochanter_position, fize = 0.6, spread.labels=TRUE, spread.cost=c(2,2), link=50, offset=0.2, xlab = "Time (millions of years)", ylab = "Position of 4th Trochanter (% downshaft)")
 # Plotting Contour Map
