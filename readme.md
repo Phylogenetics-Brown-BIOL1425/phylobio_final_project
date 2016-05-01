@@ -29,17 +29,37 @@ The composite tree was imported into R using the **read.tree()** function from t
 
 At this stage, the composite tree was not scaled to time, and showed only the interrelationships of the constituent taxa. However, the statistical techniques we hoped to use required that the branches of the phylogeny must be scaled to time. Obtaining such a phylogeny is typically difficult for fossil taxa for several reasons: 1) the first and last appearance dates of fossil taxa do not necessarily represent the actual first and last appearance dates for the taxa; 2) the date of divergence of two different taxa is not known with precision, and methods of constraint for estimating internal branch lengths based on the ranges of the terminal taxa have several difficulties based on the method used and the location and number of internal nodes for which dates are well known; 3) molecular phylogenetic analyses cannot be conducted due to the lack of soft tissue preservation and the short life of organic molecules and DNA in fossil taxa, especially those from the Mesozoic; 4) different fossil taxa have been discovered in different abundances, leading to issues of accounting for sampling rate.
 
+<<<<<<< HEAD
 Such difficulties have now been addressed by several authors via advanced statistical analyses of the fossil record and of the most optimal constraint methods for internal branch length calculation. David W. Bapst of the South Dakota School of Mines and Technology developed an R package, **paleotree** (c), that contains functions designed to statistically analyze information on fossil taxa ranges and phylogenetic relationships and assign lengths to branches.
+=======
+Such difficulties have now been addressed by several authors via advanced statistical analyses of the fossil record and of the most optimal constraint methods for internal branch length calculation. David W. Bapst of the South Dakota School of Mines and Technology developed an R package, 
+**paleotree**, that contains functions designed to statistically analyze information on fossil taxa ranges and phylogenetic relationships and assign lengths to branches.
+>>>>>>> 073b4604fbc6afa292c26a226b1ba260452f856f
 
-We wrote a function, **tree_scaler()**, to assign branch lengths to the three composite phylogenies. It uses the inbuilt **paleotree** function **cal3timePaleoPhy** to calculate branch lengths for each tree, using geologic occurrence data for the taxa in the data set and randomized values for the birth, extinction and sampling rates. These values were drawn from uniform distributions with bounds taken from Starrfelt and Liow (2016). The birth and extinction rates were chosen from within a range of 0.001 to 0.15, and the sampling rate from a range of 0.104 to 0.243 for our Saurischia tree, from a range of 0.172 to 0.355 for our Ornithischia tree, and from a range of 0.146 to 0.262 for all of our taxa for our Dinosauria tree. **tree_scaler()** would repeat this calculation for a set number of repetitions, storing the branch lengths from each run in a matrix; we generated 100 time-calibrated trees for each of the three composite phylogenies. After this, we averaged each row in the three data matrices to generate a vector of average edge lengths for each composite tree, which was then assigned to the tree's edge length vector. This resulted in three calibrated composite trees, which we could then use as the basis for subsequent analyses.
+We wrote a function, **tree_scaler()**, to assign branch lengths to the three composite phylogenies. It uses the inbuilt **paleotree** function **cal3timePaleoPhy** to calculate branch lengths for each tree, using geologic occurrence data for the taxa in the data set and randomized values for the birth, extinction and sampling rates. These values were drawn from uniform distributions with bounds taken from Starrfelt and Liow (2016). The birth and extinction rates were chosen from within a range of 0.001 to 0.15, and the sampling rate from a range of 0.104 to 0.243 for our Saurischia tree, from a range of 0.172 to 0.355 for our Ornithischia tree, and from a range of 0.146 to 0.262 for all of our taxa for our Dinosauria tree. **tree_scaler()** would repeat this calculation for a set number of repetitions, storing the branch lengths from each run in a matrix; we generated 100 time-calibrated trees for each of the three composite phylogenies. After this, we averaged each row in the three data matrices to generate a vector of average edge lengths for each composite tree, which was then assigned to its respective tree's edge length vector. This resulted in three calibrated composite trees, which we could then use as the basis for subsequent analyses.
 
 ## Results
 
-Phylogenetic signal testing of our trees with regards to both trochanter position and body mass was conducted to determine the effect phylogeny had on the patterns observed. The function utilized was phylosignal(), provided by the package “picante”. 
+Figure 1 shows the composite Dinosauria tree before time calibration. It shows a deep divergence between Ornithischia and Saurischia, reflecting paleontological evidence that the two clades diverged shortly after the evolution of Dinosauria in the mid-Triassic.
+
+SHOW FIGURE 1 HERE
+
+Figure 2 shows the calibrated composite Dinosauria tree. The deep divergence between Saurischia and Ornithischia is preserved, and reconstructed as occuring just before the evolution of the earliest known dinosaurs (saurischians *Eoraptor*, *Staurikosaurus*, and *Herrarasaurus*). Notably, the Ornithischian half of the tree shows two sections of very short branch lengths, which make the tree seem to have two large polytomies. The first occurs between *Hypsilophodon*
+and *Dryosaurus*, and the second between *Bactrosaurus* and *Shantungosaurus*. These regions seem to indicate bursts of diversification among Ornithischia, but may be artefacts of incomplete taxon sampling or the methods used to time-calibrate the phylogeny. They represent interesting areas of potential future research.
+
+SHOW FIGURE 2 HERE
+
+Figures 3 and 4 show the non-calibrated and calibrated composite Saurischia phylogenies, allowing a more detailed view of the relationships between the taxa. Branch lengths appear similar to those in the Dinosauria phylogeny, indicating that the methods used to scale branches are insensitive to the size of the tree. Figures 5 and 6 show non-calibrated and calibrated composite Ornithischia phylogenies. The two "comb" regions from the calibrated Dinosauria tree are visible on the latter, again validating our earlier result.
+
+SHOW FIGURES 3-6 HERE
+
+
+
+
 
 ### Phylogenetic Signal Testing
 
-Phylogenetic 
+Phylogenetic signal testing of our trees with regards to both trochanter position and body mass was conducted to determine the effect phylogeny had on the patterns observed. The function utilized was phylosignal(), provided by the package “picante”. 
 
 ### Ancestral State Reconstruction
 
