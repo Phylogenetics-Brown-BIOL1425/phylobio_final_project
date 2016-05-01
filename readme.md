@@ -52,7 +52,7 @@ We used phylogenetic independant contrast to assess whether 4th trochanter posit
 
 Figure 1 shows the composite Dinosauria tree before time calibration. It shows a deep divergence between Ornithischia and Saurischia, reflecting paleontological evidence that the two clades diverged shortly after the evolution of Dinosauria in the mid-Triassic period.
 
-SHOW FIGURE 1 HERE
+![GitHub Logo](Figure 1.png)
 
 Figure 2 shows the time-calibrated composite Dinosauria tree. The deep divergence between Saurischia and Ornithischia is preserved, and reconstructed as occurring just prior to the evolution of the earliest known dinosaurs (the Saurischians *Eoraptor*, *Staurikosaurus*, and *Herrarasaurus*). Notably, the Ornithischian half of the tree shows two sections of very short branch lengths, which make the tree seem to have two large polytomies. The first occurs between *Hypsilophodon* and *Dryosaurus*, and the second between *Bactrosaurus* and *Shantungosaurus*. These regions seem to indicate bursts of diversification among Ornithischia, but are more likely to be artifacts of incomplete taxon sampling or of the methods used to time-calibrate the phylogeny. They represent interesting areas of potential future research.
 
