@@ -63,14 +63,15 @@ SHOW FIGURES 3-6 HERE
 
 ### Phylogenetic Signal
 
-Phylogeny | Character | K | p value 
- ---------- | --------- | - | ------- |
-Dinosauria  | 4th Trochanter | 1.2677 | 0.001 
- | Body Mass | 0.3016 | 0.007 
-| Saurischia | 4th Trochanter | 0.1641 | 0.871 
- | Body Mass | 0.7973 | 0.001 
- Ornithischia | 4th Trochanter | 0.2576 | 0.321
- | Body Mass | 0.3091 | 0.111 
+|Phylogeny | Character | K | p value 
+| :----------: | :---------: | -: | -------: |
+|Dinosauria  | 4th Trochanter | 1.2677 | 0.001 |
+| | Body Mass | 0.3016 | 0.007 |
+| Saurischia | 4th Trochanter | 0.1641 | 0.871 |
+| | Body Mass | 0.7973 | 0.001 
+| Ornithischia | 4th Trochanter | 0.2576 | 0.321|
+| | Body Mass | 0.3091 | 0.111 |
+
 [**Table 1.** Phylogenetic signal (K) values for 4th trochanter position and body mass in dinosaurs, saurischians only, and ornithischians only. A K of 1 indicates expected similarity in relatives due to a Brownian motion model of character evolution. If K is greater than 1, relatives are more similar than would be expected; if K is less than 1, relatives are more differant than would be expected.]
  
 
