@@ -73,7 +73,6 @@ SHOW FIGURES 3-6 HERE
 | Saurischia | Body Mass | 0.7973 | 0.001 |
 | Ornithischia | 4th Trochanter | 0.2576 | 0.321|
 | Ornithischia | Body Mass | 0.3091 | 0.111 |
-
 [**Table 1.** Phylogenetic signal (K) values for 4th trochanter position and body mass in dinosaurs, saurischians only, and ornithischians only. A K of 1 indicates expected similarity in relatives due to a Brownian motion model of character evolution. If K is greater than 1, relatives are more similar than would be expected; if K is less than 1, relatives are more differant than would be expected.]
 
 
