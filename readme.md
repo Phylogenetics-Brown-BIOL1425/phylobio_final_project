@@ -111,11 +111,13 @@ Within the Saurischians, the fourth trochanter position never reaches the distal
 
 ## Discussion
 
-These results indicate...
+### Phylogenetic Signal Testing
 
-The biggest difficulty in implementing these analyses was...
+### Ancestral State Reconstruction
 
-If I did these analyses again, I would...
+### Sources of Difficulty
+
+### Venues for Future Research
 
 ## References
 
