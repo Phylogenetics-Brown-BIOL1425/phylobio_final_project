@@ -53,25 +53,31 @@ We used phylogenetic independant contrast to assess whether 4th trochanter posit
 Figure 1 shows the composite Dinosauria tree before time calibration. It shows a deep divergence between Ornithischia and Saurischia, reflecting paleontological evidence that the two clades diverged shortly after the evolution of Dinosauria in the mid-Triassic period.
 
 ![GitHub Logo](Figure 1.png)
+
 **Figure 1.** Non-time-calibrated composite Dinosauria phylogeny. 
 
 Figure 2 shows the time-calibrated composite Dinosauria tree. The deep divergence between Saurischia and Ornithischia is preserved, and reconstructed as occurring just prior to the evolution of the earliest known dinosaurs (the Saurischians *Eoraptor*, *Staurikosaurus*, and *Herrarasaurus*). Notably, the Ornithischian half of the tree shows two sections of very short branch lengths, which make the tree seem to have two large polytomies. The first occurs between *Hypsilophodon* and *Dryosaurus*, and the second between *Bactrosaurus* and *Shantungosaurus*. These regions seem to indicate bursts of diversification among Ornithischia, but are more likely to be artifacts of incomplete taxon sampling or of the methods used to time-calibrate the phylogeny. They represent interesting areas of potential future research.
 
 ![GitHub Logo](Figure 2.png)
+
 **Figure 2.** Time-calibrated composite Dinosauria phylogeny.
 
 Figures 3 and 4 show the non-time-calibrated and time-calibrated composite Saurischia phylogenies, permitting a more detailed analysis of the relationships between the taxa. Branch lengths appear similar to those in the composite Dinosauria phylogeny, indicating that the methods used to scale the branches to time are insensitive to the size of the tree. Figures 5 and 6 show non-time-calibrated and time-calibrated composite Ornithischia phylogenies. The two "comb”-like regions from the calibrated Dinosauria tree are visible on the latter, again validating our earlier phylogeny.
 
 ![GitHub Logo](Figure 3.png)
+
 **Figure 3.** Non-time-calibrated composite Saurischian phylogeny.
 
 ![GitHub Logo](Figure 4.png)
+
 **Figure 4.** Time-calibrated composite Saurischian phylogeny.
 
 ![GitHub Logo](Figure 5.png)
+
 **Figure 5.** Non-time-calibrated composite Ornithischian phylogeny.
 
 ![GitHub Logo](Figure 6.png)
+
 **Figure 6.** Time-calibrated composite Ornithischian phylogeny.
 
 ### Phylogenetic Signal
@@ -96,9 +102,10 @@ Phylogenetic signal testing of our entire data set yields a K of 1.267668 for tr
 Figure 7 shows the contour map obtained from ancestral state reconstruction using our time-calibrated composite Dinosauria phylogeny. As the color becomes warmer (moves from blue to red), the position of the fourth trochanter moves further down the femur, distally from where the femur head articulates with the pelvis. The contour map illustrates that the distally-directed movement fourth trochanter position saw three independent origins within Dinosauria. The first occurs at the base of the Ornithischians, along the branch leading to the basal Ornithischian *Heterodontosaurus*. The second occurs along the branch leading to the basal Dinosaur *Herrerasaurus*, and the third occurs along the branch leading to *Dilophosaurus* within the Saurischians. 
 
 ![GitHub Logo](Figure 7.png)
+
 **Figure 7.** Contour Map of time-calibrated composite Dinosauria phylogeny. More distal placement of the fourth trochanter is represented by warmer colors (red).
 
-Further patterns can be discerned as well. A significant distally-directed movement of the fourth trochanter is seen in the Ornithischians in the branch leading up to *Camptosaurus* and more derived Ornithopods, which together comprise the clade *Ankyllopolexia*. Within *Ankyllopolexia*, the fourth trochanter position attains a very distal position within *Camptosaurus*, and begins to move back proximally along the femur with more derived taxa. It then moves distally once again in *Saurolophus angustirostris* and *Corythosaurus intermedius*. 
+Further, more fine-scale patterns can be discerned in the contour map as well. A significant distally-directed movement of the fourth trochanter is seen in the Ornithischians in the branch leading up to *Camptosaurus* and more derived Ornithopods, which together comprise the clade *Ankyllopolexia*. Within *Ankyllopolexia*, the fourth trochanter position attains a very distal position within *Camptosaurus*, and begins to move back proximally along the femur with more derived taxa. It then moves distally once again in *Saurolophus angustirostris* and *Corythosaurus intermedius*. 
 
 Within the Saurischians, the fourth trochanter position never reaches the distal position along the femur that it does within the Ornithischians. Even the most distal position, seen in the branches leading to *Ceratosaurus*, to *Streptospondylus* and to *Suchomimus*, is not as distal as it is in even the most basal Ornithischian, Heterodontosaurus. The general pattern within the Saurischians seems to be an initial distal movement of the fourth trochanter up until the branch leading up to the MRCA of *Piatnitzkysaurus* and *Tyrannosaurus* defining the clade *Orionides*, after which the fourth trochanter moves proximally back along the femur over the Saurischian phylogeny. Two isolated events of distal movement can be seen within the Orionides, one in the branch leading up to *Streptospondylus* and *Suchomimus*, and one within the Tyrannosaurs, specifically in the branch leading up to *Albertosaurus* and *Gorgosaurus*. An isolated slight distal movement is also seen in *Tyrannosaurus*. Two events of extreme proximal movement of the fourth trochanter occur, one in the branch leading up to *Piatnitzkysaurus*, and one in the branch leading up to *Compsognathus* and *Sinosauropteryx*. 
 
