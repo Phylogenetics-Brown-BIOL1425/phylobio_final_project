@@ -30,19 +30,19 @@ Phylogenetic reconstructions were conducted in revbayes (rb and rb-mpi) version 
 
 
 #####Figure 3: Rate matrix
-![Figure 3](https://rawgit.com/Jcbnunez/phylobio_final_project/master/rate_matrix.png =100x20)
+![Figure 3](https://rawgit.com/Jcbnunez/phylobio_final_project/master/rate_matrix.png)
 ___
 
 #####Figure 4: Site Variation
-![Figure 4](https://rawgit.com/Jcbnunez/phylobio_final_project/master/among_sites_rate.png "Figure 4 Site Variation")
+![Figure 4](https://rawgit.com/Jcbnunez/phylobio_final_project/master/among_sites_rate.png)
 ___
 
 #####Figure 5: Topology
-![Figure 5](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Phylogeny_topology.png "Figure 4 Site Variation")
+![Figure 5](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Phylogeny_topology.png)
 ___
 
 #####Figure 6: phyloMCMC
-![Figure 5](https://rawgit.com/Jcbnunez/phylobio_final_project/master/phyloMCMC.png "Figure 4 Site Variation")
+![Figure 5](https://rawgit.com/Jcbnunez/phylobio_final_project/master/phyloMCMC.png)
  
  The original vision of this project was to compare the chromosomal tree with each individual gene tree in the molecule. However, given time constrains, this project will present a 'Lite' version of the original vision focusing on the comparison of the main phylogeny constructed using the complete chromosome K sequences with 3 genes (gene a6, Gene CI, gene BigGene) and 1 neutral marker. Quality control measures for tree inference were estimated and plotted using ggplot2. As way to explore tree-space 10% of all proposed topologies(see suplemental code) were extracted and plotted with the highest posterior tree overlaid on top. 
 
@@ -81,68 +81,71 @@ ___
 ##**Phylogenetic Inference Quality Control**
 
 **Chromosomal Tree**
-Two runs of phylogenetic inferences were conducted with the entire chromosomal sequence in RevBayes. Only one of the two runs showed parameter convergence (Mean of Posterior Distribution = -11907.167; ESS = 922). Other quality measures of the inference are also explored: tree space uncertainty of the best tree in the tree space is shown in figure 7 (Due to time and computational constrains, only 10% -4000 randomly sampled trees- of the treespace is shown). Posterior probability search and probability distribution are shown in figure 8. 
+Two runs of phylogenetic inferences were conducted with the entire chromosomal sequence in RevBayes. Only one of the two runs showed parameter convergence (Mean of Posterior Distribution = -11907.167; ESS = 922). Other quality measures of the inference are also explored: tree space uncertainty of the best tree in the tree space is shown in figure 7 (Due to time and computational constrains, only 10% -4000 randomly sampled trees- of the treespace is shown). Posterior probability search and probability distribution are shown in figure 8. At face value, exploration of the tree space indicates that the brach leading to the outgroup has problematic placement. This low leaf stability is seen much more acutely in the phylogenetic reconstructions of individual genes (see below). I investigated the impact of this unstable taxon on the tree topology by retuning the analyses without the outgroups (see below).  
 
-![Figure 7](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_tree_space.png "Figure 7: Tree Space with branch length for chromosome K")
+![Figure 7](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_tree_space.png)
 *Figure 7: Light blue, 10% of the tree space constructed for chromosome K. Red, Best tree.
 
-![Figure 8](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_posterior_QC1.png "Figure 8: Chromosome K Quality Control of Parameter Convergence")
+![Figure 8](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_posterior_QC1.png)
 *Figure 8: Parameter searches conducted by revBayes during phylogenetic inference of chromosome K. Left: PDF of sampled posteriors. The blue vertical line represent the mean of the sampling distribution. Right: Posterior sampling per state (i.e. *per* generations)*
-
 
 **Gene Tree A6:** Two independent runs were conducted with the sequence of gene A. Tree space uncertainty and and best tree are shown in figure 9. For both runs, parameter searches converged to similar posterior distributions (Distribution Mean 1 = -1695.242, ESS = 992, Distribution Mean 2 = -1695.473, ESS = 739). Distribution and parameter search *per* state are shown in figure 10. 
 
-![Figure 9](https://rawgit.com/Jcbnunez/phylobio_final_project/master/a_treespace.png "Figure 9: Tree Space with branch lenght ")
+![Figure 9](https://rawgit.com/Jcbnunez/phylobio_final_project/master/a_treespace.png)
 *Figure 9: Light blue, 10% of the tree space constructed for chromosome K. Red, Best tree. 
 
 
-![Figure 10](https://rawgit.com/Jcbnunez/phylobio_final_project/master/A_posterior_QC2.png "Figure 10: Gene A6 Quality Control of Parameter Convergence")
+![Figure 10](https://rawgit.com/Jcbnunez/phylobio_final_project/master/A_posterior_QC2.png)
 *Figure 10: Parameter searches conducted by revBayes during phylogenetic inference for gene a6. Left: PDF of sampled posteriors. The vertical lines represent the mean of the sampling distribution. The color scheme is blue and red for first and second independent run respectively. Right: Posterior sampling per state (i.e. *per* generations.) Color scheme is the same as the sampling distributions*
 
 **Gene Tree CI:** Two independent runs were conducted with the sequence of gene CI. Tree space uncertainty and and best tree are shown in figure 11. For both runs, parameter searches converged to similar posterior distributions, the effective sample size of these searches was relatively small (Distribution Mean 1 = -3742.323, ESS = 115, Distribution Mean 2 = -3741.266, ESS = 182). Distribution and parameter search *per* state are shown in figure 12. 
 
-![Figure 11](https://rawgit.com/Jcbnunez/phylobio_final_project/master/CI_treespace2.png "Figure 11: Tree Space with branch lenght ")
+![Figure 11](https://rawgit.com/Jcbnunez/phylobio_final_project/master/CI_treespace2.png)
 *Figure 11: Light blue, 10% of the tree space constructed for Gene CI. Red, Best tree. 
 
 
-![Figure 12](https://rawgit.com/Jcbnunez/phylobio_final_project/master/CI_posterior_QC.png "Figure 12: Gene CI Quality Control of Parameter Convergence")
+![Figure 12](https://rawgit.com/Jcbnunez/phylobio_final_project/master/CI_posterior_QC.png)
  *Figure 12: Parameter searches conducted by revBayes during phylogenetic inference for gene CI. Left: PDF of sampled posteriors. The vertical lines represent the mean of the sampling distribution. The color scheme is blue and red for first and second independent run respectively. Right: Posterior sampling per state (i.e. *per* generations.) Color scheme is the same as the sampling distributions*
 
 
 **Gene Tree BigGene**
 
-![Figure 13](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BG_treespace2.png "Figure 13: Tree Space with branch lenght ")
+![Figure 13](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BG_treespace2.png)
 *Figure 13: Light blue, 10% of the tree space constructed for the neutral marker. Red, Best tree. 
 
-![Figure 14](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BG_posterior_QC.png "Figure 14: Big Gene Quality Control of Parameter Convergence")
+![Figure 14](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BG_posterior_QC.png)
 *Figure 14: Parameter searches conducted by revBayes during phylogenetic inference for the Big Gene. Left: PDF of sampled posteriors. The vertical lines represent the mean of the sampling distribution. The color scheme is blue and red for first and second independent run respectively. Right: Posterior sampling per state (i.e. *per* generations.) Color scheme is the same as the sampling distributions*
 
 
 **Loci Tree Neutral Marker: The Demographic Sigan**
 
-![Figure 15](https://rawgit.com/Jcbnunez/phylobio_final_project/master/NM_treespace.png "Figure 15: Tree Space with branch lenght ")
+![Figure 15](https://rawgit.com/Jcbnunez/phylobio_final_project/master/NM_treespace.png)
 *Figure 15: Light blue, 10% of the tree space constructed for the neutral marker. Red, Best tree. 
 
-![Figure 16](https://rawgit.com/Jcbnunez/phylobio_final_project/master/NM_posterior_QC.png "Figure 16: Loci NM Quality Control of Parameter Convergence")
+![Figure 16](https://rawgit.com/Jcbnunez/phylobio_final_project/master/NM_posterior_QC.png)
 *Figure 16: Parameter searches conducted by revBayes during phylogenetic inference for loci CI. Left: PDF of sampled posteriors. The vertical lines represent the mean of the sampling distribution. The color scheme is blue and red for first and second independent run respectively. Right: Posterior sampling per state (i.e. *per* generations.) Color scheme is the same as the sampling distributions*
 
-##**Comparison of Phylogenetic Inference using clustering approaches**
+##**Chromosomal Tree and Missing Data**
 
-and thus was used as the phylogeny for the chromosome.  The tree shows the split of the northern and Southern clades (Posterior probability = 0.92). As expected from the network analysis, individuals from the introgression zone clustered within either of the clades.      
+Tree constructed using polymorphic sites from the entire chromosome is shown in figure 17 next to the MSA used to build the tree. The tree reconstruct a bipartition splitting the northern and Southern clades (Posterior probability = 0.92). As expected from the network analysis, individuals from the introgression zone clustered within either of the clades. The MSA reveals that most taxa, except the outgroups, northville, south pier city and North harbourshire have some degree of missing data.        
+
 
 ![Figure 17](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_phylogeny.png "Figure 17: phylogeny for chromosome K")
 **Figure 17:** Left: Phylogenetic reconstruction of of populations of your favorite organism. Branch leading to the split of the norther and souther clades is indicated in gold, posterior probability of the branch is also shown. Right: Mulutiple sequence aligment (MSA) of chromosome K used in the phylogenetic reconstruction
 
 ###Phylogenetic Signal Confounded in low sequencing coverage and/or bad loci calls
 
+To asses the impact of missing data on the phylogenetic reconstruction I mapped the character of "% missing data" onto the tips of the tree. This mapping is displayed a tree showing the estimated branch length (Figure 17B) and in a tree with "flat" branch length (brl. = 1). For both trees phylogenetic signal was estimated with Blomber's K.  
 
-**Sequencing Coverage Across the tips**
 ![Figure 17B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/N_mapped_BR.png "Figure 17B: phylogeny for gene BG")
 Blomberg's K = 0.01374608
 
-**Sequencing Coverage Across the tips - with flat (br = 1) branch lengths**
+**Sequencing Coverage Across the tips - with flat (brl. = 1) branch lengths**
 ![Figure 17B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/N_mapped_noBR.png "Figure 17B: phylogeny for gene BG")
 Blomberg's K = 0.2848437
+
+![Figure 17B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/traitgram_missingdata.png)
+
 
 
 ####Gene Big Gene
