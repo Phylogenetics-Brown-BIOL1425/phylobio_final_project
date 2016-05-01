@@ -51,7 +51,7 @@ behaviors I was seeking.
 
 ## Results
 
-![alt tag](https://github.com/DanielSeidman/phylobio_final_project/blob/master/RAxML_bestTree.rax_outputBetterRoot.png)
+![alt tag](https://github.com/DanielSeidman/phylobio_final_project/blob/master/tree_marked.png)
 
 Unfortunately, very little sequence data is actually available for the gene in question, though in the process of searching for more, it is possible that
 I have elucidated some clues into the function of uncharacterized drosophila genes, as many had significant alignment to the squid gene I was searching for.
@@ -59,7 +59,7 @@ I have elucidated some clues into the function of uncharacterized drosophila gen
 
 ## Discussion
 
-The duplicated gene does seem to demarcate a small subclade of squid.
+The duplicated gene does seem to demarcate a small subclade of squid. Frustratingly enough, 3 out of the sequences
 
 ## References
 
