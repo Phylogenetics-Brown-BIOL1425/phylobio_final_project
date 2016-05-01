@@ -84,7 +84,7 @@ The tools I used were... See analysis files at (links to analysis files).
 
 [Table 6](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tables/table6.png)
 
-![Figure 13](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/3tree_characters.png)
+![Figure 13](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/3tree_characters.pnggi)
 
 ![Figure 14](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree7.png)
 
@@ -99,7 +99,7 @@ The biggest difficulty in implementing these analyses was...
 If I did these analyses again, I would...
 
 ##Acknowledgements
-Andrew Leslie, for help with (hopefully if I get to this) heat-mapping the characters instead of using those ugly circles, and how to look at the evolution of discrete characters. 
+Andrew Leslie, for help with heat-mapping. 
 
 Mike Rosario, for patiently helping me with R.
 
