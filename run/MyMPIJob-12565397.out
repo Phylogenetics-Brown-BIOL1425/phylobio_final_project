@@ -1,0 +1,12 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 12565397
+##  Job Name : MyMPIJob
+##  Nodelist : node510
+##      CPUs : 8
+##   Mem/CPU : 2800 MB
+## Directory : /gpfs/scratch/guest314/phylobio_final_project/run
+##   Started : Sun May  1 07:34:42 EDT 2016
+###############################################################################
+module: loading 'revbayes/Mar2016'
+/var/spool/slurmd/job12565397/slurm_script: line 39: syntax error near unexpected token `('
+/var/spool/slurmd/job12565397/slurm_script: line 39: `data <- readDiscreteCharacterData("DQA_Lepus_Bayes.nex")'
