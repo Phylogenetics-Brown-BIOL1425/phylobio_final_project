@@ -1,0 +1,60 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 12565395
+##  Job Name : MyMPIJob
+##  Nodelist : node510
+##      CPUs : 8
+##   Mem/CPU : 2800 MB
+## Directory : /gpfs/scratch/guest314/phylobio_final_project/run
+##   Started : Sun May  1 07:34:18 EDT 2016
+###############################################################################
+module: loading 'raxml/8.0.22'
+
+This is RAxML MPI Process Number: 1
+: illegal option -- - 
+
+This is RAxML MPI Process Number: 3
+: illegal option -- - 
+
+This is RAxML MPI Process Number: 4
+: illegal option -- - 
+
+This is RAxML MPI Process Number: 5
+: illegal option -- - 
+
+This is RAxML MPI Process Number: 0
+: illegal option -- - 
+
+This is RAxML MPI Process Number: 2
+: illegal option -- - 
+
+This is RAxML MPI Process Number: 6
+: illegal option -- - 
+
+This is RAxML MPI Process Number: 7
+: illegal option -- - 
+srun: error: node510: tasks 0-7: Exited with exit code 255
+
+This is RAxML MPI Process Number: 1
+: illegal option -- - 
+
+This is RAxML MPI Process Number: 2
+: illegal option -- - 
+
+This is RAxML MPI Process Number: 7
+: illegal option -- - 
+
+This is RAxML MPI Process Number: 6
+: illegal option -- - 
+
+This is RAxML MPI Process Number: 5
+: illegal option -- - 
+
+This is RAxML MPI Process Number: 3
+: illegal option -- - 
+
+This is RAxML MPI Process Number: 0
+: illegal option -- - 
+
+This is RAxML MPI Process Number: 4
+: illegal option -- - 
+srun: error: node510: tasks 0-7: Exited with exit code 255
