@@ -1,4 +1,4 @@
->Bos taurus glutamic-pyruvate transaminase (alanine aminotransferase) (GPT), mRNA
+>Bos taurus GPT
 ------------------------------------------------------------
 ------------------------------------------------------------
 -------------------------ggggccagcaggctgcagccaagagggcgcccc--
@@ -105,7 +105,7 @@ ctcctgctggccg-----------------------------------------------
 -------------------ctaataaagcaatgggctggtcgggctgcttggaggctgcg
 tgcacacct-------------------------------atgtgcaccttcacagtctt
 gtccaaaaaaaaaaaaaaaa----------------
->Pan troglodytes glutamic-pyruvate transaminase (alanine aminotransferase) (GPT), mRNA
+>Pan troglodytes GPT
 aagcctgtaggtgcgtgctggggcatgtggcagccctggctgtgtgggagtgaggctcac
 agccactgggctggaagcctgggcctcacccactccctcccgtgctcagcctcctggagc
 ctcctccgtaaccctttgctttcctgagaggagccaggtgctttgaaggagcctccatgg
@@ -212,7 +212,7 @@ ctcttgatgcctggcggggtg---------------------------------------
 -------------------ctaataaagctgtgtggcagtctgac---------------
 ------------------------------------------------------------
 -tccagg-----------------------------
->Mus musculus glutamic pyruvic transaminase, soluble (Gpt), mRNA
+>Mus musculus Gpt
 ------------------------------------------------------------
 ------------------------------------------------------------
 ---------------ccctttcagtagggccagaaggctgccgtggagagggtggtgcct
@@ -319,7 +319,7 @@ gtctgggtacttg-----------------------------------------------
 -------------------ctaataaagctgggtgtaggcctgat---------------
 --------t-------------------------------tgaggtggctgcctgggtga
 ccccaaaaaaaaaaaaaaaaaaaaaa----------
->Homo sapiens glutamic-pyruvate transaminase (alanine aminotransferase) (GPT), mRNA
+>Homo sapiens GPT
 ------------------------------------------------------------
 -------agacgggtggggcggggcccaactgtcccc---------------------ag
 ctccttcagccctttctgtccctcccagtgaggccagctgcggtgaagagggtgctctct
@@ -426,7 +426,7 @@ ctcttgatgcctggcggggtg---------------------------------------
 -------------------ctaataaagctgtgtggcagtctgac---------------
 ------------------------------------------------------------
 -tccaaaaaaaaaaa---------------------
->Rattus norvegicus glutamic-pyruvate transaminase (alanine aminotransferase) (Gpt), mRNA
+>Rattus norvegicus Gpt
 ------------------------------------------------------------
 ------------------------------------------------------------
 -------------------------------------ctgcagtgtgaagggtgttgtct
@@ -533,7 +533,7 @@ gtctcggtaactg-----------------------------------------------
 -------------------ctaataaatctg-----------------------------
 ------------------------------------------------------atgtca
 gcctgaaaaa--------------------------
->Macaca mulatta glutamic-pyruvate transaminase (alanine aminotransferase) (GPT), mRNA
+>Macaca mulatta GPT
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -640,7 +640,7 @@ ctcttgctgcctggcgggcgg---------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------
->Saccharomyces cerevisiae S288c alanine transaminase ALT2 (ALT2), mRNA
+>Saccharomyces cerevisiae GPT
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -747,7 +747,7 @@ gga---------ttcaagactggaaagaatttcatcaagatttcttcagcaagtat----
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------
->Xenopus tropicalis glutamic pyruvate transaminase (alanine aminotransferase) 2 (gpt2), mRNA
+>Xenopus tropicalis gpt
 ------------------------------------------------------------
 ------------------------------------------------------------
 -------------------------------------------tcaggatgga-------
@@ -854,7 +854,7 @@ tccttggctgctgctcagtca---------------------------------------
 -----------------ttctagccaaggcgccaagcagccaaaccactggccagtcctg
 tttagcattttcatataaagggctaaaatgaatgtttttaatatgaatcaataaagattg
 taaggaagaaaaaaaaaaaaaaaaaa----------
->Danio rerio glutamic pyruvate transaminase (alanine aminotransferase) 2, like (gpt2l), mRNA
+>Danio rerio gpt
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -961,7 +961,7 @@ atgttcgcctaaagaataaca---------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------
->Bos taurus glutamic pyruvate transaminase (alanine aminotransferase) 2 (GPT2), mRNA
+>Bos taurus GPT2
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1068,7 +1068,7 @@ a-atctattccttcaaacaggagagcctggagtccactggaggcccagagagggccatcc
 --tggtgggtgtggggatt-----------------------------------------
 ------------------------------------------------------------
 ------------atggcca-----------------
->Pan troglodytes glutamic pyruvate transaminase (alanine aminotransferase) 2 (GPT2), mRNA
+>Pan troglodytes GPT2
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1175,7 +1175,7 @@ tgggctgtgcctcagacagtgcatcaccgggcacccagaggcttgcctggctattcctgt
 tctggtgtgtgtggagtgttggggaggaacagatgcagatcaacctgtggctgttttccc
 atctaggttctcacaggtatctcctgacagaggtacttaacaatggctctgctggaaatt
 tctataaataaaatgtccaaaatggtga--------
->Mus musculus glutamic pyruvate transaminase (alanine aminotransferase) 2 (Gpt2), mRNA
+>Mus musculus Gpt2
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1282,7 +1282,7 @@ tcagccacacctcagagacattgtttcca-------------------------------
 -----------------tttggatgtgagcaggcgcaggcctgcatgctctttcctactt
 agcatcatcagttcttccgcctccttagcatggttctttgtaacagccatgctgggaagc
 tctgaacaataaaatacttccagagtggt-------
->Homo sapiens glutamic pyruvate transaminase (alanine aminotransferase) 2 (GPT2), transcript variant 1, mRNA
+>Homo sapiens GPT2
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1389,7 +1389,7 @@ tgggctgtgcctcagacagtgcatcaccgggcacccagaggcttgcctggctattcctgt
 tctggtgtgtgtggagtgttggggaggaacagatgcagatcaacctgtggctgttttccc
 gtctaggttctcacaggtatctcctgacagaggtacttaacaatggctctgctggaaatt
 tctataaataaaatgtccaaaatggtgactgcgttt
->Rattus norvegicus glutamic pyruvate transaminase (alanine aminotransferase) 2 (Gpt2), mRNA
+>Rattus norvegicus Gpt2
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1496,7 +1496,7 @@ gttcttctgagcaaacagtgattttgcaatgtc---------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------
->Macaca mulatta glutamic pyruvate transaminase (alanine aminotransferase) 2 (GPT2), mRNA
+>Macaca mulatta GPT2
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1603,7 +1603,7 @@ tgggccgtgcctcagacagcgcatcactgcgcacccagaggctcgcctggctgttcctgt
 tgtggtgtgtgtggagttttggggaggaacagatgcagatcaacttgtggctgttttccc
 atctaggttctcacaggcatctcctgacaaaggtacttaacaatggctctgctggaaatt
 tctataaataaaatgtccaaaatggtga--------
->Saccharomyces cerevisiae S288c alanine transaminase ALT1 (ALT1), mRNA
+>Saccharomyces cerevisiae GPT2
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1710,7 +1710,7 @@ gga---------ttaagaaatgggaaagtttccataaagaattttttgaccaatac----
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------
->Xenopus (Silurana) tropicalis glutamic pyruvate transaminase (alanine aminotransferase) 2 (gpt2), mRNA
+>Xenopus tropicalis gpt2
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1817,7 +1817,7 @@ aagagattg---------------------------------------------------
 -----------------gactgtaaactatgtacatggatattcttctgtgtatgaactt
 tcagtatgttatagatagaattattctaagcagtgtttcaataggtctttacttttagtt
 tgcaaactgaaaatggtatatagttaaa--------
->Danio rerio glutamic pyruvate transaminase (alanine aminotransferase) 2 (gpt2), mRNA
+>Danio rerio gpt2
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
