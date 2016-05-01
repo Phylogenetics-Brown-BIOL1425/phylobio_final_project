@@ -17,7 +17,7 @@
 
 module load raxml
 
-mpirun -n 8 raxmlHPC-MPI  -f a -x 12345 -p 12345 -N 100 -m GTRGAMMA -s sala.concat.phy -n concat_boot100
+mpirun -n 8 raxmlHPC-MPI  -f a -x 12345 -p 12345 -N 100 -m GTRGAMMA -s cytb.phy -n cytb_boot100
 
 
 
