@@ -30,7 +30,7 @@ Phylogenetic reconstructions were conducted in revbayes (rb and rb-mpi) version 
 
 
 #####Figure 3: Rate matrix
-![Figure 3](https://rawgit.com/Jcbnunez/phylobio_final_project/master/rate_matrix.png = 100x20 "Figure 3 Rate Matrix")
+![Figure 3](https://rawgit.com/Jcbnunez/phylobio_final_project/master/rate_matrix.png=100x20)
 ___
 
 #####Figure 4: Site Variation
