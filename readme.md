@@ -48,6 +48,8 @@ The tools I used were... See analysis files at (links to analysis files).
 
 ## Results
 
+![Figure 0](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/figure0.png)
+
 ![Figure 1](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/700tree_characters.png)
 
 ![Figure 2](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree1.png)
