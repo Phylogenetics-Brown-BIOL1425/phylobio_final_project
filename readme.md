@@ -65,10 +65,10 @@ SHOW FIGURES 3-6 HERE
 
 ### Phylogenetic Signal
 
-|Phylogeny | Character | K | p value |
-| :----------: | :---------: | -: | -------: |
-|Dinosauria  | 4th Trochanter | 1.2677 | 0.001 |
-|Dinosauria | Body Mass | 0.3016 | 0.007 |
+| Phylogeny | Character | K | p value |
+| :----------: | :---------: | ---: | -------: |
+| Dinosauria  | 4th Trochanter | 1.2677 | 0.001 |
+| Dinosauria | Body Mass | 0.3016 | 0.007 |
 | Saurischia | 4th Trochanter | 0.1641 | 0.871 |
 | Saurischia | Body Mass | 0.7973 | 0.001 |
 | Ornithischia | 4th Trochanter | 0.2576 | 0.321|
