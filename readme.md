@@ -34,6 +34,16 @@ Such difficulties have now been addressed by several authors via advanced statis
 
 We wrote a function, **tree_scaler()**, to assign branch lengths to the three composite phylogenies. It uses the inbuilt **paleotree** function **cal3timePaleoPhy** to calculate branch lengths for each tree, using geologic occurrence data for the taxa in the data set and randomized values for the birth, extinction and sampling rates. These values were drawn from uniform distributions with bounds taken from Starrfelt and Liow (2016). The birth and extinction rates were chosen from within a range of 0.001 to 0.15, and the sampling rate from a range of 0.104 to 0.243 for our Saurischia tree, from a range of 0.172 to 0.355 for our Ornithischia tree, and from a range of 0.146 to 0.262 for all of our taxa for our Dinosauria tree. **tree_scaler()** would repeat this calculation for a set number of repetitions, storing the branch lengths from each run in a matrix; we generated 100 time-calibrated trees for each of the three composite phylogenies. After this, we averaged each row in the three data matrices to generate a vector of average edge lengths for each composite tree, which was then assigned to its respective tree's edge length vector. This resulted in three calibrated composite trees, which we could then use as the basis for subsequent analyses.
 
+### Ancestral State Reconstruction
+
+### Testing for Phylogenetic Signal
+
+We used the **phylosignal()** function in the R package **picante** to assess whether closely related species in our sample had 4th trochanter positions more or less similar than would be expected under a Brownian motion model of character evolution. First we tested for a phylogenetic signal in 4th trochanter position and body mass across the entire phylogeny. We repeated these analyses within Saurischia and Ornithischia. Output from **phylosignal** includes p-values, which enabled us to assess whether or not our results were statistically significant.
+
+### Independant Contrasts
+
+We used phylogenetic independant contrast to assess whether 4th trochanter position is correlated with body mass, utilizing the function **pic()** in the package **ape**. We first calculated independant contrasts for 4th trochanter position and body mass for all taxa; these contrasts were then subjected to linear regression. This procedure was repeated for Saurischia and Ornithischia seperately.
+
 ## Results
 
 Figure 1 shows the composite Dinosauria tree before time calibration. It shows a deep divergence between Ornithischia and Saurischia, reflecting paleontological evidence that the two clades diverged shortly after the evolution of Dinosauria in the mid-Triassic.
