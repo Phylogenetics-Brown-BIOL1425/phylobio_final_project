@@ -8,7 +8,7 @@
 
 # io
 d_morph = readDiscreteCharacterData("data/Temnospondyl_Characters.nex")
-tree = readTrees("data/Primates_tree.nex")[1]
+tree = readTrees("data/GTRseed1.nex")[1]
 
 ### JGS - Define some useful quantities as constant nodes.
 
