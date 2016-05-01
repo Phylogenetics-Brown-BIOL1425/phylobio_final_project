@@ -6,31 +6,25 @@ This repository is a stub for your final project. Fork it, develop your project,
 
 Some guidelines and tips:
 
-- Use the stubs below to write up your final project. Alternatively, if you would like the writeup to be an executable document (with [knitr](http://yihui.name/knitr/), [jupytr](http://jupyter.org/), or other tools), you can create it as a separate file and put a link to it here in the readme.
-
 - For information on formatting text files with markdown, see https://guides.github.com/features/mastering-markdown/ . You can use markdown to include images in this document by linking to files in the repository, eg `![GitHub Logo](/images/logo.png)`.
 
 - The project must be entirely reproducible. In addition to the results, the repository must include all the data (or links to data) and code needed to reproduce the results.
 
-- If you are working with unpublished data that you would prefer not to publicly share at this time, please contact me to discuss options. In most cases, the data can be anonymized in a way that putting them in a public repo does not compromise your other goals.
-
 - Paste references (including urls) into the reference section, and cite them with the general format (Smith at al. 2003).
 
-- Commit and push often as you work.
-
 OK, here we go.
-
-# Title of my project
 
 ```r
 setwd("~/Dropbox/Brown University/BIOL1425/phylobio_final_project/")
 ```
 
-Sensitivity Analysis of EDGE values
+# Title of my project
+
+Sensitivity Analysis of input GE on EDGE Values
 
 ## Introduction and Goals
 
-It seems inevitable that climate change, along with other anthropogenic factors, will continue to drive the endangerment and extinction of taxa for the immediate future. Each species is by definition a unique parcel of genetic information, which means that an extinction is the loss of a unique genome. With the number of endgangered taxa mounting, it is important to understand the ways in which species will go extinct, and what that means for the loss of phylogenetic diversity. EDGE values (Isaac et al 2007) are a proposed method of combining a species' probability of extinction with a measure of its unique evolutionary history. Calculation of the evolutionary distinctiveness (ED) value is based on tree topology, where a species' score is  the total branch length from the root node to its tip, where internal branches' weight is scaled by the number of tip taxa that share that branch.
+It seems inevitable that climate change, along with other anthropogenic factors, will continue to drive the endangerment and extinction of taxa for the immediate future. Each species is by definition a unique parcel of genetic information, which means that an extinction is the loss of a unique genome. With the number of endgangered taxa mounting, it is important to understand the ways in which species will go extinct, and what that means for the loss of phylogenetic diversity. EDGE values (Isaac et al 2007) are a proposed method of combining a species' probability of extinction (GE, global endangerment) with a measure of its unique evolutionary history (ED, evolutionary distinctiveness). Calculation of the evolutionary distinctiveness (ED) value is based on tree topology, where a species' score is  the total branch length from the root node to its tip, where internal branches' weight is scaled by the number of tip taxa that share that branch.
 
 ![Isaac2007_fig1](Isaac_fig1.png)
 
@@ -159,20 +153,24 @@ I then went into the matched IUCN dataframe and extracted the Red_list_status an
 ```r
 accessions[,4]=IUCN_salamandridae_matched[,7]
 accessions[,5]=IUCN_salamandridae_matched[,8]
+accessions[,6]=IUCN_salamandridae_matched[,11]
 names(accessions)[4]="Red_list_status"
 names(accessions)[5]="Red_list_criteria"
+names(accessions)[6]="population_trend"
 names(accessions)
 ```
 
 ```
 ## [1] "X12S"              "X16S"              "cytb"             
-## [4] "Red_list_status"   "Red_list_criteria"
+## [4] "Red_list_status"   "Red_list_criteria" "population_trend"
 ```
 I then exported my accessions dataframe to a .csv file
 
 ```r
 write.csv(accessions,file = "accessions_salamandridae.csv")
 ```
+I removed T.vittatus sequence from x12s.fasta because it would not align (tried inputting the reverse complement without success).
+
 
 The tools I used were... See analysis files at (links to analysis files).
 
@@ -180,6 +178,7 @@ Accession numbers for sequences were gathered from Pyron 2011
 mafft alignment
 raxml (starting from hydroid)
   justification in Pyron for ml method
+
 
 
 ## Results
@@ -208,73 +207,4 @@ Rolland, J., M. W. Cadotte, J. Davies, V. Devictor, S. Lavergne, N. Mouquet, S. 
 
 Thuiller, Wilfried, Sébastien Lavergne, Cristina Roquet, Isabelle Boulangeat, Bruno Lafourcade, and Miguel. B. Araujo. "Consequences of Climate Change on the Tree of Life in Europe." Nature 470.7335 (2011): 531-34. Web. <http://www.nature.com/nature/journal/v470/n7335/full/nature09705.html>.
 
-
-```r
-library(knitr)
-knit(input="readme.rmd", output = "readme.md")
-```
-
-```
-## 
-## 
-## processing file: readme.rmd
-```
-
-```
-##   |                                                                         |                                                                 |   0%  |                                                                         |...                                                              |   5%
-##   ordinary text without R code
-## 
-##   |                                                                         |.......                                                          |  11%
-## label: unnamed-chunk-10
-##   |                                                                         |..........                                                       |  16%
-##   ordinary text without R code
-## 
-##   |                                                                         |..............                                                   |  21%
-## label: unnamed-chunk-11
-##   |                                                                         |.................                                                |  26%
-##   ordinary text without R code
-## 
-##   |                                                                         |.....................                                            |  32%
-## label: unnamed-chunk-12
-##   |                                                                         |........................                                         |  37%
-##   ordinary text without R code
-## 
-##   |                                                                         |...........................                                      |  42%
-## label: unnamed-chunk-13
-##   |                                                                         |...............................                                  |  47%
-##   ordinary text without R code
-## 
-##   |                                                                         |..................................                               |  53%
-## label: unnamed-chunk-14
-##   |                                                                         |......................................                           |  58%
-##   ordinary text without R code
-## 
-##   |                                                                         |.........................................                        |  63%
-## label: unnamed-chunk-15
-##   |                                                                         |............................................                     |  68%
-##   ordinary text without R code
-## 
-##   |                                                                         |................................................                 |  74%
-## label: unnamed-chunk-16
-##   |                                                                         |...................................................              |  79%
-##   ordinary text without R code
-## 
-##   |                                                                         |.......................................................          |  84%
-## label: unnamed-chunk-17
-##   |                                                                         |..........................................................       |  89%
-##   ordinary text without R code
-## 
-##   |                                                                         |..............................................................   |  95%
-## label: unnamed-chunk-18
-##   |                                                                         |.................................................................| 100%
-##   ordinary text without R code
-```
-
-```
-## output file: readme.md
-```
-
-```
-## [1] "readme.md"
-```
 
