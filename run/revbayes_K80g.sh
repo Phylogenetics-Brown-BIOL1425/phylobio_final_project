@@ -1,3 +1,8 @@
+#!/bin/bash
+
+# Request 1 day of runtime:
+#SBATCH --time=48:00:00
+
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=8
 
