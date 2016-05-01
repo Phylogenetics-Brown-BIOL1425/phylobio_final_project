@@ -194,6 +194,6 @@ abline(regress2)
 # Plotting Contour Map
 obj = contMap(avg_Tree, trochanter_position, type = "phylogram", legend = 0.7*max(nodeHeights(avg_Tree)), plot = TRUE)
 obj = setMap(obj, colors = c("blue", "cyan", "green", "yellow", "red"))
-plot(obj, lwd=2.5, fsize = 0.6)
+plot(obj, lwd=2.4, fsize = 0.6)
 # Plotting Side-by-Side
 ## Trait of a distinctive fourth trochanter first appears on the branch leading up to Heterodontosaurus among the Ornithischians, and independently in Herrerasaurus and the branch leading up to Neotheropoda (Dilophosaurus) in the Saurischians
