@@ -30,7 +30,7 @@ plot(t,show.tip.label = FALSE)
 
 #simulating character evolution
 
-variance-covariance matrix:
+##variance-covariance matrix:
 
 vcv <- diag( 5 )
 vcv[1,2] <- 0.2
@@ -38,14 +38,6 @@ vcv[1,3] <- 0.0
 vcv[1,4] <- 0.9
 vcv[1,5] <- 0.2
 vcv[3,3] <- 0.3
-
-vcv <- diag( 3 )
-vcv[1,2] <- 0.2
-vcv[1,3] <- 0.0
-vcv[2,1] <- 0.2
-vcv[2,3] <- 0.0
-vcv[3,3] <- 0.3
-
 
 ##generate multiple simulated datasets on tree t according to vcv:
 library(geiger)
@@ -55,12 +47,6 @@ library( adephylo )
 library( phylobase )
 A4 <- phylo4d( t, A[,,1] )
 table.phylo4d( A4, box=FALSE )
-
-library(RColorBrewer)
-rbPal<-colorRampPalette(c('blue','red')) 
-cols<-rbPal(10)[as.numeric(cut(A,breaks=10))]
-plot(A4,show.tip.label=FALSE,cex=0.175,adj=0.25)
-tiplabels(pch=22,cex=.3,bg=cols,col=NA,adj=8.4)
 
 ##tree2
 library(geiger)
@@ -118,7 +104,6 @@ table.phylo4d( G4, box=FALSE )
 
 
 ##independent contrasts 
-
 
 ##5 characters
 ic1 <- pic( A[,1,1], t )
@@ -250,21 +235,7 @@ cols<-rbPal(10)[as.numeric(cut(notree7,breaks=10))]
 heatmap(notree7,col=cols)
 
 
-
-
-
-
-
-##bits of stuff that I used to build the above... 
-
-##drop tips
-
-##random numbers as a sample function
-t2<- drop.tip(t, sample(x = 1:700, size = 350, replace = F))
-
-##getting stuff out
+##exporting covariance matrices
 write.csv(ic,file="indie.csv",row.names=FALSE)
 
 
-##heatmap
-heatmap(x,col=cm.colors(256))
