@@ -61,9 +61,25 @@ Figures 3 and 4 show the non-time-calibrated and time-calibrated composite Sauri
 SHOW FIGURES 3-6 HERE
 
 
+<<<<<<< HEAD
 ### Phylogenetic Signal Testing
 
 Phylogenetic signal testing of our trees with regards to both trochanter position and body mass was conducted to determine the effect phylogeny had on the patterns observed. The function utilized was **phylosignal()**, provided by the package “picante”. 
+=======
+### Phylogenetic Signal
+
+|Phylogeny | Character | K | p value 
+| :----------: | :---------: | -: | -------: |
+|Dinosauria  | 4th Trochanter | 1.2677 | 0.001 |
+| | Body Mass | 0.3016 | 0.007 |
+| Saurischia | 4th Trochanter | 0.1641 | 0.871 |
+| | Body Mass | 0.7973 | 0.001 
+| Ornithischia | 4th Trochanter | 0.2576 | 0.321|
+| | Body Mass | 0.3091 | 0.111 |
+
+[**Table 1.** Phylogenetic signal (K) values for 4th trochanter position and body mass in dinosaurs, saurischians only, and ornithischians only. A K of 1 indicates expected similarity in relatives due to a Brownian motion model of character evolution. If K is greater than 1, relatives are more similar than would be expected; if K is less than 1, relatives are more differant than would be expected.]
+ 
+>>>>>>> 400632393d99be1ed93f9f16d761c577c4766ce5
 
 The results of interest from our phylogenetic signal testing were the values obtained for K and p. The value K indicates whether related taxa within the tree under concern resemble each other more or less than would be expected under a random walk through morphospace. A K value greater than 1 indicates a greater than expected resemblance between related species, whereas a K value less than 1 indicates a less than expected resemblance between related species. The p-value indicates the statistical significance of the result. If the p-value obtained is greater than the accepted threshold, the results obtained from the data are interpreted to have potentially arisen from chance, and the results are referred to as being insignificant. If the p-value obtained is lower than the accepted threshold, this indicates that the probability of having obtained the results obtained due to chance is very low, and that the results are significant and likely represent the operation of an underlying non-random process. The p-value threshold chosen for this study is 0.05, the standard value used in most paleontological, scientific and statistical analyses.
 
