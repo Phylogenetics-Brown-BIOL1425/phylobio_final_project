@@ -30,12 +30,12 @@ I theorized this could be due to a gene duplication event somewhere in the squid
 the gene split off from the original, and then check if there is correlation between organisms capable of using pigment cells in their skin to camouflage
 by taking into acount ambient light, and organisms in the clade demarcated by this gene duplication.
 
-The methods I will use to do this are...
-Multiple sequence alignment on mRNA sequences taken from skin and retina tissues of various cephalopods and related molluscs, as well as maximum likelyhood tree
-estimation to attempt to build a phylogeny of the gene in question.
-I will then check the tree to see where the particular sequence suspected to correspond to a gene duplication event (from Visual phototransduction components in cephalopod chromatophores suggest dermal photoreception
-Alexandra C. N. Kingston, Alan M. Kuzirian, Roger T. Hanlon, Thomas W. Cronin) seems to occur in the tree, and see if organisms outside of the clade demarcated by this gene are capable of the sophisticated color-changing
-patterns known in many cephalopod species.
+
+I will be utilizing multiple sequence alignment on mRNA sequences taken from skin and retina tissues of various cephalopods and related molluscs, as well as maximum likelyhood tree
+estimation and bayesian inference to attempt to build a phylogeny of the gene in question.
+I will then check the tree to see where the particular sequence suspected to correspond to a gene duplication event seems to occur in the tree,
+and see if organisms outside of the clade demarcated by this gene are capable of the sophisticated color-changing patterns known in many cephalopod
+species.
 
 I will be using publically available at NCBI, found via blast search on the transcript found in the mRNA expression study mentioned earlier.
 The mRNA sequences I intend to use in particular correspond to the transcript for the alpha subunit of a heterotrimeric G-protein involved in light sensing.
@@ -44,7 +44,8 @@ The mRNA sequences I intend to use in particular correspond to the transcript fo
 
 I used Mafft for multiple alignment: Started with affine gap: open penalty 1.5, penalty .5
 I then used raxml with gamma_gtr to produce a maximum likelyhood phylogeny for the gene in question.
-I am currently creating more trees with revbayes to see if they agree.
+I have also tested the tree with revbayes under the GTR model and jukes cantor model twice each.
+While parts of the overall tree do sometimes differ, every single tree built supports the characteristics I will be discussing.
 I looked for papers discussing the cephalopods that fell in parts of the phylogenetic tree which were of interest to the project.
 In some cases, when very little research was available, I checked videos and images of the animal to see if I could find any evidence of the
 behaviors I was seeking.
@@ -52,15 +53,43 @@ behaviors I was seeking.
 ## Results
 
 ![alt tag](https://github.com/DanielSeidman/phylobio_final_project/blob/master/tree_marked.png)
+This image comes from raxml with the GTR_gamma model, on all the sequences I found with meaningful alignment with the given gene.
+![alt tag](https://github.com/DanielSeidman/phylobio_final_project/blob/master/revBMollusc/goodsupporttree.png)
 
 Unfortunately, very little sequence data is actually available for the gene in question, though in the process of searching for more, it is possible that
-I have elucidated some clues into the function of uncharacterized drosophila genes, as many had significant alignment to the squid gene I was searching for.
+I have elucidated some clues into the function of some uncharacterized drosophila genes, as many had significant alignment to the squid gene I was searching for.
 
 
 ## Discussion
 
-The duplicated gene does seem to demarcate a small subclade of squid. Frustratingly enough, 3 out of the sequences
+The duplicated gene does seem to demarcate a small subclade of squid. Frustratingly enough, 2 of the three sequences shown inside of that clade are the 
+same animal (D. pealei and L. pealei are both the same species). L. forbesi is a different, though related squid. As discussed by the study on which this project is 
+based, we know that D. pealei and L. pealei have the capacity to alter their chromatophore states in response to differing light levels in order to better camouflage.
+This data was not available for L. forbesi, which appears to be little studied, though a study has shown that the squid has extraocular photoreceptors in vescicles behind
+its eyes(Cobb and Williamson, 1998). It is possible that it may have some form of light-adapting camouflage behavoir, or is at least partially equipped for it.
+On the other hand, outside of this clade, we see 2 sequences for the squid Euprymna scolopes. This squid is also known to react to light, but it does not use light information
+for regulating its chromatophores. Rather, it uses it to regulate the output of light-emitting organs to break up its siloette(Jones and Nishiguchi, 2004), while actually concealing
+itself when on the sea bed by covering itself in sediment. It therefore does not demonstrate the chromatophore regulation we are seeking. Finally, an unusual result
+shows up in the gene tree: Sepia officinalis shows up as a sister taxa to Euprymna scolopes. The other animals I have discussed so far are all squid, while Sepia officinalis
+is a cuttlefish. The gene tree, as one would expect, disagrees with the general phylogeny for cephalopods in general. It is very interesting to note, however, that
+Sepia officinalis is known to possess transcripts for other ocular proteins in its skin, much like D. pealei (Mäthger et al, 2010). It is not known whether this
+animal responds to light in similar ways to squid above, but it is hypthesized that Sepia officinalis could use the extra-ocular light information to help supplement
+its information about light-gradients around it, as the animal is known to be color blind, but still produces complex and effective patterns to camouflage in a variety
+of different substrates. While this is clearly supposition, and also rather unlikely, it is an interesting thought that the unusual similarity between these two mRNA sequences may suggest
+convergent evolution. 
+
+All in all, we need more sequences of this mRNA in squid to be able to confirm or deny the significance of this protein duplication event in the evolutionary history
+of squid camouflage techniques, especially transcripts found in skin, of which there are very few. Until that happens, these theories will just have to remain
+speculation.
+
 
 ## References
+Cobb CS, Williamson R. 1998. Electrophysiology of Extraocular Photoreceptors in the squid Loligo forbesi (CEPHALOPODA: LOLIGINIDAE). Journal of Molluscan Studies. 64,111-11
 
+Jones BW, Nishiguchi MK. 2004 Counterillumination in the Hawaiian bobtail squid, Euprymna scolopes Berry (Mollusca: Cephalopoda). Marine Biology, 144(6), pp 1151-1155
 
+Kingston ACN, Wardill TJ, Hanlon RT, Cronin TW. 2015. An Unexpected Diversity of Photoreceptor Classes in the Longfin Squid, Doryteuthis pealeii. PLoS One. 10(9): e0135381. 
+
+Lindgren AR, Pankey MS, Hochberg FG, Oakley TH. 2012. A multi-gene phylogeny of Cephalopoda supports convergent morphological evolution in association with multiple habitat shifts in the marine environment. BMC Evolutionary Biology 2012. 12, 129 
+
+Mäthger LM, Roberts SB, Hanlon RT. 2010. Evicence for distributed light sensing in the skin of cuttlefish, Sepia officinalis. Biology Letters. 
