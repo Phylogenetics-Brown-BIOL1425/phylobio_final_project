@@ -9,7 +9,7 @@ The primary goal of these projects is to apply the knowledge and tools acquired 
 
 ## Introduction and Goals
 
-Your favorite marine organism inhabits the eastern seaboard of some contient. Ecological conditions across the eastern seaboard of some continent are variable thus your favorite organism is exposed to a drastic range of ecological conditions. The demographic history of this organism is characterized by historical phylogenetic break occurring at the height of Middlecity (Figure 1). This phylogenetic break is likely due to a vicariance event occurring  recently in geologic time. 
+Your favorite marine organism inhabits the eastern seaboard of some contient. Ecological conditions across the eastern seaboard of some continent are variable thus your favorite organism is exposed to a drastic range of ecological conditions. The demographic history of this organism is characterized by historical phylogenetic break occurring at the height of Middlecity (Figure 1). This phylogenetic break is thought to be due to a vicariance event combined with a population bottleneck in the northern clade occurring in recent geologic time. 
 
 ![Figure 1](https://rawgit.com/Jcbnunez/phylobio_final_project/master/model_system.png "Figure 1 Ecology of your favorite Marine Organism")
 
@@ -45,7 +45,7 @@ ___
 #####Figure 6: phyloMCMC
 ![Figure 5](https://rawgit.com/Jcbnunez/phylobio_final_project/master/phyloMCMC.png)
  
-The original vision of this project was to compare the chromosomal tree with each individual gene tree in the molecule. However, given time constrains, this project will present a 'Lite' version of the original vision focusing on the comparison of the main phylogeny constructed using the complete chromosome K sequences with 3 genes (gene a6, Gene CI, gene BigGene) and 1 neutral marker. Quality control measures for tree inference were estimated and plotted using ggplot2. As way to explore tree-space 10% of all proposed topologies(see suplemental code) were extracted and plotted with the highest posterior tree overlaid on top. 
+The original vision of this project was to compare the chromosomal tree with each individual gene tree in the molecule. However, given time constrains, this project will present a 'Lite' version of the original vision focusing on the comparison of the main phylogeny constructed using the complete chromosome K sequences with 3 genes (gene a6 ~200 bp, Gene CI ~ 1600 bp, gene BigGene ~2000 bp) and 1 neutral marker (~ 900 bp). Quality control measures for tree inference were estimated and plotted using ggplot2. As way to explore tree-space 10% of all proposed topologies(see suplemental code) were extracted and plotted with the highest posterior tree overlaid on top. 
 
 Phylogenetic visualizations were produced in R using ggtree(https://www.bioconductor.org/packages/3.3/bioc/vignettes/ggtree/inst/doc/ggtree.html) and ape(https://cran.r-project.org/web/packages/ape/index.html). Visualization of posterior probabilities were produced using ggplot2. For some clustering tests, ape phylogenetic objects were converted to dendrogram objects and analyzed using the R package dendextend (https://cran.r-project.org/web/packages/dendextend/index.html). Blomberg's K estimates of phylogenetic signal were estimated using the R package "picante" (https://cran.r-project.org/web/packages/picante/index.html). Phennograms were plotted in R using a custom function by Liam Ravell "phenogram" (http://blog.phytools.org/2011/12/traitgram-with-mapped-discrete.html). Many clustering analyses were conducting under the assumptions that ultrametric phylogenetic trees, like dendrograms, can be seen as sets of nested lists possessing particular attributes. These clustering analyses mainly investigated the similarity between trees inferred using the entirety of the data set vs. trees inferred using only subsets of the data (chromosome trees vs. locus trees). These methods consist of: a) Tanglegrams, a comparison method that investigates the similarities in hierarchical clustering between the locus and chromosomal trees.  Tanglegrams allows for the estimation of "entanglement", a parameter which indicates the degree in which the branches and tips retain order between trees (lower entanglement suggests highest conservation of structure). Since tree topology can be represented in multiple ways, the relationship between two trees may not be entirely intuitive at face value. Built in algorithms in dendextend were used to "disentangle" tree visualization such that both topologies are visualized to the highest degree of similarity. Tree similarity was compared quantitively using two metrics, Baker's Gamma Index (Baker, 1974) measures the degree of association between two sets of hierarchical clusters (trees in this case), and The Fowlkes-Mallows Index (Fowlkes and Mallows, 1983). Statistical confidence for the Baker's Gamma Index was estimated using a permutation test (here done with 100 repetitions) as follows:
 
@@ -147,9 +147,9 @@ ___
 
 ####Gene Big Gene
 
-Phylogenetic reconstruction for the the Big Gene produced the most accurate tree reconstruction relative to all other genes. The tree grouped both northern and southern haplogroups in clades with excellent branch support (out-group to Southern-clade posterior = 1, Southern Clade to Northern Clade posterior = 1), however, unlike the chromosomal tree, populations of northern and southern haplogroup were not recovered as two distinct sister clades, but rather the northern clade deriving from a subdivision of the southern clade (Figue 19A). Topology similarity between the chromosomal tree and the Big Gene tree was the highest of all gene-to-chromosome tree comparisons. Corrected entanglement = 0.0322881. Baker's Gamma = 0.8 (P-val = 0; Figure 18D). Finally, Fowlkes–Mallows index reveals high levels of similarity between the chromosomal and gene tree at all levels of topology (Figure 18E). 
+Phylogenetic reconstruction for the the Big Gene produced the most accurate tree reconstruction relative to all other genes. The tree grouped both northern and southern haplogroups in clades with excellent branch support (out-group to Southern-clade posterior = 1, Southern Clade to Northern Clade posterior = 1 (Figue 19A). Topology similarity between the chromosomal tree and the Big Gene tree was the highest of all gene-to-chromosome tree comparisons. Corrected entanglement = 0.0322881. Baker's Gamma = 0.8 (P-val = 0; Figure 18D). Finally, Fowlkes–Mallows index reveals high levels of similarity between the chromosomal and gene tree at all levels of topology (Figure 18E). 
 
-![Figure 18A](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BG_phylogeny.png)
+![Figure 18A](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BG_phylogeny2.png)
 **Figure 18A:** Phylogenetic tree constructed from data from the Big Gene
 ![Figure 18B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_tangled.png "Figure")
 **Figure 18B:** Raw entanglement of Big Gene vs Chromosome K. In this state the entanglement coefficient is =  0.8978911.
@@ -231,7 +231,6 @@ Tree space analysis of the first trees constructed revealed  high leaf instabili
 
 For the chromosomal tree (K), removal the outgroup has positive effects by increasing the posterior probabilities of the branches leading to the bipartition of the northern and southern haplogroups (Figure 22B).
 
-
 ![Figure 22A](https://rawgit.com/Jcbnunez/phylobio_final_project/master/no_out_K_qc.png)
 **Figure 22A**: Parameter searches conducted by revBayes during phylogenetic inference of chromosome K without the outgroup. Left: PDF of sampled posteriors. The blue vertical line represent the mean of the sampling distribution. Right: Posterior sampling per state (i.e. *per* generation). Notice the bad convergence as the first generations post burning.
 ![Figure 22B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/no_out_tree_comparison_K.png)
@@ -253,9 +252,24 @@ A situation similar to that observed for gene A is seen in the case of the neutr
 ![Figure 24B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/noOUT_NM_trees.png)
 **Figure 24B:** Phylogenetic tree constructed from data from the neutral marker without the outgroup. 
 
+###Branch Length Analysis 
+Finally, a branch length analysis was conducted comparing the norther and Southern clades genetrated in the chromosomal tree, the Big gene tree, and the concatenated tree (Table 1). The following metric were estimated: Total Branch Length, the sum of all branch lengths in the clade; Shared Branch Length, the sum of all branch lengts shared by more than one tip; and, Unique Evolutionary History, the sum of the branch lengths that give rise to only one tip in the clade.
+
+**Table 1:** Branch length analysis for the two haplogroups in three trees chromosomal tree, the Big gene tree, and the concatenated tree. UEH = Unique Evolutionary History; SBL = Shared Branch Length; TBL = Total Branch Length. 
+
+| Clade | Partition | UEH      | SBL      | TBL      | TBL_S/TBL_N |
+|-------|-----------|----------|----------|----------|-------------|
+| North | K         | 0.166674 | 0.030191 | 0.196865 | 3.082117187 |
+| South | K         | 0.485426 | 0.121335 | 0.606761 | *           |
+| North | A6-CI-NM  | 0.037607 | 0.013497 | 0.051104 | 1.667325454 |
+| South | A6-CI-NM  | 0.060772 | 0.024435 | 0.085207 | *           |
+| North | Big Gene  | 0.098208 | 0.023287 | 0.121495 | 2.098991728 |
+| South | Big Gene  | 0.177707 | 0.07731  | 0.255017 | *           |
+
 ## Discussion
 
 **Demographic Signal**
+This project investigated posterior support and topology similarity between a tree constructed using full chromosome data and trees built with data partitions per gene from the chromosome. The man aim was determine which partition (gene) if any better reconstructed the chromosome topology (and putative demographic signal) and if any particular partition was responsable for the topology of the chromosomal tree. Investigations of 3 genes (A6, CI, Big Gene) and a neutral region revealed that trees constructed from Big Gene alone recapitulated most of the topological (and putatively demographic) signal observed in the whole chromosome. All other genes performed poorly by themselves, and, even when concatenated into a single molecule, only recapitulated the chromosomal with a low signal. There are various hypotheses that could explain this observations. If the phylogenetic signal derived form the haplogroups is purely demographic (i.e. neutral),  the large size and low functional constrains of big Gene could make it the target of multiple neutral mutations not purged out by purifying selection. Much of this standing variation may have been purged in the north during the vicariance and subsequence bottleneck events, thus resulting in the observed signal. This scenario receives a small amount of support from the lack of signal obtained in the tree build from the concatenated genes. This sequence, while longer than Big gene, is composed of smaller genes with high levels of functional constraints. This hypothesis also gains additional support in slight   
 
 **Effects of Missing Data**
 
@@ -264,13 +278,6 @@ A situation similar to that observed for gene A is seen in the case of the neutr
 **Parameter Convergence as Number of Loci increases**
 
 **Future Directions**
-
-
-These results indicate...
-
-The biggest difficulty in implementing these analyses was...
-
-If I did these analyses again, I would...
 
 ## References
 
