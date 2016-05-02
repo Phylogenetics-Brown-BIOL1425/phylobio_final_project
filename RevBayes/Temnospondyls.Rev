@@ -27,7 +27,9 @@ mvi = 0
 
 n_species <- d_morph.ntaxa() 
 
-n_branches_morph = 2 * n_species - 1
+### Weirdly there seem to be 2n-2 branches in my tree
+
+n_branches_morph = 2 * n_species - 2
 
 ###############
 # morph model #
