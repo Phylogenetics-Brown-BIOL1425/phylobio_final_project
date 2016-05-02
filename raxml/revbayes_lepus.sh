@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Request 1 day of runtime:
-#SBATCH --time=24:00:00
+#SBATCH --time=48:00:00
 
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=8
@@ -14,8 +14,6 @@
 #SBATCH -e MyMPIJob-%j.out
 
 # Run a command
-
-module load revbayes
 
 ################################################################################
 #
@@ -35,8 +33,9 @@ module load revbayes
 ###### This just defines a single model for all sites #######
 
 ### Read in sequence data for both genes
-
-data <- readDiscreteCharacterData("DQA_Lepus_Bayes.nex")
+module load revbayes/Mar2016
+rb
+data <- readDiscreteCharacterData("DQA_Outgroup2_Bayes.nex")
 
 # Get some useful variables from the data. We need these later on.
 n_species <- data.ntaxa()
@@ -114,8 +113,8 @@ seq.clamp(data)
 mymodel = model(Q)
 
 
-monitors[1] = mnModel(filename="output/DQA_Lepus_K80g2_posterior.log",printgen=10, separator = TAB)
-monitors[2] = mnFile(filename="output/DQA_Lepus_K80g2_posterior.trees",printgen=10, separator = TAB, phylogeny)
+monitors[1] = mnModel(filename="output/DQA_Outgroup2_R1_posterior.log",printgen=10, separator = TAB)
+monitors[2] = mnFile(filename="output/DQA_Outgroup2_R1_posterior.trees",printgen=10, separator = TAB, phylogeny)
 monitors[3] = mnScreen(printgen=1000, TL)
 
 mymcmc = mcmc(mymodel, monitors, moves, nruns=2)
@@ -126,13 +125,13 @@ mymcmc.run(generations=1500000)
 
 # Now, we will analyze the tree output.
 # Let us start by reading in the tree trace
-treetrace1 = readTreeTrace("output/DQA_Lepus_R1_posterior_run_1.trees", treetype="non-clock")
-treetrace2 = readTreeTrace("output/DQA_Lepus_R1_posterior_run_2.trees", treetype="non-clock")
+treetrace1 = readTreeTrace("output/DQA_Outgroup2_R1_posterior_run_1.trees", treetype="non-clock")
+treetrace2 = readTreeTrace("output/DQA_Outgroup2_R1_posterior_run_2.trees", treetype="non-clock")
 # and get the summary of the tree trace
 #treetrace.summarize()
 
-map_tree_1 = mapTree(treetrace1,"output/DQA_Lepus_R1_posterior_run_1.tree")
-map_tree_2 = mapTree(treetrace2,"output/DQA_Lepus_R1_posterior_run_2.tree")
+map_tree1 = mapTree(treetrace1,"output/DQA_Outgroup2_R1_posterior_run_1.tree")
+map_tree2 = mapTree(treetrace2,"output/DQA_Outgroup2_R1_posterior_run_2.tree")
 
 # you may want to quit RevBayes now
 q()
