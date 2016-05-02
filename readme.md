@@ -153,29 +153,29 @@ The significance of the result when considering Dinosauria collectively may be a
 
 ## References
 
-1. Albert Prieto-Marquez and Jonathan R. Wagner. “A new species of Saurolophine Hadrosaurid dinosaur from the Late Cretaceous of the Pacific coast of North America”. *Acta Palaeontologica Polonica* 58 (2013): 255-268.
+1. Albert Prieto-Marquez and Jonathan R. Wagner. “A new species of Saurolophine Hadrosaurid dinosaur from the Late Cretaceous of the Pacific coast of North America”. *Acta Palaeontologica Polonica* 58 (2013): 255-268. http://dx.doi.org/10.4202/app.2011.0049
 
-2. Andrew T. McDonald. “Phylogeny of Basal Iguanodonts (Dinosauria: Ornithischia): An Update”. *PLoS ONE* 7:5 (2012).
+2. Andrew T. McDonald. “Phylogeny of Basal Iguanodonts (Dinosauria: Ornithischia): An Update”. *PLoS ONE* 7:5 (2012). http://dx.doi.org/10.1371/journal.pone.0036745
 
-3. Brown et al. “New data on the diversity and abundance of small-bodied ornithopods (Dinosauria, Ornithischia) from the Belly River Group (Campanian) of Alberta”. *Journal of Vertebrate Paleontology* 33 (2013): 495-520.
+3. Brown et al. “New data on the diversity and abundance of small-bodied ornithopods (Dinosauria, Ornithischia) from the Belly River Group (Campanian) of Alberta”. *Journal of Vertebrate Paleontology* 33 (2013): 495-520. http://dx.doi.org/10.1080/02724634.2013.746229
 
-4. Christophe Hendrickx and Octavio Mateus. “Torvosaurus gurneyi n. sp., the Largest Terrestrial Predator from Europe, and a Proposed Terminology of the Maxilla Anatomy in Nonavian Theropods”. *PLoS ONE* 9:3 (2014).
+4. Christophe Hendrickx and Octavio Mateus. “Torvosaurus gurneyi n. sp., the Largest Terrestrial Predator from Europe, and a Proposed Terminology of the Maxilla Anatomy in Nonavian Theropods”. *PLoS ONE* 9:3 (2014). http://dx.doi.org/10.1371/journal.pone.0088905
 
-5. He et al. "A New Leptoceratopsid (Ornithischia, Ceratopsia) with a Unique Ischium from the Upper Cretaceous of Shandong Province, China". *PLoS ONE* 10:12 (2015).
+5. He et al. "A New Leptoceratopsid (Ornithischia, Ceratopsia) with a Unique Ischium from the Upper Cretaceous of Shandong Province, China". *PLoS ONE* 10:12 (2015). http://dx.doi.org/10.1371/journal.pone.0144148
 
-6. Hutchinson et al. "A Computational Analysis of Limb and Body Dimensions in *Tyrannosaurus rex* with Implications for Locomotion, Ontogeny, and Growth". *PLoS ONE* (2011).
+6. Hutchinson et al. "A Computational Analysis of Limb and Body Dimensions in *Tyrannosaurus rex* with Implications for Locomotion, Ontogeny, and Growth". *PLoS ONE* (2011). http://dx.doi.org/10.1371/journal.pone.0026037
 
-7. John R. Hutchinson and Mariano Garcia. "*Tyrannosaurus* was not a fast runner". *Nature* 415: 1018-1021 (2001). 
+7. John R. Hutchinson and Mariano Garcia. "Tyrannosaurus was not a fast runner". *Nature* 415: 1018-1021 (2001). http://dx.doi.org/10.1038/4151018a
 
-8. Jostein Starrfelt and Lee Hsiang Liow. “How many dinosaur species were there? Fossil bias and true richness estimated using a Poisson sampling model”. *Philosophical Transactions of the Royal Society B* 371:1691 (2016).
+8. Jostein Starrfelt and Lee Hsiang Liow. “How many dinosaur species were there? Fossil bias and true richness estimated using a Poisson sampling model”. *Philosophical Transactions of the Royal Society B* 371:1691 (2016). http://dx.doi.org/10.1098/rstb.2015.0219
 
-9. Kenneth Carpenter and Yvonne Wilson. “A New Species of Camptosaurs (Ornithopoda: Dinosauria) from the Morrison Formation (Upper Jurassic) of Dinosaur National Monument, Utah, and  Biomechanics Analysis of its Forelimb”. *Annals of Carnegie Museum* 76 (2008): 227-263.
+9. Kenneth Carpenter and Yvonne Wilson. “A New Species of Camptosaurs (Ornithopoda: Dinosauria) from the Morrison Formation (Upper Jurassic) of Dinosaur National Monument, Utah, and  Biomechanics Analysis of its Forelimb”. *Annals of Carnegie Museum* 76 (2008): 227-263. http://dx.doi.org/10.2992/0097-4463(2008)76[227:ANSOCO]2.0.CO;2
 
-10. Maidment et al. “Locomotion in Ornithischian Dinosaurs: an assessment using three-dimensional computational modelling”. *Biological Reviews* 89 (2014): 588-617.
+10. Maidment et al. “Locomotion in Ornithischian Dinosaurs: an assessment using three-dimensional computational modelling”. *Biological Reviews* 89 (2014): 588-617. http://dx.doi.org/10.1111/brv.12071
 
-11. Martinez et al. “A Basal Dinosaur from the Dawn of the Dinosaur Era in Southwestern Pangaea”. *Science* 331 (2011):206-210.
+11. Martinez et al. “A Basal Dinosaur from the Dawn of the Dinosaur Era in Southwestern Pangaea”. *Science* 331 (2011):206-210. http://dx.doi.org/10.1126/science.1198467
 
-12. Matthew T. Carrano and John R. Hutchinson. “Pelvic and Hindlimb Musculature of Tyrannosaurus rex (Dinosauria:Theropoda)”. *Journal of Morphology* 253 (2002): 207-228.
+12. Matthew T. Carrano and John R. Hutchinson. “Pelvic and Hindlimb Musculature of Tyrannosaurus rex (Dinosauria:Theropoda)”. *Journal of Morphology* 253 (2002): 207-228. http://dx.doi.org/10.1002/jmor.10018
 
 13. Matthew T. Carrano and Scott D. Sampson. “The Phylogeny of Ceratosauria (Dinosauria: Theropoda)”. *Journal of Systematic Paleontology* 6 (2008): 183-236.
 
