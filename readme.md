@@ -126,7 +126,7 @@ Regression of phylogenetic independant contrasts for the three phylogenies yield
 | Ornithischia | 5.040e-06 | 0.1490 |
 **Table 2.** P-values for slopes of regression lines calculated for body mass and fourth trochanter position phylogenetic independant contrasts, sorted by phylogeny used to calculate contrasts.
 
-Only the regression for Dinosauria as a whole yielded a significant result (p = 0.0355); within each of the clades, increasing body mass was not associated with a significant shift in fourth trochanter position. The significance of the result when considering Dinosauria collectively may be an artifact resulting from differences in the character combinations in the two datasets. Our data includes more very large ornithischians than saurischians, but saurischians tend to have more proximal fourth trochanters than ornithischians. Sampling the two clades seperately therefore undersamples the diversity of morphology present in the dataset, and may cause regressions to be insignificant.
+Only the regression for Dinosauria as a whole yielded a significant result (p = 0.0355); within each of the clades, increasing body mass was not associated with a significant shift in fourth trochanter position. The significance of the result when considering Dinosauria collectively may be an artifact resulting from differences in the character combinations between the two datasets. Our data includes more large ornithischians than saurischians, but saurischians tend to have more proximal fourth trochanters than ornithischians. Sampling the two clades separately therefore undersamples the diversity of morphology present in the dataset, and may have caused the regressions to be insignificant.
 
 ## Discussion
 
