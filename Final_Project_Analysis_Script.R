@@ -100,15 +100,16 @@ avg_Lengths_ornithishia = rowMeans(all_Lengths_ornithischia, na.rm=FALSE, dims=1
 # Plotting "average" trees
 avg_Tree = cal3TimePaleoPhy(tree = phylogeny, timeData = time_data, sampRate = runif(1, min = 0.146, max = 0.262), brRate = runif(1, min = 0.001, max = 0.15), extRate = runif(1, min = 0.001, max = 0.15), dateTreatment = "minMax", ntrees = 1)
 avg_Tree$edge.length = avg_Lengths
-plot(avg_Tree, xlab = "millions of years", edge.width = 2, font = 4, cex = 0.53, label.offset = 0.5, no.margin = T)
+plotTree(avg_Tree, edge.width = 2, font = 4, cex = 0.53, label.offset = 0.5, no.margin = T, axis)
+axis(side = 1, root.time = 250, backward = T)
 
 avg_Tree_saurischia = cal3TimePaleoPhy(tree = phylogeny_saurischia, timeData = time_data_saurischia, sampRate = runif(1, min = 0.104, max = 0.243), brRate = runif(1, min = 0.001, max = 0.15), extRate = runif(1, min = 0.001, max = 0.15), dateTreatment = "minMax", ntrees = 1)
 avg_Tree_saurischia$edge.length = avg_Lengths_saurischia
-plot(avg_Tree_saurischia, xlab = "millions of years" edge.width = 2, font = 4, cex = 0.53, label.offset = 0.5, no.margin = T)
+plot(avg_Tree_saurischia, xlim=c(250,66), xlab = "millions of years", edge.width = 2, font = 4, cex = 0.53, label.offset = 0.5, no.margin = T)
 
 avg_Tree_ornithischia = cal3TimePaleoPhy(tree = phylogeny_ornithischia, timeData = time_data_ornithischia, sampRate = runif(1, min = 0.172, max = 0.355), brRate = runif(1, min = 0.001, max = 0.15), extRate = runif(1, min = 0.001, max = 0.15), dateTreatment = "minMax", ntrees = 1)
 avg_Tree_ornithischia$edge.length = avg_Lengths_ornithishia
-plot(avg_Tree_ornithischia, xlab = "millions of years" edge.width = 2, font = 4, cex = 0.53, label.offset = 0.5, no.margin = T)
+plot(avg_Tree_ornithischia, xlim=c(250,66), xlab = "millions of years", edge.width = 2, font = 4, cex = 0.53, label.offset = 0.5, no.margin = T)
 
 
 #### ANALYSIS ####
