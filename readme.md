@@ -104,6 +104,10 @@ Looking at the simulated evolution of the character data on the 700-taxon tree r
 
 Moving to the next tree of 350 taxa, which dropped half of the tips from the starting tree, we again see that, as expected, variables 1 and 4 seem to have very similar behavior across the tree. Unlike the previous tree, it seems like variables 2 and 5 might be behaving similarly in certain sections of the tree. It is important to note here that the character state values are different from tree to tree, because I dropped the tips before simulating the evolution of the characters rather than after. In hindsight, I would not do that again. I should have made the initial tree and simulated the character evolution on it, then successively dropped tips so that the values in each covariance matrix would have been more directly comparable. As it stands now, though, I can still examine whether the same patterns arise on each tree, and how strong they appear to be.
 
+*****describe some general patterns across all instead of walking through every single one*****
+ 
+Overall, if I were to do this project again I would want to find a better way to represent the character evolution on the tree. I spent some time trying to heat-map that as well, because I thought that different colors might be a bit easier to interpret for trees with many tips (instead of the different sized/colored circles) but I could not get the code to work, though I think that would have improved the presentation. I also would have liked to have done models of the evolution of categorical variables in addition to continuous variables, since I will eventually be dealing with data of both types.
+
 ##Acknowledgements
 Andrew Leslie, for help with heat-mapping. 
 
