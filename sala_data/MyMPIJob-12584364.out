@@ -1,0 +1,10 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 12584364
+##  Job Name : MyMPIJob
+##  Nodelist : node461
+##      CPUs : 8
+##   Mem/CPU : 2800 MB
+## Directory : /gpfs/scratch/guest317/phylobio_final_project/sala_data
+##   Started : Sun May  1 18:19:51 EDT 2016
+###############################################################################
+module: loading 'raxml/8.0.22'

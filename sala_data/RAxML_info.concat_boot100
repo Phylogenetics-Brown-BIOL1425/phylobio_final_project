@@ -206,3 +206,83 @@ Fast ML search on Process 0: Time 5529.353746 seconds
 
 Fast ML search on Process 1: Time 6066.072843 seconds
 
+Slow ML Search 91 Likelihood: -341878.616776
+Slow ML Search 92 Likelihood: -341878.950862
+Slow ML search on Process 7: Time 4950.663771 seconds
+Slow ML Search 39 Likelihood: -341878.387413
+Slow ML Search 40 Likelihood: -341878.438191
+Slow ML search on Process 3: Time 4673.835480 seconds
+Slow ML Search 26 Likelihood: -341879.092902
+Slow ML Search 27 Likelihood: -341879.736444
+Slow ML search on Process 2: Time 4328.723112 seconds
+Slow ML Search 65 Likelihood: -341878.339636
+Slow ML Search 66 Likelihood: -341879.332638
+Slow ML search on Process 5: Time 4416.993763 seconds
+Slow ML Search 52 Likelihood: -341878.284040
+Slow ML Search 53 Likelihood: -341878.666524
+Slow ML search on Process 4: Time 4545.292419 seconds
+Slow ML Search 78 Likelihood: -341878.712609
+Slow ML Search 79 Likelihood: -341878.626247
+Slow ML search on Process 6: Time 4432.357874 seconds
+Slow ML Search 0 Likelihood: -341878.284371
+Slow ML Search 1 Likelihood: -341879.129595
+Slow ML optimization finished
+
+Slow ML search on Process 0: Time 4635.794742 seconds
+Thorough ML search on Process 7: Time 2054.775742 seconds
+Thorough ML search on Process 3: Time 1967.172332 seconds
+Slow ML Search 13 Likelihood: -341878.300271
+Slow ML Search 14 Likelihood: -341880.088778
+Slow ML search on Process 1: Time 4330.685175 seconds
+Thorough ML search on Process 2: Time 1956.010427 seconds
+Thorough ML search on Process 5: Time 1874.137387 seconds
+Thorough ML search on Process 4: Time 1650.442382 seconds
+Thorough ML search on Process 6: Time 1457.018174 seconds
+Thorough ML search on Process 0: Time 1310.313831 seconds
+Thorough ML search on Process 1: Time 1242.470304 seconds
+
+Final ML Optimization Likelihood: -341878.280875
+
+Model Information:
+
+Model Parameters of Partition 0, Name: No Name Provided, Type of Data: DNA
+alpha: 0.329274
+Tree-Length: 6.270602
+rate A <-> C: 2.529879
+rate A <-> G: 11.057848
+rate A <-> T: 2.089797
+rate C <-> G: 0.724113
+rate C <-> T: 14.726109
+rate G <-> T: 1.000000
+
+freq pi(A): 0.317011
+freq pi(C): 0.247134
+freq pi(G): 0.165991
+freq pi(T): 0.269863
+
+
+ML search took 11640.487216 secs or 3.233469 hours
+
+Combined Bootstrap and ML search took 18221.385205 secs or 5.061496 hours
+
+Drawing Bootstrap Support Values on best-scoring ML tree ...
+
+
+
+Found 1 tree in File /gpfs/scratch/guest317/phylobio_final_project/sala_data/RAxML_bestTree.concat_boot100
+
+
+
+Found 1 tree in File /gpfs/scratch/guest317/phylobio_final_project/sala_data/RAxML_bestTree.concat_boot100
+
+Program execution info written to /gpfs/scratch/guest317/phylobio_final_project/sala_data/RAxML_info.concat_boot100
+All 104 bootstrapped trees written to: /gpfs/scratch/guest317/phylobio_final_project/sala_data/RAxML_bootstrap.concat_boot100
+
+Best-scoring ML tree written to: /gpfs/scratch/guest317/phylobio_final_project/sala_data/RAxML_bestTree.concat_boot100
+
+Best-scoring ML tree with support values written to: /gpfs/scratch/guest317/phylobio_final_project/sala_data/RAxML_bipartitions.concat_boot100
+
+Best-scoring ML tree with support values as branch labels written to: /gpfs/scratch/guest317/phylobio_final_project/sala_data/RAxML_bipartitionsBranchLabels.concat_boot100
+
+Overall execution time for full ML analysis: 18221.454619 secs or 5.061515 hours or 0.210896 days
+
