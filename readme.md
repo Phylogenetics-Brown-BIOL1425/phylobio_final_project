@@ -132,13 +132,13 @@ Only the regression for Dinosauria as a whole yielded a significant result (p = 
 
 ### Ancestral State Reconstruction
 
-Persons and Currie (2014) hypothesized that ornithischian dinosaurs evolved distally-positioned fourth trochanters as a countermeasure to predation pressure from tyrannosaurs; they proposed that this change increased the mechanical advantage of ornithischian CFL muscles and allowed them to sustain locomotion at their top speed for a longer period of time. While this anatomical change would have decreased the muscle's speed advantage, it would have potentially enabled to tire out pursuing predators before they were killed.
+Persons and Currie (2014) hypothesized that ornithischian dinosaurs evolved distally-positioned fourth trochanters as a countermeasure to predation pressure from tyrannosaurs; they proposed that this change increased the mechanical advantage of the CFL muscles of ornithischians and allowed them to sustain locomotion at their top speed for a longer period of time. While this anatomical change would have decreased the muscle's speed advantage, it would have potentially enabled Ornithischians to sustain locomotion long enough to tire out pursuing predators before they were killed.
 
 The results visualized in Figure 7, however, indicate that distally-positioned fourth trochanters first appeared in Ornithischia along the stem of the lineage, during the late Triassic period. Tyrannosauridae, on the other hand, arises during the mid- to late Cretaceous. Clearly, ornithischians did not evolve this feature to evade pursuit predation from tyrannosaurs. While the biomechanical implications of the anatomical differences between ornithischians and saurischians that Persons and Currie (2014) propose may be correct, and deserve further study, the evolutionary mechanism they propose for these differences is demonstrably false.
 
 Other interesting results also manifest in Figure 7. At the base of clade Ankylopollexia, there is a marked distal fourth trochanter migration, which reverses at the origin of clade Hadrosauroidea. The reason for this temporary change is unclear; interestingly, this clade is the first for which all members were heavier than 500 kg, and represents the point at which ornithischians become predominantly facultative bipeds. It is possible that this temporary distal excursion is related to these changes in size and posture, and that reversion to a more plesiomorphic condition represents the end of an evolutionary transition period within Ornithischia. 
 
-However, it is worth noting that one non-ankylopollexian ornithischian (*Tenontosaurus*) was also a large facultative biped, and does not display a particularly distal fourth trochanter. This taxon does, however, have a particularly large, broad proximal tail, which would have allowed attachment of a larger CFL muscle. This could potentially represent an alternate means of increasing the force output of the CFL; more research on this taxon is necessary to make any definitive statement.
+However, it is worth noting that one non-ankylopollexian ornithischian, *Tenontosaurus*, was also a large facultative biped, and does not display a particularly distal fourth trochanter. This taxon does, however, have a particularly large, broad proximal tail, which would have allowed attachment of a larger CFL muscle. This could potentially represent an alternate means of increasing the force output of the CFL; more research on this taxon is necessary to make any definitive statement.
 
 ### Phylogenetic Signal Testing
 
@@ -148,9 +148,7 @@ However, a different result was found when examining Saurischia and Ornithischia
 
 ### Independent Contrasts
 
-### Sources of Difficulty
 
-### Venues for Future Research
 
 ## References
 
