@@ -11,7 +11,18 @@ We sequenced fifteen individuals from parent and hybrid populations using RADseq
 
 ## Results
 
-The tree in Figure 1...
+![Figure 1](https://github.com/moeglein/phylobio_final_project/blob/master/figures/RAxML_bipartitions.default.png)
+*Figure 1* Default settings, 85% clustering
+
+![Figure 2](https://github.com/moeglein/phylobio_final_project/blob/master/figures/RAxML_bipartitions.stringency_75.png)
+*Figure 2* 75% clustering
+
+![Figure 3](https://github.com/moeglein/phylobio_final_project/blob/master/figures/RAxML_bipartitions.stringency_95.png)
+*Figure 3* 95% clustering
+
+![Figure 4](https://github.com/moeglein/phylobio_final_project/blob/master/figures/RAxML_bipartitions.stringency_98.png)
+*Figure 4* 98% clustering
+
 
 ## Discussion
 
