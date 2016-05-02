@@ -202,11 +202,14 @@ Phylogenetic reconstruction for the neutral marker produced the messiest reconst
 
 
 ![Figure 21A](https://rawgit.com/Jcbnunez/phylobio_final_project/master/NM_phylo2.png)
-
+<p>
+</p>
 **Figure 21A:** Phylogenetic tree constructed from data from the Neutral Marker
-
+<p>
+</p>
 ![Figure 21B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_NM_tangled.png)
-
+<p>
+</p>
 **Figure 21B:** Raw entanglement of Big Gene vs Chromosome K. In this state the entanglement coefficient is = 0.3514943
 
 ![Figure 21C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_NM_untangled.png)
