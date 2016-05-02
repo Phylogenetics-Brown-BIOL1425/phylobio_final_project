@@ -47,7 +47,7 @@ ___
  
 The original vision of this project was to compare the chromosomal tree with each individual gene tree in the molecule. However, given time constrains, this project will present a 'Lite' version of the original vision focusing on the comparison of the main phylogeny constructed using the complete chromosome K sequences with 3 genes (gene a6, Gene CI, gene BigGene) and 1 neutral marker. Quality control measures for tree inference were estimated and plotted using ggplot2. As way to explore tree-space 10% of all proposed topologies(see suplemental code) were extracted and plotted with the highest posterior tree overlaid on top. 
 
-Phylogenetic visualizations were produced in R using ggtree(https://www.bioconductor.org/packages/3.3/bioc/vignettes/ggtree/inst/doc/ggtree.html) and ape(https://cran.r-project.org/web/packages/ape/index.html). Visualization of posterior probabilities were produced using ggplot2. For some clustering tests, ape phylogenetic objects were converted to dendrogram objects and analyzed using the R package dendextend (https://cran.r-project.org/web/packages/dendextend/index.html). Blomberg's K estimates of phylogenetic signal were estimated using the R package "picante" (https://cran.r-project.org/web/packages/picante/index.html). Many clustering analyses were conducting under the assumptions that ultrametric phylogenetic trees, like dendrograms, can be seen as sets of nested lists possessing particular attributes. These clustering analyses mainly investigated the similarity between trees inferred using the entirety of the data set vs. trees inferred using only subsets of the data (chromosome trees vs. locus trees). These methods consist of: a) Tanglegrams, a comparison method that investigates the similarities in hierarchical clustering between the locus and chromosomal trees.  Tanglegrams allows for the estimation of "entanglement", a parameter which indicates the degree in which the branches and tips retain order between trees (lower entanglement suggests highest conservation of structure). Since tree topology can be represented in multiple ways, the relationship between two trees may not be entirely intuitive at face value. Built in algorithms in dendextend were used to "disentangle" tree visualization such that both topologies are visualized to the highest degree of similarity. Tree similarity was compared quantitively using two metrics, Baker's Gamma Index (Baker, 1974) measures the degree of association between two sets of hierarchical clusters (trees in this case), and The Fowlkes-Mallows Index (Fowlkes and Mallows, 1983). Statistical confidence for the Baker's Gamma Index was estimated using a permutation test (here done with 100 repetitions) as follows:
+Phylogenetic visualizations were produced in R using ggtree(https://www.bioconductor.org/packages/3.3/bioc/vignettes/ggtree/inst/doc/ggtree.html) and ape(https://cran.r-project.org/web/packages/ape/index.html). Visualization of posterior probabilities were produced using ggplot2. For some clustering tests, ape phylogenetic objects were converted to dendrogram objects and analyzed using the R package dendextend (https://cran.r-project.org/web/packages/dendextend/index.html). Blomberg's K estimates of phylogenetic signal were estimated using the R package "picante" (https://cran.r-project.org/web/packages/picante/index.html). Phennograms were plotted in R using a custom function by Liam Ravell "phenogram" (http://blog.phytools.org/2011/12/traitgram-with-mapped-discrete.html). Many clustering analyses were conducting under the assumptions that ultrametric phylogenetic trees, like dendrograms, can be seen as sets of nested lists possessing particular attributes. These clustering analyses mainly investigated the similarity between trees inferred using the entirety of the data set vs. trees inferred using only subsets of the data (chromosome trees vs. locus trees). These methods consist of: a) Tanglegrams, a comparison method that investigates the similarities in hierarchical clustering between the locus and chromosomal trees.  Tanglegrams allows for the estimation of "entanglement", a parameter which indicates the degree in which the branches and tips retain order between trees (lower entanglement suggests highest conservation of structure). Since tree topology can be represented in multiple ways, the relationship between two trees may not be entirely intuitive at face value. Built in algorithms in dendextend were used to "disentangle" tree visualization such that both topologies are visualized to the highest degree of similarity. Tree similarity was compared quantitively using two metrics, Baker's Gamma Index (Baker, 1974) measures the degree of association between two sets of hierarchical clusters (trees in this case), and The Fowlkes-Mallows Index (Fowlkes and Mallows, 1983). Statistical confidence for the Baker's Gamma Index was estimated using a permutation test (here done with 100 repetitions) as follows:
 
 ```{r}
 
@@ -80,7 +80,7 @@ The Fowlkes-Mallows Index is another measure of the association between two tree
 ___
 
 
-##**Phylogenetic Inference Quality Control**
+###**Phylogenetic Inference Quality Control**
 
 **Chromosomal Tree**
 
@@ -118,7 +118,7 @@ Two runs of phylogenetic inferences were conducted with the entire chromosomal s
 *Figure 14: Parameter searches conducted by revBayes during phylogenetic inference for the Big Gene. Left: PDF of sampled posteriors. The vertical lines represent the mean of the sampling distribution. The color scheme is blue and red for first and second independent run respectively. Right: Posterior sampling per state (i.e. *per* generations.) Color scheme is the same as the sampling distributions*
 
 
-**Loci Tree Neutral Marker: The Demographic Sigan**
+**Loci Tree Neutral Marker**
 
 ![Figure 15](https://rawgit.com/Jcbnunez/phylobio_final_project/master/NM_treespace.png)
 *Figure 15: Light blue, 10% of the tree space constructed for the neutral marker. Red, Best tree. 
@@ -126,7 +126,7 @@ Two runs of phylogenetic inferences were conducted with the entire chromosomal s
 ![Figure 16](https://rawgit.com/Jcbnunez/phylobio_final_project/master/NM_posterior_QC.png)
 *Figure 16: Parameter searches conducted by revBayes during phylogenetic inference for loci CI. Left: PDF of sampled posteriors. The vertical lines represent the mean of the sampling distribution. The color scheme is blue and red for first and second independent run respectively. Right: Posterior sampling per state (i.e. *per* generations.) Color scheme is the same as the sampling distributions*
 
-##**Chromosomal Tree and Missing Data**
+###**Chromosomal Tree and Missing Data**
 
 Tree constructed using polymorphic sites from the entire chromosome is shown in figure 17 next to the MSA used to build the tree. The tree reconstruct a bipartition splitting the northern and Southern clades (Posterior probability = 0.92). As expected from the network analysis, individuals from the introgression zone clustered within either of the clades. The MSA reveals that most taxa, except the outgroups, northville, south pier city and North harbourshire have some degree of missing data.   
 
@@ -143,7 +143,7 @@ To asses the impact of missing data on the phylogenetic reconstruction I mapped 
 
 ___
 
-##**Topology Comparison: Gene trees vs. Chromosomal Trees**
+###**Topology Comparison: Gene trees vs. Chromosomal Trees**
 
 ####Gene Big Gene
 
@@ -214,9 +214,9 @@ Phylogenetic reconstruction for the neutral marker produced the messiest reconst
 
 ___
 
-####Potential sequence length Bias of phylogenetic signal 
+###Potential sequence length Bias of phylogenetic signal 
 
-To test whether or not the high similarity between the chromosomal tree and the big gene was driven exclusively due to the large size of the big gene, a phylogenetic tree was inferred form the concatenated sequences of genes A, CI and the neutral Marker (Figure 22A). The tree inferred form the concatenated genes successfully reconstructed the northern and souther haplogroups (posterior = 1), however, as in the case of gene A and the neutral marker, outgroup placement and support was highly problematic (posterior << 0.1). Corrected entanglement measurement was low (0.092) and Baker's gamma was medium (0.64, P-value = 0). The Foulkes-Mallows index reveals a degree of similarity much higher for the concatenated genes relative to any individual gene, yet much lower than the Big Gene alone.   
+To test whether or not the high similarity between the chromosomal tree and the big gene was driven exclusively due to the large size of the big gene, a phylogenetic tree was inferred form the concatenated sequences of genes A, CI and the neutral Marker (Figure 22A). The tree inferred form the concatenated genes successfully reconstructed the northern and souther haplogroups (posterior = 1), however, as in the case of gene A and the neutral marker, outgroup placement and support was highly problematic (posterior << 0.1). Corrected entanglement measurement was low (0.092) and Baker's gamma was medium http://127.0.0.1:16984/graphics/plot_zoom_png?width=1280&height=773(0.64, P-value = 0). The Foulkes-Mallows index reveals a degree of similarity much higher for the concatenated genes relative to any individual gene, yet much lower than the Big Gene alone.   
 
 ![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Concatenated_tree.png)
 **Figure 21A:** Phylogenetic tree constructed from data from the Neutral Marker. *Notice the very short branch length*
@@ -225,8 +225,39 @@ To test whether or not the high similarity between the chromosomal tree and the 
 ![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BKandGamma_concatenated.png)
 **Figure 21C:**  Baker's Gamma index. P-value estimated with 100 replications, and Fowlkes–Mallows index of "dissimilarity" Notice high level of similarity at all levels of topology
 
+###Leaf stability of the out-group 
+
+![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/no_out_K_qc.png)
+
+![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/no_out_tree_comparison_K.png)
+
+~~~~~~~~~~~A6
+![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/no_out_A6_qc.png)
+
+![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/noOut_A6_tree_comparison.png)
+
+~~~~~~~~~~~NM
+
+![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/no_out_NM_qc.png)
+
+![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/noOUT_NM_trees.png)
+
+
+
+
 
 ## Discussion
+
+**Demographic Signal**
+
+**Effects of Missing Data**
+
+**Out-group leaf stability and Tree-space**
+
+**Parameter Convergence as Number of Loci increases**
+
+**Future Directions**
+
 
 These results indicate...
 
