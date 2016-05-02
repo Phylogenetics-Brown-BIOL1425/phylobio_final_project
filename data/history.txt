@@ -27,3 +27,7 @@ monitors[2] = mnFile(filename="output/DQA_Outgroup2_K80g3_posterior.trees",print
 monitors[3] = mnScreen(printgen=1000, TL)
 mymcmc = mcmc(mymodel, monitors, moves, nruns=2)
 mymcmc.run(generations=100000)
+treetrace1 = readTreeTrace("output/DQA_Outgroup2_K80g3_posterior_run_1.trees", treetype="non-clock")
+treetrace2 = readTreeTrace("output/DQA_Outgroup2_K80g3_posterior_run_2.trees", treetype="non-clock")
+map_tree_1= mapTree(treetrace1,"output/DQA_Outgroup2_K80g3_posterior_run_1.tree", burnin=1000)
+map_tree_2= mapTree(treetrace2,"output/DQA_Outgroup2_K80g3_posterior_run_2.tree", burnin=1000)

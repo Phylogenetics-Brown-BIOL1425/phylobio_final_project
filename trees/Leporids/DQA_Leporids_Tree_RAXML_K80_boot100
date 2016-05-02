@@ -1,0 +1,151 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=57;
+	taxlabels
+	Homo_sapiens_HLA-DQA1
+	'Lepus_californicus_Lecl-DQA*01'
+	'Lepus_capensis_Lecp-DQA*01'
+	'Lepus_capensis_Lecp-DQA*02'
+	'Lepus_capensis_Lecp-DQA*03'
+	'Lepus_europaeus_Leeu-DQA*01'
+	'Lepus_europaeus_Leeu-DQA*02'
+	'Lepus_europaeus_Leeu-DQA*03'
+	'Lepus_europaeus_Leeu-DQA*04'
+	'Lepus_europaeus_Leeu-DQA*05'
+	'Lepus_granatensis_Legr-DQA*01'
+	'Lepus_granatensis_Legr-DQA*02'
+	'Lepus_granatensis_Legr-DQA*03'
+	'Lepus_saxatilis_Lesa-DQA*01'
+	'Lepus_saxatilis_Lesa-DQA*02'
+	'Lepus_timidus_Leti-DQA*01'
+	'Lepus_timidus_Leti-DQA*02'
+	'Lepus_timidus_Leti-DQA*03'
+	'Lepus_timidus_Leti-DQA*04'
+	'Lepus_timidus_Leti-DQA*05'
+	'Lepus_townsendii_Leto-DQA*01'
+	'Orcytolagus_cuniculus_Orcu-DQA*01'
+	'Orcytolagus_cuniculus_Orcu-DQA*05'
+	'Orcytolagus_cuniculus_Orcu-DQA*09'
+	'Orcytolagus_cuniculus_Orcu-DQA*10'
+	'Orcytolagus_cuniculus_Orcu-DQA*12'
+	'Orcytolagus_cuniculus_Orcu-DQA*19'
+	'Oryctolagus_cuniculus_Orcu-DQA*02'
+	'Oryctolagus_cuniculus_Orcu-DQA*03'
+	'Oryctolagus_cuniculus_Orcu-DQA*04'
+	'Oryctolagus_cuniculus_Orcu-DQA*06'
+	'Oryctolagus_cuniculus_Orcu-DQA*07'
+	'Oryctolagus_cuniculus_Orcu-DQA*08'
+	'Oryctolagus_cuniculus_Orcu-DQA*11'
+	'Oryctolagus_cuniculus_Orcu-DQA*13'
+	'Oryctolagus_cuniculus_Orcu-DQA*14'
+	'Oryctolagus_cuniculus_Orcu-DQA*15'
+	'Oryctolagus_cuniculus_Orcu-DQA*16'
+	'Oryctolagus_cuniculus_Orcu-DQA*17'
+	'Oryctolagus_cuniculus_Orcu-DQA*18'
+	'Ovis_aries_OLA-DQA2*0701'
+	'Pronolagus_crassicaudatus_Prcr-DQA*01'
+	'Pronolagus_rupestris_Prru-DQA*01'
+	'Sylvilagus_aquaticus_Syaq-DQA*01'
+	'Sylvilagus_audubonii_Syau-DQA*01'
+	'Sylvilagus_brasiliensis_Sybr-DQA*01'
+	'Sylvilagus_brasiliensis_Sybr-DQA*02'
+	'Sylvilagus_brasiliensis_Sybr-DQA*03'
+	'Sylvilagus_brasiliensis_Sybr-DQA*04'
+	'Sylvilagus_brasiliensis_Sybr-DQA*05'
+	'Sylvilagus_floridanus_Syfl-DQA*01'
+	'Sylvilagus_floridanus_Syfl-DQA*02'
+	'Sylvilagus_floridanus_Syfl-DQA*03'
+	'Sylvilagus_floridanus_Syfl-DQA*04'
+	'Sylvilagus_palustris_Sypa-DQA*02'
+	'Sylvilagus_transitionalis_Sytr-DQA*01'
+	'Sylvilagus_transitionalis_Sytr-DQA*02'
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] ((((('Sylvilagus_transitionalis_Sytr-DQA*02':1.0E-6,('Sylvilagus_transitionalis_Sytr-DQA*01':1.0E-6,'Sylvilagus_brasiliensis_Sybr-DQA*05':1.0E-6)[&"bootstrap values"=74]:0.004406)[&"bootstrap values"=98]:0.018131,(('Sylvilagus_floridanus_Syfl-DQA*04':0.135725,'Lepus_europaeus_Leeu-DQA*05':0.018469)[&"bootstrap values"=29,!rotate=true]:0.009054,(('Sylvilagus_brasiliensis_Sybr-DQA*04':0.020768,'Lepus_europaeus_Leeu-DQA*04':0.015802)[&"bootstrap values"=94]:0.045986,(((((((('Lepus_capensis_Lecp-DQA*01':0.004468,'Lepus_timidus_Leti-DQA*01':0.004398)[&"bootstrap values"=57]:0.004361,(('Lepus_europaeus_Leeu-DQA*02':0.004372,(((((('Orcytolagus_cuniculus_Orcu-DQA*12':0.004526,'Oryctolagus_cuniculus_Orcu-DQA*13':1.0E-6)[&"bootstrap values"=64]:1.0E-6,'Oryctolagus_cuniculus_Orcu-DQA*14':0.013296)[&"bootstrap values"=42]:0.008856,'Oryctolagus_cuniculus_Orcu-DQA*16':1.0E-6)[&"bootstrap values"=10]:1.0E-6,'Oryctolagus_cuniculus_Orcu-DQA*15':0.008857)[&"bootstrap values"=33]:0.008787,((('Lepus_timidus_Leti-DQA*04':1.0E-6,'Lepus_townsendii_Leto-DQA*01':1.0E-6)[&"bootstrap values"=45]:1.0E-6,('Sylvilagus_audubonii_Syau-DQA*01':0.004373,('Sylvilagus_palustris_Sypa-DQA*02':0.037814,'Pronolagus_rupestris_Prru-DQA*01':0.027833)[&"bootstrap values"=27]:0.003714)[&"bootstrap values"=2]:1.0E-6)[&"bootstrap values"=32]:0.004416,'Oryctolagus_cuniculus_Orcu-DQA*17':0.013431)[&"bootstrap values"=13]:1.0E-6)[&"bootstrap values"=73]:0.042256,'Lepus_timidus_Leti-DQA*03':0.004373)[&"bootstrap values"=3]:1.0E-6)[&"bootstrap values"=1]:1.0E-6,('Lepus_europaeus_Leeu-DQA*03':1.0E-6,'Lepus_saxatilis_Lesa-DQA*02':1.0E-6)[&"bootstrap values"=78]:0.004372)[&"bootstrap values"=39]:0.013324)[&"bootstrap values"=6]:1.0E-6,('Oryctolagus_cuniculus_Orcu-DQA*02':0.008905,('Oryctolagus_cuniculus_Orcu-DQA*03':1.0E-6,'Oryctolagus_cuniculus_Orcu-DQA*04':0.022731)[&"bootstrap values"=96]:0.022381)[&"bootstrap values"=39]:1.0E-6)[&"bootstrap values"=4]:1.0E-6,('Lepus_timidus_Leti-DQA*02':0.017954,(((('Orcytolagus_cuniculus_Orcu-DQA*05':0.009189,('Oryctolagus_cuniculus_Orcu-DQA*06':0.004392,'Oryctolagus_cuniculus_Orcu-DQA*08':0.004415)[&"bootstrap values"=65]:1.0E-6)[&"bootstrap values"=72]:0.008773,'Oryctolagus_cuniculus_Orcu-DQA*07':1.0E-6)[&"bootstrap values"=96]:0.018099,('Sylvilagus_floridanus_Syfl-DQA*03':0.051393,'Sylvilagus_brasiliensis_Sybr-DQA*03':0.008164)[&"bootstrap values"=65]:0.010374)[&"bootstrap values"=40]:0.013759,(('Orcytolagus_cuniculus_Orcu-DQA*09':0.087174,'Orcytolagus_cuniculus_Orcu-DQA*10':1.0E-6)[&"bootstrap values"=25]:0.009188,'Oryctolagus_cuniculus_Orcu-DQA*11':1.0E-6)[&"bootstrap values"=18]:1.0E-6)[&"bootstrap values"=5]:0.004288)[&"bootstrap values"=2]:0.00454)[&"bootstrap values"=0,!rotate=true]:0.004468,('Lepus_granatensis_Legr-DQA*02':0.008922,'Lepus_saxatilis_Lesa-DQA*01':1.0E-6)[&"bootstrap values"=24]:0.004382)[&"bootstrap values"=4,!rotate=true]:0.005004,((('Lepus_capensis_Lecp-DQA*02':0.004825,(('Lepus_californicus_Lecl-DQA*01':1.0E-6,('Lepus_europaeus_Leeu-DQA*01':1.0E-6,'Lepus_granatensis_Legr-DQA*01':1.0E-6)[&"bootstrap values"=94]:1.0E-6)[&"bootstrap values"=95]:0.00917,('Sylvilagus_floridanus_Syfl-DQA*02':0.009279,'Sylvilagus_brasiliensis_Sybr-DQA*02':0.004003)[&"bootstrap values"=90]:0.016152)[&"bootstrap values"=37,!rotate=true]:0.011406)[&"bootstrap values"=42]:0.009035,('Sylvilagus_brasiliensis_Sybr-DQA*01':1.0E-6,'Sylvilagus_floridanus_Syfl-DQA*01':0.018192)[&"bootstrap values"=100]:0.069715)[&"bootstrap values"=5,!rotate=true]:0.007725,'Sylvilagus_aquaticus_Syaq-DQA*01':0.024433)[&"bootstrap values"=5]:0.004331)[&"bootstrap values"=22]:0.024266,('Ovis_aries_OLA-DQA2*0701':0.203553,Homo_sapiens_HLA-DQA1:0.140557)[&"bootstrap values"=88]:0.050783)[&"bootstrap values"=78]:0.035178,'Pronolagus_crassicaudatus_Prcr-DQA*01':0.040659)[&"bootstrap values"=36,!rotate=true]:0.009392)[&"bootstrap values"=35,!rotate=true]:0.018511)[&"bootstrap values"=48,!rotate=true]:0.004429)[&"bootstrap values"=68]:0.018038,'Lepus_capensis_Lecp-DQA*03':1.0E-6)[&"bootstrap values"=30]:0.004198,'Lepus_granatensis_Legr-DQA*03':0.004616)[&"bootstrap values"=32]:0.004971,('Oryctolagus_cuniculus_Orcu-DQA*18':0.008863,('Orcytolagus_cuniculus_Orcu-DQA*19':1.0E-6,'Orcytolagus_cuniculus_Orcu-DQA*01':1.0E-6)[&"bootstrap values"=98]:1.0E-6)[&"bootstrap values"=96]:0.022407,'Lepus_timidus_Leti-DQA*05':0.018637);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=2.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=812;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=99;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="bootstrap values";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=4;
+	set nodeShape.colourAttribute=null;
+	set nodeShape.isShown=false;
+	set nodeShape.minSize=10.0;
+	set nodeShape.scaleType=Width;
+	set nodeShape.shapeType=Circle;
+	set nodeShape.size=4.0;
+	set nodeShape.sizeAttribute=null;
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=732;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=2.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=10;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
