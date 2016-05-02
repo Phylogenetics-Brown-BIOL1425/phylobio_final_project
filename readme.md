@@ -163,11 +163,9 @@ The significance of the result when considering Dinosauria collectively may be a
 
 5. He et al. "A New Leptoceratopsid (Ornithischia, Ceratopsia) with a Unique Ischium from the Upper Cretaceous of Shandong Province, China". *PLoS ONE* 10:12 (2015). DOI:
 
-<<<<<<< HEAD
 6. Hutchinson et al. "A Computational Analysis of Limb and Body Dimensions in *Tyrannosaurus rex* with Implications for Locomotion, Ontogeny, and Growth". *PLOS ONE* (2011). DOI: 
 =======
-6. Hutchinson et al. "A Computational Analysis of Limb and Body Dimensions in *Tyrannosaurus rex* with Implications for Locomotion, Ontogeny, and Growth". *PLoS ONE* (2011).
->>>>>>> da4537108d0ac82df0f437c5d08878e8bdeaa7e5
+6. Hutchinson et al. "A Computational Analysis of Limb and Body Dimensions in *Tyrannosaurus rex* with Implications for Locomotion, Ontogeny, and Growth". *PLoS ONE* (2011). DOI:
 
 7. John R. Hutchinson and Mariano Garcia. "*Tyrannosaurus* was not a fast runner". *Nature* 415: 1018-1021 (2001). DOI:
 
