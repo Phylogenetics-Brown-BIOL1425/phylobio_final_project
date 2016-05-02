@@ -50,7 +50,7 @@ In some cases, when very little research was available, I checked videos and ima
 behaviors I was seeking.
 
 Further, I will be using the following full cephalopod phylogeny to compare with my results:
-![alt tag](https://github.com/DanielSeidman/phylobio_final_project/blob/master/full_cephalopod_phylogeny.png)
+![alt tag](https://github.com/DanielSeidman/phylobio_final_project/blob/master/full_cephalopod_phylogeny.jpg)
 (Lindgren AR Pankey MS Hochberg FG Oakley TH 2012)
 
 
