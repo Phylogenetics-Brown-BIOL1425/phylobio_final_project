@@ -197,35 +197,33 @@ Phylogenetic reconstruction for gene A produced  the worst reconstruction of the
 ___
 
 ####Neutral Loci
-![Figure 21](https://rawgit.com/Jcbnunez/phylobio_final_project/master/NM_phylo2.png "Figure 21: phylogeny for gene BG")
 
-![Figure 21B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_NM_tangled.png "Figure 21B: phylogeny for gene BG")
-Entanglement = 0.3514943
+Phylogenetic reconstruction for the neutral marker produced the messiest reconstruction of the chromosomal tree with individuals from both northern and southern haplogroups being mixed at one clade with low posterior support (0.52). This mixed clade aside, one branch seemed to roughly divide northern and southern halpogroups wig excellent posterior support (1; Figure 21A). Unlike all other gene trees, placement of the outgroup had extremely low posterior support (<< 0.1). Unlike other reconstructions, the southern clade seems to derive from the northern clade, this inference, however, is weakened by the low posterior support of the outgroup. Topology similarity between the chromosomal tree and the neutral marker was medium with Corrected entanglement = 0.25 and Baker's Gamma = 0.63 (P-val = 0; Figure 21D). Finally, Fowlkes–Mallows index revealed high degree of similarity only at deep levels of the topology (K = ~5 - 20, Figure 21E).
 
-![Figure 21C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_NM_untangled.png "Figure 21C: phylogeny for gene BG")
-Entanglement = 0.2572355
 
-![Figure 21C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Baker_gamma_KvsNM.png "Figure 21C: phylogeny for gene BG")
-**Baker's Gamma**
+![Figure 21A](https://rawgit.com/Jcbnunez/phylobio_final_project/master/NM_phylo2.png)
+**Figure 21A:** Phylogenetic tree constructed from data from the Neutral Marker
+![Figure 21B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_NM_tangled.png)
+**Figure 21B:** Raw entanglement of Big Gene vs Chromosome K. In this state the entanglement coefficient is = 0.3514943
+![Figure 21C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_NM_untangled.png)
+**Figure 21C:** Corrected entanglement. New coefficient is = 0.2572355
+![Figure 21C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Baker_gamma_KvsNM.png)
+**Figure 21D:**  Baker's Gamma index. P-value estimated with 100 replications.
+![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_NM_BK.png)
+**Figure 21E:** Fowlkes–Mallows index of "dissimilarity" Notice high level of similarity at all levels of topology
 
-![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_NM_BK.png "Figure 21D: phylogeny for gene BG")
-**Fowlkes–Mallows index of "dissimilarity"**
+___
 
 ####Potential sequence length Bias of phylogenetic signal 
 
-####Tree built from the concatenated sequences of A6, CI, and the Neutral Marker 
+To test whether or not the high similarity between the chromosomal tree and the big gene was driven exclusively due to the large size of the big gene, a phylogenetic tree was inferred form the concatenated sequences of genes A, CI and the neutral Marker (Figure 22A). The tree inferred form the concatenated genes successfully reconstructed the northern and souther haplogroups (posterior = 1), however, as in the case of gene A and the neutral marker, outgroup placement and support was highly problematic (posterior << 0.1). Corrected entanglement measurement was low (0.092) and Baker's gamma was medium (0.64, P-value = 0). The Foulkes-Mallows index reveals a degree of similarity much higher for the concatenated genes relative to any individual gene, yet much lower than the Big Gene alone.   
 
-![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Concatenated_tree.png "Figure 21D: phylogeny for gene BG")
-
-**Notice the very short branch length**
-
-![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Concatnated_tanglegram.png "Figure 21D: phylogeny for gene BG")
-
-
-**Entanglement = 0.09186049**
-
-
-![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BKandGamma_concatenated.png "Figure 21D: phylogeny for gene BG")
+![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Concatenated_tree.png)
+**Figure 21A:** Phylogenetic tree constructed from data from the Neutral Marker. *Notice the very short branch length*
+![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Concatnated_tanglegram.png)
+**Figure 21B:** Corrected entanglement. New coefficient is =  0.09186049**
+![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BKandGamma_concatenated.png)
+**Figure 21C:**  Baker's Gamma index. P-value estimated with 100 replications, and Fowlkes–Mallows index of "dissimilarity" Notice high level of similarity at all levels of topology
 
 
 ## Discussion
