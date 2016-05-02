@@ -1,0 +1,6 @@
+q(0
+)
+q()
+data <- readDiscreteCharacterData("data/trnKcombined.correct.fasta")
+q
+q()
