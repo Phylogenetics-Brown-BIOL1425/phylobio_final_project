@@ -89,7 +89,7 @@ Figure 7 shows the contour map obtained from ancestral state reconstruction usin
 
 **Figure 7.** Contour Map of time-calibrated composite Dinosauria phylogeny. More distal placement of the fourth trochanter is represented by warmer colors.
 
-Some saurischian taxa (*Ceratosaurus*, *Sinosaurus*, *Streptospondylus*, and *Yangchuanosaurus*) converging on placements similar to those of ornithischians, but the majority of examined species show fourth trochanter positions close to the condition primitive for Dinosauria. The general pattern within the Saurischians seems to be an initial stasis at the primitive position of the fourth trochanter, followed by a distal movement initiating in the branch separating *Dilophosaurus* from *Liliensternus*. This continues until the branch leading to the MRCA of *Piatnitzkysaurus* and *Tyrannosaurus* (interestingly, the MRCA of the clade Orionides), after which the fourth trochanter moves proximally. Two isolated events of distal movement can be seen within the Orionides, one in the branch leading up to *Streptospondylus* and *Suchomimus*, and one leading to *Yangchuanosaurus*. Within the Tyrannosaurs, fourth trochanter placement is more variable; *Albertosaurus* and *Gorgosaurus* (and to a lesser degree *Tyrannosaurus* itself) show slight trends to more distal fourth trochanters, while their closest relatives do not. Two events of extreme proximal movement of the fourth trochanter occur; one in the branch leading to *Piatnitzkysaurus*, and one in the branch leading  to *Compsognathus* and *Sinosauropteryx*. 
+Some saurischian taxa (*Ceratosaurus*, *Sinosaurus*, *Streptospondylus*, and *Yangchuanosaurus*) converge on placements similar to those of ornithischians, but the majority of examined species show fourth trochanter positions close to the condition primitive for Dinosauria. The general pattern within the Saurischians seems to be an initial stasis at the primitive position of the fourth trochanter, followed by a distal movement initiating in the branch separating *Dilophosaurus* from *Liliensternus*. This continues until the branch leading to the MRCA of *Piatnitzkysaurus* and *Tyrannosaurus* (interestingly, the MRCA of the clade Orionides), after which the fourth trochanter moves proximally. Two isolated events of distal movement can be seen within the Orionides, one in the branch leading up to *Streptospondylus* and *Suchomimus*, and one leading to *Yangchuanosaurus*. Within the Tyrannosaurs, fourth trochanter placement is more variable; *Albertosaurus* and *Gorgosaurus* (and to a lesser degree *Tyrannosaurus* itself) show slight trends to more distal fourth trochanters, while their closest relatives do not. Two events of extreme proximal movement of the fourth trochanter occur; one in the branch leading to *Piatnitzkysaurus*, and one in the branch leading  to *Compsognathus* and *Sinosauropteryx*. 
 
 Finer-scale patterns can be discerned in the contour map as well. A significant distally-directed movement of the fourth trochanter is seen in the ornithischians in the branch leading up to *Camptosaurus* and more derived ornithopods, which together comprise the clade *Ankyllopolexia*. Within *Ankyllopolexia*, the fourth trochanter position attains a very distal position within *Camptosaurus*, and begins to move back proximally along the femur with more derived taxa. It then moves distally once again in *Saurolophus angustirostris* and *Corythosaurus intermedius*. 
 
@@ -115,19 +115,24 @@ The results obtained from these analyses are found in Table 1. Of our six total 
 
 Regression of phylogenetic independant contrasts for the three phylogenies yielded the results summarized in Table 2.
 
-| Phylogeny | p-value |
-| :-------: | :-----: |
-| Dinosauria | 0.0355 |
-| Saurischia | 0.0808 |
-| Ornithischia | 0.1490 |
+| Phylogeny | Slope | p-value |
+| :-------: | :-----: | :----: |
+| Dinosauria | 6.692e-06 | 0.0355 |
+| Saurischia | 1.691e-05 | 0.0808 |
+| Ornithischia | 5.040e-06 | 0.1490 |
+**Table 2.** P-values for slopes of regression lines calculated for body mass and fourth trochanter position phylogenetic independant contrasts, sorted by phylogeny used to calculate contrasts.
 
-Only the regression for Dinosauria as a whole yielded a significant result (p = 0.0355); within each of the clades, body mass was not associated with a significant shift in fourth trochanter position. The significance of the result when considering Dinosauria collectively may be an artifact resulting from differences in the character combinations in the two datasets. Our data includes more very large ornithischians than saurischians, but saurischians tend to have more proximal fourth trochanters than ornithischians. Sampling the two clades seperately therefore undersamples the diversity of morphology present in the dataset, and may cause regressions to be insignificant.
+Only the regression for Dinosauria as a whole yielded a significant result (p = 0.0355); within each of the clades, increasing body mass was not associated with a significant shift in fourth trochanter position. The significance of the result when considering Dinosauria collectively may be an artifact resulting from differences in the character combinations in the two datasets. Our data includes more very large ornithischians than saurischians, but saurischians tend to have more proximal fourth trochanters than ornithischians. Sampling the two clades seperately therefore undersamples the diversity of morphology present in the dataset, and may cause regressions to be insignificant.
 
 ## Discussion
 
+### Ancestral State Reconstruction
+
+
+
 ### Phylogenetic Signal Testing
 
-### Ancestral State Reconstruction
+### Independant Contrasts
 
 ### Sources of Difficulty
 
