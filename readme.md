@@ -147,34 +147,34 @@ ___
 
 ####Gene Big Gene
 
-Phylogenetic reconstruction for the the Big Gene produced the most accurate tree reconstruction relative to all other genes. The tree grouped both northern and southern haplogroups in clades with excellent branch support (out-group to Southern-clade posterior = 1, Southern Clade to Northern Clade posterior = 1), however, unlike the chromosomal tree, populations of northern and southern haplogroup were not recovered as two distinct sister clades, but rather the northern clade deriving from a subdivision of the southern clade (Figue 20). Topology similarity between the chromosomal tree and the Big Gene tree was the highest of all gene-to-chromosome tree comparisons. Corrected entanglement = 0.0322881. Baker's Gamma = 0.8 (P-val = 0; Figure 18D). Finally, Fowlkes–Mallows index reveals high levels of similarity between the chromosomal and gene tree at all levels of topology (Figure 18E). 
+Phylogenetic reconstruction for the the Big Gene produced the most accurate tree reconstruction relative to all other genes. The tree grouped both northern and southern haplogroups in clades with excellent branch support (out-group to Southern-clade posterior = 1, Southern Clade to Northern Clade posterior = 1), however, unlike the chromosomal tree, populations of northern and southern haplogroup were not recovered as two distinct sister clades, but rather the northern clade deriving from a subdivision of the southern clade (Figue 19A). Topology similarity between the chromosomal tree and the Big Gene tree was the highest of all gene-to-chromosome tree comparisons. Corrected entanglement = 0.0322881. Baker's Gamma = 0.8 (P-val = 0; Figure 18D). Finally, Fowlkes–Mallows index reveals high levels of similarity between the chromosomal and gene tree at all levels of topology (Figure 18E). 
 
 ![Figure 18A](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BG_phylogeny.png)
+**Figure 18A:** Phylogenetic tree constructed from data from the Big Gene
 ![Figure 18B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_tangled.png "Figure")
-**Raw-entanglement**
-Untangled Tanglegram of Big Gene vs Chromosome K. In this state the entanglement coefficient is =  0.8978911.
+**Figure 18B:** Raw entanglement of Big Gene vs Chromosome K. In this state the entanglement coefficient is =  0.8978911.
 ![Figure 18C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_untangled.png "Figure 20B: untangled K vs BG")
-**Corrected-entanglement**
-Post-entanglement coefficient is = 0.0322881
+**Figure 18C:** Corrected entanglement. New coefficient is =  0.8978911.
 ![Figure 18D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Bakers_gamma_kvsBG3.png)
-**Baker's Gamma**
+**Baker's Gamma:** P-value estimated with 100 replications.
 ![Figure 18E](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_BK.png)
-**Fowlkes–Mallows index of "dissimilarity"**
+**Fowlkes–Mallows index of "dissimilarity":** Notice high level of similarity at all levels of topology
 
 
 ####Gene A
 
+Phylogenetic reconstruction for gene A produced a relatively bad (not the worst) reconstruction of the chromosomal tree. The tree grouped both northern and southern haplogroups in clades with poor branch support (out-group to Southern-clade posterior = 0.38, Southern Clade to Northern Clade posterior = 0.79). Unlike the chromosomal tree, populations of northern and southern haplogroup were not recovered as two distinct sister clades, but rather the northern clade derives entirely from the southern clade (Figue 19A). Topology similarity between the chromosomal tree and the Big Gene tree was low. Corrected entanglement =  0.1615409. Baker's Gamma = 0.3 (P-val = 0; Figure 19D). Finally, Fowlkes–Mallows index reveals very low  similarity between the chromosomal and gene tree at all levels of topology, except at deep levels of topology ~ K = 5 - 10 (Figure 19E).
 
-![Figure 20A](https://rawgit.com/Jcbnunez/phylobio_final_project/master/a6_phylo.png)
-![Figure 20B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_A_tangled.png)
-**Pre-entanglement**
+![Figure 19A](https://rawgit.com/Jcbnunez/phylobio_final_project/master/a6_phylo.png)
+![Figure 19B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_A_tangled.png)
+**Raw-entanglement**
 Entanglement = 0.3317921
-![Figure 20C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_A6_untangled.png)
-**Post-entanglement**
+![Figure 19C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_A6_untangled.png)
+**Corrected-entanglement**
 Post-entanglement coefficient is = 0.1615409
-![Figure 20D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Baker_gamma_K_A6.png)
+![Figure 19D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Baker_gamma_K_A6.png)
 **Baker's Gamma**
-![Figure 20E](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_A6_BK.png)
+![Figure 19E](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_A6_BK.png)
 **Fowlkes–Mallows index of "dissimilarity"**
 
 
