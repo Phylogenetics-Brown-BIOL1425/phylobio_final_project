@@ -95,6 +95,10 @@ A significant distally-directed movement of the fourth trochanter is seen in the
 
 As described earlier, only a handful of Saurischian taxa reach fourth trochanter positions as distal as those seen in Ornithischians. As shown in Figure 8, the two clades have little overlap. Saurischian taxa, as a rule, generally seem to have fourth trochanters more proximal than ornithischian taxa.
 
+![GitHub Logo](Figure 8.png)
+
+**Figure 8.** Box-plot plotting the range in position of the fourth trochanter in the Saurischian and Ornithischian taxa. The upper end of the Saurischian box-plot whisker can be seen to slightly overlap the values of the lower end of the Ornithischian box-plot whisker. It can therefore be seen that there is very little overlap in fourth trochanter position within the Ornithischians and Saurischians, with Ornithischians generally showing more distal fourth trochanter positions than Saurischians.
+
 ### Phylogenetic Signal
 
 The results of interest from our phylogenetic signal testing were the values obtained for K and p. The value K indicates whether related taxa within the tree under concern resemble each other more or less than would be expected under a random walk through morphospace. A K value greater than 1 indicates a greater than expected resemblance between related species, whereas a K value less than 1 indicates a less than expected resemblance between related species. The p-value indicates the statistical significance of the result. We considered p values of less than 0.05 to indicate statistical significance, as is standard in most existing studies.
@@ -109,7 +113,7 @@ The results of interest from our phylogenetic signal testing were the values obt
 | Ornithischia | Body Mass | 0.3091 | 0.111 |
 **Table 1.** Phylogenetic signal (K) values for fourth trochanter position and body mass in dinosaurs, saurischians only, and ornithischians only. A K of 1 indicates expected similarity in relatives due to a Brownian motion model of character evolution. If K is greater than 1, relatives are more similar than would be expected; if K is less than 1, relatives are more differant than would be expected.
 
-The results obtained from these analyses are found in Table 1. Of our six total analyses, three yielded significant results. Examing the whole of Dinosauria showed that fourth trochanter position showed a significant phylogenetic signal, with K greater than 1, indicating that related species resembled each other more than would be expected by chance. Body mass showed the opposite; related species resembled each other less than would be expected by chance. When examining these results in the context of the sub-trees, Saurischian body mass showed a K significantly less than 1. No other combination of characters and phylogenies showed a significant result; this may be artefact of the smaller sample size and lower disparity within each subtree, or reflect a real biological pattern.
+The results obtained from these analyses are found in Table 1. Of our six total analyses, three yielded significant results. Examining the whole of Dinosauria showed that fourth trochanter position showed a significant phylogenetic signal, with K greater than 1, indicating that related species resembled each other more than would be expected by chance. Body mass showed the opposite; related species resembled each other less than would be expected by chance. When examining these results in the context of the sub-trees, Saurischian body mass showed a K significantly less than 1. No other combination of characters and phylogenies showed a significant result; this may be artefact of the smaller sample size and lower disparity within each subtree, or reflect a real biological pattern.
 
 ### Independant Contrasts
 
@@ -130,13 +134,23 @@ Only the regression for Dinosauria as a whole yielded a significant result (p = 
 
 Persons and Currie (2014) hypothesized that ornithischian dinosaurs evolved distally-positioned fourth trochanters as a countermeasure to predation pressure from tyrannosaurs; they proposed that this change increased the mechanical advantage of ornithischian CFL muscles and allowed them to sustain locomotion at their top speed for a longer period of time. While this anatomical change would have decreased the muscle's speed advantage, it would have potentially enabled to tire out pursuing predators before they were killed.
 
+The results visualized in Figure 7, however, indicate that distally-positioned fourth trochanters first appeared in Ornithischia along the stem of the lineage, during the late Triassic period. Tyrannosauridae, on the other hand, arises during the mid- to late Cretaceous. Clearly, ornithischians did not evolve this feature to evade pursuit predation from tyrannosaurs. While the biomechanical implications of the anatomical differences between ornithischians and saurischians that Persons and Currie (2014) propose may be correct, and deserve further study, the evolutionary mechanism they propose for these differences is demonstrably false.
+
+Other interesting results also manifest in Figure 7. At the base of clade Ankylopollexia, there is a marked distal fourth trochanter migration, which reverses at the origin of clade Hadrosauroidea. The reason for this temporary change is unclear; interestingly, this clade is the first for which all members were heavier than 500 kg, and represents the point at which ornithischians become predominantly facultative bipeds. It is possible that this temporary distal excursion is related to these changes in size and posture, and that reversion to a more plesiomorphic condition represents the end of an evolutionary transition period within Ornithischia. 
+
+However, it is worth noting that one non-ankylopollexian ornithischian (*Tenontosaurus*) was also a large facultative biped, and does not display a particularly distal fourth trochanter. This taxon does, however, have a particularly large, broad proximal tail, which would have allowed attachment of a larger CFL muscle. This could potentially represent an alternate means of increasing the force output of the CFL; more research on this taxon is necessary to make any definitive statement.
+
+### Phylogenetic Signal Testing
+
+Phylogenetic Signal Testing revealed that for Dinosauria as a whole, fourth trochanter position showed a significant phylogenetic signal, with more closely related species resembling each other in this trait more than would be expected under a random walk through morphospace. This result indicates that the position of the fourth trochanter within Dinosauria is not a non-random occurrence, and that there is a phylogenetic trend observed. However, looking at the Saurischians and Ornithischians separately, fourth trochanter position was found to not have a significant phylogenetic signal. This may be due to sampling error, with not enough Saurischian and Ornithischian taxa having been sampled. The p-value for the Saurischians is much higher than the p-value for the Ornithischians. This may indicate that a potential reason for the fourth trochanter position being insignificant in the Saurischians may be that the taxa sampled in our dataset were very widely separated in their fourth trochanter positions, leading to a potentially erroneous result of the fourth trochanter position having an insignificant phylogenetic signal. The more directed trend of distal movement of the fourth trochanter in the Ornithischians may have consequently resulted in the much lower p-value for this clade. However, the p-value for the clade is still significantly above our threshold value of 0.05, the standard value in paleontology and in the sciences. There must therefore be more than just the low number of taxa causing the insignificant result. Future research analyzing more Dinosaur taxa more thoroughly may shed light on the contradictory results obtained here.
+
+
 However, our results indicate that distally-positioned fourth trochanters first appeared in Ornithischia in the late Triassic - long before the radiation of Tyrannosauridae in the Cretaceous Period. While the biomechanical hypotheses proposed by Persons and Currie (2014) may be correct, and deserve further study, it is clear that distally-positioned fourth trochanters did not appear as a response fo pursuit predation by tyrannosaurs.
 
 Some unexpected patterns in character evolution also manifest on the contour map. A dramatic distal migration of the fourth trochanter begins on the branch to Ankylopollexia, which reverses along the branch to Hadrosauroidea. Interestingly, this correlates with the initial evolution of body mass greater than 500 kg in the clade. 
 
-### Phylogenetic Signal Testing
 
-### Independant Contrasts
+### Independent Contrasts
 
 ### Sources of Difficulty
 
