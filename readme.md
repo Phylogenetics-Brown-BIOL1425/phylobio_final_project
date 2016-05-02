@@ -1,7 +1,7 @@
 # Phylogenetic Biology - Final Project
 ___
 
-# Abstract
+## Abstract
 
 The primary goal of these projects is to apply the knowledge and tools acquired in phylogenetic biology to problems in ecology and evolution. This project has 2 parts, both centered in the use of three topology for inferring evolutionary relationship among and between taxa, these parts differ in the scale of evolutionary relationship of interest and the type of information used for the inference. "Phylogenetic reconstruction of demographic structure in introgressed populations", uses phylogenetic methods to untangle  demographic signals in a complete chromosome compared to individual genes within the chromosome. This part looks at short evolutionary scales and its primarily intersted in the topology leading to the population members as the tips of the phylogeny. DNA sequences were used for this part of the project, and at its core, it is comparison of "chromosomal/concatenated locus trees" vs. "gene trees".     
 
@@ -276,8 +276,11 @@ This project investigated posterior support and topology similarity between a tr
 
 **Effects of Missing Data**
 
+At face value, figure 17A shows that some of the clustering patterns seem to be associated with missing amount of missing data (red dashes in the MSA). Missing data was mapped to the topology of of the chromosomal and Blomber's K analyses were conducted for a tree with estimated branch length and with flat (=1) branch length. For both cases K was close to ~0, thus suggesting missing data has little effect on the tree inference. Moreover, plotting the tree topology and branch lengths vs. missing data reveal that not all taxa with similar levels of missing data clustered together (e.g. Northville, Figure 17D). This results are consistent with those published by Jiang et al. (2014) who showed that, for maximun likelihood analyses, moderate amounts of missing data had positive or no impact in phylogenetic inference relative to analyses that purposefully excluded genes with missing data. It is important to consider, however, that Jiang's analyses were conducted using a maximun likelihood strategy. Literature considering the effect of missing data for bayesian approaches is conflicted with some authors reporting misleading results when using missing data in bayesian methods (Lemmon et al. 2009). On the other hand, Wiens and Morrill (2011) used simulated data to show that including traits  with missing informtion tended to either increase or have no effect on the accuracy for Bayesian phylogenetics, the results of this project seem to echo the latter.
 
 **Out-group stability and Tree-space**
+
+
 
 **Parameter Convergence as Number of Loci increases**
 
@@ -289,6 +292,14 @@ Baker, Frank B. "Stability of two hierarchical grouping techniques Case I: Sensi
 Fowlkes, Edward B., and Colin L. Mallows. "A method for comparing two hierarchical clusterings." Journal of the American statistical association 78.383 (1983): 553-569.
 
 Tavaré S (1986). "Some Probabilistic and Statistical Problems in the Analysis of DNA Sequences" (PDF). Lectures on Mathematics in the Life Sciences (American Mathematical Society) 17: 57–86.
+
+Jiang, W., Chen, S.Y., Wang, H., Li, D.Z. & Wiens, J.J. Should genes with missing data be excluded from phylogenetic analyses? Mol Phylogenet Evol 80, 308-18 (2014).
+
+Lemmon, A.R., Brown, J.M., Stanger-Hall, K., Lemmon, E.M., 2009. The effect of
+ambiguous data on phylogenetic estimates obtained by maximum likelihood
+and Bayesian inference. Syst. Biol. 58, 130–145.
+
+
 
 ## Supplement 
 
