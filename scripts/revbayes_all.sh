@@ -15,8 +15,8 @@
 
 # Run a command
 
-module load revbayes
-
+module load revbayes/Mar2016
+rb
 ################################################################################
 #
 # RevBayes Example: Bayesian inference of phylogeny using a Jukes-Cantor model
@@ -132,8 +132,8 @@ treetrace2 = readTreeTrace("output/DQA_Outgroup2_R1_posterior_run_2.trees", tree
 # and get the summary of the tree trace
 #treetrace.summarize()
 
-map_tree_1 = mapTree(treetrace1,"output/DQA_Outgroup2_R1_posterior_run_1.tree")
-map_tree_2 = mapTree(treetrace2,"output/DQA_Outgroup2_R1_posterior_run_2.tree")
+map_tree1 = mapTree(treetrace1,"output/DQA_Outgroup2_R1_posterior_run_1.tree")
+map_tree2 = mapTree(treetrace2,"output/DQA_Outgroup2_R1_posterior_run_2.tree")
 
 # you may want to quit RevBayes now
 q()
