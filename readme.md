@@ -88,7 +88,7 @@ I then simulated the evolution of these characters on each of my trees using the
 
 ![Figure 12](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree6.png)
 
-[Table 6](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tables/table6.png)
+![Table 6](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tables/table6.png)
 
 ![Figure 13](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/3tree_characters.png)
 
