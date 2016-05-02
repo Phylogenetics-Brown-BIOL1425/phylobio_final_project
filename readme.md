@@ -129,11 +129,8 @@ Two runs of phylogenetic inferences were conducted with the entire chromosomal s
 
 Tree constructed using polymorphic sites from the entire chromosome is shown in figure 17 next to the MSA used to build the tree. The tree reconstruct a bipartition splitting the northern and Southern clades (Posterior probability = 0.92). As expected from the network analysis, individuals from the introgression zone clustered within either of the clades. The MSA reveals that most taxa, except the outgroups, northville, south pier city and North harbourshire have some degree of missing data.        
 
-
 ![Figure 17](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_phylogeny.png "Figure 17: phylogeny for chromosome K")
 **Figure 17:** Left: Phylogenetic reconstruction of of populations of your favorite organism. Branch leading to the split of the norther and souther clades is indicated in gold, posterior probability of the branch is also shown. Right: Mulutiple sequence aligment (MSA) of chromosome K used in the phylogenetic reconstruction
-
-###Phylogenetic Signal Confounded in low sequencing coverage and/or bad loci calls
 
 To asses the impact of missing data on the phylogenetic reconstruction I mapped the character of "% missing data" onto the tips of the tree. This mapping is displayed a tree showing the estimated branch length (Figure 17B) and in a tree with "flat" branch length (brl. = 1; Figure 17D). For both trees phylogenetic signal was estimated with Blomber's K (Estimated Brl = 0.01374608, Flat brl = 0.2848437) and yielded values close to normal expectation. The relationship between branch length and missing data was visualized in figure 17D. Figure 17D reveals that while 3 of the populations with 0% missing data where clustered as single clades, one population with 0% missing data, Northville, was not recovered as a single clade.
 
@@ -146,13 +143,13 @@ Blomberg's K = 0.2848437
 
 ![Figure 17D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/traitgram_missingdata.png)
 
-
+##**Topology Comparison: Gene trees vs. Chromosomal Trees**
 
 ####Gene Big Gene
+
 ![Figure 20](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BG_phylogeny.png "Figure 20: phylogeny for gene BG")
 
 ![Figure 20A](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_tangled.png "Figure 20A: tangled K vs BG")
-
 **Pre-entanglement**
 Untangled Tanglegram of Big Gene vs Chromosome K. In this state the entanglement coefficient is =  0.8978911.
 
