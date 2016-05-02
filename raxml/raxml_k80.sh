@@ -15,7 +15,7 @@
 
 # Run a command
 
-module load raxml
+module load raxml/8.2.0
 
 mpirun -n 8 raxmlHPC-MPI  -f a -x 12345 -p 12345 -N 100 -m GTRGAMMA --K80 -s DQA_Outgroup2.phy -n DQA_Outgroup2_K80_boot100
 
