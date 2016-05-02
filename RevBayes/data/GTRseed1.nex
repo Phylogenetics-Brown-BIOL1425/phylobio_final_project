@@ -1,22 +1,22 @@
 #NEXUS
 
 begin taxa;
-     dimensions ntaxa = 38;
+     dimensions ntax = 38;
      taxlabels
      
      ancestor
      Isodectes_obtusum
      Acroplous_vorax
      Dvinosaurus_primus
-     Tupilakosaurus_spp.
-     Trimerorhachis_spp.
+     Tupilakosaurus_spp
+     Trimerorhachis_spp
      Neldasaurus_wrightae
-     Tersomius_spp.
+     Tersomius_spp
      Trematopidae
-     Dissorophus_spp.
-     Eryops_spp.
+     Dissorophus_spp
+     Eryops_spp
      Zatrachydidae
-     Sclerocephalus_spp.
+     Sclerocephalus_spp
      Cheliderpeton_latirostre
      Archegosaurus_decheni
      Platyoposaurus_stuckenbergi
@@ -24,7 +24,7 @@ begin taxa;
      Peltobatrachus_pustulatus
      Rhinesuchidae
      Lydekkerina_huxleyi
-     Luzocephalus_spp.
+     Luzocephalus_spp
      Lapillopsis_nana
      Capitosauridae
      Mastodonsaurus_giganteus
@@ -37,10 +37,10 @@ begin taxa;
      Plagiosauridae
      Rhytidosteidae
      Xenobrachyops_allos
-     Batrachosuchus_spp.
+     Batrachosuchus_spp
      Siderops_kehli
      Keratobrachyops_australis
-     Pelorocephalus_spp.
+     Pelorocephalus_spp
      Undescribed_genus
      ;
 end;
@@ -48,43 +48,43 @@ end;
 begin trees;
      translate
      
-        0  ancestor
-        1  Isodectes_obtusum
-        2  Acroplous_vorax
-        3  Dvinosaurus_primus
-        4  Tupilakosaurus_spp.
-        5  Trimerorhachis_spp.
-        6  Neldasaurus_wrightae
-        7  Tersomius_spp.
-        8  Trematopidae
-        9  Dissorophus_spp.
-       10  Eryops_spp.
-       11  Zatrachydidae
-       12  Sclerocephalus_spp.
-       13  Cheliderpeton_latirostre
-       14  Archegosaurus_decheni
-       15  Platyoposaurus_stuckenbergi
-       16  Konzhukovia_vetusta
-       17  Peltobatrachus_pustulatus
-       18  Rhinesuchidae
-       19  Lydekkerina_huxleyi
-       20  Luzocephalus_spp.
-       21  Lapillopsis_nana
-       22  Capitosauridae
-       23  Mastodonsaurus_giganteus
-       24  Benthosuchus_sushkini
-       25  Thoosuchus_jakovlevi
-       26  Trematosauridae
-       27  Almasaurus_habbazi
-       28  Buettneria_perfecta
-       29  Laidleria_gracilis
-       30  Plagiosauridae
-       31  Rhytidosteidae
-       32  Xenobrachyops_allos
-       33  Batrachosuchus_spp.
-       34  Siderops_kehli
-       35  Keratobrachyops_australis
-       36  Pelorocephalus_spp.
+        0  ancestor,
+        1  Isodectes_obtusum,
+        2  Acroplous_vorax,
+        3  Dvinosaurus_primus,
+        4  Tupilakosaurus_spp,
+        5  Trimerorhachis_spp,
+        6  Neldasaurus_wrightae,
+        7  Tersomius_spp,
+        8  Trematopidae,
+        9  Dissorophus_spp,
+       10  Eryops_spp,
+       11  Zatrachydidae,
+       12  Sclerocephalus_spp,
+       13  Cheliderpeton_latirostre,
+       14  Archegosaurus_decheni,
+       15  Platyoposaurus_stuckenbergi,
+       16  Konzhukovia_vetusta,
+       17  Peltobatrachus_pustulatus,
+       18  Rhinesuchidae,
+       19  Lydekkerina_huxleyi,
+       20  Luzocephalus_spp,
+       21  Lapillopsis_nana,
+       22  Capitosauridae,
+       23  Mastodonsaurus_giganteus,
+       24  Benthosuchus_sushkini,
+       25  Thoosuchus_jakovlevi,
+       26  Trematosauridae,
+       27  Almasaurus_habbazi,
+       28  Buettneria_perfecta,
+       29  Laidleria_gracilis,
+       30  Plagiosauridae,
+       31  Rhytidosteidae,
+       32  Xenobrachyops_allos,
+       33  Batrachosuchus_spp,
+       34  Siderops_kehli,
+       35  Keratobrachyops_australis,
+       36  Pelorocephalus_spp,
        37  Undescribed_genus
        ;
        

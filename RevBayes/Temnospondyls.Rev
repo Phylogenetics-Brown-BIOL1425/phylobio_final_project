@@ -19,6 +19,16 @@ n_morph_sites    <- d_morph.nchar()
 
 n_max_states     <- 4
 
+### JGS - Set move index = 0
+
+mvi = 0
+
+### JGS - There are 2n - 1 branches in a rooted tree
+
+n_species <- d_morph.ntaxa() 
+
+n_branches_morph = 2 * n_species - 1
+
 ###############
 # morph model #
 ###############
