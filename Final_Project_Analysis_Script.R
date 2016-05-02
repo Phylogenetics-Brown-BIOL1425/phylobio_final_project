@@ -100,16 +100,16 @@ avg_Lengths_ornithishia = rowMeans(all_Lengths_ornithischia, na.rm=FALSE, dims=1
 # Plotting "average" trees
 avg_Tree = cal3TimePaleoPhy(tree = phylogeny, timeData = time_data, sampRate = runif(1, min = 0.146, max = 0.262), brRate = runif(1, min = 0.001, max = 0.15), extRate = runif(1, min = 0.001, max = 0.15), dateTreatment = "minMax", ntrees = 1)
 avg_Tree$edge.length = avg_Lengths
-plotTree(avg_Tree, edge.width = 2, font = 4, cex = 0.53, label.offset = 0.5, no.margin = T, axis)
-axis(side = 1, root.time = 250, backward = T)
+axisPhylo()
+plot(avg_Tree, edge.width = 2, font = 4, cex = 0.53, label.offset = 0.5, no.margin = T)
 
 avg_Tree_saurischia = cal3TimePaleoPhy(tree = phylogeny_saurischia, timeData = time_data_saurischia, sampRate = runif(1, min = 0.104, max = 0.243), brRate = runif(1, min = 0.001, max = 0.15), extRate = runif(1, min = 0.001, max = 0.15), dateTreatment = "minMax", ntrees = 1)
 avg_Tree_saurischia$edge.length = avg_Lengths_saurischia
-plot(avg_Tree_saurischia, xlim=c(250,66), xlab = "millions of years", edge.width = 2, font = 4, cex = 0.53, label.offset = 0.5, no.margin = T)
+plot(avg_Tree_saurischia, xlim=c(250,66), edge.width = 2, font = 4, cex = 0.53, label.offset = 0.5, no.margin = T)
 
 avg_Tree_ornithischia = cal3TimePaleoPhy(tree = phylogeny_ornithischia, timeData = time_data_ornithischia, sampRate = runif(1, min = 0.172, max = 0.355), brRate = runif(1, min = 0.001, max = 0.15), extRate = runif(1, min = 0.001, max = 0.15), dateTreatment = "minMax", ntrees = 1)
 avg_Tree_ornithischia$edge.length = avg_Lengths_ornithishia
-plot(avg_Tree_ornithischia, xlim=c(250,66), xlab = "millions of years", edge.width = 2, font = 4, cex = 0.53, label.offset = 0.5, no.margin = T)
+plot(avg_Tree_ornithischia, xlim=c(250,66), edge.width = 2, font = 4, cex = 0.53, label.offset = 0.5, no.margin = T)
 
 
 #### ANALYSIS ####
@@ -189,14 +189,15 @@ abline(regress2)
 ## Correlation significant (0.0341)
 
 # Ancestral State Reconstructuon
-# fit = fastAnc(avg_Tree, trochanter_position, vars = TRUE, CI = TRUE)
+
 # Plotting Phenogram
-##phenogram = phenogram(avg_Tree, trochanter_position, fize = 0.6, spread.labels=TRUE, spread.cost=c(2,2), link=50, offset=0.2, xlab = "Time (millions of years)", ylab = "Position of 4th Trochanter (% downshaft)")
+# phenogram = phenogram(avg_Tree, trochanter_position, fize = 0.6, spread.labels=TRUE, spread.cost=c(2,2), link=50, offset=0.2, xlab = "Time (millions of years)", ylab = "Position of 4th Trochanter (% downshaft)")
+# Phenogram not plotted as internal branches, lines leading to taxa, and taxa names cross each other and overlap, making analysis difficult
 # Plotting Contour Map
 obj = contMap(avg_Tree, trochanter_position, type = "phylogram", legend = 0.7*max(nodeHeights(avg_Tree)), plot = TRUE)
 obj = setMap(obj, colors = c("blue", "cyan", "green", "yellow", "red"))
 plot(obj, lwd=2.4, fsize = 0.6)
-# Plotting Side-by-Side
 ## Trait of a distinctive fourth trochanter first appears on the branch leading up to Heterodontosaurus among the Ornithischians, and independently in Herrerasaurus and the branch leading up to Neotheropoda (Dilophosaurus) in the Saurischians
 
 boxplot(Saurischia$trochanter_position, Ornithischia$trochanter_position, names = c("Saurischia", "Ornithischia"), ylab = "Fourth Trochanter Position")
+## Fourth trochanter position is very different between Saurischia and Ornithischia, the latter having in general a more distal placement; very few saurischian taxa have fourth trochanter positions comparable to positions seen in ornithischian taxa
