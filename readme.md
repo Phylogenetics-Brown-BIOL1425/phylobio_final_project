@@ -44,7 +44,11 @@ My current game plan, which I'm about to try to do today, is this:
 
 ## Methods
 
-The tools I used were... See analysis files at (links to analysis files).
+In order to learn more about the evolution and behavior of character data on trees with various taxon sampling, I simulated a tree with 700 tips, and then successively dropped tips from each tree such that I created trees with 350, 250, 100, 50, 25, and 3 tips from the original 700 tip topology. These steps, and all of the analyses described here, were done in RStudio using the package ape. See https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/simulations for the exact code that I used in all of these analyses.
+ 
+Next, I created a variance-covariance matrix for five variables. Four of the variables had a variance of 1, and the fifth had a variance of 0.3 to deviate at least slightly from the exercise we did in class. This variable was set to have a covariance of 0 with the others, three of which covaried weakly (0.2), and two of which covaried strongly (0.9).
+ 
+I then simulated the evolution of these characters on each of my trees using the geiger package and the sim.char() function, (see https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/simulations for specifics). I then was able to calculate the independent contrasts for these characters and obtain covariance matrices for the evolution of these characters based on each simulated phylogeny. I also generated covariance matrices for the values at the tips of each simulated phylogeny/character data set, in order to compare how different the results might be if independent contrasts had not been used to take into account the relatedness of each tip to one another.
 
 ## Results
 
@@ -108,6 +112,8 @@ Mike Rosario, for patiently helping me with R.
 Casey Dunn, for suggesting this simulated version of the project when I didn't have my own data to use.
 
 Abby Moore, for helping me (last semester) build the trees in the *Selaginella* rbcL analysis folder of this repository. They're not technically part of this project, but I thought it would be useful to have all of my *Selaginella* phylogenetics projects in one place so that it's easier to come back to later on. 
+
+Morgan Moeglein, Kim Neil, & Bianca Brown for emotional support. 
 
 
 
