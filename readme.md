@@ -218,7 +218,7 @@ ___
 
 To test whether or not the high similarity between the chromosomal tree and the big gene was driven exclusively due to the large size of the big gene, a phylogenetic tree was inferred form the concatenated sequences of genes A, CI and the neutral Marker (Figure 22A). The tree inferred form the concatenated genes successfully reconstructed the northern and souther haplogroups (posterior = 1), however, as in the case of gene A and the neutral marker, outgroup placement and support was highly problematic (posterior << 0.1). Corrected entanglement measurement was low (0.092) and Baker's gamma was medium http://127.0.0.1:16984/graphics/plot_zoom_png?width=1280&height=773(0.64, P-value = 0). The Foulkes-Mallows index reveals a degree of similarity much higher for the concatenated genes relative to any individual gene, yet much lower than the Big Gene alone.   
 
-![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Concatenated_tree.png)
+![Figure 22](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Concatenated_tree.png)
 **Figure 21A:** Phylogenetic tree constructed from data from the Neutral Marker. *Notice the very short branch length*
 ![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Concatnated_tanglegram.png)
 **Figure 21B:** Corrected entanglement. New coefficient is =  0.09186049**
@@ -227,24 +227,31 @@ To test whether or not the high similarity between the chromosomal tree and the 
 
 ###Leaf stability of the out-group 
 
-![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/no_out_K_qc.png)
+Tree space analysis of the first trees constructed revealed  high leaf instability in the placement of the outgroup in all runs expect for the Big gene. To explore the potential effects of this instability, 3 analyses were revisited without the outgroup: Complete chromosome (Figure 22A), and the two most unstable trees, A6 (Figure 23A), and the neutral marker (Figure 24A). 
 
-![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/no_out_tree_comparison_K.png)
-
-#~~~~~~~~~~~A6
-![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/no_out_A6_qc.png)
-
-![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/noOut_A6_tree_comparison.png)
-
-#~~~~~~~~~~~NM
-
-![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/no_out_NM_qc.png)
-
-![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/noOUT_NM_trees.png)
+For the chromosomal tree (K), removal the outgroup has positive effects by increasing the posterior probabilities of the branches leading to the bipartition of the northern and southern haplogroups (Figure 22B).
 
 
+![Figure 22A](https://rawgit.com/Jcbnunez/phylobio_final_project/master/no_out_K_qc.png)
+**Figure 22A**: Parameter searches conducted by revBayes during phylogenetic inference of chromosome K without the outgroup. Left: PDF of sampled posteriors. The blue vertical line represent the mean of the sampling distribution. Right: Posterior sampling per state (i.e. *per* generation). Notice the bad convergence as the first generations post burning.
+![Figure 22B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/no_out_tree_comparison_K.png)
+**Figure 22B:** Phylogenetic tree constructed from data from chromosome K without the outgroup. 
 
+For the tree constructed from gene A, removal of the outgrup didn't improve the phylogenetic inference or the posterior support of key branches leading to the two haplogroup clades (Most posterior probabilities leading to key bipartitions rather decreased in value). Tree space visualization reveals that, while there is no longer a jumping outgroup throughout the topologies, the tree space is broad and diffuse (Figure 23C).
 
+![Figure 23A](https://rawgit.com/Jcbnunez/phylobio_final_project/master/no_out_A6_qc.png)
+**Figure 23A**: Parameter searches conducted by revBayes during phylogenetic inference of gene A without the outgroup. Left: PDF of sampled posteriors. The blue vertical line represent the mean of the sampling distribution. Right: Posterior sampling per state (i.e. *per* generation). Notice the bad convergence as the first generations post burning.
+![Figure 23B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/noOut_A6_tree_comparison.png)
+**Figure 23B:** Phylogenetic tree constructed from data from gene A without the outgroup. 
+![Figure 23C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/A6_noout_treespace.png)
+**Figure 23C:** Tree space of gene A without the outgroup. 
+
+A situation similar to that observed for gene A is seen in the case of the neutral marker, with no appreciable improvement resulting from removing the outgroup (Figure 24B). 
+
+![Figure 24A](https://rawgit.com/Jcbnunez/phylobio_final_project/master/no_out_NM_qc.png)
+**Figure 24A**: Parameter searches conducted by revBayes during phylogenetic inference the neutral marker without the outgroup. Left: PDF of sampled posteriors. The blue vertical line represent the mean of the sampling distribution. Right: Posterior sampling per state (i.e. *per* generation). Notice the bad convergence as the first generations post burning.
+![Figure 24B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/noOUT_NM_trees.png)
+**Figure 24B:** Phylogenetic tree constructed from data from the neutral marker without the outgroup. 
 
 ## Discussion
 
