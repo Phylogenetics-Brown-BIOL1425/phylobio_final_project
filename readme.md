@@ -147,39 +147,36 @@ Blomberg's K = 0.2848437
 
 ####Gene Big Gene
 
-![Figure 20](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BG_phylogeny.png "Figure 20: phylogeny for gene BG")
+Phylogenetic reconstruction for the the Big Gene produced the most accurate tree reconstruction relative to all other genes. The tree grouped both northern and southern haplogroups in clades with excellent branch support (out-group to Southern-clade posterior = 1, Southern Clade to Northern Clade posterior = 1), however, unlike the chromosomal tree, populations of northern and southern haplogroup were not recovered as two distinct sister clades, but rather the northern clade deriving from a subdivision of the southern clade (Figue 20). Topology similarity between the chromosomal tree and the Big Gene tree was the highest of all gene-to-chromosome tree comparisons. Corrected entanglement = 0.0322881. Baker's Gamma = 0.8 (P-val = 0; Figure 18D). Finally, Fowlkes–Mallows index reveals high levels of similarity between the chromosomal and gene tree at all levels of topology (Figure 18E). 
 
-![Figure 20A](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_tangled.png "Figure 20A: tangled K vs BG")
-**Pre-entanglement**
+![Figure 18A](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BG_phylogeny.png)
+![Figure 18B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_tangled.png "Figure")
+**Raw-entanglement**
 Untangled Tanglegram of Big Gene vs Chromosome K. In this state the entanglement coefficient is =  0.8978911.
-
-![Figure 20B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_untangled.png "Figure 20B: untangled K vs BG")
-
-**Post-entanglement**
+![Figure 18C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_untangled.png "Figure 20B: untangled K vs BG")
+**Corrected-entanglement**
 Post-entanglement coefficient is = 0.0322881
-
-![Figure 20B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Bakers_gamma_kvsBG3.png "Figure 20B: untangled K vs BG")
+![Figure 18D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Bakers_gamma_kvsBG3.png)
 **Baker's Gamma**
-
-![Figure 20C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_BK.png "Figure 20C: untangled K vs BG")
+![Figure 18E](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_BG_BK.png)
 **Fowlkes–Mallows index of "dissimilarity"**
+
 
 ####Gene A
-![Figure 18](https://rawgit.com/Jcbnunez/phylobio_final_project/master/a6_phylo.png "Figure 18: phylogeny for gene A")
 
-![Figure 18B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_A_tangled.png "Figure 18B: phylogeny for gene A")
+
+![Figure 20A](https://rawgit.com/Jcbnunez/phylobio_final_project/master/a6_phylo.png)
+![Figure 20B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_A_tangled.png)
 **Pre-entanglement**
 Entanglement = 0.3317921
-
-![Figure 18C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_A6_untangled.png "Figure 18C: phylogeny for gene A")
+![Figure 20C](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_A6_untangled.png)
 **Post-entanglement**
 Post-entanglement coefficient is = 0.1615409
-
-![Figure 20B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Baker_gamma_K_A6.png "Figure 20B: untangled K vs BG")
+![Figure 20D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Baker_gamma_K_A6.png)
 **Baker's Gamma**
-
-![Figure 18D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_A6_BK.png "Figure 18D: phylogeny for gene A")
+![Figure 20E](https://rawgit.com/Jcbnunez/phylobio_final_project/master/K_vs_A6_BK.png)
 **Fowlkes–Mallows index of "dissimilarity"**
+
 
 ####Gene CI
 ![Figure 19](https://rawgit.com/Jcbnunez/phylobio_final_project/master/CI_phylogeny.png "Figure 19: phylogeny for gene CI")
