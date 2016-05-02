@@ -214,7 +214,7 @@ Phylogenetic reconstruction for the neutral marker produced the messiest reconst
 
 ___
 
-###Potential sequence length Bias of phylogenetic signal 
+####Potential sequence length Bias of phylogenetic signal 
 
 To test whether or not the high similarity between the chromosomal tree and the big gene was driven exclusively due to the large size of the big gene, a phylogenetic tree was inferred form the concatenated sequences of genes A, CI and the neutral Marker (Figure 22A). The tree inferred form the concatenated genes successfully reconstructed the northern and souther haplogroups (posterior = 1), however, as in the case of gene A and the neutral marker, outgroup placement and support was highly problematic (posterior << 0.1). Corrected entanglement measurement was low (0.092) and Baker's gamma was medium http://127.0.0.1:16984/graphics/plot_zoom_png?width=1280&height=773(0.64, P-value = 0). The Foulkes-Mallows index reveals a degree of similarity much higher for the concatenated genes relative to any individual gene, yet much lower than the Big Gene alone.   
 
@@ -225,7 +225,7 @@ To test whether or not the high similarity between the chromosomal tree and the 
 ![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BKandGamma_concatenated.png)
 **Figure 21C:**  Baker's Gamma index. P-value estimated with 100 replications, and Fowlkes–Mallows index of "dissimilarity" Notice high level of similarity at all levels of topology
 
-###Leaf stability of the out-group 
+####Leaf stability of the out-group 
 
 Tree space analysis of the first trees constructed revealed  high leaf instability in the placement of the outgroup in all runs expect for the Big gene. To explore the potential effects of this instability, 3 analyses were revisited without the outgroup: Complete chromosome (Figure 22A), and the two most unstable trees, A6 (Figure 23A), and the neutral marker (Figure 24A). 
 
@@ -252,7 +252,7 @@ A situation similar to that observed for gene A is seen in the case of the neutr
 ![Figure 24B](https://rawgit.com/Jcbnunez/phylobio_final_project/master/noOUT_NM_trees.png)
 **Figure 24B:** Phylogenetic tree constructed from data from the neutral marker without the outgroup. 
 
-###Branch Length Analysis 
+####Branch Length Analysis 
 Finally, a branch length analysis was conducted comparing the norther and Southern clades genetrated in the chromosomal tree, the Big gene tree, and the concatenated tree (Table 1). The following metric were estimated: Total Branch Length, the sum of all branch lengths in the clade; Shared Branch Length, the sum of all branch lengts shared by more than one tip; and, Unique Evolutionary History, the sum of the branch lengths that give rise to only one tip in the clade.
 
 **Table 1:** Branch length analysis for the two haplogroups in three trees chromosomal tree, the Big gene tree, and the concatenated tree. UEH = Unique Evolutionary History; SBL = Shared Branch Length; TBL = Total Branch Length. 
