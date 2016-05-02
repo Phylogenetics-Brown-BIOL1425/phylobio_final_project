@@ -141,7 +141,7 @@ However, it is worth noting that one non-ankylopollexian ornithischian, *Tenonto
 
 ### Phylogenetic Signal Testing
 
-When considering Dinosauria as a whole, both fourth trochanter position and body mass showed a significant phylogenetic signal; closely related species resembled each other more than expected by chance with regard to fourth trochanter position, and less than would be expected with regard to body mass. Thus, we can infer that body mass is fairly unstable within Dinosauria, while fourth trochanter position is considerably more conservative. 
+When considering Dinosauria as a whole, both fourth trochanter position and body mass showed a significant phylogenetic signal; closely related species resembled each other more than expected by chance with regard to fourth trochanter position, and less than would be expected with regard to body mass. Thus, we can infer that body mass is fairly unstable within Dinosauria, while fourth trochanter position is considerably more conservative. This also indicates that the two traits are not causally linked; if body mass drove migration of the fourth trochanter, they would show the same phylogenetic trend.
 
 However, a different result was found when examining Saurischia and Ornithischia separately. In both clades, fourth trochanter position was not found to have a significant phylogenetic signal. This confirms the hypothesis that ornithischian and saurischian fourth trochanter positions display sustained differences; since a phylogenetic signal for fourth trochanter position is found in Dinosauria as a whole but not in either constituent subclade, the phylogenetic signal must represent differences between the subclades. 
 
@@ -150,6 +150,12 @@ Interestingly, body mass showed a significant phylogenetic signal within Saurisc
 ### Independent Contrasts
 
 The significance of the result when considering Dinosauria collectively may be an artifact resulting from differences in the character combinations between the two datasets. Our data includes more large ornithischians than saurischians, but saurischians tend to have more proximal fourth trochanters than ornithischians. Sampling the two clades separately therefore undersamples the diversity of morphology present in the dataset, and may have caused the regressions to be insignificant.
+
+## Conclusion
+
+Our results shed new light on the conclusions reached by Persons and Currie (2014). Their central hypothesis - that ornithischian dinosaurs developed distally-positioned fourth trochanters as a response to pursuit predation by tyrannosaurid dinosaurs - is incompatible with our results; distally-positioned fourth trochanters first appeared in the late Triassic, in very basal ornithischians that predated tyrannosaurs by nearly 100 million years. 
+
+However, our results do indicate that fourth trochanter position shows a strong phylogenetic signal, with related taxa resembling each other closely. Since this phylogenetic signal is only discernable when considering all of the taxa in our dataset (i.e. not considering Saurischia and Ornithischia separately), we can state confidently that this represents a sustained morphological difference between the two clades. Contrary to our prediction, body mass showed little to no association with fourth trochanter position. We can therefore conclude that Persons and Currie (2014) were correct in their assertion that the two clades adopted different locomotor strategies. Further biomechanical research remains to be done to determine the exact nature of the locomotor strategies adopted by the two groups. 
 
 ## References
 
