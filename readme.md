@@ -50,7 +50,7 @@ Next, I created a variance-covariance matrix for five variables. Four of the var
  
 I then simulated the evolution of these characters on each of my trees using the geiger package and the sim.char() function, (see https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/simulations for specifics). I then was able to calculate the independent contrasts for these characters and obtain covariance matrices for the evolution of these characters based on each simulated phylogeny. I also generated covariance matrices for the values at the tips of each simulated phylogeny/character data set, in order to compare how different the results might be if independent contrasts had not been used to take into account the relatedness of each tip to one another.
 
-## Results
+## Results (Tables and Figures)
 
 ![Figure 0](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/figure0.png)
 
@@ -96,13 +96,11 @@ I then simulated the evolution of these characters on each of my trees using the
 
 ![Table 7](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tables/table7.png)
 
-## Discussion
+## Results & Discussion
 
-These results indicate...
+When tips were randomly dropped from each tree, each of the three major clades from the starting tree happened to be maintained throughout (Fig.0 A-G). I found this interesting for the sake of these analyses because the tree maintained its general shape even as tips were dropped. However, if I were to do this project again, I might experiment with intentionally dropping an entire large clade, because though each tree with fewer tips does theoretically represent poorer and poorer taxon sampling, I do not think that poor taxon sampling in reality would necessarily be structured randomly across the entire tree. For example, based on published phylogenies of Selaginella, it is obvious (and not unexpected) that many of the major clades also share similar biogeographical patterns. In collecting these plants for my work, it seems likely that I would over represent the North American clade, and underrepresent clades from Asia, since it will likely be more difficult to get access to those plants. If I were to do this project again, instead of randomly dropping tips from the trees, I would make them representative of the sort of biased sampling I just described.
 
-The biggest difficulty in implementing these analyses was...
 
-If I did these analyses again, I would...
 
 ##Acknowledgements
 Andrew Leslie, for help with heat-mapping. 
