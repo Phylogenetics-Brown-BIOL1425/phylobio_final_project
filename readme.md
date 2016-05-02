@@ -95,6 +95,10 @@ A significant distally-directed movement of the fourth trochanter is seen in the
 
 As described earlier, only a handful of Saurischian taxa reach fourth trochanter positions as distal as those seen in Ornithischians. As shown in Figure 8, the two clades have little overlap. Saurischian taxa, as a rule, generally seem to have fourth trochanters more proximal than ornithischian taxa.
 
+![GitHub Logo](Figure 8.png)
+
+**Figure 8.** Box-plot plotting the range in position of the fourth trochanter in the Saurischian and Ornithischian taxa. The upper end of the Saurischian box-plot whisker can be seen to slightly overlap the values of the lower end of the Ornithischian box-plot whisker. It can therefore be seen that there is very little overlap in fourth trochanter position within the Ornithischians and Saurischians, with Ornithischians generally showing more distal fourth trochanter positions than Saurischians.
+
 ### Phylogenetic Signal
 
 The results of interest from our phylogenetic signal testing were the values obtained for K and p. The value K indicates whether related taxa within the tree under concern resemble each other more or less than would be expected under a random walk through morphospace. A K value greater than 1 indicates a greater than expected resemblance between related species, whereas a K value less than 1 indicates a less than expected resemblance between related species. The p-value indicates the statistical significance of the result. We considered p values of less than 0.05 to indicate statistical significance, as is standard in most existing studies.
@@ -128,11 +132,9 @@ Only the regression for Dinosauria as a whole yielded a significant result (p = 
 
 ### Ancestral State Reconstruction
 
-
-
 ### Phylogenetic Signal Testing
 
-### Independant Contrasts
+### Independent Contrasts
 
 ### Sources of Difficulty
 
