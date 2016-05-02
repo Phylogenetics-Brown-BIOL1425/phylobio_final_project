@@ -1,0 +1,54 @@
+#NEXUS
+
+	Begin taxa;
+	Dimensions ntax=43;
+	Taxlabels
+		Cyprinus_carpio_LN598377_1
+		Doryteuthis_pealeii_KR107041_1
+		Doryteuthis_pealeii_KR107042_1
+		Drosophila_miranda_EU624603_1
+		Drosophila_miranda_EU624604_1
+		Drosophila_persimilis_XM_002027160_1
+		Drosophila_pseudoobscura_XM_001361375_4
+		Drosophila_pseudoobscura_XM_004444295_2
+		Drosophila_pseudoobscura_XM_004444296_2
+		Drosophila_pseudoobscura_XM_015184814_1
+		Drosophila_pseudoobscura_XM_015184815_1
+		Drosophila_pseudoobscura_XM_015184816_1
+		Drosophila_pseudoobscura_XM_015184817_1
+		Drosophila_sechellia_XM_002033552_1
+		Euperipatoides_kanangrensis_LN830719_1
+		Euprymna_scolopes_EU344783_1
+		Euprymna_scolopes_EU344784_1
+		Exophiala_aquamarina_XM_013404966_1
+		Leptochiton_asellus_KU193721_1
+		Lingula_anatina_PREDICTED_XM_013553035_1
+		Lingula_anatina_PREDICTED_XM_013553036_1
+		Loligo_forbesi_L10289_1
+		Loligo_pealei_AF521583_2
+		Monodelphis_domestica_PREDICTED_XM_001362344_3
+		Monodelphis_domestica_PREDICTED_XM_007499012_1
+		Monodelphis_domestica_PREDICTED_XM_007499013_1
+		Nannospalax_galili_PREDICTED_XM_008837011_1
+		Octopus_bimaculoides_PREDICTED_XM_014929061_1
+		Octopus_bimaculoides_PREDICTED_XM_014929062_1
+		Octopus_vulgaris_AB025782_1
+		Platynereis_dumerilii_KC109635_1
+		Pogonomyrmex_barbatus_PREDICTED_XM_011635167_1
+		Pogonomyrmex_barbatus_PREDICTED_XM_011635168_1
+		Pogonomyrmex_barbatus_PREDICTED_XM_011635169_1
+		Pogonomyrmex_barbatus_PREDICTED_XM_011635170_1
+		Pogonomyrmex_barbatus_PREDICTED_XM_011635171_1
+		Pogonomyrmex_barbatus_PREDICTED_XM_011635172_1
+		Pogonomyrmex_barbatus_PREDICTED_XM_011635173_1
+		Pogonomyrmex_barbatus_PREDICTED_XM_011635174_1
+		Salmo_salar_PREDICTED_XM_014160718_1
+		Sarcophilus_harrisii_PREDICTED_XM_003761854_2
+		Sepia_officinalis_DQ413186_1
+		Terebratalia_transversa_KC840339_1
+		;
+End;
+
+Begin trees;
+tree TREE1 = [&R]((((((((((((((Drosophila_pseudoobscura_XM_004444296_2[&index=42,posterior=1.000000,ccp=1.000000]:0.048785,Drosophila_pseudoobscura_XM_015184814_1[&index=41,posterior=1.000000,ccp=1.000000]:0.001029)[&index=43,posterior=0.410163,ccp=0.410163,height_95%_HPD={nan,0.002738}]:0.001469,Drosophila_persimilis_XM_002027160_1[&index=40,posterior=1.000000,ccp=0.410163]:0.155579)[&index=44,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.050624}]:0.042744,Drosophila_pseudoobscura_XM_001361375_4[&index=39,posterior=1.000000,ccp=1.000000]:0.000878)[&index=45,posterior=0.992029,ccp=1.000000,height_95%_HPD={nan,0.070145}]:0.054597,((Drosophila_pseudoobscura_XM_015184815_1[&index=38,posterior=1.000000,ccp=1.000000]:0.001107,Drosophila_pseudoobscura_XM_015184816_1[&index=37,posterior=1.000000,ccp=1.000000]:0.061942)[&index=46,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.06231}]:0.053366,Drosophila_pseudoobscura_XM_015184817_1[&index=36,posterior=1.000000,ccp=1.000000]:0.001203)[&index=47,posterior=0.977084,ccp=1.000000,height_95%_HPD={nan,0.149356}]:0.136972)[&index=48,posterior=0.602458,ccp=0.905738,height_95%_HPD={nan,0.025126}]:0.014909,Drosophila_pseudoobscura_XM_004444295_2[&index=35,posterior=1.000000,ccp=0.905738]:0.005736)[&index=49,posterior=0.648290,ccp=0.560216,height_95%_HPD={nan,0.166372}]:0.072621,(Drosophila_miranda_EU624603_1[&index=34,posterior=1.000000,ccp=1.000000]:0.008227,Drosophila_miranda_EU624604_1[&index=33,posterior=1.000000,ccp=1.000000]:0.006277)[&index=50,posterior=1.000000,ccp=0.560216,height_95%_HPD={nan,4.42515}]:4.062312)[&index=51,posterior=0.799734,ccp=0.799734,height_95%_HPD={nan,0.181855}]:0.089139,Drosophila_sechellia_XM_002033552_1[&index=32,posterior=1.000000,ccp=0.799734]:0.780102)[&index=52,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.266919}]:0.200555,((((Pogonomyrmex_barbatus_PREDICTED_XM_011635169_1[&index=31,posterior=1.000000,ccp=1.000000]:0.000940,Pogonomyrmex_barbatus_PREDICTED_XM_011635170_1[&index=30,posterior=1.000000,ccp=1.000000]:0.051270)[&index=53,posterior=0.567586,ccp=1.000000,height_95%_HPD={nan,0.176812}]:0.158417,Pogonomyrmex_barbatus_PREDICTED_XM_011635174_1[&index=29,posterior=1.000000,ccp=1.000000]:0.001083)[&index=54,posterior=0.565261,ccp=1.000000,height_95%_HPD={nan,0.070424}]:0.059631,Pogonomyrmex_barbatus_PREDICTED_XM_011635173_1[&index=28,posterior=1.000000,ccp=1.000000]:0.001154)[&index=55,posterior=0.418798,ccp=0.413816,height_95%_HPD={nan,0.052199}]:0.029504,((Pogonomyrmex_barbatus_PREDICTED_XM_011635167_1[&index=27,posterior=1.000000,ccp=1.000000]:0.000871,Pogonomyrmex_barbatus_PREDICTED_XM_011635168_1[&index=26,posterior=1.000000,ccp=1.000000]:0.031069)[&index=56,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.126891}]:0.106983,(Pogonomyrmex_barbatus_PREDICTED_XM_011635171_1[&index=25,posterior=1.000000,ccp=1.000000]:0.062348,Pogonomyrmex_barbatus_PREDICTED_XM_011635172_1[&index=24,posterior=1.000000,ccp=1.000000]:0.006463)[&index=57,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.104094}]:0.084860)[&index=58,posterior=0.995018,ccp=0.413816,height_95%_HPD={nan,0.089947}]:0.054301)[&index=59,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.601402}]:0.540731)[&index=60,posterior=0.986383,ccp=0.986347,height_95%_HPD={nan,0.168323}]:0.130173,(((((Monodelphis_domestica_PREDICTED_XM_001362344_3[&index=23,posterior=1.000000,ccp=1.000000]:0.045878,Monodelphis_domestica_PREDICTED_XM_007499012_1[&index=22,posterior=1.000000,ccp=1.000000]:0.015826)[&index=61,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.04845}]:0.040774,Monodelphis_domestica_PREDICTED_XM_007499013_1[&index=21,posterior=1.000000,ccp=1.000000]:0.045600)[&index=62,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.408479}]:0.363803,Sarcophilus_harrisii_PREDICTED_XM_003761854_2[&index=20,posterior=1.000000,ccp=1.000000]:0.014317)[&index=63,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.851078}]:0.733446,Exophiala_aquamarina_XM_013404966_1[&index=19,posterior=1.000000,ccp=1.000000]:1.794967)[&index=64,posterior=0.683826,ccp=0.683162,height_95%_HPD={nan,0.212214}]:0.112605,((Cyprinus_carpio_LN598377_1[&index=18,posterior=1.000000,ccp=1.000000]:2.899286,Salmo_salar_PREDICTED_XM_014160718_1[&index=17,posterior=1.000000,ccp=1.000000]:0.771240)[&index=65,posterior=0.998339,ccp=0.998295,height_95%_HPD={nan,0.532295}]:0.389018,Nannospalax_galili_PREDICTED_XM_008837011_1[&index=16,posterior=1.000000,ccp=0.998295]:0.670929)[&index=66,posterior=0.973763,ccp=0.683162,height_95%_HPD={nan,0.286361}]:0.234184)[&index=67,posterior=1.000000,ccp=0.986347,height_95%_HPD={nan,0.202647}]:0.141812)[&index=68,posterior=0.997343,ccp=0.997332,height_95%_HPD={nan,0.209974}]:0.147202,Terebratalia_transversa_KC840339_1[&index=15,posterior=1.000000,ccp=0.997332]:1.207612)[&index=69,posterior=0.995682,ccp=0.985719,height_95%_HPD={nan,0.236499}]:0.168336,(((Lingula_anatina_PREDICTED_XM_013553035_1[&index=14,posterior=1.000000,ccp=1.000000]:0.005009,Lingula_anatina_PREDICTED_XM_013553036_1[&index=13,posterior=1.000000,ccp=1.000000]:0.002549)[&index=70,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.988744}]:0.904775,Euperipatoides_kanangrensis_LN830719_1[&index=12,posterior=1.000000,ccp=1.000000]:0.236684)[&index=71,posterior=0.994686,ccp=0.994633,height_95%_HPD={nan,0.25053}]:0.174519,(Leptochiton_asellus_KU193721_1[&index=11,posterior=1.000000,ccp=1.000000]:0.399584,Platynereis_dumerilii_KC109635_1[&index=10,posterior=1.000000,ccp=1.000000]:0.279755)[&index=72,posterior=1.000000,ccp=0.994633,height_95%_HPD={nan,0.270448}]:0.217966)[&index=73,posterior=0.990037,ccp=0.985719,height_95%_HPD={nan,0.20487}]:0.150479)[&index=74,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.441333}]:0.376212,(((((Doryteuthis_pealeii_KR107041_1[&index=9,posterior=1.000000,ccp=1.000000]:0.001188,Loligo_pealei_AF521583_2[&index=8,posterior=1.000000,ccp=1.000000]:0.001245)[&index=75,posterior=0.956493,ccp=0.956493,height_95%_HPD={nan,0.010593}]:0.005655,Doryteuthis_pealeii_KR107042_1[&index=7,posterior=1.000000,ccp=0.956493]:0.073751)[&index=76,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.052087}]:0.041682,Loligo_forbesi_L10289_1[&index=6,posterior=1.000000,ccp=1.000000]:0.046250)[&index=77,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.066275}]:0.048918,Sepia_officinalis_DQ413186_1[&index=5,posterior=1.000000,ccp=1.000000]:0.146980)[&index=78,posterior=0.622385,ccp=0.622385,height_95%_HPD={nan,0.059204}]:0.044548,(Euprymna_scolopes_EU344783_1[&index=4,posterior=1.000000,ccp=1.000000]:0.002695,Euprymna_scolopes_EU344784_1[&index=3,posterior=1.000000,ccp=1.000000]:0.038552)[&index=79,posterior=1.000000,ccp=0.622385,height_95%_HPD={nan,0.154429}]:0.130637)[&index=80,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.128308}]:0.091073)[&index=81,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.212918}]:0.178852,Octopus_bimaculoides_PREDICTED_XM_014929061_1[&index=2,posterior=1.000000,ccp=1.000000]:0.008422)[&index=82,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.056862}]:0.045507,Octopus_bimaculoides_PREDICTED_XM_014929062_1[&index=1,posterior=1.000000,ccp=1.000000]:0.001230,Octopus_vulgaris_AB025782_1[&index=0,posterior=1.000000,ccp=1.000000]:0.055186)[&index=83,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,-1}]:0.000000;
+End;
