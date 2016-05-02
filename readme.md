@@ -56,43 +56,43 @@ I then simulated the evolution of these characters on each of my trees using the
 
 ![Figure 1](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/700tree_characters.png)
 
-![Figure 2](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree1.png)
+![Figure 2](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/Figure2.png)
 
 ![Table 1](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tables/table1.png)
 
 ![Figure 3](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/350tree_characters.png)
 
-![Figure 4](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree2.png)
+![Figure 4](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/Figure4.png)
 
 ![Table 2](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tables/table2.png)
 
 ![Figure 5](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/250tree_characters.png)
 
-![Figure 6](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree3.png)
+![Figure 6](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/Figure6.png)
 
 ![Table 3](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tables/table3.png)
 
 ![Figure 7](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/100tree_characters.png)
 
-![Figure 8](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree4.png)
+![Figure 8](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/Figure8.png)
 
 ![Table 4](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tables/table4.png)
 
 ![Figure 9](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/50tree_characters.png)
 
-![Figure 10](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree5.png)
+![Figure 10](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/Figure10.png)
 
 ![Table 5](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tables/table5.png)
 
 ![Figure 11](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/25tree_characters.png)
 
-![Figure 12](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree6.png)
+![Figure 12](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/Figure12.png)
 
 ![Table 6](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tables/table6.png)
 
 ![Figure 13](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/3tree_characters.png)
 
-![Figure 14](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/tree7.png)
+![Figure 14](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/figures/Figure14.png)
 
 ![Table 7](https://github.com/nikolebonacorsi/phylobio_final_project/blob/master/tables/table7.png)
 
