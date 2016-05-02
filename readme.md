@@ -74,7 +74,7 @@ round(sum(K_BG_cor < cor_bakers_gamma_results)/ rep, 4)
 
 ```
 
-The Fowlkes-Mallows Index is another measure of the association between two trees. The index investigates the similarity between the trees when these trees are subdivided in clusters of size "k" from the trees. The expected value of Fowlkes-Mallows under the null hypothesis that the two trees are not similar can be compared to the observed values of Fowlkes-Mallows to obtain an idea of the similarity of the trees at different "depths" of the topology.  
+The Fowlkes-Mallows Index is another measure of the association between two trees. The index investigates the similarity between the trees when these trees are subdivided in clusters of size "k" from the trees. The expected value of Fowlkes-Mallows under the null hypothesis that the two trees are not similar can be compared to the observed values of Fowlkes-Mallows to obtain an idea of the similarity of the trees at different "depths" of the topology. Branch lengths analysis within haplogroup clades were conducted with the function "pd.calc" in the R package caper (https://cran.r-project.org/web/packages/caper/index.html).
 
 ## Results
 ___
@@ -223,10 +223,11 @@ To test whether or not the high similarity between the chromosomal tree and the 
 **Figure 21A:** Phylogenetic tree constructed from data from the Neutral Marker. *Notice the very short branch length*
 ![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/Concatnated_tanglegram.png)
 **Figure 21B:** Corrected entanglement. New coefficient is =  0.09186049**
+
 ![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/BKandGamma_concatenated.png)
 **Figure 21C:**  Baker's Gamma index. P-value estimated with 100 replications, and Fowlkes–Mallows index of "dissimilarity" Notice high level of similarity at all levels of topology
 
-####Leaf stability of the out-group 
+#### Stability of the out-group 
 
 Tree space analysis of the first trees constructed revealed  high leaf instability in the placement of the outgroup in all runs expect for the Big gene. To explore the potential effects of this instability, 3 analyses were revisited without the outgroup: Complete chromosome (Figure 22A), and the two most unstable trees, A6 (Figure 23A), and the neutral marker (Figure 24A). 
 
@@ -256,7 +257,7 @@ A situation similar to that observed for gene A is seen in the case of the neutr
 ####Branch Length Analysis 
 Finally, a branch length analysis was conducted comparing the norther and Southern clades genetrated in the chromosomal tree, the Big gene tree, and the concatenated tree (Table 1). The following metric were estimated: Total Branch Length, the sum of all branch lengths in the clade; Shared Branch Length, the sum of all branch lengts shared by more than one tip; and, Unique Evolutionary History, the sum of the branch lengths that give rise to only one tip in the clade.
 
-**Table 1:** Branch length analysis for the two haplogroups in three trees chromosomal tree, the Big gene tree, and the concatenated tree. UEH = Unique Evolutionary History; SBL = Shared Branch Length; TBL = Total Branch Length. 
+**Table 1:** Branch length analysis for the two haplogroups in three trees chromosomal tree, the Big gene tree, and the concatenated tree. UEH = Unique Evolutionary History; SBL = Shared Branch Length; TBL = Total Branch Length. TBL_S/TBL_N = The ratio of total branch lenght of South to North haplogroups.
 
 | Clade | Partition | UEH      | SBL      | TBL      | TBL_S/TBL_N |
 |-------|-----------|----------|----------|----------|-------------|
@@ -269,18 +270,17 @@ Finally, a branch length analysis was conducted comparing the norther and Southe
 
 ## Discussion
 
-**Demographic Signal**
-This project investigated posterior support and topology similarity between a tree constructed using full chromosome data and trees built with data partitions per gene from the chromosome. The man aim was determine which partition (gene) if any better reconstructed the chromosome topology (and putative demographic signal) and if any particular partition was responsable for the topology of the chromosomal tree. Investigations of 3 genes (A6, CI, Big Gene) and a neutral region revealed that trees constructed from Big Gene alone recapitulated most of the topological (and putatively demographic) signal observed in the whole chromosome. All other genes performed poorly by themselves, and, even when concatenated into a single molecule, only recapitulated the chromosomal with a low signal. There are various hypotheses that could explain this observations. If the phylogenetic signal derived form the haplogroups is purely demographic (i.e. neutral), the large size and low functional constrains of big Gene would make it the target of multiple neutral mutations not purged out by purifying selection. Under this model, Big gene's amino acid substitution rate would allow for a higher number of synonymous/non-synonymous substitutions and low codon bias, specially at the non-active pockets of the protein. As a result, Big Gene's signal would be much less saturated than the other shorter, more constrained genes, under strong purifying selection and potentially strong codon bias. Much of the standing variation resulting form this, may have been stochastically purged in the northern haplogroups during the vicariance and subsequence bottleneck events, thus resulting in the observed demographic/topological signal. This scenario is supported by the low (relative to Big Gene) level of topological concordance obtained in the tree build from the concatenated genes. The concatenated sequence, while longer than Big gene, is composed of smaller genes with high levels of functional constraints and potentially high levels of signal saturation in the short genes making up the concatenate). This hypothesis also gains additional support by the drastic differences in branch length between Northern and Southern clades in all genes trees and particularly in the long branches observed in the big gene tree relative to the chromosomal tree. In order to explore this idea, future experiments should explore the demographic signal at various levels of data partitioning other than the gene level, particularly, aminoacid level signal, and codon level signal. This approach would allow to explore the degree of saturation on the chromosome and its constituting genes.    
+**Demographic Signal:**
 
-An alternative hypothesis 
+This project investigated posterior support and topology similarity between a tree constructed using full chromosome data and trees built with data partitions per gene from the chromosome. The man aim was determine which partition (gene) if any better reconstructed the chromosome topology (and putative demographic signal) and if any particular partition was responsable for the topology of the chromosomal tree. Investigations of 3 genes (A6, CI, Big Gene) and a neutral region revealed that trees constructed from Big Gene alone recapitulated most of the topological (and putatively demographic) signal observed in the whole chromosome. All other genes performed poorly by themselves, and, even when concatenated into a single molecule, only recapitulated the chromosomal with a low signal. There are various hypotheses that could explain this observations. If the phylogenetic signal derived form the haplogroups is purely demographic (i.e. neutral), the large size and low functional constrains of big Gene would make it the target of multiple neutral mutations not purged out by purifying selection. Under this model, Big gene's amino acid substitution rate would allow for a higher number of synonymous/non-synonymous substitutions and low codon bias, specially at the non-active pockets of the protein. As a result, Big Gene's signal would be much less saturated than the other shorter, more constrained genes, under strong purifying selection and potentially strong codon bias. Much of the standing variation resulting form this, may have been stochastically purged in the northern haplogroups during the vicariance and subsequence bottleneck events, thus resulting in the observed demographic/topological signal. This scenario is supported by the low (relative to Big Gene) level of topological concordance obtained in the tree build from the concatenated genes. The concatenated sequence, while longer than Big gene, is composed of smaller genes with high levels of functional constraints and potentially high levels of signal saturation in the short genes making up the concatenate). This hypothesis also gains additional support by the drastic differences in branch length between Northern and Southern clades in all genes trees and particularly in the long branches observed in the big gene tree relative to the chromosomal tree. In order to explore this idea, future experiments should explore the demographic signal at various levels of data partitioning other than the gene level, particularly, aminoacid level signal, and codon level signal. This approach would allow to explore the degree of saturation on the chromosome and its constituting genes. An alternative hypothesis may consider natural selection acting on the big gene and driving diferences in the evolution of two clades. This hypothesis would require estimating the degree of functional changes (vs. synonymous changes; i.e. dN/dS or MK-Test) along the branches leading to the clades. Ultimately, this hypothesis would require a population genetic study associating genotype with phenotype from individuals of the two haplogroups. Future studies may explore this.
 
 **Effects of Missing Data**
 
-**Out-group leaf stability and Tree-space**
+
+**Out-group stability and Tree-space**
 
 **Parameter Convergence as Number of Loci increases**
 
-**Future Directions**
 
 ## References
 
