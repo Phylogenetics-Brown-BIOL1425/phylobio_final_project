@@ -126,8 +126,7 @@ Regression of phylogenetic independant contrasts for the three phylogenies yield
 | Ornithischia | 5.040e-06 | 0.1490 |
 **Table 2.** P-values for slopes of regression lines calculated for body mass and fourth trochanter position phylogenetic independant contrasts, sorted by phylogeny used to calculate contrasts.
 
-Only the regression for Dinosauria as a whole yielded a significant result (p = 0.0355); within each of the clades, increasing body mass was not associated with a significant shift in fourth trochanter position. The significance of the result when considering Dinosauria collectively may be an artifact resulting from differences in the character combinations between the two datasets. Our data includes more large ornithischians than saurischians, but saurischians tend to have more proximal fourth trochanters than ornithischians. Sampling the two clades separately therefore undersamples the diversity of morphology present in the dataset, and may have caused the regressions to be insignificant.
-
+Only the regression for Dinosauria as a whole yielded a significant result (p = 0.0355); within each of the clades, increasing body mass was not associated with a significant shift in fourth trochanter position. 
 ## Discussion
 
 ### Ancestral State Reconstruction
@@ -148,10 +147,9 @@ However, a different result was found when examining Saurischia and Ornithischia
 
 Interestingly, body mass showed a significant phylogenetic signal within Saurischia, but not within Ornithischia. The K value for this analysis was 0.7973, so related saurischians resemble each other less than would be expected. This may reflect known differences in the pattern of body size change within the two clades; Ornithischia shows a general trend toward larger and larger body sizes over time, while saurischians evolved large size convergently in several lineages, and occasionally reduced body size (notably along the lineage leading to birds). 
 
-
 ### Independent Contrasts
 
-
+The significance of the result when considering Dinosauria collectively may be an artifact resulting from differences in the character combinations between the two datasets. Our data includes more large ornithischians than saurischians, but saurischians tend to have more proximal fourth trochanters than ornithischians. Sampling the two clades separately therefore undersamples the diversity of morphology present in the dataset, and may have caused the regressions to be insignificant.
 
 ## References
 
