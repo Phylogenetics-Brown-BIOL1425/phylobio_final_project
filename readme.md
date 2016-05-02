@@ -148,6 +148,8 @@ Phylogenetic signal testing for Dinosauria as a whole with body mass revealed th
 
 Interestingly, body mass showed a significant phylogenetic signal within Saurischia, but not within Ornithischia. The K value for this analysis was 0.7973, so related saurischians resemble each other less than would be expected. This may reflect known differences in the pattern of body size change within the two clades; Ornithischia shows a general trend toward larger and larger body sizes over time, while saurischians evolved large size convergently in several lineages, and occasionally reduced body size (notably along the lineage leading to birds). 
 
+Interestingly, body mass showed a significant phylogenetic signal within Saurischia, but not within Ornithischia. The K value for this analysis was 0.7973, so related saurischians resemble each other less than would be expected. This may reflect known differences in the pattern of body size change within the two clades; Ornithischia shows a general trend toward larger and larger body sizes over time, while saurischians evolved large size convergently in several lineages, and occasionally reduced body size (notably along the lineage leading to birds). 
+
 ### Independent Contrasts
 
 
