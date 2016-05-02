@@ -8,3 +8,6 @@ a[][1]
 q()
 ?dnPhyloCTMC
 q()
+dnPhyloCTMC?
+?dnPhyloCTMC
+q()

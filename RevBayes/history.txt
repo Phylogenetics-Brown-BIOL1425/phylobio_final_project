@@ -33,3 +33,15 @@ q()
 n_branches_morph
 br_morph_clock[1].size()
 q()
+n_morph_sites
+n_max_states
+clock_morph_base
+mv
+?mvScale
+?mvScale.methods
+alpha_morph_gr
+alpha_morph_gr.prob()
+alpha_morph_gr.probability()
+mv[1]
+mv[0]
+
