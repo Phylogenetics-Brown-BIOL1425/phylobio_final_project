@@ -231,12 +231,12 @@ To test whether or not the high similarity between the chromosomal tree and the 
 
 ![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/no_out_tree_comparison_K.png)
 
-~~~~~~~~~~~A6
+#~~~~~~~~~~~A6
 ![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/no_out_A6_qc.png)
 
 ![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/noOut_A6_tree_comparison.png)
 
-~~~~~~~~~~~NM
+#~~~~~~~~~~~NM
 
 ![Figure 21D](https://rawgit.com/Jcbnunez/phylobio_final_project/master/no_out_NM_qc.png)
 
