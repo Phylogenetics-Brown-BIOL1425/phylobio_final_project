@@ -8,8 +8,6 @@ Some guidelines and tips:
 
 - For information on formatting text files with markdown, see https://guides.github.com/features/mastering-markdown/ . You can use markdown to include images in this document by linking to files in the repository, eg `![GitHub Logo](/images/logo.png)`.
 
-- The project must be entirely reproducible. In addition to the results, the repository must include all the data (or links to data) and code needed to reproduce the results.
-
 - Paste references (including urls) into the reference section, and cite them with the general format (Smith at al. 2003).
 
 OK, here we go.
@@ -96,7 +94,98 @@ I then exported my accessions dataframe to a .csv file
 write.csv(accessions,file = "accessions_salamandridae.csv")
 ```
 I removed T.vittatus sequence from x12s.fasta because it would not align (tried inputting the reverse complement without success).
+```{r}
+sala.concat.tree=read.tree("sala_data/concat.reduced_tree/RAxML_bestTree.concat.reduced_boot100")
+plot(sala.concat.tree,cex = 0.5)
+sala.concat.tree=clade.matrix(sala.concat.tree)
+ED_sala.concat=ed.calc(sala.concat.tree)
+ED_sala.concat=data.frame(ED_sala.concat$spp)
+ED_sala.concat=ED_sala.concat[order(ED_sala.concat[,1]),]
+IUCN_salamandridae_matched=IUCN_salamandridae_matched[rownames(IUCN_salamandridae_matched)%in%ED_sala.concat[,1],]
 
+ED_sala.concat=ED_sala.concat[ED_sala.concat[,1]%in%rownames(IUCN_salamandridae_matched),]
+
+ED_sala.concat[,3:4]=IUCN_salamandridae_matched[,c(7,11)]
+
+get.EDGE=function(matrix,model){
+  matrix[,5]=NA
+  if (model=="Isaac"){
+    matrix[which(matrix[,3]=="CR"),5]=log(matrix[which(matrix[,3]=="CR"),2]*.4)
+    matrix[which(matrix[,3]=="EN"),5]=log(matrix[which(matrix[,3]=="EN"),2]*.2)
+    matrix[which(matrix[,3]=="VU"),5]=log(matrix[which(matrix[,3]=="VU"),2]*.1)
+    matrix[which(matrix[,3]=="NT"),5]=log(matrix[which(matrix[,3]=="NT"),2]*.05)
+    matrix[which(matrix[,3]=="LC"),5]=log(matrix[which(matrix[,3]=="LC"),2]*.025)
+  }
+  if (model=="IUCN50"){
+    matrix[which(matrix[,3]=="CR"),5]=log(matrix[which(matrix[,3]=="CR"),2]*.97)
+    matrix[which(matrix[,3]=="EN"),5]=log(matrix[which(matrix[,3]=="EN"),2]*.42)
+    matrix[which(matrix[,3]=="VU"),5]=log(matrix[which(matrix[,3]=="VU"),2]*.05)
+    matrix[which(matrix[,3]=="NT"),5]=log(matrix[which(matrix[,3]=="NT"),2]*.004)
+    matrix[which(matrix[,3]=="LC"),5]=log(matrix[which(matrix[,3]=="LC"),2]*.00005)
+  }
+  if (model=="IUCN100"){
+    matrix[which(matrix[,3]=="CR"),5]=log(matrix[which(matrix[,3]=="CR"),2]*.999)
+    matrix[which(matrix[,3]=="EN"),5]=log(matrix[which(matrix[,3]=="EN"),2]*.667)
+    matrix[which(matrix[,3]=="VU"),5]=log(matrix[which(matrix[,3]=="VU"),2]*.1)
+    matrix[which(matrix[,3]=="NT"),5]=log(matrix[which(matrix[,3]=="NT"),2]*.01)
+    matrix[which(matrix[,3]=="LC"),5]=log(matrix[which(matrix[,3]=="LC"),2]*.0001)
+  }
+  if (model=="IUCN500"){
+    matrix[which(matrix[,3]=="CR"),5]=log(matrix[which(matrix[,3]=="CR"),2]*1)
+    matrix[which(matrix[,3]=="EN"),5]=log(matrix[which(matrix[,3]=="EN"),2]*.996)
+    matrix[which(matrix[,3]=="VU"),5]=log(matrix[which(matrix[,3]=="VU"),2]*.39)
+    matrix[which(matrix[,3]=="NT"),5]=log(matrix[which(matrix[,3]=="NT"),2]*.02)
+    matrix[which(matrix[,3]=="LC"),5]=log(matrix[which(matrix[,3]=="LC"),2]*.0005)
+  }
+  matrix[,5]=abs(matrix[,5])
+  colnames(matrix)[5]="EDGE"
+  matrix=matrix[order(matrix[,5],decreasing = TRUE),]
+  matrix[6]=1:dim(matrix)[1]
+  colnames(matrix)[6]="rank by edge"
+  return(matrix[,c(1,5,6)])
+}
+sala.concat.Isaac=get.EDGE(matrix = ED_sala.concat,"Isaac")
+sala.concat.50=get.EDGE(matrix = ED_sala.concat,model = "IUCN50")
+sala.concat.100=get.EDGE(matrix = ED_sala.concat,"IUCN100")
+sala.concat.500=get.EDGE(matrix = ED_sala.concat,model = "IUCN500")
+#get edges
+
+#top 5 from each transformation by EDGE value
+sala.concat.Isaac[1:5,]
+sala.concat.50[1:5,]
+sala.concat.100[1:5,]
+sala.concat.500[1:5,]
+
+
+rank.distance=function(matrix1,matrix2){
+  counter<-0
+  for (i in 1:dim(matrix1)[1]){
+    pairdiff<-abs(matrix1[i,3]-matrix2[which(matrix2[,1]==matrix1[i,1]),3])
+    counter<-counter+pairdiff
+  }
+  print(counter)
+}
+rank.distance(sala.concat.Isaac,sala.concat.Isaac)
+rank.distance(sala.concat.Isaac,sala.concat.50)
+rank.distance(sala.concat.Isaac,sala.concat.100)
+rank.distance(sala.concat.Isaac,sala.concat.500)
+
+rank.distance(sala.concat.50,sala.concat.Isaac)
+rank.distance(sala.concat.50,sala.concat.50)
+rank.distance(sala.concat.50,sala.concat.100)
+rank.distance(sala.concat.50,sala.concat.500)
+
+rank.distance(sala.concat.100,sala.concat.Isaac)
+rank.distance(sala.concat.100,sala.concat.50)
+rank.distance(sala.concat.100,sala.concat.100)
+rank.distance(sala.concat.100,sala.concat.500)
+
+rank.distance(sala.concat.500,sala.concat.Isaac)
+rank.distance(sala.concat.500,sala.concat.50)
+rank.distance(sala.concat.500,sala.concat.100)
+rank.distance(sala.concat.500,sala.concat.500)
+
+```
 The tools I used were... 
 
 See analysis files at (links to analysis files).
@@ -108,20 +197,6 @@ raxml (starting from hydroid)
   
 ## Results
 
-```{r}
-library(ape)
-library(caper)
-
-sala.concat.tree=read.tree("sala_data/concat.reduced_tree/RAxML_bestTree.concat.reduced_boot100")
-plot(sala.concat.tree,cex = 0.5)
-sala.concat.tree=clade.matrix(sala.concat.tree)
-ED_sala.concat=ed.calc(sala.concat.tree)
-ED_sala.concat=data.frame(ED_sala.concat$spp)
-ED_sala.concat=ED_sala.concat[order(ED_sala.concat[,1]),]
-dim()
-
-
-```
 The tree in Figure 1...
 
 ## Discussion
