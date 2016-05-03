@@ -9,15 +9,15 @@ ancestor                     1000000
 Isodectes_obtusum            1000000
 Acroplous_vorax              1000000
 Dvinosaurus_primus           0000001
-Tupilakosaurus spp.          0000010
-Trimerorhachis spp.          1000000
-Neldasaurus wrightae         1000000
+Tupilakosaurus_spp           0000010
+Trimerorhachis_spp           1000000
+Neldasaurus_wrightae         1000000
 Tersomius_spp.               1000000
 Trematopidae                 1000000
-Dissorophus_spp.             1000000
-Eryops_spp.                  1000000
+Dissorophus_spp              1000000
+Eryops_spp                   1000000
 Zatrachydidae                0000010
-Sclerocephalus_spp.          0000010
+Sclerocephalus_spp           0000010
 Cheliderpeton_latirostre     0000010
 Archegosaurus_decheni        0000010
 Platyoposaurus_stuckenbergi  0000001
@@ -25,7 +25,7 @@ Konzhukovia_vetusta          0000001
 Peltobatrachus_pustulatus    0010000
 Rhinesuchidae                0011001
 Lydekkerina_huxleyi          0010000
-Luzocephalus_spp.            0000010
+Luzocephalus_spp             0000010
 Lapillopsis_nana             0000100
 Capitosauridae               0111110
 Mastodonsaurus_giganteus     0000010
@@ -38,10 +38,10 @@ Laidleria_gracilis           0010000
 Plagiosauridae               1100111
 Rhytidosteidae               1110101
 Xenobrachyops_allos          0000100
-Batrachosuchus_spp.          0010100
+Batrachosuchus_spp           0010100
 Siderops_kehli               0000100
 Keratobrachyops_australis    0000100
-Pelorocephalus_spp.          0100000
+Pelorocephalus_spp           0100000
 Undescribed_genus            0010000
 ;
 End;

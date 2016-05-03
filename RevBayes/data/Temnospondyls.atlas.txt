@@ -1,0 +1,47 @@
+{
+    "name": "Earth",
+    "epochs": [
+        {
+            "name": "0_1000_0000", 
+            "start_age": 1000,
+			"end_age": 0, 
+            "areas": [
+                {
+                    "latitude": 0.0, 
+                    "longitude": -15.0, 
+                    "name": "North-Central Pangaea"
+                }, 
+                {
+                    "latitude": -30.0, 
+                    "longitude": -30.0, 
+                    "name": "South-Central Pangaea"
+                },
+{
+                    "latitude": -15.0, 
+                    "longitude": -45.0, 
+                    "name": "South Pangaea"
+                }, 
+                {
+                    "latitude": 45.0, 
+                    "longitude": -50.0, 
+                    "name": "India"
+                },
+{
+                    "latitude": 130.0, 
+                    "longitude": -50.0, 
+                    "name": "Australia"
+                }, 
+                {
+                    "latitude": 20.0, 
+                    "longitude": 10.0, 
+                    "name": "East Pangaea"
+                },                 
+                {
+                    "latitude": 60.0, 
+                    "longitude": 25.0, 
+                    "name": "West Asia"
+                }
+            ]
+        }
+    ]
+}
