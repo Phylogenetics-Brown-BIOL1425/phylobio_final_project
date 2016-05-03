@@ -1,0 +1,37 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 12607885
+##  Job Name : TemnospondylsBiogeography
+##  Nodelist : node541
+##      CPUs : 8
+##   Mem/CPU : 2800 MB
+## Directory : /gpfs/scratch/guest316/phylobio_final_project/RevBayes/Biogeography
+##   Started : Tue May  3 05:43:23 EDT 2016
+###############################################################################
+module: loading 'revbayes/Mar2016'
+
+RevBayes version 1.0.0 beta 4 (2016-02-05)
+
+Visit the website www.RevBayes.com for more information about RevBayes.
+
+RevBayes is free software released under the GPL license, version 3. Type 'license()' for details.
+
+To quit RevBayes type 'quit()' or 'q()'.
+
+
+> source("Biogeography.Rev")
+   Processing file "Biogeography.Rev"
+   Successfully read one character matrix from file '../data/Biogeographical_Matrix.nex'
+   Attempting to read the contents of file "GTRseed1.nex"
+   Successfully read file
+   Attempting to read the of file "../data/Temnospondyls.atlas.txt"
+   Successfully read file
+   -439.174
+
+   Running MCMC simulation
+   This simulation runs 1 independent replicate.
+   The simulator uses 10 different moves in a random move schedule with 1370 moves per iteration
+
+Iter        |      Posterior   |     Likelihood   |          Prior   |      allopatry   |       clock_bg   |             dp   |         r_gain   |         r_loss   |   subset_sym..   |   widespread..   |    elapsed   |        ETA   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+0           |       -436.487   |       -439.174   |        2.68708   |       0.434645   |      0.0123375   |       0.185276   |       0.260946   |       0.739054   |       0.356039   |       0.209316   |   00:00:00   |   --:--:--   |
+slurmstepd: *** JOB 12607885 ON node541 CANCELLED AT 2016-05-03T07:43:47 DUE TO TIME LIMIT ***

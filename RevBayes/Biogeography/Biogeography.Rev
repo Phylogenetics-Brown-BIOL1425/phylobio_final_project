@@ -1,4 +1,4 @@
-fp      = "./"
+fp      = "../"
 area_fn = fp + "data/Temnospondyls.atlas.txt"
 data_fn = fp + "data/Biogeographical_Matrix.nex"
 tree_fn = fp + "data/GTRseed1.nex"
