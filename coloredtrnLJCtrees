@@ -1,0 +1,158 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=64;
+	taxlabels
+	Clinopodium_abyssinicum_1
+	Clinopodium_abyssinicum_2
+	Clinopodium_abyssinicum_3
+	Clinopodium_abyssinicum_4
+	Clinopodium_abyssinicum_5
+	Clinopodium_acinos_1
+	Clinopodium_acinos_2
+	Clinopodium_alpinum
+	Clinopodium_atlanticum
+	Clinopodium_barosmum
+	Clinopodium_betulifolium
+	Clinopodium_bolivianum
+	Clinopodium_brownei
+	Clinopodium_carolinianum
+	Clinopodium_chinense
+	Clinopodium_coccineum
+	Clinopodium_creticum
+	Clinopodium_cylindrostachys
+	Clinopodium_darwinii
+	Clinopodium_debile
+	Clinopodium_dentatum
+	Clinopodium_discolor
+	Clinopodium_douglasii
+	Clinopodium_flabellifolium
+	Clinopodium_glabrum
+	Clinopodium_graveolens
+	Clinopodium_hydaspidis
+	Clinopodium_kilimandschari
+	Clinopodium_megalanthum
+	Clinopodium_menthifolium
+	Clinopodium_micranthum
+	Clinopodium_multiflorum
+	Clinopodium_myrianthum_1
+	Clinopodium_myrianthum_2
+	Clinopodium_nanum
+	Clinopodium_nepalense_1
+	Clinopodium_nepalense_2
+	Clinopodium_nepeta
+	Clinopodium_nubigenum
+	Clinopodium_paradoxum
+	Clinopodium_piperitum_1
+	Clinopodium_piperitum_2
+	Clinopodium_polycephalum
+	Clinopodium_revolutum
+	Clinopodium_robustum_1
+	Clinopodium_robustum_2
+	Clinopodium_robustum_3
+	Clinopodium_robustum_4
+	Clinopodium_sericeum
+	Clinopodium_serpyllifolium
+	Clinopodium_simense
+	Clinopodium_suaveolens
+	Clinopodium_troodi
+	Clinopodium_uhligii
+	Clinopodium_uhligii_1
+	Clinopodium_uhligii_2
+	Clinopodium_uhligii_3
+	Clinopodium_uhligii_4
+	Clinopodium_umbrosum
+	Clinopodium_vimineum
+	Clinopodium_vulgare
+	Clinopodium_wardii
+	Micromeria_fruticosa
+	Micromeria_thymifolia
+;
+end;
+
+begin trees;
+	tree TREE1 = [&R] (((((((((((((Clinopodium_abyssinicum_1[&index=63]:0.00122,Clinopodium_abyssinicum_3[&index=62]:0.003904)[&index=64,posterior=0.254998,height_95%_HPD={2.0999,0.0043}]:0.001424,Clinopodium_abyssinicum_4[&index=61]:0.001199)[&index=65,posterior=0.224345,height_95%_HPD={1.01,0.0039}]:0.001394,Clinopodium_abyssinicum_2[&index=60]:0.001161)[&index=66,posterior=0.993781,height_95%_HPD={7.9099,0.0058},!color=#81218a]:0.002444,(Clinopodium_abyssinicum_5[&index=59]:0.003626,Clinopodium_paradoxum[&index=58]:0.001265)[&index=67,posterior=0.274545,height_95%_HPD={6.1,0.0037}]:0.001259)[&index=68,posterior=1.0,height_95%_HPD={1.0E-4,0.0078},!color=#81218a]:0.003797,(((Clinopodium_myrianthum_1[&index=57]:0.001261,Clinopodium_robustum_3[&index=56]:0.001273)[&index=69,posterior=0.151488,height_95%_HPD={2.1099,0.0033}]:0.0012,Clinopodium_robustum_2[&index=55]:0.001192)[&index=70,posterior=0.104842,height_95%_HPD={1.1,0.0033},!color=#81218a]:0.001265,(Clinopodium_robustum_1[&index=54]:0.001197,Clinopodium_robustum_4[&index=53]:0.001218)[&index=71,posterior=0.137717,height_95%_HPD={7.0999,0.0030}]:0.001104)[&index=72,posterior=1.0,height_95%_HPD={2.0E-4,0.0092},!color=#81218a]:0.004794)[&index=73,posterior=0.308307,height_95%_HPD={1.1,0.0036},!color=#81218a]:0.001294,Clinopodium_myrianthum_2[&index=52]:0.003742)[&index=74,posterior=1.0,height_95%_HPD={6.0E-4,0.0116},!color=#81218a]:0.006389,((((((Clinopodium_nepeta[&index=51]:0.001199,Clinopodium_serpyllifolium[&index=50]:0.001297)[&index=75,posterior=0.066637,height_95%_HPD={"1.11e-",0.0038}]:0.001278,Clinopodium_menthifolium[&index=49]:0.001355)[&index=76,posterior=0.014216,height_95%_HPD={3.81,0.0029}]:0.001469,Clinopodium_umbrosum[&index=48]:0.001146)[&index=77,posterior=0.007996,height_95%_HPD={"1.11e-",0.0019}]:9.83E-4,Clinopodium_vulgare[&index=47]:0.001217)[&index=78,posterior=0.002665,height_95%_HPD={2.0E-4,0.0031}]:0.001961,(((Clinopodium_betulifolium[&index=46]:0.001346,Clinopodium_creticum[&index=45]:0.002414)[&index=79,posterior=0.1004,height_95%_HPD={1.6099,0.0025}]:0.001155,Micromeria_thymifolia[&index=44]:0.001289)[&index=80,posterior=0.035096,height_95%_HPD={9.1,0.0040}]:0.001291,Micromeria_fruticosa[&index=43]:0.002441)[&index=81,posterior=0.023545,height_95%_HPD={"1.31e-",0.0036}]:0.001637)[&index=82,posterior=0.866726,height_95%_HPD={3.91,0.0058},!color=#81218a]:0.002432,Clinopodium_atlanticum[&index=42,!color=#81218a]:0.00381)[&index=83,posterior=0.365171,height_95%_HPD={2.0999,0.0040}]:0.001295)[&index=84,posterior=0.993781,height_95%_HPD={2.3099,0.0057}]:0.002507,(((Clinopodium_chinense[&index=41]:0.003799,Clinopodium_megalanthum[&index=40]:0.00117)[&index=85,posterior=0.209685,height_95%_HPD={2.0999,0.0039}]:0.001333,Clinopodium_discolor[&index=39]:0.002617)[&index=86,posterior=0.258552,height_95%_HPD={1.1,0.0034}]:0.0012,Clinopodium_micranthum[&index=38]:0.00256)[&index=87,posterior=0.968903,height_95%_HPD={"2.51e-",0.0057},!color=#81218a]:0.002489)[&index=88,posterior=0.177255,height_95%_HPD={4.0999,0.0037}]:0.001279,((((((Clinopodium_acinos_1[&index=37]:0.001176,Clinopodium_alpinum[&index=36]:0.001225)[&index=89,posterior=0.358952,height_95%_HPD={2.0999,0.0038}]:0.001267,Clinopodium_acinos_2[&index=35]:0.001212)[&index=90,posterior=0.994225,height_95%_HPD={"3.01e-",0.0058},!color=#81218a]:0.002521,((Clinopodium_graveolens[&index=34]:0.001294,Clinopodium_troodi[&index=33]:0.00128)[&index=91,posterior=0.193247,height_95%_HPD={3.41,0.0039}]:0.001308,(Clinopodium_nanum[&index=32]:0.002493,Clinopodium_suaveolens[&index=31]:0.001374)[&index=92,posterior=0.143492,height_95%_HPD={"1.11e-",0.0032}]:0.001161)[&index=93,posterior=0.143936,height_95%_HPD={2.0999,0.0032},!color=#81218a]:0.001139)[&index=94,posterior=1.0,height_95%_HPD={5.0E-4,0.011},!color=#81218a]:0.006045,Clinopodium_debile[&index=30]:0.008656)[&index=95,posterior=0.362061,height_95%_HPD={1.1,0.0036}]:0.001245,((((Clinopodium_piperitum_1[&index=29,!color=#81218a]:0.001185,Clinopodium_piperitum_2[&index=28,!color=#81218a]:0.00256)[&index=96,posterior=1.0,height_95%_HPD={3.21,0.0057},!color=#81218a]:0.002429,Clinopodium_barosmum[&index=27]:0.001168)[&index=97,posterior=0.099956,height_95%_HPD={3.1,0.0030}]:0.001095,Clinopodium_hydaspidis[&index=26]:0.001277)[&index=98,posterior=0.031097,height_95%_HPD={4.0999,0.0036}]:0.001248,((Clinopodium_nepalense_1[&index=25]:0.001159,Clinopodium_nepalense_2[&index=24]:0.001303)[&index=99,posterior=0.12661,height_95%_HPD={2.6099,0.0026}]:0.001025,Clinopodium_wardii[&index=23]:0.001236)[&index=100,posterior=0.038205,height_95%_HPD={2.2099,0.0021}]:9.05E-4)[&index=101,posterior=0.999112,height_95%_HPD={"1.31e-",0.0057},!color=#81218a]:0.002405)[&index=102,posterior=1.0,height_95%_HPD={3.0E-4,0.0096},!color=#81218a]:0.005035,Clinopodium_polycephalum[&index=22]:0.002562)[&index=103,posterior=0.164816,height_95%_HPD={6.1,0.0036},!color=#81218a]:0.00122)[&index=104,posterior=0.984451,height_95%_HPD={2.7099,0.0058}]:0.002469,(((((((Clinopodium_bolivianum[&index=21]:0.001146,Clinopodium_nubigenum[&index=20]:0.001171)[&index=105,posterior=0.13283,height_95%_HPD={2.0999,0.0038}]:0.001239,Clinopodium_revolutum[&index=19]:0.001174)[&index=106,posterior=0.063083,height_95%_HPD={2.01,0.0039}]:0.001339,(Clinopodium_cylindrostachys[&index=18]:0.003818,Clinopodium_sericeum[&index=17]:0.002478)[&index=107,posterior=0.091959,height_95%_HPD={3.1,0.0027}]:0.001043)[&index=108,posterior=0.125722,height_95%_HPD={5.1,0.0028},!color=#81218a]:0.001097,Clinopodium_flabellifolium[&index=16]:0.001203)[&index=109,posterior=1.0,height_95%_HPD={4.11,0.0059},!color=#81218a]:0.002539,Clinopodium_brownei[&index=15]:0.002574)[&index=110,posterior=0.107064,height_95%_HPD={1.1,0.0038}]:0.001459,(((Clinopodium_carolinianum[&index=14]:0.003652,Clinopodium_coccineum[&index=13]:0.001317)[&index=111,posterior=0.346513,height_95%_HPD={1.01,0.0039}]:0.001165,Clinopodium_dentatum[&index=12]:0.001197)[&index=112,posterior=0.972012,height_95%_HPD={2.8099,0.0059}]:0.002568,Clinopodium_glabrum[&index=11]:0.007688)[&index=113,posterior=0.911595,height_95%_HPD={3.61,0.0059},!color=#81218a]:0.002571)[&index=114,posterior=0.046646,height_95%_HPD={1.01,0.0037},!color=#81218a]:0.001293,(((Clinopodium_darwinii[&index=10]:0.001232,Clinopodium_multiflorum[&index=9]:0.001305)[&index=115,posterior=0.07641,height_95%_HPD={4.61,0.0040}]:0.001421,Clinopodium_vimineum[&index=8]:0.001297)[&index=116,posterior=0.023545,height_95%_HPD={"1.31e-",0.0038}]:0.001358,Clinopodium_douglasii[&index=7]:0.005066)[&index=117,posterior=0.015549,height_95%_HPD={2.01,0.0039}]:0.001445)[&index=118,posterior=1.0,height_95%_HPD={1.0E-4,0.0076}]:0.003703)[&index=119,posterior=0.991559,height_95%_HPD={"1.91e-",0.0061}]:0.002592,Clinopodium_simense[&index=6,!color=#81218a]:0.005059)[&index=120,posterior=0.791648,height_95%_HPD={8.1,0.0061}]:0.002607,Clinopodium_kilimandschari[&index=5,!color=#81218a]:0.002368)[&index=121,posterior=0.204798,height_95%_HPD={1.1,0.0044}]:0.001358,(((Clinopodium_uhligii_2[&index=4]:0.001208,Clinopodium_uhligii_3[&index=3]:0.001392)[&index=122,posterior=0.188361,height_95%_HPD={2.0999,0.0042}]:0.001517,Clinopodium_uhligii[&index=2]:0.001217)[&index=123,posterior=0.102621,height_95%_HPD={4.0999,0.0031}]:0.001136,Clinopodium_uhligii_1[&index=1]:0.001275)[&index=124,posterior=0.551755,height_95%_HPD={"4.71e-",0.0056},!color=#81218a]:0.002443,Clinopodium_uhligii_4[&index=0]:0.002498)[&index=125,posterior=1.0,height_95%_HPD={9.9999,9.9999}];
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="index";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute="height_95%_HPD";
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShape.colourAttribute="User selection";
+	set nodeShape.isShown=false;
+	set nodeShape.minSize=10.0;
+	set nodeShape.scaleType=Width;
+	set nodeShape.shapeType=Circle;
+	set nodeShape.size=4.0;
+	set nodeShape.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=8;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=false;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
