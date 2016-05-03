@@ -1,0 +1,151 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=57;
+	taxlabels
+	Homo_sapiens_HLA_DQA1
+	Lepus_californicus_Lecl_DQA_01[&!color=#ff00ff]
+	Lepus_capensis_Lecp_DQA_01[&!color=#800000]
+	Lepus_capensis_Lecp_DQA_02[&!color=#800000]
+	Lepus_capensis_Lecp_DQA_03[&!color=#800000]
+	Lepus_europaeus_Leeu_DQA_01[&!color=#ff8000]
+	Lepus_europaeus_Leeu_DQA_02[&!color=#ff8000]
+	Lepus_europaeus_Leeu_DQA_03[&!color=#ff8000]
+	Lepus_europaeus_Leeu_DQA_04[&!color=#ff8000]
+	Lepus_europaeus_Leeu_DQA_05[&!color=#ff8000]
+	Lepus_granatensis_Legr_DQA_01[&!color=#000080]
+	Lepus_granatensis_Legr_DQA_02[&!color=#000080]
+	Lepus_granatensis_Legr_DQA_03[&!color=#000080]
+	Lepus_saxatilis_Lesa_DQA_01[&!color=#ff9999]
+	Lepus_saxatilis_Lesa_DQA_02[&!color=#ff9999]
+	Lepus_timidus_Leti_DQA_01[&!color=#008000]
+	Lepus_timidus_Leti_DQA_02[&!color=#008000]
+	Lepus_timidus_Leti_DQA_03[&!color=#008000]
+	Lepus_timidus_Leti_DQA_04[&!color=#008000]
+	Lepus_timidus_Leti_DQA_05[&!color=#008000]
+	Lepus_townsendii_Leto_DQA_01[&!color=#00ff00]
+	Orcytolagus_cuniculus_Orcu_DQA_01[&!color=#0000ff]
+	Orcytolagus_cuniculus_Orcu_DQA_05[&!color=#0000ff]
+	Orcytolagus_cuniculus_Orcu_DQA_09[&!color=#0000ff]
+	Orcytolagus_cuniculus_Orcu_DQA_10[&!color=#0000ff]
+	Orcytolagus_cuniculus_Orcu_DQA_12[&!color=#0000ff]
+	Orcytolagus_cuniculus_Orcu_DQA_19[&!color=#0000ff]
+	Oryctolagus_cuniculus_Orcu_DQA_02[&!color=#0000ff]
+	Oryctolagus_cuniculus_Orcu_DQA_03[&!color=#0000ff]
+	Oryctolagus_cuniculus_Orcu_DQA_04[&!color=#0000ff]
+	Oryctolagus_cuniculus_Orcu_DQA_06[&!color=#0000ff]
+	Oryctolagus_cuniculus_Orcu_DQA_07[&!color=#0000ff]
+	Oryctolagus_cuniculus_Orcu_DQA_08_[&!color=#0000ff]
+	Oryctolagus_cuniculus_Orcu_DQA_11[&!color=#0000ff]
+	Oryctolagus_cuniculus_Orcu_DQA_13[&!color=#0000ff]
+	Oryctolagus_cuniculus_Orcu_DQA_14[&!color=#0000ff]
+	Oryctolagus_cuniculus_Orcu_DQA_15[&!color=#0000ff]
+	Oryctolagus_cuniculus_Orcu_DQA_16[&!color=#0000ff]
+	Oryctolagus_cuniculus_Orcu_DQA_17[&!color=#0000ff]
+	Oryctolagus_cuniculus_Orcu_DQA_18[&!color=#0000ff]
+	Ovis_aries_OLA_DQA2_0701
+	Pronolagus_crassicaudatus_Prcr_DQA_01[&!color=#00cccc]
+	Pronolagus_rupestris_Prru_DQA_01[&!color=#00cccc]
+	Sylvilagus_aquaticus_Syaq_DQA_01[&!color=#cccc00]
+	Sylvilagus_audubonii_Syau_DQA_01[&!color=#999999]
+	Sylvilagus_brasiliensis_Sybr_DQA_01[&!color=#3399ff]
+	Sylvilagus_brasiliensis_Sybr_DQA_02[&!color=#3399ff]
+	Sylvilagus_brasiliensis_Sybr_DQA_03[&!color=#3399ff]
+	Sylvilagus_brasiliensis_Sybr_DQA_04[&!color=#3399ff]
+	Sylvilagus_brasiliensis_Sybr_DQA_05[&!color=#3399ff]
+	Sylvilagus_floridanus_Syfl_DQA_01[&!color=#ff0000]
+	Sylvilagus_floridanus_Syfl_DQA_02[&!color=#ff0000]
+	Sylvilagus_floridanus_Syfl_DQA_03[&!color=#ff0000]
+	Sylvilagus_floridanus_Syfl_DQA_04[&!color=#ff0000]
+	Sylvilagus_palustris_Sypa_DQA_02[&!color=#660066]
+	Sylvilagus_transitionalis_Sytr_DQA_01[&!color=#cc00cc]
+	Sylvilagus_transitionalis_Sytr_DQA_02[&!color=#cc00cc]
+;
+end;
+
+begin trees;
+	tree TREE1 = [&R] ((((((((((((((((((Lepus_timidus_Leti_DQA_04[&index=56]:0.012012,Sylvilagus_audubonii_Syau_DQA_01[&index=55]:0.025112)[&index=57,posterior=0.179091,height_95%_HPD={"1.11e-",0.038}]:0.013084,Sylvilagus_palustris_Sypa_DQA_02[&index=54]:0.129826)[&index=58,posterior=0.04755,height_95%_HPD={1.0E-4,0.039}]:0.013416,(Lepus_townsendii_Leto_DQA_01[&index=53]:0.013163,Pronolagus_rupestris_Prru_DQA_01[&index=52]:0.095347)[&index=59,posterior=0.068215,height_95%_HPD={3.5099,0.0318}]:0.011088)[&index=60,posterior=0.642484,height_95%_HPD={2.0E-4,0.0708}]:0.028407,Oryctolagus_cuniculus_Orcu_DQA_17[&index=51]:0.054596)[&index=61,posterior=0.454061,height_95%_HPD={2.01,0.0771}]:0.030084,Oryctolagus_cuniculus_Orcu_DQA_15[&index=50]:0.037734)[&index=62,posterior=0.085546,height_95%_HPD={9.11,0.0417}]:0.013375,Oryctolagus_cuniculus_Orcu_DQA_16[&index=49]:0.013504)[&index=63,posterior=0.377403,height_95%_HPD={3.0E-4,0.0745}]:0.031154,(Orcytolagus_cuniculus_Orcu_DQA_12[&index=48]:0.025461,Oryctolagus_cuniculus_Orcu_DQA_14[&index=47]:0.047424)[&index=64,posterior=0.23964,height_95%_HPD={2.7099,0.0387}]:0.012282)[&index=65,posterior=0.018998,height_95%_HPD={1.0E-4,0.029}]:0.011843,Oryctolagus_cuniculus_Orcu_DQA_13[&index=46]:0.01272)[&index=66,posterior=0.966559,height_95%_HPD={0.0029,0.2379}]:0.144052,Lepus_timidus_Leti_DQA_03[&index=45]:0.024244)[&index=67,posterior=0.22753,height_95%_HPD={"4.71e-",0.0373}]:0.01279,Lepus_europaeus_Leeu_DQA_02[&index=44]:0.024918)[&index=68,posterior=0.214976,height_95%_HPD={"1.31e-",0.0394}]:0.013651,(Lepus_europaeus_Leeu_DQA_03[&index=43]:0.012399,Lepus_saxatilis_Lesa_DQA_02[&index=42]:0.012482)[&index=69,posterior=0.972448,height_95%_HPD={5.51,0.0604}]:0.024286)[&index=70,posterior=0.955005,height_95%_HPD={0.0017,0.1012}]:0.050963,(Lepus_capensis_Lecp_DQA_01[&index=41]:0.025732,Lepus_timidus_Leti_DQA_01[&index=40]:0.026222)[&index=71,posterior=0.899122,height_95%_HPD={2.6099,0.0622}]:0.025703)[&index=72,posterior=0.118098,height_95%_HPD={3.91,0.0416}]:0.013562,((Oryctolagus_cuniculus_Orcu_DQA_03[&index=39]:0.014289,Oryctolagus_cuniculus_Orcu_DQA_04[&index=38]:0.077058)[&index=73,posterior=1.0,height_95%_HPD={0.0102,0.1413}]:0.076426,Lepus_timidus_Leti_DQA_02[&index=37]:0.06707)[&index=74,posterior=0.02422,height_95%_HPD={3.0E-4,0.0569}]:0.018623)[&index=75,posterior=0.004333,height_95%_HPD={6.0E-4,0.0328}]:0.012557,(((((((Oryctolagus_cuniculus_Orcu_DQA_06[&index=36]:0.026261,Oryctolagus_cuniculus_Orcu_DQA_08_[&index=35]:0.026295)[&index=76,posterior=0.451172,height_95%_HPD={"1.31e-",0.0484}]:0.016837,Orcytolagus_cuniculus_Orcu_DQA_05[&index=34]:0.039294)[&index=77,posterior=0.948339,height_95%_HPD={2.0E-4,0.0774}]:0.034559,Oryctolagus_cuniculus_Orcu_DQA_07[&index=33]:0.01347)[&index=78,posterior=1.0,height_95%_HPD={0.0060,0.1531}]:0.081105,(Sylvilagus_brasiliensis_Sybr_DQA_03[&index=32]:0.036721,Sylvilagus_floridanus_Syfl_DQA_03[&index=31]:0.165373)[&index=79,posterior=0.907455,height_95%_HPD={6.0E-4,0.1038}]:0.045989)[&index=80,posterior=0.899567,height_95%_HPD={7.31,0.1034}]:0.048544,Lepus_granatensis_Legr_DQA_02[&index=30]:0.033084)[&index=81,posterior=0.399511,height_95%_HPD={2.0E-4,0.0792}]:0.035553,Oryctolagus_cuniculus_Orcu_DQA_11[&index=29]:0.014482)[&index=82,posterior=0.026997,height_95%_HPD={3.1,0.0574}]:0.018464,(Orcytolagus_cuniculus_Orcu_DQA_09[&index=28]:0.265918,Orcytolagus_cuniculus_Orcu_DQA_10[&index=27]:0.014905)[&index=83,posterior=0.999778,height_95%_HPD={0.0016,0.0866}]:0.0408)[&index=84,posterior=0.046661,height_95%_HPD={2.0E-4,0.0649}]:0.02219)[&index=85,posterior=0.00611,height_95%_HPD={7.0E-4,0.0594}]:0.018276,Oryctolagus_cuniculus_Orcu_DQA_02[&index=26]:0.037273)[&index=86,posterior=0.080324,height_95%_HPD={1.0E-4,0.0503}]:0.017689,Sylvilagus_aquaticus_Syaq_DQA_01[&index=25]:0.097035)[&index=87,posterior=0.027219,height_95%_HPD={1.1,0.0354},!rotate=false]:0.012327,Lepus_saxatilis_Lesa_DQA_01[&index=24,!rotate=true]:0.020619)[&index=88,posterior=0.382624,height_95%_HPD={1.01,0.0992}]:0.04212,(((((((((((Orcytolagus_cuniculus_Orcu_DQA_01[&index=23]:0.012783,Orcytolagus_cuniculus_Orcu_DQA_19[&index=22]:0.012877)[&index=89,posterior=0.343962,height_95%_HPD={3.1,0.0401}]:0.013255,Oryctolagus_cuniculus_Orcu_DQA_18[&index=21]:0.037926)[&index=90,posterior=1.0,height_95%_HPD={0.0053,0.1524}]:0.082149,Lepus_granatensis_Legr_DQA_03[&index=20,!rotate=true]:0.029849)[&index=91,posterior=0.136874,height_95%_HPD={4.91,0.0515},!rotate=false]:0.01899,Lepus_capensis_Lecp_DQA_03[&index=19,!rotate=true]:0.016779)[&index=92,posterior=0.074769,height_95%_HPD={8.61,0.0443}]:0.015024,Lepus_timidus_Leti_DQA_05[&index=18]:0.07715)[&index=93,posterior=1.0,height_95%_HPD={0.0011,0.1208}]:0.060679,((Sylvilagus_brasiliensis_Sybr_DQA_05[&index=17]:0.012183,Sylvilagus_transitionalis_Sytr_DQA_01[&index=16]:0.012991)[&index=94,posterior=0.946228,height_95%_HPD={7.0099,0.0615},!rotate=true]:0.024964,Sylvilagus_transitionalis_Sytr_DQA_02[&index=15]:0.014176)[&index=95,posterior=1.0,height_95%_HPD={0.0056,0.1366},!rotate=true]:0.071741)[&index=96,posterior=0.64915,height_95%_HPD={1.6099,0.0758}]:0.030067,(Lepus_europaeus_Leeu_DQA_05[&index=14]:0.089381,Sylvilagus_floridanus_Syfl_DQA_04[&index=13]:0.414539)[&index=97,posterior=0.424508,height_95%_HPD={9.61,0.0988}]:0.042325)[&index=98,posterior=0.561382,height_95%_HPD={6.0E-4,0.1279}]:0.061663,(Lepus_europaeus_Leeu_DQA_04[&index=12]:0.065074,Sylvilagus_brasiliensis_Sybr_DQA_04[&index=11]:0.068467)[&index=99,posterior=1.0,height_95%_HPD={0.0326,0.2683},!rotate=true]:0.160025)[&index=100,posterior=0.524386,height_95%_HPD={1.0E-4,0.1067}]:0.04564,Pronolagus_crassicaudatus_Prcr_DQA_01[&index=10]:0.136725)[&index=101,posterior=0.971781,height_95%_HPD={0.0039,0.2629},!rotate=true]:0.143988,(Homo_sapiens_HLA_DQA1[&index=9,!rotate=true]:0.445793,Ovis_aries_OLA_DQA2_0701[&index=8]:0.629287)[&index=102,posterior=0.998889,height_95%_HPD={0.0087,0.3264},!rotate=true]:0.1775)[&index=103,posterior=0.689257,height_95%_HPD={1.0E-4,0.172}]:0.084245,((((Lepus_californicus_Lecl_DQA_01[&index=7]:0.013012,Lepus_granatensis_Legr_DQA_01[&index=6]:0.012267)[&index=104,posterior=0.253083,height_95%_HPD={4.0999,0.0368}]:0.012801,Lepus_europaeus_Leeu_DQA_01[&index=5]:0.011968)[&index=105,posterior=0.336629,height_95%_HPD={2.0E-4,0.0974}]:0.046302,(Sylvilagus_brasiliensis_Sybr_DQA_02[&index=4]:0.024772,Sylvilagus_floridanus_Syfl_DQA_02[&index=3]:0.040853)[&index=106,posterior=0.983113,height_95%_HPD={0.0014,0.1227}]:0.057559)[&index=107,posterior=0.238529,height_95%_HPD={5.0E-4,0.0993}]:0.047767,Lepus_capensis_Lecp_DQA_02[&index=2]:0.029454)[&index=108,posterior=0.224864,height_95%_HPD={3.0E-4,0.1059}]:0.047429)[&index=109,posterior=0.004444,height_95%_HPD={0.0021,0.0525}]:0.025262,(Sylvilagus_brasiliensis_Sybr_DQA_01[&index=1]:0.014623,Sylvilagus_floridanus_Syfl_DQA_01[&index=0]:0.062378)[&index=110,posterior=1.0,height_95%_HPD={0.0542,0.3487}]:0.223952)[&index=111,posterior=1.0,height_95%_HPD={9.9999,9.9999}];
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=2.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=832;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=208;
+	set legend.attribute="index";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute="height_95%_HPD";
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="posterior";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=2;
+	set nodeShape.colourAttribute="User selection";
+	set nodeShape.isShown=false;
+	set nodeShape.minSize=10.0;
+	set nodeShape.scaleType=Width;
+	set nodeShape.shapeType=Circle;
+	set nodeShape.size=4.0;
+	set nodeShape.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=2.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=10;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
