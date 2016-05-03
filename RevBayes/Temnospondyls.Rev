@@ -8,7 +8,7 @@
 
 # io
 d_morph = readDiscreteCharacterData("data/Temnospondyl_Characters.nex")
-tree = readTrees("data/GTRseed1.nex")[1]
+tree <- readTrees("data/GTRseed1.nex")[1]
 
 ### JGS - Define some useful quantities as constant nodes.
 
@@ -19,9 +19,10 @@ n_morph_sites    <- d_morph.nchar()
 
 n_max_states     <- 4
 
-### JGS - Set move index = 0
+### JGS - Set move and monitor indices = 0
 
 mvi = 0
+mni = 0
 
 ### JGS - There are 2n - 1 branches in a rooted tree
 
@@ -149,3 +150,27 @@ for (i in 2:n_max_states) {
 	}
 }
 
+##################
+# Finalize the integrated model and set up MCMC
+##################
+
+#Anchor the model to the vector of matrices (arbitrarily)
+mymodel = model(q)
+
+#Create monitors for the model, the tree, and the global clock rate
+monitors[++mni] = mnModel(filename="output/Temnospondyls_monitor.log",printgen=10)
+monitors[++mni] = mnFile(tree, filename="output/Temnospondyls_tree.trees", printgen=10)
+monitors[++mni] = mnScreen(clock_morph_base, printgen=1000)
+
+# Now set up the MCMC.
+mymcmc = mcmc(mymodel, monitors, mv)
+
+# pre-burnin to tune the proposals
+mymcmc.burnin(generations=5000,tuningInterval=200)
+
+# run the MCMC
+mymcmc.run(generations=10000)
+
+treetrace = readTreeTrace("output/Temnospondyls_tree.trees")
+treetrace.summarize()
+mapTree(treetrace,"output/Temnospondyls_tree_MAP.tre")
