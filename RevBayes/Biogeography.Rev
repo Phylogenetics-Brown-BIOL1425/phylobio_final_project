@@ -1,120 +1,87 @@
-#Adapted from the RevBayes biogeography tutorial
+area_fn = "data/Temnospondyls.atlas.txt"
+data_fn = "data/Temnospondyl_Characters.nex"
+tree_fn = "data/GTRSeed1.tree"
+out_fn  = "output/bg_large"
+data  <- readDiscreteCharacterData(data_fn)
+tree  <- readTrees(tree_fn)[1]
+atlas <- readAtlas(area_fn)
 
-############
-# settings #
-############
+n_areas = atlas.nAreas()
+n_nodes = tree.nnodes()
 
-# Read in the biogeographical matrix
+mvi = 1
+mni = 1
+ngen = 30000
 
-# The columns of the matrix are: 
-#1 - US/Central America/Northern South America/North Africa
-#2 - South America
-#3 - South Africa
-#4 - India
-#5 - Australia
-#6 - Europe/Greenland/Svalbard
-#7 - Russia/West-Central Asia
+# save a copy of the tree with node indexes (for later use)
+write(tree,filename=tree_fn+".index.tre")
 
-data_fn = "data/Biogeographical_Matrix.nex"
-tree_fn = "data/GTRseed1.tree"
-out_str = "output/Biogeography"
+# biogeographical clock
+clock_bg ~ dnExp(10.)
+clock_bg.setValue(rexp(1,100.)[1])
+moves[mvi++] = mvScale(clock_bg, lambda=0.5, weight=5.0)
 
-# helper variables
-mvi = 1 # index to add MCMC moves
-mni = 1 # index to add monitors
+# area gain-loss rate simplex
+glr ~ dnDirichlet([1,1])
+moves[mvi++] = mvSimplexElementScale(glr, alpha=50.0, weight=5.0)
 
-# hard coded for now
-n_areas = 7
-n_areas_tmp = n_areas
-n_states = floor(2^n_areas_tmp)
+# nicknames for gain-loss rate elements
+r_gain := glr[1]
+r_loss := glr[2]
 
-# read data as natural numbers
-data = readCharacterDataDelimited(file=data_fn, type="Bitset")
+# per-area rate matrix
+q_area := fnFreeBinary(glr)
 
-#names = d.names()
-psi <- readTrees(tree_fn)[1]
+# distance power parameter
+dp ~ dnExp(1)
+moves[mvi++] = mvScale(x=dp, lambda=0.5, weight=5.0)
 
-# clock
-clock_bg ~ dnExp(10)
-mv[mvi++] = mvScale(clock_bg, weight=5)
+# geographical distance rate modifier
+grm := fnBiogeoGRM(atlas=atlas, distancePower=dp, useAvailable=false, useDistance=true)
 
-# base rates of area gain and loss
-r_d ~ dnExp(10.)
-r_e ~ dnExp(10.)
-mv[mvi++] = mvScale(r_d, weight=5)
-mv[mvi++] = mvScale(r_e, weight=5)
+# per-range rate matrix
+q_range := fnBiogeoDE(gainLossRates=q_area, branchRates=clock_bg, geoRateMod=grm, numAreas=atlas.nAreas(), forbidExtinction=true)
 
-# per-area extinction rates
-# ... for area i
-for (i in 1:n_areas) {
-    e[i] := r_e
-}
+# cladogenesis probabilities
+clado_prob ~ dnDirichlet([1,1,1])
+widespread_sympatry := clado_prob[1]
+subset_sympatry     := clado_prob[2]
+allopatry           := clado_prob[3]
+moves[mvi++] = mvSimplexElementScale(clado_prob, alpha=50.0, weight=5.0)
 
-# between-area dispersal rates
 
-for (i in 1:n_areas) { 							# ... from area i
-    for (j in 1:n_areas) {    					# ... to area j
-		d[i][j] <- 0. 
-        if (i != j) {       				# ... ignoring self-dispersal events
-            d[i][j] := r_d
-        }
-    }
-}
-
-# initalize rates to 0.
-for (i in 1:n_states) {
-    for (j in 1:n_states) {
-        r[i][j] <- 0.
-    }
-}
-
-q := fnDECRateMatrix(d,e)
-
-# create the cladogenesis transition probability matrix
-widespread_sympatry_wt <- 1
-subset_sympatry_wt     <- 1
-allopatry_wt           <- 1
-clado_prior            <- [ widespread_sympatry_wt, subset_sympatry_wt, allopatry_wt ]
-
-# create prior on event types
-clado_type             ~ dnDirichlet(clado_prior)
-mv[mvi++]               = mvSimplexElementScale(clado_type, alpha=10, weight=5)
-
-# for easy monitoring
-widespread_sympatry    := clado_type[1]
-subset_sympatry        := clado_type[2]
-allopatry              := clado_type[3]
-
-clado_prob := fnCladoProbs(clado_type, n_areas, 2)
-
-rf <- simplex( rep(1,8) )
-
-clock_bg ~ dnExponential(10)
-mv[++mi] = mvScale(clock_bg, weight=5)
-
-# build ctmc
-m ~ dnPhyloCTMCClado( tree=psi, Q=q, cladoProbs=clado_prob, rootFrequencies=rf, branchRates=clock_bg, nSites=1, type="NaturalNumbers" )
+# the model
+m ~ dnPhyloDACTMC(tree=tree, Q=q_range, cladoProbs=clado_prob, type="Biogeo", forbidExtinction=true, useCladogenesis=true)
 m.clamp(data)
+m.lnProbability()
 
-# make model
-mdl = model(m)
+# data augmentation proposals
+moves[mvi++] = mvCharacterHistory(ctmc=m, qmap=q_range, tree=tree, lambda=0.01, type="Biogeo", graph="node", proposal="rejection", weight=n_nodes*5)
+moves[mvi++] = mvCharacterHistory(ctmc=m, qmap=q_range, tree=tree, lambda=0.01, type="Biogeo", graph="branch", proposal="rejection", weight=n_nodes*1)
+moves[mvi++] = mvCharacterHistory(ctmc=m, qmap=q_range, tree=tree, lambda=0.20, type="Biogeo", graph="node", proposal="rejection", weight=n_nodes*5)
+moves[mvi++] = mvCharacterHistory(ctmc=m, qmap=q_range, tree=tree, lambda=0.20, type="Biogeo", graph="branch", proposal="rejection", weight=n_nodes*1)
+moves[mvi++] = mvCharacterHistory(ctmc=m, qmap=q_range, tree=tree, lambda=1.00, type="Biogeo", graph="node", proposal="rejection", weight=n_nodes*5)
+moves[mvi++] = mvCharacterHistory(ctmc=m, qmap=q_range, tree=tree, lambda=1.00, type="Biogeo", graph="branch", proposal="rejection", weight=n_nodes*1)
 
-# monitors
-mn[mni++] = mnScreen(printgen=1000, clock_bg, widespread_sympatry, subset_sympatry, allopatry)
-mn[mni++] = mnFile(clock_bg, d, e, widespread_sympatry, subset_sympatry, allopatry, filename="./output/"+out_str+".params.txt")
-mn[mni++] = mnJointConditionalAncestralState(tree=psi, ctmc=m, type="NaturalNumbers", printgen=10, withTips=true, withStartStates=true, filename="./output/"+out_str+".states.txt")
+# create the model
+my_model = model(m)
 
-# mcmc
-ch = mcmc(mv,mn,mdl)
-ch.burnin(10000, 10)
-ch.run(10000)
+# add standard monitors
+monitors[mni++] = mnScreen(printgen=1000, clock_bg, r_gain, r_loss, dp, subset_sympatry, allopatry, widespread_sympatry)
+monitors[mni++] = mnFile(clock_bg, r_gain, r_loss, dp, subset_sympatry, allopatry, widespread_sympatry, filename=out_fn+".params.txt", printgen=10)
 
-# phylowood output
-"Building Phylowood animation file..."
-state_fn = "output/"+out_str+".states.txt"
-atlas_fn = "data/Temnospondyls.atlas.txt"
-phw_fn = "output/"+out_str+".phw.txt"
-convertToPhylowood(treefile=tree_fn, geofile=atlas_fn, statefile=state_fn, outfile=phw_fn, burnin=0., chartype="NaturalNumbers", bgtype="Range")
+# add special data augmentation monitors
+monitors[mni++] = mnCharHistoryNewick(filename=out_fn+".events.txt", ctmc=m, tree=tree, printgen=100, style="events")
+monitors[mni++] = mnCharHistoryNewick(filename=out_fn+".counts.txt", ctmc=m, tree=tree, printgen=100, style="counts")
+
+# add animation monitor
+monitors[mni++] = mnCharHistoryNhx(filename=out_fn+".phw.txt", ctmc=m, tree=tree, atlas=atlas, samplegen=100, maxgen=ngen, burnin=0.5)
+
+# create mcmc
+my_mcmc = mcmc(my_model, monitors, moves)
+
+# run mcmc (without burn-in)
+my_mcmc.run(generations=ngen)
 
 
 # you may want to quit RevBayes now
