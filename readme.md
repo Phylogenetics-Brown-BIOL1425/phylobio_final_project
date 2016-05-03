@@ -21,7 +21,28 @@ For my project, I looked at the homologene results for GPT and GPT2 and identifi
 
 Using these accession IDs, I used NCBI batch download to obtain FASTAs for these IDs. These resulting files are saved as the .raw.fasta files in the data folder. Files with a .protein extension before the .raw.fasta contain amino acid data. The raw FASTA files were then cleaned. Initially, I used a sed command to format the names, but after looking at the new names, it became clear that subtle differences in naming resulted in messy names. Because of the limited number of taxa (9 per file), I decided it would be better to manually rename the sequences. These renamed files are also included in the data directory with the extension now simply .fasta. 
 
-Two further fasta files were also made at this point. These files mRNA.all.fasta and protein.all.fasta include the mRNA or amino acid sequences from both the GPT and GPT2 sequences. Because of the variety of names for each gene, they were labeled as with Species name followed by GPT or GPT2 depending on which homologene family they were from. Table 1 includes the real name for each sequence.
+Two further fasta files were also made at this point. These files mRNA.all.fasta and protein.all.fasta include the mRNA or amino acid sequences from both the GPT and GPT2 sequences. Because of the variety of names for each gene, they were labeled as with Species name followed by GPT or GPT2 depending on which homologene family they were from. Table 1 includes the real name for each sequence. It should be noted that for X. tropicalis, the two genes share the same name but differ in locus and sequence and belong to different protein families.
+
+| Species                  | Protein Family | Gene Name |
+|--------------------------|----------------|-----------|
+| Homo sapiens             | GPT            | GPT       |
+| Pan troglodytes          | GPT            | GPT       |
+| Macaca mulatta           | GPT            | GPT       |
+| Bos taurus               | GPT            | GPT       |
+| Mus musculus             | GPT            | Gpt       |
+| Rattus norvegicus        | GPT            | Gpt       |
+| Xenopus tropicalis       | GPT            | gpt2      |
+| Danio rerio              | GPT            | gpt2l     |
+| Saccharomyces cerevisiae | GPT            | ALT2      |
+| Homo sapiens             | GPT2           | GPT2      |
+| Pan troglodytes          | GPT2           | GPT2      |
+| Macaca mulatta           | GPT2           | GPT2      |
+| Bos taurus               | GPT2           | GPT2      |
+| Mus musculus             | GPT2           | Gpt2      |
+| Rattus norvegicus        | GPT2           | Gpt2      |
+| Xenopus tropicalis       | GPT2           | gpt2      |
+| Danio rerio              | GPT2           | gpt2      |
+| Saccharomyces cerevisiae | GPT2           | ALT1      |
 
 With the FASTA files generated, alignments were then performed. The aligments were made using mafft. The resulting alignments are stored in the alignments directory. In order to run the alignment the alignment.sh script was run with the following command: `sbatch -t 12:00:00 alignment.sh`. These are converted to .nex and .phy files using Mesquite.
 
