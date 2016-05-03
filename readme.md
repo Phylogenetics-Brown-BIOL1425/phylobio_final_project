@@ -100,10 +100,12 @@ shows phylogenetic relationships of leporid DQA exon 2 sequences using a
 maximum-likelihood analysis and the the K80 model of evolution. Bootstrap values are
 indicated. Tree is rooted using human and sheep DQA sequences.
 
+[https://github.com/kbcn/phylobio_final_project/blob/master/trees/Leporids/DQA_Leporids_RAXML_GTRG.pdf]
 **Figure 2** shows phylogenetic relationships of leporid DQA exon 2 sequences using a
 maximum-likelihood analysis and the the GTR+G model of evolution. Bootstrap values are 
 indicated. Tree is rooted using human and sheep DQA sequences.
 
+![https://github.com/kbcn/phylobio_final_project/blob/master/trees/Leporids/DQA_Leporids_RB1_K80g3.pdf]
 **Figure 3** shows phylogenetic relationships of leporid DQA exon 2 sequences using bayesian 
 analysis of leporid DQA exon 2 sequence under the K80+G model of evolution. Bayesian
 posterior probabilities are shown. Tree is rooted using human and sheep DQA sequences.
