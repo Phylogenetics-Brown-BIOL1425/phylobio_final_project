@@ -42,6 +42,26 @@ Figure 1 shows the predicted trees using mRNA data. The only branches that are d
 
 ![Figure 1](figures/figure1.png)
 
+Figure 2 shows the predicted trees using the amino acid data. The only branches that are different are marked in red. The rest are in green. 
+
+### Figure 2
+
+![Figure 2](figures/figure2.png)
+
+Figure 3 shows the predicted trees using the concatenated data. The mRNA is on the left and the amino acid is on the right. The only branches that are different are marked in red. The rest are in green. 
+
+### Figure 3
+
+![Figure 3](figures/figure3.png)
+
+Figure 4 shows the predicted trees for both when GPT and GPT2 data are aligned. The tree on the left is generated using mRNA data and the tree on the right is generated using amino acid data.  Differences between the trees are highlighted in red with shared branches in green. Because of the distinct cluster for S. cerevisiae's protiens they were used to root the tree. 
+
+### Figure 4
+
+![Figure 4](figures/figure4.png)
+
+
+
 ## Discussion
 
 These results indicate...
