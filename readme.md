@@ -27,11 +27,13 @@ In evaluating the resulting trees, I expected individuals of the same species to
 
 *Figure 1*: Default settings, 85% clustering
 
-
+The tree built using a 75% clustering threshold is a complete mess. Though the most likely tree generally recapitulates the expected groups, many of the placements have zero bootstrap support. In this clustering analysis, any sequences with 75% or more overlap were counted as a cluster. Because 75% is not a very stringent threshold, it is possible that many paralogs with very different evolutionary histories could have been lumped together as one locus, leading to difficulty in resolving evolutionary relationships. The 75% stringency threshold also allowed for a [larger number of loci](https://github.com/moeglein/phylobio_final_project/blob/master/data/RAxML_info.stringency_75) allowed in the analysis, some of which may have been junk. 
 
 ![Figure 2](https://github.com/moeglein/phylobio_final_project/blob/master/figures/RAxML_bipartitions.stringency_75.png)
 
 *Figure 2*: 75% clustering
+
+The 95% and 98% clustering thresholds produced trees closer to what I was expecting. The expected species complexes are present and strongly supported and all members of *V. mattii* form a clade. Furthermore, the 98% stringency tree shows ambiguous placement of the V_oXm hybrids while maintaining strong support for the parent clades and the *V. mattii/oonakatensis* clade in general. This is the tree that makes the most sense to me given the expected species relationships and the intermediate nature of the hybrids. I would expect that the heterozygosity that is probably more present in the hybrids would make them more difficult to assemble.
 
 ![Figure 3](https://github.com/moeglein/phylobio_final_project/blob/master/figures/RAxML_bipartitions.stringency_95.png)
 
@@ -40,6 +42,8 @@ In evaluating the resulting trees, I expected individuals of the same species to
 ![Figure 4](https://github.com/moeglein/phylobio_final_project/blob/master/figures/RAxML_bipartitions.stringency_98.png)
 
 *Figure 4*: 98% clustering
+
+
 
 
 ## References
