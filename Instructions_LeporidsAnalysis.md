@@ -14,15 +14,16 @@ Open DQA_Outgroup.aligned.fasta in Mesquite
 Export as a .phy file (Phylip (DNA/RNA), leave "Interleave Matrix" unchecked, change max 
 taxon length name, set "End of line character" to Unix (LF))
 
-  DQA_Outgroup2.phy
+  `DQA_Outgroup2.phy`
   
 Export as a Nex file for Mr.Bayes
 
-  DQA_Outgroup_Bayes.nex
+  `DQA_Outgroup_Bayes.nex`
 
 ## Step Two: ModelGenerator test
 
 `java -jar modelgenerator.jar DQA_Outgroup2.phy 4`
+
 `java -jar modelgenerator.jar DQA_Outgroup2.phy 8`
 
 ## Step Three: RAXML Analysis
@@ -32,7 +33,7 @@ Log into OSCAR
 cd into phylobio_final_project
 
 Launch the run using 
-  `sbatch raxml.sh`
+  `sbatch raxml.sh` found [here](https://github.com/kbcn/phylobio_final_project/tree/master/scripts/raxml_all)
   
 When run is complete, push files to git, then pull to laptop to inspect
 

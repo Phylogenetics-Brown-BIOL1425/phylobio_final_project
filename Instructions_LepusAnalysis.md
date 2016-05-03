@@ -1,0 +1,58 @@
+# Project Steps: DQA *Lepus europaeus*
+
+This project uses *Lepus europaeus* MHC class II DQA dataset of:
+
+Gouy de Bellocq J, Suchentrunk F, Baird SJE, and Schascht H. 2009. Evolutionary history of
+an MHC gene in two leporid species: characterisation of Mhc-DQA in the European brown hare
+and comparison with the European rabbit. Immunogenetics 61:131-144.
+
+Koutsogiannouli EA, Moutou KA, Sarafidou T, Stamis C, Spyrou V, and Mamuris Z. 2009. 
+Major histocompatibility complex variation at class II DQA locus in the brown hare (Lepus
+europaeus). Molecular Ecology 18:4631-4649.
+
+## Step One: Data Alignment
+
+`mafft DQA_Lepus.fasta > DQA_Lepus.aligned.fasta`
+
+Open DQA_Lepus.aligned.fasta in Mesquite
+
+Export as a .phy file (Phylip (DNA/RNA), leave "Interleave Matrix" unchecked, change max 
+taxon length name, set "End of line character" to Unix (LF))
+
+  `DQA_Lepus.phy`
+
+Export as a Nex file for Mr.Bayes
+
+  `DQA_Lepus_Bayes.nex`
+
+## Step Two: ModelGenerator test
+
+`java -jar modelgenerator.jar DQA_Lepus.phy 4`
+
+`java -jar modelgenerator.jar DQA_Lepus.phy 8`
+
+## Step Three: RAXML Analysis
+
+Log into OSCAR
+
+cd into phylobio_final_project
+
+Launch the run using 
+
+  `sbatch raxml.sh` found [here]((https://github.com/kbcn/phylobio_final_project/tree/master/scripts/raxml_all)
+  
+When run is complete, push files to git, then pull to laptop to inspect
+
+## Step Four: RevBayes Analysis
+   
+Run the desired [revbayes_lepus script](https://github.com/kbcn/phylobio_final_project/tree/master/scripts/revbayes_lepus)
+ 
+ `rb script`
+ 
+See [Script_ReadMe.txt](https://github.com/kbcn/phylobio_final_project/blob/master/scripts/Script_ReadMe.txt)
+ 
+## Step Five: Analyzing Tree Output
+
+Open .log files in Tracer
+
+Open.tree file using FigTree
