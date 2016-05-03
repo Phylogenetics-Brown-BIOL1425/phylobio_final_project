@@ -161,8 +161,9 @@ leporid DQA into two clades that consistently contained the same species makeup
 poorly supported. Additionally, some relationships between similar sequences were 
 consistently resolved with high support. In general, however, the resolution was poor.
 Due to the low support and variable topologies, it is difficult to assess trans-species
-polymorphism, which is a common hallmark of MHC evolution. However, DQA 
-variants generally do not cluster together by species, as indicated in Figure 5. 
+polymorphism, which is a common hallmark of MHC evolution (Bernatchez and Landry 2003).
+However, DQA variants generally do not cluster together by species, as indicated in 
+Figure 5. 
 
 The four Lepus europaeus analyses also displayed different topologies with low branch
 support, also indicating poor resolution of the phylogeography of DQA variants in this
@@ -189,7 +190,7 @@ visualizing phylogenies in useful ways, such as Ape or ggtree.
 
 ## References
 
-1. Bernatchez, L and Landry, C. 2003. MHC studies in nonmodel  vertebrates: what have we learned about natural selection in 15 years? J Evol Bio 16:363-377.
+1. Bernatchez, L and Landry, C. 2003. MHC studies in nonmodel  vertebrates: what have we learned about natural selection in 15 years? J Evol Bio 16:363-377. http://onlinelibrary.wiley.com/doi/10.1046/j.1420-9101.2003.00531.x/full
 2. de Bellocq, J et al. 2009. Evolutionary history of an MHC gene in two leporid species: characterisation of MHC-DQA in the European brown hare and comparison with the European rabbit. Immunogenetics 61:131-144. http://link.springer.com/article/10.1007%2Fs00251-008-0349-4
 3. Keane TM et al. 2006. assessment of methods for amino acid matrix selection and their use on empirical data shows that ad hoc assumptions for choice of matrix are not justified. BMC Evolutionary Biology 6-29.
 4. Koutsogiannouli et al. 2009. Major histocompatibility complex variation at class II DQA locus in the brown hare (Lepus europaeus). Molecular Ecology 18:1431-4649. http://onlinelibrary.wiley.com/doi/10.1111/j.1365-294X.2009.04394.x/full
