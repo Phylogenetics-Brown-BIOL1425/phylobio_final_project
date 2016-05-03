@@ -1,0 +1,41 @@
+# Project Steps: DQA Leporids
+
+This project uses the leporid MHC class II DQA dataset of:
+Surridge AK, van der Loo W, Abrantes J, Carneiro M, Hewitt GM and Esteves PJ. 2008.
+Diversity and evolutionary history of the MHC DQA gene in leporids. 
+Immunogenetics 60:515-525.
+
+## Step One: Data Alignment
+
+‘<mafft DQA_Outgroup2.fasta > DQA_Outgroup2.aligned.fasta>’
+
+Open DQA_Outgroup.aligned.fasta in Mesquite
+Export as a .phy file (Phylip (DNA/RNA), leave "Interleave Matrix" unchecked, change max 
+taxon length name, set "End of line character" to Unix (LF))
+  DQA_Outgroup2.phy
+Export as a Nex file for Mr.Bayes
+  DQA_Outgroup_Bayes.nex
+
+## Step Two: ModelGenerator test
+
+<‘java -jar modelgenerator.jar DQA_Outgroup2.phy 4>’
+<‘java -jar modelgenerator.jar DQA_Outgroup2.phy 8>’
+
+## Step Three: RAXML Analysis
+
+Log into OSCAR
+cd into phylobio_final_project
+Launch the run using 
+  <‘sbatch raxml.sh>’
+When run is complete, push files to git, then pull to laptop to inspect
+
+## Step Four: RevBayes Analysis
+   
+Run the desired revbayes_leporids script using
+ <‘rb script>’
+See Script_ReadMe.txt for summary of script differences
+ 
+## Step Five: Analyzing Tree Output
+
+Open .log files in Tracer
+Open.tree file using FigTree
