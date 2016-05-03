@@ -53,13 +53,15 @@ Further, I will be using the following full cephalopod phylogeny to compare with
 ![alt tag](https://github.com/DanielSeidman/phylobio_final_project/blob/master/full_cephalopod_phylogeny.jpg)
 (Lindgren AR Pankey MS Hochberg FG Oakley TH 2012)
 
+raxml trees were done with 1000 bootstraps,
+and revBayes trees were run with a burn in of 1000 trees, and two successive trials of 20000 trees total.
 
 
 ## Results
 
 ![alt tag](https://github.com/DanielSeidman/phylobio_final_project/blob/master/tree_marked.png)
 This image comes from raxml with the GTR_gamma model, on all the sequences I found with meaningful alignment with the given gene.
-![alt tag](https://github.com/DanielSeidman/phylobio_final_project/blob/master/revBMollusc/goodsupporttree.png)
+![alt tag](https://github.com/DanielSeidman/phylobio_final_project/blob/master/revBMollusc/Reasonable_tree_image.png)
 
 Unfortunately, very little sequence data is actually available for the gene in question, though in the process of searching for more, it is possible that
 I have elucidated some clues into the function of some uncharacterized drosophila genes, as many had significant alignment to the squid gene I was searching for.
