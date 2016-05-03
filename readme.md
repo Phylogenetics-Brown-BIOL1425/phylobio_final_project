@@ -56,8 +56,8 @@ constructions for single MHC genes across both species and populations.
 
 ## Methods
 
-Instructions for analyses including code can be found in [Instructions_LeporidsAnalysis.txt](https://github.com/kbcn/phylobio_final_project/blob/master/Instructions_LeporidsAnalysis.txt)
-and [Instructions_LepusAnalysis.txt](https://github.com/kbcn/phylobio_final_project/blob/master/Instructions_LepusAnalysis.txt),
+Instructions for analyses including code can be found in [Instructions_LeporidsAnalysis](https://github.com/kbcn/phylobio_final_project/blob/master/Instructions_LeporidsAnalysis.md)
+and [Instructions_LepusAnalysis](https://github.com/kbcn/phylobio_final_project/blob/master/Instructions_LepusAnalysis.md),
 and scripts can be found in the folder [scripts](https://github.com/kbcn/phylobio_final_project/tree/master/scripts).
 Data, including alignments, can be found in the folder [data](https://github.com/kbcn/phylobio_final_project/tree/master/data)
 
@@ -205,7 +205,7 @@ visualizing phylogenies in useful ways, such as Ape or ggtree.
 
 1. Bernatchez, L and Landry, C. 2003. MHC studies in nonmodel  vertebrates: what have we learned about natural selection in 15 years? J Evol Bio 16:363-377. http://onlinelibrary.wiley.com/doi/10.1046/j.1420-9101.2003.00531.x/full
 2. de Bellocq, J et al. 2009. Evolutionary history of an MHC gene in two leporid species: characterisation of MHC-DQA in the European brown hare and comparison with the European rabbit. Immunogenetics 61:131-144. http://link.springer.com/article/10.1007%2Fs00251-008-0349-4
-3. Keane TM et al. 2006. assessment of methods for amino acid matrix selection and their use on empirical data shows that ad hoc assumptions for choice of matrix are not justified. BMC Evolutionary Biology 6-29.
+3. Keane TM et al. 2006. assessment of methods for amino acid matrix selection and their use on empirical data shows that ad hoc assumptions for choice of matrix are not justified. BMC Evolutionary Biology 6-29. http://bmcevolbiol.biomedcentral.com/articles/10.1186/1471-2148-6-29
 4. Koutsogiannouli et al. 2009. Major histocompatibility complex variation at class II DQA locus in the brown hare (*Lepus europaeus*). Molecular Ecology 18:1431-4649. http://onlinelibrary.wiley.com/doi/10.1111/j.1365-294X.2009.04394.x/full
 5. Radwan, J et al. 2007. MHC-DRB3 variation in a free-living population of the European bison, Bison bonasus. J Evol Biol 16:363-377. http://onlinelibrary.wiley.com/doi/10.1111/j.1365-294X.2006.03179.x/epdf
 6. Surridge, AK et al. 2008. Diversity and evolutionary history of the MHC DQA gene in leporids. Immunogenetics 60:515-525. http://link.springer.com/article/10.1007%2Fs00251-008-0309-z

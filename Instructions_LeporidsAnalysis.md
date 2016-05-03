@@ -18,7 +18,7 @@ taxon length name, set "End of line character" to Unix (LF))
   
 Export as a Nex file for Mr.Bayes
 
-  `DQA_Outgroup_Bayes.nex`
+  `DQA_Outgroup2_Bayes.nex`
 
 ## Step Two: ModelGenerator test
 

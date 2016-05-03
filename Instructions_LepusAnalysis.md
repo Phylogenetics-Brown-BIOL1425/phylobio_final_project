@@ -39,7 +39,7 @@ cd into phylobio_final_project
 
 Launch the run using 
 
-  `sbatch raxml.sh` found [here]((https://github.com/kbcn/phylobio_final_project/tree/master/scripts/raxml_all)
+  `sbatch raxml.sh` found [here](https://github.com/kbcn/phylobio_final_project/tree/master/scripts/raxml_all)
   
 When run is complete, push files to git, then pull to laptop to inspect
 
@@ -50,6 +50,7 @@ Run the desired [revbayes_lepus script](https://github.com/kbcn/phylobio_final_p
  `rb script`
  
 See [Script_ReadMe.txt](https://github.com/kbcn/phylobio_final_project/blob/master/scripts/Script_ReadMe.txt)
+for summary of script differences
  
 ## Step Five: Analyzing Tree Output
 
