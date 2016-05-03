@@ -172,42 +172,48 @@ However, our results do indicate that fourth trochanter position shows a strong 
 
 4. Christophe Hendrickx and Octavio Mateus. “Torvosaurus gurneyi n. sp., the Largest Terrestrial Predator from Europe, and a Proposed Terminology of the Maxilla Anatomy in Nonavian Theropods”. *PLoS ONE* 9:3 (2014). DOI: http://dx.doi.org/10.1371/journal.pone.0088905.
 
-5. He et al. "A New Leptoceratopsid (Ornithischia, Ceratopsia) with a Unique Ischium from the Upper Cretaceous of Shandong Province, China". *PLoS ONE* 10:12 (2015). DOI: http://dx.doi.org/10.1371/journal.pone.0144148.
+5. David B. Weishampel, Peter Dodson, and Halszka Osmolska. “The Dinosauria”, 2nd ed. University of California Press, 2007.
 
-6. Hutchinson et al. "A Computational Analysis of Limb and Body Dimensions in *Tyrannosaurus rex* with Implications for Locomotion, Ontogeny, and Growth". *PLoS ONE* (2011). DOI: http://dx.doi.org/10.1371/journal.pone.0026037.
+6. Gregory S. Paul. “The Princeton Field Guide to Dinosaurs”. Princeton University Press, 2010.
 
-7. John R. Hutchinson and Mariano Garcia. "Tyrannosaurus was not a fast runner". *Nature* 415: 1018-1021 (2001). DOI: http://dx.doi.org/10.1038/4151018a.
+7. He et al. "A New Leptoceratopsid (Ornithischia, Ceratopsia) with a Unique Ischium from the Upper Cretaceous of Shandong Province, China". *PLoS ONE* 10:12 (2015). DOI: http://dx.doi.org/10.1371/journal.pone.0144148.
 
-8. Jostein Starrfelt and Lee Hsiang Liow. “How many dinosaur species were there? Fossil bias and true richness estimated using a Poisson sampling model”. *Philosophical Transactions of the Royal Society B* 371:1691 (2016). DOI: http://dx.doi.org/10.1098/rstb.2015.0219.
+8. Hutchinson et al. "A Computational Analysis of Limb and Body Dimensions in *Tyrannosaurus rex* with Implications for Locomotion, Ontogeny, and Growth". *PLoS ONE* (2011). DOI: http://dx.doi.org/10.1371/journal.pone.0026037.
 
-9. Kenneth Carpenter and Yvonne Wilson. “A New Species of Camptosaurs (Ornithopoda: Dinosauria) from the Morrison Formation (Upper Jurassic) of Dinosaur National Monument, Utah, and  Biomechanics Analysis of its Forelimb”. *Annals of Carnegie Museum* 76 (2008): 227-263. DOI: http://dx.doi.org/10.2992/0097-4463(2008)76[227:ANSOCO]2.0.CO;2.
+9. John R. Hutchinson and Mariano Garcia. "Tyrannosaurus was not a fast runner". *Nature* 415: 1018-1021 (2001). DOI: http://dx.doi.org/10.1038/4151018a.
 
-10. Maidment et al. “Locomotion in Ornithischian Dinosaurs: an assessment using three-dimensional computational modelling”. *Biological Reviews* 89 (2014): 588-617. DOI: http://dx.doi.org/10.1111/brv.12071.
+10. Jostein Starrfelt and Lee Hsiang Liow. “How many dinosaur species were there? Fossil bias and true richness estimated using a Poisson sampling model”. *Philosophical Transactions of the Royal Society B* 371:1691 (2016). DOI: http://dx.doi.org/10.1098/rstb.2015.0219.
 
-11. Martinez et al. “A Basal Dinosaur from the Dawn of the Dinosaur Era in Southwestern Pangaea”. *Science* 331 (2011):206-210. DOI: http://dx.doi.org/10.1126/science.1198467.
+11. Kenneth Carpenter and Yvonne Wilson. “A New Species of Camptosaurs (Ornithopoda: Dinosauria) from the Morrison Formation (Upper Jurassic) of Dinosaur National Monument, Utah, and  Biomechanics Analysis of its Forelimb”. *Annals of Carnegie Museum* 76 (2008): 227-263. DOI: http://dx.doi.org/10.2992/0097-4463(2008)76[227:ANSOCO]2.0.CO;2.
 
-12. Matthew T. Carrano and John R. Hutchinson. “Pelvic and Hindlimb Musculature of Tyrannosaurus rex (Dinosauria:Theropoda)”. *Journal of Morphology* 253 (2002): 207-228. DOI: http://dx.doi.org/10.1002/jmor.10018.
+12. Maidment et al. “Locomotion in Ornithischian Dinosaurs: an assessment using three-dimensional computational modelling”. *Biological Reviews* 89 (2014): 588-617. DOI: http://dx.doi.org/10.1111/brv.12071.
 
-13. Matthew T. Carrano and Scott D. Sampson. “The Phylogeny of Ceratosauria (Dinosauria: Theropoda)”. *Journal of Systematic Paleontology* 6 (2008): 183-236. DOI: http://dx.doi.org/10.1017/S1477201907002246.
+13. Martinez et al. “A Basal Dinosaur from the Dawn of the Dinosaur Era in Southwestern Pangaea”. *Science* 331 (2011):206-210. DOI: http://dx.doi.org/10.1126/science.1198467.
 
-14. McDonald et al. “New Basal Iguanodonts from the Cedar Mountain Formation of Utah and the Evolution of Thumb-Spiked Dinosaurs”. *PLoS ONE* 5:11 (2010). DOI: http://dx.doi.org/10.1371/journal.pone.0014075.
+14. Matthew T. Carrano and John R. Hutchinson. “Pelvic and Hindlimb Musculature of Tyrannosaurus rex (Dinosauria:Theropoda)”. *Journal of Morphology* 253 (2002): 207-228. DOI: http://dx.doi.org/10.1002/jmor.10018.
 
-15. Nesbitt et al. “A Complete Skeleton of a Late Triassic Saurischian and the Early Evolution of Dinosaurs”. *Science* (2009): 1530-1533. DOI: http://dx.doi.org/10.1126/science.1180350.
+15. Matthew T. Carrano and Scott D. Sampson. “The Phylogeny of Ceratosauria (Dinosauria: Theropoda)”. *Journal of Systematic Paleontology* 6 (2008): 183-236. DOI: http://dx.doi.org/10.1017/S1477201907002246.
 
-16. Paul C. Sereno and Andrea B. Arcucci. "Dinosaurian Precursors from the Middle Triassic of Argentina: Marasuchus lilloensis, gen. nov.". *Journal of Vertebrate Paleontology* 14 (1994): 53-73. DOI: http://dx.doi.org/10.1080/02724634.1994.10011538.
+16. McDonald et al. “New Basal Iguanodonts from the Cedar Mountain Formation of Utah and the Evolution of Thumb-Spiked Dinosaurs”. *PLoS ONE* 5:11 (2010). DOI: http://dx.doi.org/10.1371/journal.pone.0014075.
 
-17. Richard J. Butler, Paul Upchurch, and David B. Norman. “The Phylogeny of the Ornithischian Dinosaurs”. *Journal of Systematic Paleontology* 6 (2008): 1-40. DOI: http://dx.doi.org/10.1017/S1477201907002271.  
+17. Nesbitt et al. “A Complete Skeleton of a Late Triassic Saurischian and the Early Evolution of Dinosaurs”. *Science* (2009): 1530-1533. DOI: http://dx.doi.org/10.1126/science.1180350.
 
-18. Roger B. J. Benson, Matthew T. Carrano, and Stephen L. Brusatte. “A new clade of archaic large-bodied predatory dinosaurs (Theropoda: Allosauroidea) that survived to the latest Mesozoic”. *Naturwissenshaften* 97 (2010): 71-78. DOI: http://dx.doi.org/10.​1007/​s00114-009-0614-x.
+18. Paul C. Sereno and Andrea B. Arcucci. "Dinosaurian Precursors from the Middle Triassic of Argentina: Marasuchus lilloensis, gen. nov.". *Journal of Vertebrate Paleontology* 14 (1994): 53-73. DOI: http://dx.doi.org/10.1080/02724634.1994.10011538.
 
-19. Rozadilla et al. "A new ornithopod (Dinosauria, Ornithischia) from the Upper Cretaceous of Antarctica an its palaeobiogeographical implications". *Cretaceous Research* 57 (2015): 311-324. DOI: http://dx.doi.org/10.1016/j.cretres.2015.09.009.
+19. Richard J. Butler, Paul Upchurch, and David B. Norman. “The Phylogeny of the Ornithischian Dinosaurs”. *Journal of Systematic Paleontology* 6 (2008): 1-40. DOI: http://dx.doi.org/10.1017/S1477201907002271.  
 
-20. Senter et al. “New Dromaeosaurids (Dinosauria: Theropoda) from the Lower Cretaceous of Utah, and the Evolution of the Dromaeosaurid Tail”. *PLoS ONE* 7:5 (2012). DOI: http://dx.doi.org/10.1371/journal.pone.0036790.
+20. Roger B. J. Benson, Matthew T. Carrano, and Stephen L. Brusatte. “A new clade of archaic large-bodied predatory dinosaurs (Theropoda: Allosauroidea) that survived to the latest Mesozoic”. *Naturwissenshaften* 97 (2010): 71-78. DOI: http://dx.doi.org/10.​1007/​s00114-009-0614-x.
 
-21. Stephen L. Brusatte and Thomas D. Carr. "The Phylogeny and Evolutionary History of Tyrannosauroid dinosaurs". *Scientific Reports* 6 (2016). DOI: http://dx.doi.org/10.1038/srep20252.
+21. Rozadilla et al. "A new ornithopod (Dinosauria, Ornithischia) from the Upper Cretaceous of Antarctica an its palaeobiogeographical implications". *Cretaceous Research* 57 (2015): 311-324. DOI: http://dx.doi.org/10.1016/j.cretres.2015.09.009.
 
-22. Stephen M. Gatesy. “Caudofemoral Musculature and the Evolution of Theropod Locomotion”. *Paleobiology* 16 (1990): 170-186. DOI: http://dx.doi.org/10.1017/S0094837300009866. 
+22. Scott Hartman’s Skeletal Drawing.com. Accessed May 3, 2016. http://www.skeletaldrawing.com.
 
-23. W. Scott Persons IV and Philip J. Currie. “Duckbills on the Run: The Cursorial Abilities of Hadrosaurs and Implications for Tyrannosaur-Avoidance Strategies”. *Hadrosaurs* (2014): 449-458.
+23. Senter et al. “New Dromaeosaurids (Dinosauria: Theropoda) from the Lower Cretaceous of Utah, and the Evolution of the Dromaeosaurid Tail”. *PLoS ONE* 7:5 (2012). DOI: http://dx.doi.org/10.1371/journal.pone.0036790.
 
-24. Xing et al. “Comparative Osteology and Phylogenetic Relationship of *Edmontosaurus* and *Shantungosaurus* (Dinosauria: Hadrosauridae) from the Upper Cretaceous of North America and East Asia”. *Acta Geologica Sinica* 88 (2014): 1623-1652. DOI: http://dx.doi.org/10.1111/1755-6724.12334.
+24. Stephen L. Brusatte and Thomas D. Carr. "The Phylogeny and Evolutionary History of Tyrannosauroid dinosaurs". *Scientific Reports* 6 (2016). DOI: http://dx.doi.org/10.1038/srep20252.
+
+25. Stephen M. Gatesy. “Caudofemoral Musculature and the Evolution of Theropod Locomotion”. *Paleobiology* 16 (1990): 170-186. DOI: http://dx.doi.org/10.1017/S0094837300009866. 
+
+26. W. Scott Persons IV and Philip J. Currie. “Duckbills on the Run: The Cursorial Abilities of Hadrosaurs and Implications for Tyrannosaur-Avoidance Strategies”. *Hadrosaurs* (2014): 449-458.
+
+27. Xing et al. “Comparative Osteology and Phylogenetic Relationship of *Edmontosaurus* and *Shantungosaurus* (Dinosauria: Hadrosauridae) from the Upper Cretaceous of North America and East Asia”. *Acta Geologica Sinica* 88 (2014): 1623-1652. DOI: http://dx.doi.org/10.1111/1755-6724.12334.
