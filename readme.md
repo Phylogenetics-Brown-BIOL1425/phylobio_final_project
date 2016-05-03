@@ -20,29 +20,29 @@ Some guidelines and tips:
 
 OK, here we go.
 
-# Title of my project
-  Phylogeny of major histocompatibility complex class II DQA variation in leporids
+# Phylogeny of major histocompatibility complex class II DQA variation in leporids
 
 # Introduction and Goals
 
-One goal of my project is to answer the question, What is the evolutionary history of the
+A goal of my project is to answer the question, What is the phylogeny of the
 major histocompatibility complex (MHC) class II gene DQA in leporids (leporidae), a
-mammalian family that includes over 60 species of rabbits and hares. MHC play a crucial 
-role in initiating the vertebrate immune response, and they are exceptionally polymorphic. 
-There is typically considerable variation in sequence diversity and/or copy number of MHC 
-genes both within and across species. This high diversity is thought to be maintained by
-several non-exclusive mechanisms, including pathogen-driven selection for advantageous
+mammalian family that includes over 60 species of rabbits and hares? MHC plays a crucial 
+role in initiating the vertebrate immune response, and MHC genes are exceptionally 
+polymorphic (Bernatchez and Landry 2003). This high diversity is thought to be maintained
+by several non-exclusive mechanisms, including pathogen-driven selection for advantageous
 rare allelic variants and/or MHC heterozygotes, and MHC-dependent sexual selection. 
 
-I am focusing on the MHC class II gene DQA for two reasons: one, I am sequencing this gene
-for my own research purposes, and two, it is the only MHC class II gene available in
-public databases for a wide variety of leporid species. Surridge et al. (2008) sequenced
-exon 2 of the MHC class II gene DQA in 16 different genera of lagomorphs; for DQA gene
-studies, the functional part referred to as the "antigen-binding site" or "peptide-binding
-site" is typically sequenced, as this is the part of the protein that binds antigens and
-is encoded by exon 2. The authors constructed a neighbor-joining tree, and while this
-yielded novel insight into lagomorph MHC evolution, I am interested in applying
-maximum-likelihood and Bayesian phylogeny constructions to this dataset.
+I am focusing on the MHC class II gene DQA in leporids for two reasons: one, I am 
+sequencing MHC genes in cottontail rabbits for my dissertation research, and two, 
+DQA specifically is the only MHC class II gene available in public databases for a wide 
+variety of leporid species. Surridge et al. (2008) sequenced exon 2 of the MHC class II 
+gene DQA in 16 different genera of lagomorphs; for many studies seeking to characterize
+functional MHC variation in non-model vertebrates, the functional part of MHC referred to 
+as the "antigen-binding site" or "peptide-binding site" is typically the target of 
+sequencing; this is the part of the protein that interacts with antigen and is encoded by 
+exon 2. The authors constructed a neighbor-joining tree, and while this yielded novel 
+insight into lagomorph MHC evolution, I am interested in applying maximum-likelihood and 
+Bayesian phylogeny construction methods to this dataset.
 
 Because European hare (Lepus europaeus) MHC DQA genes are well characterized across 
 different areas of Europe (de Bellocq et al. 2009; Koutsogiannouli et al. 2009), I am 
@@ -50,28 +50,28 @@ also interesting in delving deeper into the phylogeography of DQA in this specie
 compiling a dataset that encompasses both of these papers and also applies
 maximum-likelihood and Bayesian approaches to constructing gene trees.
 
-A second goal is to learn methods that I will directly apply to my dissertation research.
-I want to gain experience using RAXML and RevBayes for gene tree constructions for single
-MHC genes across species and populations.
+A second but equally important goal is to learn methods that I will directly apply to my 
+dissertation research. I want to gain experience using RAXML and RevBayes for gene tree 
+constructions for single MHC genes across both species and populations.
 
 ## Methods
 
 Instructions for analyses including code can be found in Instructions_LeporidsAnalysis.txt
 and Instructions_LepusAnalysis.txt, and scripts can be found in the folder scripts.
 
-To obtain DQA sequences for leporids, I downloaded the Surridge et al. 2008 sequences
-from GenBank in a fasta file. To obtain DQA sequences for Lepus europaeus across Europe,
-I downloaded sequences from de Bellocq et al. 2009 and Koutsogiannouli et al. 2009 from
-Genbank.
+To obtain DNA DQA sequences for leporids, I downloaded the Surridge et al. 2008 sequences
+from GenBank in a fasta file. To obtain DNA DQA sequences for Lepus europaeus that were
+also location-tagged, I downloaded sequences from de Bellocq et al. 2009 and 
+Koutsogiannouli et al. 2009 from Genbank.
 
-I used the alignment program Mafft to align separately align DQA leporid and
+I used the alignment program Mafft to separately align DQA leporid and
 L. europaeus sequences. Alignments were inspected using Mesquite and exported as .nex and
-.phy files. ModelGenerator v851 (Keane et al. 2006) was used to compare across 56 nucleotide substitution
-models to select the best fit for the leporid and L. europaeus datasets. For leporids, 
-AIC1, AIC2, and BIC all converged on the K80+G model as the best fit. For the L. europaeus
-dataset, AIC1, AIC2, and BIC selected either TrNef+I+G or TrNef+G as the best fit.
-However, since I was unsure how to implement these models in RevBayes and RAXML, I used
-the next best fit model, which was K80+G.
+.phy files. ModelGenerator v851 (Keane et al. 2006) was used to compare across 56 
+nucleotide substitution models to select the best fit for the leporid and L. europaeus 
+datasets. For leporids, AIC1, AIC2, and BIC all converged on the K80+G model as the best 
+fit. For the L. europaeus dataset, AIC1, AIC2, and BIC selected either TrNef+I+G or 
+TrNef+G as the best fit. However, since I was unsure how to implement these models in 
+RevBayes and RAXML, I used the next best fit model, which was K80+G.
 
 RAXML runs were conducted on OSCAR using RAXMLv8.2.0, which allows for the K80 model to be
 specified. For both the leporid and the L. europaeus datasets, the K80 model and the
@@ -84,13 +84,16 @@ RevBayes analyses were conducted using a K80 model with gamma-distributed rate
 variation (alpha=0.5). Several preliminary RevBayes runs were conducted to explore 
 changing the alpha value and altering generation time, and scripts and data for these
 analyses are including in this repo. The generation times for the trees presented are
-100,000 (leporids) and 40,000 (lepus). Two RevBayes runs were conducted for each dataset
-to compare topologies and posterior probabilities.
+100,000 (leporids) and 40,000 (lepus). Two independent RevBayes runs were conducted for 
+each dataset to compare topologies and posterior probabilities.
 
 Tree logs were inspected using Tracer v1.6.0 and trees were generated using 
 FigTree v1.4.2.
 
 ## Results
+
+Analyses output files are located in the folders modelgenerator_output, raxml_output, and
+revbayes_output.
 
 Figure 1 shows phylogenetic relationships of leporid DQA exon 2 sequences using a
 maximum-likelihood analysis and the the K80 model of evolution. Bootstrap values are
@@ -114,8 +117,8 @@ generated from a Bayesian analysis and displayed in Figure 3. Support values abo
 displayed in the format of ML-GTRG/ML-K80/B1/B2 for clades that were generated across all
 four analyses. ML-GTRG = Maximum-likelihood under GTR+G bootstrap values (Figure 2),
 ML-K80 = Maximum-likelihood under K80 bootstrap values (Figure 1), B1 = RevBayes run 1 
-posterior probability (Figure 3), B2 = RevBayes run 2 posterior probability (Figure 4).
-Tips are colored according to species identity.
+posterior probability (Figure 3), B2 = RevBayes run 2 posterior probability (Figure 4),
+NA = Node not present in this analysis. Tips are colored according to species identity.
 
 Figure 6 shows phylogenetic relationships of Lepus europaeus DQA exon 2 sequences using a
 maximum-likelihood analysis and the the K80 model of evolution. Bootstrap values are
@@ -140,29 +143,32 @@ Support values above 50 are displayed in the format of ML-GTRG/ML-K80/B1/B2 for 
 that were generated across all four analyses. ML-GTRG = Maximum-likelihood under 
 GTR+G bootstrap values (Figure 7), ML-K80 = Maximum-likelihood under K80 bootstrap values
 (Figure 6), B1 = RevBayes run 1 posterior probability (Figure 8), B2 = RevBayes run 2 
-posterior probability (Figure 9). Population locations indicated below species name
-and are from Koutsogiannouli et al. 2009. and Gouy de Bellocq et al. 2009: GR=Greece,
-BG=Bulgaria, TR=Turkey, IL=Israel, A=Austria, F=France, D=Germany, NL=Netherlands,
-GB=Great Britain, PL=Poland, and CH=Switzerland.
+posterior probability (Figure 9), NA = Node not present in this analysis. Population
+locations indicated below species name and are from Koutsogiannouli et al. 2009. and 
+de Bellocq et al. 2009: GR=Greece, BG=Bulgaria, TR=Turkey, IL=Israel, A=Austria, F=France,
+D=Germany, NL=Netherlands, GB=Great Britain, PL=Poland, and CH=Switzerland.
 
 ## Discussion
 
-The four leporid DQA analyses each displayed different topologies with low branch support,
+The four leporid DQA analyses each displayed different topologies with low support,
 indicating poor resolution of the phylogenetic relationships of known DQA sequences among
 leporids (Figures 1-4). This is not surprising, as only one exon of one gene was
 considered, and MHC sequences are typically highly variable. Similarly poor resolution of 
 MHC gene phylogenies have been reported for other species (e.g. Radwan et al. 2007; 
-Xu et al. 2009). Some clades were consistent across the maximum-likelihood and Bayesian
-analyses (Figure 5), and with those reported by Surridge et al. 2008. Due to the low
-support and variable topology, it was difficult to assess trans-species polymorphism,
-which is a common hallmark of MHC evolution. However there are several well-supported
-instances of similar sequences between species, and DQA variants do not generally cluster
-together by species, as indicated in Figure 5.
+Xu et al. 2009). All four of my analyses and Surridge et al. 2008 reported the division of
+leporid DQA into two clades that consistently contained the same species makeup
+(Figures 1-5), but the internal branching within these two clades was highly variable and
+poorly supported. Additionally, some relationships between similar sequences were 
+consistently resolved with high support. In general, however, the resolution was poor.
+Due to the low support and variable topologies, it is difficult to assess trans-species
+polymorphism, which is a common hallmark of MHC evolution. However, DQA 
+variants generally do not cluster together by species, as indicated in Figure 5. 
 
 The four Lepus europaeus analyses also displayed different topologies with low branch
 support, also indicating poor resolution of the phylogeography of DQA variants in this
 species (Figures 6-9). Some variants were recovered across multiple populations, whereas 
-others were only identified in one population (Figure 10).
+others were only identified in one population (Figure 10). As with the the leporid
+analysis discussed above, the poor support for recovered topology limits inferences.
 
 There were numerous difficulties in implementing these analyses. The greatest barrier
 was the computational learning curve of running analyses through terminal and navigating
@@ -178,16 +184,18 @@ gene phylogenies I've read have used heated MCMC chains, and I would like to fam
 myself with this methodology and how to do this in RevBayes. For these analyses in 
 particular, I would like to increase my generation run time to see if this would improve
 reported ESS scores. I would also like to learn how to use programs that allow for 
-visualizing phylogenies in useful ways. I would like to learn how to use Ape or ggtree, 
-for example.
+visualizing phylogenies in useful ways, such as Ape or ggtree.
 
 
 ## References
 
-1. Gouy de Bellocq, J et al. 2009. Evolutionary history of an MHC gene in two leporid species: characterisation of MHC-DQA in the European brown hare and comparison with the European rabbit. Immunogenetics 61:131-144. http://link.springer.com/article/10.1007%2Fs00251-008-0349-4
+1. Bernatchez, L and Landry, C. 2003. MHC studies in nonmodel  vertebrates: what have we learned about natural selection in 15 years? J Evol Bio 16:363-377.
+2. de Bellocq, J et al. 2009. Evolutionary history of an MHC gene in two leporid species: characterisation of MHC-DQA in the European brown hare and comparison with the European rabbit. Immunogenetics 61:131-144. http://link.springer.com/article/10.1007%2Fs00251-008-0349-4
 3. Keane TM et al. 2006. assessment of methods for amino acid matrix selection and their use on empirical data shows that ad hoc assumptions for choice of matrix are not justified. BMC Evolutionary Biology 6-29.
 4. Koutsogiannouli et al. 2009. Major histocompatibility complex variation at class II DQA locus in the brown hare (Lepus europaeus). Molecular Ecology 18:1431-4649. http://onlinelibrary.wiley.com/doi/10.1111/j.1365-294X.2009.04394.x/full
-5. Surridge, AK et al. 2008. Diversity and evolutionary history of the MHC DQA gene in leporids. Immunogenetics 60:515-525. http://link.springer.com/article/10.1007%2Fs00251-008-0309-z
+5. Radwan, J et al. 2007. MHC-DRB3 variation in a free-living population of the European bison, Bison bonasus. J Evol Biol 16:363-377. http://onlinelibrary.wiley.com/doi/10.1111/j.1365-294X.2006.03179.x/epdf
+6. Surridge, AK et al. 2008. Diversity and evolutionary history of the MHC DQA gene in leporids. Immunogenetics 60:515-525. http://link.springer.com/article/10.1007%2Fs00251-008-0309-z
+7. Wu, SX et al. 2009. Sequence polymorphism and evolution of three cetacean MHC genes. J Mol Evol 69:260-275. http://link.springer.com/article/10.1007%2Fs00239-009-9272-z
 
 Revised May 3, 2016
 
