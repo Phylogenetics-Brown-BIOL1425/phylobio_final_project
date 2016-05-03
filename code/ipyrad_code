@@ -1,0 +1,24 @@
+
+
+
+## creates a new assembly named default with default parameters (see params-default.txt in data folder)
+## runs steps 1-5 of ipyrad: 1. start assembly, 2. filter fastq reads, 3. cluster reads within individual/sample, 4. joint estimation of error rate and heterozygosity, 5. consensus base calling within individual/sample
+
+sbatch -n 4 -t 48:00:00 --mem=64G ipyrad -p params-default.txt -s 12345
+
+## create branching assembly for different clustering parameters
+## a new prarams file is created for each clustering variation that I want to test and then steps 6 and 7 run with the new params file
+
+ipyrad -p params-default.txt -b 98
+ipyrad -p params-default.txt -b 95 
+ipyrad -p params-default.txt -b 75 
+
+## step 6 clusters between samples with a percent similarity specified in the params files (75%, default (85%), 95%, or 98%)
+## step 7 applies a few filtering steps and makes output files (.phy)
+
+sbatch -n 4 -t 48:00:00 --mem=64G ipyrad -p params-98.txt -s 67 
+sbatch -n 4 -t 48:00:00 --mem=64G ipyrad -p params-95.txt -s 67 
+sbatch -n 4 -t 48:00:00 --mem=64G ipyrad -p params-default.txt -s 67
+sbatch -n 4 -t 48:00:00 --mem=64G ipyrad -p params-75.txt -s 67
+
+

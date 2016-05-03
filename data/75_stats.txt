@@ -1,0 +1,122 @@
+
+
+## The number of loci caught by each filter.
+## ipyrad API location: [assembly].statsfiles.s7_filters
+
+                           locus_filtering
+total_prefiltered_loci              196391
+filtered_by_rm_duplicates              558
+filtered_by_max_indels                3176
+filtered_by_max_snps                     0
+filtered_by_max_hetero               13334
+filtered_by_min_sample                4812
+filtered_by_edge_trim                    0
+total_filtered_loci                 175147
+
+
+## The number of loci recovered for each Sample.
+## ipyrad API location: [assembly].stats_dfs.s7_samples
+
+                  sample_coverage
+V_bXn_1                     28925
+V_bXn_2                     22602
+V_bonolobum_1               21590
+V_mattii_1                  41087
+V_mattii_2                  89629
+V_mattii_3                  78382
+V_neilius_1                 23390
+V_oXm_1                     29070
+V_oXm_2                     25992
+V_oXm_3                     73782
+V_oXm_4                     65806
+V_oonakatensis_1            47355
+V_oonakatensis_2            80289
+V_oonakatensis_3            32967
+
+
+## The number of loci for which N taxa have data.
+## ipyrad API location: [assembly].stats_dfs.s7_loci
+
+    locus_coverage  sum_coverage
+1              NaN           0.0
+2          74652.0       74652.0
+3          30077.0      104729.0
+4          19170.0      123899.0
+5          14977.0      138876.0
+6          12394.0      151270.0
+7           9608.0      160878.0
+8           6535.0      167413.0
+9           4101.0      171514.0
+10          2156.0      173670.0
+11           860.0      174530.0
+12           305.0      174835.0
+13            91.0      174926.0
+14           221.0      175147.0
+
+
+## The distribution of SNPs (var and pis) across loci.
+## pis = parsimony informative site (minor allele in >1 sample)
+## var = all variable sites (pis + autapomorphies)
+## ipyrad API location: [assembly].stats_dfs.s7_snps
+
+        var   sum_var       pis  sum_pis
+0   48175.0       0.0  161633.0      NaN
+1   24757.0       0.0   10779.0      NaN
+2   16569.0   24757.0    6012.0      NaN
+3   12909.0   41326.0    4139.0      NaN
+4   10433.0   54235.0    2945.0      NaN
+5    8550.0   64668.0    2133.0      NaN
+6    7060.0   73218.0    1479.0      NaN
+7    5879.0   80278.0    1125.0      NaN
+8    4964.0   86157.0     916.0      NaN
+9    4468.0   91121.0     756.0      NaN
+10   4176.0   95589.0     594.0      NaN
+11   3893.0   99765.0     578.0      NaN
+12   3894.0  103658.0     512.0      NaN
+13   3842.0  107552.0     517.0      NaN
+14   3740.0  111394.0     449.0      NaN
+15   3689.0  115134.0     399.0      NaN
+16   3512.0  118823.0     323.0      NaN
+17   3422.0  122335.0     296.0      NaN
+18   3200.0  125757.0     225.0      NaN
+19   2944.0  128957.0     173.0      NaN
+20   2712.0  131901.0     100.0      NaN
+21   2470.0  134613.0      96.0      NaN
+22   2135.0  137083.0      66.0      NaN
+23   1355.0  139218.0      37.0      NaN
+24   1100.0  140573.0      30.0      NaN
+25   1013.0  141673.0      22.0      NaN
+26    898.0  142686.0      18.0      NaN
+27    789.0  143584.0      12.0      NaN
+28    674.0  144373.0       8.0      NaN
+29    625.0  145047.0       4.0      NaN
+30    482.0  145672.0       5.0      NaN
+31    413.0  146154.0       2.0      NaN
+32    354.0  146567.0       3.0      NaN
+33    271.0  146921.0       4.0      NaN
+34    218.0  147192.0       1.0      NaN
+35    155.0  147410.0       0.0      NaN
+36    141.0  147565.0       0.0      NaN
+37    116.0  147706.0       0.0      NaN
+38     96.0  147822.0       0.0      NaN
+39     84.0  147918.0       0.0      NaN
+40     58.0  148002.0       0.0      NaN
+41     43.0  148060.0       0.0      NaN
+42     27.0  148103.0       0.0      NaN
+43     20.0  148130.0       0.0      NaN
+44     18.0  148150.0       0.0      NaN
+45      9.0  148168.0       0.0      NaN
+46     12.0  148177.0       0.0      NaN
+47      7.0  148189.0       0.0      NaN
+48      2.0  148196.0       0.0      NaN
+49      4.0  148198.0       0.0      NaN
+50      1.0  148202.0       0.0      NaN
+51      4.0  148203.0       0.0      NaN
+52      3.0  148207.0       0.0      NaN
+53      1.0  148210.0       0.0      NaN
+54      1.0  148211.0       0.0      NaN
+55      1.0  148212.0       0.0      NaN
+56      1.0  148213.0       0.0      NaN
+57      1.0  148214.0       0.0      NaN
+58      0.0  148215.0       0.0      NaN
+59      1.0  148215.0       0.0      NaN

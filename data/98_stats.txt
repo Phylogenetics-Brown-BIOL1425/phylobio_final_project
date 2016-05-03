@@ -1,0 +1,80 @@
+
+
+## The number of loci caught by each filter.
+## ipyrad API location: [assembly].statsfiles.s7_filters
+
+                           locus_filtering
+total_prefiltered_loci              162620
+filtered_by_rm_duplicates                0
+filtered_by_max_indels                   4
+filtered_by_max_snps                     0
+filtered_by_max_hetero                8012
+filtered_by_min_sample              109816
+filtered_by_edge_trim                    0
+total_filtered_loci                  44791
+
+
+## The number of loci recovered for each Sample.
+## ipyrad API location: [assembly].stats_dfs.s7_samples
+
+                  sample_coverage
+V_bXn_1                     12881
+V_bXn_2                     11200
+V_bonolobum_1               10181
+V_mattii_1                  15636
+V_mattii_2                  20238
+V_mattii_3                  16129
+V_neilius_1                 11242
+V_oXm_1                     14052
+V_oXm_2                     13025
+V_oXm_3                     26682
+V_oXm_4                     23333
+V_oonakatensis_1            22858
+V_oonakatensis_2            24484
+V_oonakatensis_3            15244
+
+
+## The number of loci for which N taxa have data.
+## ipyrad API location: [assembly].stats_dfs.s7_loci
+
+    locus_coverage  sum_coverage
+1              NaN           0.0
+2              NaN           0.0
+3              NaN           0.0
+4          18555.0       18555.0
+5          11384.0       29939.0
+6           6750.0       36689.0
+7           3827.0       40516.0
+8           2084.0       42600.0
+9           1111.0       43711.0
+10           530.0       44241.0
+11           213.0       44454.0
+12            96.0       44550.0
+13            84.0       44634.0
+14           157.0       44791.0
+
+
+## The distribution of SNPs (var and pis) across loci.
+## pis = parsimony informative site (minor allele in >1 sample)
+## var = all variable sites (pis + autapomorphies)
+## ipyrad API location: [assembly].stats_dfs.s7_snps
+
+      var  sum_var     pis  sum_pis
+0   79514        0  158477      NaN
+1   40540        0    4088      NaN
+2   15138    40540      54      NaN
+3    9372    55678       0      NaN
+4    6124    65050       0      NaN
+5    3985    71174       1      NaN
+6    2609    75159       0      NaN
+7    1710    77768       0      NaN
+8    1097    79478       0      NaN
+9     775    80575       0      NaN
+10    590    81350       0      NaN
+11    479    81940       0      NaN
+12    330    82419       0      NaN
+13    295    82749       0      NaN
+14     39    83044       0      NaN
+15     14    83083       0      NaN
+16      8    83097       0      NaN
+17      1    83105       0      NaN
