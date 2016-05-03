@@ -193,7 +193,11 @@ abline(regress2)
 # Plotting Phenogram
 # phenogram = phenogram(avg_Tree, trochanter_position, fize = 0.6, spread.labels=TRUE, spread.cost=c(2,2), link=50, offset=0.2, xlab = "Time (millions of years)", ylab = "Position of 4th Trochanter (% downshaft)")
 # Phenogram not plotted as internal branches, lines leading to taxa, and taxa names cross each other and overlap, making analysis difficult
-# Plotting Contour Map
+# Plotting Contour Map for Body Mass
+obj = contMap(avg_Tree, log(body_mass), type = "phylogram", legend = 0.7*max(nodeHeights(avg_Tree)), plot = TRUE) # log(body_mass) for clarity
+obj = setMap(obj, colors = c("blue", "cyan", "green", "yellow", "red"))
+plot(obj, lwd=2.4, fsize = 0.6)
+# Plotting Contour Map for Trochanter Position
 obj = contMap(avg_Tree, trochanter_position, type = "phylogram", legend = 0.7*max(nodeHeights(avg_Tree)), plot = TRUE)
 obj = setMap(obj, colors = c("blue", "cyan", "green", "yellow", "red"))
 plot(obj, lwd=2.4, fsize = 0.6)
