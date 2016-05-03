@@ -92,6 +92,8 @@ Superficially examining the first tree with character data mapped onto it (Fig. 
 
 Looking across my intermediate trees (Fig. 3, 5, 7, 9, & 11), the same problem I observed with the 700-taxon tree arises. The independent contrasts for the characters on the 350-taxon tree (Fig. 4A, Table 2) suggest that only variables 3 and 5 are strongly related, while the correlation coefficient matrix (Fig. 4B) for the values at the tips shows all variables except 2 and 3 and 2 and 4 are strongly associated with one another. The 250-taxon results (Fig. 6, Table 3) show a similar pattern, with more variables coming out as moderately or strongly related to one another when phylogeny is ignored (Fig. 6B) than when it is taken into account (Fig. 6A).
 
+When characters were mapped onto the 100-taxon tree (Fig. 7) the correlation coefficient matrices were more similar than for the other trees (Figure 8, Table 4). This relationship was likely recovered merely by chance, and the two sets of results do not match up identically. The results from the independent contrasts show that 5 is strongly associated with 1 and 2 (Fig. 8A), while the values at the tips also indicated that 5 was strongly related to 1, 5 was weakly related to 2 in this case, and both 5 and 1 were strongly related to 4 (Fig. 8B). Here we can see that even the case that seemed to achieve the most congruence between the independent contrasts and the values at the tips, comparative biologists could still draw erroneous conclusions without considering phylogeny.
+
 ##Acknowledgements
 Andrew Leslie, for help with heat-mapping. 
 
