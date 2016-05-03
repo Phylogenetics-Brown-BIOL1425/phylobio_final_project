@@ -53,13 +53,13 @@ We used phylogenetic independant contrast to assess whether fourth trochanter po
 
 Figure 1 shows the composite Dinosauria tree before time calibration. It shows a deep divergence between Ornithischia and Saurischia, reflecting paleontological evidence that the two clades diverged shortly after the evolution of Dinosauria in the mid-Triassic period.
 
-![GitHub Logo](Figure_1.png)
+![GitHub Logo](Figure_1_nodelabels.png)
 
 **Figure 1.** Non-time-calibrated composite Dinosauria phylogeny. 
 
 Figure 2 shows the time-calibrated composite Dinosauria tree. The deep divergence between Saurischia and Ornithischia is preserved, and reconstructed as occurring just prior to the evolution of the earliest known dinosaurs (the Saurischians *Eoraptor*, *Staurikosaurus*, and *Herrarasaurus*). Notably, the Ornithischian half of the tree shows two sections of very short branch lengths, which make the tree seem to have two large polytomies. The first occurs between *Hypsilophodon* and *Dryosaurus*, and the second between *Bactrosaurus* and *Shantungosaurus*. These regions seem to indicate bursts of diversification among Ornithischia, but are more likely to be artifacts of incomplete taxon sampling or of the methods used to time-calibrate the phylogeny. They represent interesting areas of potential future research.
 
-![GitHub Logo](Figure_2.png)
+![GitHub Logo](Figure_2_nodelabels.png)
 
 **Figure 2.** Time-calibrated composite Dinosauria phylogeny.
 
@@ -85,7 +85,7 @@ Figures 3 and 4 show the non-time-calibrated and time-calibrated composite Sauri
 
 Figure 7 shows the contour map obtained from ancestral state reconstruction using our time-calibrated composite Dinosauria phylogeny. As the color becomes warmer (moves from blue to red), the position of the fourth trochanter moves more distally from the head of the femur. The contour map illustrates that a major shift in fourth trochanter position occurred during the evolution of Ornithischia, before the first included ornithischian taxon (*Heterodontosaurus*) diverged from the rest of the clade. This places the acquisition of the trait in the late Triassic. After the acquisition of distal fourth trochanters, no ornithischians revert to the primitive condition, although the feature does occasionally get more exaggerated.
 
-![GitHub Logo](Figure_7.png)
+![GitHub Logo](Figure_7_nodelabels.png)
 
 **Figure 7.** Contour Map of time-calibrated composite Dinosauria phylogeny. More distal placement of the fourth trochanter is represented by warmer colors.
 
