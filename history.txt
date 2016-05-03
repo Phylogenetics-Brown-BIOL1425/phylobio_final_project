@@ -4,3 +4,11 @@ q()
 data <- readDiscreteCharacterData("data/trnKcombined.correct.fasta")
 q
 q()
+data <- readDiscreteCharacterData("data/trnKcombined.correct.fasta")
+q()
+data <- readDiscreteCharacterData("data/mrbayesTRNK.nex")
+data
+q()
+map_tree1 = mapTree(treetrace,"output/lamia_trnK_GTR_Gamma_run_1.tree")
+map_tree1 = mapTree(treetrace1,"output/lamia_trnK_GTR_Gamma_run_1.tree")
+q()
