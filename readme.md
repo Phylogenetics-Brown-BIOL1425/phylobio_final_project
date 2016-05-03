@@ -141,14 +141,14 @@ indicated. Tree is unrooted.
 
 ![**Figure 8**](https://github.com/kbcn/phylobio_final_project/blob/master/trees/Lepus_europaeus/DQA_Lepus_RB1_K80g2.png)
 **Figure 8** shows phylogenetic relationships of *Lepus europaeus* exon 2 sequences using
-bayesian analysis of leporid DQA exon 2 sequence under the K80+G model of evolution. 
-Bayesian posterior probabilities are shown. Tree is unrooted.
+bayesian analysis under the K80+G model of evolution. Bayesian posterior probabilities are
+shown. Tree is unrooted.
 
 ![**Figure 9**](https://github.com/kbcn/phylobio_final_project/blob/master/trees/Lepus_europaeus/DQA_Lepus_RB2_K80g2.png)
 **Figure 9** shows phylogenetic relationships of *Lepus europaeus* exon 2 sequences using
-bayesian analysis of leporid DQA exon 2 sequence under the K80+G model of evolution.
-Bayesian posterior probabilities are shown. Tree is unrooted. This tree displays a 
-different topology than that generated in run 1 (Figure 8).
+bayesian analysis under the K80+G model of evolution. Bayesian posterior probabilities are
+shown. Tree is unrooted. This tree displays a different topology than that generated in
+run 1 (Figure 8).
 
 ![**Figure 10**](https://github.com/kbcn/phylobio_final_project/blob/master/trees/Lepus_europaeus/DQA_Lepus_RB1_K80g2_AllSupport_Locations.png)
 **Figure 10** shows phylogenetic relationships of *Lepus europaeus* exon 2 sequences using
@@ -169,15 +169,14 @@ indicating poor resolution of the phylogenetic relationships of known DQA sequen
 leporids (Figures 1-4). This is not surprising, as only one exon of one gene was
 considered, and MHC sequences are typically highly variable. Similarly poor resolution of 
 MHC gene phylogenies have been reported for other species (e.g. Radwan et al. 2007; 
-Xu et al. 2009). All four of my analyses and Surridge et al. 2008 reported the division of
-leporid DQA into two clades that consistently contained the same species makeup
-(Figures 1-5), but the internal branching within these two clades was highly variable and
-poorly supported. Additionally, some relationships between similar sequences were 
-consistently resolved with high support. In general, however, the resolution was poor.
-Due to the low support and variable topologies, it is difficult to assess trans-species
-polymorphism, which is a common hallmark of MHC evolution (Bernatchez and Landry 2003).
-However, DQA variants generally do not cluster together by species, as indicated in 
-Figure 5. 
+Xu et al. 2009). All four of my analyses as well as the Surridge et al. 2008 contained the
+division of leporid DQA into two consistent clades, (Figures 1-5), but the internal
+branching within these two clades was highly variable and poorly supported. Additionally,
+some relationships between similar sequences were consistently resolved with high support.
+In general, however, the resolution was poor. Due to the low support and variable
+topologies, it is difficult to assess trans-species polymorphism, which is a common 
+hallmark of MHC evolution (Bernatchez and Landry 2003). However, DQA variants generally 
+do not cluster together by species (Figure 5). 
 
 The four *Lepus europaeus* analyses also displayed different topologies with low branch
 support, also indicating poor resolution of the phylogeography of DQA variants in this
