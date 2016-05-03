@@ -1,11 +1,12 @@
 ################################################################################
 #
-# RevBayes Example: Bayesian inference of phylogeny using a Jukes-Cantor model
+# RevBayes: Bayesian inference of phylogeny using a K80 model
 # 
-# This file: Runs the full MCMC on a single gene under the Jukes-Cantor 
-#            substitution model using an unconstrained, non-clock tree.
+# This file: Runs the full MCMC on a single gene under the K80 
+#            substitution model with a gamma distribution of rate heterogeneity
+#            using an unconstrained, non-clock tree for 40,000 generations.
 #
-# authors: Sebastian Hoehna, Tracy A. Heath, Michael Landis and Brian R. Moore
+# RevBayes authors: Sebastian Hoehna, Tracy A. Heath, Michael Landis and Brian R. Moore
 #
 ################################################################################
 
