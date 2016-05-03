@@ -34,7 +34,11 @@ The trees were then viewed using Figtree.
 
 ## Results
 
-The tree in Figure 1...
+The results presented here are using the RAxML bipartitions file with their bootstrap values as node labels. All trees were rerooted using Saccharomyces cerevisiae as a rooting branch because it is the only non-animal in the included taxa. 
+
+Figure 1 shows the predicted trees using mRNA data. The only branches that are different are marked in red. The rest are in green. 
+
+![Figure 1](figures/figure1.png)
 
 ## Discussion
 
