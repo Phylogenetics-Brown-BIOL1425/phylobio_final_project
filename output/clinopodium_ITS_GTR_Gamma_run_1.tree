@@ -1,0 +1,47 @@
+#NEXUS
+
+	Begin taxa;
+	Dimensions ntax=36;
+	Taxlabels
+		Acinos_alpinus
+		Clinopodium_abyssinicum
+		Clinopodium_acinos
+		Clinopodium_ashei
+		Clinopodium_axillare
+		Clinopodium_barosmum
+		Clinopodium_bolivianum
+		Clinopodium_brownei
+		Clinopodium_carolinianum
+		Clinopodium_chilense
+		Clinopodium_coccineum
+		Clinopodium_cylindrostachys
+		Clinopodium_dentatum
+		Clinopodium_douglasii
+		Clinopodium_fasciculatum
+		Clinopodium_flabellifolium
+		Clinopodium_gilliesii
+		Clinopodium_hydaspidis
+		Clinopodium_jacquelinae
+		Clinopodium_myrianthum
+		Clinopodium_nanum
+		Clinopodium_nepalense_1
+		Clinopodium_nepalense_2
+		Clinopodium_nubigenum
+		Clinopodium_paradoxum
+		Clinopodium_piperitum
+		Clinopodium_revolutum
+		Clinopodium_robustum
+		Clinopodium_sericeum
+		Clinopodium_simense
+		Clinopodium_speciosum
+		Clinopodium_tomentosum
+		Clinopodium_uhligii
+		Clinopodium_vanum
+		Clinopodium_vulgare
+		Clinopodium_wardii
+		;
+End;
+
+Begin trees;
+tree TREE1 = [&R](((((((((((Clinopodium_fasciculatum[&index=35]:3.183934,Clinopodium_tomentosum[&index=34]:3.183934)[&index=36,posterior=0.999556,ccp=0.999473,height_95%_HPD={0.1482,5.9375}]:4.132655,Clinopodium_cylindrostachys[&index=33]:7.316590)[&index=37,posterior=0.843181,ccp=0.297222,height_95%_HPD={1.6790,10.552}]:3.930503,((Clinopodium_flabellifolium[&index=32]:6.587181,Clinopodium_revolutum[&index=31]:6.587181)[&index=38,posterior=0.365615,ccp=0.536155,height_95%_HPD={1.7964,10.631}]:2.262462,Clinopodium_jacquelinae[&index=30]:8.849643)[&index=39,posterior=0.251888,ccp=0.297222,height_95%_HPD={3.4411,13.161}]:2.397449)[&index=40,posterior=0.479787,ccp=0.526030,height_95%_HPD={6.8344,15.783}]:2.363738,(Clinopodium_nubigenum[&index=29]:9.600889,Clinopodium_speciosum[&index=28]:9.600889)[&index=41,posterior=0.992892,ccp=0.526030,height_95%_HPD={3.8798,13.832}]:4.009942)[&index=42,posterior=0.819191,ccp=0.423246,height_95%_HPD={7.3050,18.278}]:4.331474,(Clinopodium_chilense[&index=27]:13.922457,Clinopodium_sericeum[&index=26]:13.922457)[&index=43,posterior=0.308752,ccp=0.423246,height_95%_HPD={6.5569,20.463}]:4.019849)[&index=44,posterior=0.405153,ccp=0.549438,height_95%_HPD={10.550,23.532}]:3.245038,(((Clinopodium_axillare[&index=25]:6.169325,Clinopodium_bolivianum[&index=24]:6.169325)[&index=45,posterior=0.996002,ccp=0.995950,height_95%_HPD={1.6133,10.587}]:5.992142,Clinopodium_gilliesii[&index=23]:12.161466)[&index=46,posterior=0.987117,ccp=0.989554,height_95%_HPD={6.2220,18.168}]:5.607664,Clinopodium_vanum[&index=22]:17.769131)[&index=47,posterior=0.935584,ccp=0.549438,height_95%_HPD={9.7373,25.631}]:3.418213)[&index=48,posterior=0.395380,ccp=0.359122,height_95%_HPD={15.018,28.758}]:4.707123,Clinopodium_douglasii[&index=21]:25.894467)[&index=49,posterior=0.769436,ccp=0.769266,height_95%_HPD={15.695,33.562}]:8.383522,(((Clinopodium_ashei[&index=20]:8.997752,Clinopodium_dentatum[&index=19]:8.997752)[&index=50,posterior=0.467348,ccp=0.477295,height_95%_HPD={3.8829,12.785}]:1.548217,Clinopodium_coccineum[&index=18]:10.545969)[&index=51,posterior=0.900044,ccp=0.900044,height_95%_HPD={5.8027,14.772}]:3.521823,Clinopodium_carolinianum[&index=17]:14.067792)[&index=52,posterior=1.000000,ccp=0.769266,height_95%_HPD={8.1350,19.125}]:20.210197)[&index=53,posterior=0.980009,ccp=0.980009,height_95%_HPD={22.978,44.936}]:17.684211,Clinopodium_brownei[&index=16]:51.962199)[&index=54,posterior=1.000000,ccp=0.994888,height_95%_HPD={39.747,65.700}]:23.128210,((((((Clinopodium_barosmum[&index=15]:4.121356,Clinopodium_wardii[&index=14]:4.121356)[&index=55,posterior=0.993781,ccp=0.994031,height_95%_HPD={0.6831,7.5501}]:4.388825,Clinopodium_piperitum[&index=13]:8.510181)[&index=56,posterior=0.818747,ccp=0.818747,height_95%_HPD={3.0003,12.970}]:3.863334,Clinopodium_hydaspidis[&index=12]:12.373515)[&index=57,posterior=1.000000,ccp=1.000000,height_95%_HPD={6.0593,18.024}]:14.601679,(Clinopodium_nepalense_1[&index=11]:0.900128,Clinopodium_nepalense_2[&index=10]:0.900128)[&index=58,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.0010,2.7909}]:26.075065)[&index=59,posterior=1.000000,ccp=1.000000,height_95%_HPD={17.046,34.876}]:12.996032,(Clinopodium_myrianthum[&index=9]:15.247594,Clinopodium_robustum[&index=8]:15.247594)[&index=60,posterior=1.000000,ccp=1.000000,height_95%_HPD={7.1445,21.967}]:24.723631)[&index=61,posterior=0.999112,ccp=0.999107,height_95%_HPD={28.179,50.170}]:18.301223,(Clinopodium_abyssinicum[&index=7]:15.879296,Clinopodium_paradoxum[&index=6]:15.879296)[&index=62,posterior=1.000000,ccp=0.999107,height_95%_HPD={7.6128,22.584}]:42.393153)[&index=63,posterior=0.994669,ccp=0.994888,height_95%_HPD={44.858,69.732}]:16.817961)[&index=64,posterior=0.956020,ccp=0.842737,height_95%_HPD={62.654,86.626}]:14.909591,(((Acinos_alpinus[&index=5]:6.539440,Clinopodium_acinos[&index=4]:6.539440)[&index=65,posterior=1.000000,ccp=1.000000,height_95%_HPD={1.3322,11.141}]:20.546704,Clinopodium_nanum[&index=3]:27.086145)[&index=66,posterior=1.000000,ccp=0.998497,height_95%_HPD={15.549,36.511}]:49.746627,((Clinopodium_simense[&index=2]:11.997319,Clinopodium_uhligii[&index=1]:11.997319)[&index=67,posterior=1.000000,ccp=1.000000,height_95%_HPD={5.0573,18.053}]:41.358732,Clinopodium_vulgare[&index=0]:53.356051)[&index=68,posterior=0.998667,ccp=0.998497,height_95%_HPD={39.907,66.897}]:23.476720)[&index=69,posterior=0.886717,ccp=0.842737,height_95%_HPD={63.654,87.604}]:13.167229)[&index=70,posterior=1.000000,ccp=1.000000,height_95%_HPD={90.000,90.000}]:0.000000;
+End;
