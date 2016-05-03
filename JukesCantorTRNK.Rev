@@ -17,11 +17,11 @@
 
 ### Read in sequence data for both genes
 
-data <- readDiscreteCharacterData("trnKcombined.aligned.nex")
+data <- readDiscreteCharacterData("data/mrbayesTRNK.nex")
 
 # Get some useful variables from the data. We need these later on.
 n_species <- data.ntaxa()
-taxa <- data.names()
+names <- data.names()
 n_branches <- 2 * n_species - 3
 
 # set my move index
