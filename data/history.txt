@@ -1,3 +1,5 @@
-treetrace1 = readTreeTrace("output/DQA_alpha05_posterior_run_1.trees", treetype="non-clock")
-treetrace2 = readTreeTrace("output/DQA_alpha05_posterior_run_2.trees", treetype="non-clock")
-map_tree1 = mapTree(treetrace1,"output/DQA_alpha05_posterior_run_1.tree", burnin=1000)
+treetrace1 = readTreeTrace("output/DQA_alpha5_posterior_run_1.trees", treetype="non-clock")
+treetrace2 = readTreeTrace("output/DQA_alpha5_posterior_run_2.trees", treetype="non-clock")
+map_tree1 = mapTree(treetrace1,"output/DQA_alpha5_posterior_run_1.tree", burnin=1000)
+
+map_tree2 = mapTree(treetrace2,"output/DQA_alpha5_posterior_run_2.tree", burnin=1000)
