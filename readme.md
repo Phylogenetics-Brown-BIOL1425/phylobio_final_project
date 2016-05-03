@@ -56,8 +56,9 @@ constructions for single MHC genes across both species and populations.
 
 ## Methods
 
-Instructions for analyses including code can be found in Instructions_LeporidsAnalysis.txt
-and Instructions_LepusAnalysis.txt, and scripts can be found in the folder scripts.
+Instructions for analyses including code can be found in [Instructions_LeporidsAnalysis.txt](https://github.com/kbcn/phylobio_final_project/blob/master/Instructions_LeporidsAnalysis.txt)
+and [Instructions_LepusAnalysis.txt](https://github.com/kbcn/phylobio_final_project/blob/master/Instructions_LepusAnalysis.txt),
+and scripts can be found in the folder [scripts](https://github.com/kbcn/phylobio_final_project/tree/master/scripts).
 
 To obtain DNA DQA sequences for leporids, I downloaded the Surridge et al. 2008 sequences
 from GenBank in a fasta file. To obtain DNA DQA sequences for *Lepus europaeus* that were
@@ -78,26 +79,28 @@ specified. For both the leporid and the L. europaeus datasets, the K80 model and
 GTR+G model were run; although GTR+G ranked low for the model fit, I was unable to
 incorporate gamma-distributed rate variation with the K80 model and thus the GTR+G run
 was a purely exploratory run to incorporate this parameter. All RAXML runs used 100
-bootstrap replicates.
+bootstrap replicates. A link to RAXML code is found here: [raxml_all](https://github.com/kbcn/phylobio_final_project/tree/master/scripts/raxml_all)
 
 RevBayes analyses were conducted using a K80 model with gamma-distributed rate 
 variation (alpha=0.5). Several preliminary RevBayes runs were conducted to explore 
 changing the alpha value and altering generation time, and scripts and data for these
 analyses are including in this repo. The generation times for the trees presented are
 100,000 (leporids) and 40,000 (lepus). Two independent RevBayes runs were conducted for 
-each dataset to compare topologies and posterior probabilities.
+each dataset to compare topologies and posterior probabilities. The code used to generate
+the leporid analyses is found here: [k80g3](https://github.com/kbcn/phylobio_final_project/blob/master/scripts/revbayes_leporids/k80g3.txt).
+The code is to generate the lepus analyses is found here: [k80g2_lepus](https://github.com/kbcn/phylobio_final_project/blob/master/scripts/revbayes_lepus/k80g2_Lepus.txt)
 
 Tree logs were inspected using Tracer v1.6.0 and trees were generated using 
 FigTree v1.4.2.
 
 ## Results
 
-Analyses output files are located in the folders modelgenerator_output, raxml_output, and
-revbayes_output.
+Analyses output files are located in the folders [raxml_output](https://github.com/kbcn/phylobio_final_project/tree/master/raxml_output)
+and [revbayes_output](https://github.com/kbcn/phylobio_final_project/tree/master/revbayes_output)
 
-![**Figure 1**](https://github.com/kbcn/phylobio_final_project/blob/master/trees/Leporids/DQA_Leporids_RAXML_K80.pdf)
+![**Figure 1**](https://github.com/kbcn/phylobio_final_project/blob/master/trees/Leporids/DQA_Leporids_RAXML_K80.png)
 shows phylogenetic relationships of leporid DQA exon 2 sequences using a
-maximum-likelihood analysis and the the K80 model of evolution. Bootstrap values are
+maximum-likelihood analysis and the K80 model of evolution. Bootstrap values are 
 indicated. Tree is rooted using human and sheep DQA sequences.
 
 ![**Figure 2**](https://github.com/kbcn/phylobio_final_project/blob/master/trees/Leporids/DQA_Leporids_RAXML_GTRG.png)
@@ -105,18 +108,18 @@ indicated. Tree is rooted using human and sheep DQA sequences.
 maximum-likelihood analysis and the the GTR+G model of evolution. Bootstrap values are 
 indicated. Tree is rooted using human and sheep DQA sequences.
 
-![**Figure 3**](https://github.com/kbcn/phylobio_final_project/blob/master/trees/Leporids/DQA_Leporids_RB1_K80g3.pdf)
+![**Figure 3**](https://github.com/kbcn/phylobio_final_project/blob/master/trees/Leporids/DQA_Leporids_RB1_K80g3.png)
 shows phylogenetic relationships of leporid DQA exon 2 sequences using bayesian 
 analysis of leporid DQA exon 2 sequence under the K80+G model of evolution. Bayesian
 posterior probabilities are shown. Tree is rooted using human and sheep DQA sequences.
 
-![**Figure 4**](https://github.com/kbcn/phylobio_final_project/blob/master/trees/Leporids/DQA_Leporids_RB2_K80g3.pdf)
+![**Figure 4**](https://github.com/kbcn/phylobio_final_project/blob/master/trees/Leporids/DQA_Leporids_RB2_K80g3.png)
 shows phylogenetic relationships of leporid DQA exon 2 sequences using bayesian 
 analysis of leporid DQA exon 2 sequence under the K80+G model of evolution. Bayesian
 posterior probabilities are shown. Tree is rooted using human and sheep DQA sequences.
 This tree displays a different topology than that generated in run 1 (Figure 3).
 
-![**Figure 5**](https://github.com/kbcn/phylobio_final_project/blob/master/trees/Leporids/DQA_Leporids_RB_K80g3_AllSupport.pdf)
+![**Figure 5**](https://github.com/kbcn/phylobio_final_project/blob/master/trees/Leporids/DQA_Leporids_RB_K80g3_AllSupport.png)
 shows phylogenetic relationships of leporid DQA exon 2 sequences using topology
 generated from a Bayesian analysis and displayed in Figure 3. Support values above 50 are
 displayed in the format of ML-GTRG/ML-K80/B1/B2 for clades that were generated across all
@@ -125,24 +128,29 @@ ML-K80 = Maximum-likelihood under K80 bootstrap values (Figure 1), B1 = RevBayes
 posterior probability (Figure 3), B2 = RevBayes run 2 posterior probability (Figure 4),
 NA = Node not present in this analysis. Tips are colored according to species identity.
 
-![**Figure 6**] shows phylogenetic relationships of *Lepus europaeus* DQA exon 2 sequences using a
+![**Figure 6**](https://github.com/kbcn/phylobio_final_project/blob/master/trees/Lepus_europaeus/DQA_Lepus_Raxml_K80.png)
+shows phylogenetic relationships of *Lepus europaeus* DQA exon 2 sequences using a
 maximum-likelihood analysis and the the K80 model of evolution. Bootstrap values are
 indicated. Tree is unrooted.
 
-![**Figure 7**] shows phylogenetic relationships of *Lepus europaeus* DQA exon 2 sequences using a
+![**Figure 7**](https://github.com/kbcn/phylobio_final_project/blob/master/trees/Lepus_europaeus/DQA_Lepus_Raxml_GTRG.png)
+shows phylogenetic relationships of *Lepus europaeus* DQA exon 2 sequences using a
 maximum-likelihood analysis and the the GTR+G model of evolution. Bootstrap values are 
 indicated. Tree is unrooted.
 
-![**Figure 8** shows phylogenetic relationships of *Lepus europaeus* exon 2 sequences using
+![**Figure 8**](https://github.com/kbcn/phylobio_final_project/blob/master/trees/Lepus_europaeus/DQA_Lepus_RB1_K80g2.png)
+shows phylogenetic relationships of *Lepus europaeus* exon 2 sequences using
 bayesian analysis of leporid DQA exon 2 sequence under the K80+G model of evolution. 
 Bayesian posterior probabilities are shown. Tree is unrooted.
 
-![**Figure 9** shows phylogenetic relationships of *Lepus europaeus* exon 2 sequences using
+![**Figure 9**](https://github.com/kbcn/phylobio_final_project/blob/master/trees/Lepus_europaeus/DQA_Lepus_RB2_K80g2.png)
+shows phylogenetic relationships of *Lepus europaeus* exon 2 sequences using
 bayesian analysis of leporid DQA exon 2 sequence under the K80+G model of evolution.
 Bayesian posterior probabilities are shown. Tree is unrooted. This tree displays a 
 different topology than that generated in run 1 (Figure 8).
 
-![**Figure 10** shows phylogenetic relationships of *Lepus europaeus* exon 2 sequences using
+![**Figure 10**](https://github.com/kbcn/phylobio_final_project/blob/master/trees/Lepus_europaeus/DQA_Lepus_RB1_K80g2_AllSupport_Locations.png)
+shows phylogenetic relationships of *Lepus europaeus* exon 2 sequences using
 topology generated from a Bayesian analysis and displayed in Figure 8.
 Support values above 50 are displayed in the format of ML-GTRG/ML-K80/B1/B2 for clades
 that were generated across all four analyses. ML-GTRG = Maximum-likelihood under 
