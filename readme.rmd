@@ -88,6 +88,7 @@ names(accessions)[4]="Red_list_status"
 names(accessions)[5]="Red_list_criteria"
 names(accessions)[6]="population_trend"
 names(accessions)
+dim(accessions)
 
 ```
 I then exported my accessions dataframe to a .csv file
@@ -96,19 +97,31 @@ write.csv(accessions,file = "accessions_salamandridae.csv")
 ```
 I removed T.vittatus sequence from x12s.fasta because it would not align (tried inputting the reverse complement without success).
 
+The tools I used were... 
 
-The tools I used were... See analysis files at (links to analysis files).
+See analysis files at (links to analysis files).
 
 Accession numbers for sequences were gathered from Pyron 2011
 mafft alignment
 raxml (starting from hydroid)
   justification in Pyron for ml method
-
-```{r}
-```
-
+  
 ## Results
 
+```{r}
+library(ape)
+library(caper)
+
+sala.concat.tree=read.tree("sala_data/concat.reduced_tree/RAxML_bestTree.concat.reduced_boot100")
+plot(sala.concat.tree,cex = 0.5)
+sala.concat.tree=clade.matrix(sala.concat.tree)
+ED_sala.concat=ed.calc(sala.concat.tree)
+ED_sala.concat=data.frame(ED_sala.concat$spp)
+ED_sala.concat=ED_sala.concat[order(ED_sala.concat[,1]),]
+dim()
+
+
+```
 The tree in Figure 1...
 
 ## Discussion
