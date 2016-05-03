@@ -1,0 +1,2 @@
+readDiscreteCharacterData("../data/Biogeographical_Matrix.nex")
+q()

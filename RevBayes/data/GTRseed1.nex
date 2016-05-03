@@ -1,0 +1,92 @@
+#NEXUS
+
+begin taxa;
+     dimensions ntax = 38;
+     taxlabels
+     
+     ancestor
+     Isodectes_obtusum
+     Acroplous_vorax
+     Dvinosaurus_primus
+     Tupilakosaurus_spp
+     Trimerorhachis_spp
+     Neldasaurus_wrightae
+     Tersomius_spp
+     Trematopidae
+     Dissorophus_spp
+     Eryops_spp
+     Zatrachydidae
+     Sclerocephalus_spp
+     Cheliderpeton_latirostre
+     Archegosaurus_decheni
+     Platyoposaurus_stuckenbergi
+     Konzhukovia_vetusta
+     Peltobatrachus_pustulatus
+     Rhinesuchidae
+     Lydekkerina_huxleyi
+     Luzocephalus_spp
+     Lapillopsis_nana
+     Capitosauridae
+     Mastodonsaurus_giganteus
+     Benthosuchus_sushkini
+     Thoosuchus_jakovlevi
+     Trematosauridae
+     Almasaurus_habbazi
+     Buettneria_perfecta
+     Laidleria_gracilis
+     Plagiosauridae
+     Rhytidosteidae
+     Xenobrachyops_allos
+     Batrachosuchus_spp
+     Siderops_kehli
+     Keratobrachyops_australis
+     Pelorocephalus_spp
+     Undescribed_genus
+     ;
+end;
+
+begin trees;
+     translate
+     
+        0  ancestor,
+        1  Isodectes_obtusum,
+        2  Acroplous_vorax,
+        3  Dvinosaurus_primus,
+        4  Tupilakosaurus_spp,
+        5  Trimerorhachis_spp,
+        6  Neldasaurus_wrightae,
+        7  Tersomius_spp,
+        8  Trematopidae,
+        9  Dissorophus_spp,
+       10  Eryops_spp,
+       11  Zatrachydidae,
+       12  Sclerocephalus_spp,
+       13  Cheliderpeton_latirostre,
+       14  Archegosaurus_decheni,
+       15  Platyoposaurus_stuckenbergi,
+       16  Konzhukovia_vetusta,
+       17  Peltobatrachus_pustulatus,
+       18  Rhinesuchidae,
+       19  Lydekkerina_huxleyi,
+       20  Luzocephalus_spp,
+       21  Lapillopsis_nana,
+       22  Capitosauridae,
+       23  Mastodonsaurus_giganteus,
+       24  Benthosuchus_sushkini,
+       25  Thoosuchus_jakovlevi,
+       26  Trematosauridae,
+       27  Almasaurus_habbazi,
+       28  Buettneria_perfecta,
+       29  Laidleria_gracilis,
+       30  Plagiosauridae,
+       31  Rhytidosteidae,
+       32  Xenobrachyops_allos,
+       33  Batrachosuchus_spp,
+       34  Siderops_kehli,
+       35  Keratobrachyops_australis,
+       36  Pelorocephalus_spp,
+       37  Undescribed_genus
+       ;
+       
+       TREE * UNTITLED = [&R] (((9:0.040003,(8:0.05965,7:0.13172):0.008544):0.163607,(((((14:0.0,(15:0.023486,16:0.112416):0.036465):0.030406,((((20:0.119653,(21:0.261265,19:0.0):0.0):0.111766,(((((28:0.0,27:0.162294):0.117354,((30:0.186624,29:0.013197):0.141742,(31:0.120592,(35:0.015893,(36:0.01682,((32:0.095204,(33:0.061609,(37:0.056311,(4:0.0,(((6:0.087912,5:0.0):0.583345,3:0.0):0.14402,(2:0.0,1:0.101395):0.172002):0.097147):0.023435):0.204063):0.006602):0.184111,34:0.001723):0.041637):0.088763):0.094914):0.108582):0.05273):0.110079,23:0.034286):0.08136,22:0.0):0.016082,((25:0.0,26:0.051508):0.155592,24:0.0):0.015636):0.005693):0.310247,18:0.0):0.199018,17:0.221818):0.085574):0.066919,(12:0.028896,13:0.041983):0.036133):0.535108,10:0.0):0.048336,11:0.06153):0.006122):0.182333,0:0.182333);
+end;

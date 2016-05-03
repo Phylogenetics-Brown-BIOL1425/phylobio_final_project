@@ -1,0 +1,176 @@
+# source("/Users/mlandis/projects/biogeo_dating/code/morph_dag.Rev")
+
+############
+# settings #
+############
+
+### JGS - Read in the character data matrix and the GTR tree (seed 1)
+
+# io
+d_morph = readDiscreteCharacterData("data/Temnospondyl_Characters.nex")
+tree <- readTrees("data/GTRseed1.nex")[1]
+
+### JGS - Define some useful quantities as constant nodes.
+
+# morph evol
+n_morph_sites    <- d_morph.nchar()
+
+### JGS - not every character has the same number of possible states
+
+n_max_states     <- 4
+
+### JGS - Set move and monitor indices = 0
+
+mvi = 0
+mni = 0
+
+### JGS - There are 2n - 1 branches in a rooted tree
+
+n_species <- d_morph.ntaxa() 
+
+### Weirdly there seem to be 2n-2 branches in my tree
+
+n_branches_morph = 2 * n_species - 2
+
+###############
+# morph model #
+###############
+
+
+############################################
+# Across character rate variation (+Gamma) #
+############################################
+
+# all characters share base site heterogeneity
+alpha_morph_gr ~ dnUnif(0, 50)
+alpha_morph_gr.setValue(5)
+gr_morph := fnDiscretizeGamma(alpha_morph_gr, alpha_morph_gr, 4, false)
+mv[mvi++] = mvScale(alpha_morph_gr, tune=true, weight=2)
+
+
+################
+# Branch-rates #
+################
+
+### JGS - Set up a molecular clock to infer branch times
+
+# create a global base clock rate
+clock_morph_base ~ dnExp(10)
+clock_morph_base.setValue(0.1)
+mv[mvi++] = mvScale(clock_morph_base, weight=3)
+
+# each block of characters has a local clock rate
+# that is the product of the global clock rate and a
+# per-block rate multiplier with mean one
+for (i in 1:n_max_states) {
+    if (i < 3) {
+        clock_morph_mult[i] <- abs(1.)
+    } else {
+        clock_morph_mult[i] ~ dnGamma(2,2) 
+        mv[mvi++] = mvScale(clock_morph_mult[i], weight=2)
+    }
+    clock_morph[i] := clock_morph_base * clock_morph_mult[i]
+}
+
+# Branch rate heterogeneity (relaxed morphological clock) is 
+# modeled with a discretized gamma distribution. This improves
+# MCMC mixing, but is a little more complicated conceptually.
+
+# constrain variance of distribution of relaxed clocks
+igr_alpha_morph ~ dnExp(1.)
+mv[mvi++] = mvScale(igr_alpha_morph, weight=5)
+
+# branch rates draw from discretized Lognormal (k=16)
+rate_distribution_morph = dnGamma(igr_alpha_morph, igr_alpha_morph)
+num_rate_cat_morph <- 16
+rate_categories_morph := fnDiscretizeDistribution( rate_distribution_morph, num_rate_cat_morph )
+rate_probs_morph <- simplex(rep(1, num_rate_cat_morph))
+step_size_morph = round(num_rate_cat_morph/8)
+
+# Ultimately, branch rates are computed in the following way:
+#   
+#   r_ij = r_0 * a_i * b_j
+#   
+# where r_0 is the global base clock rate
+#       a_i is the per-character-block rate multiplier (mean 1)
+#       b_j is the per-branch rate multiplier (mean 1)
+#
+# this means r_ij has mean equal to the mean of r_0, the global
+# base clock rate.
+
+for (i in 1:n_branches_morph) {
+    br_morph_clock_mult[i] ~ dnMixture(rate_categories_morph, rate_probs_morph)
+    br_morph_clock_mult[i].setValue( rate_categories_morph[8] )
+    mv[mvi++] = mvMixtureAllocation(br_morph_clock_mult[i], weight=1, delta=step_size_morph)
+
+    for (j in 1:n_max_states) {
+        if (j == 1) {
+            br_morph_clock[j][i] <- abs(1.)
+        } else {
+            br_morph_clock[j][i] := br_morph_clock_mult[i] * clock_morph[j]
+        }
+    }
+}
+
+
+########
+# CTMC #
+########
+
+idx = 1
+for (i in 2:n_max_states) {
+    # make local tmp copy of data
+	d_morph_bystate[i] <- d_morph
+
+    # only keep character blocks with state space equal to size i
+	d_morph_bystate[i].setNumStatesPartition(i)
+
+    # get number of characters per character size wth i-sized states
+	nc = d_morph_bystate[i].nchar()
+
+    # for non-empty character blocks
+	if (nc > 0) {
+        
+        # make i-by-i rate matrix
+		q[idx] <- fnJC(i)
+
+        # create model of evolution for the character block
+		m_morph[idx] ~ dnPhyloCTMC( tree=tree, 
+                                    Q=q[idx],
+                                    nSites=nc,
+                                    branchRates=br_morph_clock[i],
+                                    siteRates=gr_morph,
+                                    type="Standard")
+
+        # attach the data
+		m_morph[idx].clamp(d_morph_bystate[i])
+
+        # increment counter
+		idx = idx + 1
+	}
+}
+
+##################
+# Finalize the integrated model and set up MCMC
+##################
+
+#Anchor the model to the vector of matrices (arbitrarily)
+mymodel = model(q)
+
+#Create monitors for the model, the tree, and the global clock rate
+monitors[++mni] = mnModel(filename="output/Temnospondyls_monitor.log",printgen=10)
+monitors[++mni] = mnFile(tree, filename="output/Temnospondyls_tree.trees", printgen=10)
+monitors[++mni] = mnScreen(clock_morph_base, printgen=1000)
+
+# Now set up the MCMC.
+mymcmc = mcmc(mymodel, monitors, mv)
+
+# pre-burnin to tune the proposals
+mymcmc.burnin(generations=5000,tuningInterval=200)
+
+# run the MCMC
+mymcmc.run(generations=10000)
+
+treetrace = readTreeTrace("output/Temnospondyls_tree.trees")
+treetrace.summarize()
+mapTree(treetrace,"output/Temnospondyls_tree_MAP.tre")
