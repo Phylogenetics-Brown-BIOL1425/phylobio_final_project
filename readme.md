@@ -4,12 +4,13 @@
 
 ## Introduction and Goals
 
-GPT2 is a chromosomal gene that encodes glutamic pyruvate transaminase 2. This protein is expressed in the mitochondria of humans and is used to convert alanine to glutatamate. GPT2 also has a sister gene GPT which is expressed in the cytoplasm. These proteins are sometimes referred to as alanine aminotransferase in reference to the reverse reaction. 
+GPT2 is a chromosomal gene that encodes glutamic pyruvate transaminase 2. This protein is expressed in the mitochondria of humans and is used to convert alanine to glutatamate. GPT2 also has a sister gene GPT which is expressed in the cytoplasm. These proteins are sometimes referred to as alanine aminotransferase in reference to the reverse reaction. Loss of function of this protein has recently been linked to developmental encephalopathy. 
 
 For my project, my goal would be to construct a phylogeny of the genes from a number of species and track whether the genes that are cytoplasmic and mitochondrial form seperate clades. This could be used to answer the question as to whether the localizations developed independently or were present in a most recent common ancestor. 
+
 I propose the following methods. First, I will reconstruct the tree using GPT2 and GPT data seperately. I will also reconstruct the tree using a combined sequence. This method of tree reconstruction will be similar to the process outlined in Cartwright et al 2008. I also think that it would be interesting to perform a similar analyis using protein sequence data as opposed to the genes. This kind of analysis is discussed in Rokas 2011. 
 
-I plan to use sequence data from NCBI and Homologene. I will also use Homologene in order to identify the homologs of GPT and GPT2. The use of Homologene in constructing phylogenies is discussed in Altenhoff et al (2009). I also plan on using gene databases and literature searches to determine the expression location of the proteins. 
+I plan to use sequence data from NCBI and Homologene (NCBI Handbook). I will also use Homologene in order to identify the homologs of GPT and GPT2. The use of Homologene in constructing phylogenies is discussed in Altenhoff et al (2009). I also plan on using gene databases and literature searches to determine the expression location of the proteins. 
 
 ## Methods
 
@@ -88,7 +89,7 @@ Figure 4 shows the predicted trees for both when GPT and GPT2 data are aligned. 
 
 ## Discussion
 
-After having downloaded all of the data and performed all the phylogenetic analyses, I went back to gather data on the localization of these proteins in each species. Unfortunately, at this point, I discovered that for the majority of the species, the cellular localizations of these proteins have not been characterized. In particular, I was able to find evidence for the cytosolic localization for GPT in humans, mice, and rats. These species were also consistent with the mitochondrial localization of GPT2. For the rest of the species, there was no data suggesting one way or the other. 
+After having downloaded all of the data and performed all the phylogenetic analyses, I went back to gather data on the localization of these proteins in each species. Unfortunately, at this point, I discovered that for the majority of the species, the cellular localizations of these proteins have not been characterized. In particular, I was able to find evidence for the cytosolic localization for GPT in humans, mice, and rats using RefSeq. These species were also consistent with the mitochondrial localization of GPT2. For the rest of the species, there was no data suggesting one way or the other. 
 
 This limitation on trait data limited the depth of the analysis to some degree. However, a few trends were still evident from the data that was gathered. As a whole the trees produced when comparing the two genes and the concatenated results were highly similar. They also generally mapped the accepted relationships between species. For example, the two rodents were always grouped together as were humans, chimpanzees, and monkeys. These groups always featured high bootstrap values. There was more difficulty in resolving the placements of zebrafish and frogs. These two were always the most distantly related other than yeast but their order often switched. 
 
@@ -118,3 +119,7 @@ Schuchert, P., & Collins, A. G. (2008). Phylogenetics of Hydroidolina
 > Altenhoff, A. and Dessimoz, C. Phylogenetic and Functional Assessment of Orthologs Inference Projects and Methods. (2009).
 -PLoS Computational Biology. 5(1): e1000262. 
 [doi: 10.1371/journal.pcbi.1000262]
+
+>The NCBI handbook [Internet]. Bethesda (MD): National Library of Medicine (US), National Center for Biotechnology Information; 2002 Oct. Chapter 18, The Reference Sequence (RefSeq) Project. Available from http://www.ncbi.nlm.nih.gov/books/NBK21091/
+
+>Celis, K. et al. (2015). Loss of function mutation in glutamic pyruvate transaminase 2 (GPT2) causes developmental encephalopathy. Journal of Inherited Metabolic Disease. [doi: 10.1007/s10545-015-9824-x]
