@@ -64,6 +64,24 @@ This image comes from raxml with the GTR_gamma model, on all the sequences I fou
 Unfortunately, very little sequence data is actually available for the gene in question, though in the process of searching for more, it is possible that
 I have elucidated some clues into the function of some uncharacterized drosophila genes, as many had significant alignment to the squid gene I was searching for.
 
+I ran with multiple different tree-building programs, alignment parameters, and models. The table below summarizes some of the key features of the trees
+that I use in my analysis of the gene duplication event.
+
+![alt tag](https://github.com/DanielSeidman/phylobio_final_project/blob/master/table_results.png)
+
+For reference, with regards to the alignment parameters: 
+non-affine penalties were 1 for extension and 0 for opening.
+Harsh penalties were 5 for extension and 10 for opening.
+Default penalties were 0.123 for extension and 1.53 for opening.
+Custom penalties were .5 for extension and 1.5 for opening. I thought it might be reasonable to be harsher on extensions than the default, since we
+were dealing with mRNA sequences which were likely post-splicing.
+
+
+The placement of the clade Sepia within the tree, and the organisms within the clade I am attempting to characterize are relatively consistent throughout
+the trees I have created.
+
+I elected to favor revBayes, as the boostrap values coming from raxml were extremely low, possibly due to how small the fraction of the aligned sequences
+which actually contained data was compared to the total number of aligned sites.
 
 ## Discussion
 
@@ -88,6 +106,10 @@ All in all, we need more sequences of this mRNA in squid to be able to confirm o
 of squid camouflage techniques, especially transcripts found in skin, of which there are very few. Until that happens, these theories will just have to remain
 speculation.
 
+However, I recently learned that Doryteuthis pealei is known for having a very high rate of post-transcriptional RNA site editing (Rosenthal 2015), which could very easily
+invalidate the results found in this project. As such, the null hypothesis is not rejected, and without more data, we are forced to assume that there is no
+real connection between what may or may not even be a gene duplication event.
+
 
 ## References
 
@@ -110,3 +132,6 @@ http://bmcevolbiol.biomedcentral.com/articles/10.1186/1471-2148-12-129
 
 Mäthger LM, Roberts SB, Hanlon RT. 2010. Evicence for distributed light sensing in the skin of cuttlefish, Sepia officinalis. Biology Letters. 
 http://www.ncbi.nlm.nih.gov/pubmed/20392722
+
+Rosenthall JJC. 2015. The emerging role of RNA editing in plasticity. The Journal of Experimental Biology. 218, 1812-1821 doi:10.1242/jeb.119065
+http://jeb.biologists.org/content/jexbio/218/12/1812.full.pdf

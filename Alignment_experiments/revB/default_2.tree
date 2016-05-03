@@ -1,0 +1,24 @@
+#NEXUS
+
+	Begin taxa;
+	Dimensions ntax=13;
+	Taxlabels
+		Doryteuthis_pealeii_KR107041_1
+		Doryteuthis_pealeii_KR107042_1
+		Euprymna_scolopes_EU344783_1
+		Euprymna_scolopes_EU344784_1
+		Leptochiton_asellus_KU193721_1
+		Lingula_anatina_PREDICTED_XM_013553035_1
+		Lingula_anatina_PREDICTED_XM_013553036_1
+		Loligo_forbesi_L10289_1
+		Loligo_pealei_AF521583_2
+		Octopus_bimaculoides_PREDICTED_XM_014929061_1
+		Octopus_bimaculoides_PREDICTED_XM_014929062_1
+		Octopus_vulgaris_AB025782_1
+		Sepia_officinalis_DQ413186_1
+		;
+End;
+
+Begin trees;
+tree TREE1 = [&R](((((((Doryteuthis_pealeii_KR107041_1[&index=12,posterior=1.000000,ccp=1.000000]:0.001303,Loligo_pealei_AF521583_2[&index=11,posterior=1.000000,ccp=1.000000]:0.001290)[&index=13,posterior=0.819727,ccp=0.819727,height_95%_HPD={nan,0.00831}]:0.004342,Loligo_forbesi_L10289_1[&index=10,posterior=1.000000,ccp=0.819727]:0.082127)[&index=14,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.086578}]:0.070502,Doryteuthis_pealeii_KR107042_1[&index=9,posterior=1.000000,ccp=1.000000]:0.002551)[&index=15,posterior=1.000000,ccp=0.995668,height_95%_HPD={nan,0.071324}]:0.053238,((Euprymna_scolopes_EU344783_1[&index=8,posterior=1.000000,ccp=1.000000]:0.038070,Euprymna_scolopes_EU344784_1[&index=7,posterior=1.000000,ccp=1.000000]:0.001724)[&index=16,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.157625}]:0.133455,Sepia_officinalis_DQ413186_1[&index=6,posterior=1.000000,ccp=1.000000]:0.092891)[&index=17,posterior=0.995668,ccp=0.995668,height_95%_HPD={nan,0.061235}]:0.042981)[&index=18,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.186626}]:0.150682,((Octopus_bimaculoides_PREDICTED_XM_014929061_1[&index=5,posterior=1.000000,ccp=1.000000]:0.051977,Octopus_bimaculoides_PREDICTED_XM_014929062_1[&index=4,posterior=1.000000,ccp=1.000000]:0.001186)[&index=19,posterior=0.978674,ccp=0.978674,height_95%_HPD={nan,0.017456}]:0.010514,Octopus_vulgaris_AB025782_1[&index=3,posterior=1.000000,ccp=0.978674]:0.048465)[&index=20,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.184295}]:0.147985)[&index=21,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.371122}]:0.297689,Leptochiton_asellus_KU193721_1[&index=2,posterior=1.000000,ccp=1.000000]:0.839921)[&index=22,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.579875}]:0.491150,Lingula_anatina_PREDICTED_XM_013553035_1[&index=1,posterior=1.000000,ccp=1.000000]:0.002989,Lingula_anatina_PREDICTED_XM_013553036_1[&index=0,posterior=1.000000,ccp=1.000000]:0.005548)[&index=23,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,-1}]:0.000000;
+End;
