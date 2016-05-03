@@ -53,31 +53,31 @@ We used phylogenetic independant contrast to assess whether fourth trochanter po
 
 Figure 1 shows the composite Dinosauria tree before time calibration. It shows a deep divergence between Ornithischia and Saurischia, reflecting paleontological evidence that the two clades diverged shortly after the evolution of Dinosauria in the mid-Triassic period.
 
-![GitHub Logo](Figure 1.png)
+![GitHub Logo](Figure_1.png)
 
 **Figure 1.** Non-time-calibrated composite Dinosauria phylogeny. 
 
 Figure 2 shows the time-calibrated composite Dinosauria tree. The deep divergence between Saurischia and Ornithischia is preserved, and reconstructed as occurring just prior to the evolution of the earliest known dinosaurs (the Saurischians *Eoraptor*, *Staurikosaurus*, and *Herrarasaurus*). Notably, the Ornithischian half of the tree shows two sections of very short branch lengths, which make the tree seem to have two large polytomies. The first occurs between *Hypsilophodon* and *Dryosaurus*, and the second between *Bactrosaurus* and *Shantungosaurus*. These regions seem to indicate bursts of diversification among Ornithischia, but are more likely to be artifacts of incomplete taxon sampling or of the methods used to time-calibrate the phylogeny. They represent interesting areas of potential future research.
 
-![GitHub Logo](Figure 2.png)
+![GitHub Logo](Figure_2.png)
 
 **Figure 2.** Time-calibrated composite Dinosauria phylogeny.
 
 Figures 3 and 4 show the non-time-calibrated and time-calibrated composite Saurischia phylogenies, permitting a more detailed analysis of the relationships between the taxa. Branch lengths appear similar to those in the composite Dinosauria phylogeny, indicating that the methods used to scale the branches to time are insensitive to the size of the tree. Figures 5 and 6 show non-time-calibrated and time-calibrated composite Ornithischia phylogenies. The two "comb”-like regions from the calibrated Dinosauria tree are visible on the latter, again validating our earlier phylogeny.
 
-![GitHub Logo](Figure 3.png)
+![GitHub Logo](Figure_3.png)
 
 **Figure 3.** Non-time-calibrated composite Saurischian phylogeny.
 
-![GitHub Logo](Figure 4.png)
+![GitHub Logo](Figure_4.png)
 
 **Figure 4.** Time-calibrated composite Saurischian phylogeny.
 
-![GitHub Logo](Figure 5.png)
+![GitHub Logo](Figure_5.png)
 
 **Figure 5.** Non-time-calibrated composite Ornithischian phylogeny.
 
-![GitHub Logo](Figure 6.png)
+![GitHub Logo](Figure_6.png)
 
 **Figure 6.** Time-calibrated composite Ornithischian phylogeny.
 
@@ -85,7 +85,7 @@ Figures 3 and 4 show the non-time-calibrated and time-calibrated composite Sauri
 
 Figure 7 shows the contour map obtained from ancestral state reconstruction using our time-calibrated composite Dinosauria phylogeny. As the color becomes warmer (moves from blue to red), the position of the fourth trochanter moves more distally from the head of the femur. The contour map illustrates that a major shift in fourth trochanter position occurred during the evolution of Ornithischia, before the first included ornithischian taxon (*Heterodontosaurus*) diverged from the rest of the clade. This places the acquisition of the trait in the late Triassic. After the acquisition of distal fourth trochanters, no ornithischians revert to the primitive condition, although the feature does occasionally get more exaggerated.
 
-![GitHub Logo](Figure 7.png)
+![GitHub Logo](Figure_7.png)
 
 **Figure 7.** Contour Map of time-calibrated composite Dinosauria phylogeny. More distal placement of the fourth trochanter is represented by warmer colors.
 
@@ -95,7 +95,7 @@ A significant distally-directed movement of the fourth trochanter is seen in the
 
 As described earlier, only a handful of Saurischian taxa reach fourth trochanter positions as distal as those seen in Ornithischians. As shown in Figure 8, the two clades have little overlap. Saurischian taxa, as a rule, generally seem to have fourth trochanters more proximal than ornithischian taxa.
 
-![GitHub Logo](Figure 8.png)
+![GitHub Logo](Figure_8.png)
 
 **Figure 8.** Box-plot plotting the range in position of the fourth trochanter in the Saurischian and Ornithischian taxa. The upper end of the Saurischian box-plot whisker can be seen to slightly overlap the values of the lower end of the Ornithischian box-plot whisker. It can therefore be seen that there is very little overlap in fourth trochanter position within the Ornithischians and Saurischians, with Ornithischians generally showing more distal fourth trochanter positions than Saurischians.
 
@@ -128,7 +128,7 @@ Regression of phylogenetic independant contrasts for the three phylogenies yield
 
 Only the regression for Dinosauria as a whole yielded a significant result (p = 0.0355); within each of the clades, increasing body mass was not associated with a significant shift in fourth trochanter position.  
 
-![GitHub Logo](Figure 9.png)
+![GitHub Logo](Figure_9.png)
 
 **Figure 9.** Phylogenetic independent contrasts for the composite Dinosauria phylogeny between fourth trochanter position and body mass, and associated regression curve.
 
