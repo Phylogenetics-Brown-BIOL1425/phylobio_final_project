@@ -7,6 +7,9 @@ Immunogenetics 60:515-525.
 
 ## Step One: Data Alignment
 
+See [data folder](https://github.com/kbcn/phylobio_final_project/tree/master/data) 
+for data files.
+
 `mafft DQA_Outgroup2.fasta > DQA_Outgroup2.aligned.fasta`
 
 Open DQA_Outgroup.aligned.fasta in Mesquite

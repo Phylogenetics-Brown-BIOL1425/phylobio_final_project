@@ -12,6 +12,9 @@ europaeus). Molecular Ecology 18:4631-4649.
 
 ## Step One: Data Alignment
 
+See [data folder](https://github.com/kbcn/phylobio_final_project/tree/master/data) 
+for data files.
+
 `mafft DQA_Lepus.fasta > DQA_Lepus.aligned.fasta`
 
 Open DQA_Lepus.aligned.fasta in Mesquite
