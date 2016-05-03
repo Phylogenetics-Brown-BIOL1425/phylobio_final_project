@@ -1,0 +1,68 @@
+#NEXUS
+
+	Begin taxa;
+	Dimensions ntax=57;
+	Taxlabels
+		Homo_sapiens_HLA_DQA1
+		Lepus_californicus_Lecl_DQA_01
+		Lepus_capensis_Lecp_DQA_01
+		Lepus_capensis_Lecp_DQA_02
+		Lepus_capensis_Lecp_DQA_03
+		Lepus_europaeus_Leeu_DQA_01
+		Lepus_europaeus_Leeu_DQA_02
+		Lepus_europaeus_Leeu_DQA_03
+		Lepus_europaeus_Leeu_DQA_04
+		Lepus_europaeus_Leeu_DQA_05
+		Lepus_granatensis_Legr_DQA_01
+		Lepus_granatensis_Legr_DQA_02
+		Lepus_granatensis_Legr_DQA_03
+		Lepus_saxatilis_Lesa_DQA_01
+		Lepus_saxatilis_Lesa_DQA_02
+		Lepus_timidus_Leti_DQA_01
+		Lepus_timidus_Leti_DQA_02
+		Lepus_timidus_Leti_DQA_03
+		Lepus_timidus_Leti_DQA_04
+		Lepus_timidus_Leti_DQA_05
+		Lepus_townsendii_Leto_DQA_01
+		Orcytolagus_cuniculus_Orcu_DQA_01
+		Orcytolagus_cuniculus_Orcu_DQA_05
+		Orcytolagus_cuniculus_Orcu_DQA_09
+		Orcytolagus_cuniculus_Orcu_DQA_10
+		Orcytolagus_cuniculus_Orcu_DQA_12
+		Orcytolagus_cuniculus_Orcu_DQA_19
+		Oryctolagus_cuniculus_Orcu_DQA_02
+		Oryctolagus_cuniculus_Orcu_DQA_03
+		Oryctolagus_cuniculus_Orcu_DQA_04
+		Oryctolagus_cuniculus_Orcu_DQA_06
+		Oryctolagus_cuniculus_Orcu_DQA_07
+		Oryctolagus_cuniculus_Orcu_DQA_08_
+		Oryctolagus_cuniculus_Orcu_DQA_11
+		Oryctolagus_cuniculus_Orcu_DQA_13
+		Oryctolagus_cuniculus_Orcu_DQA_14
+		Oryctolagus_cuniculus_Orcu_DQA_15
+		Oryctolagus_cuniculus_Orcu_DQA_16
+		Oryctolagus_cuniculus_Orcu_DQA_17
+		Oryctolagus_cuniculus_Orcu_DQA_18
+		Ovis_aries_OLA_DQA2_0701
+		Pronolagus_crassicaudatus_Prcr_DQA_01
+		Pronolagus_rupestris_Prru_DQA_01
+		Sylvilagus_aquaticus_Syaq_DQA_01
+		Sylvilagus_audubonii_Syau_DQA_01
+		Sylvilagus_brasiliensis_Sybr_DQA_01
+		Sylvilagus_brasiliensis_Sybr_DQA_02
+		Sylvilagus_brasiliensis_Sybr_DQA_03
+		Sylvilagus_brasiliensis_Sybr_DQA_04
+		Sylvilagus_brasiliensis_Sybr_DQA_05
+		Sylvilagus_floridanus_Syfl_DQA_01
+		Sylvilagus_floridanus_Syfl_DQA_02
+		Sylvilagus_floridanus_Syfl_DQA_03
+		Sylvilagus_floridanus_Syfl_DQA_04
+		Sylvilagus_palustris_Sypa_DQA_02
+		Sylvilagus_transitionalis_Sytr_DQA_01
+		Sylvilagus_transitionalis_Sytr_DQA_02
+		;
+End;
+
+Begin trees;
+tree TREE1 = [&R](((((((((((((((((((Orcytolagus_cuniculus_Orcu_DQA_01[&index=56]:0.013463,Oryctolagus_cuniculus_Orcu_DQA_18[&index=55]:0.039382)[&index=57,posterior=0.318936,height_95%_HPD={5.6100,0.0385}]:0.012711,Orcytolagus_cuniculus_Orcu_DQA_19[&index=54]:0.011894)[&index=58,posterior=1.000000,height_95%_HPD={0.0059,0.1572}]:0.085521,Lepus_timidus_Leti_DQA_05[&index=53]:0.080466)[&index=59,posterior=0.210358,height_95%_HPD={3.3100,0.0724}]:0.025213,Lepus_granatensis_Legr_DQA_03[&index=52]:0.030582)[&index=60,posterior=0.215557,height_95%_HPD={0.0002,0.0543}]:0.020872,Lepus_capensis_Lecp_DQA_03[&index=51]:0.017016)[&index=61,posterior=1.000000,height_95%_HPD={0.0010,0.1207}]:0.062296,(((Sylvilagus_brasiliensis_Sybr_DQA_05[&index=50]:0.013078,Sylvilagus_transitionalis_Sytr_DQA_01[&index=49]:0.012214)[&index=62,posterior=0.965807,height_95%_HPD={7.3100,0.0629}]:0.026253,Sylvilagus_transitionalis_Sytr_DQA_02[&index=48]:0.012777)[&index=63,posterior=1.000000,height_95%_HPD={0.0077,0.1366}]:0.072006,Lepus_europaeus_Leeu_DQA_05[&index=47]:0.088116)[&index=64,posterior=0.089582,height_95%_HPD={2.2099,0.0519}]:0.018814)[&index=65,posterior=0.421916,height_95%_HPD={0.0002,0.1251}]:0.057091,(Lepus_europaeus_Leeu_DQA_04[&index=46]:0.066601,Sylvilagus_brasiliensis_Sybr_DQA_04[&index=45]:0.070009)[&index=66,posterior=1.000000,height_95%_HPD={0.0285,0.2681}]:0.161324)[&index=67,posterior=0.148770,height_95%_HPD={0.0006,0.1016}]:0.041669,(Pronolagus_crassicaudatus_Prcr_DQA_01[&index=44]:0.141591,Sylvilagus_floridanus_Syfl_DQA_04[&index=43]:0.426390)[&index=68,posterior=0.037592,height_95%_HPD={0.0015,0.0904}]:0.040723)[&index=69,posterior=1.000000,height_95%_HPD={0.0094,0.2556}]:0.140539,(Homo_sapiens_HLA_DQA1[&index=42]:0.449097,Ovis_aries_OLA_DQA2_0701[&index=41]:0.652296)[&index=70,posterior=0.995801,height_95%_HPD={0.0110,0.3191}]:0.176110)[&index=71,posterior=0.713057,height_95%_HPD={2.2099,0.1664}]:0.078700,(Sylvilagus_brasiliensis_Sybr_DQA_01[&index=40]:0.016399,Sylvilagus_floridanus_Syfl_DQA_01[&index=39]:0.062659)[&index=72,posterior=1.000000,height_95%_HPD={0.0475,0.3445}]:0.219903)[&index=73,posterior=0.397520,height_95%_HPD={3.4100,0.1129}]:0.045940,((((Lepus_californicus_Lecl_DQA_01[&index=38]:0.012099,Lepus_granatensis_Legr_DQA_01[&index=37]:0.012790)[&index=74,posterior=0.328334,height_95%_HPD={3.1e-0,0.0374}]:0.012519,Lepus_europaeus_Leeu_DQA_01[&index=36]:0.013420)[&index=75,posterior=1.000000,height_95%_HPD={0.0033,0.1086}]:0.051176,(Sylvilagus_brasiliensis_Sybr_DQA_02[&index=35]:0.024505,Sylvilagus_floridanus_Syfl_DQA_02[&index=34]:0.042415)[&index=76,posterior=0.955609,height_95%_HPD={0.0008,0.1166}]:0.055221)[&index=77,posterior=0.570086,height_95%_HPD={0.0007,0.1048}]:0.047346,Lepus_capensis_Lecp_DQA_02[&index=33]:0.037407)[&index=78,posterior=0.789442,height_95%_HPD={0.0004,0.1113}]:0.050145)[&index=79,posterior=0.414317,height_95%_HPD={4.3100,0.1049}]:0.043341,((((((Oryctolagus_cuniculus_Orcu_DQA_06[&index=32]:0.025905,Oryctolagus_cuniculus_Orcu_DQA_08_[&index=31]:0.026284)[&index=80,posterior=0.448310,height_95%_HPD={2.1099,0.0542}]:0.018652,Oryctolagus_cuniculus_Orcu_DQA_07[&index=30]:0.015435)[&index=81,posterior=0.027195,height_95%_HPD={3.1e-0,0.0227}]:0.006926,Orcytolagus_cuniculus_Orcu_DQA_05[&index=29]:0.041710)[&index=82,posterior=1.000000,height_95%_HPD={0.0070,0.1541}]:0.080665,(Sylvilagus_brasiliensis_Sybr_DQA_03[&index=28]:0.039562,Sylvilagus_floridanus_Syfl_DQA_03[&index=27]:0.168240)[&index=83,posterior=0.946211,height_95%_HPD={0.0014,0.1017}]:0.045162)[&index=84,posterior=0.991602,height_95%_HPD={0.0006,0.1118}]:0.052833,Lepus_granatensis_Legr_DQA_02[&index=26]:0.031190)[&index=85,posterior=0.384123,height_95%_HPD={0.0001,0.0819}]:0.035838,Lepus_saxatilis_Lesa_DQA_01[&index=25]:0.018112)[&index=86,posterior=0.211358,height_95%_HPD={0.0003,0.0701}]:0.026820)[&index=87,posterior=0.022396,height_95%_HPD={0.0013,0.0458}]:0.018171,Sylvilagus_aquaticus_Syaq_DQA_01[&index=24]:0.104283)[&index=88,posterior=0.153569,height_95%_HPD={0.0006,0.0672}]:0.027521,(Lepus_capensis_Lecp_DQA_01[&index=23]:0.028291,Lepus_timidus_Leti_DQA_01[&index=22]:0.027076)[&index=89,posterior=0.901620,height_95%_HPD={6.8100,0.0646}]:0.026327)[&index=90,posterior=0.022795,height_95%_HPD={0.0001,0.0310}]:0.011276,(((Orcytolagus_cuniculus_Orcu_DQA_09[&index=21]:0.264003,Orcytolagus_cuniculus_Orcu_DQA_10[&index=20]:0.019309)[&index=91,posterior=0.818636,height_95%_HPD={0.0003,0.0863}]:0.041117,Lepus_timidus_Leti_DQA_02[&index=19]:0.069372)[&index=92,posterior=0.044591,height_95%_HPD={7.6100,0.0368}]:0.012799,Oryctolagus_cuniculus_Orcu_DQA_11[&index=18]:0.013643)[&index=93,posterior=0.274945,height_95%_HPD={7.7100,0.0658}]:0.025782)[&index=94,posterior=0.054189,height_95%_HPD={9.4099,0.0320}]:0.012841,(Oryctolagus_cuniculus_Orcu_DQA_03[&index=17]:0.014848,Oryctolagus_cuniculus_Orcu_DQA_04[&index=16]:0.080525)[&index=95,posterior=1.000000,height_95%_HPD={0.0077,0.1405}]:0.077011)[&index=96,posterior=0.075785,height_95%_HPD={6.41e-,0.0343}]:0.012114,Oryctolagus_cuniculus_Orcu_DQA_02[&index=15]:0.038222)[&index=97,posterior=1.000000,height_95%_HPD={0.0020,0.1080}]:0.054065,((Lepus_europaeus_Leeu_DQA_03[&index=14]:0.011712,Lepus_saxatilis_Lesa_DQA_02[&index=13]:0.013513)[&index=98,posterior=0.983003,height_95%_HPD={0.0004,0.0597}]:0.024797,Lepus_timidus_Leti_DQA_03[&index=12]:0.024573)[&index=99,posterior=0.131374,height_95%_HPD={1.1000,0.0360}]:0.013827)[&index=100,posterior=0.079584,height_95%_HPD={6.41e-,0.0371}]:0.012087,(((((((Lepus_townsendii_Leto_DQA_01[&index=11]:0.013461,Sylvilagus_palustris_Sypa_DQA_02[&index=10]:0.134853)[&index=101,posterior=0.086183,height_95%_HPD={7.5099,0.0463}]:0.015241,Lepus_timidus_Leti_DQA_04[&index=9]:0.011679)[&index=102,posterior=0.047590,height_95%_HPD={8.81e-,0.0398}]:0.012871,Sylvilagus_audubonii_Syau_DQA_01[&index=8]:0.027299)[&index=103,posterior=0.132773,height_95%_HPD={9.31e-,0.0697}]:0.022280,Pronolagus_rupestris_Prru_DQA_01[&index=7]:0.099993)[&index=104,posterior=0.647071,height_95%_HPD={0.0003,0.0699}]:0.028447,Oryctolagus_cuniculus_Orcu_DQA_17[&index=6]:0.054197)[&index=105,posterior=0.406319,height_95%_HPD={8.3100,0.0850}]:0.034264,((Orcytolagus_cuniculus_Orcu_DQA_12[&index=5]:0.025245,Oryctolagus_cuniculus_Orcu_DQA_13[&index=4]:0.012872)[&index=106,posterior=0.355729,height_95%_HPD={0.0001,0.0520}]:0.018066,Oryctolagus_cuniculus_Orcu_DQA_14[&index=3]:0.050871)[&index=107,posterior=0.762448,height_95%_HPD={0.0002,0.0788}]:0.034492)[&index=108,posterior=0.038192,height_95%_HPD={0.0002,0.0574}]:0.020980,(Oryctolagus_cuniculus_Orcu_DQA_15[&index=2]:0.039825,Oryctolagus_cuniculus_Orcu_DQA_16[&index=1]:0.012523)[&index=109,posterior=0.435713,height_95%_HPD={3.8100,0.0639}]:0.021640)[&index=110,posterior=1.000000,height_95%_HPD={0.0335,0.2400}]:0.147430,Lepus_europaeus_Leeu_DQA_02[&index=0]:0.026864)[&index=111,posterior=1.000000,height_95%_HPD={9.9999,9.9999}]:0.000000;
+End;

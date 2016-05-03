@@ -1,0 +1,133 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=39;
+	taxlabels
+	Lepus_europaeus_Leeu_DQA_01
+	Lepus_europaeus_Leeu_DQA_04
+	Lepus_europaeus_Leeu_DQA_06
+	Lepus_europaeus_Leeu_DQA_07
+	Lepus_europaeus_Leeu_DQA_08
+	Lepus_europaeus_Leeu_DQA_09
+	Lepus_europaeus_Leeu_DQA_10
+	Lepus_europaeus_Leeu_DQA_11
+	Lepus_europaeus_Leeu_DQA_12
+	Lepus_europaeus_Leeu_DQA_13
+	Lepus_europaeus_Leeu_DQA_14
+	Lepus_europaeus_Leeu_DQA_15
+	Lepus_europaeus_Leeu_DQA_16
+	Lepus_europaeus_Leeu_DQA_17
+	Lepus_europaeus_Leeu_DQA_18
+	Lepus_europaeus_Leeu_DQA_19
+	Lepus_europaeus_Leeu_DQA_20
+	Lepus_europaeus_Leeu_DQA_21
+	Lepus_europaeus_Leeu_DQA_22
+	Lepus_europaeus_Leeu_DQA_23
+	Lepus_europaeus_Leeu_DQA_24
+	Lepus_europaeus_Leeu_DQA_25
+	Lepus_europaeus_Leeu_DQA_26
+	Lepus_europaeus_Leeu_DQA_27
+	Lepus_europaeus_Leeu_DQA_28
+	Lepus_europaeus_Leeu_DQA_29
+	Lepus_europaeus_Leeu_DQA_30
+	Lepus_europaeus_Leeu_DQA_31
+	Lepus_europaeus_Leeu_DQA_32
+	Lepus_europaeus_Leeu_DQA_33
+	Lepus_europaeus_Leeu_DQA_34
+	Lepus_europaeus_Leeu_DQA_35
+	Lepus_europaeus_Leeu_DQA_36
+	Lepus_europaeus_Leeu_DQA_37
+	Lepus_europaeus_Leeu_DQA_38
+	Lepus_europaeus_Leeu_DQA_39
+	Lepus_europaeus_Leeu_DQA_40
+	Lepus_europaeus_Leeu_DQA_41
+	Lepus_europaeus_Leeu_DQA_42
+;
+end;
+
+begin trees;
+	tree TREE1 = [&R] (((((((((((((Lepus_europaeus_Leeu_DQA_04[&index=38]:0.026631,Lepus_europaeus_Leeu_DQA_06[&index=37]:0.013335)[&index=39,posterior=0.265433,height_95%_HPD={9.9999,0.0414}]:0.013588,Lepus_europaeus_Leeu_DQA_10[&index=36]:0.026673)[&index=40,posterior=0.539239,height_95%_HPD={1.1,0.0746}]:0.028803,Lepus_europaeus_Leeu_DQA_22[&index=35]:0.032275)[&index=41,posterior=1.0,height_95%_HPD={0.0357,0.3551}]:0.212367,Lepus_europaeus_Leeu_DQA_42[&index=34]:0.057797)[&index=42,posterior=0.260366,height_95%_HPD={7.5099,0.1282}]:0.059683,Lepus_europaeus_Leeu_DQA_36[&index=33]:0.106514)[&index=43,posterior=0.008906,height_95%_HPD={9.9099,0.0628}]:0.021132,((((Lepus_europaeus_Leeu_DQA_08[&index=32]:0.049809,Lepus_europaeus_Leeu_DQA_31[&index=31]:0.018634)[&index=44,posterior=0.99904,height_95%_HPD={0.0021,0.1449}]:0.073894,Lepus_europaeus_Leeu_DQA_25[&index=30]:0.038349)[&index=45,posterior=0.836751,height_95%_HPD={"1.31e-",0.081}]:0.033209,Lepus_europaeus_Leeu_DQA_33[&index=29]:0.030463)[&index=46,posterior=0.998453,height_95%_HPD={6.0E-4,0.2108}]:0.111792,Lepus_europaeus_Leeu_DQA_30[&index=28]:0.105918)[&index=47,posterior=0.026479,height_95%_HPD={7.21,0.1428}]:0.054876)[&index=48,posterior=0.069731,height_95%_HPD={9.1,0.0706}]:0.023419,Lepus_europaeus_Leeu_DQA_28[&index=27]:0.03722)[&index=49,posterior=0.182608,height_95%_HPD={1.1,0.0731}]:0.027321,Lepus_europaeus_Leeu_DQA_21[&index=26]:0.026261)[&index=50,posterior=0.990747,height_95%_HPD={0.0048,0.2318}]:0.126377,Lepus_europaeus_Leeu_DQA_38[&index=25]:0.085756)[&index=51,posterior=0.469027,height_95%_HPD={1.8099,0.2068}]:0.097216,Lepus_europaeus_Leeu_DQA_14[&index=24]:0.140336)[&index=52,posterior=0.076558,height_95%_HPD={6.1,0.0619},!rotate=true]:0.02008,((((Lepus_europaeus_Leeu_DQA_18[&index=23]:0.054101,Lepus_europaeus_Leeu_DQA_26[&index=22]:0.041531)[&index=53,posterior=0.967014,height_95%_HPD={1.7099,0.0673}]:0.027525,Lepus_europaeus_Leeu_DQA_17[&index=21]:0.013747)[&index=54,posterior=0.76646,height_95%_HPD={6.1,0.1237}]:0.048436,Lepus_europaeus_Leeu_DQA_32[&index=20]:0.123425)[&index=55,posterior=0.995067,height_95%_HPD={0.0017,0.2158}]:0.117105,(Lepus_europaeus_Leeu_DQA_23[&index=19]:0.044188,Lepus_europaeus_Leeu_DQA_29[&index=18]:0.026903)[&index=56,posterior=0.548465,height_95%_HPD={7.0999,0.111}]:0.045952)[&index=57,posterior=0.4974,height_95%_HPD={"4.71e-",0.119}]:0.056375)[&index=58,posterior=0.008933,height_95%_HPD={"4.21e-",0.042}]:0.014211,Lepus_europaeus_Leeu_DQA_27[&index=17]:0.028393)[&index=59,posterior=0.015866,height_95%_HPD={1.51,0.0586}]:0.018835,((((((((Lepus_europaeus_Leeu_DQA_07[&index=16]:0.014493,Lepus_europaeus_Leeu_DQA_39[&index=15]:0.041219)[&index=60,posterior=0.903629,height_95%_HPD={9.1,0.069}]:0.027563,Lepus_europaeus_Leeu_DQA_11[&index=14]:0.014008)[&index=61,posterior=0.514013,height_95%_HPD={2.0999,0.072}]:0.026212,Lepus_europaeus_Leeu_DQA_37[&index=13]:0.034842)[&index=62,posterior=1.0,height_95%_HPD={0.0019,0.1148}]:0.056459,Lepus_europaeus_Leeu_DQA_15[&index=12]:0.014398)[&index=63,posterior=0.058025,height_95%_HPD={7.0999,0.0469}]:0.015319,Lepus_europaeus_Leeu_DQA_12[&index=11]:0.027696)[&index=64,posterior=0.175622,height_95%_HPD={"1.11e-",0.0631}]:0.024561,((Lepus_europaeus_Leeu_DQA_09[&index=10]:0.028059,Lepus_europaeus_Leeu_DQA_34[&index=9]:0.014042)[&index=65,posterior=0.346071,height_95%_HPD={1.1,0.0566}]:0.019905,Lepus_europaeus_Leeu_DQA_13[&index=8]:0.013916)[&index=66,posterior=0.038052,height_95%_HPD={9.9999,0.0404}]:0.014118)[&index=67,posterior=0.113544,height_95%_HPD={7.0999,0.0515}]:0.017268,Lepus_europaeus_Leeu_DQA_16[&index=7]:0.025725)[&index=68,posterior=0.950455,height_95%_HPD={7.0E-4,0.1114}]:0.052816,Lepus_europaeus_Leeu_DQA_35[&index=6]:0.070825)[&index=69,posterior=0.166822,height_95%_HPD={3.1,0.0782}]:0.029481,(((((Lepus_europaeus_Leeu_DQA_19[&index=5]:0.014998,Lepus_europaeus_Leeu_DQA_40[&index=4]:0.056692)[&index=70,posterior=0.649209,height_95%_HPD={1.1,0.0713}]:0.028003,Lepus_europaeus_Leeu_DQA_41[&index=3]:0.175468)[&index=71,posterior=0.531906,height_95%_HPD={1.1,0.0767}]:0.03089,Lepus_europaeus_Leeu_DQA_20[&index=2]:0.013409)[&index=72,posterior=0.161329,height_95%_HPD={1.1,0.0413}]:0.01354,Lepus_europaeus_Leeu_DQA_01[&index=1]:0.040972)[&index=73,posterior=0.727341,height_95%_HPD={9.0E-4,0.1217}]:0.057956,Lepus_europaeus_Leeu_DQA_24[&index=0]:0.038495)[&index=74,posterior=0.693262,height_95%_HPD={2.0E-4,0.1294}]:0.06277)[&index=75,posterior=1.0,height_95%_HPD={9.9999,9.9999}];
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=2.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=515;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=149;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="posterior";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=2;
+	set nodeShape.colourAttribute=null;
+	set nodeShape.isShown=false;
+	set nodeShape.minSize=10.0;
+	set nodeShape.scaleType=Width;
+	set nodeShape.shapeType=Circle;
+	set nodeShape.size=4.0;
+	set nodeShape.sizeAttribute=null;
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=2.0;
+	set scaleBar.scaleRange=0.07;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=10;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=false;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
