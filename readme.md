@@ -61,7 +61,7 @@ and revBayes trees were run with a burn in of 1000 trees, and two successive tri
 
 ![alt tag](https://github.com/DanielSeidman/phylobio_final_project/blob/master/tree_marked.png)
 This image comes from raxml with the GTR_gamma model, on all the sequences I found with meaningful alignment with the given gene.
-![alt tag](https://github.com/DanielSeidman/phylobio_final_project/blob/master/revBMollusc/Reasonable_tree_image.png)
+![alt tag](https://github.com/DanielSeidman/phylobio_final_project/blob/master/Reasonable_tree_image.png)
 
 Unfortunately, very little sequence data is actually available for the gene in question, though in the process of searching for more, it is possible that
 I have elucidated some clues into the function of some uncharacterized drosophila genes, as many had significant alignment to the squid gene I was searching for.
