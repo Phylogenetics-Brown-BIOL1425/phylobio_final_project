@@ -1,19 +1,5 @@
 # Phylogenetic Biology - Final Project
 
-## Guidelines - you can delete this section before submission
-
-This repository is a stub for your final project. Fork it, develop your project, and submit it as a pull request. Edit/ delete the text in this readme as needed.
-
-Some guidelines and tips:
-
-- For information on formatting text files with markdown, see https://guides.github.com/features/mastering-markdown/ . You can use markdown to include images in this document by linking to files in the repository, eg `![GitHub Logo](/images/logo.png)`.
-
-- The project must be entirely reproducible. In addition to the results, the repository must include all the data (or links to data) and code needed to reproduce the results.
-
-
-
-
-
 #Sporangium anatomy and arrangement of Selaginella (Selaginellaceae) in a phylogenetic context: Distribution of spore discharge techniques
 
 ## Introduction and Goals
@@ -24,6 +10,8 @@ The *Selaginella* genus is an excellent study group to investigate the diversity
 
 The goal of my project is to examine the diversity of megaspore and microspore release mechanisms within *Selaginella* in a phylogenetic and ecological context, ultimately to determine whether spore release mechanisms differ between megaspores and microspores, and whether they vary by major biome and/or clade. 
 To answer these questions I will construct a phylogeny of *Selaginella* based on rbcL sequences for the species available in GenBank. I view this part of my final project as an exercise to work on my computational skills rather than as essential to the project; molecular phylogenies of Selaginella have been constructed (e.g. Korall & Kenrick 2004; Zhou et al. 2015) and I could (and may, depending on the outcome of the phylogeny I construct) ultimately choose to plot the characters I am interested in onto the most recent published phylogeny. I then will plot sporangial arrangement (of megaspores and microspores within the strobilus) and anatomy (different wall thickenings are associated with different discharge mechanisms) on the tree. Data for these characters will come predominantly from the literature (Horner & Arnott 1963; Somers 1982; Koller & Scheckler 1986; Quansah 1988; Schneller et al. 2008). I will include some of my personal observations and data, should I get the materials to embed and section strobili of the *Selaginella* species that I currently have. However, it is unlikely I will have collected much of my own data by the due date of this project, and accordingly I plan to continually add to the tree I create as I continue to collect data. 
+
+#Simulating phylogenies and character evolution: The importance of taxon sampling and independent contrasts
 
 What I described above is the ultimate goal I have for the project. However, I do not currently have the data on these characters that I need to actually run these analyses. Accordingly, for the sake of this class project (which will have to be finshed well before I have the data for the questions I'm actually interested in), I am going to simulate trees and character data.
 
@@ -98,26 +86,18 @@ I then simulated the evolution of these characters on each of my trees using the
 
 ## Results & Discussion
 
-When tips were randomly dropped from each tree, each of the three major clades from the starting tree happened to be maintained throughout (Fig.0 A-G). I found this interesting for the sake of these analyses because the tree maintained its general shape even as tips were dropped. However, if I were to do this project again, I might experiment with intentionally dropping an entire large clade, because though each tree with fewer tips does theoretically represent poorer and poorer taxon sampling, I do not think that poor taxon sampling in reality would necessarily be structured randomly across the entire tree. For example, based on published phylogenies of Selaginella, it is obvious (and not unexpected) that many of the major clades also share similar biogeographical patterns. In collecting these plants for my work, it seems likely that I would over represent the North American clade, and underrepresent clades from Asia, since it will likely be more difficult to get access to those plants. If I were to do this project again, instead of randomly dropping tips from the trees, I would make them representative of the sort of biased sampling I just described.
-
-Looking at the simulated evolution of the character data on the 700-taxon tree revealed some interesting patterns (Fig. 1). Variables 1 and 4 appeared to covary strongly across the entire tree, which was expected given that I set their covariance at 0.9. The other variables seemed mostly unrelated to one another across the entire tree, though some (e.g. 2 and 3 at the top of tree) appeared to be behaving similarly in some sections of the tree. In order to better understand the relationships among variables given the phylogeny, it was necessary to examine the independent contrasts (Fig. 2A; Table 1). The first variable appeared strongly related to variable 4, just as it visually did on the tree. It was weakly related to the other variables, which makes sense given that its covariance with 2 and 5 was set at only 0.2. Variable 3 had the weakest relationships with all of the other variables, which again was expected given that its covariance with everything else was set to 0. This result was interesting to me, though, because examining only the visual representation of the characters on the tree did not obviously lead the viewer to that conclusion. Finally, and perhaps most interestingly, comparing the covariance matrices of the independent contrasts, which take the phylogeny into account, and of the values at the tips, which do not, was telling.  Variable 3 still did not have strong relationships with any of the other variables, and variables 1 and 4 were still the most strongly associated. I found it interesting that the same broad patterns were still observed. However, the actual values in the tables are clearly quite different. For example, variables 1 and 4 have a covariance of ~ 0.95 when using independent contrasts, but only ~0.56 when the phylogeny is ignored. These differences also mean that the magnitude of the differences among the variables is obscured when looking only at the values at the tips. The heat maps of both of the covariance matrices best exemplify this idea. The heat map of the covariance matrix for the independent contrasts (Fig. 2A) is composed mainly of the colors (red and blue) representing opposite poles of the color spectrum used to color-code the tables. The heat map for the covariance matrix of the values at the tips, however, has many more squares colored purple, the intermediate color in this scheme.
-
-Moving to the next tree of 350 taxa, which dropped half of the tips from the starting tree, we again see that, as expected, variables 1 and 4 seem to have very similar behavior across the tree. Unlike the previous tree, it seems like variables 2 and 5 might be behaving similarly in certain sections of the tree. It is important to note here that the character state values are different from tree to tree, because I dropped the tips before simulating the evolution of the characters rather than after. In hindsight, I would not do that again. I should have made the initial tree and simulated the character evolution on it, then successively dropped tips so that the values in each covariance matrix would have been more directly comparable. As it stands now, though, I can still examine whether the same patterns arise on each tree, and how strong they appear to be.
-
-*****describe some general patterns across all instead of walking through every single one*****
- 
-Overall, if I were to do this project again I would want to find a better way to represent the character evolution on the tree. I spent some time trying to heat-map that as well, because I thought that different colors might be a bit easier to interpret for trees with many tips (instead of the different sized/colored circles) but I could not get the code to work, though I think that would have improved the presentation. I also would have liked to have done models of the evolution of categorical variables in addition to continuous variables, since I will eventually be dealing with data of both types.
+When tips were randomly dropped from each tree, each of the three major clades from the starting tree happened to be maintained throughout (Fig. 0 A-G). This result was interesting for the sake of these analyses because the tree maintained its general shape even as tips were dropped. This result also meant that, in the theoretical scenarios I was working with, my final three-tip tree was actually representative of more distantly related individuals than might be expected simply from looking at the topology of the tree.
 
 ##Acknowledgements
 Andrew Leslie, for help with heat-mapping. 
 
 Mike Rosario, for patiently helping me with R.
 
-Casey Dunn, for suggesting this simulated version of the project when I didn't have my own data to use.
+Casey Dunn, for suggesting this simulated version of the project when I didn't have my own data to use, and for his general guidance throughout the project. 
 
 Abby Moore, for helping me (last semester) build the trees in the *Selaginella* rbcL analysis folder of this repository. They're not technically part of this project, but I thought it would be useful to have all of my *Selaginella* phylogenetics projects in one place so that it's easier to come back to later on. 
 
-Morgan Moeglein, Kim Neil, & Bianca Brown for emotional support. 
+Morgan Moeglein, Kim Neil, Bianca Brown, & Haley Carter for emotional support. 
 
 
 
