@@ -1,4 +1,4 @@
-# Testing ipyrad parameter effects on tree output for a recently diverged group
+# Testing ipyrad Parameter Effects on Tree Output for a Recently Diverged Group
 
 ## Introduction and Goals
 
@@ -19,7 +19,7 @@ After this step, I created parameter files for [75%]( https://github.com/moeglei
 After ipyrad assembly at different clustering parameters was finished, I used the .phy file output to create maximum likelihood trees in [RAxML](https://github.com/moeglein/phylobio_final_project/blob/master/code/default_tree.sh) with a GTR+gamma model of evolution and 100 bootstrap replicates. I then used the [bipartitions](https://github.com/moeglein/phylobio_final_project/blob/master/data/RAxML_bipartitions.default) output to view my trees in FigTree.
 
 
-## Results
+## Results and Discussion
 
 Figure one is a tree created from clusters assembled using default parameters. Specifically, the clusters between species had to have a minimum of 85% sequence overlap
 
@@ -39,14 +39,6 @@ Figure one is a tree created from clusters assembled using default parameters. S
 
 *Figure 4*: 98% clustering
 
-
-## Discussion
-
-These results indicate...
-
-The biggest difficulty in implementing these analyses was...
-
-If I did these analyses again, I would...
 
 ## References
 
