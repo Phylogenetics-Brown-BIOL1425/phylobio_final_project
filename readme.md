@@ -6,7 +6,7 @@ The fourth trochanter is a prominent bony process found on the femur of archosau
 
 The basic principles of muscle dynamics suggest that their CFL musculature would have functioned differently due to their unique morphology; by positioning the insertion point of the CFL further from the axis of femoral rotation, they would have lengthened the muscle's in-lever arm and increased its mechanical advantage (at the expense of maximum speed). Some researchers have begun to postulate how this would have impacted their ecology (Persons and Currie, 2014); however, any anatomically-based discussion of ornithischian ecology must take into account the phylogenetic distribution of their characteristic fourth trochanters. So far, no researchers have attempted to track this feature through ornithischian phylogeny.
 
-The most recently-proposed behavioral hypothesis regarding fourth trochanter anatomy is that proposed by Persons and Currie (2014), who suggest that the increased mechanical advantage of ornithischian CFLs was an adaptation to predatory pressure from tyrannosaurid dinosaurs. They argue that the increased mechanical advantage of ornithischian CFLs enabled them to sustain locomotion at a (low) top speed for a long time - in contrast with tyrannosaurs, which they interpret as being fast sprinters who would quickly tire in a protracted pursuit. The Persons and Currie (2014) model is predicated on two assumptions, neither of which they test: A) that the fourth trochanter position in ornithischian dinosaurs was statistically distinct from that found in tyrannosaurs (that is, that the pattern they notice in 3 taxa is representative of persistant differences in the locomotor strategy of two clades), and B) that ornithischians acquired their peculiar morphology in response to the evolution of tyrannosaurs, which are (based on multiple lines of evidence) interpreted as generally faster runners than most other theropod dinosaurs (Hutchinson and Garcia, 2001; Hutchinson et al. 2011; Persons and Currie, 2014).
+The most recently-proposed behavioral hypothesis regarding fourth trochanter anatomy is that proposed by Persons and Currie (2014), who suggest that the increased mechanical advantage of ornithischian CFLs was an adaptation to predatory pressure from tyrannosaurid dinosaurs. They argue that the increased mechanical advantage of ornithischian CFLs enabled them to sustain locomotion at a (low) top speed for a long time - in contrast with tyrannosaurs, which they interpret as being fast sprinters who would quickly tire in a protracted pursuit. The Persons and Currie (2014) model is predicated on two assumptions, neither of which they test: A) that the fourth trochanter position in ornithischian dinosaurs was statistically distinct from that found in tyrannosaurs (that is, that the pattern they notice in three taxa is representative of persistent differences in the locomotor strategy of two clades), and B) that ornithischians acquired their peculiar morphology in response to the evolution of tyrannosaurs, which are (based on multiple lines of evidence) interpreted as generally faster runners than most other theropod dinosaurs (Hutchinson and Garcia, 2001; Hutchinson et al. 2011; Persons and Currie, 2014).
 
 Persons and Currie (2014) also fail to account for the potential influence of body mass on fourth trochanter position. Animals of greater body mass necessarily require more force per unit time to move than their smaller relatives; thus, it stands to reason that larger dinosaurs would try to increase the mechanical advantage of their muscles. The ornithischian taxon examined by Persons and Currie (2014) belonged to a very large genus (*Lambeosaurus*), which was potentially larger than both of the tyrannosaurid species examined in the same study. Thus, the conclusion of their paper is potentially a chance result due to differences in scale, not different evolutionary strategies. In summary, the conclusions reached by Persons and Currie (2014) are weakened by their failure to track the phylogenetic history of the characteristic ornithischian fourth trochanter, their lack of a rigorous statistical comparison between ornithischians and other dinosaurs, and their consideration of only very large taxa. 
 
@@ -18,7 +18,7 @@ In this project, we attempt to examine this problem in more detail, and validate
 
 The data for this project were mostly collected from Gregory S. Paul's *The Princeton Field Guide to Dinosaurs* (Paul, 2010), which contains skeletal illustrations and body mass estimates for many well-known dinosaur taxa. Some skeletal measurements were taken from the website "Skeletal Drawing" (Hartman) when Paul (2010) lacked an appropriate figure. We collected data for 68 taxa: 23 saurischian dinosaurs, 44 ornithischian dinosaurs, and the non-dinosaurian dinosauromorph *Marasuchus* (included as the outgroup). Data were only collected for bipedal or facultatively bipedal animals, because of the potential biases that would be introduced if we included taxa with a fundamentally different style of locomotion (many of which were also extremely large). As a result of excluding quadrupedal forms, the saurischians in our dataset are predominantly theropods, and the ornithischians are predominantly ornithopods. Since theropods likely preyed on ornithopods extensively, this analysis may hold relevance to examining the ecological interactions of the two clades.
 
-To compare the position of the fourth trochanter among the taxa, we took two measurements - one to determine the figured length of the whole femur, and of the distance from the head of the femur to the apex of the fourth trochanter. The latter measurement was divided by the former to yield "fourth Trochanter Position", which describes percentage down femur's length at which the fourth trochanter's apex (and the insertion of the CFL tendon) occur. These measurements were taken directly with a ruler for figures found in Paul (2010); images from (Hartman) were imported into Adobe Photoshop and measured using its inbuilt ruler tool.
+To compare the position of the fourth trochanter among the taxa, we took two measurements - one to determine the figured length of the whole femur, and of the distance from the head of the femur to the apex of the fourth trochanter. The latter measurement was divided by the former to yield "fourth Trochanter Position", which describes the percentage down the femur's length at which the fourth trochanter's apex (and the insertion of the CFL tendon) occurs. These measurements were taken directly with a ruler for figures found in Paul (2010); images from (Hartman) were imported into Adobe Photoshop and measured using its inbuilt ruler tool.
 
 After initial data collection, a phylogenetic tree was assembled in Newick format, comprising of all taxa for which we had collected data. The phylogeny was based on published trees; we referenced many papers in order to cross-check our composite tree and ensure accuracy. There was minimal disagreement between the published trees. We used two general rules while assembling the composite tree: 1) when a taxon's placement differed between papers, preference was given to the more recently published tree and 2) when the phylogenetic resolution between different taxa was greater on one tree than on another, preference was given to the finer-resolved tree regardless of which tree was more recently obtained. The resulting composite phylogenetic tree does not contain any polytomies, and given the method of construction of the tree, represents the most up-to-date knowledge of the relationships between these taxa.
 
@@ -53,31 +53,31 @@ We used phylogenetic independant contrast to assess whether fourth trochanter po
 
 Figure 1 shows the composite Dinosauria tree before time calibration. It shows a deep divergence between Ornithischia and Saurischia, reflecting paleontological evidence that the two clades diverged shortly after the evolution of Dinosauria in the mid-Triassic period.
 
-![GitHub Logo](Figure 1.png)
+![GitHub Logo](Figure_1_nodelabels.png)
 
 **Figure 1.** Non-time-calibrated composite Dinosauria phylogeny. 
 
 Figure 2 shows the time-calibrated composite Dinosauria tree. The deep divergence between Saurischia and Ornithischia is preserved, and reconstructed as occurring just prior to the evolution of the earliest known dinosaurs (the Saurischians *Eoraptor*, *Staurikosaurus*, and *Herrarasaurus*). Notably, the Ornithischian half of the tree shows two sections of very short branch lengths, which make the tree seem to have two large polytomies. The first occurs between *Hypsilophodon* and *Dryosaurus*, and the second between *Bactrosaurus* and *Shantungosaurus*. These regions seem to indicate bursts of diversification among Ornithischia, but are more likely to be artifacts of incomplete taxon sampling or of the methods used to time-calibrate the phylogeny. They represent interesting areas of potential future research.
 
-![GitHub Logo](Figure 2.png)
+![GitHub Logo](Figure_2_nodelabels.png)
 
 **Figure 2.** Time-calibrated composite Dinosauria phylogeny.
 
 Figures 3 and 4 show the non-time-calibrated and time-calibrated composite Saurischia phylogenies, permitting a more detailed analysis of the relationships between the taxa. Branch lengths appear similar to those in the composite Dinosauria phylogeny, indicating that the methods used to scale the branches to time are insensitive to the size of the tree. Figures 5 and 6 show non-time-calibrated and time-calibrated composite Ornithischia phylogenies. The two "comb”-like regions from the calibrated Dinosauria tree are visible on the latter, again validating our earlier phylogeny.
 
-![GitHub Logo](Figure 3.png)
+![GitHub Logo](Figure_3.png)
 
 **Figure 3.** Non-time-calibrated composite saurischian phylogeny.
 
-![GitHub Logo](Figure 4.png)
+![GitHub Logo](Figure_4.png)
 
 **Figure 4.** Time-calibrated composite saurischian phylogeny.
 
-![GitHub Logo](Figure 5.png)
+![GitHub Logo](Figure_5.png)
 
 **Figure 5.** Non-time-calibrated composite ornithischian phylogeny.
 
-![GitHub Logo](Figure 6.png)
+![GitHub Logo](Figure_6.png)
 
 **Figure 6.** Time-calibrated composite ornithischian phylogeny.
 
@@ -85,7 +85,7 @@ Figures 3 and 4 show the non-time-calibrated and time-calibrated composite Sauri
 
 Figure 7 shows the contour map obtained from ancestral state reconstruction using our time-calibrated composite Dinosauria phylogeny. As the color becomes warmer (moves from blue to red), the position of the fourth trochanter moves more distally from the head of the femur. The contour map illustrates that a major shift in fourth trochanter position occurred during the evolution of Ornithischia, before the first included ornithischian taxon (*Heterodontosaurus*) diverged from the rest of the clade. This places the acquisition of the trait in the late Triassic. After the acquisition of distal fourth trochanters, no ornithischians revert to the primitive condition, although the feature does occasionally get more exaggerated.
 
-![GitHub Logo](Figure 7.png)
+![GitHub Logo](Figure_7_nodelabels.png)
 
 **Figure 7.** Contour Map of time-calibrated composite Dinosauria phylogeny. More distal placement of the fourth trochanter is represented by warmer colors.
 
@@ -95,7 +95,7 @@ A significant distally-directed movement of the fourth trochanter is seen in the
 
 As described earlier, only a handful of Saurischian taxa reach fourth trochanter positions as distal as those seen in Ornithischians. As shown in Figure 8, the two clades have little overlap. Saurischian taxa, as a rule, generally seem to have fourth trochanters more proximal than ornithischian taxa.
 
-![GitHub Logo](Figure 8.png)
+![GitHub Logo](Figure_8.png)
 
 **Figure 8.** Box-plot plotting the range in position of the fourth trochanter in the saurischian and ornithischian taxa. The upper end of the saurischian box-plot whisker can be seen to slightly overlap the values of the lower end of the ornithischian box-plot whisker. It can therefore be seen that there is very little overlap in fourth trochanter position within the ornithischians and saurischians, with ornithischians generally showing more distal fourth trochanter positions than saurischians.
 
@@ -128,7 +128,7 @@ Regression of phylogenetic independant contrasts for the three phylogenies yield
 
 Only the regression for Dinosauria as a whole yielded a significant result (p = 0.0355); within each of the clades, increasing body mass was not associated with a significant shift in fourth trochanter position.  
 
-![GitHub Logo](Figure 9.png)
+![GitHub Logo](Figure_9.png)
 
 **Figure 9.** Phylogenetic independent contrasts for the composite Dinosauria phylogeny between fourth trochanter position and body mass, and associated regression curve.
 
