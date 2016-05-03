@@ -15,7 +15,9 @@ To answer these questions I will construct a phylogeny of *Selaginella* based on
 
 What I described above is the ultimate goal I have for the project. However, I do not currently have the data on these characters that I need to actually run these analyses. Accordingly, for the sake of this class project (which will have to be finshed well before I have the data for the questions I'm actually interested in), I am going to simulate trees and character data.
 
-My current game plan, which I'm about to try to do today, is this:
+Though the problems described in my original introduction require the integration of discrete characters, all of the analyses I worked on for this project only work for continuous characters. In the future I hope to learn how to more specifically deal with the evolution of discrete characters, but learning about the behavior of continuous variables was useful nonetheless, as I also frequently consider them (e.g. strobilus length, width, volume, axis diameter, etc.) in my work.
+
+Accordingly, my ultimate plan for this project became:
 
 1) Simulate a tree with 700 tips (the approximate number of *Selaginella* species)
 
