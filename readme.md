@@ -111,20 +111,20 @@ The results of interest from our phylogenetic signal testing were the values obt
 | Saurischia | Body Mass | 0.7973 | 0.001 |
 | Ornithischia | Fourth Trochanter | 0.2576 | 0.321|
 | Ornithischia | Body Mass | 0.3091 | 0.111 |
-**Table 1.** Phylogenetic signal (K) values for fourth trochanter position and body mass in dinosaurs, saurischians only, and ornithischians only. A K of 1 indicates expected similarity in relatives due to a Brownian motion model of character evolution. If K is greater than 1, relatives are more similar than would be expected; if K is less than 1, relatives are more differant than would be expected.
+**Table 1.** Phylogenetic signal (K) values for fourth trochanter position and body mass in dinosaurs, saurischians only, and ornithischians only. A K of 1 indicates expected similarity in relatives due to a Brownian motion model of character evolution. If K is greater than 1, relatives are more similar than would be expected; if K is less than 1, relatives are more different than would be expected.
 
 The results obtained from these analyses are found in Table 1. Of our six total analyses, three yielded significant results. Examining the whole of Dinosauria showed that fourth trochanter position showed a significant phylogenetic signal, with K greater than 1, indicating that related species resembled each other more than would be expected by chance. Body mass showed the opposite; related species resembled each other less than would be expected by chance. When examining these results in the context of the sub-trees, Saurischian body mass showed a K significantly less than 1. No other combination of characters and phylogenies showed a significant result; this may be artefact of the smaller sample size and lower disparity within each subtree, or reflect a real biological pattern.
 
 ### Independant Contrasts
 
-Regression of phylogenetic independant contrasts for the three phylogenies yielded the results summarized in Table 2.
+Regression of phylogenetic independent contrasts for the three phylogenies yielded the results summarized in Table 2.
 
 | Phylogeny | Slope | p-value |
 | :-------: | :-----: | :----: |
 | Dinosauria | 6.692e-06 | 0.0355 |
 | Saurischia | 1.691e-05 | 0.0808 |
 | Ornithischia | 5.040e-06 | 0.1490 |
-**Table 2.** P-values for slopes of regression lines calculated for body mass and fourth trochanter position phylogenetic independant contrasts, sorted by phylogeny used to calculate contrasts.
+**Table 2.** P-values for slopes of regression lines calculated for body mass and fourth trochanter position phylogenetic independent contrasts, sorted by phylogeny used to calculate contrasts.
 
 Only the regression for Dinosauria as a whole yielded a significant result (p = 0.0355); within each of the clades, increasing body mass was not associated with a significant shift in fourth trochanter position.  
 
