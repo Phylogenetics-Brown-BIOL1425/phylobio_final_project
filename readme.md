@@ -67,19 +67,19 @@ Figures 3 and 4 show the non-time-calibrated and time-calibrated composite Sauri
 
 ![GitHub Logo](Figure 3.png)
 
-**Figure 3.** Non-time-calibrated composite Saurischian phylogeny.
+**Figure 3.** Non-time-calibrated composite saurischian phylogeny.
 
 ![GitHub Logo](Figure 4.png)
 
-**Figure 4.** Time-calibrated composite Saurischian phylogeny.
+**Figure 4.** Time-calibrated composite saurischian phylogeny.
 
 ![GitHub Logo](Figure 5.png)
 
-**Figure 5.** Non-time-calibrated composite Ornithischian phylogeny.
+**Figure 5.** Non-time-calibrated composite ornithischian phylogeny.
 
 ![GitHub Logo](Figure 6.png)
 
-**Figure 6.** Time-calibrated composite Ornithischian phylogeny.
+**Figure 6.** Time-calibrated composite ornithischian phylogeny.
 
 ### Ancestral State Reconstruction
 
@@ -97,7 +97,7 @@ As described earlier, only a handful of Saurischian taxa reach fourth trochanter
 
 ![GitHub Logo](Figure 8.png)
 
-**Figure 8.** Box-plot plotting the range in position of the fourth trochanter in the Saurischian and Ornithischian taxa. The upper end of the Saurischian box-plot whisker can be seen to slightly overlap the values of the lower end of the Ornithischian box-plot whisker. It can therefore be seen that there is very little overlap in fourth trochanter position within the Ornithischians and Saurischians, with Ornithischians generally showing more distal fourth trochanter positions than Saurischians.
+**Figure 8.** Box-plot plotting the range in position of the fourth trochanter in the saurischian and ornithischian taxa. The upper end of the saurischian box-plot whisker can be seen to slightly overlap the values of the lower end of the ornithischian box-plot whisker. It can therefore be seen that there is very little overlap in fourth trochanter position within the ornithischians and saurischians, with ornithischians generally showing more distal fourth trochanter positions than saurischians.
 
 ### Phylogenetic Signal
 
