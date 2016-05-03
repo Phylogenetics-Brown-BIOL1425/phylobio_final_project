@@ -1,0 +1,49 @@
+---
+title: "allcaudata"
+author: "wsano"
+date: "May 2, 2016"
+output: html_document
+---
+
+```{r}
+knitr::opts_chunk$set(echo = TRUE)
+setwd("~/Dropbox/Brown University/BIOL1425/phylobio_final_project/")
+allcaudata=read.csv("caudata/IUCN_caudata2.csv",header = TRUE)
+names(allcaudata)
+
+accessions=read.csv("Pyrondata.csv",header = TRUE)
+# data is from Pyron 2011
+dim(accessions)
+accessions[1,]
+accessions[,1]
+
+filtered.accessions=accessions[accessions[,1]%in%allcaudata[,9],]
+
+repcaudata=allcaudata[allcaudata[,9]%in%filtered.accessions[,1],]
+names(repcaudata)
+filtered.accessions[,14:15]=repcaudata[,c(19,23)]
+colnames(filtered.accessions)[14]="IUCN_status"
+colnames(filtered.accessions)[15]="population_trend"
+
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+??caper
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

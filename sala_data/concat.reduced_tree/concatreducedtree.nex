@@ -1,0 +1,126 @@
+#NEXUS
+[written Mon May 02 18:17:42 EDT 2016 by Mesquite  version 3.04 (build 725) at Williams-MacBook-Pro-8.local/10.38.14.125]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=73;
+	TAXLABELS
+		Taricha_torosa Taricha_granulosa Taricha_rivularis Pleurodeles_waltl Pleurodeles_poireti Pleurodeles_nebulosus Echinotriton_chinhaiensis Echinotriton_andersoni Tylototriton_verrucosus Tylototriton_kweichowensis Tylototriton_shanjing Tylototriton_wenxianensis Tylototriton_asperrimus Salamandrina_terdigitata Salamandrina_perspicillata Chioglossa_lusitanica Mertensiella_caucasica Lyciasalamandra_fazilae Lyciasalamandra_luschani Lyciasalamandra_flavimembris Lyciasalamandra_helverseni Lyciasalamandra_billae Lyciasalamandra_antalyana Lyciasalamandra_atifi Salamandra_luschani Salamandra_atra Salamandra_lanzai Salamandra_corsica Salamandra_algira Salamandra_salamandra Salamandra_infraimmaculata Cynops_ensicauda Cynops_pyrrhogaster Paramesotriton_laoensis Pachytriton_brevipes Pachytriton_labiatus Paramesotriton_caudopunctatus Paramesotriton_hongkongensis Paramesotriton_deloustalii Paramesotriton_deloustali Paramesotriton_fuzhongensis Paramesotriton_chinensis Triturus_vittatus Ommatotriton_vittatus Ommatotriton_ophryticus Neurergus_kaiseri Neurergus_crocatus Neurergus_microspilotus Neurergus_strauchii Calotriton_asper Calotriton_arnoldi Euproctus_asper Triturus_carnifex Triturus_dobrogicus Triturus_karelinii Triturus_cristatus Triturus_pygmaeus Triturus_marmoratus Euproctus_montanus Euproctus_platycephalus Mesotriton_alpestris Lissotriton_italicus Triturus_italicus Triturus_vulgaris Lissotriton_montandoni Triturus_helveticus Triturus_boscai Lissotriton_boscai Lissotriton_helveticus Triturus_alpestris Notophthalmus_viridescens Notophthalmus_meridionalis Notophthalmus_perstriatus 
+	;
+
+END;
+
+
+BEGIN TREES;
+	Title Imported_trees;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Taricha_torosa,
+[1] 		2 Taricha_granulosa,
+[2] 		3 Taricha_rivularis,
+[3] 		4 Pleurodeles_waltl,
+[4] 		5 Pleurodeles_poireti,
+[5] 		6 Pleurodeles_nebulosus,
+[6] 		7 Echinotriton_chinhaiensis,
+[7] 		8 Echinotriton_andersoni,
+[8] 		9 Tylototriton_verrucosus,
+[9] 		10 Tylototriton_kweichowensis,
+[10] 		11 Tylototriton_shanjing,
+[11] 		12 Tylototriton_wenxianensis,
+[12] 		13 Tylototriton_asperrimus,
+[13] 		14 Salamandrina_terdigitata,
+[14] 		15 Salamandrina_perspicillata,
+[15] 		16 Chioglossa_lusitanica,
+[16] 		17 Mertensiella_caucasica,
+[17] 		18 Lyciasalamandra_fazilae,
+[18] 		19 Lyciasalamandra_luschani,
+[19] 		20 Lyciasalamandra_flavimembris,
+[20] 		21 Lyciasalamandra_helverseni,
+[21] 		22 Lyciasalamandra_billae,
+[22] 		23 Lyciasalamandra_antalyana,
+[23] 		24 Lyciasalamandra_atifi,
+[24] 		25 Salamandra_luschani,
+[25] 		26 Salamandra_atra,
+[26] 		27 Salamandra_lanzai,
+[27] 		28 Salamandra_corsica,
+[28] 		29 Salamandra_algira,
+[29] 		30 Salamandra_salamandra,
+[30] 		31 Salamandra_infraimmaculata,
+[31] 		32 Cynops_ensicauda,
+[32] 		33 Cynops_pyrrhogaster,
+[33] 		34 Paramesotriton_laoensis,
+[34] 		35 Pachytriton_brevipes,
+[35] 		36 Pachytriton_labiatus,
+[36] 		37 Paramesotriton_caudopunctatus,
+[37] 		38 Paramesotriton_hongkongensis,
+[38] 		39 Paramesotriton_deloustalii,
+[39] 		40 Paramesotriton_deloustali,
+[40] 		41 Paramesotriton_fuzhongensis,
+[41] 		42 Paramesotriton_chinensis,
+[42] 		43 Triturus_vittatus,
+[43] 		44 Ommatotriton_vittatus,
+[44] 		45 Ommatotriton_ophryticus,
+[45] 		46 Neurergus_kaiseri,
+[46] 		47 Neurergus_crocatus,
+[47] 		48 Neurergus_microspilotus,
+[48] 		49 Neurergus_strauchii,
+[49] 		50 Calotriton_asper,
+[50] 		51 Calotriton_arnoldi,
+[51] 		52 Euproctus_asper,
+[52] 		53 Triturus_carnifex,
+[53] 		54 Triturus_dobrogicus,
+[54] 		55 Triturus_karelinii,
+[55] 		56 Triturus_cristatus,
+[56] 		57 Triturus_pygmaeus,
+[57] 		58 Triturus_marmoratus,
+[58] 		59 Euproctus_montanus,
+[59] 		60 Euproctus_platycephalus,
+[60] 		61 Mesotriton_alpestris,
+[61] 		62 Lissotriton_italicus,
+[62] 		63 Triturus_italicus,
+[63] 		64 Triturus_vulgaris,
+[64] 		65 Lissotriton_montandoni,
+[65] 		66 Triturus_helveticus,
+[66] 		67 Triturus_boscai,
+[67] 		68 Lissotriton_boscai,
+[68] 		69 Lissotriton_helveticus,
+[69] 		70 Triturus_alpestris,
+[70] 		71 Notophthalmus_viridescens,
+[71] 		72 Notophthalmus_meridionalis,
+[72] 		73 Notophthalmus_perstriatus;
+	TREE Imported_tree_1 = (((1:0.02927508841747578,(2:0.06921216171746188,3:0.050422400403681435)85:0.028954246713096557)100:0.07736609087256387,((((4:0.07476284703760275,(5:0.030561129455626244,6:0.029830755425417223)97:0.010179948575116176)100:0.07330985595628459,((7:0.061131369523609175,8:0.06338043200653053)98:0.026857673887752738,(((9:0.026664895054804415,10:0.0362903830072638)97:0.018195244089619148,11:0.026016544701208264)54:0.006767289731695191,(12:0.04156435964119872,13:0.042880168978828265)79:0.010246781901565244)91:0.018616900543045763)97:0.05060572575002802)96:0.05346073902128757,((14:0.066691649776866,15:0.052249747609781974)100:0.18087134066712934,((16:0.22879691920379974,17:0.20864608879543656)100:0.05863425558944896,((((((18:0.034196645354193596,19:0.03910086761395293)50:0.008717995898531328,20:0.03675048693491036)28:0.010302712408065304,((21:0.03691188273084572,22:0.01776315699823007)38:0.007183792248795869,23:0.03813758482557932)24:0.0007831409710661666)52:0.012279788351900474,24:0.052991289194897574)54:0.004684408856172349,25:0.04558913887162176)98:0.06335101826329113,((26:0.030284884190708627,(27:0.014453358368535403,28:0.037323406184470685)56:0.005187496748609727)74:0.006558016127755746,(29:0.08076043438809427,(30:0.010245741459317203,31:0.012262955754378727)86:0.019972413988413568)44:0.003060921195800343)97:0.033835754341070154)99:0.1059329764360447)99:0.05039892715559991)98:0.050502375739886494)92:0.0288325810921839,(((((32:0.07966351811764584,33:0.08396636874385197)94:0.016058379078845816,((34:0.0880622349646634,(35:0.021913089292865028,36:0.024592539762602884)100:0.04903104597488844)83:0.006124945300207272,(37:0.06007819948451248,((38:0.04103930796840763,((39:0.032181470722744646,40:0.03328385515734155)1:0.00000403130909925871,41:0.02818069041523455)50:0.01416669508080436)65:0.01321064130876605,42:0.07248450404926311)91:0.015231061637877963)91:0.013876063535412979)89:0.009689905126916833)91:0.085022260892109,(((((43:0.08636903652898117,(44:0.06983815189854428,45:0.018431562702248654)35:0.01627372346010985)84:0.07596307129286528,((46:0.02850562301014942,(47:0.022955179258245226,48:0.02108263642453693)78:0.01022141083584726)98:0.019968824539447233,49:0.06284195871434319)100:0.05627600057317774)71:0.018438415943867446,((50:0.01320431549223248,(51:0.020257419224520075,52:0.014747926609789611)42:0.00000403130909925871)100:0.08128391013512344,((53:0.015049427321066391,(54:0.03538067811648594,(55:0.022799981960018173,56:0.03334059655683026)40:0.004929547990147625)43:0.008892614851632856)100:0.04643702366610978,(57:0.01544660629657061,58:0.01779614499808362)100:0.05659407006848132)100:0.05180571298490269)83:0.021588924685149724)63:0.02927572957339328,(59:0.08890964357067901,60:0.07874483867434369)100:0.08282650076970402)13:0.00000403130909925871,61:0.2771676521173131)18:0.008591674952064664)48:0.0269745513649692,(62:0.08861139240179713,((((63:0.06122348050097283,(64:0.015374878038317587,65:0.02346098402856472)100:0.0434643080293052)38:0.00706624938554288,66:0.10846067526192656)32:0.011255171892996648,67:0.06307447007304913)59:0.01231314376108333,(68:0.11801106830270343,69:0.15419854272738232)52:0.021096106316385876)49:0.013145520418039748)76:0.03681009372558553)40:0.010635810259044729,70:0.19319222176295517)74:0.015722613667437473)97:0.027363979313879426)100:0.07860456789906052,(71:0.030741103915893773,72:0.06085860075341764)61:0.011834077528436288,73:0.06703147877330419);
+
+END;
+
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1462227462990;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 6593806429503264218;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState true false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 700 464;
+			setLocation 8 8;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		endTell;
+end;
+
+
