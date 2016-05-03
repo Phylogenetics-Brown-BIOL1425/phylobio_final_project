@@ -23,3 +23,11 @@ This is the K80g script modified to 500,000 generations and a 20,000 generation 
 
 #### K80g6 ####
 This is the K80g script modified to 1,000,000 generations and a 20,000 generation burn-in.
+
+#### K80g2_Lepus.txt ####
+This is the revbayes JC model modified for the K80 model of sequence evolution with a 
+gamma distribution (alpha=0.5). The generation time is 40,000 iterations.
+
+#### K80g2_Lepus.txt ####
+This is the revbayes JC model modified for the K80 model of sequence evolution with a 
+gamma distribution (alpha=0.5). The generation time is 500,000 iterations.
