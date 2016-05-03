@@ -112,6 +112,8 @@ I had hoped to test the sensitivity of these analyses to changing the variance o
  
 Finally, if I were to do this project again, I might experiment with intentionally dropping an entire large clade, because though each tree with fewer tips does theoretically represent poorer and poorer taxon sampling, I do not think that poor taxon sampling in reality would necessarily be structured randomly across the entire tree. For example, based on published phylogenies of *Selaginella*, it is obvious (and not unexpected) that many of the major clades also share similar biogeographical patterns. In collecting these plants for my work, it seems likely that I would over represent the North American clade, and underrepresent clades from Asia, since it will likely be more difficult to get access to those plants. If I were to do this project again, instead of randomly dropping tips from the trees, I would make them representative of the sort of biased sampling I just described.
 
+Overall, though my inexperience with computational methods led to the bulk of my time and effort in this project going towards getting code that actually worked (and that I actually understood) rather than towards doing analyses beyond what I ended up having time to present here, this project was valuable to me as someone very new to these topics. It was helpful to interact first hand with an idea we had read a paper about, and now I have the foundation to play around with more advanced ideas based on this simple foundation.
+
 ##Acknowledgements
 Andrew Leslie, for help with heat-mapping. 
 
