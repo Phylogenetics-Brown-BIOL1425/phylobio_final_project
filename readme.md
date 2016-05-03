@@ -44,7 +44,7 @@ exon 2. The authors constructed a neighbor-joining tree, and while this yielded 
 insight into lagomorph MHC evolution, I am interested in applying maximum-likelihood and 
 Bayesian phylogeny construction methods to this dataset.
 
-Because European hare (Lepus europaeus) MHC DQA genes are well characterized across 
+Because European hare (*Lepus europaeus*) MHC DQA genes are well characterized across 
 different areas of Europe (de Bellocq et al. 2009; Koutsogiannouli et al. 2009), I am 
 also interesting in delving deeper into the phylogeography of DQA in this species by 
 compiling a dataset that encompasses both of these papers and also applies
@@ -60,7 +60,7 @@ Instructions for analyses including code can be found in Instructions_LeporidsAn
 and Instructions_LepusAnalysis.txt, and scripts can be found in the folder scripts.
 
 To obtain DNA DQA sequences for leporids, I downloaded the Surridge et al. 2008 sequences
-from GenBank in a fasta file. To obtain DNA DQA sequences for Lepus europaeus that were
+from GenBank in a fasta file. To obtain DNA DQA sequences for *Lepus europaeus* that were
 also location-tagged, I downloaded sequences from de Bellocq et al. 2009 and 
 Koutsogiannouli et al. 2009 from Genbank.
 
@@ -95,24 +95,25 @@ FigTree v1.4.2.
 Analyses output files are located in the folders modelgenerator_output, raxml_output, and
 revbayes_output.
 
-Figure 1 shows phylogenetic relationships of leporid DQA exon 2 sequences using a
+![**Figure 1**](https://github.com/kbcn/phylobio_final_project/blob/master/trees/Leporids/DQA_Leporids_RAXML_K80.pdf)
+shows phylogenetic relationships of leporid DQA exon 2 sequences using a
 maximum-likelihood analysis and the the K80 model of evolution. Bootstrap values are
 indicated. Tree is rooted using human and sheep DQA sequences.
 
-Figure 2 shows phylogenetic relationships of leporid DQA exon 2 sequences using a
+**Figure 2** shows phylogenetic relationships of leporid DQA exon 2 sequences using a
 maximum-likelihood analysis and the the GTR+G model of evolution. Bootstrap values are 
 indicated. Tree is rooted using human and sheep DQA sequences.
 
-Figure 3 shows phylogenetic relationships of leporid DQA exon 2 sequences using bayesian 
+**Figure 3** shows phylogenetic relationships of leporid DQA exon 2 sequences using bayesian 
 analysis of leporid DQA exon 2 sequence under the K80+G model of evolution. Bayesian
 posterior probabilities are shown. Tree is rooted using human and sheep DQA sequences.
 
-Figure 4 shows phylogenetic relationships of leporid DQA exon 2 sequences using bayesian 
+**Figure 4** shows phylogenetic relationships of leporid DQA exon 2 sequences using bayesian 
 analysis of leporid DQA exon 2 sequence under the K80+G model of evolution. Bayesian
 posterior probabilities are shown. Tree is rooted using human and sheep DQA sequences.
 This tree displays a different topology than that generated in run 1 (Figure 3).
 
-Figure 5 shows phylogenetic relationships of leporid DQA exon 2 sequences using topology
+**Figure 5** shows phylogenetic relationships of leporid DQA exon 2 sequences using topology
 generated from a Bayesian analysis and displayed in Figure 3. Support values above 50 are
 displayed in the format of ML-GTRG/ML-K80/B1/B2 for clades that were generated across all
 four analyses. ML-GTRG = Maximum-likelihood under GTR+G bootstrap values (Figure 2),
@@ -120,24 +121,24 @@ ML-K80 = Maximum-likelihood under K80 bootstrap values (Figure 1), B1 = RevBayes
 posterior probability (Figure 3), B2 = RevBayes run 2 posterior probability (Figure 4),
 NA = Node not present in this analysis. Tips are colored according to species identity.
 
-Figure 6 shows phylogenetic relationships of Lepus europaeus DQA exon 2 sequences using a
+**Figure 6** shows phylogenetic relationships of *Lepus europaeus* DQA exon 2 sequences using a
 maximum-likelihood analysis and the the K80 model of evolution. Bootstrap values are
 indicated. Tree is unrooted.
 
-Figure 7 shows phylogenetic relationships of Lepus europaeus DQA exon 2 sequences using a
+**Figure 7** shows phylogenetic relationships of *Lepus europaeus* DQA exon 2 sequences using a
 maximum-likelihood analysis and the the GTR+G model of evolution. Bootstrap values are 
 indicated. Tree is unrooted.
 
-Figure 8 shows phylogenetic relationships of Lepus europaeus exon 2 sequences using
+**Figure 8** shows phylogenetic relationships of *Lepus europaeus* exon 2 sequences using
 bayesian analysis of leporid DQA exon 2 sequence under the K80+G model of evolution. 
 Bayesian posterior probabilities are shown. Tree is unrooted.
 
-Figure 9 shows phylogenetic relationships of Lepus europaeus exon 2 sequences using
+**Figure 9** shows phylogenetic relationships of *Lepus europaeus* exon 2 sequences using
 bayesian analysis of leporid DQA exon 2 sequence under the K80+G model of evolution.
 Bayesian posterior probabilities are shown. Tree is unrooted. This tree displays a 
 different topology than that generated in run 1 (Figure 8).
 
-Figure 10 shows phylogenetic relationships of Lepus europaeus exon 2 sequences using
+**Figure 10** shows phylogenetic relationships of *Lepus europaeus* exon 2 sequences using
 topology generated from a Bayesian analysis and displayed in Figure 8.
 Support values above 50 are displayed in the format of ML-GTRG/ML-K80/B1/B2 for clades
 that were generated across all four analyses. ML-GTRG = Maximum-likelihood under 
@@ -165,7 +166,7 @@ polymorphism, which is a common hallmark of MHC evolution (Bernatchez and Landry
 However, DQA variants generally do not cluster together by species, as indicated in 
 Figure 5. 
 
-The four Lepus europaeus analyses also displayed different topologies with low branch
+The four *Lepus europaeus* analyses also displayed different topologies with low branch
 support, also indicating poor resolution of the phylogeography of DQA variants in this
 species (Figures 6-9). Some variants were recovered across multiple populations, whereas 
 others were only identified in one population (Figure 10). As with the the leporid
@@ -193,7 +194,7 @@ visualizing phylogenies in useful ways, such as Ape or ggtree.
 1. Bernatchez, L and Landry, C. 2003. MHC studies in nonmodel  vertebrates: what have we learned about natural selection in 15 years? J Evol Bio 16:363-377. http://onlinelibrary.wiley.com/doi/10.1046/j.1420-9101.2003.00531.x/full
 2. de Bellocq, J et al. 2009. Evolutionary history of an MHC gene in two leporid species: characterisation of MHC-DQA in the European brown hare and comparison with the European rabbit. Immunogenetics 61:131-144. http://link.springer.com/article/10.1007%2Fs00251-008-0349-4
 3. Keane TM et al. 2006. assessment of methods for amino acid matrix selection and their use on empirical data shows that ad hoc assumptions for choice of matrix are not justified. BMC Evolutionary Biology 6-29.
-4. Koutsogiannouli et al. 2009. Major histocompatibility complex variation at class II DQA locus in the brown hare (Lepus europaeus). Molecular Ecology 18:1431-4649. http://onlinelibrary.wiley.com/doi/10.1111/j.1365-294X.2009.04394.x/full
+4. Koutsogiannouli et al. 2009. Major histocompatibility complex variation at class II DQA locus in the brown hare (*Lepus europaeus*). Molecular Ecology 18:1431-4649. http://onlinelibrary.wiley.com/doi/10.1111/j.1365-294X.2009.04394.x/full
 5. Radwan, J et al. 2007. MHC-DRB3 variation in a free-living population of the European bison, Bison bonasus. J Evol Biol 16:363-377. http://onlinelibrary.wiley.com/doi/10.1111/j.1365-294X.2006.03179.x/epdf
 6. Surridge, AK et al. 2008. Diversity and evolutionary history of the MHC DQA gene in leporids. Immunogenetics 60:515-525. http://link.springer.com/article/10.1007%2Fs00251-008-0309-z
 7. Wu, SX et al. 2009. Sequence polymorphism and evolution of three cetacean MHC genes. J Mol Evol 69:260-275. http://link.springer.com/article/10.1007%2Fs00239-009-9272-z
