@@ -1,0 +1,241 @@
+#Simulations: Simulating trees and character evolution 
+
+#simulating phylogeny 
+
+library(ape)
+set.seed(4984356)
+
+t <- rcoal( 700 )
+plot( t,show.tip.label = FALSE,show.node.label = TRUE)
+plot.phylo(t,show.tip.label=FALSE,edge.color=c("black","red","blue","green"),show.node.label = TRUE)
+
+t2<- drop.tip(t, sample(x = 1:700, size = 350, replace = F))
+plot(t2,show.tip.label = FALSE)
+
+t3<- drop.tip(t2, sample(x = 1:350, size = 100, replace = F))
+plot(t3,show.tip.label = FALSE)
+
+t4<- drop.tip(t3, sample(x = 1:250, size = 150, replace = F))
+plot(t4,show.tip.label = FALSE)
+
+t5<- drop.tip(t4, sample(x = 1:100, size = 50, replace = F))
+plot(t5,show.tip.label = FALSE)
+
+t6<- drop.tip(t5, sample(x = 1:50, size = 25, replace = F))
+plot(t6,show.tip.label = FALSE)
+
+t7<- drop.tip(t6, sample(x = 1:25, size = 22, replace = F))
+plot(t,show.tip.label = FALSE)
+
+
+#simulating character evolution
+
+##variance-covariance matrix:
+
+vcv <- diag( 5 )
+vcv[1,2] <- 0.2
+vcv[1,3] <- 0.0
+vcv[1,4] <- 0.9
+vcv[1,5] <- 0.2
+vcv[3,3] <- 0.3
+
+##generate multiple simulated datasets on tree t according to vcv:
+library(geiger)
+A <- sim.char( t, vcv, nsim = 100, model = "BM", root = 0 )
+A[,,1]
+library( adephylo )
+library( phylobase )
+A4 <- phylo4d( t, A[,,1] )
+table.phylo4d( A4, box=FALSE )
+
+##tree2
+library(geiger)
+B <- sim.char( t2, vcv, nsim = 100, model = "BM", root = 0 )
+B[,,1]
+library( adephylo )
+library( phylobase )
+B4 <- phylo4d( t2, B[,,1] )
+table.phylo4d( B4, box=FALSE )
+
+##tree3
+library(geiger)
+C <- sim.char( t3, vcv, nsim = 100, model = "BM", root = 0 )
+C[,,1]
+library( adephylo )
+library( phylobase )
+C4 <- phylo4d( t3, C[,,1] )
+table.phylo4d( C4, box=FALSE )
+
+##tree4
+library(geiger)
+D <- sim.char( t4, vcv, nsim = 100, model = "BM", root = 0 )
+D[,,1]
+library( adephylo )
+library( phylobase )
+D4 <- phylo4d( t4, D[,,1] )
+table.phylo4d( D4, box=FALSE )
+
+##tree5
+library(geiger)
+E <- sim.char( t5, vcv, nsim = 100, model = "BM", root = 0 )
+E[,,1]
+library( adephylo )
+library( phylobase )
+E4 <- phylo4d( t5, E[,,1] )
+table.phylo4d( E4, box=FALSE )
+
+##tree6
+library(geiger)
+F <- sim.char( t6, vcv, nsim = 100, model = "BM", root = 0 )
+F[,,1]
+library( adephylo )
+library( phylobase )
+F4 <- phylo4d( t6, F[,,1] )
+table.phylo4d( F4, box=FALSE )
+
+##tree7
+library(geiger)
+G <- sim.char( t7, vcv, nsim = 100, model = "BM", root = 0 )
+G[,,1]
+library( adephylo )
+library( phylobase )
+G4 <- phylo4d( t7, G[,,1] )
+table.phylo4d( G4, box=FALSE )
+
+
+##independent contrasts 
+
+##5 characters
+ic1 <- pic( A[,1,1], t )
+ic2 <- pic( A[,2,1], t )
+ic3 <- pic( A[,3,1], t )
+ic4 <- pic( A[,4,1], t )
+ic5 <- pic( A[,5,1], t )
+cov( cbind( ic1, ic2, ic3, ic4, ic5) )
+tree1<-cov( cbind( ic1, ic2, ic3, ic4, ic5) )
+library(RColorBrewer)
+rbPal<-colorRampPalette(c('blue','red')) 
+cols<-rbPal(10)[as.numeric(cut(tree1,breaks=10))]
+heatmap(tree1,col=cols)
+
+ic6 <- pic( B[,1,1], t2 )
+ic7 <- pic( B[,2,1], t2 )
+ic8 <- pic( B[,3,1], t2 )
+ic9 <- pic( B[,4,1], t2 )
+ic10 <- pic( B[,5,1], t2 )
+cov( cbind( ic6, ic7, ic8, ic9, ic10) )
+tree2<-cov( cbind( ic6, ic7, ic8, ic9, ic10) )
+library(RColorBrewer)
+rbPal<-colorRampPalette(c('blue','red')) 
+cols<-rbPal(10)[as.numeric(cut(tree2,breaks=10))]
+heatmap(tree2,col=cols)
+
+ic11 <- pic( C[,1,1], t3 )
+ic12 <- pic( C[,2,1], t3 )
+ic13 <- pic( C[,3,1], t3 )
+ic14 <- pic( C[,4,1], t3 )
+ic15 <- pic( C[,5,1], t3 )
+cov( cbind( ic11, ic12, ic13, ic14, ic15) )
+tree3<-cov( cbind( ic11, ic12, ic13, ic14, ic15) )
+library(RColorBrewer)
+rbPal<-colorRampPalette(c('blue','red')) 
+cols<-rbPal(10)[as.numeric(cut(tree3,breaks=10))]
+heatmap(tree3,col=cols)
+
+ic16 <- pic( D[,1,1], t4 )
+ic17 <- pic( D[,2,1], t4 )
+ic18 <- pic( D[,3,1], t4 )
+ic19 <- pic( D[,4,1], t4 )
+ic20 <- pic( D[,5,1], t4 )
+cov( cbind( ic16, ic17, ic18, ic19, ic20) )
+tree4<-cov( cbind( ic16, ic17, ic18, ic19, ic20) )
+library(RColorBrewer)
+rbPal<-colorRampPalette(c('blue','red')) 
+cols<-rbPal(10)[as.numeric(cut(tree4,breaks=10))]
+heatmap(tree4,col=cols)
+
+ic21 <- pic( E[,1,1], t5 )
+ic22 <- pic( E[,2,1], t5 )
+ic23 <- pic( E[,3,1], t5 )
+ic24 <- pic( E[,4,1], t5 )
+ic25 <- pic( E[,5,1], t5 )
+cov( cbind( ic21, ic22, ic23, ic24, ic25) )
+tree5<-cov( cbind( ic21, ic22, ic23, ic24, ic25) )
+library(RColorBrewer)
+rbPal<-colorRampPalette(c('blue','red')) 
+cols<-rbPal(10)[as.numeric(cut(tree5,breaks=10))]
+heatmap(tree5,col=cols)
+
+ic26 <- pic( F[,1,1], t6 )
+ic27 <- pic( F[,2,1], t6 )
+ic28 <- pic( F[,3,1], t6 )
+ic29 <- pic( F[,4,1], t6 )
+ic30 <- pic( F[,5,1], t6 )
+cov( cbind( ic26, ic27, ic28, ic29, ic30) )
+tree6<-cov( cbind( ic26, ic27, ic28, ic29, ic30) )
+library(RColorBrewer)
+rbPal<-colorRampPalette(c('blue','red')) 
+cols<-rbPal(10)[as.numeric(cut(tree6,breaks=10))]
+heatmap(tree6,col=cols)
+
+ic31 <- pic( G[,1,1], t7 )
+ic32 <- pic( G[,2,1], t7 )
+ic33 <- pic( G[,3,1], t7 )
+ic34 <- pic( G[,4,1], t7 )
+ic35 <- pic( G[,5,1], t7 )
+cov( cbind( ic31, ic32, ic33, ic34, ic35) )
+tree7<-cov( cbind( ic31, ic32, ic33, ic34, ic35) )
+library(RColorBrewer)
+rbPal<-colorRampPalette(c('blue','red')) 
+cols<-rbPal(10)[as.numeric(cut(tree7,breaks=10))]
+heatmap(tree7,col=cols)
+
+##covariance of values at the tips (not independent contrasts)
+
+notree1<-cov( cbind( A[,1,1], A[,2,1], A[,3,1], A[,4,1], A[,5,1] ) )
+library(RColorBrewer)
+rbPal<-colorRampPalette(c('blue','red')) 
+cols<-rbPal(10)[as.numeric(cut(notree1,breaks=10))]
+heatmap(notree1,col=cols)
+
+notree2<-cov( cbind( B[,1,1], B[,2,1], B[,3,1], B[,4,1], B[,5,1] ) )
+library(RColorBrewer)
+rbPal<-colorRampPalette(c('blue','red')) 
+cols<-rbPal(10)[as.numeric(cut(notree2,breaks=10))]
+heatmap(notree2,col=cols)
+
+notree3<-cov( cbind( C[,1,1], C[,2,1], C[,3,1], C[,4,1], C[,5,1] ) )
+library(RColorBrewer)
+rbPal<-colorRampPalette(c('blue','red')) 
+cols<-rbPal(10)[as.numeric(cut(notree3,breaks=10))]
+heatmap(notree3,col=cols)
+
+notree4<-cov( cbind( D[,1,1], D[,2,1], D[,3,1], D[,4,1], D[,5,1] ) )
+library(RColorBrewer)
+rbPal<-colorRampPalette(c('blue','red')) 
+cols<-rbPal(10)[as.numeric(cut(notree4,breaks=10))]
+heatmap(notree4,col=cols)
+
+notree5<-cov( cbind( E[,1,1], E[,2,1], E[,3,1], E[,4,1], E[,5,1] ) )
+library(RColorBrewer)
+rbPal<-colorRampPalette(c('blue','red')) 
+cols<-rbPal(10)[as.numeric(cut(notree5,breaks=10))]
+heatmap(notree5,col=cols)
+
+notree6<-cov( cbind( F[,1,1], F[,2,1], F[,3,1], F[,4,1], F[,5,1] ) )
+library(RColorBrewer)
+rbPal<-colorRampPalette(c('blue','red')) 
+cols<-rbPal(10)[as.numeric(cut(notree6,breaks=10))]
+heatmap(notree6,col=cols)
+
+notree7<-cov( cbind( G[,1,1], G[,2,1], G[,3,1], G[,4,1], G[,5,1] ) )
+library(RColorBrewer)
+rbPal<-colorRampPalette(c('blue','red')) 
+cols<-rbPal(10)[as.numeric(cut(notree7,breaks=10))]
+heatmap(notree7,col=cols)
+
+
+##exporting covariance matrices
+write.csv(ic,file="indie.csv",row.names=FALSE)
+
+
