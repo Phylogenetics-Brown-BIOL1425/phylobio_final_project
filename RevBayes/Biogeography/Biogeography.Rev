@@ -1,7 +1,8 @@
-area_fn = "data/Temnospondyls.atlas.txt"
-data_fn = "data/Temnospondyl_Characters.nex"
-tree_fn = "data/GTRSeed1.tree"
-out_fn  = "output/bg_large"
+fp      = "./"
+area_fn = fp + "data/Temnospondyls.atlas.txt"
+data_fn = fp + "data/Biogeographical_Matrix.nex"
+tree_fn = fp + "data/GTRseed1.nex"
+out_fn  = fp + "output/bg_large"
 data  <- readDiscreteCharacterData(data_fn)
 tree  <- readTrees(tree_fn)[1]
 atlas <- readAtlas(area_fn)
