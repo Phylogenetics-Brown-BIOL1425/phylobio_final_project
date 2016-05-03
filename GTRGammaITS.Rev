@@ -18,11 +18,11 @@
 
 ### Read in sequence data for both genes
 
-data <- readDiscreteCharacterData("data/ITScombined.correct.fasta")
+data <- readDiscreteCharacterData("data/mrbayesITS.nex")
 
 # Get some useful variables from the data. We need these later on.
 n_species <- data.ntaxa()
-taxa <- data.taxa()
+names <- data.names()
 
 # set my move index
 mvi = 0
@@ -94,7 +94,7 @@ death_rate := turnover
 rho <- n_species/450
 
 ### the time tree is a stochastic node modeled by the constant rate birth-death process (dnBDP)
-psi ~ dnBDP(lambda=birth_rate, mu=death_rate, rho=rho, rootAge=root_time, samplingStrategy="uniform", condition="survival", taxa=taxa)
+psi ~ dnBDP(lambda=birth_rate, mu=death_rate, rho=rho, rootAge=root_time, samplingStrategy="uniform", condition="survival", names=names)
 
 
 moves[++mvi] = mvNarrow(psi, weight=5.0)
@@ -144,8 +144,8 @@ mymodel = model(Q)
 
 
 
-monitors[++mni] = mnModel(filename="output/lamia_trnK_ITS_Gamma.log",printgen=10, separator = TAB)
-monitors[++mni] = mnFile(filename="output/lamia_trnK_ITS_Gamma.trees",printgen=10, separator = TAB, psi)
+monitors[++mni] = mnModel(filename="output/lamia_ITS_GTR_Gamma.log",printgen=10, separator = TAB)
+monitors[++mni] = mnFile(filename="output/lamia_ITS_GTR_Gamma.trees",printgen=10, separator = TAB, psi)
 monitors[++mni] = mnScreen(printgen=1000, clock_rate, diversification, turnover)
 
 mymcmc = mcmc(mymodel, monitors, moves)
@@ -156,11 +156,13 @@ mymcmc.run(generations=30000)
 
 # Now, we will analyze the tree output.
 # Let us start by reading in the tree trace
-treetrace = readTreeTrace("output/lamia_ITS_GTR_Gamma.trees", treetype="clock")
+treetrace1 = readTreeTrace("output/lamia_ITS_GTR_Gamma_run_1.trees", treetype="clock")
+treetrace2 = readTreeTrace("output/lamia_ITS_GTR_Gamma_run_2.trees", treetype="clock")
 # and get the summary of the tree trace
 # treetrace.summarize()
 
-map_tree = mapTree(treetrace,"output/lamia_ITS_GTR_Gamma.tree")
+map_tree1 = mapTree(treetrace1,"output/lamia_ITS_GTR_Gamma_run_1.tree")
+map_tree2 = mapTree(treetrace2,"output/lamia_ITS_GTR_Gamma_run_2.tree")
 
 # you may want to quit RevBayes now
 q()
