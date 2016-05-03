@@ -1,25 +1,5 @@
 # Phylogenetic Biology - Final Project
 
-## Guidelines - you can delete this section before submission
-
-This repository is a stub for your final project. Fork it, develop your project, and submit it as a pull request. Edit/ delete the text in this readme as needed.
-
-Some guidelines and tips:
-
-- Use the stubs below to write up your final project. Alternatively, if you would like the writeup to be an executable document (with [knitr](http://yihui.name/knitr/), [jupytr](http://jupyter.org/), or other tools), you can create it as a separate file and put a link to it here in the readme.
-
-- For information on formatting text files with markdown, see https://guides.github.com/features/mastering-markdown/ . You can use markdown to include images in this document by linking to files in the repository, eg `![GitHub Logo](/images/logo.png)`.
-
-- The project must be entirely reproducible. In addition to the results, the repository must include all the data (or links to data) and code needed to reproduce the results.
-
-- If you are working with unpublished data that you would prefer not to publicly share at this time, please contact me to discuss options. In most cases, the data can be anonymized in a way that putting them in a public repo does not compromise your other goals.
-
-- Paste references (including urls) into the reference section, and cite them with the general format (Smith at al. 2003).
-
-- Commit and push often as you work.
-
-OK, here we go.
-
 # A Phylogenetic Analysis of GPT and GPT2 evolution
 
 ## Introduction and Goals
@@ -43,9 +23,13 @@ Using these accession IDs, I used NCBI batch download to obtain FASTAs for these
 
 Two further fasta files were also made at this point. These files mRNA.all.fasta and protein.all.fasta include the mRNA or amino acid sequences from both the GPT and GPT2 sequences. Because of the variety of names for each gene, they were labeled as with Species name followed by GPT or GPT2 depending on which homologene family they were from. Table 1 includes the real name for each sequence.
 
-With the FASTA files generated, alignments were then performed. The aligments were made using mafft. The resulting alignments are stored in the alignments directory. In order to run the alignment the alignment.sh script was run with the following command: `sbatch -t 12:00:00 alignment.sh`.
+With the FASTA files generated, alignments were then performed. The aligments were made using mafft. The resulting alignments are stored in the alignments directory. In order to run the alignment the alignment.sh script was run with the following command: `sbatch -t 12:00:00 alignment.sh`. These are converted to .nex and .phy files using Mesquite.
 
+A concatenated alignment was made using phyutility.jar. A copy of this jar is included in the main directory. It should be noted that for the concatenated amino acid alignment, phyutility outputs the file stating that it is DNA data so, I needed to manually change the line in the .nex file from DNA to Protein. The concatenated files were converted to .phy using Mesquite. The phyutility commands (run in the alignments directory) were: `java -jar ../phyutility.jar -concat -in gpt.align.fasta gpt2.align.fasta -out combined.mrna.nex` and `java -jar ../phyutility.jar -concat -in gpt.protein.align.fasta gpt2.protein.align.fasta -out combined.protein.nex`.
 
+With all of the alignments generated, the trees were constructed using RAxML. The commands to run this are included in the raxml.sh script which can be run using `sbatch raxml.sh`. For the mRNA data, the GTRGAMMA model was used. For the amino acid data, the PROTGAMMAWAG model was used. This is based off of the WAG amino acid subsitution matrix. 
+
+The trees were then viewed using Figtree. 
 
 
 ## Results
