@@ -1,0 +1,49 @@
+#NEXUS
+
+	Begin taxa;
+	Dimensions ntax=38;
+	Taxlabels
+		Acroplous_vorax
+		Almasaurus_habbazi
+		Archegosaurus_decheni
+		Batrachosuchus_spp
+		Benthosuchus_sushkini
+		Buettneria_perfecta
+		Capitosauridae
+		Cheliderpeton_latirostre
+		Dissorophus_spp
+		Dvinosaurus_primus
+		Eryops_spp
+		Isodectes_obtusum
+		Keratobrachyops_australis
+		Konzhukovia_vetusta
+		Laidleria_gracilis
+		Lapillopsis_nana
+		Luzocephalus_spp
+		Lydekkerina_huxleyi
+		Mastodonsaurus_giganteus
+		Neldasaurus_wrightae
+		Pelorocephalus_spp
+		Peltobatrachus_pustulatus
+		Plagiosauridae
+		Platyoposaurus_stuckenbergi
+		Rhinesuchidae
+		Rhytidosteidae
+		Sclerocephalus_spp
+		Siderops_kehli
+		Tersomius_spp
+		Thoosuchus_jakovlevi
+		Trematopidae
+		Trematosauridae
+		Trimerorhachis_spp
+		Tupilakosaurus_spp
+		Undescribed_genus
+		Xenobrachyops_allos
+		Zatrachydidae
+		ancestor
+		;
+End;
+
+Begin trees;
+tree TREE1 = [&R](((((((((((((((((((((((((Neldasaurus_wrightae[&index=37]:0.087912,Trimerorhachis_spp[&index=36]:0.000000)[&index=38,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.087912,0.087912}]:0.583345,Dvinosaurus_primus[&index=35]:0.000000)[&index=39,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.671257,0.671257}]:0.144020,(Acroplous_vorax[&index=34]:0.000000,Isodectes_obtusum[&index=33]:0.101395)[&index=40,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.643275,0.643275}]:0.172002)[&index=41,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.815277,0.815277}]:0.097147,Tupilakosaurus_spp[&index=32]:-0.000000)[&index=42,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.912424,0.912424}]:0.023435,Undescribed_genus[&index=31]:0.056311)[&index=43,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.935859,0.935859}]:0.204063,Batrachosuchus_spp[&index=30]:0.061609)[&index=44,posterior=1.000000,ccp=1.000000,height_95%_HPD={1.13992,1.13992}]:0.006602,Xenobrachyops_allos[&index=29]:0.095204)[&index=45,posterior=1.000000,ccp=1.000000,height_95%_HPD={1.14652,1.14652}]:0.184111,Siderops_kehli[&index=28]:0.001723)[&index=46,posterior=1.000000,ccp=1.000000,height_95%_HPD={1.33063,1.33063}]:0.041637,Pelorocephalus_spp[&index=27]:0.016820)[&index=47,posterior=1.000000,ccp=1.000000,height_95%_HPD={1.37227,1.37227}]:0.088763,Keratobrachyops_australis[&index=26]:0.015893)[&index=48,posterior=1.000000,ccp=1.000000,height_95%_HPD={1.46103,1.46103}]:0.094914,Rhytidosteidae[&index=25]:0.120592)[&index=49,posterior=1.000000,ccp=1.000000,height_95%_HPD={1.55595,1.55595}]:0.108582,(Laidleria_gracilis[&index=24]:0.013197,Plagiosauridae[&index=23]:0.186624)[&index=50,posterior=1.000000,ccp=1.000000,height_95%_HPD={1.52279,1.52279}]:0.141742)[&index=51,posterior=1.000000,ccp=1.000000,height_95%_HPD={1.66453,1.66453}]:0.052730,(Almasaurus_habbazi[&index=22]:0.162294,Buettneria_perfecta[&index=21]:0.000000)[&index=52,posterior=1.000000,ccp=1.000000,height_95%_HPD={1.59991,1.59991}]:0.117354)[&index=53,posterior=1.000000,ccp=1.000000,height_95%_HPD={1.71726,1.71726}]:0.110079,Mastodonsaurus_giganteus[&index=20]:0.034286)[&index=54,posterior=1.000000,ccp=1.000000,height_95%_HPD={1.82734,1.82734}]:0.081360,Capitosauridae[&index=19]:-0.000000)[&index=55,posterior=1.000000,ccp=1.000000,height_95%_HPD={1.9087,1.9087}]:0.016082,((Thoosuchus_jakovlevi[&index=18]:-0.000000,Trematosauridae[&index=17]:0.051508)[&index=56,posterior=1.000000,ccp=1.000000,height_95%_HPD={1.75355,1.75355}]:0.155592,Benthosuchus_sushkini[&index=16]:-0.000000)[&index=57,posterior=1.000000,ccp=1.000000,height_95%_HPD={1.90915,1.90915}]:0.015636)[&index=58,posterior=1.000000,ccp=1.000000,height_95%_HPD={1.92478,1.92478}]:0.005693,((Lapillopsis_nana[&index=15]:0.261265,Lydekkerina_huxleyi[&index=14]:-0.000000)[&index=59,posterior=1.000000,ccp=1.000000,height_95%_HPD={1.81871,1.81871}]:0.000000,Luzocephalus_spp[&index=13]:0.119653)[&index=60,posterior=1.000000,ccp=1.000000,height_95%_HPD={1.81871,1.81871}]:0.111766)[&index=61,posterior=1.000000,ccp=1.000000,height_95%_HPD={1.93047,1.93047}]:0.310247,Rhinesuchidae[&index=12]:0.000000)[&index=62,posterior=1.000000,ccp=1.000000,height_95%_HPD={2.24072,2.24072}]:0.199018,Peltobatrachus_pustulatus[&index=11]:0.221818)[&index=63,posterior=1.000000,ccp=1.000000,height_95%_HPD={2.43974,2.43974}]:0.085574,((Konzhukovia_vetusta[&index=10]:0.112416,Platyoposaurus_stuckenbergi[&index=9]:0.023486)[&index=64,posterior=1.000000,ccp=1.000000,height_95%_HPD={2.45844,2.45844}]:0.036465,Archegosaurus_decheni[&index=8]:-0.000000)[&index=65,posterior=1.000000,ccp=1.000000,height_95%_HPD={2.49491,2.49491}]:0.030406)[&index=66,posterior=1.000000,ccp=1.000000,height_95%_HPD={2.52531,2.52531}]:0.066919,(Cheliderpeton_latirostre[&index=7]:0.041983,Sclerocephalus_spp[&index=6]:0.028896)[&index=67,posterior=1.000000,ccp=1.000000,height_95%_HPD={2.5561,2.5561}]:0.036133)[&index=68,posterior=1.000000,ccp=1.000000,height_95%_HPD={2.59223,2.59223}]:0.535108,Eryops_spp[&index=5]:-0.000000)[&index=69,posterior=1.000000,ccp=1.000000,height_95%_HPD={3.12734,3.12734}]:0.048336,Zatrachydidae[&index=4]:0.061530)[&index=70,posterior=1.000000,ccp=1.000000,height_95%_HPD={3.17568,3.17568}]:0.006122,((Tersomius_spp[&index=3]:0.131720,Trematopidae[&index=2]:0.059650)[&index=71,posterior=1.000000,ccp=1.000000,height_95%_HPD={3.00965,3.00965}]:0.008544,Dissorophus_spp[&index=1]:0.040003)[&index=72,posterior=1.000000,ccp=1.000000,height_95%_HPD={3.01819,3.01819}]:0.163607)[&index=73,posterior=1.000000,ccp=1.000000,height_95%_HPD={3.1818,3.1818}]:0.182333,ancestor[&index=0]:0.182333)[&index=74,posterior=1.000000,ccp=1.000000,height_95%_HPD={3.36413,3.36413}]:0.000000;
+End;

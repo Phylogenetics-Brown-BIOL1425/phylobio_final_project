@@ -1,0 +1,8 @@
+q){
+q()
+?mcmc
+?model
+?mn
+?mnScreen
+mnScreen
+q()
