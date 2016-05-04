@@ -1,0 +1,4 @@
+data <- readDiscreteCharacterData("trnKcombined.correct.fasta")
+data <- readDiscreteCharacterData("trnKcombined.correct.nex")
+data
+q()

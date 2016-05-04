@@ -1,0 +1,220 @@
+#NEXUS
+[written Tue May 03 07:55:08 EDT 2016 by Mesquite  version 3.04 (build 725) at Haleys-MacBook-Pro.local/10.38.59.113]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=36;
+	TAXLABELS
+		'Clinopodium_abyssinicum' 'Clinopodium_acinos' 'Acinos_alpinus' 'Clinopodium_ashei' 'Clinopodium_axillare' 'Clinopodium_barosmum' 'Clinopodium_bolivianum' 'Clinopodium_brownei' 'Clinopodium_carolinianum' 'Clinopodium_chilense' 'Clinopodium_coccineum' 'Clinopodium_cylindrostachys' 'Clinopodium_dentatum' 'Clinopodium_douglasii' 'Clinopodium_fasciculatum' 'Clinopodium_flabellifolium' 'Clinopodium_gilliesii' 'Clinopodium_hydaspidis' 'Clinopodium_jacquelinae' 'Clinopodium_myrianthum' 'Clinopodium_nanum' 'Clinopodium_nepalense_1' 'Clinopodium_nepalense_2' 'Clinopodium_nubigenum' 'Clinopodium_paradoxum' 'Clinopodium_piperitum' 'Clinopodium_revolutum' 'Clinopodium_robustum' 'Clinopodium_sericeum' 'Clinopodium_simense' 'Clinopodium_speciosum' 'Clinopodium_tomentosum' 'Clinopodium_uhligii' 'Clinopodium_vanum' 'Clinopodium_vulgare' 'Clinopodium_wardii' 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=765;
+	FORMAT DATATYPE = DNA GAP = - MISSING = ?;
+	MATRIX
+	'Clinopodium_abyssinicum'    ----------------------------------------------------------------------aaacctgca--aagcagaccgcgaacacg?aa-tcaactccgcgggcc---gaggcgagggcctacgcccccgccccgtcc-cgtctcccgcc-ggcgtgtgccctc----gcgtcacgccgtccgggctaacgaacccccggcgcggaacgcgccaaggaaaaccgaacgaagcgtcc--g----tccgcggcgc-cccgtacgcgggtcgcgccgcgggatcggacgcctatc-aaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccttcaggccgagggcacgcctgcctgggcgtcacgcatcgcgtcgccccccacccccgcgctca---cagccgggcggtggggggcggaagttggacccccgtgcgcctcggcgtgcggccgtcccaaatgagatccccgggcgact-ggcgtcacgacaagtggtgg-ttgaa-a?ctcaatctgtcctcgcagtcgtgccgccgcgtcgtcccgcgcgggaatccacgaacgacccaacggcgcacggcgcgaacagc---gcctcgc------------------------------------------------------
+	'Clinopodium_acinos'         ----------------------------------------------------------------------agacctgca--aagcagaccgcgaacacgtaa-acaactccgcggggcg-cggcgt-gggggcgacccccc-gccgggtcc-cgtctcccgcc-ggtgcgctccctc----gggacgcgccgcgcgggctaacgaa-ccccggcgcggaacgcgccaaggaaaaccaaactcagcgccc--g----cccccggcgc-cccgttcgcggggagtgccggggggccgggcgtctgtc-aaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgccccccatccccgcgcgca---cagccgggaggtagggggcggacattggccccccgtgcgcctcggtgcgcggccggcccaaatgggatccccgggcggct-ggcgtcgcgacaagtggtgg-ttgaacatatcaatctct-ctcgtcgtcgtgccgccgtgccgtcccgtacgggaatcgacaac-gacccaacggtgagtggcgcgagccgc---gtatcac------------------------------------------------------
+	'Acinos_alpinus'             -----------------------------------------------------cggaaggatcattgtcgagacctgca--aagcagaccgcgaacacgtaa-acaactccgcggggcg-cggcgt-gggggcgacccccc-accgcgtcc-tgtctcccgcc-ggtgcgctccctc----gggacgcgccgcgcgggctaacgaa-ccccggcgcggaacgcgccaaggaaaaccaaactcagcgccc--g----cccccggcgc-cccgttcgc-gggagtgccggggggccgggcgtctgtcaaaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgccccccatccccgcgcgca---cagccgggaggtagggggc-gacattggccccccgtgcgcctcggcgcgcggccggcccaaatgggatccccgggcggct-ggcgtcgcgacaagtggtgg-ttgaacatctcaatctct-ctcgtcgtcgtgccgccgtgccgtcccgtacgggaatcgacaactgacccaacggtgagcggcgcgagccgc---gtatcaccttcgaccgcg-accccaggt---------------------------------
+	'Clinopodium_ashei'          --tatcatttagaggaaggagaagtcgtaacaaggtttccgtaggtgaacctgcggaaggatcattgtcgagacctgca--aagcaaaccgcgaacatgtaa-ctaacgccgcgggagc--ggcgcggggg-cgaccccct-gccgtgtcc-cgtctcccgcc-ggcgtgg-ccccc----gggccgcgccgtgcgggctaacgaa-ccccggcgcggaatgcgccaaggaaaaccgaacgaagcgtcg--g----cccccggcat-cccgttcgcggagcgtgccgcgggatcgggcgtctgtcaaaaagtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgtcccccacccccgcgcgcgtcgtcgccgggcggttgggggcggacaatggcatcccgtgcgcctcggcgcgcggcctgcccaaatgagatccccgggtgact-ggcgtcgcgacaagtggtgg-ttgaacatctcaatctct-ctcgtggtcgtgccgccgtgtcgtcccgtgcgggaatcgaataacgacccaacggtgcacggcgcgaacagc---gcctcaccttcgaccgcg-accccaggtcaggcgggattacccgctgagtttaagcatatc
+	'Clinopodium_axillare'       -------------------------------------------------------------------------cctgca--aagcagaccgcgaacacgtac-ctaacgccgcgggcgc--ggcgcggggggcgaccccct-gccgtgtcc-cgtctcctgcacggcgtgctctctc----gggtcacgccgtgcgggctaacgaa-ccccggcgcggaatgcgccaaggaaaaccgaacgaagcgtcc--g----cccccggcat-cccgttcgcggagcgtgccgcgggatcgggcgtctatc-aaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgccccccacccccgcgcgca---ctgccggccggttgggggcggacactggcctcccgtgcgcctcggcgtgcggccKgcccaaatgagatccccgggcgact-ggcgtcgcgacaagtggtgg-ttgaacatctcaatctct-ctcgtggtcgtgccgccgtgtcgtcccgtacgggaataa-aaaatgacccaacggtgcacggcgcgaatagc---gtctcaccttcgaccgcg-accccaggtcaggcgggattacccgctgagtt----------
+	'Clinopodium_barosmum'       ----------------------------------------------------------------------aaacctgca--aagcagaccgcgaacacgtaatttaacctcacggggtcgcggcgcggggg-cgaccccct-gccgcgtcc-cgtctcccgcc-ggcgtgttccctc----gggccacgtcgtgcgggctaacgaa-ccccggcgcggaacgcgccaaggaaaaccaaacgaagcgtcc--g----cccccggcat-cccgttcgcggagcgtgccgtgggttcggccgtctatc-aaatgtctaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccatcaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgccccccatccccgcgcgca---cagccgggcggtcgggggcggagactggcctcccgtgcgcctcggtgtgcggccggcccaaatgcgatccccgggcgact-ggcgtcacgacaagtggtgg-ttgaacatctcaatccgtcctcgcagtcgtgccgccctgtcgtcccgcacgggaatccacaaacgacccaacggtgcacgtcgcgaacagc---gtctcac------------------------------------------------------
+	'Clinopodium_bolivianum'     ----------------------------------------------------------------------aaacctgca--aagcagaccgcgaacacgtac-ctaacgccgcgggcgc--gg??cgggggacgaccccct-gccgtgtcc-cgtctcctgcacggcgtgctccctc----gggtcacgccgtgcgggctaacgaa-ccccggcgcggaatgcgccaaggaaaaccgaacgaagcgtcc--g----cccccggcat-cccgttcgcggagcgtgccgcgggatcgggcgtctatc-aaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgccccccacccccgcgcgca---ccgccggccggttgggggcggacactggcctcccgtgcgcctcggcgtgcggccggcccaaatgagatccccgggcgact-ggcgtcgcgacaagtggtgg-ttgaacatctcaatctct-ctcgtggtcgtgccgccgtgtcgtcccgtacgggaatca-aaaatgacccaacggtgcacggcgcgaacagc---gtctcac------------------------------------------------------
+	'Clinopodium_brownei'        ----------------------------------------------------------------------aaacctgcacaaagcagaccgcgaacacgtaa-ctaacacagcgggtgc--ggcacggggg-cgaccccct-gccgtgtcc-cgtctcctgcc-gacgtgctccctc----gggtcacgccgtgcgggctaacgaa-ccccggcgcggaatgcgccaaggaaaaccgatcgaagcgtccctc----cctccggcat-cccgttcgcggagcgtgccgcgggatggggcgtctcat-gaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcttcgcccccaaccccagcgcaca---acgccgggcggtcgggggcggacactggcctcccgtgctcctcggtgtgcggccggcccaaattagatccccggacggct-gtcgtcgcggcaagtggtgg-ttgaacatctcaatctct-gttgcagccgcgccggcgtgtcgccccgcacgggactcc-aaagtgacccagtggtgcacggcgccaacagc---gcctcac------------------------------------------------------
+	'Clinopodium_carolinianum'   ----------------------------------------------------------------------agacctgca--aagcagaccgcgaacacgtaa-ctaacgccgcgggcgc--ggcgcggggg-cgaccccct-gccgtgtcc-cgtctcccgcc-ggcgtgg-ccccc----gggccgcgccgtgcgggctaacgaa-ccccggcgcggaatgcgccaaggaaaaccgaacgaagcgtcc--g----cccccggcat-cccgttcgcggagcgtgccgcgggatcgggcgtctatc-aaaagtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgtcccccacccccgcgcgcgtcgtcgccgggcggttggggacggacaatggcctcccgtgcgcctcggcgcgcggcctgcccaaatgagatccccgggcgact-ggcgtcgcgacaagtggtgg-ttgaacatctcaatctct-ctcgtggtcgtgccgccgtgtcgtcccgtgcgggaatcg-aaaacgacccaacggtgcacggcgcgaacagc---gtctcac------------------------------------------------------
+	'Clinopodium_chilense'       ----------------------------------------------------------------------aaacctgca--aagcagaccgcgaacacgtaa-ctaacaccgcgggcg--cggcgcggggg-cgaccccct-gccgtgtcc-cgcctcctgcc-ggcgtgctccctc----gggtcacgccgtgcgggctaacgaa-ccccggcgcggaatgcgccaaggaaaaccgaacgaagcgtcc--g----cccccggcat-cccgttcgcggagcgtgccgcgggatcgggcgtctatc-aaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccgttaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgccccc-acccccgcgcgca---tcgccgggcggttgggggcggacactggcctcccgtgcgcctcggcgtgcggccggcccaaatgagatccccgggcggct-ggcgtcgcgacaagtggtgg-ttgaacgtctcaatctct-ctcgtggtcgtgccgccgtgtcgtcccgtacgggaatcc-aatatgacccaacggtgcatggcgcgaacagc---gtctcac------------------------------------------------------
+	'Clinopodium_coccineum'      ----------------------------------------------------------------------agacctgca--aagcagaccgcgaacacgtaa-ctaacgccgcgggcgc--ggcgcggggg-cgaccccct-gccgtgtcc-cgtctcccgcc-agcgtgg-ccctc----gggccgcgccgtgcgggctaacgaa-ccccggcgcggaatgcgccaaggaaaaccgaaccaagcgtcg--g----cccccggcat-cccgttcgcggagcgtgccgcgggatcgggcgtctatc-aaaagtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgtcccccacccccgcgcgcatcgtcgccgggcggttgggggcggaaaatggcatcccgtgcgcctcggcgcgcggcctgcccaaatgagatccccgggcgact-ggcgtcgcgacaagtggtgg-ttgaacatatcaatctct-ctcgtggtcgtggcgccgtgtcgtcccgtgcgggaatcgaaaaacgacccaacggtgcacggcgcaaacagc---gcctcac------------------------------------------------------
+	'Clinopodium_cylindrostachys' ----------------------------------------------------------------------aaacctgca--aagcagaccgcgaacacgtaa-ctaacaccgcgggcgctcggcgcggggg-cgaccccct-gccgtgtcc-cgtctcctgcc-ggcgtgctccctc----gggtcacgccgtgcgggctaacgaa-ccccggcgcggaatgcgccaaggaaaaccgaacgaagcgtcc--g----cccccggcat-cccgttcgcggagcgtgccgcgggatcgggcgtctatc-aaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagcctttaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgccccccacccccgcgcgca---tcgccgggcggtcgggggcggacactggcctcccgtgcgcctcggcgtgcggccggcccaaatgagatccccgggcgact-ggcgtcacgacaagtggtgg-ttgaacatctcaatctct-ctcgtggtcgtgccgccgtgtcgtcccgtacgggaatcg-agaatgacccaacggtgcacggcgcgaacagc---gtctcac------------------------------------------------------
+	'Clinopodium_dentatum'       ---------------------------------------------------------------------------------------------------------aacgccgcgggcgc--ggcgcggggg-cgaccccct-gccgtgtcc-cgtctcccgcc-ggcgtagcccccc----gggccgcgccgtgcgggctaacgaa-ccccggcgcggaatgcgccaaggaaaaccgaacgaagcgtcg--g----cccccggcat-cccgttcgcggagcgtgccgcgggatcgggcgtctatc-aaaagtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgtcccccacccccgcgcgcgtcgtcgccggggtgttgggggcggacaatggcatcccgtgcgcctcggcgcgcggcctgcccaaatgagatccccgggcgact-ggcgtcgcgacaagtggtgg-ttgaacatctcaatctct-ctcgtggtcgtgccgccgtgtcgtcccgtgcgggatctg-aaaacgacccaacggtgcacg---------------------------------------------------------------------------
+	'Clinopodium_douglasii'      ----------------------------------------------------------------------aaacctgca--aagcagaccgcgaacacgtaa-ctaacaccgcgggcgc--ggcgcggggg-cgaccccct-gccgtgtcc-cgtcttcccgccggcgtgctccctc----gggtcacgccgtgcgggctaacgaa-ccccggcgcggaatgtgccaaggaaaaccgaacgaagcgtcc--g----cccccggcat-cccgttcgcggagcgtgccgcgggatcgggcgtctatc-aaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgccccctacccccgcgcgca---tcgccgggctgttgggggcggagactggcctcccgtgcgcctcggcgtgcggccggcccaaatgagatccccgggcgact-ggcgtcgcgacaagtggtgg-ttgaacatctcaatctct-ctcgtggtcgtgccgccgtgtcgttccgtacgggaatcgaaaaacgacccaacggtgcacggcgccaacagc---gcctcac------------------------------------------------------
+	'Clinopodium_fasciculatum'   -------------------------------------------------------------------------cctgc?--aagcagaccgcgaacacgtaa-ctaacaccgcgggcgc--ggcgcggggg-cgaccccct-gccgtgtcc-cgtctcctgcc-ggcgtgctccctc----gggtcacgctgtgcgggctaacgaa-ccccggcgcggaatgcgccaaggaaaaccgaacgaagcgtcc--g----cccctggcat-cccgttcgcggagcgtgccgcgggatcgggcgtctatc-aaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcaagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgccccccacccccgcgcgca---tcgccgggcggttgggggcggacactggcctcccgtgcgcctcggcgtgcggccggcccaaatgagatccccgggcgact-ggcgtcacgacaagtggtgg-ttgaacatctcaatctct-ctcgtggtcgtgccgccgtgtcgtcccgtacgggaatcg-agaatgacccaacggtgcacggcgcgaacagc---gtcYcacctccgaccgcg-accccaggtcaggcgggattacccgctgagtt----------
+	'Clinopodium_flabellifolium' ----------------------------------------------------------------------aaacctgca--aagcagaccgcgaacacgtaa-ctaacaccgcgggcgctcggcgcggggg-cgaccccct-gccgtgtcc-cgtctcctgcc-ggcgtgctccctc----gggtcacgccgtgcgggctaacgaa-ccccggcgcggaatgcgccaaggaaaacagaacgaagcgtcc--g----cccccggcatccccgttcgcggagcgtgccgcgggatcgggcgtctatc-aaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgccccccacccccgcgcgca---tcgccgggcggttgggggcggacactggcctcccgtgcgcctcggcgtgcggccggcccaaatgagatccccgggcgact-ggcgtcacgacaagtggtgg-ttgaacatctcaatctct-ctcgtggtcgtgccgccgtgtcgtcccgtacgggaatca-aaaatgacccaacggtgcacggcgcgaacagc---gtctcac------------------------------------------------------
+	'Clinopodium_gilliesii'      -------------------------------------------------------------------------cctgca--aagcagaccgcgaacacgtac-ctaacgccgcgggcgc--ggcgcggggggcgaccccct-gccgtgtcc-cgtctcccgca-ggcgtgctccctc----gggtcacgccgtgcgggctaacgaa-ccccggcgcggaatgcgccaaggaaaaccgaacgaagcgtcc--g----cccccggcat-cccgttcgcggagcgtgccgcgggatcgggcgtctatc-aaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgccccccacccccgcgcgca---ccgccgggctgttgggggcggacactggcctcccgtgcgcctcggcgtgcggcctgcccaaatgaaatccccgggcgact-ggcgtcgcgacaagtggtgg-ttgaacatctcaatctct-ctcgtggtcgtgccgccgtgtcgtcccgtacgggaatcg-aaaatgacccaacggtgcacggcgcgaacagc---gcctcaacttcgaacgcgaaccccaggtcaggcgggattacccgctgagtt----------
+	'Clinopodium_hydaspidis'     ----------------------------------------------------------------------aaacctgca--gagcagaccgcgaacacgtaaattaacctcacggggtcgcggcgcggggg-tctccccct-gccgcgtcc-cgtctcccgcc-ggcgtgttccctc----gggccacgtcgcgcgggctaacgaa-ccccggcgcggaacgcgccaaggaaaaccaaacgaagcgtcc--g----cccccggcat-cccgttcgcggagcgtgccgtgggttcggccgtctatc-aaatgtctaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgcccccaatccccgcgcgca---cagccgggcggtcgggggcggaSactggcctcccgtgcgcctcggcgtgcggccggcccaaatgcgatccccgggcgact-ggcgtcacgacaagtggtgg-ttgaacatctcaatctgtcctcgcagtcgtgccgcattgtcgtcccgcacgggaatccacaaacgacccaacggtgcacgtcgcgaatagc---gtctcac------------------------------------------------------
+	'Clinopodium_jacquelinae'    -------------------------------------------------------------------------cctgca--aagcagaccgcgaacacgtaa-ctaacaccccgggcgctcggcgcggggg-caaccccct-gccgtgtcc-cgtctcctgcc-ggcgtgctccctc----gggtcacgccgtgcgggctaacgaa-ccccggcgcggaatgcgccaaggaaaaccgaacgaagcgtcc--g----cccccggcat-cccgttcgcggagcgtgccgcgggatcgggcgtctatc-aaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgccccccacccccgcgcgta---tcgccgggcggttgggggcggacactggcctcccgtgcgcctcggcgtgcggccggcccaaatgagatccccgggcgactgggcgtcacgacaagtggtgg-ttgaacatctcaatctct-ctcgtggtcgtgcggccgtgtcgtcccgtacgggaatcg-aaaatgacccaacggtgaacggcgcgaacagc---gtctcaccttcgaccgcg-accccaggtcaggcgggattacccgctgagtt----------
+	'Clinopodium_myrianthum'     ----------------------------------------------------------------------aaacctgca--aagcagaccgcgaacacgtaa-ttaactccac-gggccaagacgaggggg-caaccccctcgcactgtcc-tgtctcccgcc-ggcgtgttccctc----gggtcacgtcgttcgggctaacgaa-ccccggcgcggaatgtgccaaggaaaaccaaacgaagcgtcc--g----cccccggcat-cccgttcgcggagcgtgctgtgggaccggccgtctatc-aaatgtgaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcg-cccccatccccacgcgca---cagctgggcggttgggggcggagattggcctcccgtgcgcctcggtgcgcggccggcccaaatgcgatccccgggcgact-ggcgtcacgacaagtggtgg-ttgaacatctcaatctgtcctcgcagtcgtgccgccgtgttgccccgcgagggaatccacaaacgacccaacggtgcac----------------------------------------------------------------------------
+	'Clinopodium_nanum'          ----------------------------------------------------------------------agacctgca--aagcagaccgcgaaaacgtaa-ccaacaccgcggggcg-ctgcgtggggggagacccccc-gttgcgtcc-cgtctcccgtc-ggcgtgctccctc----gggacgcgccgcgcgggctaacgaa-ccccggcgcggaacgcgccaaggaaaaccaaacgaagcgccc--g----cccccggcgc-cccgttcgcggggagtgccggggggtcgggcgtctatcaaaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgccccccatccccgcgctca---ccgccgggaggtagggggcggacattggccccccgtgtgcctcggcgcgcggccggcccaaatgggatccccgggcggct-ggcgtcgcgacaagtggtgg-ttgaacatctcaatctct-ctcgtcgtcgtggcgccgtgccgtcccgtatgggaatcgataac-gacccaatggtgagcggcgcgagccgc---gtctcac------------------------------------------------------
+	'Clinopodium_nepalense_1'    ----------------------------------------------------------------------aaacctgcg--aagcagaccgcgaacacgtaa-ttaacttcacggggtcacggcgcggggg-cgactcctt-gccgtgtcc-cgtctcccgcc-ggcgtgctccctc----gggtcacgtcgtgcgggctaacgaa-ccccggcgcggaatgcgccaaggaaaaccaaacgaagcgtcc--g----cccccggcat-cccgttcgcggagcgtgccgtgggtccggccgtctatc-aaatgtcataacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgccccccatccccgcgcgcg---cagccgggcggttgggggcggagactggcctcccgtgcgcctcgccgtgcggccggcccaaaagcgatccccgggcgact-ggcgtcacgacaagtggtggtttgaacgtctcaatctgtcctcgcagtcgtgccgccttgtcgtcccgtacgggaatccacaaacgacccaacggtgcacgtcgcgaaaagc---gtctcac------------------------------------------------------
+	'Clinopodium_nepalense_2'    ----------------------------------------------------------------------aaacctgcg--aagcagaccgcgaacacgtaa-ttaacttcacggggtcacggcgcggggg-cgactcctt-gccgtgtcc-cgtctcccgcc-ggcgtgctccctc----gggtcacgtcgtgcgggctaacgaa-ccccggcgcggaatgcgccaaggaaaaccaaacgaagcgtcc--g----cccccggcat-cccgttcgcggagcgtgccgtgggtccggccgtctatc-aaatgtcataacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgccccccatccccgcgcgcg---cagccgggcggttgggggcggagactggcctcccgtgcgcctcgccgtgcggccggcccaaaagcgatccccgggcgact-ggcgtcacgacaagtggtggtttgaacgtctcaatctgtcctcgcagtcgtgccgccttgtcgtcccgtacgggaatccacaaacgacccaacggtgcacgtcgcgaaaagc---gtctcac------------------------------------------------------
+	'Clinopodium_nubigenum'      -------------------------------------------------------------------------cctgca--aagcagaccgcgaacacgtat-ctaacaccgtgggcgc--ggcgcggggg-cgaccccct-gccgcgtccgcgtctcctgcc-ggcgcgcgccctc----gggtcacgccgtgcgggctaacgaa-ccccggcgcggaatgcgccaaggaaaaccgaacgaagcgtcc--g----cccccggcat-cccgttcgcggagcgtgccgcgggatcgggcgtctatc-aaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgccccccacccccgcgcgca---tcgccgggcggtcgggggcggacactggcctcccgtgcgcctcggcgtgcggccggcccaaatgtgatccccgggcgact-ggcgtcacgacaagtggtgg-ttgaacatctcaatctct-ctcgcggtcgtgccgccgtgtcgtcccgtacgggaatcg-agaatgacccaacggtgcacggcgcgacctgc---gccacaccttcgaccgcg-accccaggtcaKgcgggattacccgctgagtt----------
+	'Clinopodium_paradoxum'      ----------------------------------------------------------------------aaacctgca--aagcagaccgcgaacacgtaa-ataactccgcgggcc---gaggcgagggcctacgcccccgccccgtcc-cgtctcccgcc-ggcgtgt-ccccc----gggtcacgccgtgcgggctaacgaa-ccccggcgcggaacgcgccaaggaaaaccgaacgaagcgtcc--g----cccgcggcgc-cccgtacgcgggtcgtgccgcgggaccggccgcctatc-aaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccttcaggccgagggcacgcctgcctgggcgtcacgcatcgcgtcgccccccatccccgcgcgca---cagccgggcggtcgggggcggaagttggactcccgtgcgcctcggcgcgcggccgtcccaaatgcgatccccgggcgact-ggcgtcacgacaagtggtgg-ttgaa-acctcaatccgtcctcgcagtcgtgccgccgcgtcgtcccgcgcgggaatccacaaacgacccaacggcgcaaggcgcgaaaagc---gcctcgc------------------------------------------------------
+	'Clinopodium_piperitum'      ----------------------------------------------------------------------aaacctgca--aagcagaccgcgaacacgtaatttaacctcacggggtcgcggcgcggggg-cgaccccct-gccgcgtcc-cgtctcccgcc-ggcgtgttccctc----gggccacgtcgtgcgggctaacgaa-ccccggcgcggaacgcgccaaggaaaaccaaacgaagcgtcc--g----cccccggcat-cctgttcgcggagcgtgctgtgggttcggccgtctatc-aaatgtctaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgcagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgccccccatccccgcgcgca---cagccgggcggtcgggggcggagactggcctcccgtgcgcctcggtgtgcggccggcccaaatgcgatccccgggcgact-ggcgtcacgacaagtggtgg-ttgaacatctcaatctgtcctcgcagtcgtgccgccttgtcgtcccgcacgggaatccacaaacgacccaacggtgcacgtcgcgaacagc---gtctcac------------------------------------------------------
+	'Clinopodium_revolutum'      ----------------------------------------------------------------------aaacctgca--aagcagaccgcgaacacgtaa-ctaacaccgcgggcg--cggcgcggggg-cgacccccc-gccgtgtcc-cgtctcctgcc-ggcgtgctccctc----gggtcacgccgtgcgggctaacgaa-ccccggcgcggaatgcgccaaggaaaaccgaacgaagcgtcc--g----cccccggcat-cccgttcgcggagcgtgccgcgggatcgggcgtctatc-aaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgcccccaacccccgggcgca---tcgccgggcggttgggggcggacactggcctcccgtgcgcctcggcgtgcggccggcccaaatgagatccccgggcgact-ggcgtcacgacaagtggtgg-ttgaacatctcaatctct-ctcgtggtcgtgccgccgtgtcgtcccgtacgggaatcg-aaaatgacccaacggtgcacggcgcgaacagc---gtctcac------------------------------------------------------
+	'Clinopodium_robustum'       ----------------------------------------------------------------------aaacctgca--aagcagaccgcgaacacgtaa-ttaactccac-gggccaagacgagggtg-caaccccctcgcactgtcc-cgtctcccacc-ggcgtgttccctc----gggtcacgtcgttcgggctaacgaa-ccccggcgcggaatgcgccaaggaaaaccaaacgaagcgtcc--g----cccccggcat-cccgttcgcggagcgtgccgcgggaccggccgtctatc-aaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgccccccatccccgcgcgca---cagccgggcggttgggggcggagattggcctcccgtgcacctcggtgcgcggccggcccaaatgcgatcctcgggcgact-ggcgtcacgacaagtggtgg-ttgaacatctcaatctctcctcgcagtcgtgccgccgtgtcgccccgtaagggaatccacaaacgacccaacggtgcacgtcgcgaaaagc---gtctcac------------------------------------------------------
+	'Clinopodium_sericeum'       ----------------------------------------------------------------------aaacctgca--aagcagaccgcgaacacgtaa-ctaacaccgcgggcgctcggcgcggggg-cgaccccct-gccgtgtcc-cgtctcctgcc-ggcgtgctccccc----gggtcacgccgtgcgggctaacgaa-ccccggcgcggaatgcgccaaggaaaaccgaacgaagcatcc--g----cccccggcat-cccgttcgcggagcgtgccgcgggatcgggcgtctatc-aaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgccccccacccccgcgcgca---tcgccgggcggttgggggcggacactggcctcccgtgcgcctcggcgtgcggccggcccaaatgagatccccgggcgact-ggcgtcgcgacaagtggtgg-ttgaacctctcaatctct-ctcgtggtcgtgccgccgtgtcgtcccgtacgggaatcg-aaaacgacccaacggtgcacggcgcgaacagc---gtctcac------------------------------------------------------
+	'Clinopodium_simense'        ----------------------------------------------------------------------agacctgca--cagcagaccgcgaacacgtaa-ctaacgc-------------cgcggggg-cgaccccct-gccgc?tcc-cgtctcctgcc-ggcgtgcgccccc----gggccacgctgcgcgggctaacgaa-ccccggcgcggaatgcgccaaggaaaactaaacggagcgtcc--g----cccccggcat-cccgtccgcgggccgtgccaggggaccgggcgcccacc-aaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagcctttcggccgagggcacgcctgcctgggcgtcacgcatcgcgtcg-cccccatccccgcgcgcatcgtcgccgggtggtcgggggcggagattggcctcccgtgcgcctcggcgtgcggccggcccaaatgggatccccgggcgact-ggcgtcatgacaagtggtgg-ttgaacatctcaatctct-ctcgtggtcgtgccgccgtgtcgtcctgcgcgggcatctttagacggcccaacggtgagcggcgctgctcgcggcgccccgc------------ac----------------------------------------
+	'Clinopodium_speciosum'      -------------------------------------------------------------------------cctgca--aagcagaccgcgaacacgtaa-ctaacaccgcgggcgct-ggcgcggggg-cgaccccct-gccgtgtcc-cgtctcctgcc-ggcgtgcgccctc----gggtcgcgccgtgcgggctaacgaa-ccccggcgcggaatgtgccaaggaaaaccgaaYgaagcgtcc--g----cccccggcat-cccgttcgcggagcgtgccgcgggatcgggcgtctatc-aaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgccccccacccctgcgcgca---tcgccgggcggttgggggcggacactggcctcccgtgcgcctcggcgtgcggccggcccaaatgtgatccccgggcgact-ggcgtcacgacaagtggtgg-ttgaacatctcaatctct-ctcgtggtcgtgccgccgtgtcgtcccgtacgggaatcg-aaaatgacccaacggtgcacggcgcgaacagc---gcctcaccttcgaccgcg-accccaggtcaggcgggattacccgctgagtt----------
+	'Clinopodium_tomentosum'     -------------------------------------------------------------------------cctgca--aagcagaccgcgaacacgtaW-ctaacgccgcgggtgc--ggcgcggggg-caaccccct-gccgtgtcc-cgtctcctgcc-ggcgtgctccctc----gggtcacgctgtgcgggctaacgaa-ccccggcgcggaatgcgccaaggaaaaccgaacgaagcgtcc--g----cccctggcat-cccgttcgcggagcgtgccgcgggatcgggcgtctatc-aaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgccccccacccccgcgcgca---tcgccgggcggttgggggcggacactggcctcccgtgcgcctcggcgtgcggccggcccaaatgagatccccgggcgact-ggcgtcacgacaagtggtgg-ttgaacatctcaatctct-ctcgtggtcgtgccgccgtgtcgtcccgtacgggaatcg-agaatgacccaacggtgcacggcgcgaacagc---gtcYcacctccgaccgcg-accccaggtcaggcgggattacccgctgagtt----------
+	'Clinopodium_uhligii'        ----------------------------------------------------------------------agacctgca--aagcagaccgcgaacacgtaa-ctaacgccgcggggca-cggcgcggggg-cgacccc?t-gccgcgtcc-cgtctcctgcc-ggcgcgtgccccc----gggccacgccgcgcgggctaacgaa-ccccggcgcggaacgcgccaaggaaaaccaaacggagcgWcc--g----cccccggcat-cccgtccgcgggccgtgccaggggaccgggcgcccacc-aaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagcctttcggccgagggcacgcctgcctgggcgtcacgcatcgcgtcgccccccatccccgcgcgcatcgtcgccgggcggtcgggggcggagattggcctcccgtgcgcctcggcgcgcggccggcccaaatgggatccccgggcgact-ggcgtcacgacaagtggtgg-ttgaacatctcaatctct-ctcgtggtcgtgccgccgtttcgtccctcgcgggcatctttagacggcccaacggtgagcggcgctgctcgcggcgccccgc------------ac----------------------------------------
+	'Clinopodium_vanum'          -------------------------------------------------------------------------cctgca--aagcagaccgcgaacacgtac-ctaacgccgcgggcgctcggcgcggggg-cgaccccct-gccgtgtcc-cgtctcctgac-ggcgtgctccctc----gggtcacgccgtgcgggctaacgaa-ccccggcgcggaatgcgccaaggaaaaccgaacgaagcgtcc--g----cccccggcat-cccgttcgcggagcgtgccgcgggatcgggcgtctatc-aaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgccccccacccccgcgctca---tcgccgggcggttgggggcggacactggcctcccgtgcgcctcggcgtgcggccggcccaaatgagatccccgggcgact-ggcgtcgcgacaagtggtgg-ttgaacatctcaatctct-ctcgtggtcgtgccgtcgtgtcgtcccgtacggaaatca-aaaatgacccaMcggtgcagggggggaaaagg---ttctcactttcaaccgWa-accccaggtcaggcgggattacccgctgagtt----------
+	'Clinopodium_vulgare'        cttatcatttagaggaaggagaagtcgtaacaaggtttccgtaggtgaacctgcggaaggatcattgtcgagacctgca--aagcagaccgcgaacacgtaa-ctaacgccgc??ggcg-cggcgggcggg-ctacccccc-gccgagccc-cgttccccgcc-ggcgcgtccccccccgggggccgcgccgcgcgggctaacgaa-ccccggcgcggaacgcgccaaggaaaacgaaacgaagcgccc--gcccccccccggcat-cccgtccgcgggtcctgccgggggaccgggcgtctgtt-aaatgtcaaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagcctttaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcgcccccaatccccgcgcgca---tcgccgggcggtcgggggcggagattggcctcccgtgcgcctcggcgcgcggccggcccaaatgggatccccgggcggct-ggcgtcgcgacaagtggtgg-ttgaacatctcaatctct-ctcgcggtcgcgccgccgtgccgtcccgcacgggcatcgataaacgacccaacggcgggcgggcgcgttcgt----tcgcgc------------a-----------------------------------------
+	'Clinopodium_wardii'         ----------------------------------------------------------------------aaacctgca--aagcagaccgcgaacacgtaatttaacctcacggggtcgcggcgcggggg-cgacccctt-gccgcgtcc-cgtctcccgcc-ggcgtgtcccctc----gggccacgtcgtgcgggctaacgaa-ccccggcgcggaacgcgccaaggaaaaccaaacgaagcgtcc--g----cccccggcat-cccgttcgcggagcgtgccgtgggttcggccgtctatc-aaatgtctaaacgactctcggcaacggatatctcggctctcgcatcgatgaagaacgtagcgaaatgcgatacttggtgtgaattgcagaatcccgtgaaccatcgagtctttgaacgcaagttgcgcccgaagccattaggccgagggcacgtctgcctgggcgtcacgcatcgcgtcg-cccccatccccgcgcgca---cagccgggtggtcgggggcggagactggcctcccgtgcgcctcggtgtgcggccggcccaaatgcgatccccgggcgact-ggcgtcacgacaagtggtgg-ttgaacatctcaatccgtcctcgcagtcgtgccgccctgtcgtcccgcacgggaatccacaaacgacccaacggtgcacgtcgcgaaYagc---gtctcac------------------------------------------------------
+
+;
+
+
+
+END;
+
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  765;
+
+END;
+
+BEGIN NOTES;
+
+	TAXABITS   TAXA = Taxa NAME = newlyAddedTaxon on =  1 -  36;
+
+END;
+
+BEGIN CODONS;
+	CODESET * UNTITLED   =  universal:  1 -  765;
+
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Jukes-Cantor':  1 -  765;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1462276508869;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 4509014772007794102;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 239774715764511552;
+			mqVersion 304;
+			checksumv 0 3 1562753699 null  getNumChars 765 numChars 765 getNumTaxa 36 numTaxa 36   short true   bits 3458764513820540943   states 15   sumSquaresStatesOnly 374287.0 sumSquares -1.9260706655961986E22 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1163 700;
+			setLocation 8 22;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #239774715764511552 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 197;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1063 628;
+					setLocation 8 22;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges off;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames off;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize off;
+					toggleColorsPanel off;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.align.AlignToDropped.AlignToDropped;
+				tell It;
+					gapCosts 8 3 2 2;
+					subCosts  10 5 10 10 10 5 5 10 10 10 5 10;
+				endTell;
+				getEmployee #mesquite.molec.ColorByAA.ColorByAA;
+				tell It;
+					emphasizeDegeneracy off;
+				endTell;
+				getEmployee #mesquite.molec.SequenceInfoEditor.SequenceInfoEditor;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
