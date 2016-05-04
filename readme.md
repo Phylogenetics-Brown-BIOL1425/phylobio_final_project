@@ -23,8 +23,8 @@ Determining the Presence and Significance of a Gene Duplication Event of the Alp
 
 ## Introduction and Goals
 
-After reading a paper on mRNA transcripts found in cephalopod skin (Kingston ACN Kuzirian AM Hanlon RT Cronin TW 2015), I learned that several ocular proteins are expressed in the skin and muscle. Most of these transcripts
-are identical to their counterparts found in the eye of the animal, but in one squid, D. pealei, the transcript expressed in the skin was different than that in the eye.
+After reading a paper on mRNA transcripts found in cephalopod skin (Kingston et al. 2015), I learned that several ocular proteins are expressed in the skin and muscle. Most of these transcripts
+are identical to their counterparts found in the eye of the animal, but in one squid, _D. pealei_, the transcript expressed in the skin was different than that in the eye.
 I theorized this could be due to a gene duplication event somewhere in the squid's ancestry, so I wanted to build a phylogenetic tree to see if I could trace when
 the gene split off from the original, and then check if there is correlation between organisms capable of using pigment cells in their skin to camouflage
 by taking into account ambient light, and organisms in the clade demarcated by this gene duplication.
@@ -79,7 +79,7 @@ Custom penalties were .5 for extension and 1.5 for opening. I thought it might b
 were dealing with mRNA sequences which were likely post-splicing.
 
 
-The placement of the clade Sepia within the tree, and the organisms within the clade I am attempting to characterize are relatively consistent throughout
+The placement of the clade _Sepia_ within the tree, and the organisms within the clade I am attempting to characterize are relatively consistent throughout
 the trees I have created.
 
 I elected to favor revBayes, as the boostrap values coming from raxml were extremely low, possibly due to how small the fraction of the aligned sequences
@@ -88,27 +88,34 @@ which actually contained data was compared to the total number of aligned sites.
 ## Discussion
 
 The sequence from the theoretically duplicated gene (KR107042.1) does seem to demarcate a small subclade of squid. Frustratingly enough, 2 of the three sequences shown inside of that clade are the 
-same animal (D. pealei and L. pealei are both the same species). L. forbesi is a different, though related squid. As discussed by the study on which this project is 
+same animal (_D. pealei_ and _L. pealei_ are both the same species). _L. forbesi_ is a different, though related squid. As discussed by the study on which this project is 
 based, we know that D. pealei and L. pealei have the capacity to alter their chromatophore states in response to differing light levels in order to better camouflage.
 This data was not available for L. forbesi, which appears to be little studied, though a study has shown that the squid has extraocular photoreceptors in vescicles behind
 its eyes(Cobb and Williamson, 1998). It is possible that it may have some form of light-adapting camouflage behavior, or is at least partially equipped for it.
+
 On the other hand, outside of this clade, we see 2 sequences for the squid Euprymna scolopes (one derived from the eye, the other from the squid's light emitting organ). This squid is also known to react to light, but it does not use light information
 for regulating its chromatophores. Rather, it uses this capacity to regulate the output of light-emitting organs to break up its silhouette, while actually concealing
-itself when on the sea bed by covering itself in sediment(Jones and Nishiguchi 2004). It therefore does not demonstrate the chromatophore regulation we are seeking. Finally, an unusual result
-shows up in the gene tree: Sepia officinalis shows up as a sister taxa to Euprymna scolopes. The other animals I have discussed so far are all squid, while Sepia officinalis
+itself when on the sea bed by covering itself in sediment(Jones and Nishiguchi 2004). It therefore does not demonstrate the chromatophore regulation we are seeking. 
+
+Finally, an unusual result
+shows up in the gene tree: _Sepia officinalis_ shows up as a sister taxa to Euprymna scolopes. The other animals I have discussed so far are all squid, while Sepia officinalis
 is a cuttlefish. The gene tree, as one would expect, disagrees with the general phylogeny for cephalopods in general. It is very interesting to note, however, that
-Sepia officinalis is known to possess transcripts for other ocular proteins in its skin, much like D. pealei (Mäthger et al, 2010). It is not known whether this
-animal responds to light in similar ways to squid above, but it is hypothesized that Sepia officinalis could use the extra-ocular light information to help supplement
+Sepia officinalis is known to possess transcripts for other ocular proteins in its skin, much like _D. pealei_ (Mäthger et al, 2010). It is not known whether this
+animal responds to light in similar ways to squid above, but it is hypothesized that _Sepia officinalis_ could use the extra-ocular light information to help supplement
 its information about light-gradients around it, as the animal is known to be color blind, but still produces complex and effective patterns to camouflage in a variety
 of different substrates. While this is clearly supposition, and also rather unlikely, it is an interesting thought that the unusual similarity between these two mRNA sequences may suggest
 convergent evolution. Alternatively, it might be a sign of deep coalescence, or possibly this is just do to the fragmented nature of the sequences used in this study.
 We need more and better sequence data to resolve this issue.
 
+It is worthy of note that _Octopus bimaculoides_ is also hypothesized to possess the ability to regulate its chromatophores via light information obtained 
+through the skin (Ramirez and Oakley 2015), which might be indicative of an independent evolution of the same capacity, or a sign that we have attributed too much significance
+to the gene duplication event. 
+
 All in all, we need more sequences of this mRNA in squid to be able to confirm or deny the significance of this protein duplication event in the evolutionary history
 of squid camouflage techniques, especially transcripts found in skin, of which there are very few. Until that happens, these theories will just have to remain
 speculation.
 
-However, I recently learned that Doryteuthis pealei is known for having a very high rate of post-transcriptional RNA site editing (Rosenthal 2015), which could very easily
+However, I recently learned that _Doryteuthis pealei_ is known for having a very high rate of post-transcriptional RNA site editing (Rosenthal 2015), which could very easily
 invalidate the results found in this project. As such, the null hypothesis is not rejected, and without more data, we are forced to assume that there is no
 real connection between what may or may not even be a gene duplication event.
 
@@ -123,9 +130,6 @@ http://mollus.oxfordjournals.org/content/64/1/111.short
 Jones BW, Nishiguchi MK. 2004 Counterillumination in the Hawaiian bobtail squid, Euprymna scolopes Berry (Mollusca: Cephalopoda). Marine Biology, 144(6), pp 1151-1155
 http://link.springer.com/article/10.1007/s00227-003-1285-3
 
-Kingston ACN, Wardill TJ, Hanlon RT, Cronin TW. 2015. An Unexpected Diversity of Photoreceptor Classes in the Longfin Squid, Doryteuthis pealeii. PLoS One. 10(9): e0135381. 
-http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4564192/
-
 Kingston ACN, Kuzirian AM, Hanlon RT, Cronin TW. 2015. Visual phototransduction components in cephalopod chromatophores suggest dermal photoreception. The Journal of Experimental Biology. 218, 1596-1602. doi:10.1242/jeb.117945
 http://jeb.biologists.org/content/218/10/1596
 
@@ -134,6 +138,9 @@ http://bmcevolbiol.biomedcentral.com/articles/10.1186/1471-2148-12-129
 
 Mäthger LM, Roberts SB, Hanlon RT. 2010. Evicence for distributed light sensing in the skin of cuttlefish, Sepia officinalis. Biology Letters. 
 http://www.ncbi.nlm.nih.gov/pubmed/20392722
+
+Ramirez MD, Oakley TH. 2015. Eye-independent, light-activated chromatophore expansion (LACE) and expression of phototransduction genes in the skin of Octopus bimaculoides. Journal of Experimental Biology. 218: 1513-1520; doi: 10.1242/jeb.110908
+http://jeb.biologists.org/content/218/10/1513
 
 Rosenthall JJC. 2015. The emerging role of RNA editing in plasticity. The Journal of Experimental Biology. 218, 1812-1821 doi:10.1242/jeb.119065
 http://jeb.biologists.org/content/jexbio/218/12/1812.full.pdf
