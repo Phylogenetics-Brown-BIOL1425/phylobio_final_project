@@ -113,7 +113,17 @@ Overall, even though I didn't complete the task I set out to do I think I gained
 
 ## References
 
+Brauchler, Christian, Meimberg, Harold, and Heubl, Gunther. "Molecular phylogeny of Menthinae (Lamiaceae, Nepetoideae, Mentheae) - Taxonomy, biogeography and conflicts". Molecular Phylogenetics and Evolution 55 (2010): 501-523. Web. http://www.ncbi.nlm.nih.gov/pubmed/20152913
+
+Catalogue of Life. Naturalis ICT, 2015. Web. http://www.catalogueoflife.org/
+
+Global Biodiversity Information Facility. Unversitetsparken 15 DK-2100 Copenhagen O Denmark, 2016. Web. http://www.gbif.org/
+
+Menitsky Y.L., 1988; Red Data Book of Armenia SSR, 1989
+
 Ryding, Olof. “Revision of the Clinopodium Simense Group (labiatae)”. Kew Bulletin 61.3 (2006): 419–432. Web. http://www.jstor.org/stable/20443286?seq=1#page_scan_tab_contents
 
+Tropicos.org. Missouri Botanical Garden. 03 May 2016. Web. http://www.tropicos.org
 
+Wildscreen Arkive. Wildscreen initiative, UK charity no. 299450 | USA 501(c)(3) nonprofit organization. Web. http://www.arkive.org/
 
