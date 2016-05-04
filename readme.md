@@ -1,13 +1,5 @@
 # Phylogenetic Biology - Final Project
 
-## Guidelines - you can delete this section before submission
-
-This repository is a stub for your final project. Fork it, develop your project, and submit it as a pull request. Edit/ delete the text in this readme as needed.
-
-Some guidelines and tips:
-
-- For information on formatting text files with markdown, see https://guides.github.com/features/mastering-markdown/ . You can use markdown to include images in this document by linking to files in the repository, eg `![GitHub Logo](/images/logo.png)`.
-
 
 OK, here we go.
 
@@ -15,9 +7,7 @@ OK, here we go.
 setwd("~/Dropbox/Brown University/BIOL1425/phylobio_final_project/")
 ```
 
-# Title of my project
-
-Sensitivity Analysis of input GE on EDGE Values
+#Sensitivity Analysis of input GE on EDGE Values
 
 ## Introduction and Goals
 

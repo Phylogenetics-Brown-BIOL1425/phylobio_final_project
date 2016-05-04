@@ -6,9 +6,7 @@ OK, here we go.
 setwd("~/Dropbox/Brown University/BIOL1425/phylobio_final_project/")
 ```
 
-# Title of my project
-
-Sensitivity Analysis of input GE on EDGE Values
+#Sensitivity Analysis of input GE on EDGE Values
 
 ## Introduction and Goals
 
