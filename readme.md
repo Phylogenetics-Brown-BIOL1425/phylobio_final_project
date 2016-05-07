@@ -18,7 +18,7 @@ The goal of this project is to compare the evolutionary histories of hyperiid am
 
 3) Examine the evolution of host specificity in hyperiid amphipods, and colonization vulnerability in gelatinous hosts.
 
-4) Identify phylogenetic patterns in the colonization of living-habitat by hyperiid amphipods, thorugh a phylogenetic community ecology approach. Test for phylogenetic structure (clustering/overdispersion).
+4) Identify phylogenetic patterns in the colonization of living-habitat by hyperiid amphipods, through a phylogenetic community ecology approach. Test for phylogenetic structure (clustering/overdispersion).
 
 ## Methods
 
@@ -102,9 +102,6 @@ Other deuterostome:
 *Phrosina semilunata*, 
 *Rhabdosoma whitei*.
 
-**Constraint:**
-(*Hyperietta stephenseni, Hyperietta parviceps, Hyperietta sibaginis, Eupronoe minuta*);
-
 **Sequence proxies:** 
 *Phronima sp.* used as *Phronima sedentaria*.
 *Paraphronima sp.* used as *Paraphronima gracilis*.
@@ -115,7 +112,12 @@ The MSA alignments were carried out using MAFFT (Method: L-INS-i, no additonal p
 
 To build the 18S phylogenies, I used RAxML with a GTR+Gamma DNA evolution model and 100 non-parametric bootstrap replicates:
 
-raxml -T 8 -m GTRGAMMA -n EXThostML_boot100 -s host_ext_MSA.phy -p 12345 -f a -x 12345 -N 100
+raxml -T 8 -m GTRGAMMA -n ML_boot100 -s MSA.phy -p 12345 -f a -x 12345 -N 100
+
+For hyperiid amphipods, I used the topological constraint parameter -g followed by a newick filename.
+
+Constraint:
+(*Hyperietta stephenseni, Hyperietta parviceps, Hyperietta sibaginis, Eupronoe minuta*);
 
  and [RevBayes](https://raw.githubusercontent.com/antropoteuthis/phylobio_final_project/master/ExtendedHosts/18S_GTRg.Rev) GTR+Gamma (follow link for model specifications). 
 
@@ -280,7 +282,7 @@ Figure 13 shows the evolution a key aspect of hyperiid amphipods' ecological rol
 ![Figure 14](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/good_popularity.png)
 Figure 14. Gelatinous host phylogeny showing a brownian motion reconstruction of associated amphipod richness - vulnerability (blue - common target, red - rare target).
 
-From the other side of the story, Figure 14 shows the evolution of the suitability of gelatinous hosts to a broad spectrum of hyperiid amphipod species. Hosts that harbor more species, such as salps, are less likely to develop a coevolutionary armsrace against a particular amphipod species. Blomberg's K for phylogenetic signal in amphipod richness is low, 0.0689 (0.6877 with flat branch lengths, a tenfold increase). A MRCA reconstruction for this trait would not make sense with these organisms, as their evolutionary history is very deep, well beyond the origin of hyperiid amphipods, and probably well beyond the current planktonic natural history on which they all these distant lineages converged.
+From the other side of the story, Figure 14 shows the evolution of the suitability of gelatinous hosts to a broad spectrum of hyperiid amphipod species. Hosts that harbor more species, such as salps, are less likely to develop a coevolutionary armsrace against a particular amphipod species. Blomberg's K for phylogenetic signal in amphipod richness is low, 0.0689 (0.6877 with flat branch lengths, a tenfold increase). A MRCA reconstruction for this trait woul not make sense with these organisms, as their evolutionary history is very deep, well beyond the origin of hyperiid amphipods, and probably well beyond the current planktonic natural history on which they all these distant lineages converged.
 
 The PACo (Balbuena et al., 2013) analysis of phylogenetic structure detected a slight but significant fit (Procrustes sum of squares = 17.08, goodness-of-fit: p-value = 0, number of permutations = 100), indicating the presence of co-divergence in shaping the topology of the cophylogeny.
 
@@ -354,7 +356,7 @@ Phylogenetic community ecology analyses summarized the living habitat occupation
 
 A cophylogenetic analysis of the competitive associations (potential, given biogeographical coexistance of the amphipod species and the shared host species) shows a non significant global fit, which rejects the hypothesis of hyperiid amphipods sharing host species having speciated together. 
 
-As we can see in the figures, thaliacean species harbor the richest assemblage of hyperiid amphipods. Brownian motion reconstruction suggests the appearance of a key trait in their MRCA that rendered these animals widely favorable hosts for hyperiid amphipods.
+As we can see in the figures, thaliacean species harbor the richest assemblage of hyperiid amphipods. Brownian motion reconstruction suggests the appearance of a key trait in their MRCA that rendered these animals widely favorable hosts for hyperiid amphipods. Generality and specificity in hyperiid amphipods evolved multiple times. Correlating these shifts with association type data would shed light on the evolution of this ecological trait.
 
 ## Personal discussion
 
