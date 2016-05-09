@@ -368,9 +368,11 @@ Another difficulty I found was figuring out what tools to use for cophylogenetic
 
 ### Limitations:
 
+Cophylogenetic analysis tools have been designed to study the coevolutionary scenario of closely associated parasites and hosts. In the case of hyperiid amphipods and gelatinous zooplankton, this is not exactly the case. There is a vast difference in the time scales of the phylogenies, and not all the assocations are specific. Moreover, in some of the associated species, neither the host or the amphipod needs the other partner to survive or reproduce. This defeats the purpose of traditional cophylogenetic analyses, and raises the need to develop new tools for the phylogenetic analysis of more general ecological associations such as competition, predation, and living habitat facilitation.
+
 If I were to plan an ideal setting for these analyses, I would use concatenated sequence matrix trees with newly collected molecular data (such as transcriptomic data) for the species of interest. This way I would provide more accurate phylogenies upstream, which would greatly improve the overall accuracy of the analyses. In addition, I would put more care in making informed decisions on the alignment and tree search parameters used. I would explore the significance of each of the optional arguments, metrics, and correction methods for each one of the tools used.
 
-Moreover, the association data used included only presence data (absences not reported), and had no information on the strength or frequency of the interaction, nor the type of interaction (parasitoidism, parasism, predation, phoresis...). For future analyses, I would record a detailed matrix with these data to better understand these interactions in the context of cophylogenetics.
+Moreover, the association data used included only presence data (absences not reported), and had no information on the strength or frequency of the interaction, nor the type of interaction (parasitoidism, parasitism, predation, phoresis...). For future analyses, I would record a detailed matrix with these data to better understand these interaction types in the context of cophylogenetics. Ideally, I would develop novel tools to analyze the topology with more relaxed ecological assumptions and a simpler interpretation.
 
 ## References
 
