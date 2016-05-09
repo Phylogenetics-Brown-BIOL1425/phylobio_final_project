@@ -241,7 +241,7 @@ D = PACo(D, nperm=100, seed=42, method="r0", correction='cailliez')
 print(D$gof)
 D
 #that with flat branch lengths
-parafit(as.matrix(cophenetic(flatam)),as.matrix(cophenetic(flatamphipod)), t(reprunedassmatrix), correction = 'cailliez')
+parafit(as.matrix(cophenetic(flatam)),as.matrix(cophenetic(flatamphipod)), t(reprunedassmatrix), correction = 'cailliez', test.links = T)
 D = prepare_paco_data(cophenetic(flatam), cophenetic(flatamphipod), t(reprunedassmatrix))
 D = add_pcoord(D)
 D = PACo(D, nperm=100, seed=42, method="r0", correction='cailliez')
@@ -292,6 +292,8 @@ togetherness(web) #T-score, level of similarity between species
 grouplevel(web)
 robustness(second.extinct(web))
 C.score(web)
+plotweb(web)
+plotweb(web)
 
 #on the phylogeny species:
 pruneweb = t(reprunedassmatrix)
@@ -303,3 +305,4 @@ togetherness(pruneweb) #T-score, level of similarity between species
 grouplevel(pruneweb)
 robustness(second.extinct(pruneweb))
 C.score(pruneweb)
+plotweb(pruneweb)
