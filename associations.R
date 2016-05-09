@@ -210,6 +210,12 @@ pf_comp_flat
 
 cophyloplot(atree1, atree2, assoc = competition, type="phylogram", space=110, gap=0,show.tip.label=T, use.edge.length=F, col="red")
 
+#Phylogenetic signal in competition intensity
+competitivity = as.vector(table(competition[,1]) + table(competition[,2]))
+names(competitivity) = names(table(competition[,1]))
+contMap(ultramphipod, competitivity)
+Kcalc(competitivity, ultramphipod)
+
 #Popularity of hosts, generalist/specialist amphipods
 table(reprunedass[,2])
 specificity = as.vector(table(reprunedass[,1]))
