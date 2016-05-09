@@ -1,0 +1,144 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=50;
+	taxlabels
+	Aegina_rosea
+	Agalma_elegans
+	Agalma_okeni
+	Athorybia_rosacea
+	Aurelia_aurita
+	Beroe_forskalii
+	Beroe_ovata
+	Bolinopsis_sp
+	Cavolinia_sp
+	Cestum_veneris
+	Chelophyes_appendiculata
+	Clytia_hemisphaerica
+	Collozoum_inerme
+	Cyclosalpa_affinis
+	Cyclosalpa_polae
+	Deiopea_kaloktenota
+	Diphyes_dispar
+	Eirene_pyramidalis
+	Forskalia_edwardsi
+	Forskalia_tholoides
+	Geryonia_proboscidalis
+	Hippopodius_hippopus
+	Hormiphora_sp
+	Iasis_cylindrica
+	Iasis_zonaria
+	Lampea_pancerina
+	Leuckartiara_octona
+	Leucothea_multicornis
+	Liriope_tetraphylla
+	Mnemiopsis_leidyi
+	Nanomia_bijuga
+	Nectadamas_diomedeae
+	Pandea_sp
+	Pegea_bicaudata
+	Pegea_confoederata
+	Pelagia_noctiluca
+	Physophora_hydrostatica
+	Pyrosoma_atlanticum
+	Resomia_ornicephala
+	Rhizophysa_filiformis
+	Ritteriella_retracta
+	Salpa_aspera
+	Salpa_fusiformis
+	Salpa_maxima
+	Solmissus_sp
+	Sphaeronectes_gracilis
+	Sphaerozoum_punctatum
+	Sulculeolaria_quadrivalvis
+	Thalia_democratica
+	Thetys_vagina
+;
+end;
+
+begin trees;
+	tree TREE1 = [&R] (((((((((((((((((((Salpa_fusiformis[&index=49,posterior=1.0,ccp=1.0,!color=#40ad0e]:6.6E-4,Salpa_maxima[&index=48,posterior=1.0,ccp=1.0,!color=#40ad0e]:6.04E-4)[&index=50,posterior=1.0,ccp=1.0,height_95%_HPD={0.004603,0.006455},!color=#40ad0e]:0.003524,Salpa_aspera[&index=47,posterior=1.0,ccp=1.0,!color=#40ad0e]:0.010086)[&index=51,posterior=1.0,ccp=1.0,height_95%_HPD={0.012594,0.024867},!color=#40ad0e]:0.019721,Ritteriella_retracta[&index=46,posterior=1.0,ccp=1.0,!color=#40ad0e]:0.016547)[&index=52,posterior=0.956015,ccp=1.0,height_95%_HPD={0.007182,0.011881},!color=#40ad0e]:0.008651,(Iasis_cylindrica[&index=45,posterior=1.0,ccp=1.0,!color=#40ad0e]:0.015839,Thalia_democratica[&index=44,posterior=1.0,ccp=1.0,!color=#40ad0e]:0.066947)[&index=53,posterior=0.834722,ccp=1.0,height_95%_HPD={0.003379,0.016453},!color=#40ad0e]:0.013279)[&index=54,posterior=0.312562,ccp=0.312562,height_95%_HPD={0.008471,0.0129},!color=#40ad0e]:0.007987,(Cyclosalpa_affinis[&index=43,posterior=1.0,ccp=1.0,!color=#40ad0e]:0.007155,Cyclosalpa_polae[&index=42,posterior=1.0,ccp=1.0,!color=#40ad0e]:0.007339)[&index=55,posterior=1.0,ccp=0.312562,height_95%_HPD={0.017589,0.024741},!color=#40ad0e]:0.01314)[&index=56,posterior=1.0,ccp=0.735422,height_95%_HPD={0.026276,0.048519},!color=#40ad0e]:0.041225,((Pegea_bicaudata[&index=41,posterior=1.0,ccp=1.0,!color=#40ad0e]:4.5E-4,Pegea_confoederata[&index=40,posterior=1.0,ccp=1.0,!color=#40ad0e]:0.03681)[&index=57,posterior=1.0,ccp=1.0,height_95%_HPD={0.058978,0.084259},!color=#40ad0e]:0.074761,Thetys_vagina[&index=39,posterior=1.0,ccp=1.0,!color=#40ad0e]:0.03587)[&index=58,posterior=0.735422,ccp=0.735422,height_95%_HPD={0.005228,0.029477},!color=#40ad0e]:0.007584)[&index=59,posterior=1.0,ccp=1.0,height_95%_HPD={0.03891,0.040259},!color=#40ad0e]:0.030739,Iasis_zonaria[&index=38,posterior=1.0,ccp=1.0,!color=#40ad0e]:0.098996)[&index=60,posterior=1.0,ccp=1.0,height_95%_HPD={0.017351,0.048093},!color=#40ad0e]:0.032975,Pyrosoma_atlanticum[&index=37,posterior=1.0,ccp=1.0,!color=#40ad0e]:0.053445)[&index=61,posterior=1.0,ccp=1.0,height_95%_HPD={0.105496,0.122185},!color=#40ad0e]:0.092777,Cavolinia_sp[&index=36,posterior=1.0,ccp=1.0,!color=#40ad0e]:0.242485)[&index=62,posterior=1.0,ccp=1.0,height_95%_HPD={0.207978,0.272469},!color=#40ad0e]:0.1951,(Collozoum_inerme[&index=35,posterior=1.0,ccp=1.0,!color=#ab6702]:0.013773,Sphaerozoum_punctatum[&index=34,posterior=1.0,ccp=1.0,!color=#ab6702]:0.18269)[&index=63,posterior=1.0,ccp=1.0,height_95%_HPD={1.07006,1.19525},!color=#ab6702]:1.070035)[&index=64,posterior=0.599134,ccp=0.646208,height_95%_HPD={0.059646,0.073553}]:0.042137,(((((((Cestum_veneris[&index=33,posterior=1.0,ccp=1.0,!color=#0075ab]:0.002802,Leucothea_multicornis[&index=32,posterior=1.0,ccp=1.0,!color=#0075ab]:0.001297)[&index=65,posterior=0.941686,ccp=0.959378,height_95%_HPD={7.28E-4,0.002893},!color=#0075ab]:5.44E-4,Deiopea_kaloktenota[&index=31,posterior=1.0,ccp=0.959378,!color=#0075ab]:8.51E-4)[&index=66,posterior=0.943352,ccp=0.941381,height_95%_HPD={0.001822,0.003092},!color=#0075ab]:0.001838,Bolinopsis_sp[&index=30,posterior=1.0,ccp=0.941381,!color=#0075ab]:6.47E-4)[&index=67,posterior=0.864045,ccp=0.918507,height_95%_HPD={0.001556,0.003749},!color=#0075ab]:0.002322,Mnemiopsis_leidyi[&index=29,posterior=1.0,ccp=0.918507,!color=#0075ab]:0.003529)[&index=68,posterior=0.830057,ccp=0.914934,height_95%_HPD={0.003512,0.007917},!color=#0075ab]:0.004573,(Beroe_forskalii[&index=28,posterior=1.0,ccp=1.0,!color=#0075ab]:0.004555,Beroe_ovata[&index=27,posterior=1.0,ccp=1.0,!color=#0075ab]:0.007106)[&index=69,posterior=1.0,ccp=0.914934,height_95%_HPD={0.013471,0.019338},!color=#0075ab]:0.013067)[&index=70,posterior=0.881373,ccp=0.986968,height_95%_HPD={0.002286,0.01141},!color=#0075ab]:0.009071,Hormiphora_sp[&index=26,posterior=1.0,ccp=0.986968,!color=#0075ab]:0.037574)[&index=71,posterior=0.767078,ccp=0.767078,height_95%_HPD={0.015223,0.020591},!color=#0075ab]:0.014861,Lampea_pancerina[&index=25,posterior=1.0,ccp=0.767078,!color=#0075ab]:0.01157)[&index=72,posterior=1.0,ccp=0.646208,height_95%_HPD={0.193242,0.19707},!color=#0075ab]:0.16642)[&index=73,posterior=0.852383,ccp=0.852383,height_95%_HPD={0.013998,0.026142},!color=#8705ab]:0.014893,(Aurelia_aurita[&index=24,posterior=1.0,ccp=1.0,!color=#8705ab]:0.023038,Pelagia_noctiluca[&index=23,posterior=1.0,ccp=1.0,!color=#8705ab]:0.028892)[&index=74,posterior=1.0,ccp=0.852383,height_95%_HPD={0.029877,0.053106},!color=#8705ab]:0.050023)[&index=75,posterior=1.0,ccp=1.0,height_95%_HPD={0.034193,0.046869},!color=#8705ab]:0.036937,((Aegina_rosea[&index=22,posterior=1.0,ccp=1.0,!color=#8705ab]:0.056854,Solmissus_sp[&index=21,posterior=1.0,ccp=1.0,!color=#8705ab]:0.037975)[&index=76,posterior=1.0,ccp=1.0,height_95%_HPD={0.01144,0.025099},!color=#8705ab]:0.017271,(Geryonia_proboscidalis[&index=20,posterior=1.0,ccp=1.0,!color=#8705ab]:0.001842,Liriope_tetraphylla[&index=19,posterior=1.0,ccp=1.0,!color=#8705ab]:0.0024)[&index=77,posterior=1.0,ccp=1.0,height_95%_HPD={0.012391,0.024659},!color=#8705ab]:0.018504)[&index=78,posterior=1.0,ccp=1.0,height_95%_HPD={0.017854,0.019151},!color=#8705ab]:0.010186)[&index=79,posterior=1.0,ccp=1.0,height_95%_HPD={0.008152,0.01829},!color=#8705ab]:0.009564,(Clytia_hemisphaerica[&index=18,posterior=1.0,ccp=1.0,!color=#8705ab]:0.077744,Eirene_pyramidalis[&index=17,posterior=1.0,ccp=1.0,!color=#8705ab]:0.051772)[&index=80,posterior=1.0,ccp=1.0,height_95%_HPD={0.083227,0.101162},!color=#8705ab]:0.086348)[&index=81,posterior=0.73109,ccp=0.73109,height_95%_HPD={0.004635,0.009375},!color=#8705ab]:0.004826,(Leuckartiara_octona[&index=16,posterior=1.0,ccp=1.0,!color=#8705ab]:0.00598,Pandea_sp[&index=15,posterior=1.0,ccp=1.0,!color=#8705ab]:0.003665)[&index=82,posterior=0.996001,ccp=0.73109,height_95%_HPD={0.005407,0.011299},!color=#8705ab]:0.006913)[&index=83,posterior=1.0,ccp=1.0,height_95%_HPD={0.009434,0.018743},!color=#8705ab]:0.013984,Rhizophysa_filiformis[&index=14,posterior=1.0,ccp=1.0,!color=#8705ab]:0.017663)[&index=84,posterior=1.0,ccp=0.949017,height_95%_HPD={0.009524,0.014833},!color=#8705ab]:0.011062,(((((Forskalia_edwardsi[&index=13,posterior=1.0,ccp=1.0,!color=#8705ab]:0.00346,Forskalia_tholoides[&index=12,posterior=1.0,ccp=1.0,!color=#8705ab]:0.01055)[&index=85,posterior=1.0,ccp=1.0,height_95%_HPD={0.001758,0.007504},!color=#8705ab]:0.003031,Resomia_ornicephala[&index=11,posterior=1.0,ccp=1.0,!color=#8705ab]:0.00311)[&index=86,posterior=0.500833,ccp=0.57377,height_95%_HPD={1.86E-4,0.002776},!color=#8705ab]:0.00202,Nanomia_bijuga[&index=10,posterior=1.0,ccp=0.57377,!color=#8705ab]:0.005091)[&index=87,posterior=0.020327,ccp=0.020518,height_95%_HPD={0.001831,0.002639},!color=#8705ab]:0.002072,((Agalma_elegans[&index=9,posterior=1.0,ccp=1.0,!color=#8705ab]:0.001353,Athorybia_rosacea[&index=8,posterior=1.0,ccp=1.0,!color=#8705ab]:0.002108)[&index=88,posterior=0.344219,ccp=0.344219,height_95%_HPD={5.47E-4,0.001779},!color=#8705ab]:0.002152,Agalma_okeni[&index=7,posterior=1.0,ccp=0.344219,!color=#8705ab]:2.97E-4)[&index=89,posterior=1.0,ccp=0.020518,height_95%_HPD={0.001851,0.005451},!color=#8705ab]:0.00351)[&index=90,posterior=0.99067,ccp=0.990169,height_95%_HPD={0.002001,0.004972},!color=#8705ab]:0.001526,Physophora_hydrostatica[&index=6,posterior=1.0,ccp=0.990169,!color=#8705ab]:0.006573)[&index=91,posterior=0.949017,ccp=0.949017,height_95%_HPD={0.004674,0.005192},!color=#8705ab]:0.00317)[&index=92,posterior=1.0,ccp=1.0,height_95%_HPD={0.007299,0.008076},!color=#8705ab]:0.004765,Hippopodius_hippopus[&index=5,posterior=1.0,ccp=1.0,!color=#8705ab]:0.00333)[&index=93,posterior=0.251583,ccp=0.251583,height_95%_HPD={0.003349,0.00374},!color=#8705ab]:0.001217,(((Diphyes_dispar[&index=4,posterior=1.0,ccp=1.0,!color=#8705ab]:0.001823,Sulculeolaria_quadrivalvis[&index=3,posterior=1.0,ccp=1.0,!color=#8705ab]:0.00301)[&index=94,posterior=0.333222,ccp=0.333222,height_95%_HPD={1.13E-4,0.001758},!color=#8705ab]:4.66E-4,Chelophyes_appendiculata[&index=2,posterior=1.0,ccp=0.333222,!color=#8705ab]:0.001641)[&index=95,posterior=1.0,ccp=1.0,height_95%_HPD={0.001372,0.00519},!color=#8705ab]:0.003812,Sphaeronectes_gracilis[&index=1,posterior=1.0,ccp=1.0,!color=#8705ab]:0.002909)[&index=96,posterior=1.0,ccp=0.488171,height_95%_HPD={0.004033,0.007911},!color=#8705ab]:0.005081,Nectadamas_diomedeae[&index=0,posterior=1.0,ccp=0.485505,!color=#8705ab]:0.003893)[&index=97,posterior=1.0,ccp=1.0,height_95%_HPD={-1,"nan"}];
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="ccp";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute="height_95%_HPD";
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="posterior";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=4;
+	set nodeShape.colourAttribute="User selection";
+	set nodeShape.isShown=false;
+	set nodeShape.minSize=10.0;
+	set nodeShape.scaleType=Width;
+	set nodeShape.shapeType=Circle;
+	set nodeShape.size=4.0;
+	set nodeShape.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=8;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
