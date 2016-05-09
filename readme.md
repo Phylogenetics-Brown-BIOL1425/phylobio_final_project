@@ -314,7 +314,7 @@ Figure 17. Competition probability heatmap of hyperiid amphipod species availabl
 Parafit global fit values for this intra-clade cophylogeny (ParaFitGlobal = 2.738317 , p-value = 0.509) shows little significance. The species with more competition links with other species are *Lycaea pulex* and *Brachyscelus crusculum*. By mapping the number of hosts shared with other amphipods (reconstructed internally using Brownian motion) onto the hyperiid amphipod phylogeny (Figure 18), we observe a striking resemblance to Figure 13 on host specificity.
 
 ![F18](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/competition.png) 
-Figure 18. Hyperiid mphipod phylogeny showing a Brownian motion reconstruction of host sharing with other amphipod species (blue - most competition, red - least competition).
+Figure 18. Hyperiid amphipod phylogeny showing a Brownian motion reconstruction of host sharing with other amphipod species (blue - most competition, red - least competition).
 
 ## Discussion
 
