@@ -237,6 +237,7 @@ I am still curious about how ED accumulates in the tree. Branch contribution to 
 Additionally, I would have liked for my results to be more generalizable. I am working within one set of species, Salamandridae, and thus I can only feasibly draw conclusions about the impact of GE transformation on EDGE rank priority on that clade. If I were to continue this line of work, I would look at a simulated tree and set of IUCN rankings to see if this trend in species rank instability holds.
 
 ## References
+Barnosky, Anthony D., Nicholas Matzke, Susumu Tomiya, Guinevere O. U. Wogan, Brian Swartz, Tiago B. Quental, Charles Marshall, Jenny L. Mcguire, Emily L. Lindsey, Kaitlin C. Maguire, Ben Mersey, and Elizabeth A. Ferrer. "Has the Earth’s Sixth Mass Extinction Already Arrived?" Nature 471.7336 (2011): 51-57. Web. <http://www.nature.com.revproxy.brown.edu/nature/journal/v471/n7336/full/nature09678.html>.
 
 Davies, T. Jonathan, Gideon F. Smith, Dirk U. Bellstedt, James S. Boatwright, Benny Bytebier, Richard M. Cowling, Félix Forest, Luke J. Harmon, A. Muthama Muasya, Brian D. Schrire, Yolande Steenkamp, Michelle Van Der Bank, and Vincent Savolainen. "Extinction Risk and Diversification Are Linked in a Plant Biodiversity Hotspot." PLoS Biology PLoS Biol 9.5 (2011): Web. <http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1000620>.
 
@@ -256,6 +257,8 @@ Pyron, R. Alexander, and John J. Wiens. "A Large-scale Phylogeny of Amphibia inc
 Rolland, J., M. W. Cadotte, J. Davies, V. Devictor, S. Lavergne, N. Mouquet, S. Pavoine, A. Rodrigues, W. Thuiller, L. Turcati, M. Winter, L. Zupan, F. Jabot, and H. Morlon. "Using Phylogenies in Conservation: New Perspectives." Biology Letters 8.5 (2011): 692-94. Web. <http://rsbl.royalsocietypublishing.org/content/early/2011/11/21/rsbl.2011.1024>.
 
 Thuiller, Wilfried, Sébastien Lavergne, Cristina Roquet, Isabelle Boulangeat, Bruno Lafourcade, and Miguel. B. Araujo. "Consequences of Climate Change on the Tree of Life in Europe." Nature 470.7335 (2011): 531-34. Web. <http://www.nature.com/nature/journal/v470/n7335/full/nature09705.html>.
+
+Wake, D. B., and V. T. Vredenburg. "Are We in the Midst of the Sixth Mass Extinction? A View from the World of Amphibians." Proceedings of the National Academy of Sciences 105.Supplement 1 (2008): 11466-1473. Web. <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2556420/?tool=pmcentrez>.
 
 
 ```{r bump chart, echo=FALSE}

@@ -11,7 +11,7 @@ setwd("~/Dropbox/Brown University/BIOL1425/phylobio_final_project/")
 
 ## Introduction and Goals
 
-It seems inevitable that climate change, along with other anthropogenic factors, will continue to drive the endangerment and extinction of taxa for the immediate future. Each species is by definition a unique parcel of genetic information, which means that an extinction is the loss of a unique genome. With the number of endgangered taxa mounting, it is important to understand the ways in which species will go extinct, and what that means for the loss of phylogenetic diversity (Rolland et al 2011). EDGE values (Isaac et al 2007) are a proposed method of combining a species' probability of extinction (GE, global endangerment) with a measure of its unique evolutionary history (ED, evolutionary distinctiveness). Calculation of the evolutionary distinctiveness (ED) value is based on tree topology, where a species' score is  the total branch length from the root node to its tip, where internal branches' weight is scaled by the number of tip taxa that share that branch. 
+It seems inevitable that climate change, along with other anthropogenic factors, will continue to drive the endangerment and extinction of taxa for the immediate future. Each species is by definition a unique parcel of genetic information, which means that an extinction is the loss of a unique genome. With the number of endgangered taxa mounting, it is important to understand the ways in which species will go extinct, and what that means for the loss of phylogenetic diversity (Rolland et al 2011). EDGE values (Isaac et al 2007) are a proposed method of integrating a species' probability of extinction (GE, global endangerment) with a measure of its unique evolutionary history (ED, evolutionary distinctiveness). Calculation of the evolutionary distinctiveness (ED) value is based on tree topology, where a species' score is  the total branch length from the root node to its tip, where internal branches' weight is scaled by the number of tip taxa that share that branch. 
 
 ![Isaac2007_fig1](Isaac_fig1.png)
 
@@ -239,7 +239,7 @@ get.EDGE=function(matrix,model){
   }
   matrix[,5]=abs(matrix[,5])
   colnames(matrix)[5]="EDGE"
-  matrix=matrix[order(matrix[,5],decreasing = TRUE),]
+  matrix=matrix[order(matrix[,5],decreasing = FALSE),]
   #EDGE values column in decreasing order
   matrix[6]=1:dim(matrix)[1]
   colnames(matrix)[6]="rank by edge"
@@ -263,11 +263,11 @@ sala.concat.Isaac[1:5,]
 
 ```
 ##                      species     EDGE rank by edge
-## 73 Notophthalmus_viridescens 7.409709            1
-## 32     Salamandra_salamandra 6.832969            2
-## 55         Triturus_carnifex 6.830361            3
-## 28           Salamandra_atra 6.601654            4
-## 3             Taricha_torosa 6.565621            5
+## 9  Echinotriton_chinhaiensis 3.326149            1
+## 18     Chioglossa_lusitanica 3.623983            2
+## 62   Euproctus_platycephalus 3.698079            3
+## 19    Mertensiella_caucasica 3.702527            4
+## 48         Neurergus_kaiseri 3.774142            5
 ```
 
 ```r
@@ -276,11 +276,11 @@ sala.concat.50[1:5,]
 
 ```
 ##                      species     EDGE rank by edge
-## 73 Notophthalmus_viridescens 13.62432            1
-## 32     Salamandra_salamandra 13.04758            2
-## 55         Triturus_carnifex 13.04497            3
-## 28           Salamandra_atra 12.81626            4
-## 3             Taricha_torosa 12.78023            5
+## 9  Echinotriton_chinhaiensis 2.440317            1
+## 48         Neurergus_kaiseri 2.888311            2
+## 53        Calotriton_arnoldi 2.925807            3
+## 50   Neurergus_microspilotus 2.929434            4
+## 62   Euproctus_platycephalus 2.956142            5
 ```
 
 ```r
@@ -289,11 +289,11 @@ sala.concat.100[1:5,]
 
 ```
 ##                      species     EDGE rank by edge
-## 73 Notophthalmus_viridescens 12.93117            1
-## 32     Salamandra_salamandra 12.35443            2
-## 55         Triturus_carnifex 12.35182            3
-## 28           Salamandra_atra 12.12311            4
-## 3             Taricha_torosa 12.08708            5
+## 9  Echinotriton_chinhaiensis 2.410859            1
+## 62   Euproctus_platycephalus 2.493606            2
+## 34          Cynops_ensicauda 2.720972            3
+## 10    Echinotriton_andersoni 2.790094            4
+## 48         Neurergus_kaiseri 2.858852            5
 ```
 
 ```r
@@ -301,12 +301,12 @@ sala.concat.500[1:5,]
 ```
 
 ```
-##                      species     EDGE rank by edge
-## 73 Notophthalmus_viridescens 11.32173            1
-## 32     Salamandra_salamandra 10.74499            2
-## 55         Triturus_carnifex 10.74238            3
-## 28           Salamandra_atra 10.51368            4
-## 3             Taricha_torosa 10.47764            5
+##                    species     EDGE rank by edge
+## 62 Euproctus_platycephalus 2.092649            1
+## 18   Chioglossa_lusitanica 2.263007            2
+## 34        Cynops_ensicauda 2.320015            3
+## 19  Mertensiella_caucasica 2.341551            4
+## 10  Echinotriton_andersoni 2.389137            5
 ```
 Next, I built a function to examine the degree of difference between the priority lists generated by the function get.EDGE(). It compares the rank of a species in EDGE list 1 to the rank of that same species in EDGE list 2. The absolute value of the difference in those two ranks is summed over all species.
 
@@ -462,16 +462,16 @@ The output of the rank.distance() function shows discord between the four propos
 
 Within the IUCN lists we see an increasing degree of discordance from IUCN50->IUCN50100->IUCN50500. 
 
-Across all 4 models, the top 5 species on the EDGE priority lists are identical.
+Across all 4 models, the top 5 species on the EDGE priority lists are *not* identical.
 
 ```r
 sala.concat.Isaac[1:5,]$species
 ```
 
 ```
-## [1] "Notophthalmus_viridescens" "Salamandra_salamandra"    
-## [3] "Triturus_carnifex"         "Salamandra_atra"          
-## [5] "Taricha_torosa"
+## [1] "Echinotriton_chinhaiensis" "Chioglossa_lusitanica"    
+## [3] "Euproctus_platycephalus"   "Mertensiella_caucasica"   
+## [5] "Neurergus_kaiseri"
 ```
 
 ```r
@@ -479,9 +479,9 @@ sala.concat.50[1:5,]$species
 ```
 
 ```
-## [1] "Notophthalmus_viridescens" "Salamandra_salamandra"    
-## [3] "Triturus_carnifex"         "Salamandra_atra"          
-## [5] "Taricha_torosa"
+## [1] "Echinotriton_chinhaiensis" "Neurergus_kaiseri"        
+## [3] "Calotriton_arnoldi"        "Neurergus_microspilotus"  
+## [5] "Euproctus_platycephalus"
 ```
 
 ```r
@@ -489,9 +489,9 @@ sala.concat.100[1:5,]$species
 ```
 
 ```
-## [1] "Notophthalmus_viridescens" "Salamandra_salamandra"    
-## [3] "Triturus_carnifex"         "Salamandra_atra"          
-## [5] "Taricha_torosa"
+## [1] "Echinotriton_chinhaiensis" "Euproctus_platycephalus"  
+## [3] "Cynops_ensicauda"          "Echinotriton_andersoni"   
+## [5] "Neurergus_kaiseri"
 ```
 
 ```r
@@ -499,22 +499,24 @@ sala.concat.500[1:5,]$species
 ```
 
 ```
-## [1] "Notophthalmus_viridescens" "Salamandra_salamandra"    
-## [3] "Triturus_carnifex"         "Salamandra_atra"          
-## [5] "Taricha_torosa"
+## [1] "Euproctus_platycephalus" "Chioglossa_lusitanica"  
+## [3] "Cynops_ensicauda"        "Mertensiella_caucasica" 
+## [5] "Echinotriton_andersoni"
 ```
 ## Discussion
 
-These results indicate that model selection for GE transformation is indeed important to the ranking of species for conservation by EDGE value. EDGE-value based conservation priority lists are, indeed, sensitive to the GE model employed in their construction. 
+These results indicate that model selection for GE transformation is indeed important to the ranking of species for conservation by EDGE value. EDGE-value based conservation priority lists are sensitive to the GE model employed in their construction. 
 
-More interestingly, however, is that the top priority species (I abitrarily decided that there would be 5), are consistent across the lists. Each GE model generates a different priority list for the conservation of the salamanders in question, but the top five always the same. So the sensitivity of these conservation priority lists to GE transformation model is maybe not as crippling to the implementation of EDGE-value-based conservation as it might seem. If only considering top priority species in these lists, the GE model chosen for list construction is relatively unimportant. This means that the IUCN Red List designation of species *can* be integrated into phylogenetic analyses for the sake of identifying only those species most in need of conservation. Basing management plans for species deeper in the list is likely ill-advised, since there is so much instability in the lists. 
+More interestingly, however, is that the top priority species (I abitrarily decided that there would be 5), are the species with the least consistent rankings (see bump chart). The lower-ranked species in Salamandridae are consistantly ranked so in all transformations. These low-ranked species are unlikely to be targets of conservation effort, so their stability in ranking relative to one another is unimportant. The instability of the highly ranked species is, on the other hand, cause for concern. If one were trying to select a set of species to conserve based on EDGE values, then model parameters for IUCN category transformation may govern which species you select. Since parameter selection is very difficult (P(ext) is hard to forecast), these results may be cause to take a step back from the EDGE metric and the IUCN category-based conservation approach. 
 
 The biggest difficulty in implementing these analyses was in tree construction. I wanted my tree to be highly resolved and without any polytomies, but I think the level of data/number of genes that I used in my analyses was insufficient to produce a fully resolved tree. Were I to do this analysis again, I would spend more time on tree construction and data collection to ensure that my output tree is sound. At this point, I cannot be sure of the degree to which my ED values could be wrong and how those might be affecting my results. 
 
 I am still curious about how ED accumulates in the tree. Branch contribution to ED value is greatest near the tips (fewer taxa sharing that branch), so there is likely a point in a phylogeny where ED stops accumulating (Kamran 2013). I investigated the role of GE on priority rankings, btu I am now curious about ED and how the depth of a tree and number of tips might influence EDGE listing priorities. 
 
+Additionally, I would have liked for my results to be more generalizable. I am working within one set of species, Salamandridae, and thus I can only feasibly draw conclusions about the impact of GE transformation on EDGE rank priority on that clade. If I were to continue this line of work, I would look at a simulated tree and set of IUCN rankings to see if this trend in species rank instability holds.
 
 ## References
+Barnosky, Anthony D., Nicholas Matzke, Susumu Tomiya, Guinevere O. U. Wogan, Brian Swartz, Tiago B. Quental, Charles Marshall, Jenny L. Mcguire, Emily L. Lindsey, Kaitlin C. Maguire, Ben Mersey, and Elizabeth A. Ferrer. "Has the Earth’s Sixth Mass Extinction Already Arrived?" Nature 471.7336 (2011): 51-57. Web. <http://www.nature.com.revproxy.brown.edu/nature/journal/v471/n7336/full/nature09678.html>.
 
 Davies, T. Jonathan, Gideon F. Smith, Dirk U. Bellstedt, James S. Boatwright, Benny Bytebier, Richard M. Cowling, Félix Forest, Luke J. Harmon, A. Muthama Muasya, Brian D. Schrire, Yolande Steenkamp, Michelle Van Der Bank, and Vincent Savolainen. "Extinction Risk and Diversification Are Linked in a Plant Biodiversity Hotspot." PLoS Biology PLoS Biol 9.5 (2011): Web. <http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1000620>.
 
@@ -535,5 +537,22 @@ Rolland, J., M. W. Cadotte, J. Davies, V. Devictor, S. Lavergne, N. Mouquet, S. 
 
 Thuiller, Wilfried, Sébastien Lavergne, Cristina Roquet, Isabelle Boulangeat, Bruno Lafourcade, and Miguel. B. Araujo. "Consequences of Climate Change on the Tree of Life in Europe." Nature 470.7335 (2011): 531-34. Web. <http://www.nature.com/nature/journal/v470/n7335/full/nature09705.html>.
 
+Wake, D. B., and V. T. Vredenburg. "Are We in the Midst of the Sixth Mass Extinction? A View from the World of Amphibians." Proceedings of the National Academy of Sciences 105.Supplement 1 (2008): 11466-1473. Web. <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2556420/?tool=pmcentrez>.
 
 
+
+```
+## Using species as id variables
+```
+
+```
+##                  species variable value
+## 1     Calotriton_arnoldi    Isaac     6
+## 2       Calotriton_asper    Isaac    44
+## 3  Chioglossa_lusitanica    Isaac     2
+## 4       Cynops_ensicauda    Isaac     8
+## 5    Cynops_pyrrhogaster    Isaac    43
+## 6 Echinotriton_andersoni    Isaac    10
+```
+
+![plot of chunk bump chart](figure/bump chart-1.png)
