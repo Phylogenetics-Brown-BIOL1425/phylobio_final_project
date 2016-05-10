@@ -7,6 +7,8 @@ output: html_document
 
 ```{r}
 knitr::opts_chunk$set(echo = TRUE)
+library(ape)
+library(caper)
 setwd("~/Dropbox/Brown University/BIOL1425/phylobio_final_project/")
 allcaudata=read.csv("caudata/IUCN_caudata2.csv",header = TRUE)
 names(allcaudata)
@@ -24,6 +26,10 @@ names(repcaudata)
 filtered.accessions[,14:15]=repcaudata[,c(19,23)]
 colnames(filtered.accessions)[14]="IUCN_status"
 colnames(filtered.accessions)[15]="population_trend"
+
+write.csv(filtered.accessions,file = "accessions_caudata.csv")
+
+
 
 ```
 
