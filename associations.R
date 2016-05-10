@@ -216,6 +216,12 @@ names(competitivity) = names(table(competition[,1]))
 contMap(ultramphipod, competitivity)
 Kcalc(competitivity, ultramphipod)
 
+competitivity = competitivity[match(names(specificity), names(competitivity))]
+plot(competitivity, specificity)
+compet_pic = pic(competitivity, ultramphipod)
+spec_pic = pic(specificity, ultramphipod)
+summary(lm(compet_pic~spec_pic))
+
 #Popularity of hosts, generalist/specialist amphipods
 table(reprunedass[,2])
 specificity = as.vector(table(reprunedass[,1]))
@@ -253,6 +259,18 @@ D = add_pcoord(D)
 D = PACo(D, nperm=100, seed=42, method="r0", correction='cailliez')
 print(D$gof)
 D
+
+#normalize competitivity intensity to specificity
+competitivity = competitivity[match(names(specificity), names(competitivity))]
+competitivity_normalized = competitivity/specificity
+contMap(ultramphipod, competitivity_normalized)
+Kcalc(competitivity_normalized, ultramphipod)
+
+plot(competitivity_normalized, specificity)
+compet_pic = pic(competitivity_normalized, ultramphipod)
+spec_pic = pic(specificity, ultramphipod)
+summary(lm(compet_pic~spec_pic))
+
 
 #Which phylogeny has a stronger signal?
 pdist_amphipods = as.dist(cophenetic(ultramphipod))

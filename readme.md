@@ -311,10 +311,16 @@ Figure 16. Cophylogeny of hyperiid amphipods with themselves, links showing one 
 ![F17](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/competition_heatmap.png)
 Figure 17. Competition probability heatmap of hyperiid amphipod species available in the phylogeny (Color scale: White: 0, Red: 1.). Dendrograms show host sharing similarities.
 
-Parafit global fit values for this intra-clade cophylogeny (ParaFitGlobal = 2.738317 , p-value = 0.509) shows little significance. The species with more competition links with other species are *Lycaea pulex* and *Brachyscelus crusculum*. By mapping the number of hosts shared with other amphipods (reconstructed internally using Brownian motion) onto the hyperiid amphipod phylogeny (Figure 18), we observe a striking resemblance to Figure 13 on host specificity.
+Parafit global fit values for this intra-clade cophylogeny (ParaFitGlobal = 2.738317 , p-value = 0.509) shows little significance. The species with more competition links with other species are *Lycaea pulex* and *Brachyscelus crusculum*. By mapping the number of hosts shared with other amphipods (reconstructed internally using Brownian motion) onto the hyperiid amphipod phylogeny (Figure 18), we observe a striking resemblance to Figure 13 on host specificity. A phylogenetic independent contrast linear regression analysis reveals a slope of 0.781 (p-value: 0.000213).
 
 ![F18](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/competition.png) 
 Figure 18. Hyperiid amphipod phylogeny showing a Brownian motion reconstruction of host sharing with other amphipod species (blue - most competition, red - least competition).
+
+Suspecting this may just be a tautological artifact, I normalized competition intensity by number of hosts interacting with each amphipod species (Figure 19). After running the same PIC linear regression, I found a non-significant relationship between host specificity and this competition intensity metric (p-value: 0.533).
+
+![F19](https://github.com/antropoteuthis/phylobio_final_project/raw/master/screenshots/comp_norm.png)
+Figure 19. Hyperiid amphipod phylogeny showing a Brownian motion reconstruction of corrected competition intensity with other amphipod species (blue - most competition, red - least competition).
+
 
 ## Discussion
 
@@ -357,7 +363,7 @@ Only general cophylogenetic patterns were studied here. I did not attempt to rec
 
 Phylogenetic community ecology analyses summarized the living habitat occupation by hyperiid amphipods. The generalized overdispersion pattern observed in the results may be accounting for competitive effects within each host. These negative ecological interactions could have shaped the host association process and the evolutionary history of hyperiid amphipods (Cavender-Bares et al., 2009). 
 
-A cophylogenetic analysis of the competitive associations (potential, given biogeographical coexistance of the amphipod species and the shared host species) shows a non significant global fit, which rejects the hypothesis of hyperiid amphipods sharing host species having speciated together (Legendre et al. 2002). Without carrying out an independent contrast correlation and just by looking at figures 13 and 18, one can observe that the level of intraguild competition in hyperiid amphipod is likely to be correlated to host specificity, where generalist compete for more species of hosts than specialists do. This may be indicative of one of the phenomena driving specialization in hyperiid amphipods: competition with other amphipods.
+A cophylogenetic analysis of the competitive associations (potential, given biogeographical coexistance of the amphipod species and the shared host species) shows a non significant global fit, which rejects the hypothesis of hyperiid amphipods sharing host species having speciated together (Legendre et al. 2002). Without carrying out an independent contrast correlation and just by looking at figures 13 and 18, one can observe that the level of intraguild competition in hyperiid amphipod is likely to be correlated to host specificity, where generalist compete for more species of hosts than specialists do. However, when the competition intensity is normalized to generality, the pattern dissapears, as confirmed by the phylogenetic independent contrast analysis.
 
 As we can see in the figures, thaliacean species harbor the richest assemblage of hyperiid amphipods. Brownian motion reconstruction suggests the appearance of a key trait in their MRCA that rendered these animals widely favorable hosts for hyperiid amphipods. Generality and specificity in hyperiid amphipods evolved multiple times. Correlating these shifts with association type data would shed light on the evolution of this ecological trait.
 
