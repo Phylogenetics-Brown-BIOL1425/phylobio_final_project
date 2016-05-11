@@ -1,0 +1,51 @@
+#NEXUS
+
+	Begin taxa;
+	Dimensions ntax=40;
+	Taxlabels
+		Amphithyrus_bispinosus
+		Brachyscelus_crusculum
+		Brachyscelus_rapax
+		Cyathura_carinata
+		Cystisoma_pellucida
+		Eupronoe_minuta
+		Glossocephalus_milneedwardsi
+		Hyperietta_parviceps
+		Hyperietta_sibaginis
+		Hyperietta_stephenseni
+		Hyperietta_vosseleri
+		Hyperioides_longipes
+		Hyperoche_martinezi
+		Hyperoche_medusarum
+		Idotea_baltica
+		Iulopis_loveni
+		Lanceola_pacifica
+		Lanceola_sayana
+		Lestrigonus_bengalensis
+		Lestrigonus_schizogeneios
+		Lycaea_nasuta
+		Lycaea_pulex
+		Oxycephalus_clausi
+		Paraphronima_gracilis
+		Paraphronima_species
+		Parascelus_typhoides
+		Parathemisto_gaudichaudi
+		Parathemisto_pacifica
+		Phronima_species
+		Phrosina_semilunata
+		Rhabdosoma_whitei
+		Simorhynchotus_antennarius
+		Streetsia_porcella
+		Tetrathyrus_forcipatus
+		Themisto_abyssorum
+		Thyropus_sphaeroma
+		Tryphana_malmi
+		Vibilia_armata
+		Vibilia_propinqua
+		Vibilia_viatrix
+		;
+End;
+
+Begin trees;
+tree TREE1 = [&R](((((((((((Iulopis_loveni[&index=39,posterior=1.000000,ccp=1.000000]:0.204400,Lestrigonus_schizogeneios[&index=38,posterior=1.000000,ccp=1.000000]:0.623745)[&index=40,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.096209,0.118531}]:0.086558,Hyperoche_martinezi[&index=37,posterior=1.000000,ccp=1.000000]:0.198988)[&index=41,posterior=0.996001,ccp=0.996001,height_95%_HPD={0.037639,0.064045}]:0.044295,Hyperoche_medusarum[&index=36,posterior=1.000000,ccp=0.996001]:0.048369)[&index=42,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.025773,0.047192}]:0.034599,((Parathemisto_gaudichaudi[&index=35,posterior=1.000000,ccp=1.000000]:0.002856,Themisto_abyssorum[&index=34,posterior=1.000000,ccp=1.000000]:0.005038)[&index=43,posterior=0.881373,ccp=0.881373,height_95%_HPD={0.005331,0.008365}]:0.004922,Parathemisto_pacifica[&index=33,posterior=1.000000,ccp=0.881373]:0.003577)[&index=44,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.028233,0.041785}]:0.032061)[&index=45,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.054988,0.063016}]:0.050437,(((Hyperietta_parviceps[&index=32,posterior=1.000000,ccp=1.000000]:0.012989,Hyperietta_sibaginis[&index=31,posterior=1.000000,ccp=1.000000]:0.009352)[&index=46,posterior=0.986005,ccp=0.986005,height_95%_HPD={0.00428,0.012824}]:0.008044,Hyperioides_longipes[&index=30,posterior=1.000000,ccp=0.986005]:0.012027)[&index=47,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.023682,0.048204}]:0.036898,(Eupronoe_minuta[&index=29,posterior=1.000000,ccp=1.000000]:0.024041,Hyperietta_vosseleri[&index=28,posterior=1.000000,ccp=1.000000]:0.011162)[&index=48,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.0615,0.067434}]:0.055470)[&index=49,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.102959,0.156847}]:0.137294)[&index=50,posterior=1.000000,ccp=0.948017,height_95%_HPD={0.033741,0.058718}]:0.043010,(Phronima_species[&index=27,posterior=1.000000,ccp=1.000000]:0.105262,Phrosina_semilunata[&index=26,posterior=1.000000,ccp=1.000000]:0.057888)[&index=51,posterior=0.948017,ccp=0.948017,height_95%_HPD={0.010913,0.040586}]:0.026321)[&index=52,posterior=1.000000,ccp=0.933689,height_95%_HPD={0.090182,0.205293}]:0.166291,(((((Lanceola_pacifica[&index=25,posterior=1.000000,ccp=1.000000]:0.012133,Lanceola_sayana[&index=24,posterior=1.000000,ccp=1.000000]:0.005258)[&index=53,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.148266,0.158018}]:0.139611,Cystisoma_pellucida[&index=23,posterior=1.000000,ccp=1.000000]:0.101564)[&index=54,posterior=0.983006,ccp=0.983006,height_95%_HPD={0.029727,0.066337}]:0.044652,(Paraphronima_gracilis[&index=22,posterior=1.000000,ccp=1.000000]:0.006669,Paraphronima_species[&index=21,posterior=1.000000,ccp=1.000000]:0.003668)[&index=55,posterior=1.000000,ccp=0.983006,height_95%_HPD={0.066353,0.092578}]:0.066399)[&index=56,posterior=1.000000,ccp=0.996001,height_95%_HPD={0.460883,0.64664}]:0.562103,((Cyathura_carinata[&index=20,posterior=1.000000,ccp=1.000000]:0.365260,Idotea_baltica[&index=19,posterior=1.000000,ccp=1.000000]:0.249841)[&index=57,posterior=1.000000,ccp=1.000000,height_95%_HPD={1.71892,2.03019}]:1.821888,Hyperietta_stephenseni[&index=18,posterior=1.000000,ccp=1.000000]:0.667306)[&index=58,posterior=0.996001,ccp=0.996001,height_95%_HPD={0.282184,0.337043}]:0.249587)[&index=59,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.47206,0.558957}]:0.448986,Lestrigonus_bengalensis[&index=17,posterior=1.000000,ccp=1.000000]:1.881831)[&index=60,posterior=0.933689,ccp=0.933689,height_95%_HPD={0.062416,0.171706}]:0.112497)[&index=61,posterior=1.000000,ccp=0.656781,height_95%_HPD={0.05949,0.136997}]:0.105630,(((Vibilia_propinqua[&index=16,posterior=1.000000,ccp=1.000000]:0.049816,Vibilia_viatrix[&index=15,posterior=1.000000,ccp=1.000000]:0.015663)[&index=62,posterior=0.992336,ccp=0.992336,height_95%_HPD={0.036154,0.055539}]:0.038528,Vibilia_armata[&index=14,posterior=1.000000,ccp=0.992336]:0.065185)[&index=63,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.163793,0.258873}]:0.230664,Tryphana_malmi[&index=13,posterior=1.000000,ccp=1.000000]:0.128804)[&index=64,posterior=0.656781,ccp=0.656781,height_95%_HPD={0.012211,0.047157}]:0.031294)[&index=65,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.057791,0.091486}]:0.070752,(((Parascelus_typhoides[&index=12,posterior=1.000000,ccp=1.000000]:0.037712,Thyropus_sphaeroma[&index=11,posterior=1.000000,ccp=1.000000]:0.038453)[&index=66,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.016686,0.030974}]:0.022839,Tetrathyrus_forcipatus[&index=10,posterior=1.000000,ccp=1.000000]:0.058160)[&index=67,posterior=0.630457,ccp=0.630457,height_95%_HPD={0.006512,0.015757}]:0.010342,Amphithyrus_bispinosus[&index=9,posterior=1.000000,ccp=0.630457]:0.045334)[&index=68,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.024461,0.03195}]:0.022696)[&index=69,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.016583,0.03043}]:0.022016,((((Glossocephalus_milneedwardsi[&index=8,posterior=1.000000,ccp=1.000000]:0.028991,Streetsia_porcella[&index=7,posterior=1.000000,ccp=1.000000]:0.016880)[&index=70,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.007109,0.01659}]:0.012047,Oxycephalus_clausi[&index=6,posterior=1.000000,ccp=1.000000]:0.019010)[&index=71,posterior=0.989670,ccp=1.000000,height_95%_HPD={0.010331,0.015595}]:0.010598,Rhabdosoma_whitei[&index=5,posterior=1.000000,ccp=1.000000]:0.035974)[&index=72,posterior=0.420860,ccp=0.420860,height_95%_HPD={0.001183,0.005815}]:0.002920,(Lycaea_nasuta[&index=4,posterior=1.000000,ccp=1.000000]:0.063552,Simorhynchotus_antennarius[&index=3,posterior=1.000000,ccp=1.000000]:0.119655)[&index=73,posterior=1.000000,ccp=0.420860,height_95%_HPD={0.020709,0.036792}]:0.026205)[&index=74,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.017722,0.024242}]:0.017110)[&index=75,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.035531,0.042287}]:0.034744,(Brachyscelus_crusculum[&index=2,posterior=1.000000,ccp=1.000000]:0.014886,Brachyscelus_rapax[&index=1,posterior=1.000000,ccp=1.000000]:0.006275)[&index=76,posterior=1.000000,ccp=1.000000,height_95%_HPD={0.023995,0.036107}]:0.028483,Lycaea_pulex[&index=0,posterior=1.000000,ccp=1.000000]:0.018702)[&index=77,posterior=1.000000,ccp=1.000000,height_95%_HPD={-1,nan}]:0.000000;
+End;
