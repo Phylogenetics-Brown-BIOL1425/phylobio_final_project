@@ -1,0 +1,24 @@
+#NEXUS
+
+	Begin taxa;
+	Dimensions ntax=13;
+	Taxlabels
+		Doryteuthis_pealeii_KR107041_1
+		Doryteuthis_pealeii_KR107042_1
+		Euprymna_scolopes_EU344783_1
+		Euprymna_scolopes_EU344784_1
+		Leptochiton_asellus_KU193721_1
+		Lingula_anatina_PREDICTED_XM_013553035_1
+		Lingula_anatina_PREDICTED_XM_013553036_1
+		Loligo_forbesi_L10289_1
+		Loligo_pealei_AF521583_2
+		Octopus_bimaculoides_PREDICTED_XM_014929061_1
+		Octopus_bimaculoides_PREDICTED_XM_014929062_1
+		Octopus_vulgaris_AB025782_1
+		Sepia_officinalis_DQ413186_1
+		;
+End;
+
+Begin trees;
+tree TREE1 = [&R]((((((Euprymna_scolopes_EU344783_1[&index=12,posterior=1.000000,ccp=1.000000]:0.003327,Euprymna_scolopes_EU344784_1[&index=11,posterior=1.000000,ccp=1.000000]:0.038661)[&index=13,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.283843}]:0.239829,Sepia_officinalis_DQ413186_1[&index=10,posterior=1.000000,ccp=1.000000]:0.111125)[&index=14,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.138113}]:0.106880,Loligo_forbesi_L10289_1[&index=9,posterior=1.000000,ccp=1.000000]:0.086995)[&index=15,posterior=1.000000,ccp=0.934355,height_95%_HPD={nan,0.060831}]:0.043122,(Doryteuthis_pealeii_KR107041_1[&index=8,posterior=1.000000,ccp=1.000000]:0.001690,Loligo_pealei_AF521583_2[&index=7,posterior=1.000000,ccp=1.000000]:0.001563)[&index=16,posterior=0.934355,ccp=0.934355,height_95%_HPD={nan,0.011034}]:0.005839)[&index=17,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.106941}]:0.086417,Doryteuthis_pealeii_KR107042_1[&index=6,posterior=1.000000,ccp=1.000000]:0.003592)[&index=18,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.319687}]:0.247690,((Lingula_anatina_PREDICTED_XM_013553035_1[&index=5,posterior=1.000000,ccp=1.000000]:0.004228,Lingula_anatina_PREDICTED_XM_013553036_1[&index=4,posterior=1.000000,ccp=1.000000]:0.005821)[&index=19,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,1.14696}]:0.966131,Leptochiton_asellus_KU193721_1[&index=3,posterior=1.000000,ccp=1.000000]:1.077015)[&index=20,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.637674}]:0.507266,((Octopus_bimaculoides_PREDICTED_XM_014929061_1[&index=2,posterior=1.000000,ccp=1.000000]:0.051702,Octopus_bimaculoides_PREDICTED_XM_014929062_1[&index=1,posterior=1.000000,ccp=1.000000]:0.001162)[&index=21,posterior=0.997001,ccp=0.997001,height_95%_HPD={nan,0.051192}]:0.032915,Octopus_vulgaris_AB025782_1[&index=0,posterior=1.000000,ccp=0.997001]:0.097569)[&index=22,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.352499}]:0.278912)[&index=23,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,-1}]:0.000000;
+End;

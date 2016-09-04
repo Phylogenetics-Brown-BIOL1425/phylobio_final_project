@@ -1,0 +1,107 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=13;
+	taxlabels
+	Doryteuthis_pealeii_KR107041_1
+	Doryteuthis_pealeii_KR107042_1
+	Euprymna_scolopes_EU344783_1
+	Euprymna_scolopes_EU344784_1
+	Leptochiton_asellus_KU193721_1
+	Lingula_anatina_PREDICTED_XM_013553035_1
+	Lingula_anatina_PREDICTED_XM_013553036_1
+	Loligo_forbesi_L10289_1
+	Loligo_pealei_AF521583_2
+	Octopus_bimaculoides_PREDICTED_XM_014929061_1
+	Octopus_bimaculoides_PREDICTED_XM_014929062_1
+	Octopus_vulgaris_AB025782_1
+	Sepia_officinalis_DQ413186_1
+;
+end;
+
+begin trees;
+	tree TREE1 = [&R] ((((((Doryteuthis_pealeii_KR107041_1[&index=12,posterior=1.0,ccp=1.0]:0.001357,Loligo_pealei_AF521583_2[&index=11,posterior=1.0,ccp=1.0]:0.00133)[&index=13,posterior=0.837388,ccp=0.837388,height_95%_HPD={"nan",0.008175}]:0.004286,Loligo_forbesi_L10289_1[&index=10,posterior=1.0,ccp=0.837388]:0.079329)[&index=14,posterior=1.0,ccp=1.0,height_95%_HPD={"nan",0.083077}]:0.067946,Doryteuthis_pealeii_KR107042_1[&index=9,posterior=1.0,ccp=1.0]:0.002765)[&index=15,posterior=1.0,ccp=1.0,height_95%_HPD={"nan",0.072897}]:0.053838,(((Lingula_anatina_PREDICTED_XM_013553035_1[&index=8,posterior=1.0,ccp=1.0]:0.004953,Lingula_anatina_PREDICTED_XM_013553036_1[&index=7,posterior=1.0,ccp=1.0]:0.00362)[&index=16,posterior=1.0,ccp=1.0,height_95%_HPD={"nan",0.591739}]:0.503766,Leptochiton_asellus_KU193721_1[&index=6,posterior=1.0,ccp=1.0]:0.909392)[&index=17,posterior=1.0,ccp=1.0,height_95%_HPD={"nan",0.337906}]:0.271988,((Octopus_bimaculoides_PREDICTED_XM_014929061_1[&index=5,posterior=1.0,ccp=1.0]:0.051068,Octopus_bimaculoides_PREDICTED_XM_014929062_1[&index=4,posterior=1.0,ccp=1.0]:0.001038)[&index=18,posterior=0.984672,ccp=0.984672,height_95%_HPD={"nan",0.017414}]:0.010561,Octopus_vulgaris_AB025782_1[&index=3,posterior=1.0,ccp=0.984672]:0.047132)[&index=19,posterior=1.0,ccp=1.0,height_95%_HPD={"nan",0.174815}]:0.139846)[&index=20,posterior=1.0,ccp=1.0,height_95%_HPD={"nan",0.180629}]:0.144776)[&index=21,posterior=0.966011,ccp=0.966011,height_95%_HPD={"nan",0.053229}]:0.036173,Sepia_officinalis_DQ413186_1[&index=2,posterior=1.0,ccp=0.966011]:0.093477)[&index=22,posterior=1.0,ccp=1.0,height_95%_HPD={"nan",0.139878}]:0.118202,Euprymna_scolopes_EU344783_1[&index=1,posterior=1.0,ccp=1.0]:0.037601,Euprymna_scolopes_EU344784_1[&index=0,posterior=1.0,ccp=1.0]:0.00185)[&index=23,posterior=1.0,ccp=1.0,height_95%_HPD={"nan",-1}];
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShape.colourAttribute=null;
+	set nodeShape.isShown=false;
+	set nodeShape.minSize=10.0;
+	set nodeShape.scaleType=Width;
+	set nodeShape.shapeType=Circle;
+	set nodeShape.size=4.0;
+	set nodeShape.sizeAttribute=null;
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=8;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
