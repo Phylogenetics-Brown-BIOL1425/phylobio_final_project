@@ -1,0 +1,15 @@
+starting log: 01/05/16 06:20
+concat
+in filename: gpt.align.fasta
+in filename: gpt2.align.fasta
+outfile: combined.mrna.nex
+starting log: 01/05/16 06:22
+concat
+in filename: gpt.protein.align.fasta
+in filename: gpt2.protein.align.fasta
+outfile: combined.protein.nex
+starting log: 01/05/16 06:33
+concat
+in filename: gpt.protein.align.fasta
+in filename: gpt2.protein.align.fasta
+outfile: combined.protein.nex
