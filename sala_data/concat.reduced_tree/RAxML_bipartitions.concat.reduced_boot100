@@ -1,0 +1,167 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=73;
+	taxlabels
+	Calotriton_arnoldi
+	Calotriton_asper
+	Chioglossa_lusitanica
+	Cynops_ensicauda
+	Cynops_pyrrhogaster
+	Echinotriton_andersoni
+	Echinotriton_chinhaiensis
+	Euproctus_asper
+	Euproctus_montanus
+	Euproctus_platycephalus
+	Lissotriton_boscai
+	Lissotriton_helveticus
+	Lissotriton_italicus
+	Lissotriton_montandoni
+	Lyciasalamandra_antalyana
+	Lyciasalamandra_atifi
+	Lyciasalamandra_billae
+	Lyciasalamandra_fazilae
+	Lyciasalamandra_flavimembris
+	Lyciasalamandra_helverseni
+	Lyciasalamandra_luschani
+	Mertensiella_caucasica
+	Mesotriton_alpestris
+	Neurergus_crocatus
+	Neurergus_kaiseri
+	Neurergus_microspilotus
+	Neurergus_strauchii
+	Notophthalmus_meridionalis
+	Notophthalmus_perstriatus
+	Notophthalmus_viridescens
+	Ommatotriton_ophryticus
+	Ommatotriton_vittatus
+	Pachytriton_brevipes
+	Pachytriton_labiatus
+	Paramesotriton_caudopunctatus
+	Paramesotriton_chinensis
+	Paramesotriton_deloustali
+	Paramesotriton_deloustalii
+	Paramesotriton_fuzhongensis
+	Paramesotriton_hongkongensis
+	Paramesotriton_laoensis
+	Pleurodeles_nebulosus
+	Pleurodeles_poireti
+	Pleurodeles_waltl
+	Salamandra_algira
+	Salamandra_atra
+	Salamandra_corsica
+	Salamandra_infraimmaculata
+	Salamandra_lanzai
+	Salamandra_luschani
+	Salamandra_salamandra
+	Salamandrina_perspicillata
+	Salamandrina_terdigitata
+	Taricha_granulosa
+	Taricha_rivularis
+	Taricha_torosa
+	Triturus_alpestris
+	Triturus_boscai
+	Triturus_carnifex
+	Triturus_cristatus
+	Triturus_dobrogicus
+	Triturus_helveticus
+	Triturus_italicus
+	Triturus_karelinii
+	Triturus_marmoratus
+	Triturus_pygmaeus
+	Triturus_vittatus
+	Triturus_vulgaris
+	Tylototriton_asperrimus
+	Tylototriton_kweichowensis
+	Tylototriton_shanjing
+	Tylototriton_verrucosus
+	Tylototriton_wenxianensis
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (((Taricha_torosa:0.029275,(Taricha_granulosa:0.069212,Taricha_rivularis:0.050422)[&"bootstrap values"=85]:0.028954)[&"bootstrap values"=100]:0.077366,((((Pleurodeles_waltl:0.074763,(Pleurodeles_poireti:0.030561,Pleurodeles_nebulosus:0.029831)[&"bootstrap values"=97]:0.01018)[&"bootstrap values"=100]:0.07331,((Echinotriton_chinhaiensis:0.061131,Echinotriton_andersoni:0.06338)[&"bootstrap values"=98]:0.026858,(((Tylototriton_verrucosus:0.026665,Tylototriton_kweichowensis:0.03629)[&"bootstrap values"=97]:0.018195,Tylototriton_shanjing:0.026017)[&"bootstrap values"=54]:0.006767,(Tylototriton_wenxianensis:0.041564,Tylototriton_asperrimus:0.04288)[&"bootstrap values"=79]:0.010247)[&"bootstrap values"=91]:0.018617)[&"bootstrap values"=97]:0.050606)[&"bootstrap values"=96]:0.053461,((Salamandrina_terdigitata:0.066692,Salamandrina_perspicillata:0.05225)[&"bootstrap values"=100]:0.180871,((Chioglossa_lusitanica:0.228797,Mertensiella_caucasica:0.208646)[&"bootstrap values"=100]:0.058634,((((((Lyciasalamandra_fazilae:0.034197,Lyciasalamandra_luschani:0.039101)[&"bootstrap values"=50]:0.008718,Lyciasalamandra_flavimembris:0.03675)[&"bootstrap values"=28]:0.010303,((Lyciasalamandra_helverseni:0.036912,Lyciasalamandra_billae:0.017763)[&"bootstrap values"=38]:0.007184,Lyciasalamandra_antalyana:0.038138)[&"bootstrap values"=24]:7.83E-4)[&"bootstrap values"=52]:0.01228,Lyciasalamandra_atifi:0.052991)[&"bootstrap values"=54]:0.004684,Salamandra_luschani:0.045589)[&"bootstrap values"=98]:0.063351,((Salamandra_atra:0.030285,(Salamandra_lanzai:0.014453,Salamandra_corsica:0.037323)[&"bootstrap values"=56]:0.005187)[&"bootstrap values"=74]:0.006558,(Salamandra_algira:0.08076,(Salamandra_salamandra:0.010246,Salamandra_infraimmaculata:0.012263)[&"bootstrap values"=86]:0.019972)[&"bootstrap values"=44]:0.003061)[&"bootstrap values"=97]:0.033836)[&"bootstrap values"=99]:0.105933)[&"bootstrap values"=99]:0.050399)[&"bootstrap values"=98]:0.050502)[&"bootstrap values"=92]:0.028833,(((((Cynops_ensicauda:0.079664,Cynops_pyrrhogaster:0.083966)[&"bootstrap values"=94]:0.016058,((Paramesotriton_laoensis:0.088062,(Pachytriton_brevipes:0.021913,Pachytriton_labiatus:0.024593)[&"bootstrap values"=100]:0.049031)[&"bootstrap values"=83]:0.006125,(Paramesotriton_caudopunctatus:0.060078,((Paramesotriton_hongkongensis:0.041039,((Paramesotriton_deloustalii:0.032181,Paramesotriton_deloustali:0.033284)[&"bootstrap values"=1]:4.0E-6,Paramesotriton_fuzhongensis:0.028181)[&"bootstrap values"=50]:0.014167)[&"bootstrap values"=65]:0.013211,Paramesotriton_chinensis:0.072485)[&"bootstrap values"=91]:0.015231)[&"bootstrap values"=91]:0.013876)[&"bootstrap values"=89]:0.00969)[&"bootstrap values"=91]:0.085022,(((((Triturus_vittatus:0.086369,(Ommatotriton_vittatus:0.069838,Ommatotriton_ophryticus:0.018432)[&"bootstrap values"=35]:0.016274)[&"bootstrap values"=84]:0.075963,((Neurergus_kaiseri:0.028506,(Neurergus_crocatus:0.022955,Neurergus_microspilotus:0.021083)[&"bootstrap values"=78]:0.010221)[&"bootstrap values"=98]:0.019969,Neurergus_strauchii:0.062842)[&"bootstrap values"=100]:0.056276)[&"bootstrap values"=71]:0.018438,((Calotriton_asper:0.013204,(Calotriton_arnoldi:0.020257,Euproctus_asper:0.014748)[&"bootstrap values"=42]:4.0E-6)[&"bootstrap values"=100]:0.081284,((Triturus_carnifex:0.015049,(Triturus_dobrogicus:0.035381,(Triturus_karelinii:0.0228,Triturus_cristatus:0.033341)[&"bootstrap values"=40]:0.00493)[&"bootstrap values"=43]:0.008893)[&"bootstrap values"=100]:0.046437,(Triturus_pygmaeus:0.015447,Triturus_marmoratus:0.017796)[&"bootstrap values"=100]:0.056594)[&"bootstrap values"=100]:0.051806)[&"bootstrap values"=83]:0.021589)[&"bootstrap values"=63]:0.029276,(Euproctus_montanus:0.08891,Euproctus_platycephalus:0.078745)[&"bootstrap values"=100]:0.082827)[&"bootstrap values"=13]:4.0E-6,Mesotriton_alpestris:0.277168)[&"bootstrap values"=18]:0.008592)[&"bootstrap values"=48]:0.026975,(Lissotriton_italicus:0.088611,((((Triturus_italicus:0.061223,(Triturus_vulgaris:0.015375,Lissotriton_montandoni:0.023461)[&"bootstrap values"=100]:0.043464)[&"bootstrap values"=38]:0.007066,Triturus_helveticus:0.108461)[&"bootstrap values"=32]:0.011255,Triturus_boscai:0.063074)[&"bootstrap values"=59]:0.012313,(Lissotriton_boscai:0.118011,Lissotriton_helveticus:0.154199)[&"bootstrap values"=52]:0.021096)[&"bootstrap values"=49]:0.013146)[&"bootstrap values"=76]:0.03681)[&"bootstrap values"=40]:0.010636,Triturus_alpestris:0.193192)[&"bootstrap values"=74]:0.015723)[&"bootstrap values"=97]:0.027364)[&"bootstrap values"=100]:0.078605,(Notophthalmus_viridescens:0.030741,Notophthalmus_meridionalis:0.060859)[&"bootstrap values"=61]:0.011834,Notophthalmus_perstriatus:0.067031);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="Abadi MT Condensed Extra Bold";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="Abadi MT Condensed Extra Bold";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShape.colourAttribute=null;
+	set nodeShape.isShown=false;
+	set nodeShape.minSize=10.0;
+	set nodeShape.scaleType=Width;
+	set nodeShape.shapeType=Circle;
+	set nodeShape.size=4.0;
+	set nodeShape.sizeAttribute=null;
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="Abadi MT Condensed Extra Bold";
+	set tipLabels.fontSize=8;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+

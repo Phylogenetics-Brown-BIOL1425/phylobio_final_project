@@ -1,0 +1,18 @@
+starting log: 30/04/16 02:04
+concat
+in filename: x12s.aligned.fasta
+in filename: x16s.aligned.fasta
+in filename: cytb.aligned.fasta
+outfile: sala.concat.nex
+starting log: 01/05/16 02:12
+concat
+in filename: 16s.aligned.fasta
+in filename: 18s.aligned.fasta
+in filename: 28s.aligned.fasta
+outfile: combined.nex
+starting log: 01/05/16 02:14
+concat
+in filename: x12s.aligned.fasta
+in filename: x16s.aligned.fasta
+in filename: cytb.aligned.fasta
+outfile: concat.nex

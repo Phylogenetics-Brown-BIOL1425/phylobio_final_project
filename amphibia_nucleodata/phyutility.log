@@ -1,0 +1,76 @@
+starting log: 26/04/16 09:34
+concat
+in filename: CXCR4.aligned.fasta
+in filename: H3a.aligned.fasta
+in filename: Pomc.aligned.fasta
+in filename: Rag1.aligned.fasta
+in filename: cytb.aligned.fasta
+in filename: ncx1.aligned.fasta
+in filename: rhod.aligned.fasta
+in filename: sia.aligned.fasta
+in filename: slc8a3.aligned.fasta
+in filename: tyr.aligned.fasta
+in filename: x12s.aligned.fasta
+in filename: x16s.aligned.fasta
+outfile: concat.nex
+starting log: 26/04/16 09:49
+concat
+in filename: CXCR4.aligned.fasta
+in filename: H3a.aligned.fasta
+in filename: Pomc.aligned.fasta
+in filename: Rag1.aligned.fasta
+in filename: cytb.aligned.fasta
+in filename: ncx1.aligned.fasta
+in filename: rhod.aligned.fasta
+in filename: sia.aligned.fasta
+in filename: slc8a3.aligned.fasta
+in filename: tyr.aligned.fasta
+in filename: x12s.aligned.fasta
+in filename: x16s.aligned.fasta
+outfile: concat.nex
+starting log: 27/04/16 10:24
+concat
+in filename: CXCR4.aligned.fasta
+in filename: H3a.aligned.fasta
+in filename: Pomc.aligned.fasta
+in filename: Rag1.aligned.fasta
+in filename: cytb.aligned.fasta
+in filename: ncx1.aligned.fasta
+in filename: rhod.aligned.fasta
+in filename: sia.aligned.fasta
+in filename: slc8a3.aligned.fasta
+in filename: tyr.aligned.fasta
+in filename: x12s.aligned.fasta
+in filename: x16s.aligned.fasta
+outfile: concat.nex
+starting log: 27/04/16 10:50
+concat
+in filename: CXCR4.aligned.fasta
+in filename: cytb.aligned.fasta
+in filename: H3a.aligned.fasta
+in filename: ncx1.aligned.fasta
+in filename: Pomc.aligned.fasta
+in filename: ncx1.aligned.fasta
+in filename: Rag1.aligned.fasta
+in filename: rhod.aligned.fasta
+in filename: sia.aligned.fasta
+in filename: slc8a3.aligned.fasta
+in filename: x12s.aligned.fasta
+in filename: x16s.aligned.fasta
+outfile: concat.nex
+starting log: 27/04/16 03:02
+concat
+in filename: CXCR4.aligned.fasta
+in filename: cytb.aligned.fasta
+in filename: H3a.aligned.fasta
+in filename: ncx1.aligned.fasta
+in filename: Pomc.aligned.fasta
+in filename: ncx1.aligned.fasta
+in filename: Rag1.aligned.fasta
+in filename: rhod.aligned.fasta
+in filename: sia.aligned.fasta
+in filename: slc8a3.aligned.fasta
+in filename: x12s.aligned.fasta
+in filename: x16s.aligned.fasta
+in filename: tyr.aligned.fasta
+outfile: concat.nex
